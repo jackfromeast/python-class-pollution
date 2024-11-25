@@ -9,7 +9,7 @@ readme_content = """## Python Class Pollution Vulnerability and its Gadgets
 
 > A snake in the (polluted) grass
 
-This repository contains a list of package that are vulnerable to class pollution (i.e., prototype pollution in python) and class pollution gadgets that can result in severe issues like RCE.
+This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
 
 | Library | Stars | Version | Payloads | Found By | Status | CVE |
 |:-------:|:-----:|:-------:|----------|:--------:|:------:|:---:|
@@ -22,7 +22,7 @@ def convert_stars_to_number(stars_str):
         return float(stars_str.replace('M', '')) * 1000000
     else:
         return 0
-    
+
 def extract_metadata(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
@@ -37,14 +37,13 @@ def extract_metadata(file_path):
             metadata['StarsNumeric'] = convert_stars_to_number(stars_str)
         elif line.startswith("+ Version:"):
             metadata['Version'] = line.split(": ")[1]
-        else:
-            if line.startswith("+ Payload:"):
-                metadata['Payload'] = ''.join(line.split(": ")[1:])
-            elif line.startswith("+ Impact:"):
-                metadata['Impact'] = line.split(": ")[1]
-            elif line.startswith("+ Foundby:"):
-                metadata['Foundby'] = line.split(": ")[1]
-        if line.startswith("+ CVE:"):
+        elif line.startswith("+ Payload:"):
+            metadata['Payload'] = ''.join(line.split(": ")[1:])
+        elif line.startswith("+ Impact:"):
+            metadata['Impact'] = line.split(": ")[1]
+        elif line.startswith("+ Foundby:"):
+            metadata['Foundby'] = line.split(": ")[1]
+        elif line.startswith("+ CVE:"):
             metadata['CVE'] = line.split(": ")[1]
         elif line.startswith("+ Status:"):
             metadata['Status'] = line.split(": ")[1]
@@ -52,16 +51,23 @@ def extract_metadata(file_path):
 
 def process_files(input_directory):
     metadata_list = []
-    for filename in sorted(os.listdir(input_directory)):
-        if filename.endswith('.md'):
-            file_path = os.path.join(input_directory, filename)
-            metadata = extract_metadata(file_path)
-            if metadata:
-                metadata['filename'] = filename  # Store the filename for later use
-                metadata_list.append(metadata)
     
+    # Recursively walk through the input directory
+    for root, _, files in os.walk(input_directory):
+        for filename in files:
+            if filename == 'README.md':  # Look for README.md in subfolders
+                file_path = os.path.join(root, filename)
+                metadata = extract_metadata(file_path)
+                if metadata:
+                    # Store the relative path to the library's folder
+                    relative_path = os.path.relpath(root, input_directory)
+                    metadata['filename'] = f"{relative_path}/README.md"
+                    metadata_list.append(metadata)
+    
+    # Sort metadata by 'StarsNumeric' in descending order
     metadata_list = sorted(metadata_list, key=lambda x: x.get('StarsNumeric', 0), reverse=True)
     
+    # Generate section content
     section_content = ""
     for metadata in metadata_list:
         filename = metadata['filename']
