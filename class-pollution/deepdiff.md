@@ -5,11 +5,11 @@
 + Library: deepdiff
 + Stars: 2K
 + Version: v8.0.0
-+ Payload: 
 + CVE: CVE-2024-5254
 + Status: Accepted
++ Payload: ```{"attribute_added" : {"root['x']": namedtuple, "root['x'].'__globals__'['_sys'].'__name__'": "polluted"}}```
 + Foundby: chilaxan
-+ Report: https://huntr.com/bounties/486add92-275e-4a7b-92f9-42d84bc759da
++ Report: [1](https://huntr.com/bounties/486add92-275e-4a7b-92f9-42d84bc759da)
 
 ### Library
 
