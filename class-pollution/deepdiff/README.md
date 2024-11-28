@@ -55,6 +55,38 @@ def _add_to_elements(elements, elem, inside):
         elements.append((elem, action))
 ```
 
+Finally, the deepdiff will 1/ first retrieve the nested object based on the parsed elements and 2/ set the value to the retrieved object.
+
+```
+def _get_nested_obj(obj, elements, next_element=None):
+    for (elem, action) in elements:
+        if action == GET:
+            obj = obj[elem]
+        elif action == GETATTR:
+            obj = getattr(obj, elem)
+    return obj
+
+def _simple_set_elem_value(self, obj, path_for_err_reporting, elem=None, value=None, action=None):
+    """
+    Set the element value directly on an object
+    """
+    try:
+        if action == GET:
+            try:
+                obj[elem] = value
+            except IndexError:
+                if elem == len(obj):
+                    obj.append(value)
+                else:
+                    self._raise_or_log(ELEM_NOT_FOUND_TO_ADD_MSG.format(elem, path_for_err_reporting))
+        elif action == GETATTR:
+            setattr(obj, elem, value)
+        else:
+            raise DeltaError(INVALID_ACTION_WHEN_CALLING_SIMPLE_SET_ELEM.format(action))
+    except (KeyError, IndexError, AttributeError, TypeError) as e:
+        self._raise_or_log('Failed to set {} due to {}'.format(path_for_err_reporting, e))
+```
+
 ### PoC
 
 ```
