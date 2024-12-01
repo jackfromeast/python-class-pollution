@@ -1,2 +1,5 @@
 tmp
 venv
+codebase
+*.pyc
+*-db
