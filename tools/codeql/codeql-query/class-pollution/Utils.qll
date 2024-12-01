@@ -1,5 +1,6 @@
 import python 
 import semmle.python.dataflow.new.DataFlow
+import semmle.python.dataflow.new.TaintTracking
 
 /**
  * Predicate to check if a function is a callee of another function.
@@ -18,7 +19,7 @@ predicate hasDataFlowExpr(Expr source, Expr sink) {
   exists(DataFlow::Node sourceNode, DataFlow::Node sinkNode |
     sourceNode.asExpr() = source and
     sinkNode.asExpr() = sink and
-    DataFlow::localFlow(sourceNode, sinkNode)
+    TaintTracking::localTaint(sourceNode, sinkNode)
   )
 }
 

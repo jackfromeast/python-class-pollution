@@ -1,5 +1,5 @@
 import python
-import utils
+import Utils
 import semmle.python.dataflow.new.DataFlow
 
 /**
@@ -10,7 +10,7 @@ import semmle.python.dataflow.new.DataFlow
  */
 predicate isSubscriptAssignment(Expr obj, Expr key, Expr val, Assign a) {
   exists(Subscript subscript |
-    subscript = a.getASubExpression() and
+    subscript = a.getATarget() and
     subscript.getObject() = obj and
     subscript.getIndex() = key and
     a.getValue() = val
@@ -29,9 +29,9 @@ predicate isSetattrCall(Expr obj, Expr key, Expr val, Call call) {
     name.getId() = "setattr" and
     call.getFunc() = name
   ) and
-  call.getAnArg() = obj and
-  call.getAnArg() = key and
-  call.getAnArg() = val
+  call.getArg(0) = obj and
+  call.getArg(1) = key and
+  call.getArg(2) = val
 }
 
 /**
