@@ -33,3 +33,21 @@ However, capturing the above precise pattern is particularly challenging because
 
 Therefore, we need to concretize all program semantics used to describe class pollution patterns into syntax that CodeQL can effectively capture. Additionally, we must gradually incorporate isAdditionalTaintStep rules to ensure that taint propagation is maintained across each step in the dataflow.
 
+
+#### #2 Matching Smart Getting Function
+
+While the #1 precise matching approach can lead to false negatives due to unnoticed taint propagation barriers, we can supplement it by identifying additional strong indicators (but not equivalent modeling) of class pollution. For example, in libraries like `pydash`, `glom`, and `deepdiff`, class pollution vulnerabilities often involve a function capable of retrieving items or elements dynamically based on the type of the base object. I refer to these as smart getting functions.
+
+For example, In deepdiff, the following function serves as a smart getting function:
+
+```
+def _get_nested_obj(obj, elements, next_element=None):
+    for (elem, action) in elements:
+        if action == GET:
+            obj = obj[elem]
+        elif action == GETATTR:
+            obj = getattr(obj, elem)
+    return obj
+```
+
+To identify such functions, I implemented a CodeQL query named `smartGettingFuncQuery`. This query detects functions whose parameters flow to both the object and key arguments of getItem and getAttr operations.

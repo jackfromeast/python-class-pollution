@@ -15,7 +15,7 @@ base[key1][key2] = val
 
 However, in Python, this pattern does not enable class attribute pollution. Special attributes like `__init__` cannot be accessed using `base['__init__']`, regardless of whether base is an instance of a custom class (which lacks a `__getitem__` method) or a MutableMapping object (where `__init__` is not stored as a dictionary key).
 
-Therefore, for class pollution, we need the program not only support retriving value through `get` function or `base[key]`, but also through `getattr` function.
+Therefore, for class pollution, we need the program *not* only support retriving value through `get` function or `base[key]`, but also through `getattr` function.
 
 ```python
 if hasattr(base, '__getitem__'):
