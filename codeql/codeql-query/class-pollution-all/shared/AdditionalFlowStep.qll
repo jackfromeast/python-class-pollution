@@ -57,6 +57,36 @@ predicate additionalFlowStepGetItem(DataFlow::Node fromNode, DataFlow::Node toNo
 /**
  * @description
  * ----------------------
+ * Propagate the data flow from getItem operation when key is tainted.
+ */
+predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  // Propagate taint on every getValue operation with the polluted key
+  // key -> obj[key]
+  exists( DataFlow::Node getItemExpr | 
+    isGetItemOp(_, fromNode.asExpr(), getItemExpr.asExpr()) and
+    (
+      DataFlow::localFlow(getItemExpr, toNode) or
+      getItemExpr = toNode
+    )
+  ) or
+  //  for k, v in src.items() -> k -> v
+  exists(For forLoop, MethodCallNode call, Tuple tuple |
+    forLoop.getIter() = call.asExpr() and
+    (
+      call.getMethodName() = "items" or
+      call.getMethodName() = "enumerate"
+    ) and
+    tuple = forLoop.getTarget() and
+    (
+      tuple.getElt(0) = fromNode.asExpr() and
+      tuple.getElt(1) = toNode.asExpr()
+    )
+  )
+}
+
+/**
+ * @description
+ * ----------------------
  * Propagate the data flow from getAttr operation when object is tainted.
  */
 predicate additionalFlowStepGetAttr(DataFlow::Node fromNode, DataFlow::Node toNode) {
@@ -65,4 +95,22 @@ predicate additionalFlowStepGetAttr(DataFlow::Node fromNode, DataFlow::Node toNo
     toNode = addrRead
   )
 }
+
+/**
+ * @description
+ * ----------------------
+ * Propagate the data flow from getAttr operation when key is tainted.
+ */
+predicate additionalFlowStepGetAttrReverse(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  // Propagate taint on every getValue operation with the polluted key
+  // key -> getattr(obj, key)
+  exists( DataFlow::Node getattrCall |
+    isGetattrCall(_, fromNode.asExpr(), getattrCall.asExpr()) and
+    (
+      DataFlow::localFlow(getattrCall, toNode) or
+      getattrCall = toNode
+    )
+  )
+}
+
 }
