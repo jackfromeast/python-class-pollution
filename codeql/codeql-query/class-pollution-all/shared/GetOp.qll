@@ -28,7 +28,7 @@ predicate isGetItemCall(Expr obj, Expr key, Call call) {
     callNode.asExpr() = call and
     callNode.getMethodName() = "get" and
     callNode.getObject().asExpr() = obj and
-    call.getAnArg() = key
+    call.getArg(0) = key
   )
 }
 
