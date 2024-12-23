@@ -1,4 +1,5 @@
 from glom import assign
+import subprocess
 import random
 
 class Animal:
@@ -9,6 +10,4 @@ class Animal:
 
 obj = Animal('cat', 11)
 
-print(assign(obj, '__init__.__globals__.__name__', 'polluted'))
-
-print(__name__)
+assign(obj, '__init__.__globals__.subprocess.os.__name__', 'polluted')

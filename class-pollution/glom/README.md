@@ -70,6 +70,23 @@ def _t_eval(target, _t, scope):
                 pae = PathAccessError(e, Path(_t), i // 2)
 ```
 
+```
+def _assign_op(dest, op, arg, val, path, scope):
+    """helper method for doing the assignment on a T operation"""
+    if op == '[':
+        dest[arg] = val
+    elif op == '.':
+        setattr(dest, arg, val)
+    elif op == 'P':
+        _assign = scope[TargetRegistry].get_handler('assign', dest)
+        try:
+            _assign(dest, arg, val)
+        except Exception as e:
+            raise PathAssignError(e, path, arg)
+    else:  # pragma: no cover
+        raise ValueError('unsupported T operation for assignment')
+```
+
 ### PoC
 
 ```
