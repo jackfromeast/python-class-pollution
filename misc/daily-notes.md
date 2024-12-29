@@ -6,13 +6,13 @@
 
 **Python Basics: Class Polution Related**
 
-- Learn [magic methods](https://rszalski.github.io/magicmethods/#appendix1), [collections.abc](collections-abc), python basics including [different ways](#diff-attribute-access) of operating attributes of instances and classes
+- Learn [magic methods](https://rszalski.github.io/magicmethods/#appendix1), [collections.abc](#collections-abc), python basics including [different ways](#diff-attribute-access) of operating attributes of instances and classes
 - Learn object [attribute resolution order](#ARO) of python interpreter
 - Learn some python Descriptor stuff, primarily the meaning of `__set__` and `__get__`
 
 **Project Related**
 
-- Went through Zhengyu's python class pollution repo and add a simple [clone script](../tasks/codeql-class-pollution-1k/clone.py) compliant to the project coding style.
+- Went through Zhengyu's python class pollution repo and add a simple [clone script](../tasks/codeql-class-pollution-1K/clone.py) compliant to the project coding style.
 - Learn part of python [codel QL basics at](#ql-basics) official website.
 
 ## Todo Tomorrow
@@ -39,14 +39,14 @@ vars(instance)[key] = value
 ```
 
 ### <a name="ARO">**Python attribute resolution order**</a>
-A:https://docs.python.org/3/reference/datamodel.html#id4
+https://docs.python.org/3/reference/datamodel.html#id4
 
 - First lookup the namespace of an instance, implemented as a dictionary where the attribute references are searched, e.g. `vars(INSTANCE)`  retrieved from the `INSTANCE.__dict__`
 - If the attribute is not found there, then look up the attribute at instance’s class attributes. e.g.  `vars(INSTANCE.__class__)`  retrieved from the `INSTANCE.__class__.__dict__`
 - If a class attribute is found that is a user-defined function object, it is transformed into an instance method object whose [`__self__`](https://docs.python.org/3/reference/datamodel.html#method.__self__) attribute is the instance. Static method and class method objects are also transformed;
 - If no class attribute is found, and the object’s class has a [`__getattr__()`](https://docs.python.org/3/reference/datamodel.html#object.__getattr__) method, that is called to satisfy the lookup.
 
-### <a name="collections-abc">**collection.abc: what makes `dict` as a “mapping type”?**</a>
+### <a name="collections-abc">**Collection.abc: what makes `dict` a “mapping type”?**</a>
 I was curious why `dict` class is recognized as a mapping type according to the python doc, since the parent class and superclass of the `dict` is `object` class. There is no indication that `dict` is related to `mapping` from the class inheritance relationship. After some research, everything points to the abstract base class protocol in Python.
 
 In Python, the interface protocols of container data type are defined by the collection.abc.Mapping module. According to its protocol, a mapping type in Python is any object that implements the following methods: 
