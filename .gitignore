@@ -3,3 +3,9 @@ venv
 codebase
 *.pyc
 *-db
+.DS_Store
+codeql/tests/merge/test-codebase/test
+codeql/tests/merge/test-codebase/test.sarif
+crawler/test.js
+crawler/node_modules
+crawler/package-lock.json

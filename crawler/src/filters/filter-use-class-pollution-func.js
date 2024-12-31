@@ -19,7 +19,7 @@ import { glob } from 'glob';
 //       assign(obj, ...)
 const sourcePattern = {
   "glom.assign": /\bglom\.assign\(/,
-  "glom.assign.direct_import": /glom\s+import\s+assign/,
+  "glom.assign.direct_import": /\bglom\s+import\s+.*\bassign\b/,
   "glom.assign.as": [
     /import\s+glom\s+as/,
     /\.assign\(/
@@ -29,7 +29,7 @@ const sourcePattern = {
     /\bassign\(/
   ],
   "pydash.set_": /\bpydash.set\_\(/,
-  "pydash.set_.direct_import": /pydash\s+import\s+set_/,
+  "pydash.set_.direct_import": /\bpydash\s+import\s+.*\bset_\b/,
   "pydash.set_.as": [
     /import\s+pydash\s+as/,
     /\.set_\(/
@@ -39,7 +39,7 @@ const sourcePattern = {
     /\bset_\(/
   ],
   "deepdiff.Delta": /\bdeepdiff.Delta\(/,
-  "deepdiff.Delta.direct_import": /deepdiff\s+import\s+Delta/,
+  "deepdiff.Delta.direct_import": /\bdeepdiff\s+import\s+.*\bDelta\b/,
   "deepdiff.Delta.as": [
     /import\s+deepdiff\s+as/,
     /\.Delta\(/,

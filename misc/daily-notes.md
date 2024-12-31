@@ -1,6 +1,6 @@
 # Daily-Notes
 
-# 12/18/2024
+# 12/28/2024
 
 ## Recap
 
@@ -82,3 +82,17 @@ CodeQL AST tree: https://codeql.github.com/docs/codeql-language-guides/codeql-li
 
 #### Control Flow Classes
 TODO, the intro doc seems not provide enough basic knowledge for this.
+
+# 12/31/2024
+
+### Pydash vulnerability patch
+
+Patch: https://github.com/dgilland/pydash/blob/f4112f61ddb02e5181e781709d775838c9978b97/src/pydash/helpers.py#L211
+
+```python
+#: Object keys that are restricted from access via path access.
+RESTRICTED_KEYS = ("__globals__", "__builtins__")
+```
+
+**Pydash class pollution vulnerability exists before v6.0.0**, since the patch was introduced at it: https://github.com/dgilland/pydash/commit/6ff0831ad285fff937cafd2a853f20cc9ae92021
+
