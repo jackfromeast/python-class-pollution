@@ -1,0 +1,32 @@
+# OPENAI:
+#   API_KEY: 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
+#   PROJECT: proj_Zyxik1KSkIJm7M3cnYZ505b7
+#   ORGANIZATION: org-HzG5nLitWbas6By11BIsiJTw
+
+GITHUB:
+  TOKEN: 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
+
+TASK:
+  LOG_PATH: "/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/logs/class-pollution-application-2020-star-100.log"
+  OUTPUT_PATH: "/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/output/class-pollution-application-2020-star-100.json"
+  TEMP_PATH: "/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/tmp"
+  
+  GITHUB_FILTER:
+    START_DATE: 2020-02-05
+    END_DATE: 2020-12-31
+    TIME_RANGE: Week # Month
+    STARS: 100
+    LANGUAGE: Python
+
+  FILTERS:
+    # - FILE: "/home/jackfromeast/Desktop/Blurt/crawler/src/filters/filter-has-javascript.js"
+    #   FILTER_NAME: "filterHasJavaScriptCode"
+
+    - FILE: "/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/filter-use-class-pollution-func.js"
+      FILTER_NAME: "filterUseClassPollutionLibraryLocalCheck"
+
+    # - FILE: "/home/jackfromeast/Desktop/Blurt/crawler/src/filters/filter-unpicker.js"
+    #   FILTER_NAME: "filterUnpicker"
+
+    # - FILE: "/home/jackfromeast/Desktop/Blurt/crawler/src/filters/filter-is-llm-app.js"
+    #   FILTER_NAME: "isLLMAppFilter"

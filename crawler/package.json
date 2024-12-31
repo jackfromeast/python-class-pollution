@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@octokit/core": "^6.1.2",
+    "glob": "^11.0.0",
+    "js-yaml": "^4.1.0",
+    "log4js": "^6.9.1",
+    "openai": "^4.68.4"
+  }
+}

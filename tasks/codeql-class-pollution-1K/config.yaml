@@ -3,17 +3,17 @@ SCHEDULER:
 
   # Path to workspace (base directory for storing results)
   # WORKSPACE/output/ will be created to store the results
-  WORKSPACE: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output"
+  WORKSPACE: "/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/tasks/codeql-class-pollution-1K/output"
 
   # Option: "seed" or "list"
   MODE: "list"
   REPO_URL: "https://github.com/jupyterhub/repo2docker.git"
-  REPO_URL_LIST: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/input/github-20141001-20241001-stars-1000.txt"
+  REPO_URL_LIST: "/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/tasks/codeql-class-pollution-1K/input/github-20141001-20241001-stars-1000.txt"
   URL_LIST_FROM: 5171
   URL_LIST_TO: 7600
 
   # Maximum number of workers to run in parallel
-  MAX_WORKER: 1
+  MAX_WORKER: 10
 
   # Time budget for each worker to analyze each repo
   # TIMEOUT_PER_WORKER > CODEQL.TIMEOUT * Queries.length
