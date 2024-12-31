@@ -17,6 +17,7 @@ TASK:
     TIME_RANGE: Week # Month
     STARS: 100
     LANGUAGE: Python
+    MAX_SIZE: 1048576
 
   FILTERS:
     # - FILE: "/home/jackfromeast/Desktop/Blurt/crawler/src/filters/filter-has-javascript.js"

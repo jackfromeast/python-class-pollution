@@ -97,6 +97,7 @@ export class Spider {
       const filteredResult = [];
       for (const repo of result) {
         try {
+          if (CONFIG.TASK.GITHUB_FILTER.MAX_SIZE && repo.size > CONFIG.TASK.GITHUB_FILTER.MAX_SIZE) { continue; }
           if (await filterFunction(repo, this)) { filteredResult.push(repo);}
         } catch (error) {
           this.logger.error(`Error while filtering: ${error}`);
