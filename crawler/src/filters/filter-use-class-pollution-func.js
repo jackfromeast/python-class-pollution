@@ -19,33 +19,33 @@ import { glob } from 'glob';
 //       assign(obj, ...)
 const sourcePattern = {
   "glom.assign": /\bglom\.assign\(/,
-  "glom.assign.direct_import": /glom import assign/,
+  "glom.assign.direct_import": /glom\s+import\s+assign/,
   "glom.assign.as": [
-    /import glom as/,
+    /import\s+glom\s+as/,
     /\.assign\(/
   ],
   "glom.assign.wildcard_import": [
-    /from glom import \*/,
+    /from\s+glom\s+import\s+\*/,
     /\bassign\(/
   ],
   "pydash.set_": /\bpydash.set\_\(/,
-  "pydash.set_.direct_import": /pydash import set_/,
+  "pydash.set_.direct_import": /pydash\s+import\s+set_/,
   "pydash.set_.as": [
-    /import pydash as/,
+    /import\s+pydash\s+as/,
     /\.set_\(/
   ],
   "pydash.set_.wildcard_import": [
-    /from pydash import \*/,
+    /from\s+pydash\s+import\s+\*/,
     /\bset_\(/
   ],
   "deepdiff.Delta": /\bdeepdiff.Delta\(/,
-  "deepdiff.Delta.direct_import": /deepdiff import Delta/,
+  "deepdiff.Delta.direct_import": /deepdiff\s+import\s+Delta/,
   "deepdiff.Delta.as": [
-    /import deepdiff as/,
+    /import\s+deepdiff\s+as/,
     /\.Delta\(/,
   ],
   "deepdiff.Delta.wildcard_import": [
-    /from deepdiff import \*/,
+    /from\s+deepdiff\s+import\s+\*/,
     /\bDelta\(/,
   ]
 }
@@ -135,19 +135,22 @@ async function search(repositoryPath, spider) {
     }
   });
   // Evaluate multi-condition patterns
+  let match_num = 0;
   for (const [patternName, resultSet] of Object.entries(patternResults)) {
     if (Array.isArray(sourcePattern[patternName])) {
       // Check if all conditions are satisfied
       if (resultSet.size === sourcePattern[patternName].length) {
         spider.logger.info(`All conditions for pattern ${patternName} matched in repository: ${repositoryPath}`);
+        match_num += 1;
         result = true;
       }
     } else if (resultSet) {
       // Simple patterns that matched
+      match_num += 1;
       result = true;
     }
   }
-
+  spider.logger.info(`Found ${match_num}/${Object.keys(sourcePattern).length} patterns in repository: ${repositoryPath}`);
   return result;
 }
 
