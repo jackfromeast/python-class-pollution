@@ -10,6 +10,8 @@
 + Payload: ```otx.engine.hpo.hpo_trial.set_using_dot_delimited_key("__init__.__globals__.__name__", "polluted", obj)```
 + Foundby: BlackPyrl
 + Report: Pending
++ Type: Lib
++ Exploitability: Low
 
 ### Library
 

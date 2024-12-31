@@ -10,6 +10,8 @@
 + Payload: ```pydash.set_(obj1, '__init__.__globals__.__name__', "polluted")```
 + Foundby: abdulrah33m
 + Report: https://blog.abdulrah33m.com/prototype-pollution-in-python/
++ Type: Lib
++ Exploitability: High
 
 ### Library
 

@@ -10,6 +10,9 @@
 + Payload: ```glom.assign(obj, '__init__.__globals__.__name__', 'polluted')```
 + Foundby: BlackPyrl
 + Report: Pending
++ Type: Lib
++ Exploitability: High
+
 
 ### Library
 
