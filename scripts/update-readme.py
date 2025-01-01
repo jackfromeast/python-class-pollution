@@ -7,7 +7,7 @@ output_file = 'README.md'
 
 readme_content = """## Python Class Pollution Vulnerability and its Gadgets
 
-> A snake in the (polluted) grass
+> The Python World-Class Pollution: Understanding the New Python Prototype Pollution Vulnerability and its Consequnces
 
 This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
 
