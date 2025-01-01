@@ -95,43 +95,53 @@ async function search(repositoryPath, spider) {
 
   files.forEach(file => {
     if (file.includes('test') || file.includes('example') || file.includes('demo')) { return; }
+    // catch the error during the file check. e.g. soft or hard link to an unexisting file
+    // will throw an ENOENT error
+    try {
+      // Ensure the path is a file before attempting to read it
+      if (fs.statSync(file).isFile()) {
+        try {
+          const fileContent = fs.readFileSync(file, 'utf-8');
+          const lines = fileContent.split('\n');
 
-    // Ensure the path is a file before attempting to read it
-    if (fs.statSync(file).isFile()) {
-      try {
-        const fileContent = fs.readFileSync(file, 'utf-8');
-        const lines = fileContent.split('\n');
-
-        lines.forEach((line, lineNumber) => {
-          for (const [patternName, pattern] of Object.entries(sourcePattern)) {
-            if (Array.isArray(pattern)) {
-              // Multi-condition pattern
-              pattern.forEach((subPattern, index) => {
-                if (subPattern.test(line)) {
-                  if (!patternResults[patternName].has(index)) {
-                    spider.logger.info(
-                      `Found sub-pattern ${index + 1} of ${patternName} in file ${file} at line ${lineNumber + 1}`
-                    );
+          lines.forEach((line, lineNumber) => {
+            for (const [patternName, pattern] of Object.entries(sourcePattern)) {
+              if (Array.isArray(pattern)) {
+                // Multi-condition pattern
+                pattern.forEach((subPattern, index) => {
+                  if (subPattern.test(line)) {
+                    if (!patternResults[patternName].has(index)) {
+                      spider.logger.info(
+                        `Found sub-pattern ${index + 1} of ${patternName} in file ${file} at line ${lineNumber + 1}`
+                      );
+                    }
+                    patternResults[patternName].add(index); // Mark the sub-pattern as matched
                   }
-                  patternResults[patternName].add(index); // Mark the sub-pattern as matched
+                });
+              } else {
+                // Simple pattern
+                if (pattern.test(line)) {
+                  patternResults[patternName] = true;
+                  spider.logger.info(`Found pattern ${patternName} in file ${file} at line ${lineNumber + 1}`);
                 }
-              });
-            } else {
-              // Simple pattern
-              if (pattern.test(line)) {
-                patternResults[patternName] = true;
-                spider.logger.info(`Found pattern ${patternName} in file ${file} at line ${lineNumber + 1}`);
               }
             }
-          }
-        });
-      } catch (error) {
-        spider.logger.error(`Error reading file ${file}: ${error.message}`);
-        // console.log(`Error reading file ${file}: ${error.message}`);
+          });
+        } catch (error) {
+          spider.logger.error(`Error reading file ${file}: ${error.message}`);
+          // console.log(`Error reading file ${file}: ${error.message}`);
+        }
+      } else {
+        spider.logger.warn(`Skipping non-file path: ${file}`);
+        // console.log(`Skipping non-file path: ${file}`);
       }
-    } else {
-      spider.logger.warn(`Skipping non-file path: ${file}`);
-      // console.log(`Skipping non-file path: ${file}`);
+    } catch (error) {
+      // Catch errors during file checks
+      if (error.code === 'ENOENT') {
+        spider.logger.warn(`File not found: ${file}`);
+      } else {
+        spider.logger.error(`Error checking file ${file}: ${error.message}`);
+      }
     }
   });
   // Evaluate multi-condition patterns
