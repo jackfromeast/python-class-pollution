@@ -18,20 +18,20 @@ import { glob } from 'glob';
 // 2: from glom import assign
 //       assign(obj, ...)
 const sourcePattern = {
-  "glom.assign": /\bglom\.assign\(/,
-  "glom.assign.direct_import": /\bglom\s+import\s+.*\bassign\b/,
+  "glom.assign": /\bglom\.assign\(/i,
+  "glom.assign.direct_import": /\bglom\s+import\s+.*\bassign\b/i,
   "glom.assign.as": [
-    /import\s+glom\s+as/,
-    /\.assign\(/
+    /import\s+.*glom\s+as/,
+    /\.assign\(/i
   ],
   "glom.assign.wildcard_import": [
     /from\s+glom\s+import\s+\*/,
-    /\bassign\(/
+    /\bassign\(/i
   ],
   "pydash.set_": /\bpydash.set\_\(/,
   "pydash.set_.direct_import": /\bpydash\s+import\s+.*\bset_\b/,
   "pydash.set_.as": [
-    /import\s+pydash\s+as/,
+    /import\s+.*pydash\s+as/,
     /\.set_\(/
   ],
   "pydash.set_.wildcard_import": [
@@ -41,7 +41,7 @@ const sourcePattern = {
   "deepdiff.Delta": /\bdeepdiff.Delta\(/,
   "deepdiff.Delta.direct_import": /\bdeepdiff\s+import\s+.*\bDelta\b/,
   "deepdiff.Delta.as": [
-    /import\s+deepdiff\s+as/,
+    /import\s+.*deepdiff\s+as/,
     /\.Delta\(/,
   ],
   "deepdiff.Delta.wildcard_import": [
@@ -81,7 +81,7 @@ async function download(id, repository, spider) {
 }
 
 
-async function search(repositoryPath, spider) {
+async function search(repositoryPath) {
   const files = glob.sync(`${repositoryPath}/**/*.py`);
   const patternResults = {}; // To track patterns and their matches
   let result = false;
@@ -160,4 +160,26 @@ async function deleteRepo(repositoryPath) {
   fs.rmSync(repositoryPath, { recursive: true, force: true });
   fs.rmSync(repositoryPath + '-codeql-db', { recursive: true, force: true });
 }
-search("/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/test", 1)
+
+
+async function test(testPath) {
+  const files = glob.sync(`${testPath}/**/*.py`);
+
+  let total_repos = files.length;
+  let vulnerable_repos = 0;
+  for (const file of files) {
+    const tmpPath = path.join(testPath+'-tmp', path.basename(file));
+    fs.mkdirSync(tmpPath, { recursive: true });
+    fs.copyFileSync(file, path.join(tmpPath, path.basename(file)));
+    const result = await search(tmpPath);
+    if (result) {
+      vulnerable_repos += 1;
+    } else {
+      console.log(`[-] No class pollution found in: ${file}`);
+    }
+    fs.rmSync(tmpPath, { recursive: true, force: true });
+  }
+  console.log(`Total repos: ${total_repos}, vulnerable repos: ${vulnerable_repos}`);
+}
+
+test("/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/test")

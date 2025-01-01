@@ -18,20 +18,20 @@ import { glob } from 'glob';
 // 2: from glom import assign
 //       assign(obj, ...)
 const sourcePattern = {
-  "glom.assign": /\bglom\.assign\(/,
-  "glom.assign.direct_import": /\bglom\s+import\s+.*\bassign\b/,
+  "glom.assign": /\bglom\.assign\(/i,
+  "glom.assign.direct_import": /\bglom\s+import\s+.*\bassign\b/i,
   "glom.assign.as": [
-    /import\s+glom\s+as/,
-    /\.assign\(/
+    /import\s+.*glom\s+as/,
+    /\.assign\(/i
   ],
   "glom.assign.wildcard_import": [
     /from\s+glom\s+import\s+\*/,
-    /\bassign\(/
+    /\bassign\(/i
   ],
   "pydash.set_": /\bpydash.set\_\(/,
   "pydash.set_.direct_import": /\bpydash\s+import\s+.*\bset_\b/,
   "pydash.set_.as": [
-    /import\s+pydash\s+as/,
+    /import\s+.*pydash\s+as/,
     /\.set_\(/
   ],
   "pydash.set_.wildcard_import": [
@@ -41,7 +41,7 @@ const sourcePattern = {
   "deepdiff.Delta": /\bdeepdiff.Delta\(/,
   "deepdiff.Delta.direct_import": /\bdeepdiff\s+import\s+.*\bDelta\b/,
   "deepdiff.Delta.as": [
-    /import\s+deepdiff\s+as/,
+    /import\s+.*deepdiff\s+as/,
     /\.Delta\(/,
   ],
   "deepdiff.Delta.wildcard_import": [
