@@ -47,7 +47,6 @@ predicate isGetItemOp(Expr obj, Expr key, Expr getItemExpr) {
  * @description
  * ----------------------
  * Check if the expression represents a getAttr operation like `getattr(obj, key)`.
- * 
  */
 predicate isGetattrCall(Expr obj, Expr key, Call call) {
   exists (
