@@ -2,13 +2,12 @@
 
 #### 1/ Broader Definition of Class Pollution
 
-1. Attribute-only Pollution. 
+1. Single-level Recursive Pollution. Refer to "Mass Assignment vulnerbaility in Python".
+  + https://snyk.io/blog/the-dangers-of-setattr-avoiding-mass-assignment/
+
+2. Attribute-only Recursive Pollution. 
   + Some vulnerabilities allow recursive pollution of an object’s attributes without affecting any dictionary.
   + We could achieve DoS attack, but cannot pollute any global variables.
-
-2. Item-only Pollution. Refer to "Mass Assignment vulnerbaility in Python".
-  + https://huntr.com/bounties/a8000cce-0ecb-4820-9cfb-57ba6f4d58a2
-  + https://huntr.com/bounties/7fc1b78e-7faf-4f40-961d-61e53dac81ce
 
 #### 2/ Improve CodeQL Query
 
