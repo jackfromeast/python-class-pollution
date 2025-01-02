@@ -4,6 +4,7 @@ import semmle.python.dataflow.new.internal.DataFlowPublic
 import Utils::ClassPolltionUtils
 import GetOp::ClassPollutionGetOp
 
+
 module ClassPollutionAdditionalFlowStep {
 
 /**

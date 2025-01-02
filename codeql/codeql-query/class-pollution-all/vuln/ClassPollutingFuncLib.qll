@@ -145,7 +145,7 @@ predicate isSplitResult(DataFlow::Node list) {
 }
 
 predicate isItemSettingOrAttributeSetting(DataFlow::Node obj, DataFlow::Node key, DataFlow::Node val) {
-  isSubscriptAssignment(obj.asExpr(), key.asExpr(), val.asExpr(), _) or
+  isSetItemExpr(obj.asExpr(), key.asExpr(), val.asExpr()) or
   isSetattrCall(obj.asExpr(), key.asExpr(), val.asExpr(), _)
 }
 
@@ -220,17 +220,29 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   }
 
   predicate isSink(DataFlow::Node sink, FlowState state) {
-    (isSubscriptAssignment(_, sink.asExpr(), _, _) and state instanceof UsedAsKeyInSetItemFlowState) or
-    (isSubscriptAssignment(sink.asExpr(), _, _, _) and state instanceof UsedAsBaseObjectInSetItemFlowState) or
+    (isSetItemExpr(_, sink.asExpr(), _) and state instanceof UsedAsKeyInSetItemFlowState) or
+    (isSetItemExpr(sink.asExpr(), _, _) and state instanceof UsedAsBaseObjectInSetItemFlowState) or
     (isSetattrCall(_, sink.asExpr(), _, _) and state instanceof UsedAsKeyInSetAttrFlowState) or
     (isSetattrCall(sink.asExpr(), _, _, _) and state instanceof UsedAsBaseObjectInSetAttrFlowState)
   }
 
-  predicate isAdditionalFlowStep(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  predicate isAdditionalFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
     additionalFlowStepGetAttr(fromNode, toNode) or
     additionalFlowStepGetItem(fromNode, toNode) or
-    additionalFlowStepGetAttrReverse(fromNode, toNode) or
-    additionalFlowStepGetItemReverse(fromNode, toNode) or
+    (
+      additionalFlowStepGetAttrReverse(fromNode, toNode) and
+      (
+        toState instanceof UsedAsBaseObjectInSetAttrFlowState or
+        toState instanceof UsedAsBaseObjectInSetItemFlowState
+      )
+    ) or
+    (
+      additionalFlowStepGetItemReverse(fromNode, toNode) and
+      (
+        toState instanceof UsedAsBaseObjectInSetAttrFlowState or
+        toState instanceof UsedAsBaseObjectInSetItemFlowState
+      )
+    ) or
 
     // source -> filter(none, source)
     exists(Call call, DataFlow::Node immediateNode, Name name |
@@ -329,7 +341,7 @@ predicate isClassPollutedKeyNames(DataFlow::Node source) {
  * Holds if the assignment can overwrite the dunder attributes/items of the object.
  */
 predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj, Flow::PathNode setItemKey, Flow::PathNode sourceKeyToObj, Flow::PathNode sourceKeyToKey) {
-  isSubscriptAssignment(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), _, _) and
+  isSetItemExpr(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), _) and
   (
     isClassPollutedKeyNames(sourceKeyToObj.getNode()) and
     isClassPollutedKeyNames(sourceKeyToKey.getNode()) and
