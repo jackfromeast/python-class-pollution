@@ -11,12 +11,8 @@ import { glob } from 'glob';
  * @returns {Boolean} - True if the repository contains Python code using vulnerabile libraries, False otherwise.
  */
 
-// @Library.Func.direct_import
-// Match direct import with alias or not 
-// 1: from glom import assign as a
-//       a(obj, ...)
-// 2: from glom import assign
-//       assign(obj, ...)
+// Support multi pattern match:
+// As long as all patterns appear in any files of the current scanned repo
 const sourcePattern = {
   "glom.assign": /\bglom\.assign\(/i,
   "glom.assign.direct_import": /\bglom\s+import\s+.*\bassign\b/i,
@@ -63,7 +59,7 @@ export async function filterUseClassPollutionLibraryLocalCheck(repo, spider) {
   const repository = repo;
   const repoPath = await download(id, repository, spider);
   const result = await search(repoPath, spider);
-  if (result == false) { await deleteRepo(repoPath); }
+  await deleteRepo(repoPath);
   return result;
 }
 
@@ -74,7 +70,28 @@ async function download(id, repository, spider) {
   }
 
   spider.logger.info(`Downloading repository: ${repository.clone_url}`);
-  execSync(`git clone ${repository.clone_url} ${repoPath}`, { stdio: 'inherit' });
+  try {
+    execSync(`git clone ${repository.clone_url} ${repoPath}`, { env: {
+      GIT_TERMINAL_PROMPT: 0
+    } ,stdio: 'inherit' });
+  } catch (error) {
+    let retry = 3;
+    while (retry > 0) {
+      try {
+        execSync(`git clone ${repository.clone_url} ${repoPath}`, { env: {
+          // Bypass the authentication prompt
+          GIT_TERMINAL_PROMPT: 0
+        } ,stdio: 'inherit' });
+        break;
+      } catch (error) {
+        spider.logger.error(`[-] Error during git clone: ${error.message}`);
+        retry -= 1;
+      }
+    }
+    if (retry === 0) {
+      throw new Error(`Failed to git clone ${repository.clone_url} ${repoPath} after multiple attempts`);
+    }
+  }
   return repoPath;
 }
 
