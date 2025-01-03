@@ -1,6 +1,6 @@
 ## Python Class Pollution Vulnerability and its Gadgets
 
-> A snake in the (polluted) grass
+> The Python World-Class Pollution: Understanding the New Python Prototype Pollution Vulnerability and its Consequnces
 
 This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
 
@@ -13,3 +13,4 @@ This repository contains a list of packages that are vulnerable to class polluti
 | [glom](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/glom/README.md) | Lib | 1.9K | v24.11.0 | ```glom.assign(obj, '__init__.__globals__.__name__', 'polluted')``` | BlackPyrl | Pending | N/A | High|
 | [pydash](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/pydash/README.md) | Lib | 1.3K | v5.1.2 | ```pydash.set_(obj1, '__init__.__globals__.__name__', "polluted")``` | abdulrah33m | Fixed | N/A | High|
 | [OpenVINO™ Training Extensions](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/otx/README.md) | Lib | 1.2K | v2.2.2 | ```otx.engine.hpo.hpo_trial.set_using_dot_delimited_key("__init__.__globals__.__name__", "polluted", obj)``` | BlackPyrl | Pending | N/A | Low|
+| [magicattr](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/magicattr/README.md) | Lib | 17 | v3.9.0 | ```magicattr.set(bob, '__class__.__init__.__globals__["__name__"]', "polluted")``` | BlackPyrl | Pending | N/A | High|
