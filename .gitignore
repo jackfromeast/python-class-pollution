@@ -9,3 +9,8 @@ codeql/tests/merge/test-codebase/test.sarif
 crawler/test.js
 crawler/node_modules
 crawler/package-lock.json
+crawler/config-*.yml
+crawler/logs/*
+crawler/output/*
+crawler/src/filters/filter-use-class-pollution-func-old.js
+crawler/src/filters/filter-use-class-pollution-func-test-old.js
