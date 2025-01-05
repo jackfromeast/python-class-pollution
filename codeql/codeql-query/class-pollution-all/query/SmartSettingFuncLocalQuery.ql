@@ -16,5 +16,5 @@ import python
 import vuln.SmartSettingFuncLib::ClassPollutionSmartSetting
 
 from Function func
-where isSmartSettingFuncLocal(func, _, _)
+where isSmartSettingFuncLocal(func)
 select func, "The function has both setItem and setAttr operation in its body."
