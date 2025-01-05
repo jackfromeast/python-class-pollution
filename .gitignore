@@ -4,3 +4,4 @@ codebase
 *.pyc
 *-db
 __pycache__
+output
