@@ -1,0 +1,6 @@
+tmp
+venv
+codebase
+*.pyc
+*-db
+__pycache__
