@@ -24,31 +24,18 @@ module ClassPollutionSmartSetting {
  *  elif (allow_override or not hasattr(obj, key)) and obj is not None:
  *    setattr(obj, key, value)
  */
-predicate isSmartSettingFuncLocal(Function func) {
+predicate isSmartSettingFuncLocal(Function func, ControlFlowNode setItemNode, ControlFlowNode setattrNode) {
   exists (
     Expr obj1, Expr key1, Expr val1,
-    Expr obj2, Expr key2, Expr val2,
-    Assign subscriptAssign, Call setItemCall, Call setattrCall |
-    (
-      isSubscriptAssignment(obj1, key1, val1, subscriptAssign) and
-      isSetattrCall(obj1, key1, val1, setattrCall) and
-      subscriptAssign.getScope() = func.getEvaluatingScope() and
-      setattrCall.getScope() = func.getEvaluatingScope()
-    ) or
-    ( 
-      isSetItemCall(obj1, key1, val1, setItemCall) and
-      isSetattrCall(obj2, key2, val2, setattrCall) and
-      setItemCall.getScope() = func.getEvaluatingScope() and
-      setattrCall.getScope() = func.getEvaluatingScope()
-    ) and 
-    // isSetItemCall(obj1, key1, val1, setItemCall)
-    // isSubscriptAssignment(obj1, key1, val1, subscriptAssign) and
-    // subscriptAssign.getScope() = func.getEvaluatingScope() and
-    // setattrCall.getScope() = func.getEvaluatingScope() and
+    Expr obj2, Expr key2, Expr val2 |
+    isSetItemExpr(obj1, key1, val1, setItemNode) and
+    isSetAttrExpr(obj2, key2, val2, setattrNode) and
+    setItemNode.getScope() = func.getEvaluatingScope() and
+    setattrNode.getScope() = func.getEvaluatingScope() and
     refersToSameVariable(obj1, obj2) and
     refersToSameVariable(key1, key2) and
     refersToSameVariable(val1, val2)
-    )
+  )
 }
 
 }

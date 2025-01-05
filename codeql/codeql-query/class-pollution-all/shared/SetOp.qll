@@ -77,16 +77,24 @@ predicate isSetItemCall(Expr obj, Expr key, Expr val, Call call) {
   // )
 }
 
-predicate isSetItemExpr(Expr obj, Expr key, Expr val) {
+predicate isSetItemExpr(Expr obj, Expr key, Expr val, ControlFlowNode setItemNode) {
   exists (Call call |
-    isSetItemCall(obj, key, val, call)
+    isSetItemCall(obj, key, val, call) and 
+    call.getAFlowNode() = setItemNode
   )
   or 
   exists (Assign assign |
-    isSubscriptAssignment(obj, key, val, assign)
+    isSubscriptAssignment(obj, key, val, assign) and
+    assign.getATarget().getAFlowNode() = setItemNode
   )
 }
 
+predicate isSetAttrExpr(Expr obj, Expr key, Expr val, ControlFlowNode setattrNode) {
+  exists (Call call |
+    isSetattrCall(obj, key, val, call) and 
+    call.getAFlowNode() = setattrNode
+  )
+}
 
 /**
  * @description
