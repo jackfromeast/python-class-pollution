@@ -63,5 +63,19 @@ module ClassPolltionUtils {
       expr1.(Name).getId() = expr2.(Name).getId()
     )
   }
+  
+  /**
+   * Predicate to check if a call expression is an external library call.
+   */
+  predicate isBuiltinFuncCall(Call call) {
+    exists(CallableValue cv |
+      cv.getACall().getNode() = call and
+      cv.isBuiltin() 
+    )
+  }
+
+  predicate hasSameLocalSource(DataFlow::Node source, DataFlow::Node sink) {
+    source.getALocalSource() = sink.getALocalSource()
+  }
 
 }

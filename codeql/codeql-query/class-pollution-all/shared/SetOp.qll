@@ -58,23 +58,23 @@ predicate isSetItemCall(Expr obj, Expr key, Expr val, Call call) {
     callNode.getObject().asExpr() = obj and
     callNode.getArg(0).asExpr() = key and
     callNode.getArg(1).asExpr() = val
-  ) or
+  ) 
 
   // Case 4: External or library calls: e.g., library.setSomething(obj, key, val)
-  exists (Name funcName |
-    (
-      funcName.getId().matches("%set%") or
-      funcName.getId().matches("%put%") or
-      funcName.getId().matches("%update%")
-    ) and
-    call.getFunc() = funcName and
-
-    // We don't assume fixed argument ordering for library calls,
-    // so we check that obj, key, and val appear among the arguments.
-    call.getAnArg() = obj and
-    call.getAnArg() = key and
-    call.getAnArg() = val
-  )
+  // exists (Name funcName |
+  //   (
+  //     funcName.getId().matches("%set\\_%") or
+  //     funcName.getId().matches("%put\\_%") or
+  //     funcName.getId().matches("%update\\_%")
+  //   ) and
+  //   not isBuiltinFuncCall(call) and
+  //   call.getFunc() = funcName and
+  //   // We don't assume fixed argument ordering for library calls,
+  //   // so we check that obj, key, and val appear among the arguments.
+  //   call.getAnArg() = obj and
+  //   call.getAnArg() = key and
+  //   call.getAnArg() = val
+  // )
 }
 
 predicate isSetItemExpr(Expr obj, Expr key, Expr val) {
@@ -96,7 +96,6 @@ predicate isSetItemExpr(Expr obj, Expr key, Expr val) {
  * or external library calls whose name contains "setattr" or "set".
  */
 predicate isSetattrCall(Expr obj, Expr key, Expr val, Call call) {
-
   //
   // Case 1: Direct calls to `setattr(obj, key, val)`
   //
@@ -130,24 +129,24 @@ predicate isSetattrCall(Expr obj, Expr key, Expr val, Call call) {
     call.getArg(0) = obj and
     call.getArg(1) = key and
     call.getArg(2) = val
-  ) or
+  ) 
 
   //
   // Case 4: External library calls whose name contains "setattr" or "set"
   //
-  exists (Name funcName |
-    (
-      funcName.getId().matches("%setattr%") or
-      funcName.getId().matches("%set%")
-    ) and
-    call.getFunc() = funcName and
-
-    // We don't assume fixed argument positions for library calls,
-    // so we check that obj, key, and val all appear somewhere in the arguments.
-    call.getAnArg() = obj and
-    call.getAnArg() = key and
-    call.getAnArg() = val
-  )
+  // exists (Name funcName |
+  //   (
+  //     funcName.getId().matches("%setattr%") or
+  //     funcName.getId().matches("%set\\_%")
+  //   ) and
+  //   not isBuiltinFuncCall(call) and
+  //   call.getFunc() = funcName and
+  //   // We don't assume fixed argument positions for library calls,
+  //   // so we check that obj, key, and val all appear somewhere in the arguments.
+  //   call.getAnArg() = obj and
+  //   call.getAnArg() = key and
+  //   call.getAnArg() = val
+  // )
 }
 
 }

@@ -1,6 +1,7 @@
 import python
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
+import Utils::ClassPolltionUtils
 
 module ClassPollutionGetOp {
   
@@ -47,19 +48,22 @@ predicate isGetItemCall(Expr obj, Expr key, Call call) {
     callNode.getMethodName() = "pop" and
     callNode.getObject().asExpr() = obj and
     call.getArg(0) = key
-  ) or
+  ) 
 
   // Case 4: External library calls whose name contains "get" or similar
-  exists(Name funcName |
-    (
-      funcName.getId().matches("%get%") or
-      funcName.getId().matches("%item%") or
-      funcName.getId().matches("%field%")
-    ) and
-    call.getFunc() = funcName and
-    call.getAnArg() = obj and
-    call.getAnArg() = key
-  )
+  // exists(Name funcName |
+  //   (
+  //     funcName.getId().matches("%get\\_%") or
+  //     funcName.getId().matches("%getItem%") or
+  //     funcName.getId().matches("%get\\_item%") or
+  //     funcName.getId().matches("%getField%") or
+  //     funcName.getId().matches("%get\\_field%")
+  //   ) and
+  //   not isBuiltinFuncCall(call) and
+  //   call.getFunc() = funcName and
+  //   call.getAnArg() = obj and
+  //   call.getAnArg() = key
+  // )
 }
 
 
@@ -135,8 +139,10 @@ predicate isObjectGetattributeCall(Expr obj, Expr key, Call call) {
 predicate isLibraryWrapperCall(Expr obj, Expr key, Call call) {
   exists (Name funcName |
     (
-      funcName.getId().matches("%attr%")
+      funcName.getId().matches("%get%attr%") or
+      funcName.getId().matches("%attr%get%")
     ) and
+    not isBuiltinFuncCall(call) and
     call.getFunc() = funcName and
     call.getAnArg() = obj and
     call.getAnArg() = key

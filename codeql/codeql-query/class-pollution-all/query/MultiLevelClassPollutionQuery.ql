@@ -15,15 +15,26 @@
 import python
 import vuln.ClassPollutingFuncLib::ClassPollutionAssignment
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
+import semmle.python.dataflow.new.DataFlow
+import shared.Utils::ClassPolltionUtils
 
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 
+// predicate test(Flow::PathNode setItemBaseObj, Flow::PathNode setAttrBaseObj) {
+//   DataFlow::localFlow(setAttrBaseObj.getNode(), setItemBaseObj.getNode())
+// }
+
+// predicate test(DataFlow::Node setItemBaseObj, DataFlow::Node setAttrBaseObj) {
+//   setAttrBaseObj.getALocalSource() = setItemBaseObj.getALocalSource()
+// }
+
 from Flow::PathNode classPollutingKey, Flow::PathNode setItemKey, Flow::PathNode setAttrKey, string msg
 where
-  exists( Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode sourceC |
-    isClassPollutedAssignmentThroughItemSetting(_, setItemKey, sourceA, sourceC) and
-    isClassPollutedAssignmentThroughAttrSetting(_, setAttrKey, sourceB, classPollutingKey) and
-    sourceA.getNode() = sourceC.getNode()
+  exists( Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode sourceC, Flow::PathNode setItemBaseObj, Flow::PathNode setAttrBaseObj|
+    isClassPollutedAssignmentThroughItemSetting(setItemBaseObj, setItemKey, sourceA, sourceC) and
+    isClassPollutedAssignmentThroughAttrSetting(setAttrBaseObj, setAttrKey, sourceB, classPollutingKey) and
+    sourceA.getNode() = sourceC.getNode() and
+    hasSameLocalSource(setItemBaseObj.getNode(), setAttrBaseObj.getNode())
   )
   and 
   (
