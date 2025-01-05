@@ -55,8 +55,12 @@ module ClassPolltionUtils {
    * Predicate to check if two expressions refer to the same variable.
    */
   predicate refersToSameVariable(Expr expr1, Expr expr2) {
-    expr1 = expr2
-    or
+    // This only holds the expression-level equality, not the value-level equality.
+    // E.g., hasattr(obj, key)) and True
+    exists ( Value val1 |
+      expr1.pointsTo(val1) and 
+      expr2.pointsTo(val1)
+    ) or 
     (
       expr1 instanceof Name and
       expr2 instanceof Name and
