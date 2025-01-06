@@ -6,6 +6,8 @@ import vuln.SmartGettingFuncLib::ClassPollutionSmartGetting
 import vuln.SmartSettingFuncLib::ClassPollutionSmartSetting
 import shared.Utils::ClassPolltionUtils
 import shared.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
+import shared.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
+import shared.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
 
@@ -145,7 +147,7 @@ predicate isSplitResult(DataFlow::Node list) {
 }
 
 predicate isItemSettingOrAttributeSetting(DataFlow::Node obj, DataFlow::Node key, DataFlow::Node val) {
-  isSetItemExpr(obj.asExpr(), key.asExpr(), val.asExpr()) or
+  isSetItemExpr(obj.asExpr(), key.asExpr(), val.asExpr(), _) or
   isSetattrCall(obj.asExpr(), key.asExpr(), val.asExpr(), _)
 }
 
@@ -220,13 +222,15 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   }
 
   predicate isSink(DataFlow::Node sink, FlowState state) {
-    (isSetItemExpr(_, sink.asExpr(), _) and state instanceof UsedAsKeyInSetItemFlowState) or
-    (isSetItemExpr(sink.asExpr(), _, _) and state instanceof UsedAsBaseObjectInSetItemFlowState) or
+    (isSetItemExpr(_, sink.asExpr(), _, _) and state instanceof UsedAsKeyInSetItemFlowState) or
+    (isSetItemExpr(sink.asExpr(), _, _, _) and state instanceof UsedAsBaseObjectInSetItemFlowState) or
     (isSetattrCall(_, sink.asExpr(), _, _) and state instanceof UsedAsKeyInSetAttrFlowState) or
     (isSetattrCall(sink.asExpr(), _, _, _) and state instanceof UsedAsBaseObjectInSetAttrFlowState)
   }
 
   predicate isAdditionalFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
+    additionalFlowStepThroughNamedtuple(fromNode, toNode) or
+    additionalFlowStepThroughDequeAppendPop(fromNode, toNode) or
     additionalFlowStepGetAttr(fromNode, toNode) or
     additionalFlowStepGetItem(fromNode, toNode) or
     (
@@ -341,7 +345,7 @@ predicate isClassPollutedKeyNames(DataFlow::Node source) {
  * Holds if the assignment can overwrite the dunder attributes/items of the object.
  */
 predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj, Flow::PathNode setItemKey, Flow::PathNode sourceKeyToObj, Flow::PathNode sourceKeyToKey) {
-  isSetItemExpr(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), _) and
+  isSetItemExpr(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), _, _) and
   (
     isClassPollutedKeyNames(sourceKeyToObj.getNode()) and
     isClassPollutedKeyNames(sourceKeyToKey.getNode()) and

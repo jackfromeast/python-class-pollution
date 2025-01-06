@@ -1,9 +1,9 @@
 import python
+import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import Utils::ClassPolltionUtils
 import GetOp::ClassPollutionGetOp
-
 
 module ClassPollutionAdditionalFlowStep {
 
