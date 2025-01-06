@@ -23,7 +23,7 @@ class CustomFormatter(logging.Formatter):
         formatter = logging.Formatter(log_fmt)
         return formatter.format(record)
 
-def get_logger(name, log_path, level=logging.INFO):
+def get_logger(name, log_path, level=logging.INFO, clear_log=True):
     logger = logging.getLogger(name)
     logger.setLevel(level)
 
@@ -34,8 +34,10 @@ def get_logger(name, log_path, level=logging.INFO):
     # General log file handler
     general_log_path = os.path.join(log_path, 'info.log')
     os.makedirs(os.path.dirname(general_log_path), exist_ok=True)
-    with open(general_log_path, 'w'):  # Clear the log file
-        pass
+
+    if clear_log == True:
+        with open(general_log_path, 'w'):  # Clear the log file
+            pass
     
     fh = logging.FileHandler(general_log_path)
     fh.setLevel(logging.DEBUG)
@@ -43,16 +45,20 @@ def get_logger(name, log_path, level=logging.INFO):
     fh.setFormatter(file_format)
 
     # Error log file handler
-    error_log_path = os.path.join(log_path, 'error.log')
-    os.makedirs(os.path.dirname(error_log_path), exist_ok=True)
-    with open(error_log_path, 'w'):  # Clear the log file
-        pass
-    efh = logging.FileHandler(error_log_path)
-    efh.setLevel(logging.ERROR)
-    efh.setFormatter(file_format)
+    if name != "WORKER_RESULT":
+        error_log_path = os.path.join(log_path, 'error.log')
+        os.makedirs(os.path.dirname(error_log_path), exist_ok=True)
+
+        if clear_log == True:
+            with open(error_log_path, 'w'):  # Clear the log file
+                pass
+
+        efh = logging.FileHandler(error_log_path)
+        efh.setLevel(logging.ERROR)
+        efh.setFormatter(file_format)
+        logger.addHandler(efh)
 
     logger.addHandler(ch)
     logger.addHandler(fh)
-    logger.addHandler(efh)
 
     return logger

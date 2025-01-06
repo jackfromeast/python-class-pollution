@@ -22,6 +22,8 @@ import subprocess
 from argparse import ArgumentParser
 
 logger = None # Global logger
+global_logger = None # Share with the scheduler
+result_logger = None # Share with the scheduler
 
 def load_config(config_path):
   with open(config_path, "r") as f:
@@ -44,6 +46,7 @@ def cleanup_folders(folder_path):
     except subprocess.CalledProcessError as e:
       print(f"Error deleting {folder_path}: {e}")
 
+
 class Downloader:
   def __init__(self, repo_url, repo_save_path):
     self.repo_url = repo_url
@@ -62,6 +65,7 @@ class Downloader:
         shutil.rmtree(codebase_save_path)
       except Exception as e:
         logger.error(f"Failed to remove existing codebase: {e}")
+        global_logger.error(f"Failed to remove existing codebase: {e}")
         return False
     
     try:
@@ -73,9 +77,11 @@ class Downloader:
       return True
     except subprocess.TimeoutExpired:
       logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
+      global_logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
       return False
     except subprocess.CalledProcessError as e:
       logger.error(f"Failed to clone repository: {e}")
+      global_logger.error(f"Failed to clone repository: {e}")
       return False
 
 
@@ -124,9 +130,11 @@ class CodeQLRunner:
       return True
     except subprocess.TimeoutExpired:
       logger.error("Building CodeQL database timed out.")
+      global_logger.error("Building CodeQL database timed out.")
       return False
     except subprocess.CalledProcessError as e:
       logger.error(f"Failed to build CodeQL database: {e}")
+      global_logger.error(f"Failed to build CodeQL database: {e}")
       return False
 
   def stop_codeql_process(self, db_path):
@@ -162,8 +170,10 @@ class CodeQLRunner:
 
     except FileNotFoundError:
       logger.error("lsof command not found. Please install lsof to use this feature.")
+      global_logger.error("lsof command not found. Please install lsof to use this feature.")
     except Exception as e:
       logger.error(f"Error while stopping CodeQL process: {e}")
+      global_logger.error(f"Error while stopping CodeQL process: {e}")
 
   def cleanup(self, everything=False):
     """
@@ -185,6 +195,7 @@ class CodeQLRunner:
           logger.info(f"Removed codebase at {self.codebase_path}")
     except Exception as e:
       logger.error(f"Failed during cleanup: {e}")
+      global_logger.error(f"Failed during cleanup: {e}")
 
   def run_queries(self):
     """
@@ -229,10 +240,10 @@ class CodeQLRunner:
           self.codeql_config["cli"], "database", "analyze", self.db_path,
           query_file,
           "--format=sarif-latest",
-          "--output", output_file,
           f"--threads={self.codeql_config['threads']}",
           f"--ram={self.codeql_config['ram']}",
-          f"--timeout={self.codeql_config['timeout']}"
+          f"--timeout={self.codeql_config['timeout']}",
+          "--output", output_file,
         ],
         timeout=self.codeql_config["timeout"]
       )
@@ -242,10 +253,12 @@ class CodeQLRunner:
     except subprocess.TimeoutExpired:
       # Wait for 10 seconds before killing the process
       logger.error(f"Query {query_file} timed out.")
+      global_logger.error(f"Query {query_file} timed out.") 
       return False
     
     except subprocess.CalledProcessError as e:
       logger.error(f"Failed to execute query {query_file}: {e}")
+      global_logger.error(f"Failed to execute query {query_file}: {e}")
       return False
   
   def summarize_results(self, output_file="summary.json"):
@@ -280,6 +293,7 @@ class CodeQLRunner:
         logger.info(f"Processed {result_file}: {flow_count} flows detected.")
       except (json.JSONDecodeError, KeyError) as e:
         logger.error(f"Failed to process {result_file}: {e}")
+        global_logger.error(f"Failed to process {result_file}: {e}")
 
     try:
       with open(output_file, "w") as f:
@@ -287,6 +301,12 @@ class CodeQLRunner:
       logger.info(f"Summary saved to {output_file}")
     except Exception as e:
       logger.error(f"Failed to save summary to {output_file}: {e}")
+      global_logger.error(f"Failed to save summary to {output_file}: {e}")
+
+    # Output the summary to the result logger
+    for query_name, flow_count in summary.items():
+      if flow_count > 0:
+        result_logger.info(f"{self.repo} - {query_name}: {flow_count} flows detected.")
 
     return summary
 
@@ -301,8 +321,10 @@ def main():
   config = load_config(args.config)["WORKER"]
   repo_save_path = setup_folder(args.work_path, args.repo)
 
-  global logger
+  global logger, global_logger, result_logger
   logger = log.get_logger("WORKER", os.path.join(repo_save_path, "logs"))
+  global_logger = log.get_logger("WORKER_GLOBAL", os.path.join(args.work_path, "../", "logs", "worker"), level=log.logging.ERROR, clear_log=False)
+  result_logger = log.get_logger("WORKER_RESULT", os.path.join(args.work_path, "../", "logs", "result"), level=log.logging.INFO, clear_log=False)
 
   downloader = Downloader(args.repo, repo_save_path)
   if not downloader.clone_repo():
