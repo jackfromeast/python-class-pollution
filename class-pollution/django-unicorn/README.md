@@ -3,7 +3,7 @@
 ### Meta
 
 + Library: django-unicorn
-+ Stars: 2.4k
++ Stars: 2.4K
 + Version: N/A
 + CVE: N/A
 + Status: Pending
