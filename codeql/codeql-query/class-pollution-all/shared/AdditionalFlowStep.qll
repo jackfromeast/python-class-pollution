@@ -33,18 +33,19 @@ predicate additionalFlowStepGetItem(DataFlow::Node fromNode, DataFlow::Node toNo
     else
       toNode.asExpr() = forLoop.getTarget()
   )
-  or
-  // Match for `for k, v in dict.items()`
-  exists(For forLoop, MethodCallNode call, Tuple tuple |
-    forLoop.getIter() = call.asExpr() and
-    (
-      call.getMethodName() = "items" or
-      call.getMethodName() = "enumerate"
-    ) and
-    tuple = forLoop.getTarget() and
-    tuple.getAnElt() = fromNode.asExpr() and
-    fromNode.asExpr() = call.getObject().asExpr()
-  )
+  // or
+  // TODO: The following pattern will get v20.0.0 codeql binary stuck
+  // // Match for `for k, v in dict.items()`
+  // exists(For forLoop, MethodCallNode call, Tuple tuple |
+  //   forLoop.getIter() = call.asExpr() and
+  //   (
+  //     call.getMethodName() = "items" or
+  //     call.getMethodName() = "enumerate"
+  //   ) and
+  //   tuple = forLoop.getTarget() and
+  //   tuple.getAnElt() = fromNode.asExpr() and
+  //   fromNode.asExpr() = call.getObject().asExpr()
+  // )
   or
   // Match for `for key in dict.keys():`
   exists(For forLoop, MethodCallNode call |
