@@ -12,6 +12,7 @@
 + Report: Pending
 + Type: Lib
 + Exploitability: Low
++ Input: Func
 
 ### Library
 

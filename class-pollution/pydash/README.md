@@ -12,6 +12,7 @@
 + Report: https://blog.abdulrah33m.com/prototype-pollution-in-python/
 + Type: Lib
 + Exploitability: High
++ Input: Func
 
 ### Library
 

@@ -35,6 +35,8 @@ def extract_metadata(file_path):
             metadata['Type'] = line.split(": ")[1]
         elif line.startswith("+ Exploitability:"):
             metadata['Exploitability'] = line.split(": ")[1]
+        elif line.startswith("+ Input:"):
+            metadata['Input'] = line.split(": ")[1]
         elif line.startswith("+ Stars:"):
             stars_str = line.split(": ")[1]
             metadata['Stars'] = stars_str
@@ -76,7 +78,7 @@ def process_files(input_directory):
     for metadata in metadata_list:
         filename = metadata['filename']
         library_link = f"[{metadata['Library']}]({github_base_url}{filename})"
-        section_content += f"| {library_link} | {metadata.get('Type', 'N/A')} | {metadata.get('Stars', 'N/A')} | {metadata.get('Version', 'N/A')} | {metadata.get('Payload', 'N/A')} | {metadata.get('Foundby', 'N/A')} | {metadata.get('Status', 'Reported')} | {metadata.get('CVE', 'N/A')} | {metadata.get('Exploitability', 'N/A')}|\n"
+        section_content += f"| {library_link} | {metadata.get('Type', 'N/A')} | {metadata.get('Stars', 'N/A')} | {metadata.get('Version', 'N/A')} | {metadata.get('Payload', 'N/A')} | {metadata.get('Input', 'N/A')} | {metadata.get('Foundby', 'N/A')} | {metadata.get('Status', 'Reported')} | {metadata.get('CVE', 'N/A')} |\n"
     
     return section_content
 

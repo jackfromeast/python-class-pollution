@@ -12,6 +12,7 @@
 + Foundby: BlackPyrl
 + Report: Pending
 + Exploitability: Low
++ Input: Func
 
 ### Library
 

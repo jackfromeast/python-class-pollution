@@ -13,7 +13,7 @@ def on_load(e: me.LoadEvent):
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/chat",
+  path="/",
   title="Mesop Demo Chat",
   on_load=on_load,
 )
