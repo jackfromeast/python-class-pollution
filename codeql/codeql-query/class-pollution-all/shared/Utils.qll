@@ -65,18 +65,50 @@ module ClassPolltionUtils {
     //   expr2.pointsTo(val)
     // ) or 
     // target_obj[attr.name] = value and setattr(target_obj, attr.name, value)
-    refersToAttribute(expr1.(Attribute), expr2.(Attribute)) or
+    if expr1 instanceof Attribute and expr2 instanceof Attribute
+    then refersToAttribute(expr1.(Attribute), expr2.(Attribute))
+    else
     // target_obj[x[-1]] = value and setattr(target_obj, x[-1], value)
-    refersToSubscript(expr1.(Subscript), expr2.(Subscript)) or 
+    if expr1 instanceof Subscript and expr2 instanceof Subscript
+    then refersToSubscript(expr1.(Subscript), expr2.(Subscript))
+    else
     // target_obj[key] = value and setattr(target_obj, key, value)
-    refersToName(expr1.(Name), expr2.(Name))
+    if expr1 instanceof Name and expr2 instanceof Name
+    then refersToName(expr1.(Name), expr2.(Name))
+    else none()
   }
 
+  /**
+   * @description
+   * ----------------------
+   * Holds if two names refer to the same variable.
+   * 
+   * @example
+   * ----------------------
+   * We have seen some edge cases where the same has been defined in different scopes using the same way.
+   * If we have tracking dataflow, there is no local source for config_value.
+   * Currently, we just match the name of the variable.
+   * TODO: Improve the implementation to handle the following cases using taint flow:
+   * 
+   * branch A:
+   *  config_value = Config.cast_target_type(config_value, attr_value, fallback_target_type)
+   *  setattr(config_part, key, config_value)
+   * branch B:
+   *  config_value = Config.cast_target_type(config_value, attr_value, fallback_target_type)
+   *  config_part[key] = config_value
+   *
+   */
   predicate refersToName(Name name1, Name name2) {
     exists ( DataFlow::Node node1, DataFlow::Node node2 |
       node1.asExpr() = name1 and
       node2.asExpr() = name2 and
       node1.getALocalSource() = node2.getALocalSource()
+    ) or
+    // If the name is a global variable, we can't track its dataflow.
+    // Add a simple check to see if the name is the same under one local scope.
+    (
+      name1.getId() = name2.getId() and
+      name1.getScope() = name2.getScope()
     )
   }
 

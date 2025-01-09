@@ -34,7 +34,7 @@ predicate isSmartSettingFuncLocal(Function func, ControlFlowNode setItemNode, Co
     setItemNode.getScope() = func.getEvaluatingScope() and
     setattrNode.getScope() = func.getEvaluatingScope() and
     extendExprRefersTo(obj1, obj2) and
-    extendExprRefersTo(key1, key2) and
+    extendExprRefersTo(key1, key2) and 
     extendExprRefersTo(val1, val2)
   )
 }
