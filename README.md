@@ -4,8 +4,8 @@
 
 This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
 
-| Library | Type | Stars | Version | Payloads | Found By | Status | CVE | Exploitability |
-|:-------:|:----:|:-----:|:-------:|----------|:--------:|:------:|:---:|:--------------:|
+| Name | Type | Stars | Version | Payloads | Input | Found By | Status | CVE |
+|:-------:|:----:|:-----:|:-------:|----------|:-----:|:--------:|:------:|:---:|
 | [pyinstrument](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/pyinstrument/README.md) | Lib | 6.8K | N/A | ```pyinstrument.vendor.keypath.set_value_at_keypath(obj, '__class__.__init__.__globals__.__name__', 'polluted')``` | Func | BlackPyrl | Pending | N/A |
 | [clearml](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/clearml/README.md) | App | 5.7K | v1.16.5 | ```clearml.automation.TaskScheduler.add_task(task_overrides={'__init__.__globals__.__builtins__.getattr''polluted'})``` | Func | BlackPyrl | Pending | N/A |
 | [Mesop](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/mesop/README.md) | App | 5.7K | v0.13.0 | ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__"{"__globals__"{"__name__""polluted"}}}')``` | Remote | BlackPyrl | Pending | N/A |
