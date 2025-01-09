@@ -5,6 +5,7 @@ import semmle.python.dataflow.new.DataFlow
 
 module ClassPollutionSmartSetting {
 
+
 /**
  * @description
  * ----------------------
@@ -32,12 +33,11 @@ predicate isSmartSettingFuncLocal(Function func, ControlFlowNode setItemNode, Co
     isSetAttrExpr(obj2, key2, val2, setattrNode) and
     setItemNode.getScope() = func.getEvaluatingScope() and
     setattrNode.getScope() = func.getEvaluatingScope() and
-    refersToSameVariable(obj1, obj2) and
-    refersToSameVariable(key1, key2) and
-    refersToSameVariable(val1, val2)
+    extendExprRefersTo(obj1, obj2) and
+    extendExprRefersTo(key1, key2) and
+    extendExprRefersTo(val1, val2)
   )
 }
-
 }
 
 

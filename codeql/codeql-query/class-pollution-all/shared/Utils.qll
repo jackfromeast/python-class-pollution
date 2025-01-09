@@ -54,19 +54,55 @@ module ClassPolltionUtils {
   /**
    * Predicate to check if two expressions refer to the same variable.
    */
-  predicate refersToSameVariable(Expr expr1, Expr expr2) {
+  predicate extendExprRefersTo(Expr expr1, Expr expr2) {
     // This only holds the expression-level equality, not the value-level equality.
-    // E.g., hasattr(obj, key)) and True
-    exists ( Value val1 |
-      expr1.pointsTo(val1) and 
-      expr2.pointsTo(val1)
-    ) or 
-    (
-      expr1 instanceof Name and
-      expr2 instanceof Name and
-      expr1.(Name).getId() = expr2.(Name).getId()
+    // Implemented at /codeql/python-all/2.2.0/semmle/python/pointsto/PointsTo.qll
+    // Not working for the following cases from our observation:
+    // 1. attr.name in target_obj[attr.name] = value and setattr(target_obj, attr.name, value)
+    // 2. target_obj[x[-1]] = value and setattr(target_obj, x[-1], value)
+    // exists ( Value val |
+    //   expr1.pointsTo(val) and 
+    //   expr2.pointsTo(val)
+    // ) or 
+    // target_obj[attr.name] = value and setattr(target_obj, attr.name, value)
+    refersToAttribute(expr1.(Attribute), expr2.(Attribute)) or
+    // target_obj[x[-1]] = value and setattr(target_obj, x[-1], value)
+    refersToSubscript(expr1.(Subscript), expr2.(Subscript)) or 
+    // target_obj[key] = value and setattr(target_obj, key, value)
+    refersToName(expr1.(Name), expr2.(Name))
+  }
+
+  predicate refersToName(Name name1, Name name2) {
+    exists ( DataFlow::Node node1, DataFlow::Node node2 |
+      node1.asExpr() = name1 and
+      node2.asExpr() = name2 and
+      node1.getALocalSource() = node2.getALocalSource()
     )
   }
+
+  predicate refersToAttribute(Attribute attr1, Attribute attr2) {
+    exists ( DataFlow::Node base1, DataFlow::Node base2 |
+      base1.asExpr() = attr1.getObject() and
+      base2.asExpr() = attr2.getObject() and
+      base1.getALocalSource() = base2.getALocalSource() and
+      attr1.getName() = attr2.getName()
+    )
+  }
+
+  predicate refersToSubscript(Subscript sub1, Subscript sub2) {
+    exists ( DataFlow::Node base1, DataFlow::Node base2 |
+      base1.asExpr() = sub1.getObject() and
+      base2.asExpr() = sub2.getObject() and
+      base1.getALocalSource() = base2.getALocalSource() and
+      exists (Expr index1, Expr index2, Value val |
+        sub1.getIndex() = index1 and
+        sub2.getIndex() = index2 and
+        index1.pointsTo(val) and
+        index2.pointsTo(val)
+      )
+    )
+  }
+  
   
   /**
    * Predicate to check if a call expression is an external library call.
