@@ -19,6 +19,7 @@ import glob
 import time
 import shutil
 import subprocess
+from download import GithubDownloader, PipDownloader
 from argparse import ArgumentParser
 
 logger = None # Global logger
@@ -45,44 +46,6 @@ def cleanup_folders(folder_path):
       print(f"Successfully deleted: {folder_path}")
     except subprocess.CalledProcessError as e:
       print(f"Error deleting {folder_path}: {e}")
-
-
-class Downloader:
-  def __init__(self, repo_url, repo_save_path):
-    self.repo_url = repo_url
-    self.repo_save_path = repo_save_path
-    self.timeout = 300  # 5 minutes
-
-  def clone_repo(self):
-    """Clone the repository into the specified folder."""
-    codebase_save_path = os.path.join(self.repo_save_path, "codebase")
-    logger.info(f"Cloning repository: {self.repo_url} to {codebase_save_path}")
-
-    if os.path.exists(codebase_save_path):
-      # Remove the existing codebase
-      logger.info("Removing existing codebase...")
-      try:
-        shutil.rmtree(codebase_save_path)
-      except Exception as e:
-        logger.error(f"Failed to remove existing codebase: {e}")
-        global_logger.error(f"Failed to remove existing codebase: {e}")
-        return False
-    
-    try:
-      subprocess.check_call(
-        ["git", "clone", self.repo_url, codebase_save_path],
-        timeout=self.timeout
-      )
-      logger.info(f"Repository cloned successfully to {codebase_save_path}")
-      return True
-    except subprocess.TimeoutExpired:
-      logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
-      global_logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
-      return False
-    except subprocess.CalledProcessError as e:
-      logger.error(f"Failed to clone repository: {e}")
-      global_logger.error(f"Failed to clone repository: {e}")
-      return False
 
 
 class CodeQLRunner:
@@ -313,9 +276,10 @@ class CodeQLRunner:
 
 def main():
   parser = ArgumentParser(description="Run CodeQL pipeline for multiple repositories.")
-  parser.add_argument("--repo", required=True, help="Repo GitHub URL.")
+  parser.add_argument("--repo", required=True, help="Repo GitHub URL or pip package name.")
   parser.add_argument("--work-path", required=True, help="Path to the working directory.")
   parser.add_argument("--config", required=True, help="Path to the config file.")
+  parser.add_argument("--pip", action="store_true", help="Use pip to download the repository.")
   args = parser.parse_args()
 
   config = load_config(args.config)["WORKER"]
@@ -326,7 +290,11 @@ def main():
   global_logger = log.get_logger("WORKER_GLOBAL", os.path.join(args.work_path, "../", "logs", "worker"), level=log.logging.ERROR, clear_log=False)
   result_logger = log.get_logger("WORKER_RESULT", os.path.join(args.work_path, "../", "logs", "result"), level=log.logging.INFO, clear_log=False)
 
-  downloader = Downloader(args.repo, repo_save_path)
+  if args.pip:
+    downloader = PipDownloader(args.repo, repo_save_path, logger, global_logger)
+  else:
+    downloader = GithubDownloader(args.repo, repo_save_path, logger, global_logger)
+
   if not downloader.clone_repo():
     logger.error(f"Failed to clone repository: {args.repo}")
     cleanup_folders(repo_save_path)

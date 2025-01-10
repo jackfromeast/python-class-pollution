@@ -27,7 +27,7 @@ WORKER:
 
   QUERY_MODE: query # query or qlpack
   QUERIES: [
-    "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/ClassPollutingFuncQuery.ql"
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQuery.ql"
   ]
 
   DELETE_AFTER_QUERY: True # False when debugging

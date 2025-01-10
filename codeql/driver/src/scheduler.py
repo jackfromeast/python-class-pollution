@@ -27,7 +27,8 @@ class Scheduler:
     self.workspace = self.config["SCHEDULER"]["WORKSPACE"]
     self.test_name = self.config["SCHEDULER"]["TEST_NAME"]
     self.mode = self.config["SCHEDULER"]["MODE"]
-    self.repo_list_path = self.config["SCHEDULER"]["REPO_URL_LIST"]
+    self.use_pip = self.config["SCHEDULER"]["USE_PIP"]
+    self.repo_list_path = self.config["SCHEDULER"]["REPO_LIST"]
     self.url_list_from = self.config["SCHEDULER"]["URL_LIST_FROM"]
     self.url_list_to = self.config["SCHEDULER"]["URL_LIST_TO"]
     self.max_workers = self.config["SCHEDULER"]["MAX_WORKER"]
@@ -55,7 +56,7 @@ class Scheduler:
         urls = f.read().splitlines()
       return urls[self.url_list_from:self.url_list_to]
     else:
-      return [self.config["SCHEDULER"]["REPO_URL"]]
+      return [self.config["SCHEDULER"]["REPO"]]
 
   def spawn_worker(self, repo_url):
     """
@@ -63,13 +64,18 @@ class Scheduler:
     """
     logger.info(f"Starting worker for repo: {repo_url}")
     try:
+      command = [
+        "python", self.run_script_path,
+        "--repo", repo_url,
+        "--work-path", self.workspace,
+        "--config", self.config_path,
+      ]
+
+      if self.use_pip:
+        command.append("--pip")
+
       subprocess.check_call(
-        [
-          "python", self.run_script_path,
-          "--repo", repo_url,
-          "--work-path", self.workspace,
-          "--config", self.config_path
-        ],
+        command,
         timeout=self.timeout_per_worker
       )
       logger.info(f"Worker completed successfully for repo: {repo_url}")
