@@ -11,8 +11,8 @@ readme_content = """## Python Class Pollution Vulnerability and its Gadgets
 
 This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
 
-| Library | Type | Stars | Version | Payloads | Found By | Status | CVE | Exploitability |
-|:-------:|:----:|:-----:|:-------:|----------|:--------:|:------:|:---:|:--------------:|
+| Name | Type | Stars | Version | Payloads | Input | Found By | Status | CVE |
+|:-------:|:----:|:-----:|:-------:|----------|:-----:|:--------:|:------:|:---:|
 """
 
 def convert_stars_to_number(stars_str):
