@@ -1,6 +1,7 @@
 tmp
 venv
 codebase
+wheel
 *.pyc
 *-db
 __pycache__
