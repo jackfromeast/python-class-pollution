@@ -4,4 +4,7 @@ codebase
 *.pyc
 *-db
 __pycache__
-output
+output/**
+!output/**/results/
+!output/**/results/**
+dataset/github
