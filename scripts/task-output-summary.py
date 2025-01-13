@@ -17,7 +17,7 @@ def summarize_results(base_folder, load_meta=False, metadata_files=None):
     - Checks if `MultiLevelClassPollutionQuery.ql.sarif` > 0,
     - Collects the names of the subfolders that meet the criteria,
     - Optionally maps these names to metadata from the given JSON files.
-    Returns formatted rows for flagged repositories.
+    Returns formatted rows for flagged repositories sorted by stargazers count.
     """
     flagged_folders = []
 
@@ -42,7 +42,7 @@ def summarize_results(base_folder, load_meta=False, metadata_files=None):
 
     # If metadata loading is disabled, only return repo names and count
     if not load_meta:
-        return [f"- {name}" for i, name in enumerate(flagged_folders)]
+        return [f"- {name}" for name in flagged_folders]
 
     # Load metadata and map to flagged folders
     repo_metadata = load_metadata(metadata_files) if metadata_files else {}
@@ -51,11 +51,28 @@ def summarize_results(base_folder, load_meta=False, metadata_files=None):
     for folder_name in flagged_folders:
         if folder_name in repo_metadata:
             repo_info = repo_metadata[folder_name]
-            results.append(f"{repo_info['name']}, {repo_info['stargazers_count']}, {repo_info['html_url']}")
+            results.append({
+                "name": repo_info["name"],
+                "stargazers_count": repo_info["stargazers_count"],
+                "html_url": repo_info["html_url"]
+            })
         else:
-            results.append(f"{folder_name} (Metadata not found)")
+            results.append({
+                "name": folder_name,
+                "stargazers_count": -1,  # Default to 0 stars if metadata not found
+                "html_url": "N/A"
+            })
 
-    return results
+    # Sort results by stargazers_count in descending order
+    sorted_results = sorted(results, key=lambda x: x["stargazers_count"], reverse=True)
+
+    # Format the output
+    formatted_results = [
+        f"{repo['name']}, {repo['stargazers_count']}, {repo['html_url']}" for repo in sorted_results
+    ]
+
+    return formatted_results
+
 
 def load_metadata(metadata_files):
     """
