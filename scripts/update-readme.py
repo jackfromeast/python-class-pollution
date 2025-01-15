@@ -21,7 +21,7 @@ def convert_stars_to_number(stars_str):
     elif 'M' in stars_str:
         return float(stars_str.replace('M', '')) * 1000000
     else:
-        return 0
+        return float(stars_str)
 
 def extract_metadata(file_path):
     with open(file_path, 'r') as file:
