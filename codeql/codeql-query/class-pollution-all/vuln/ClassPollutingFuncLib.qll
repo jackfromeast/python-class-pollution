@@ -25,6 +25,7 @@ module ClassPollutionAssignment {
  * `key` in `for key in dict:`
  * `key` and `val` in `for key, val in dict.items():`
  * `key` in `for key in dict.keys():`
+ * `key` in `for key in keys`
  * 
  */
 class EnumeratedKeyNames extends DataFlow::Node {
@@ -112,6 +113,7 @@ module TrackingSplitResultConfiguration implements DataFlow::ConfigSig {
     exists( API::CallNode call |
       (
         API::moduleImport("re").getMember("split").getACall() = call or
+        API::moduleImport("re").getMember("findall").getACall() = call or
         API::moduleImport("regex").getMember("split").getACall() = call // https://pypi.org/project/regex/
       ) and
       call.asCfgNode() = list.asCfgNode()
@@ -161,6 +163,7 @@ module TrackingSplitResultFlow = TaintTracking::Global<TrackingSplitResultConfig
  * `keys` in `keys = [for key in val.split('.')]`
  * `keys` in `keys = [for key in filter(None, val.split('.'))]`
  * `keys` in `keys = regex.split(any);`
+ * `keys` in `keys = regex.findall(any)`
  * 
  * 
  */
@@ -238,14 +241,7 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   class FlowState = ClassPollutionAssignment::FlowState;
 
   predicate isSource(DataFlow::Node source, FlowState state) {
-    // restrictedByFunctionName(source, "update_item_attr") and
-    (
-      isClassPollutedKeyNames(source) 
-      // exists( DataFlow::Node immediateSource | 
-      //   isClassPollutedKeyNames(immediateSource) and
-      //   DataFlow::localFlow(immediateSource, source)
-      // )
-    )
+    isClassPollutedKeyNames(source) 
   }
 
   predicate isSink(DataFlow::Node sink, FlowState state) {
@@ -376,7 +372,7 @@ predicate isClassPollutedKeyNames(DataFlow::Node source) {
   )
 }
 
-predicate test(Flow::PathNode sourceKeyToKey, Flow::PathNode setItemKey) {
+predicate debugTest(Flow::PathNode sourceKeyToKey, Flow::PathNode setItemKey) {
   TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceKeyToKey, setItemKey)
 }
 

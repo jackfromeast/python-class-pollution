@@ -75,8 +75,7 @@ predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::No
   exists(For forLoop, MethodCallNode call, Tuple tuple |
     forLoop.getIter() = call.asExpr() and
     (
-      call.getMethodName() = "items" or
-      call.getMethodName() = "enumerate"
+      call.getMethodName() = "items"
     ) and
     tuple = forLoop.getTarget() and
     (

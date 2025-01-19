@@ -9,12 +9,34 @@ import GetOp::ClassPollutionGetOp
 module ClassPollutionAdditionalFlowStepCustom {
 
 predicate additionalFlowStepThroughCustomLibAnyState(DataFlow::Node fromNode, DataFlow::Node toNode){
-  additionalFlowStepThroughHikaru(fromNode, toNode)
+  additionalFlowStepThroughHikaru(fromNode, toNode) or
+  additionalFlowStepThroughBuiltinStr(fromNode, toNode)
 }
+
+// ========== Builtins Starts ==========
+
+/**
+ * @description
+ * ----------------------
+ * Propagate the data flow from builtin functions str.
+ * 
+ * @example
+ * ----------------------
+ * when `str` is tainted in the following code snippet:
+ * `str(fromNode)` -> `toNode`
+ */
+predicate additionalFlowStepThroughBuiltinStr(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  exists(API::CallNode call | 
+    fromNode = API::builtin("str").getACall().getArg(0) and
+    call = API::builtin("str").getACall() and
+    toNode.asExpr() = call.asExpr()
+  )
+}
+
+// ========== Builtins Ends ==========
 
 // ========== Hikaru Starts ==========
 // https://github.com/haxsaw/hikaru
-
 /**
  * @description
  * ----------------------
@@ -51,7 +73,7 @@ predicate hikaruObjectAtPath(Expr obj, Expr key, Call call) {
     mcall.asExpr() = call
   )
 }
-
 // ========== Hikaru Ends==========
+
 
 }
