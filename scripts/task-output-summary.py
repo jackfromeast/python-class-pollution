@@ -10,25 +10,13 @@ metadata_files = [
 ]
 
 def summarize_results(base_folder, load_meta=False, metadata_files=None):
-    """
-    Given a base folder and optional metadata files:
-    - Iterates through each subfolder,
-    - Reads the `summary.json` in `results/` if it exists,
-    - Checks if `MultiLevelClassPollutionQuery.ql.sarif` > 0,
-    - Collects the names of the subfolders that meet the criteria,
-    - Optionally maps these names to metadata from the given JSON files.
-    Returns formatted rows for flagged repositories sorted by stargazers count.
-    """
     flagged_folders = []
 
-    # Iterate over all entries in the base folder
     for entry in os.scandir(base_folder):
         if entry.is_dir():
-            # Construct the path to the results/summary.json
             results_folder = os.path.join(entry.path, 'results')
             summary_file = os.path.join(results_folder, 'summary.json')
 
-            # Check if summary.json exists
             if os.path.exists(summary_file):
                 with open(summary_file, 'r', encoding='utf-8') as f:
                     try:
@@ -40,11 +28,9 @@ def summarize_results(base_folder, load_meta=False, metadata_files=None):
                 if data.get("MultiLevelClassPollutionQuery.ql.sarif", 0) > 0:
                     flagged_folders.append(os.path.basename(entry.path))
 
-    # If metadata loading is disabled, only return repo names and count
     if not load_meta:
-        return [f"- {name}" for name in flagged_folders]
+        return [f"{name}" for name in flagged_folders]
 
-    # Load metadata and map to flagged folders
     repo_metadata = load_metadata(metadata_files) if metadata_files else {}
     results = []
 
@@ -59,26 +45,19 @@ def summarize_results(base_folder, load_meta=False, metadata_files=None):
         else:
             results.append({
                 "name": folder_name,
-                "stargazers_count": -1,  # Default to 0 stars if metadata not found
+                "stargazers_count": -1,
                 "html_url": "N/A"
             })
 
-    # Sort results by stargazers_count in descending order
     sorted_results = sorted(results, key=lambda x: x["stargazers_count"], reverse=True)
 
-    # Format the output
     formatted_results = [
         f"{repo['name']}, {repo['stargazers_count']}, {repo['html_url']}" for repo in sorted_results
     ]
 
     return formatted_results
 
-
 def load_metadata(metadata_files):
-    """
-    Loads repository metadata from the given JSON files.
-    Returns a dictionary mapping folder names to repository information.
-    """
     repo_metadata = {}
 
     for file in metadata_files:
@@ -93,24 +72,61 @@ def load_metadata(metadata_files):
                     }
         except (json.JSONDecodeError, FileNotFoundError) as e:
             print(f"Warning: Could not process {file}: {e}")
-    
+
     return repo_metadata
 
+def guess_input_test_path(base_folder):
+    input_folder = os.path.join(base_folder, "..", "input")
+    if os.path.exists(input_folder):
+        txt_files = [os.path.join(input_folder, f) for f in os.listdir(input_folder) if f.endswith(".txt")]
+        if txt_files:
+            return txt_files[0]  # Return the first found .txt file
+    print(f"Warning: No input test file found in {input_folder}")
+    return None
+
+def get_repo_name(url):
+    return url.split("/")[-1].replace(".git", "")
+
+def compare_with_input_test(flagged_folders, input_test_path):
+    if not os.path.exists(input_test_path):
+        print(f"Error: Input test file '{input_test_path}' does not exist.")
+        return []
+
+    with open(input_test_path, 'r', encoding='utf-8') as f:
+        input_lines = [line.strip() for line in f if line.strip()]
+
+    all_test_repos = [get_repo_name(line) for line in input_lines]
+
+    test_set = set(all_test_repos)
+    flagged_set = set(flagged_folders)
+    failed_cases = test_set - flagged_set
+
+    if failed_cases:
+        print(f"Failed {len(failed_cases)} cases:")
+        for case in failed_cases:
+            print(f"- {case}")
+    else:
+        print("All flagged cases match the input test.")
+
+    return failed_cases
+
 if __name__ == "__main__":
-    # Argument parser setup
     parser = argparse.ArgumentParser(description="Summarize flagged repositories.")
     parser.add_argument("base_folder", help="Base folder to analyze")
     parser.add_argument("--meta", action="store_true", help="Include metadata in the output")
+    parser.add_argument("--test", action="store_true", help="Show the failed cases by comparing with an input test file")
+    parser.add_argument("--input-file", help="Input test file for comparison")
 
     args = parser.parse_args()
 
-    # Run the summarization
     result = summarize_results(args.base_folder, load_meta=args.meta, metadata_files=metadata_files if args.meta else None)
 
-    # Print results
     if result:
         print(f"Flagged {len(result)} repositories in total:")
-        for row in result:
-            print(row)
-    else:
-        print("No repositories flagged.")
+        for case in result:
+            print(f"- {case}")
+
+    if args.test:
+        input_test_path = args.input_file if args.input_file else guess_input_test_path(args.base_folder)
+        flagged_folders = [line.split(',')[0].strip() for line in result]
+        compare_with_input_test(flagged_folders, input_test_path)
