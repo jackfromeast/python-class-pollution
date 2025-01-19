@@ -20,13 +20,6 @@ import shared.Utils::ClassPolltionUtils
 
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 
-// predicate test(Flow::PathNode setItemBaseObj, Flow::PathNode setAttrBaseObj) {
-//   DataFlow::localFlow(setAttrBaseObj.getNode(), setItemBaseObj.getNode())
-// }
-
-// predicate test(DataFlow::Node setItemBaseObj, DataFlow::Node setAttrBaseObj) {
-//   setAttrBaseObj.getALocalSource() = setItemBaseObj.getALocalSource()
-// }
 
 from Flow::PathNode classPollutingKey, Flow::PathNode setItemKey, Flow::PathNode setAttrKey, string msg
 where

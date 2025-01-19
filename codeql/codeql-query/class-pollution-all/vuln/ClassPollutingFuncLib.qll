@@ -1,4 +1,5 @@
 import python
+import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import semmle.python.dataflow.new.TaintTracking
@@ -10,6 +11,7 @@ import shared.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
 import shared.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
+import shared.Debug::Debugging
 
 module ClassPollutionAssignment {
 /**
@@ -35,10 +37,7 @@ class EnumeratedKeyNames extends DataFlow::Node {
     // Match for `for k, v in dict.items()`
     exists(For forLoop, MethodCallNode call, Tuple tuple |
       forLoop.getIter() = call.asExpr() and
-      (
-        call.getMethodName() = "items" or
-        call.getMethodName() = "enumerate"
-      ) and
+      call.getMethodName() = "items" and
       tuple = forLoop.getTarget() and
       (
         tuple.getElt(0) = this.asExpr() or
@@ -51,6 +50,17 @@ class EnumeratedKeyNames extends DataFlow::Node {
       forLoop.getIter() = call.asExpr() and
       call.getMethodName() = "keys" and
       this.asExpr() = forLoop.getTarget()
+    )
+    or 
+    // Match for for `key, value in enumerate(dict):`
+    exists(For forLoop, API::CallNode call, Tuple tuple |
+      API::builtin("enumerate").getACall() = call and
+      forLoop.getIter() = call.asExpr() and
+      tuple = forLoop.getTarget() and
+      (
+        tuple.getElt(0) = this.asExpr() or
+        tuple.getElt(1) = this.asExpr()
+      )
     )
   }
 }
