@@ -150,4 +150,25 @@ module ClassPolltionUtils {
     source.getALocalSource() = sink.getALocalSource()
   }
 
+  /**
+   * @description
+   * ----------------------
+   * Holds if the given object has the class type "type".
+   * 
+   * Find the local source of the object and check if it is the class instantiation.
+   * If it is from a function parameter, we check the function's parameter annotation.
+   * 
+   */
+  predicate potentiallyHasTypeOf(DataFlow::Node obj, string type) {
+    exists (DataFlow::ParameterNode n |
+      obj.getALocalSource() = n and
+      n.getParameter().getAnnotation().toString() = type
+    ) or 
+    exists (CallNode call, ClassObject classObj |
+      obj.getALocalSource().asCfgNode() = call and
+      classObj.getACall() = call and
+      classObj.getName() = type
+    )
+  }
+
 }

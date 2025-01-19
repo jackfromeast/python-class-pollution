@@ -17,6 +17,7 @@ import vuln.ClassPollutingFuncLib::ClassPollutionAssignment
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
 import semmle.python.dataflow.new.DataFlow
 import shared.Utils::ClassPolltionUtils
+import shared.Debug::Debugging
 
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 

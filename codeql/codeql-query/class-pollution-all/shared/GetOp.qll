@@ -1,7 +1,9 @@
 import python
+import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import Utils::ClassPolltionUtils
+import shared.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
 
 module ClassPollutionGetOp {
   
@@ -146,7 +148,10 @@ predicate isLibraryWrapperCall(Expr obj, Expr key, Call call) {
     call.getFunc() = funcName and
     call.getAnArg() = obj and
     call.getAnArg() = key
-  )
+  ) or
+  // https://hikaru.readthedocs.io/en/latest/hikaru-base.html#object-at-path
+  // A methodCall named object_at_path and has been defined in the hikaru module
+  hikaruObjectAtPath(obj, key, call)
 }
 
 }

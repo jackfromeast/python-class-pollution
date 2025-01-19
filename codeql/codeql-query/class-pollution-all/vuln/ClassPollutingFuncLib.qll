@@ -9,6 +9,7 @@ import shared.Utils::ClassPolltionUtils
 import shared.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
 import shared.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
 import shared.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
+import shared.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
 import shared.Debug::Debugging
@@ -74,6 +75,8 @@ class EnumeratedKeyNames extends DataFlow::Node {
  * ----------------------
  * `key` in `keys = val.split('.'); for key in keys:`
  * `key` in `keys = val.split('.'); keys[index]`
+ * `key` in `keys = regex.split(any); for key in keys:`
+ * `key` in `keys = regex.split(any); keys[index]`
  * 
  */
 class SplitKeyNames extends DataFlow::Node {
@@ -93,6 +96,8 @@ class SplitKeyNames extends DataFlow::Node {
           subscript.getObject() = list.asExpr() and
           this.asExpr() = subscript
         )
+        or 
+        this = list
       )
     )
   }
@@ -103,6 +108,13 @@ module TrackingSplitResultConfiguration implements DataFlow::ConfigSig {
     exists(MethodCallNode call|
       call.getMethodName() = "split" and
       call = list
+    ) or 
+    exists( API::CallNode call |
+      (
+        API::moduleImport("re").getMember("split").getACall() = call or
+        API::moduleImport("regex").getMember("split").getACall() = call // https://pypi.org/project/regex/
+      ) and
+      call.asCfgNode() = list.asCfgNode()
     )
   }
 
@@ -147,7 +159,9 @@ module TrackingSplitResultFlow = TaintTracking::Global<TrackingSplitResultConfig
  * ----------------------
  * `keys` in `keys = val.split('.')`
  * `keys` in `keys = [for key in val.split('.')]`
- * `Keys` in `keys = [for key in filter(None, val.split('.'))]`
+ * `keys` in `keys = [for key in filter(None, val.split('.'))]`
+ * `keys` in `keys = regex.split(any);`
+ * 
  * 
  */
 predicate isSplitResult(DataFlow::Node list) {
@@ -224,10 +238,13 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   class FlowState = ClassPollutionAssignment::FlowState;
 
   predicate isSource(DataFlow::Node source, FlowState state) {
-    isClassPollutedKeyNames(source) or
-    exists( DataFlow::Node immediateSource | 
-      isClassPollutedKeyNames(immediateSource) and
-      DataFlow::localFlow(immediateSource, source)
+    // restrictedByFunctionName(source, "update_item_attr") and
+    (
+      isClassPollutedKeyNames(source) 
+      // exists( DataFlow::Node immediateSource | 
+      //   isClassPollutedKeyNames(immediateSource) and
+      //   DataFlow::localFlow(immediateSource, source)
+      // )
     )
   }
 
@@ -252,6 +269,13 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
     ) or
     (
       additionalFlowStepGetItemReverse(fromNode, toNode) and
+      (
+        toState instanceof UsedAsBaseObjectInSetAttrFlowState or
+        toState instanceof UsedAsBaseObjectInSetItemFlowState
+      )
+    ) or
+    (
+      additionalFlowStepThroughCustomLibAnyState(fromNode, toNode) and
       (
         toState instanceof UsedAsBaseObjectInSetAttrFlowState or
         toState instanceof UsedAsBaseObjectInSetItemFlowState
@@ -345,8 +369,15 @@ module Flow = TrackingClassPollutionKeyToAssignmentFlow; // For shortening the n
  * Extension of `DataFlow::Node` to identify nodes that hold key names that are enumerated or from split method call.
  */
 predicate isClassPollutedKeyNames(DataFlow::Node source) {
-  source instanceof EnumeratedKeyNames or
-  source instanceof SplitKeyNames
+  // restrictedByFunctionName(source, "update_item_attr") and
+  (
+    source instanceof EnumeratedKeyNames or
+    source instanceof SplitKeyNames
+  )
+}
+
+predicate test(Flow::PathNode sourceKeyToKey, Flow::PathNode setItemKey) {
+  TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceKeyToKey, setItemKey)
 }
 
 /**
