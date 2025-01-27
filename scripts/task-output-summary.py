@@ -2,6 +2,7 @@ import os
 import json
 import sys
 import argparse
+import csv
 
 metadata_files = [
     "/home/jackfromeast/Desktop/Blurt/crawler/output/python-20100101-20141001-star-1K.json",
@@ -9,7 +10,41 @@ metadata_files = [
     "/home/jackfromeast/Desktop/Blurt/crawler/output/python-20191001-20241001-star-1K.json"
 ]
 
-def summarize_results(base_folder, load_meta=False, metadata_files=None):
+downloads_file = "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-pip-1M/input/pip_10K_downloads_past_year.csv"
+
+def load_metadata(metadata_files):
+    repo_metadata = {}
+
+    for file in metadata_files:
+        try:
+            with open(file, 'r', encoding='utf-8') as f:
+                metadata = json.load(f)
+                for repo in metadata:
+                    repo_metadata[repo["name"]] = {
+                        "name": repo["name"],
+                        "stargazers_count": repo.get("stargazers_count", 0),
+                        "html_url": repo.get("html_url", "")
+                    }
+        except (json.JSONDecodeError, FileNotFoundError) as e:
+            print(f"Warning: Could not process {file}: {e}")
+
+    return repo_metadata
+
+def load_downloads(downloads_file):
+    downloads_data = {}
+    try:
+        with open(downloads_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                project_name = row["project_name"].strip()
+                num_downloads = int(row["num_downloads"].strip())
+                downloads_data[project_name] = num_downloads
+    except (FileNotFoundError, ValueError) as e:
+        print(f"Warning: Could not process downloads file {downloads_file}: {e}")
+
+    return downloads_data
+
+def summarize_results(base_folder, load_meta=False, metadata_files=None, downloads_file=None):
     flagged_folders = []
 
     for entry in os.scandir(base_folder):
@@ -32,48 +67,25 @@ def summarize_results(base_folder, load_meta=False, metadata_files=None):
         return [f"{name}" for name in flagged_folders]
 
     repo_metadata = load_metadata(metadata_files) if metadata_files else {}
+    downloads_data = load_downloads(downloads_file) if downloads_file else {}
     results = []
 
     for folder_name in flagged_folders:
-        if folder_name in repo_metadata:
-            repo_info = repo_metadata[folder_name]
-            results.append({
-                "name": repo_info["name"],
-                "stargazers_count": repo_info["stargazers_count"],
-                "html_url": repo_info["html_url"]
-            })
-        else:
-            results.append({
-                "name": folder_name,
-                "stargazers_count": -1,
-                "html_url": "N/A"
-            })
+        repo_info = repo_metadata.get(folder_name, {
+            "name": folder_name,
+            "stargazers_count": -1,
+            "html_url": f"https://pypi.org/project/{folder_name}"
+        })
+        repo_info["num_downloads"] = downloads_data.get(folder_name, -1)
+        results.append(repo_info)
 
-    sorted_results = sorted(results, key=lambda x: x["stargazers_count"], reverse=True)
+    sorted_results = sorted(results, key=lambda x: (x["stargazers_count"], x["num_downloads"]), reverse=True)
 
     formatted_results = [
-        f"{repo['name']}, {repo['stargazers_count']}, {repo['html_url']}" for repo in sorted_results
+        f"{repo['name']}, {repo['stargazers_count']}, {repo['num_downloads']}, {repo['html_url']}" for repo in sorted_results
     ]
 
     return formatted_results
-
-def load_metadata(metadata_files):
-    repo_metadata = {}
-
-    for file in metadata_files:
-        try:
-            with open(file, 'r', encoding='utf-8') as f:
-                metadata = json.load(f)
-                for repo in metadata:
-                    repo_metadata[repo["name"]] = {
-                        "name": repo["name"],
-                        "stargazers_count": repo.get("stargazers_count", 0),
-                        "html_url": repo.get("html_url", "")
-                    }
-        except (json.JSONDecodeError, FileNotFoundError) as e:
-            print(f"Warning: Could not process {file}: {e}")
-
-    return repo_metadata
 
 def guess_input_test_path(base_folder):
     input_folder = os.path.join(base_folder, "..", "input")
@@ -119,12 +131,17 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    result = summarize_results(args.base_folder, load_meta=args.meta, metadata_files=metadata_files if args.meta else None)
+    result = summarize_results(
+        args.base_folder,
+        load_meta=args.meta,
+        metadata_files=metadata_files if args.meta else None,
+        downloads_file=downloads_file if args.meta else None
+    )
 
     if result:
         print(f"Flagged {len(result)} repositories in total:")
         for case in result:
-            print(f"- {case}")
+            print(f"{case}")
 
     if args.test:
         input_test_path = args.input_file if args.input_file else guess_input_test_path(args.base_folder)
