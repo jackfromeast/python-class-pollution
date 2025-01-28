@@ -93,7 +93,10 @@ predicate exercise(CallCfgNode callNode, Function func) {
 
 0. Theoretical Basis
     + Assume the query algorithm has a time complexity of \(O(f(N))\), where \(N\) is the number of nodes in the database.
-    + If $f(N)$ grows faster than linearly (i.e., $f(N) \neq c \cdot N$ for any constant c, then for any partition $N = \sum_{i=1}^n N_i$, it follows that: $O(f(N)) > \sum_{i=1}^n O(f(N_i))$)
+    + If $f(N)$ grows faster than linearly (i.e., $f(N) ≠ c⋅N$ for any constant $c$, then for any partition $N = \sum_{i=1}^n N_i$, it follows that: $O(f(N)) > \sum_{i=1}^n O(f(N_i))$)
+    $$
+    if N = \sum_{i=1}^n N_i, O(f(N)) > \sum_{i=1}^n O(f(N_i))
+    $$
     + Intuitively, a super-linear complexity means that analyzing the entire database (including dependencies) at once is strictly more expensive than solving smaller subproblems individually.
 
 1. More Sources/Sinks considered the Dependency Library
