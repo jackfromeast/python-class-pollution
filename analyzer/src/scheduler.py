@@ -5,20 +5,19 @@ This script helps to schedule the tasks for running the CodeQL queries based on 
 
 @usage
 ---------------------
-```python scheduler.py --config <path-to-config>```
+```python src/scheduler.py --config <path-to-config>```
 """
 
 import os
-import log
 import yaml
 import shutil
 import subprocess
+import utils.log as log
 from argparse import ArgumentParser
 from threading import Lock
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 logger = None
-
 
 class Scheduler:
   def __init__(self, config_path):
@@ -33,7 +32,6 @@ class Scheduler:
     self.url_list_to = self.config["SCHEDULER"]["URL_LIST_TO"]
     self.max_workers = self.config["SCHEDULER"]["MAX_WORKER"]
     self.timeout_per_worker = self.config["SCHEDULER"]["TIMEOUT_PER_WORKER"]
-    self.run_script_path = "run.py"
     self.lock = Lock()  # Lock for thread-safe progress updates
     self.completed_repos = 0  # Counter for completed repositories
     self.total_repos = len(self.get_repo_urls())
@@ -65,7 +63,9 @@ class Scheduler:
     logger.info(f"Starting worker for repo: {repo_url}")
     try:
       command = [
-        "python", self.run_script_path,
+        "python",
+        "-m",
+        "src.codeql_driver.run",
         "--repo", repo_url,
         "--work-path", self.workspace,
         "--config", self.config_path,
@@ -127,6 +127,10 @@ class Scheduler:
 
 
 def main():
+  ## Check the current path should be under analyzer folder
+  if not os.path.exists("src/scheduler.py"):
+    print("[!] Please run the script from the analyzer folder.")
+
   parser = ArgumentParser(description="Schedule tasks for running CodeQL queries.")
   parser.add_argument("--config", required=True, help="Path to the config file.")
   args = parser.parse_args()

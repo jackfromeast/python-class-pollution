@@ -1,7 +1,7 @@
 """
 @description
 ---------------------
-This script helps to run the codeql on a given Github url.
+This script helps to run the codeql on a given Github URL/PyPL package name.
 
 @usage
 ---------------------
@@ -12,14 +12,14 @@ python3 run.py --repo https://github.com/dgilland/pydash.git --work-path /home/j
 """
 
 import os
-import log
 import json
 import yaml
 import glob
 import time
 import shutil
 import subprocess
-from download import GithubDownloader, PipDownloader
+from src.utils import log
+from .download import GithubDownloader, PipDownloader
 from argparse import ArgumentParser
 
 logger = None # Global logger

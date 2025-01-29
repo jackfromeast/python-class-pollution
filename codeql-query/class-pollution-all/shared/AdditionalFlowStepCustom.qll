@@ -55,6 +55,7 @@ predicate additionalFlowStepThroughHikaru(DataFlow::Node fromNode, DataFlow::Nod
 // https://hikaru.readthedocs.io/en/latest/hikaru-base.html#object-at-path
 // A methodCall named object_at_path and has been defined in the hikaru module
 predicate hikaruObjectAtPath(Expr obj, Expr key, Call call) {
+  none() and
   exists ( MethodCallNode mcall |
     mcall.getMethodName() = "object_at_path" and
     mcall.getObject().asExpr() = obj and

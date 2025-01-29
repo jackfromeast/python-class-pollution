@@ -1,5 +1,4 @@
 import os
-import log
 import json
 import yaml
 import glob
@@ -7,6 +6,7 @@ import time
 import shutil
 import zipfile
 import subprocess
+import src.utils.log as log
 from argparse import ArgumentParser
 
 class GithubDownloader:
