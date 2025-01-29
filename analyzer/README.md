@@ -2,7 +2,7 @@ This folder contains the source code used to analyze the class-pollution vulnera
 
 The followings are introduction for each folder.
 
-**/codeql-driver**
+**/codeql_driver**
 
 This folder holds the code that drives CodeQL to perform an analysis, including:
 
