@@ -6,17 +6,16 @@ import time
 import shutil
 import zipfile
 import subprocess
-import src.utils.log as log
+from utils.logger import LoggerFactory
 from argparse import ArgumentParser
 
 class GithubDownloader:
-  def __init__(self, repo_url, repo_save_path, logger, global_logger):
+  def __init__(self, repo_url, repo_save_path):
     self.repo_url = repo_url
     self.repo_save_path = repo_save_path
     self.timeout = 300  # 5 minutes
 
-    self.logger = logger
-    self.global_logger = global_logger
+    self.logger = LoggerFactory.get_logger("GithubDownloader")
 
   def clone_repo(self):
     """Clone the repository into the specified folder."""
@@ -30,7 +29,6 @@ class GithubDownloader:
         shutil.rmtree(codebase_save_path)
       except Exception as e:
         self.logger.error(f"Failed to remove existing codebase: {e}")
-        self.global_logger.error(f"Failed to remove existing codebase: {e}")
         return False
     
     try:
@@ -42,22 +40,19 @@ class GithubDownloader:
       return True
     except subprocess.TimeoutExpired:
       self.logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
-      self.global_logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
       return False
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to clone repository: {e}")
-      self.global_logger.error(f"Failed to clone repository: {e}")
       return False
 
 
 class PipDownloader:
-  def __init__(self, package_name, repo_save_path, logger, global_logger):
+  def __init__(self, package_name, repo_save_path):
     self.package_name = package_name
     self.repo_save_path = repo_save_path
     self.timeout = 300  # 5 minutes
 
-    self.logger = logger
-    self.global_logger = global_logger
+    self.logger = LoggerFactory.get_logger("PipDownloader")
 
   def _extract_whl_file(self, whl_path, extract_to):
     """Extract a .whl file to the specified directory."""
@@ -69,7 +64,6 @@ class PipDownloader:
         return True
     except zipfile.BadZipFile as e:
         self.logger.error(f"Failed to extract .whl file: {e}")
-        self.global_logger.error(f"Failed to extract .whl file: {e}")
         return False
   
   def _clean_directory(self, path):
@@ -80,7 +74,6 @@ class PipDownloader:
             shutil.rmtree(path)
         except Exception as e:
             self.logger.error(f"Failed to remove directory {path}: {e}")
-            self.global_logger.error(f"Failed to remove directory {path}: {e}")
             return False
     return True
 
@@ -105,7 +98,6 @@ class PipDownloader:
       whl_files = [f for f in os.listdir(whl_save_path) if f.endswith(".whl")]
       if not whl_files:
           self.logger.error("No .whl file found in the download directory.")
-          self.global_logger.error("No .whl file found in the download directory.")
           return False
 
       # Step 3: Extract the first .whl file found
@@ -118,9 +110,7 @@ class PipDownloader:
     
     except subprocess.TimeoutExpired:
       self.logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
-      self.global_logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
       return False
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to clone repository: {e}")
-      self.global_logger.error(f"Failed to clone repository: {e}")
       return False

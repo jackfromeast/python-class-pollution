@@ -1,0 +1,306 @@
+"""
+@description
+---------------------
+This script helps to run the codeql on a given Github URL/PyPL package name.
+
+@usage
+---------------------
+python run.py --repo <repo-url> --work-path <work-path> --config <path-to-config>
+
+e.g.,
+python3 run.py --repo https://github.com/dgilland/pydash.git --work-path /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output --config /home/jackfromeast/Desktop/python-class-pollution/codeql/driver/config.yaml 
+"""
+
+import os
+import json
+import yaml
+import glob
+import time
+import shutil
+import subprocess
+from utils.logger import LoggerFactory
+from utils.config import Config
+from utils.downloader import GithubDownloader, PipDownloader
+from argparse import ArgumentParser
+
+def resolve_repo_name(repo_url):
+  if repo_url.endswith(".git"):
+    return repo_url.split("/")[-1].replace(".git", "")
+  return repo_url.split("/")[-1]
+
+def cleanup_folders(folder_path):
+  if os.path.exists(folder_path):
+    try:
+      subprocess.run(['rm', '-rf', folder_path], check=True)
+      print(f"Successfully deleted: {folder_path}")
+    except subprocess.CalledProcessError as e:
+      print(f"Error deleting {folder_path}: {e}")
+
+class CodeQLRunner:
+  """
+  This class helps to run the CodeQL queries on a given downloaded repository.
+  Given a work directory and a CodeQL configuration, it builds the CodeQL database and runs the queries.
+
+  @param work_dir (str): Path to the working directory. It assume the codebase is saved in `work_dir/codebase`.
+  @param queries (list): List of CodeQL queries to run.
+  @param codeql_config (dict): Configuration for CodeQL CLI.
+  """
+  def __init__(self, work_dir, queries, codeql_config, delete_after_query=False, delete_if_no_flows=True):
+    self.repo_name = os.path.basename(work_dir)
+    self.work_dir = work_dir
+    self.codeql_config = codeql_config
+    self.queries = queries
+    self.logger = LoggerFactory.get_logger("CodeQLRunner", local_logger_folder=os.path.join(work_dir, "logs"), result_logger=True)
+
+    self.codebase_path = os.path.join(self.work_dir , "codebase")
+    self.db_path = os.path.join(self.work_dir , "codeql-db")
+    self.results_dir = os.path.join(self.work_dir , "results")
+    self.work_folder_sanity_check()
+
+    self.delete_after_query = delete_after_query
+    self.delete_if_no_flows = delete_if_no_flows
+
+  def work_folder_sanity_check(self):
+    if not os.path.exists(self.codebase_path):
+      self.logger.error(f"Codebase path does not exist: {self.codebase_path}")
+      return False
+    if os.path.exists(self.db_path):
+      self.logger.warning(f"CodeQL database path already exists: {self.db_path}")
+      return False
+    os.makedirs(self.results_dir, exist_ok=True)
+    return True
+
+  def build(self):
+    """
+    Build CodeQL database for the `self.work_dir/codebase`
+    """
+    self.logger.info(f"Building CodeQL database for: {self.codebase_path}")
+    try:
+      subprocess.check_call(
+        [
+          self.codeql_config.CLI, "database", "create", self.db_path,
+          "--source-root", self.codebase_path,
+          "--language=python",
+          f"--threads={self.codeql_config.THREADS}",
+          f"--ram={self.codeql_config.RAM}",
+          "--overwrite"
+        ],
+        timeout=self.codeql_config.TIMEOUT
+      )
+      self.logger.info(f"CodeQL database created successfully at {self.db_path}")
+      return True
+    except subprocess.TimeoutExpired:
+      self.logger.error("Building CodeQL database timed out.")
+      return False
+    except subprocess.CalledProcessError as e:
+      self.logger.error(f"Failed to build CodeQL database: {e}")
+      return False
+
+  def stop_codeql_process(self, db_path):
+    """
+    Stop the CodeQL process that is still using the database path.
+    """
+    try:
+      result = subprocess.run(
+        ["lsof", "+D", db_path],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+      )
+      
+      # Parse the lsof output to extract PIDs
+      pids = set()
+      for line in result.stdout.splitlines():
+        parts = line.split()
+        if len(parts) > 1 and parts[1].isdigit():  # PID is in the second column
+          pids.add(int(parts[1]))
+
+      if not pids:
+        self.logger.info(f"No processes found using {db_path}.")
+        return
+
+      # Terminate the processes using the database path
+      for pid in pids:
+        try:
+          # os.kill(pid, 9)  # Send SIGTERM to gracefully terminate
+          self.logger.info(f"Terminated process with PID {pid} using {db_path}")
+        except OSError as e:
+          self.logger.warning(f"Failed to terminate process with PID {pid}: {e}")
+
+    except FileNotFoundError:
+      self.logger.error("lsof command not found. Please install lsof to use this feature.")
+    except Exception as e:
+      self.logger.error(f"Error while stopping CodeQL process: {e}")
+
+  def cleanup(self, everything=False):
+    """
+    Remove the CodeQL database and codebase after running the queries.
+    """
+    self.logger.info("Cleaning up CodeQL database and codebase...")
+    try:
+      self.stop_codeql_process(self.db_path)
+      if everything:
+        if os.path.exists(self.work_dir):
+          cleanup_folders(self.work_dir)
+          self.logger.info(f"Removed repo directory at {self.work_dir} as no flows detected.")
+      else:
+        if os.path.exists(self.db_path):
+          cleanup_folders(self.db_path)
+          self.logger.info(f"Removed CodeQL database at {self.db_path}")
+        if os.path.exists(self.codebase_path):
+          cleanup_folders(self.codebase_path)
+          self.logger.info(f"Removed codebase at {self.codebase_path}")
+    except Exception as e:
+      self.logger.error(f"Failed during cleanup: {e}")
+
+  def run_queries(self):
+    """
+    Run the CodeQL queries on the CodeQL database.
+    """
+    self.logger.info(f"Running CodeQL queries on database: {self.db_path}")
+    for query_file in self.queries:
+      output_file = os.path.join(
+        self.results_dir, f"{os.path.basename(query_file)}.sarif"
+      )
+      self.logger.info(f"Running query: {query_file}")
+      if not self.run_single_query(query_file, output_file):
+        self.logger.error(f"Failed to run query: {query_file}")
+      else:
+        self.logger.info(f"Query completed successfully: {query_file}")
+    
+    self.summarize_results(os.path.join(self.results_dir, "summary.json"))
+
+    if self.delete_if_no_flows:
+      # Delete the database and codebase if no flows are detected
+      summary_file = os.path.join(self.results_dir, "summary.json")
+      if os.path.exists(summary_file):
+        with open(summary_file, "r") as f:
+          summary = json.load(f)
+        if all([v == 0 for v in summary.values()]):
+          self.logger.info("No flows detected. Cleaning up...")
+          self.cleanup(everything=True)
+      else:
+        self.logger.info("No flows detected. Cleaning up...")
+        self.cleanup(everything=True)
+
+    if self.delete_after_query:
+      self.cleanup()
+
+  def run_single_query(self, query_file, output_file):
+    """
+    Run a single CodeQL query on the CodeQL database.
+    """
+    try:
+      subprocess.check_call(
+        [
+          self.codeql_config.CLI, "database", "analyze", self.db_path,
+          query_file,
+          "--format=sarif-latest",
+          f"--threads={self.codeql_config.THREADS}",
+          f"--ram={self.codeql_config.RAM}",
+          f"--timeout={self.codeql_config.TIMEOUT}",
+          "--output", output_file,
+        ],
+        timeout=self.codeql_config.TIMEOUT
+      )
+      self.logger.info(f"Query {query_file} executed successfully. Results saved to {output_file}")
+      return True
+    
+    except subprocess.TimeoutExpired:
+      # Wait for 10 seconds before killing the process
+      self.logger.error(f"Query {query_file} timed out.")
+      return False
+    
+    except subprocess.CalledProcessError as e:
+      self.logger.error(f"Failed to execute query {query_file}: {e}")
+      return False
+  
+  def summarize_results(self, output_file="summary.json"):
+    """
+    Summarize the results of the CodeQL queries by counting the number of detected flows
+    and save the summary to a JSON file.
+    
+    @param: output_file (str): Path to the JSON file where the summary will be saved.
+    """
+    self.logger.info("Summarizing CodeQL results...")
+    summary = {}
+    results_files = glob.glob(os.path.join(self.results_dir, "*.sarif"))
+
+    if not results_files:
+      self.logger.info("No results files found to summarize.")
+      return
+
+    for result_file in results_files:
+      try:
+        with open(result_file, "r") as f:
+          sarif_data = json.load(f)
+        
+        runs = sarif_data.get("runs", [])
+        flow_count = 0
+        for run in runs:
+          results = run.get("results", [])
+          flow_count += len(results)
+        
+        query_name = os.path.basename(result_file)
+        summary[query_name] = flow_count
+        self.logger.info(f"Processed {result_file}: {flow_count} flows detected.")
+      except (json.JSONDecodeError, KeyError) as e:
+        self.logger.error(f"Failed to process {result_file}: {e}")
+
+    try:
+      with open(output_file, "w") as f:
+        json.dump(summary, f, indent=2)
+      self.logger.info(f"Summary saved to {output_file}")
+    except Exception as e:
+      self.logger.error(f"Failed to save summary to {output_file}: {e}")
+
+    # Output the summary to the result logger
+    for query_name, flow_count in summary.items():
+      if flow_count > 0:
+        self.logger.info(f"{self.repo_name} - {query_name}: {flow_count} flows detected.", result=True)
+
+    return summary
+
+def run_codeql_query(repo, config):
+  """
+  Run the CodeQL pipeline for a given repository.
+  
+  @param repo: GitHub URL or pip package name.
+  @param config: Config object.
+  """
+  repo_name = resolve_repo_name(repo)
+  work_path = os.path.join(config.SCHEDULER.WORKSPACE, "output", repo_name)
+
+  if config.SCHEDULER.SOURCE == "PIP":
+    downloader = PipDownloader(repo, work_path)
+  else:
+    downloader = GithubDownloader(repo, work_path)
+
+  if not downloader.clone_repo():
+    cleanup_folders(work_path)
+    return
+  
+  runner = CodeQLRunner(work_path, config.CLASS_POLLUTION_ANALYSIS.QUERIES, config.CODEQL,
+                        delete_after_query=config.CLASS_POLLUTION_ANALYSIS.DELETE_AFTER_QUERY,
+                        delete_if_no_flows=config.CLASS_POLLUTION_ANALYSIS.DELETE_IF_NO_FLOWS)
+  
+  if not runner.build():
+    cleanup_folders(work_path)
+    return
+  
+  runner.run_queries()
+
+def main():
+  parser = ArgumentParser(description="Run CodeQL pipeline for multiple repositories.")
+  parser.add_argument("--repo", required=True, help="Repo GitHub URL or pip package name.")
+  parser.add_argument("--work-path", required=True, help="Path to the working directory.")
+  parser.add_argument("--config", required=True, help="Path to the config file.")
+  parser.add_argument("--pip", action="store_true", help="Use pip to download the repository.")
+  args = parser.parse_args()
+
+  config = Config(args.config)
+  
+  run_codeql_query(args.repo, config)
+
+if __name__ == "__main__":
+  main()
