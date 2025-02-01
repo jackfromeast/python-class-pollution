@@ -46,6 +46,7 @@ def build_codeql_database(codebase_path, codeql_db_path="codeql-db"):
     except subprocess.CalledProcessError as e:
         raise Exception(f"Failed to create CodeQL database: {e}")
 
+
 def main():
   """
   Usage examples:
