@@ -45,6 +45,14 @@ class BaseScheduler:
     else:
       return [self.config.SCHEDULER.REPO]
 
+  def setup_workspace_for_repo(self, repo_url):
+    """Setup the workspace for the repository."""
+    repo_name = self.resolve_repo_name(repo_url)
+    repo_workspace_path = os.path.join(self.workspace, 'output', repo_name)
+    os.makedirs(repo_workspace_path, exist_ok=True)
+
+    return repo_workspace_path
+
   def cleanup_folders(self, folder_path):
     """Removes a directory."""
     if os.path.exists(folder_path):
@@ -93,3 +101,9 @@ class BaseScheduler:
     with self.lock:
       self.completed_repos.value += 1
       self.logger.info(f"Progress: {self.completed_repos.value}/{self.total_repos} repositories scanned.")
+  
+  @staticmethod
+  def resolve_repo_name(repo_url):
+    if repo_url.endswith(".git"):
+      return repo_url.split("/")[-1].replace(".git", "")
+    return repo_url.split("/")[-1]

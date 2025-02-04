@@ -9,6 +9,13 @@ import subprocess
 from utils.logger import LoggerFactory
 from argparse import ArgumentParser
 
+def download(repo_url, repo_save_path, pip=False):
+  if pip:
+    downloader = PipDownloader(repo_url, repo_save_path)
+  else:
+    downloader = GithubDownloader(repo_url, repo_save_path)
+  return downloader.clone_repo()
+
 class GithubDownloader:
   def __init__(self, repo_url, repo_save_path):
     self.repo_url = repo_url
