@@ -73,6 +73,7 @@ class LoggerFactory:
   """
 
   _instance = None
+  registered_logging_paths = []
 
   @classmethod
   def initialize(cls, workspace_path, config):
@@ -86,7 +87,7 @@ class LoggerFactory:
       cls._instance.workspace_path = workspace_path  
       cls._instance.global_logging_path = cls._instance.config.LOG_PATH if cls._instance.config.LOG_PATH else os.path.join(workspace_path, "logs")
       cls._instance.file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)')
-
+  
   @classmethod
   def get_logger(cls, name, level=logging.INFO, global_level=logging.ERROR,
                  global_logger_folder="analysis", local_logger_folder=None,
@@ -130,7 +131,8 @@ class LoggerFactory:
 
       log_path = log_file_map.get(global_level, log_file_map[logging.ERROR])  # Default to ERROR logs
 
-      if clear_log and os.path.exists(log_path):
+      if clear_log and os.path.exists(log_path) and (log_path not in cls.registered_logging_paths):
+        cls.registered_logging_paths.append(log_path)
         with open(log_path, 'w'):
           pass
 
@@ -148,9 +150,11 @@ class LoggerFactory:
       local_error_log_path = os.path.join(local_log_dir, "error.log")
 
       for log_path, log_level in [(local_info_log_path, logging.INFO), (local_error_log_path, logging.ERROR)]:
-        if clear_log and os.path.exists(log_path):
+        if clear_log and os.path.exists(log_path) and (log_path not in cls.registered_logging_paths):
+          cls.registered_logging_paths.append(log_path)
           with open(log_path, 'w'):
             pass
+          
         local_fh = logging.FileHandler(log_path)
         local_fh.setLevel(log_level)
         local_fh.setFormatter(cls._instance.file_format)
