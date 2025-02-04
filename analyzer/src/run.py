@@ -1,4 +1,5 @@
 from workflows.run_cp_analysis import ClassPollutionAnalysis
+from workflows.run_dependency_analysis import DependencyAnalysis
 from argparse import ArgumentParser
 
 def main():
@@ -9,6 +10,8 @@ def main():
 
   if args.workflow == "class_pollution":
     scheduler = ClassPollutionAnalysis(args.config)
+  elif args.workflow == "dependency_analysis":
+    scheduler = DependencyAnalysis(args.config)
 
   scheduler.schedule_tasks()
 

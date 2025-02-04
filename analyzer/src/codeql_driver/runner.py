@@ -214,6 +214,10 @@ class CodeQLRunner:
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to execute query {query_file}: {e}")
       return False
+
+    except Exception as e:
+      self.logger.error(f"Unexpected error running query {query_file}: {e}")
+      return False
   
   def summarize_results(self, output_file="summary.json"):
     """
@@ -260,35 +264,6 @@ class CodeQLRunner:
         self.logger.info(f"{self.repo_name} - {query_name}: {flow_count} flows detected.", result=True)
 
     return summary
-
-def run_codeql_query(repo, config):
-  """
-  Run the CodeQL pipeline for a given repository.
-  
-  @param repo: GitHub URL or pip package name.
-  @param config: Config object.
-  """
-  repo_name = resolve_repo_name(repo)
-  work_path = os.path.join(config.SCHEDULER.WORKSPACE, "output", repo_name)
-
-  if config.SCHEDULER.SOURCE == "PIP":
-    downloader = PipDownloader(repo, work_path)
-  else:
-    downloader = GithubDownloader(repo, work_path)
-
-  if not downloader.clone_repo():
-    cleanup_folders(work_path)
-    return
-  
-  runner = CodeQLRunner(work_path, config.CLASS_POLLUTION_ANALYSIS.QUERIES, config.CODEQL,
-                        delete_after_query=config.CLASS_POLLUTION_ANALYSIS.DELETE_AFTER_QUERY,
-                        delete_if_no_flows=config.CLASS_POLLUTION_ANALYSIS.DELETE_IF_NO_FLOWS)
-  
-  if not runner.build():
-    cleanup_folders(work_path)
-    return
-  
-  runner.run_queries()
 
 def main():
   parser = ArgumentParser(description="Run CodeQL pipeline for multiple repositories.")
