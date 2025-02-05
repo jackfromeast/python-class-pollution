@@ -13,7 +13,11 @@ def main():
   elif args.workflow == "dependency_analysis":
     scheduler = DependencyAnalysis(args.config)
 
-  scheduler.schedule_tasks()
+  try:
+    scheduler.schedule_tasks()
+  except Exception as e:
+    scheduler.kill_all_spawn_processes()
+    scheduler.logger.error(f"scheduler terminated: {e}")
 
 if __name__ == "__main__":
   main()

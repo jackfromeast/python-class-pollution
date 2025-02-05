@@ -51,6 +51,9 @@ class GithubDownloader:
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to clone repository: {e}")
       return False
+    except Exception as e:
+      self.logger.error(f"Unexpected error: {e}")
+      return False
 
 
 class PipDownloader:
@@ -71,6 +74,9 @@ class PipDownloader:
         return True
     except zipfile.BadZipFile as e:
         self.logger.error(f"Failed to extract .whl file: {e}")
+        return False
+    except Exception as e:
+        self.logger.error(f"Unexpected error: {e}")
         return False
   
   def _clean_directory(self, path):
@@ -120,4 +126,7 @@ class PipDownloader:
       return False
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to clone repository: {e}")
+      return False
+    except Exception as e:
+      self.logger.error(f"Unexpected error: {e}")
       return False
