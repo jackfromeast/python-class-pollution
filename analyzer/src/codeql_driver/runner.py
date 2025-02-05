@@ -35,6 +35,8 @@ def cleanup_folders(folder_path):
       print(f"Successfully deleted: {folder_path}")
     except subprocess.CalledProcessError as e:
       print(f"Error deleting {folder_path}: {e}")
+    except Exception as e:
+      print(f"Unexpected error deleting {folder_path}: {e}")
 
 class CodeQLRunner:
   """
@@ -95,6 +97,9 @@ class CodeQLRunner:
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to build CodeQL database: {e}")
       return False
+    except Exception as e:
+      self.logger.error(f"Unexpected error: {e}")
+      return False
 
   def stop_codeql_process(self, db_path):
     """
@@ -126,6 +131,8 @@ class CodeQLRunner:
           self.logger.info(f"Terminated process with PID {pid} using {db_path}")
         except OSError as e:
           self.logger.warning(f"Failed to terminate process with PID {pid}: {e}")
+        except Exception as e:
+          self.logger.warning(f"Unexpected error when terminating process with PID {pid}: {e}")
 
     except FileNotFoundError:
       self.logger.error("lsof command not found. Please install lsof to use this feature.")
@@ -250,6 +257,8 @@ class CodeQLRunner:
         self.logger.info(f"Processed {result_file}: {flow_count} flows detected.")
       except (json.JSONDecodeError, KeyError) as e:
         self.logger.error(f"Failed to process {result_file}: {e}")
+      except Exception as e:
+        self.logger.error(f"Unexpected error processing {result_file}: {e}")
 
     try:
       with open(output_file, "w") as f:
