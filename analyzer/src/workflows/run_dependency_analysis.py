@@ -11,7 +11,7 @@ import os
 import signal
 import psutil
 from argparse import ArgumentParser
-from dependency_analysis.resolver import DependencyResolver
+from dependency_analysis.analyzer import DependencyAnalyzer
 from utils.downloader import download
 from .base_scheduler import BaseScheduler
 
@@ -60,16 +60,10 @@ class DependencyAnalysis(BaseScheduler):
       self.cleanup_folders(repo_workspace_path)
       return
 
-    # Run the dependency analysis
-    codebase_path = os.path.join(repo_workspace_path, "codebase")
-    output_path = os.path.join(repo_workspace_path, "dependencies")
-
-    resolver = DependencyResolver(codebase_path, output_path, self.resolve_repo_name(repo_url))
+    analyzer = DependencyAnalyzer(repo_url, repo_workspace_path, self.config)
 
     try:
-      if resolver.resolve():
-        resolver.generate_SBOM()
-        resolver.output_SBOM()
+      analyzer.run()
     except Exception as e:
       self.logger.error(f"Error running dependency analysis for {repo_url}: {e}")
       if not self.config.DEPENDENCY_ANALYSIS.DEBUG:

@@ -29,9 +29,10 @@ class MultiLogger:
   If `result=True` is passed in the log method, the log is written to `result.log`.
   """
 
-  def __init__(self, logger, result_logger):
+  def __init__(self, logger, result_logger, log_error_details=False):
     self.logger = logger
     self.result_logger = result_logger
+    self.error_details = log_error_details
 
   def _log(self, level, msg, *args, result=False, **kwargs):
     if result:
@@ -87,6 +88,7 @@ class LoggerFactory:
       cls._instance.workspace_path = workspace_path  
       cls._instance.global_logging_path = cls._instance.config.LOG_PATH if cls._instance.config.LOG_PATH else os.path.join(workspace_path, "logs")
       cls._instance.file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)')
+      cls._instance.error_details = config.LOG.LOG_ERROR_DETAILS
   
   @classmethod
   def get_logger(cls, name, level=logging.INFO, global_level=logging.ERROR,
@@ -98,10 +100,10 @@ class LoggerFactory:
     @param name: Logger name (e.g., "CodeQLRunner", "Scheduler").
     @param level: Logging level for this logger.
     @param global_level: Logging level for the global logger.
-    @param clear_log: Clear the log file before writing new logs.
     @param global_logger_folder: Folder name under the global logging path, default is "analysis".
     @param local_logger_folder: Path to the local log folder.
     @param result_logger: If True, and `LOG_RESULT` is enabled, the returned logger will log to `result.log`.
+    @param clear_log: Clear the log file before writing new logs.
     """
     if cls._instance is None:
       raise ValueError("LoggerFactory has not been initialized. Call LoggerFactory.initialize() first.")
@@ -125,11 +127,31 @@ class LoggerFactory:
       os.makedirs(global_log_dir, exist_ok=True)
 
       log_file_map = {
-        logging.INFO: os.path.join(global_log_dir, "info.log"),
-        logging.ERROR: os.path.join(global_log_dir, "error.log"),
+        "GithubDownloader": {
+          logging.INFO: "github_downloader.info.log",
+          logging.ERROR: "github_downloader.error.log",
+        },
+        "PipDownloader": {
+          logging.INFO: "pip_downloader.info.log",
+          logging.ERROR: "pip_downloader.error.log",
+        },
+        "CodeQLRunner": {
+          logging.INFO: "codeql_runner.info.log",
+          logging.ERROR: "codeql_runner.error.log",
+        },
+        "DependencyResolver": {
+          logging.INFO: "dependency_resolver.info.log",
+          logging.ERROR: "dependency_resolver.error.log",
+        },
+        "DependencyAnalyzer": {
+          logging.INFO: "dependency_analyzer.info.log",
+          logging.ERROR: "dependency_analyzer.error.log",
+        },
       }
 
-      log_path = log_file_map.get(global_level, log_file_map[logging.ERROR])  # Default to ERROR logs
+      # Default to "Other" if the logger name is not mapped
+      log_file_name = log_file_map.get(name, {}).get(global_level, "other.error.log")
+      log_path = os.path.join(global_log_dir, log_file_name)
 
       if clear_log and os.path.exists(log_path) and (log_path not in cls.registered_logging_paths):
         cls.registered_logging_paths.append(log_path)
@@ -172,6 +194,6 @@ class LoggerFactory:
         result_fh.setFormatter(cls._instance.file_format)
         result_logger.addHandler(result_fh)
 
-      return MultiLogger(logger, result_logger)
+      return MultiLogger(logger, result_logger, log_error_details=cls._instance.error_details)
 
     return logger

@@ -13,30 +13,14 @@ python3 run.py --repo https://github.com/dgilland/pydash.git --work-path /home/j
 
 import os
 import json
-import yaml
 import glob
-import time
-import shutil
+import psutil
 import subprocess
 from utils.logger import LoggerFactory
 from utils.config import Config
+from utils.helper import resolve_repo_name, cleanup_folders
 from utils.downloader import GithubDownloader, PipDownloader
 from argparse import ArgumentParser
-
-def resolve_repo_name(repo_url):
-  if repo_url.endswith(".git"):
-    return repo_url.split("/")[-1].replace(".git", "")
-  return repo_url.split("/")[-1]
-
-def cleanup_folders(folder_path):
-  if os.path.exists(folder_path):
-    try:
-      subprocess.run(['rm', '-rf', folder_path], check=True)
-      print(f"Successfully deleted: {folder_path}")
-    except subprocess.CalledProcessError as e:
-      print(f"Error deleting {folder_path}: {e}")
-    except Exception as e:
-      print(f"Unexpected error deleting {folder_path}: {e}")
 
 class CodeQLRunner:
   """
@@ -77,8 +61,10 @@ class CodeQLRunner:
     Build CodeQL database for the `self.work_dir/codebase`
     """
     self.logger.info(f"Building CodeQL database for: {self.codebase_path}")
+
+    process = None
     try:
-      subprocess.check_call(
+      process = subprocess.Popen(
         [
           self.codeql_config.CLI, "database", "create", self.db_path,
           "--source-root", self.codebase_path,
@@ -87,57 +73,37 @@ class CodeQLRunner:
           f"--ram={self.codeql_config.RAM}",
           "--overwrite"
         ],
-        timeout=self.codeql_config.TIMEOUT
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
       )
-      self.logger.info(f"CodeQL database created successfully at {self.db_path}")
-      return True
+
+      _, stderr = process.communicate(timeout=self.codeql_config.TIMEOUT)
+
+      if process.returncode == 0:
+        self.logger.info(f"CodeQL database created successfully at {self.db_path}")
+        return True
+      else:
+        self.logger.error(f"Failed to build CodeQL database: {process.stderr.read().decode()}")
+        if (self.logger.error_details):
+          self.logger.error(f"Error details: {stderr.decode().strip()}")
+        return False
+
     except subprocess.TimeoutExpired:
       self.logger.error("Building CodeQL database timed out.")
       return False
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to build CodeQL database: {e}")
+      if (self.logger.error_details):
+          self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
     except Exception as e:
       self.logger.error(f"Unexpected error: {e}")
+      if (self.logger.error_details):
+        self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
-
-  def stop_codeql_process(self, db_path):
-    """
-    Stop the CodeQL process that is still using the database path.
-    """
-    try:
-      result = subprocess.run(
-        ["lsof", "+D", db_path],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True
-      )
-      
-      # Parse the lsof output to extract PIDs
-      pids = set()
-      for line in result.stdout.splitlines():
-        parts = line.split()
-        if len(parts) > 1 and parts[1].isdigit():  # PID is in the second column
-          pids.add(int(parts[1]))
-
-      if not pids:
-        self.logger.info(f"No processes found using {db_path}.")
-        return
-
-      # Terminate the processes using the database path
-      for pid in pids:
-        try:
-          # os.kill(pid, 9)  # Send SIGTERM to gracefully terminate
-          self.logger.info(f"Terminated process with PID {pid} using {db_path}")
-        except OSError as e:
-          self.logger.warning(f"Failed to terminate process with PID {pid}: {e}")
-        except Exception as e:
-          self.logger.warning(f"Unexpected error when terminating process with PID {pid}: {e}")
-
-    except FileNotFoundError:
-      self.logger.error("lsof command not found. Please install lsof to use this feature.")
-    except Exception as e:
-      self.logger.error(f"Error while stopping CodeQL process: {e}")
+    finally:
+      if process:
+        self.terminate_process(process.pid)
 
   def cleanup(self, everything=False):
     """
@@ -145,7 +111,7 @@ class CodeQLRunner:
     """
     self.logger.info("Cleaning up CodeQL database and codebase...")
     try:
-      self.stop_codeql_process(self.db_path)
+      self.terminate_process_by_dbpath(self.db_path)
       if everything:
         if os.path.exists(self.work_dir):
           cleanup_folders(self.work_dir)
@@ -196,9 +162,11 @@ class CodeQLRunner:
   def run_single_query(self, query_file, output_file):
     """
     Run a single CodeQL query on the CodeQL database.
+    If any exception occurs, terminate all processes spawned by the CodeQL CLI.
     """
+    process = None  
     try:
-      subprocess.check_call(
+      process = subprocess.Popen(
         [
           self.codeql_config.CLI, "database", "analyze", self.db_path,
           query_file,
@@ -208,23 +176,97 @@ class CodeQLRunner:
           f"--timeout={self.codeql_config.TIMEOUT}",
           "--output", output_file,
         ],
-        timeout=self.codeql_config.TIMEOUT
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
       )
-      self.logger.info(f"Query {query_file} executed successfully. Results saved to {output_file}")
-      return True
-    
+      
+      _, stderr = process.communicate(timeout=self.codeql_config.TIMEOUT)
+
+      if process.returncode == 0:
+        self.logger.info(f"Query {query_file} executed successfully. Results saved to {output_file}")
+        return True
+      else:
+        self.logger.error(f"Failed to execute query {query_file}: {process.stderr.read().decode()}")
+        if (self.logger.error_details):
+          self.logger.error(f"Error details: {stderr.decode().strip()}")
+        return False
+
     except subprocess.TimeoutExpired:
-      # Wait for 10 seconds before killing the process
       self.logger.error(f"Query {query_file} timed out.")
       return False
-    
+
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to execute query {query_file}: {e}")
+      if (self.logger.error_details):
+          self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
 
     except Exception as e:
       self.logger.error(f"Unexpected error running query {query_file}: {e}")
+      if (self.logger.error_details):
+          self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
+
+    finally:
+      if process:
+          self.terminate_process(process.pid)
+  
+  def terminate_process(self, pid):
+    """
+    Kill all processes spawned from the given process ID.
+    """
+    try:
+        parent = psutil.Process(pid)
+        children = parent.children(recursive=True)
+        for child in children:
+            child.terminate()  # Terminate all child processes
+        psutil.wait_procs(children, timeout=5)  # Wait for them to terminate
+        parent.terminate()  # Finally, terminate the parent process
+        self.logger.info(f"Terminated all spawned processes for PID {pid}")
+    except psutil.NoSuchProcess:
+        # self.logger.warning(f"Process {pid} already terminated.")
+        pass
+    except Exception as e:
+        self.logger.error(f"Error while terminating process tree for PID {pid}: {e}")
+  
+  def terminate_process_by_dbpath(self, db_path):
+    """
+    Stop the CodeQL process that is still using the database path.
+    """
+    try:
+      result = subprocess.run(
+        ["lsof", "+D", db_path],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+      )
+      
+      # Parse the lsof output to extract PIDs
+      pids = set()
+      for line in result.stdout.splitlines():
+        parts = line.split()
+        if len(parts) > 1 and parts[1].isdigit():  # PID is in the second column
+          pids.add(int(parts[1]))
+
+      if not pids:
+        self.logger.info(f"No processes found using {db_path}.")
+        return
+
+      # Terminate the processes using the database path
+      for pid in pids:
+        try:
+          # os.kill(pid, 9)  # Send SIGTERM to gracefully terminate
+          self.logger.info(f"Terminated process with PID {pid} using {db_path}")
+        except OSError as e:
+          self.logger.warning(f"Failed to terminate process with PID {pid}: {e}")
+        except Exception as e:
+          self.logger.warning(f"Unexpected error when terminating process with PID {pid}: {e}")
+
+    except FileNotFoundError:
+      self.logger.error("lsof command not found. Please install lsof to use this feature.")
+    except Exception as e:
+      self.logger.error(f"Error while stopping CodeQL process: {e}")
+
   
   def summarize_results(self, output_file="summary.json"):
     """
