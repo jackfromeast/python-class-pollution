@@ -35,6 +35,7 @@ class GithubDownloader:
         return False
 
     process = None
+    stderr = None
     try:
       process = subprocess.Popen(
         ["git", "clone", self.repo_url, codebase_save_path],
@@ -42,30 +43,32 @@ class GithubDownloader:
         stderr=subprocess.PIPE
       )
       _, stderr = process.communicate(timeout=self.timeout)
-      stderr_decoded = stderr.decode().strip()
 
       if process.returncode == 0:
         self.logger.info(f"Repository cloned successfully to {codebase_save_path}")
         return True
       else:
         self.logger.error(f"Failed to clone repository: {process.stderr.read().decode()}")
-        if (self.logger.error_details):
+        if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode().strip()}")
         return False
 
     except subprocess.TimeoutExpired:
       self.logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
       return False
+
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to clone repository: {e}")
-      if (self.logger.error_details):
+      if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
+
     except Exception as e:
       self.logger.error(f"Unexpected error: {e}")
-      if (self.logger.error_details):
+      if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
+
     finally:
       if process:
         self.terminate_process(process.pid)
@@ -135,6 +138,7 @@ class PipDownloader:
       return False
 
     process = None
+    stderr = None
     try:
       # Step 1: Download the .whl package using the pip download command
       process = subprocess.Popen(
@@ -166,16 +170,19 @@ class PipDownloader:
     except subprocess.TimeoutExpired:
       self.logger.error(f"Cloning repository timed out after {self.timeout} seconds.")
       return False
+
     except subprocess.CalledProcessError as e:
       self.logger.error(f"Failed to clone repository: {e}")
-      if (self.logger.error_details):
+      if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
+
     except Exception as e:
       self.logger.error(f"Unexpected error: {e}")
-      if (self.logger.error_details):
+      if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode().strip()}")
       return False
+      
     finally:
       if process:
         self.terminate_process(process.pid)

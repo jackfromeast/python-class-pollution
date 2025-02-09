@@ -34,7 +34,7 @@ class BaseScheduler:
   def setup_logger(self):
     """ Setup logger """
     LoggerFactory.initialize(self.workspace, self.config)
-    self.logger = LoggerFactory.get_logger("SCHEDULER", global_logger_folder="scheduler", global_level=logging.INFO)
+    self.logger = LoggerFactory.get_logger("Scheduler", global_logger_folder="scheduler", global_level=logging.INFO)
 
   def get_repo_urls(self):
     """Get the list of repository URLs based on the mode."""

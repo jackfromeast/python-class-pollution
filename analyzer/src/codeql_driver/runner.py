@@ -16,6 +16,7 @@ import json
 import glob
 import psutil
 import subprocess
+from .exceptions import CodeQLDriverExceptions
 from utils.logger import LoggerFactory
 from utils.config import Config
 from utils.helper import resolve_repo_name, cleanup_folders
@@ -30,8 +31,11 @@ class CodeQLRunner:
   @param work_dir (str): Path to the working directory. It assume the codebase is saved in `work_dir/codebase`.
   @param queries (list): List of CodeQL queries to run.
   @param codeql_config (dict): Configuration for CodeQL CLI.
+  @param delete_after_query (bool): Whether to delete the CodeQL database and codebase after running the queries.
+  @param delete_if_no_flows (bool): Whether to delete the CodeQL database and codebase if no flows are detected.
+  @param timeout (int): Timeout for running the CodeQL queries.
   """
-  def __init__(self, work_dir, queries, codeql_config, delete_after_query=False, delete_if_no_flows=True):
+  def __init__(self, work_dir, queries, codeql_config, delete_after_query=False, delete_if_no_flows=True, timeout=None):
     self.repo_name = os.path.basename(work_dir)
     self.work_dir = work_dir
     self.codeql_config = codeql_config
@@ -45,6 +49,7 @@ class CodeQLRunner:
 
     self.delete_after_query = delete_after_query
     self.delete_if_no_flows = delete_if_no_flows
+    self.timeout = timeout if timeout else self.codeql_config.TIMEOUT
 
   def work_folder_sanity_check(self):
     if not os.path.exists(self.codebase_path):
@@ -63,6 +68,7 @@ class CodeQLRunner:
     self.logger.info(f"Building CodeQL database for: {self.codebase_path}")
 
     process = None
+    stderr = None
     try:
       process = subprocess.Popen(
         [
@@ -77,30 +83,29 @@ class CodeQLRunner:
         stderr=subprocess.PIPE
       )
 
-      _, stderr = process.communicate(timeout=self.codeql_config.TIMEOUT)
+      _, stderr = process.communicate(timeout=self.timeout)
 
       if process.returncode == 0:
         self.logger.info(f"CodeQL database created successfully at {self.db_path}")
         return True
       else:
-        self.logger.error(f"Failed to build CodeQL database: {process.stderr.read().decode()}")
-        if (self.logger.error_details):
-          self.logger.error(f"Error details: {stderr.decode().strip()}")
+        error_msg = CodeQLDriverExceptions.handle_build_exception(stderr.decode() if stderr else "")
+        self.logger.error(f"Failed to build CodeQL database: {error_msg}")
+        if (self.logger.log_error_details):
+          self.logger.error(f"Error details: {stderr.decode() if stderr else ""}")
         return False
 
     except subprocess.TimeoutExpired:
       self.logger.error("Building CodeQL database timed out.")
       return False
-    except subprocess.CalledProcessError as e:
-      self.logger.error(f"Failed to build CodeQL database: {e}")
-      if (self.logger.error_details):
-          self.logger.error(f"Error details: {stderr.decode().strip()}")
-      return False
+
     except Exception as e:
-      self.logger.error(f"Unexpected error: {e}")
-      if (self.logger.error_details):
-        self.logger.error(f"Error details: {stderr.decode().strip()}")
+      error_msg = CodeQLDriverExceptions.handle_build_exception(stderr.decode() if stderr else "")
+      self.logger.error(f"Failed to build CodeQL database with Exception {e}: {error_msg}")
+      if (self.logger.log_error_details):
+        self.logger.error(f"Error details: {stderr.decode() if stderr else ""}")
       return False
+
     finally:
       if process:
         self.terminate_process(process.pid)
@@ -164,7 +169,8 @@ class CodeQLRunner:
     Run a single CodeQL query on the CodeQL database.
     If any exception occurs, terminate all processes spawned by the CodeQL CLI.
     """
-    process = None  
+    process = None
+    stderr = None
     try:
       process = subprocess.Popen(
         [
@@ -173,38 +179,34 @@ class CodeQLRunner:
           "--format=sarif-latest",
           f"--threads={self.codeql_config.THREADS}",
           f"--ram={self.codeql_config.RAM}",
-          f"--timeout={self.codeql_config.TIMEOUT}",
+          f"--timeout={self.timeout}",
           "--output", output_file,
         ],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
       )
       
-      _, stderr = process.communicate(timeout=self.codeql_config.TIMEOUT)
+      _, stderr = process.communicate(timeout=self.timeout)
 
       if process.returncode == 0:
         self.logger.info(f"Query {query_file} executed successfully. Results saved to {output_file}")
         return True
       else:
-        self.logger.error(f"Failed to execute query {query_file}: {process.stderr.read().decode()}")
-        if (self.logger.error_details):
-          self.logger.error(f"Error details: {stderr.decode().strip()}")
+        error_msg = CodeQLDriverExceptions.handle_query_exception(stderr.decode() if stderr else "")
+        self.logger.error(f"Failed to execute query {query_file}: {error_msg}")
+        if (self.logger.log_error_details):
+          self.logger.error(f"Error details: {stderr.decode() if stderr else ""}")
         return False
 
     except subprocess.TimeoutExpired:
       self.logger.error(f"Query {query_file} timed out.")
       return False
 
-    except subprocess.CalledProcessError as e:
-      self.logger.error(f"Failed to execute query {query_file}: {e}")
-      if (self.logger.error_details):
-          self.logger.error(f"Error details: {stderr.decode().strip()}")
-      return False
-
     except Exception as e:
-      self.logger.error(f"Unexpected error running query {query_file}: {e}")
-      if (self.logger.error_details):
-          self.logger.error(f"Error details: {stderr.decode().strip()}")
+      error_msg = CodeQLDriverExceptions.handle_query_exception(stderr.decode() if stderr else "")
+      self.logger.error(f"Failed to execute query {query_file} with Exception {e}: {error_msg}")
+      if (self.logger.log_error_details):
+          self.logger.error(f"Error details: {stderr.decode() if stderr else ""}")
       return False
 
     finally:

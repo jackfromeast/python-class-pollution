@@ -8,10 +8,12 @@ import json
 import argparse
 import subprocess
 from collections import deque
+from utils.helper import terminate_process
 from utils.logger import LoggerFactory
 
 class DependencyResolver:
   """
+  @description
   A class to resolve dependencies from a codebase.
   
   codebase_path: Path to the target codebase.
@@ -31,7 +33,7 @@ class DependencyResolver:
     # temp/venv for temporary virtual environment
     # temp/codebases raw downdloaded dependencies, will be moved to output_path/codebases further
     self.temp_dir = None
-    self.logger = LoggerFactory.get_logger("DependencyResolver", local_logger_folder=os.path.join(output_path, "..", "logs"))
+    self.logger = LoggerFactory.get_logger("DependencyResolver", local_logger_folder=os.path.join(output_path, "logs"))
 
     if not os.path.exists(codebase_path):
       raise FileNotFoundError(f"The specified codebase path does not exist: {codebase_path}")
@@ -48,6 +50,7 @@ class DependencyResolver:
 
   def resolve(self):
     """
+    @description
     Resolves dependencies information from the codebase.
 
     We search the codebase in a BFS manner to find all the possible dependency menifest files.
@@ -89,6 +92,8 @@ class DependencyResolver:
     Uses CycloneDX-Py to generate SBOM for the highest-priority package manager found.
     """
     sbom_command = None
+    process = None
+    stderr = None
 
     if self.resolved_dependency_manifest["Pip"]:
       pip_manifest = self.resolved_dependency_manifest["Pip"][0]
@@ -102,10 +107,36 @@ class DependencyResolver:
       raise ValueError("No recognized dependency manifests found. Cannot generate SBOM.")
 
     try:
-      result = subprocess.run(sbom_command, check=True, capture_output=True, text=True)
-      self.SBOM = result.stdout.strip()
-    except subprocess.CalledProcessError as e:
-      self.logger.error(f"Error running command {' '.join(sbom_command)}: {e}")
+      process = subprocess.Popen(
+        sbom_command,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
+      )
+
+      stdout, stderr = process.communicate(timeout=300)
+
+      if process.returncode == 0:
+        self.SBOM = stdout.decode().strip()
+        return True
+      else:
+        self.logger.error(f"Failed to generate SBOM.")
+        if self.logger.log_error_details:
+          self.logger.error(f"Error details: {stderr.decode().strip()}")
+        return False
+
+    except subprocess.TimeoutExpired:
+      self.logger.error("SBOM generation timed out.")
+      return False
+
+    except Exception as e:
+      self.logger.error(f"Failed to generate SBOM with Exception {e}.")
+      if self.logger.log_error_details:
+        self.logger.error(f"Error details: {stderr.decode().strip()}")
+      return False
+
+    finally:
+      if process:
+        terminate_process(process.pid)
 
   def output_SBOM(self):
     """
@@ -115,12 +146,13 @@ class DependencyResolver:
       self.logger.warning("No SBOM generated. Skipping output.")
       return
     
-    with open(os.path.join(self.output_path, "SBOM.json"), "w") as f:
+    with open(os.path.join(self.output_path, "sbom.json"), "w") as f:
       f.write(self.SBOM)
 
     with open(os.path.join(self.output_path, "dependencies.json"), "w") as f:
       f.write(json.dumps(self.resolved_dependency_manifest, indent=2))
-
+    
+  
 def main():
   parser = argparse.ArgumentParser(description="Generate a list of dependencies from a codebase.")
   parser.add_argument("--codebase-path", required=True, help="Path to the codebase.")

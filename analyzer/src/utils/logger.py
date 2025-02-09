@@ -32,7 +32,7 @@ class MultiLogger:
   def __init__(self, logger, result_logger, log_error_details=False):
     self.logger = logger
     self.result_logger = result_logger
-    self.error_details = log_error_details
+    self.log_error_details = log_error_details
 
   def _log(self, level, msg, *args, result=False, **kwargs):
     if result:
@@ -74,6 +74,7 @@ class LoggerFactory:
   """
 
   _instance = None
+  log_error_details = False
   registered_logging_paths = []
 
   @classmethod
@@ -88,8 +89,8 @@ class LoggerFactory:
       cls._instance.workspace_path = workspace_path  
       cls._instance.global_logging_path = cls._instance.config.LOG_PATH if cls._instance.config.LOG_PATH else os.path.join(workspace_path, "logs")
       cls._instance.file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)')
-      cls._instance.error_details = config.LOG.LOG_ERROR_DETAILS
-  
+      cls.log_error_details = config.LOG.LOG_ERROR_DETAILS
+
   @classmethod
   def get_logger(cls, name, level=logging.INFO, global_level=logging.ERROR,
                  global_logger_folder="analysis", local_logger_folder=None,
@@ -147,6 +148,10 @@ class LoggerFactory:
           logging.INFO: "dependency_analyzer.info.log",
           logging.ERROR: "dependency_analyzer.error.log",
         },
+        "Scheduler": {
+          logging.INFO: "scheduler.info.log",
+          logging.ERROR: "scheduler.error.log",
+        },
       }
 
       # Default to "Other" if the logger name is not mapped
@@ -162,6 +167,8 @@ class LoggerFactory:
       global_fh.setLevel(global_level)
       global_fh.setFormatter(cls._instance.file_format)
       logger.addHandler(global_fh)
+
+      
 
     # Local file logging (per repository)
     if cls._instance.config.LOG_TO_LOCAL_FILE and local_logger_folder:
@@ -194,6 +201,6 @@ class LoggerFactory:
         result_fh.setFormatter(cls._instance.file_format)
         result_logger.addHandler(result_fh)
 
-      return MultiLogger(logger, result_logger, log_error_details=cls._instance.error_details)
+      return MultiLogger(logger, result_logger, log_error_details=cls.log_error_details)
 
     return logger
