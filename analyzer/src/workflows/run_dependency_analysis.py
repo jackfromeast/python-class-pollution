@@ -13,6 +13,7 @@ import psutil
 from argparse import ArgumentParser
 from dependency_analysis.analyzer import DependencyAnalyzer
 from utils.downloader import download
+from utils.hard_exceptions import TimeoutException, timeout_handler
 from .base_scheduler import BaseScheduler
 
 class DependencyAnalysis(BaseScheduler):
@@ -44,6 +45,7 @@ class DependencyAnalysis(BaseScheduler):
       self.logger.error(f"Unexpected error for repo: {repo_url}: {e}")
 
     finally:
+      signal.alarm(0)
       self.kill_all_spawn_processes()
       self.increment_completed_repos()
 
@@ -69,13 +71,6 @@ class DependencyAnalysis(BaseScheduler):
       if not self.config.DEPENDENCY_ANALYSIS.DEBUG:
         self.cleanup_folders(repo_workspace_path)
       return
-
-class TimeoutException(Exception):
-    """Custom exception for timeout"""
-    pass
-
-def timeout_handler(signum, frame):
-    raise TimeoutException("Analysis Worker timed out.")
 
 def main():
   parser = ArgumentParser(description="Schedule tasks for running CodeQL queries.")
