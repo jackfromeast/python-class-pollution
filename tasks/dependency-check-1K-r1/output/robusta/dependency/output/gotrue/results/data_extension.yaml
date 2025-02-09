@@ -1,0 +1,28 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - gotrue
+    - Member[gotrue].Member[helpers].Member[get_error_message]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - gotrue
+    - Member[gotrue].Member[helpers].Member[get_error_code]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - gotrue
+    - Member[gotrue].Member[helpers].Member[decode_jwt_payload]
+    - Argument[0]
+    - ReturnValue
+    - taint

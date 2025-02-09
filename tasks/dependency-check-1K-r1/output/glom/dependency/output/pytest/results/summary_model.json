@@ -1,0 +1,2111 @@
+[
+  {
+    "The callable [filename_arg](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: filename_arg\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py": "The callable [filename_arg](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: filename_arg\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "filename_arg",
+      "parameter": "Arg0",
+      "function": "filename_arg",
+      "module": "_pytest.config.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[__init__].Member[filename_arg]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [directory_arg](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: directory_arg\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py": "The callable [directory_arg](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: directory_arg\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "directory_arg",
+      "parameter": "Arg0",
+      "function": "directory_arg",
+      "module": "_pytest.config.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[__init__].Member[directory_arg]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_directory](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: _get_directory\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py": "The callable [_get_directory](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: _get_directory\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_get_directory",
+      "parameter": "Arg0",
+      "function": "_get_directory",
+      "module": "_pytest.config.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[__init__].Member[_get_directory]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_plugin_specs_as_list](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: _get_plugin_specs_as_list\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py": "The callable [_get_plugin_specs_as_list](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: _get_plugin_specs_as_list\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_get_plugin_specs_as_list",
+      "parameter": "Arg0",
+      "function": "_get_plugin_specs_as_list",
+      "module": "_pytest.config.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[__init__].Member[_get_plugin_specs_as_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "_pytest.config.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[__init__].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_warning_filter](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: parse_warning_filter\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py": "The callable [parse_warning_filter](1) is a class pollution taint propagation API in [Module _pytest.config.__init__](2) \n- Parameter: Arg0\n- Function: parse_warning_filter\n- Module: Module _pytest.config.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "parse_warning_filter",
+      "parameter": "Arg0",
+      "function": "parse_warning_filter",
+      "module": "_pytest.config.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[__init__].Member[parse_warning_filter]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pytest_assertrepr_compare](1) is a class pollution taint propagation API in [Module _pytest.assertion.__init__](2) \n- Parameter: Arg1\n- Function: pytest_assertrepr_compare\n- Module: Module _pytest.assertion.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/__init__.py": "The callable [pytest_assertrepr_compare](1) is a class pollution taint propagation API in [Module _pytest.assertion.__init__](2) \n- Parameter: Arg1\n- Function: pytest_assertrepr_compare\n- Module: Module _pytest.assertion.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/__init__.py",
+    "package": "pytest",
+    "model": {
+      "callable": "pytest_assertrepr_compare",
+      "parameter": "Arg1",
+      "function": "pytest_assertrepr_compare",
+      "module": "_pytest.assertion.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/__init__.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[__init__].Member[pytest_assertrepr_compare]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [cache](1) is a class pollution taint propagation API in [Module _pytest.cacheprovider](2) \n- Parameter: Arg0\n- Function: cache\n- Module: Module _pytest.cacheprovider\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/cacheprovider.py": "The callable [cache](1) is a class pollution taint propagation API in [Module _pytest.cacheprovider](2) \n- Parameter: Arg0\n- Function: cache\n- Module: Module _pytest.cacheprovider\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/cacheprovider.py",
+    "package": "pytest",
+    "model": {
+      "callable": "cache",
+      "parameter": "Arg0",
+      "function": "cache",
+      "module": "_pytest.cacheprovider",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/cacheprovider.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[cacheprovider].Member[cache]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pytest_report_header](1) is a class pollution taint propagation API in [Module _pytest.cacheprovider](2) \n- Parameter: Arg0\n- Function: pytest_report_header\n- Module: Module _pytest.cacheprovider\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/cacheprovider.py": "The callable [pytest_report_header](1) is a class pollution taint propagation API in [Module _pytest.cacheprovider](2) \n- Parameter: Arg0\n- Function: pytest_report_header\n- Module: Module _pytest.cacheprovider\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/cacheprovider.py",
+    "package": "pytest",
+    "model": {
+      "callable": "pytest_report_header",
+      "parameter": "Arg0",
+      "function": "pytest_report_header",
+      "module": "_pytest.cacheprovider",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/cacheprovider.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[cacheprovider].Member[pytest_report_header]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [iscoroutinefunction](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: iscoroutinefunction\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [iscoroutinefunction](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: iscoroutinefunction\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "iscoroutinefunction",
+      "parameter": "Arg0",
+      "function": "iscoroutinefunction",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[iscoroutinefunction]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [is_async_function](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: is_async_function\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [is_async_function](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: is_async_function\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "is_async_function",
+      "parameter": "Arg0",
+      "function": "is_async_function",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[is_async_function]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getlocation](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: getlocation\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [getlocation](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: getlocation\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getlocation",
+      "parameter": "Arg0",
+      "function": "getlocation",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[getlocation]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_real_func](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: get_real_func\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [get_real_func](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: get_real_func\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_real_func",
+      "parameter": "Arg0",
+      "function": "get_real_func",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[get_real_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_real_method](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: get_real_method\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [get_real_method](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: get_real_method\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_real_method",
+      "parameter": "Arg0",
+      "function": "get_real_method",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[get_real_method]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getimfunc](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: getimfunc\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [getimfunc](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: getimfunc\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getimfunc",
+      "parameter": "Arg0",
+      "function": "getimfunc",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[getimfunc]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [safe_getattr](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: safe_getattr\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py\nThe callable [safe_getattr](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg2\n- Function: safe_getattr\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py": "The callable [safe_getattr](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg0\n- Function: safe_getattr\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py\nThe callable [safe_getattr](1) is a class pollution taint propagation API in [Module _pytest.compat](2) \n- Parameter: Arg2\n- Function: safe_getattr\n- Module: Module _pytest.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+    "package": "pytest",
+    "model": {
+      "callable": "safe_getattr",
+      "parameter": "Arg0",
+      "function": "safe_getattr",
+      "module": "_pytest.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/compat.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[compat].Member[safe_getattr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_validate_usepdb_cls](1) is a class pollution taint propagation API in [Module _pytest.debugging](2) \n- Parameter: Arg0\n- Function: _validate_usepdb_cls\n- Module: Module _pytest.debugging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.py": "The callable [_validate_usepdb_cls](1) is a class pollution taint propagation API in [Module _pytest.debugging](2) \n- Parameter: Arg0\n- Function: _validate_usepdb_cls\n- Module: Module _pytest.debugging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_validate_usepdb_cls",
+      "parameter": "Arg0",
+      "function": "_validate_usepdb_cls",
+      "module": "_pytest.debugging",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[debugging].Member[_validate_usepdb_cls]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_enter_pdb](1) is a class pollution taint propagation API in [Module _pytest.debugging](2) \n- Parameter: Arg2\n- Function: _enter_pdb\n- Module: Module _pytest.debugging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.py": "The callable [_enter_pdb](1) is a class pollution taint propagation API in [Module _pytest.debugging](2) \n- Parameter: Arg2\n- Function: _enter_pdb\n- Module: Module _pytest.debugging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_enter_pdb",
+      "parameter": "Arg2",
+      "function": "_enter_pdb",
+      "module": "_pytest.debugging",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[debugging].Member[_enter_pdb]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_postmortem_traceback](1) is a class pollution taint propagation API in [Module _pytest.debugging](2) \n- Parameter: Arg0\n- Function: _postmortem_traceback\n- Module: Module _pytest.debugging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.py": "The callable [_postmortem_traceback](1) is a class pollution taint propagation API in [Module _pytest.debugging](2) \n- Parameter: Arg0\n- Function: _postmortem_traceback\n- Module: Module _pytest.debugging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_postmortem_traceback",
+      "parameter": "Arg0",
+      "function": "_postmortem_traceback",
+      "module": "_pytest.debugging",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/debugging.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[debugging].Member[_postmortem_traceback]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [remove_prefixes](1) is a class pollution taint propagation API in [Module _pytest.doctest](2) \n- Parameter: Arg1\n- Function: remove_prefixes\n- Module: Module _pytest.doctest\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/doctest.py": "The callable [remove_prefixes](1) is a class pollution taint propagation API in [Module _pytest.doctest](2) \n- Parameter: Arg1\n- Function: remove_prefixes\n- Module: Module _pytest.doctest\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/doctest.py",
+    "package": "pytest",
+    "model": {
+      "callable": "remove_prefixes",
+      "parameter": "Arg1",
+      "function": "remove_prefixes",
+      "module": "_pytest.doctest",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/doctest.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[doctest].Member[remove_prefixes]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_scalar](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: make_scalar\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py": "The callable [make_scalar](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: make_scalar\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+    "package": "pytest",
+    "model": {
+      "callable": "make_scalar",
+      "parameter": "Arg0",
+      "function": "make_scalar",
+      "module": "_pytest.config.findpaths",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[findpaths].Member[make_scalar]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [locate_config](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: locate_config\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py\nThe callable [locate_config](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg1\n- Function: locate_config\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py": "The callable [locate_config](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: locate_config\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py\nThe callable [locate_config](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg1\n- Function: locate_config\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+    "package": "pytest",
+    "model": {
+      "callable": "locate_config",
+      "parameter": "Arg0",
+      "function": "locate_config",
+      "module": "_pytest.config.findpaths",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[findpaths].Member[locate_config]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_common_ancestor](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_common_ancestor\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py\nThe callable [get_common_ancestor](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg1\n- Function: get_common_ancestor\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py": "The callable [get_common_ancestor](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_common_ancestor\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py\nThe callable [get_common_ancestor](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg1\n- Function: get_common_ancestor\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_common_ancestor",
+      "parameter": "Arg0",
+      "function": "get_common_ancestor",
+      "module": "_pytest.config.findpaths",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[findpaths].Member[get_common_ancestor]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_dirs_from_args](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_dirs_from_args\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py": "The callable [get_dirs_from_args](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_dirs_from_args\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_dirs_from_args",
+      "parameter": "Arg0",
+      "function": "get_dirs_from_args",
+      "module": "_pytest.config.findpaths",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[findpaths].Member[get_dirs_from_args]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_file_part_from_node_id](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_file_part_from_node_id\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py": "The callable [get_file_part_from_node_id](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_file_part_from_node_id\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_file_part_from_node_id",
+      "parameter": "Arg0",
+      "function": "get_file_part_from_node_id",
+      "module": "_pytest.config.findpaths",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[findpaths].Member[get_file_part_from_node_id]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_dir_from_path](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_dir_from_path\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py": "The callable [get_dir_from_path](1) is a class pollution taint propagation API in [Module _pytest.config.findpaths](2) \n- Parameter: Arg0\n- Function: get_dir_from_path\n- Module: Module _pytest.config.findpaths\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_dir_from_path",
+      "parameter": "Arg0",
+      "function": "get_dir_from_path",
+      "module": "_pytest.config.findpaths",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/config/findpaths.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[config].Member[findpaths].Member[get_dir_from_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_scope_package](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: get_scope_package\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [get_scope_package](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: get_scope_package\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_scope_package",
+      "parameter": "Arg0",
+      "function": "get_scope_package",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[get_scope_package]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getfixturemarker](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: getfixturemarker\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [getfixturemarker](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: getfixturemarker\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getfixturemarker",
+      "parameter": "Arg0",
+      "function": "getfixturemarker",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[getfixturemarker]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [reorder_items_atscope](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: reorder_items_atscope\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [reorder_items_atscope](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: reorder_items_atscope\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "reorder_items_atscope",
+      "parameter": "Arg0",
+      "function": "reorder_items_atscope",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[reorder_items_atscope]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve_fixture_function](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: resolve_fixture_function\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [resolve_fixture_function](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: resolve_fixture_function\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "resolve_fixture_function",
+      "parameter": "Arg0",
+      "function": "resolve_fixture_function",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[resolve_fixture_function]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pytestconfig](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: pytestconfig\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [pytestconfig](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: pytestconfig\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "pytestconfig",
+      "parameter": "Arg0",
+      "function": "pytestconfig",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[pytestconfig]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_pretty_fixture_path](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg1\n- Function: _pretty_fixture_path\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [_pretty_fixture_path](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg1\n- Function: _pretty_fixture_path\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_pretty_fixture_path",
+      "parameter": "Arg1",
+      "function": "_pretty_fixture_path",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[_pretty_fixture_path]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_best_relpath](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: get_best_relpath\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py": "The callable [get_best_relpath](1) is a class pollution taint propagation API in [Module _pytest.fixtures](2) \n- Parameter: Arg0\n- Function: get_best_relpath\n- Module: Module _pytest.fixtures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_best_relpath",
+      "parameter": "Arg0",
+      "function": "get_best_relpath",
+      "module": "_pytest.fixtures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/fixtures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[fixtures].Member[get_best_relpath]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [bin_xml_escape](1) is a class pollution taint propagation API in [Module _pytest.junitxml](2) \n- Parameter: Arg0\n- Function: bin_xml_escape\n- Module: Module _pytest.junitxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.py": "The callable [bin_xml_escape](1) is a class pollution taint propagation API in [Module _pytest.junitxml](2) \n- Parameter: Arg0\n- Function: bin_xml_escape\n- Module: Module _pytest.junitxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.py",
+    "package": "pytest",
+    "model": {
+      "callable": "bin_xml_escape",
+      "parameter": "Arg0",
+      "function": "bin_xml_escape",
+      "module": "_pytest.junitxml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[junitxml].Member[bin_xml_escape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [record_testsuite_property](1) is a class pollution taint propagation API in [Module _pytest.junitxml](2) \n- Parameter: Arg0\n- Function: record_testsuite_property\n- Module: Module _pytest.junitxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.py": "The callable [record_testsuite_property](1) is a class pollution taint propagation API in [Module _pytest.junitxml](2) \n- Parameter: Arg0\n- Function: record_testsuite_property\n- Module: Module _pytest.junitxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.py",
+    "package": "pytest",
+    "model": {
+      "callable": "record_testsuite_property",
+      "parameter": "Arg0",
+      "function": "record_testsuite_property",
+      "module": "_pytest.junitxml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[junitxml].Member[record_testsuite_property]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [mangle_test_address](1) is a class pollution taint propagation API in [Module _pytest.junitxml](2) \n- Parameter: Arg0\n- Function: mangle_test_address\n- Module: Module _pytest.junitxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.py": "The callable [mangle_test_address](1) is a class pollution taint propagation API in [Module _pytest.junitxml](2) \n- Parameter: Arg0\n- Function: mangle_test_address\n- Module: Module _pytest.junitxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.py",
+    "package": "pytest",
+    "model": {
+      "callable": "mangle_test_address",
+      "parameter": "Arg0",
+      "function": "mangle_test_address",
+      "module": "_pytest.junitxml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/junitxml.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[junitxml].Member[mangle_test_address]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_remove_ansi_escape_sequences](1) is a class pollution taint propagation API in [Module _pytest.logging](2) \n- Parameter: Arg0\n- Function: _remove_ansi_escape_sequences\n- Module: Module _pytest.logging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/logging.py": "The callable [_remove_ansi_escape_sequences](1) is a class pollution taint propagation API in [Module _pytest.logging](2) \n- Parameter: Arg0\n- Function: _remove_ansi_escape_sequences\n- Module: Module _pytest.logging\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/logging.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_remove_ansi_escape_sequences",
+      "parameter": "Arg0",
+      "function": "_remove_ansi_escape_sequences",
+      "module": "_pytest.logging",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/logging.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[logging].Member[_remove_ansi_escape_sequences]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_basetemp](1) is a class pollution taint propagation API in [Module _pytest.main](2) \n- Parameter: Arg0\n- Function: validate_basetemp\n- Module: Module _pytest.main\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/main.py": "The callable [validate_basetemp](1) is a class pollution taint propagation API in [Module _pytest.main](2) \n- Parameter: Arg0\n- Function: validate_basetemp\n- Module: Module _pytest.main\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/main.py",
+    "package": "pytest",
+    "model": {
+      "callable": "validate_basetemp",
+      "parameter": "Arg0",
+      "function": "validate_basetemp",
+      "module": "_pytest.main",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/main.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[main].Member[validate_basetemp]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [annotated_getattr](1) is a class pollution taint propagation API in [Module _pytest.monkeypatch](2) \n- Parameter: Arg0\n- Function: annotated_getattr\n- Module: Module _pytest.monkeypatch\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/monkeypatch.py": "The callable [annotated_getattr](1) is a class pollution taint propagation API in [Module _pytest.monkeypatch](2) \n- Parameter: Arg0\n- Function: annotated_getattr\n- Module: Module _pytest.monkeypatch\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/monkeypatch.py",
+    "package": "pytest",
+    "model": {
+      "callable": "annotated_getattr",
+      "parameter": "Arg0",
+      "function": "annotated_getattr",
+      "module": "_pytest.monkeypatch",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/monkeypatch.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[monkeypatch].Member[annotated_getattr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [derive_importpath](1) is a class pollution taint propagation API in [Module _pytest.monkeypatch](2) \n- Parameter: Arg0\n- Function: derive_importpath\n- Module: Module _pytest.monkeypatch\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/monkeypatch.py": "The callable [derive_importpath](1) is a class pollution taint propagation API in [Module _pytest.monkeypatch](2) \n- Parameter: Arg0\n- Function: derive_importpath\n- Module: Module _pytest.monkeypatch\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/monkeypatch.py",
+    "package": "pytest",
+    "model": {
+      "callable": "derive_importpath",
+      "parameter": "Arg0",
+      "function": "derive_importpath",
+      "module": "_pytest.monkeypatch",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/monkeypatch.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[monkeypatch].Member[derive_importpath]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_imply_path](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg1\n- Function: _imply_path\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py\nThe callable [_imply_path](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg2\n- Function: _imply_path\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py": "The callable [_imply_path](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg1\n- Function: _imply_path\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py\nThe callable [_imply_path](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg2\n- Function: _imply_path\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_imply_path",
+      "parameter": "Arg1",
+      "function": "_imply_path",
+      "module": "_pytest.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[nodes].Member[_imply_path]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_fslocation_from_item](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg0\n- Function: get_fslocation_from_item\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py": "The callable [get_fslocation_from_item](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg0\n- Function: get_fslocation_from_item\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_fslocation_from_item",
+      "parameter": "Arg0",
+      "function": "get_fslocation_from_item",
+      "module": "_pytest.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[nodes].Member[get_fslocation_from_item]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_check_initialpaths_for_relpath](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg1\n- Function: _check_initialpaths_for_relpath\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py": "The callable [_check_initialpaths_for_relpath](1) is a class pollution taint propagation API in [Module _pytest.nodes](2) \n- Parameter: Arg1\n- Function: _check_initialpaths_for_relpath\n- Module: Module _pytest.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_check_initialpaths_for_relpath",
+      "parameter": "Arg1",
+      "function": "_check_initialpaths_for_relpath",
+      "module": "_pytest.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/nodes.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[nodes].Member[_check_initialpaths_for_relpath]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorate](1) is a class pollution taint propagation API in [Module _pytest.outcomes](2) \n- Parameter: Arg0\n- Function: decorate\n- Module: Module _pytest.outcomes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/outcomes.py": "The callable [decorate](1) is a class pollution taint propagation API in [Module _pytest.outcomes](2) \n- Parameter: Arg0\n- Function: decorate\n- Module: Module _pytest.outcomes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/outcomes.py",
+    "package": "pytest",
+    "model": {
+      "callable": "decorate",
+      "parameter": "Arg0",
+      "function": "decorate",
+      "module": "_pytest.outcomes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/outcomes.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[outcomes].Member[decorate]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py",
+    "package": "pytest",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "_pytest._py.path",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_py].Member[path].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getuserid](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: getuserid\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py": "The callable [getuserid](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: getuserid\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getuserid",
+      "parameter": "Arg0",
+      "function": "getuserid",
+      "module": "_pytest._py.path",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_py].Member[path].Member[getuserid]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getgroupid](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: getgroupid\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py": "The callable [getgroupid](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: getgroupid\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getgroupid",
+      "parameter": "Arg0",
+      "function": "getgroupid",
+      "module": "_pytest._py.path",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_py].Member[path].Member[getgroupid]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [create_lockfile](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: create_lockfile\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py": "The callable [create_lockfile](1) is a class pollution taint propagation API in [Module _pytest._py.path](2) \n- Parameter: Arg0\n- Function: create_lockfile\n- Module: Module _pytest._py.path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.py",
+    "package": "pytest",
+    "model": {
+      "callable": "create_lockfile",
+      "parameter": "Arg0",
+      "function": "create_lockfile",
+      "module": "_pytest._py.path",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_py/path.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_py].Member[path].Member[create_lockfile]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_lock_path](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: get_lock_path\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [get_lock_path](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: get_lock_path\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_lock_path",
+      "parameter": "Arg0",
+      "function": "get_lock_path",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[get_lock_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ensure_extended_length_path](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: ensure_extended_length_path\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [ensure_extended_length_path](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: ensure_extended_length_path\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "ensure_extended_length_path",
+      "parameter": "Arg0",
+      "function": "ensure_extended_length_path",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[ensure_extended_length_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_extended_length_path_str](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: get_extended_length_path_str\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [get_extended_length_path_str](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: get_extended_length_path_str\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_extended_length_path_str",
+      "parameter": "Arg0",
+      "function": "get_extended_length_path_str",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[get_extended_length_path_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_numbered_dir](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: make_numbered_dir\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py\nThe callable [make_numbered_dir](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: make_numbered_dir\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [make_numbered_dir](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: make_numbered_dir\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py\nThe callable [make_numbered_dir](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: make_numbered_dir\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "make_numbered_dir",
+      "parameter": "Arg0",
+      "function": "make_numbered_dir",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[make_numbered_dir]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [create_cleanup_lock](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: create_cleanup_lock\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [create_cleanup_lock](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: create_cleanup_lock\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "create_cleanup_lock",
+      "parameter": "Arg0",
+      "function": "create_cleanup_lock",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[create_cleanup_lock]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_numbered_dir_with_cleanup](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: make_numbered_dir_with_cleanup\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py\nThe callable [make_numbered_dir_with_cleanup](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: make_numbered_dir_with_cleanup\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [make_numbered_dir_with_cleanup](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: make_numbered_dir_with_cleanup\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py\nThe callable [make_numbered_dir_with_cleanup](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: make_numbered_dir_with_cleanup\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "make_numbered_dir_with_cleanup",
+      "parameter": "Arg0",
+      "function": "make_numbered_dir_with_cleanup",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[make_numbered_dir_with_cleanup]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve_from_str](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: resolve_from_str\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [resolve_from_str](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: resolve_from_str\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "resolve_from_str",
+      "parameter": "Arg0",
+      "function": "resolve_from_str",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[resolve_from_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parts](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: parts\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [parts](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: parts\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "parts",
+      "parameter": "Arg0",
+      "function": "parts",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[parts]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [module_name_from_path](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: module_name_from_path\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [module_name_from_path](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: module_name_from_path\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "module_name_from_path",
+      "parameter": "Arg0",
+      "function": "module_name_from_path",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[module_name_from_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve_pkg_root_and_module_name](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: resolve_pkg_root_and_module_name\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [resolve_pkg_root_and_module_name](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: resolve_pkg_root_and_module_name\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "resolve_pkg_root_and_module_name",
+      "parameter": "Arg0",
+      "function": "resolve_pkg_root_and_module_name",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[resolve_pkg_root_and_module_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [compute_module_name](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: compute_module_name\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [compute_module_name](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: compute_module_name\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "compute_module_name",
+      "parameter": "Arg1",
+      "function": "compute_module_name",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[compute_module_name]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [absolutepath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: absolutepath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [absolutepath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: absolutepath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "absolutepath",
+      "parameter": "Arg0",
+      "function": "absolutepath",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[absolutepath]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [commonpath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: commonpath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py\nThe callable [commonpath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: commonpath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [commonpath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg0\n- Function: commonpath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py\nThe callable [commonpath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: commonpath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "commonpath",
+      "parameter": "Arg0",
+      "function": "commonpath",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[commonpath]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [bestrelpath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: bestrelpath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py": "The callable [bestrelpath](1) is a class pollution taint propagation API in [Module _pytest.pathlib](2) \n- Parameter: Arg1\n- Function: bestrelpath\n- Module: Module _pytest.pathlib\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.py",
+    "package": "pytest",
+    "model": {
+      "callable": "bestrelpath",
+      "parameter": "Arg1",
+      "function": "bestrelpath",
+      "module": "_pytest.pathlib",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pathlib.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pathlib].Member[bestrelpath]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_public_names](1) is a class pollution taint propagation API in [Module _pytest.pytester](2) \n- Parameter: Arg0\n- Function: get_public_names\n- Module: Module _pytest.pytester\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pytester.py": "The callable [get_public_names](1) is a class pollution taint propagation API in [Module _pytest.pytester](2) \n- Parameter: Arg0\n- Function: get_public_names\n- Module: Module _pytest.pytester\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pytester.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_public_names",
+      "parameter": "Arg0",
+      "function": "get_public_names",
+      "module": "_pytest.pytester",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pytester.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pytester].Member[get_public_names]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [to_text](1) is a class pollution taint propagation API in [Module _pytest.pytester](2) \n- Parameter: Arg0\n- Function: to_text\n- Module: Module _pytest.pytester\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pytester.py": "The callable [to_text](1) is a class pollution taint propagation API in [Module _pytest.pytester](2) \n- Parameter: Arg0\n- Function: to_text\n- Module: Module _pytest.pytester\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pytester.py",
+    "package": "pytest",
+    "model": {
+      "callable": "to_text",
+      "parameter": "Arg0",
+      "function": "to_text",
+      "module": "_pytest.pytester",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/pytester.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[pytester].Member[to_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [sort_key](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: sort_key\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py": "The callable [sort_key](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: sort_key\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py",
+    "package": "pytest",
+    "model": {
+      "callable": "sort_key",
+      "parameter": "Arg0",
+      "function": "sort_key",
+      "module": "_pytest.python",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python].Member[sort_key]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_first_non_fixture_func](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: _get_first_non_fixture_func\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py": "The callable [_get_first_non_fixture_func](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: _get_first_non_fixture_func\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_get_first_non_fixture_func",
+      "parameter": "Arg0",
+      "function": "_get_first_non_fixture_func",
+      "module": "_pytest.python",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python].Member[_get_first_non_fixture_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_direct_param_fixture_func](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: get_direct_param_fixture_func\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py": "The callable [get_direct_param_fixture_func](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: get_direct_param_fixture_func\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_direct_param_fixture_func",
+      "parameter": "Arg0",
+      "function": "get_direct_param_fixture_func",
+      "module": "_pytest.python",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python].Member[get_direct_param_fixture_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ascii_escaped_by_config](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: _ascii_escaped_by_config\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py": "The callable [_ascii_escaped_by_config](1) is a class pollution taint propagation API in [Module _pytest.python](2) \n- Parameter: Arg0\n- Function: _ascii_escaped_by_config\n- Module: Module _pytest.python\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_ascii_escaped_by_config",
+      "parameter": "Arg0",
+      "function": "_ascii_escaped_by_config",
+      "module": "_pytest.python",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python].Member[_ascii_escaped_by_config]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg1\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg2\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg4\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg5\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py": "The callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg1\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg2\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg4\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [_compare_approx](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg5\n- Function: _compare_approx\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_compare_approx",
+      "parameter": "Arg1",
+      "function": "_compare_approx",
+      "module": "_pytest.python_api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python_api].Member[_compare_approx]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_value_from_nested_list](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg0\n- Function: get_value_from_nested_list\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py": "The callable [get_value_from_nested_list](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg0\n- Function: get_value_from_nested_list\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_value_from_nested_list",
+      "parameter": "Arg0",
+      "function": "get_value_from_nested_list",
+      "module": "_pytest.python_api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python_api].Member[get_value_from_nested_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [set_default](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg0\n- Function: set_default\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [set_default](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg1\n- Function: set_default\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py": "The callable [set_default](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg0\n- Function: set_default\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py\nThe callable [set_default](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg1\n- Function: set_default\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py",
+    "package": "pytest",
+    "model": {
+      "callable": "set_default",
+      "parameter": "Arg0",
+      "function": "set_default",
+      "module": "_pytest.python_api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python_api].Member[set_default]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_as_numpy_array](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg0\n- Function: _as_numpy_array\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py": "The callable [_as_numpy_array](1) is a class pollution taint propagation API in [Module _pytest.python_api](2) \n- Parameter: Arg0\n- Function: _as_numpy_array\n- Module: Module _pytest.python_api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_as_numpy_array",
+      "parameter": "Arg0",
+      "function": "_as_numpy_array",
+      "module": "_pytest.python_api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/python_api.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[python_api].Member[_as_numpy_array]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getworkerinfoline](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: getworkerinfoline\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py": "The callable [getworkerinfoline](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: getworkerinfoline\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getworkerinfoline",
+      "parameter": "Arg0",
+      "function": "getworkerinfoline",
+      "module": "_pytest.reports",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[reports].Member[getworkerinfoline]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_report_to_json](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: _report_to_json\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py": "The callable [_report_to_json](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: _report_to_json\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_report_to_json",
+      "parameter": "Arg0",
+      "function": "_report_to_json",
+      "module": "_pytest.reports",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[reports].Member[_report_to_json]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [serialize_exception_longrepr](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: serialize_exception_longrepr\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py": "The callable [serialize_exception_longrepr](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: serialize_exception_longrepr\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py",
+    "package": "pytest",
+    "model": {
+      "callable": "serialize_exception_longrepr",
+      "parameter": "Arg0",
+      "function": "serialize_exception_longrepr",
+      "module": "_pytest.reports",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[reports].Member[serialize_exception_longrepr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_report_kwargs_from_json](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: _report_kwargs_from_json\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py": "The callable [_report_kwargs_from_json](1) is a class pollution taint propagation API in [Module _pytest.reports](2) \n- Parameter: Arg0\n- Function: _report_kwargs_from_json\n- Module: Module _pytest.reports\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_report_kwargs_from_json",
+      "parameter": "Arg0",
+      "function": "_report_kwargs_from_json",
+      "module": "_pytest.reports",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/reports.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[reports].Member[_report_kwargs_from_json]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_saferepr](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: _saferepr\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py": "The callable [_saferepr](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: _saferepr\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_saferepr",
+      "parameter": "Arg0",
+      "function": "_saferepr",
+      "module": "_pytest.assertion.rewrite",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[rewrite].Member[_saferepr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_assertmsg](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: _format_assertmsg\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py": "The callable [_format_assertmsg](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: _format_assertmsg\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_format_assertmsg",
+      "parameter": "Arg0",
+      "function": "_format_assertmsg",
+      "module": "_pytest.assertion.rewrite",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[rewrite].Member[_format_assertmsg]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_boolop](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: _format_boolop\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py\nThe callable [_format_boolop](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg1\n- Function: _format_boolop\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py": "The callable [_format_boolop](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: _format_boolop\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py\nThe callable [_format_boolop](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg1\n- Function: _format_boolop\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_format_boolop",
+      "parameter": "Arg0",
+      "function": "_format_boolop",
+      "module": "_pytest.assertion.rewrite",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[rewrite].Member[_format_boolop]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_cache_dir](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: get_cache_dir\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py": "The callable [get_cache_dir](1) is a class pollution taint propagation API in [Module _pytest.assertion.rewrite](2) \n- Parameter: Arg0\n- Function: get_cache_dir\n- Module: Module _pytest.assertion.rewrite\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_cache_dir",
+      "parameter": "Arg0",
+      "function": "get_cache_dir",
+      "module": "_pytest.assertion.rewrite",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/rewrite.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[rewrite].Member[get_cache_dir]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.runner](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.runner\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/runner.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module _pytest.runner](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module _pytest.runner\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/runner.py",
+    "package": "pytest",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "_pytest.runner",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/runner.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[runner].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_try_repr_or_str](1) is a class pollution taint propagation API in [Module _pytest._io.saferepr](2) \n- Parameter: Arg0\n- Function: _try_repr_or_str\n- Module: Module _pytest._io.saferepr\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.py": "The callable [_try_repr_or_str](1) is a class pollution taint propagation API in [Module _pytest._io.saferepr](2) \n- Parameter: Arg0\n- Function: _try_repr_or_str\n- Module: Module _pytest._io.saferepr\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_try_repr_or_str",
+      "parameter": "Arg0",
+      "function": "_try_repr_or_str",
+      "module": "_pytest._io.saferepr",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_io].Member[saferepr].Member[_try_repr_or_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_repr_exception](1) is a class pollution taint propagation API in [Module _pytest._io.saferepr](2) \n- Parameter: Arg0\n- Function: _format_repr_exception\n- Module: Module _pytest._io.saferepr\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.py": "The callable [_format_repr_exception](1) is a class pollution taint propagation API in [Module _pytest._io.saferepr](2) \n- Parameter: Arg0\n- Function: _format_repr_exception\n- Module: Module _pytest._io.saferepr\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_format_repr_exception",
+      "parameter": "Arg0",
+      "function": "_format_repr_exception",
+      "module": "_pytest._io.saferepr",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_io].Member[saferepr].Member[_format_repr_exception]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ellipsize](1) is a class pollution taint propagation API in [Module _pytest._io.saferepr](2) \n- Parameter: Arg0\n- Function: _ellipsize\n- Module: Module _pytest._io.saferepr\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.py": "The callable [_ellipsize](1) is a class pollution taint propagation API in [Module _pytest._io.saferepr](2) \n- Parameter: Arg0\n- Function: _ellipsize\n- Module: Module _pytest._io.saferepr\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_ellipsize",
+      "parameter": "Arg0",
+      "function": "_ellipsize",
+      "module": "_pytest._io.saferepr",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_io/saferepr.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_io].Member[saferepr].Member[_ellipsize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pytest_fixture_setup](1) is a class pollution taint propagation API in [Module _pytest.setupplan](2) \n- Parameter: Arg0\n- Function: pytest_fixture_setup\n- Module: Module _pytest.setupplan\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/setupplan.py": "The callable [pytest_fixture_setup](1) is a class pollution taint propagation API in [Module _pytest.setupplan](2) \n- Parameter: Arg0\n- Function: pytest_fixture_setup\n- Module: Module _pytest.setupplan\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/setupplan.py",
+    "package": "pytest",
+    "model": {
+      "callable": "pytest_fixture_setup",
+      "parameter": "Arg0",
+      "function": "pytest_fixture_setup",
+      "module": "_pytest.setupplan",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/setupplan.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[setupplan].Member[pytest_fixture_setup]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [evaluate_condition](1) is a class pollution taint propagation API in [Module _pytest.skipping](2) \n- Parameter: Arg1\n- Function: evaluate_condition\n- Module: Module _pytest.skipping\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/skipping.py\nThe callable [evaluate_condition](1) is a class pollution taint propagation API in [Module _pytest.skipping](2) \n- Parameter: Arg2\n- Function: evaluate_condition\n- Module: Module _pytest.skipping\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/skipping.py": "The callable [evaluate_condition](1) is a class pollution taint propagation API in [Module _pytest.skipping](2) \n- Parameter: Arg1\n- Function: evaluate_condition\n- Module: Module _pytest.skipping\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/skipping.py\nThe callable [evaluate_condition](1) is a class pollution taint propagation API in [Module _pytest.skipping](2) \n- Parameter: Arg2\n- Function: evaluate_condition\n- Module: Module _pytest.skipping\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/skipping.py",
+    "package": "pytest",
+    "model": {
+      "callable": "evaluate_condition",
+      "parameter": "Arg1",
+      "function": "evaluate_condition",
+      "module": "_pytest.skipping",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/skipping.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[skipping].Member[evaluate_condition]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getrawcode](1) is a class pollution taint propagation API in [Module _pytest._code.source](2) \n- Parameter: Arg0\n- Function: getrawcode\n- Module: Module _pytest._code.source\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.py": "The callable [getrawcode](1) is a class pollution taint propagation API in [Module _pytest._code.source](2) \n- Parameter: Arg0\n- Function: getrawcode\n- Module: Module _pytest._code.source\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getrawcode",
+      "parameter": "Arg0",
+      "function": "getrawcode",
+      "module": "_pytest._code.source",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_code].Member[source].Member[getrawcode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [deindent](1) is a class pollution taint propagation API in [Module _pytest._code.source](2) \n- Parameter: Arg0\n- Function: deindent\n- Module: Module _pytest._code.source\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.py": "The callable [deindent](1) is a class pollution taint propagation API in [Module _pytest._code.source](2) \n- Parameter: Arg0\n- Function: deindent\n- Module: Module _pytest._code.source\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.py",
+    "package": "pytest",
+    "model": {
+      "callable": "deindent",
+      "parameter": "Arg0",
+      "function": "deindent",
+      "module": "_pytest._code.source",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_code].Member[source].Member[deindent]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getstatementrange_ast](1) is a class pollution taint propagation API in [Module _pytest._code.source](2) \n- Parameter: Arg3\n- Function: getstatementrange_ast\n- Module: Module _pytest._code.source\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.py": "The callable [getstatementrange_ast](1) is a class pollution taint propagation API in [Module _pytest._code.source](2) \n- Parameter: Arg3\n- Function: getstatementrange_ast\n- Module: Module _pytest._code.source\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getstatementrange_ast",
+      "parameter": "Arg3",
+      "function": "getstatementrange_ast",
+      "module": "_pytest._code.source",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/_code/source.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[_code].Member[source].Member[getstatementrange_ast]",
+      "Argument[3]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_unpacked_marks](1) is a class pollution taint propagation API in [Module _pytest.mark.structures](2) \n- Parameter: Arg0\n- Function: get_unpacked_marks\n- Module: Module _pytest.mark.structures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/mark/structures.py": "The callable [get_unpacked_marks](1) is a class pollution taint propagation API in [Module _pytest.mark.structures](2) \n- Parameter: Arg0\n- Function: get_unpacked_marks\n- Module: Module _pytest.mark.structures\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/mark/structures.py",
+    "package": "pytest",
+    "model": {
+      "callable": "get_unpacked_marks",
+      "parameter": "Arg0",
+      "function": "get_unpacked_marks",
+      "module": "_pytest.mark.structures",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/mark/structures.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[mark].Member[structures].Member[get_unpacked_marks]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getreportopt](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: getreportopt\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [getreportopt](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: getreportopt\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "getreportopt",
+      "parameter": "Arg0",
+      "function": "getreportopt",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[getreportopt]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pytest_report_teststatus](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: pytest_report_teststatus\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [pytest_report_teststatus](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: pytest_report_teststatus\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "pytest_report_teststatus",
+      "parameter": "Arg0",
+      "function": "pytest_report_teststatus",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[pytest_report_teststatus]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_trimmed](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: _format_trimmed\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py\nThe callable [_format_trimmed](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg1\n- Function: _format_trimmed\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [_format_trimmed](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: _format_trimmed\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py\nThe callable [_format_trimmed](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg1\n- Function: _format_trimmed\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_format_trimmed",
+      "parameter": "Arg0",
+      "function": "_format_trimmed",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[_format_trimmed]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_line_with_reprcrash_message](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg1\n- Function: _get_line_with_reprcrash_message\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [_get_line_with_reprcrash_message](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg1\n- Function: _get_line_with_reprcrash_message\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_get_line_with_reprcrash_message",
+      "parameter": "Arg1",
+      "function": "_get_line_with_reprcrash_message",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[_get_line_with_reprcrash_message]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pluralize](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: pluralize\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py\nThe callable [pluralize](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg1\n- Function: pluralize\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [pluralize](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: pluralize\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py\nThe callable [pluralize](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg1\n- Function: pluralize\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "pluralize",
+      "parameter": "Arg0",
+      "function": "pluralize",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[pluralize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_plugin_nameversions](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: _plugin_nameversions\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [_plugin_nameversions](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: _plugin_nameversions\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_plugin_nameversions",
+      "parameter": "Arg0",
+      "function": "_plugin_nameversions",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[_plugin_nameversions]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_session_duration](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: format_session_duration\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [format_session_duration](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: format_session_duration\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "format_session_duration",
+      "parameter": "Arg0",
+      "function": "format_session_duration",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[format_session_duration]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_raw_skip_reason](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: _get_raw_skip_reason\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py": "The callable [_get_raw_skip_reason](1) is a class pollution taint propagation API in [Module _pytest.terminal](2) \n- Parameter: Arg0\n- Function: _get_raw_skip_reason\n- Module: Module _pytest.terminal\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_get_raw_skip_reason",
+      "parameter": "Arg0",
+      "function": "_get_raw_skip_reason",
+      "module": "_pytest.terminal",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/terminal.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[terminal].Member[_get_raw_skip_reason]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tmp_path_factory](1) is a class pollution taint propagation API in [Module _pytest.tmpdir](2) \n- Parameter: Arg0\n- Function: tmp_path_factory\n- Module: Module _pytest.tmpdir\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/tmpdir.py": "The callable [tmp_path_factory](1) is a class pollution taint propagation API in [Module _pytest.tmpdir](2) \n- Parameter: Arg0\n- Function: tmp_path_factory\n- Module: Module _pytest.tmpdir\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/tmpdir.py",
+    "package": "pytest",
+    "model": {
+      "callable": "tmp_path_factory",
+      "parameter": "Arg0",
+      "function": "tmp_path_factory",
+      "module": "_pytest.tmpdir",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/tmpdir.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[tmpdir].Member[tmp_path_factory]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [truncate_if_required](1) is a class pollution taint propagation API in [Module _pytest.assertion.truncate](2) \n- Parameter: Arg0\n- Function: truncate_if_required\n- Module: Module _pytest.assertion.truncate\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.py": "The callable [truncate_if_required](1) is a class pollution taint propagation API in [Module _pytest.assertion.truncate](2) \n- Parameter: Arg0\n- Function: truncate_if_required\n- Module: Module _pytest.assertion.truncate\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.py",
+    "package": "pytest",
+    "model": {
+      "callable": "truncate_if_required",
+      "parameter": "Arg0",
+      "function": "truncate_if_required",
+      "module": "_pytest.assertion.truncate",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[truncate].Member[truncate_if_required]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_truncate_explanation](1) is a class pollution taint propagation API in [Module _pytest.assertion.truncate](2) \n- Parameter: Arg0\n- Function: _truncate_explanation\n- Module: Module _pytest.assertion.truncate\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.py": "The callable [_truncate_explanation](1) is a class pollution taint propagation API in [Module _pytest.assertion.truncate](2) \n- Parameter: Arg0\n- Function: _truncate_explanation\n- Module: Module _pytest.assertion.truncate\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_truncate_explanation",
+      "parameter": "Arg0",
+      "function": "_truncate_explanation",
+      "module": "_pytest.assertion.truncate",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[truncate].Member[_truncate_explanation]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_truncate_by_char_count](1) is a class pollution taint propagation API in [Module _pytest.assertion.truncate](2) \n- Parameter: Arg0\n- Function: _truncate_by_char_count\n- Module: Module _pytest.assertion.truncate\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.py": "The callable [_truncate_by_char_count](1) is a class pollution taint propagation API in [Module _pytest.assertion.truncate](2) \n- Parameter: Arg0\n- Function: _truncate_by_char_count\n- Module: Module _pytest.assertion.truncate\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_truncate_by_char_count",
+      "parameter": "Arg0",
+      "function": "_truncate_by_char_count",
+      "module": "_pytest.assertion.truncate",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/truncate.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[truncate].Member[_truncate_by_char_count]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_explanation](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: format_explanation\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [format_explanation](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: format_explanation\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "format_explanation",
+      "parameter": "Arg0",
+      "function": "format_explanation",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[format_explanation]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_split_explanation](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _split_explanation\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [_split_explanation](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _split_explanation\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_split_explanation",
+      "parameter": "Arg0",
+      "function": "_split_explanation",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[_split_explanation]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_lines](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _format_lines\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [_format_lines](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _format_lines\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_format_lines",
+      "parameter": "Arg0",
+      "function": "_format_lines",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[_format_lines]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [assertrepr_compare](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg1\n- Function: assertrepr_compare\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [assertrepr_compare](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg1\n- Function: assertrepr_compare\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "assertrepr_compare",
+      "parameter": "Arg1",
+      "function": "assertrepr_compare",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[assertrepr_compare]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_compare_eq_any](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _compare_eq_any\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [_compare_eq_any](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _compare_eq_any\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_compare_eq_any",
+      "parameter": "Arg0",
+      "function": "_compare_eq_any",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[_compare_eq_any]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_set_one_sided_diff](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _set_one_sided_diff\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [_set_one_sided_diff](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _set_one_sided_diff\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_set_one_sided_diff",
+      "parameter": "Arg0",
+      "function": "_set_one_sided_diff",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[_set_one_sided_diff]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_compare_eq_cls](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _compare_eq_cls\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py": "The callable [_compare_eq_cls](1) is a class pollution taint propagation API in [Module _pytest.assertion.util](2) \n- Parameter: Arg0\n- Function: _compare_eq_cls\n- Module: Module _pytest.assertion.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.py",
+    "package": "pytest",
+    "model": {
+      "callable": "_compare_eq_cls",
+      "parameter": "Arg0",
+      "function": "_compare_eq_cls",
+      "module": "_pytest.assertion.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pytest/codebase/_pytest/assertion/util.p",
+      "package_name": "pytest"
+    },
+    "data_extension": [
+      "pytest",
+      "Member[_pytest].Member[assertion].Member[util].Member[_compare_eq_cls]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

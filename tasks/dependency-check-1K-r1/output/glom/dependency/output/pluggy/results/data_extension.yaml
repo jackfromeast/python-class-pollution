@@ -1,0 +1,28 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pluggy
+    - Member[pluggy].Member[_hooks].Member[setattr_hookspec_opts]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pluggy
+    - Member[pluggy].Member[_hooks].Member[setattr_hookimpl_opts]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pluggy
+    - Member[pluggy].Member[_manager].Member[_formatdef]
+    - Argument[0]
+    - ReturnValue
+    - taint

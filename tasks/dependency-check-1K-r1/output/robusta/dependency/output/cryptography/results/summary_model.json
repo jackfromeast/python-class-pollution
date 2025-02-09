@@ -1,0 +1,572 @@
+[
+  {
+    "The callable [_verify_key_size](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives._cipheralgorithm](2) \n- Parameter: Arg1\n- Function: _verify_key_size\n- Module: Module cryptography.hazmat.primitives._cipheralgorithm\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/_cipheralgorithm.py": "The callable [_verify_key_size](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives._cipheralgorithm](2) \n- Parameter: Arg1\n- Function: _verify_key_size\n- Module: Module cryptography.hazmat.primitives._cipheralgorithm\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/_cipheralgorithm.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_verify_key_size",
+      "parameter": "Arg1",
+      "function": "_verify_key_size",
+      "module": "cryptography.hazmat.primitives._cipheralgorithm",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/_cipheralgorithm.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[_cipheralgorithm].Member[_verify_key_size]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_convert_to_naive_utc_time](1) is a class pollution taint propagation API in [Module cryptography.x509.base](2) \n- Parameter: Arg0\n- Function: _convert_to_naive_utc_time\n- Module: Module cryptography.x509.base\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/base.py": "The callable [_convert_to_naive_utc_time](1) is a class pollution taint propagation API in [Module cryptography.x509.base](2) \n- Parameter: Arg0\n- Function: _convert_to_naive_utc_time\n- Module: Module cryptography.x509.base\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/base.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_convert_to_naive_utc_time",
+      "parameter": "Arg0",
+      "function": "_convert_to_naive_utc_time",
+      "module": "cryptography.x509.base",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/base.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[x509].Member[base].Member[_convert_to_naive_utc_time]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [iter_method](1) is a class pollution taint propagation API in [Module cryptography.x509.extensions](2) \n- Parameter: Arg0\n- Function: iter_method\n- Module: Module cryptography.x509.extensions\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/extensions.py": "The callable [iter_method](1) is a class pollution taint propagation API in [Module cryptography.x509.extensions](2) \n- Parameter: Arg0\n- Function: iter_method\n- Module: Module cryptography.x509.extensions\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/extensions.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "iter_method",
+      "parameter": "Arg0",
+      "function": "iter_method",
+      "module": "cryptography.x509.extensions",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/extensions.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[x509].Member[extensions].Member[iter_method]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getitem_method](1) is a class pollution taint propagation API in [Module cryptography.x509.extensions](2) \n- Parameter: Arg0\n- Function: getitem_method\n- Module: Module cryptography.x509.extensions\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/extensions.py": "The callable [getitem_method](1) is a class pollution taint propagation API in [Module cryptography.x509.extensions](2) \n- Parameter: Arg0\n- Function: getitem_method\n- Module: Module cryptography.x509.extensions\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/extensions.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "getitem_method",
+      "parameter": "Arg0",
+      "function": "getitem_method",
+      "module": "cryptography.x509.extensions",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/extensions.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[x509].Member[extensions].Member[getitem_method]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg0\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py\nThe callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg1\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py\nThe callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg2\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py\nThe callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg3\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py": "The callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg0\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py\nThe callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg1\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py\nThe callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg2\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py\nThe callable [_generate_uri](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.twofactor.hotp](2) \n- Parameter: Arg3\n- Function: _generate_uri\n- Module: Module cryptography.hazmat.primitives.twofactor.hotp\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_generate_uri",
+      "parameter": "Arg0",
+      "function": "_generate_uri",
+      "module": "cryptography.hazmat.primitives.twofactor.hotp",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/twofactor/hotp.py",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[twofactor].Member[hotp].Member[_generate_uri]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_wrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: _wrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py\nThe callable [_wrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg2\n- Function: _wrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py": "The callable [_wrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: _wrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py\nThe callable [_wrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg2\n- Function: _wrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_wrap_core",
+      "parameter": "Arg1",
+      "function": "_wrap_core",
+      "module": "cryptography.hazmat.primitives.keywrap",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[_wrap_core]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [aes_key_wrap](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_wrap\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py": "The callable [aes_key_wrap](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_wrap\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "aes_key_wrap",
+      "parameter": "Arg1",
+      "function": "aes_key_wrap",
+      "module": "cryptography.hazmat.primitives.keywrap",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_wrap]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_unwrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: _unwrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py\nThe callable [_unwrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg2\n- Function: _unwrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py": "The callable [_unwrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: _unwrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py\nThe callable [_unwrap_core](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg2\n- Function: _unwrap_core\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_unwrap_core",
+      "parameter": "Arg1",
+      "function": "_unwrap_core",
+      "module": "cryptography.hazmat.primitives.keywrap",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[_unwrap_core]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [aes_key_wrap_with_padding](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_wrap_with_padding\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py": "The callable [aes_key_wrap_with_padding](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_wrap_with_padding\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "aes_key_wrap_with_padding",
+      "parameter": "Arg1",
+      "function": "aes_key_wrap_with_padding",
+      "module": "cryptography.hazmat.primitives.keywrap",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_wrap_with_padding]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [aes_key_unwrap_with_padding](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_unwrap_with_padding\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py": "The callable [aes_key_unwrap_with_padding](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_unwrap_with_padding\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "aes_key_unwrap_with_padding",
+      "parameter": "Arg1",
+      "function": "aes_key_unwrap_with_padding",
+      "module": "cryptography.hazmat.primitives.keywrap",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_unwrap_with_padding]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [aes_key_unwrap](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_unwrap\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py": "The callable [aes_key_unwrap](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.keywrap](2) \n- Parameter: Arg1\n- Function: aes_key_unwrap\n- Module: Module cryptography.hazmat.primitives.keywrap\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "aes_key_unwrap",
+      "parameter": "Arg1",
+      "function": "aes_key_unwrap",
+      "module": "cryptography.hazmat.primitives.keywrap",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/keywrap.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_unwrap]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_escape_dn_value](1) is a class pollution taint propagation API in [Module cryptography.x509.name](2) \n- Parameter: Arg0\n- Function: _escape_dn_value\n- Module: Module cryptography.x509.name\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/name.py": "The callable [_escape_dn_value](1) is a class pollution taint propagation API in [Module cryptography.x509.name](2) \n- Parameter: Arg0\n- Function: _escape_dn_value\n- Module: Module cryptography.x509.name\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/name.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_escape_dn_value",
+      "parameter": "Arg0",
+      "function": "_escape_dn_value",
+      "module": "cryptography.x509.name",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/name.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[x509].Member[name].Member[_escape_dn_value]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_unescape_dn_value](1) is a class pollution taint propagation API in [Module cryptography.x509.name](2) \n- Parameter: Arg0\n- Function: _unescape_dn_value\n- Module: Module cryptography.x509.name\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/name.py": "The callable [_unescape_dn_value](1) is a class pollution taint propagation API in [Module cryptography.x509.name](2) \n- Parameter: Arg0\n- Function: _unescape_dn_value\n- Module: Module cryptography.x509.name\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/name.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_unescape_dn_value",
+      "parameter": "Arg0",
+      "function": "_unescape_dn_value",
+      "module": "cryptography.x509.name",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/x509/name.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[x509].Member[name].Member[_unescape_dn_value]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_byte_padding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_padding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py\nThe callable [_byte_padding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg1\n- Function: _byte_padding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py": "The callable [_byte_padding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_padding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py\nThe callable [_byte_padding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg1\n- Function: _byte_padding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_byte_padding_update",
+      "parameter": "Arg0",
+      "function": "_byte_padding_update",
+      "module": "cryptography.hazmat.primitives.padding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_padding_update]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_byte_padding_pad](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_padding_pad\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py": "The callable [_byte_padding_pad](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_padding_pad\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_byte_padding_pad",
+      "parameter": "Arg0",
+      "function": "_byte_padding_pad",
+      "module": "cryptography.hazmat.primitives.padding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_padding_pad]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_byte_unpadding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_unpadding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py\nThe callable [_byte_unpadding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg1\n- Function: _byte_unpadding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py": "The callable [_byte_unpadding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_unpadding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py\nThe callable [_byte_unpadding_update](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg1\n- Function: _byte_unpadding_update\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_byte_unpadding_update",
+      "parameter": "Arg0",
+      "function": "_byte_unpadding_update",
+      "module": "cryptography.hazmat.primitives.padding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_unpadding_update]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_byte_unpadding_check](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_unpadding_check\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py": "The callable [_byte_unpadding_check](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.padding](2) \n- Parameter: Arg0\n- Function: _byte_unpadding_check\n- Module: Module cryptography.hazmat.primitives.padding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_byte_unpadding_check",
+      "parameter": "Arg0",
+      "function": "_byte_unpadding_check",
+      "module": "cryptography.hazmat.primitives.padding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/padding.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_unpadding_check]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_modinv](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg1\n- Function: _modinv\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py": "The callable [_modinv](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg1\n- Function: _modinv\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_modinv",
+      "parameter": "Arg1",
+      "function": "_modinv",
+      "module": "cryptography.hazmat.primitives.asymmetric.rsa",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[_modinv]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [rsa_crt_iqmp](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg0\n- Function: rsa_crt_iqmp\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py": "The callable [rsa_crt_iqmp](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg0\n- Function: rsa_crt_iqmp\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "rsa_crt_iqmp",
+      "parameter": "Arg0",
+      "function": "rsa_crt_iqmp",
+      "module": "cryptography.hazmat.primitives.asymmetric.rsa",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[rsa_crt_iqmp]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [rsa_crt_dmp1](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg0\n- Function: rsa_crt_dmp1\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py": "The callable [rsa_crt_dmp1](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg0\n- Function: rsa_crt_dmp1\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "rsa_crt_dmp1",
+      "parameter": "Arg0",
+      "function": "rsa_crt_dmp1",
+      "module": "cryptography.hazmat.primitives.asymmetric.rsa",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[rsa_crt_dmp1]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [rsa_crt_dmq1](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg0\n- Function: rsa_crt_dmq1\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py": "The callable [rsa_crt_dmq1](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.asymmetric.rsa](2) \n- Parameter: Arg0\n- Function: rsa_crt_dmq1\n- Module: Module cryptography.hazmat.primitives.asymmetric.rsa\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "rsa_crt_dmq1",
+      "parameter": "Arg0",
+      "function": "rsa_crt_dmq1",
+      "module": "cryptography.hazmat.primitives.asymmetric.rsa",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/asymmetric/rsa.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[rsa_crt_dmq1]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ssh_pem_encode](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _ssh_pem_encode\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py\nThe callable [_ssh_pem_encode](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg1\n- Function: _ssh_pem_encode\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py\nThe callable [_ssh_pem_encode](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg2\n- Function: _ssh_pem_encode\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [_ssh_pem_encode](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _ssh_pem_encode\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py\nThe callable [_ssh_pem_encode](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg1\n- Function: _ssh_pem_encode\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py\nThe callable [_ssh_pem_encode](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg2\n- Function: _ssh_pem_encode\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_ssh_pem_encode",
+      "parameter": "Arg0",
+      "function": "_ssh_pem_encode",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_ssh_pem_encode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_u32](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_u32\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [_get_u32](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_u32\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_get_u32",
+      "parameter": "Arg0",
+      "function": "_get_u32",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_u32]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_u64](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_u64\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [_get_u64](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_u64\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_get_u64",
+      "parameter": "Arg0",
+      "function": "_get_u64",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_u64]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_sshstr](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_sshstr\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [_get_sshstr](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_sshstr\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_get_sshstr",
+      "parameter": "Arg0",
+      "function": "_get_sshstr",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_sshstr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_mpint](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_mpint\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [_get_mpint](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: _get_mpint\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "_get_mpint",
+      "parameter": "Arg0",
+      "function": "_get_mpint",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_mpint]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [load_application](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: load_application\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [load_application](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: load_application\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "load_application",
+      "parameter": "Arg0",
+      "function": "load_application",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[load_application]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cryptography.hazmat.primitives.serialization.ssh](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cryptography.hazmat.primitives.serialization.ssh\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cryptography.hazmat.primitives.serialization.ssh",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/hazmat/primitives/serialization/ssh.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [inner](1) is a class pollution taint propagation API in [Module cryptography.utils](2) \n- Parameter: Arg0\n- Function: inner\n- Module: Module cryptography.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/utils.py": "The callable [inner](1) is a class pollution taint propagation API in [Module cryptography.utils](2) \n- Parameter: Arg0\n- Function: inner\n- Module: Module cryptography.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/utils.py",
+    "package": "cryptography",
+    "model": {
+      "callable": "inner",
+      "parameter": "Arg0",
+      "function": "inner",
+      "module": "cryptography.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cryptography/codebase/cryptography/utils.p",
+      "package_name": "cryptography"
+    },
+    "data_extension": [
+      "cryptography",
+      "Member[cryptography].Member[utils].Member[inner]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markupsafe
+    - Member[markupsafe].Member[__init__].Member[soft_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markupsafe
+    - Member[markupsafe].Member[_native].Member[_escape_inner]
+    - Argument[0]
+    - ReturnValue
+    - taint

@@ -1,0 +1,78 @@
+[
+  {
+    "The callable [want_bytes](1) is a class pollution taint propagation API in [Module itsdangerous.encoding](2) \n- Parameter: Arg0\n- Function: want_bytes\n- Module: Module itsdangerous.encoding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.py": "The callable [want_bytes](1) is a class pollution taint propagation API in [Module itsdangerous.encoding](2) \n- Parameter: Arg0\n- Function: want_bytes\n- Module: Module itsdangerous.encoding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.py",
+    "package": "itsdangerous",
+    "model": {
+      "callable": "want_bytes",
+      "parameter": "Arg0",
+      "function": "want_bytes",
+      "module": "itsdangerous.encoding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.p",
+      "package_name": "itsdangerous"
+    },
+    "data_extension": [
+      "itsdangerous",
+      "Member[itsdangerous].Member[encoding].Member[want_bytes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [base64_encode](1) is a class pollution taint propagation API in [Module itsdangerous.encoding](2) \n- Parameter: Arg0\n- Function: base64_encode\n- Module: Module itsdangerous.encoding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.py": "The callable [base64_encode](1) is a class pollution taint propagation API in [Module itsdangerous.encoding](2) \n- Parameter: Arg0\n- Function: base64_encode\n- Module: Module itsdangerous.encoding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.py",
+    "package": "itsdangerous",
+    "model": {
+      "callable": "base64_encode",
+      "parameter": "Arg0",
+      "function": "base64_encode",
+      "module": "itsdangerous.encoding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.p",
+      "package_name": "itsdangerous"
+    },
+    "data_extension": [
+      "itsdangerous",
+      "Member[itsdangerous].Member[encoding].Member[base64_encode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [base64_decode](1) is a class pollution taint propagation API in [Module itsdangerous.encoding](2) \n- Parameter: Arg0\n- Function: base64_decode\n- Module: Module itsdangerous.encoding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.py": "The callable [base64_decode](1) is a class pollution taint propagation API in [Module itsdangerous.encoding](2) \n- Parameter: Arg0\n- Function: base64_decode\n- Module: Module itsdangerous.encoding\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.py",
+    "package": "itsdangerous",
+    "model": {
+      "callable": "base64_decode",
+      "parameter": "Arg0",
+      "function": "base64_decode",
+      "module": "itsdangerous.encoding",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/encoding.p",
+      "package_name": "itsdangerous"
+    },
+    "data_extension": [
+      "itsdangerous",
+      "Member[itsdangerous].Member[encoding].Member[base64_decode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_make_keys_list](1) is a class pollution taint propagation API in [Module itsdangerous.signer](2) \n- Parameter: Arg0\n- Function: _make_keys_list\n- Module: Module itsdangerous.signer\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/signer.py": "The callable [_make_keys_list](1) is a class pollution taint propagation API in [Module itsdangerous.signer](2) \n- Parameter: Arg0\n- Function: _make_keys_list\n- Module: Module itsdangerous.signer\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/signer.py",
+    "package": "itsdangerous",
+    "model": {
+      "callable": "_make_keys_list",
+      "parameter": "Arg0",
+      "function": "_make_keys_list",
+      "module": "itsdangerous.signer",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/itsdangerous/codebase/itsdangerous/signer.p",
+      "package_name": "itsdangerous"
+    },
+    "data_extension": [
+      "itsdangerous",
+      "Member[itsdangerous].Member[signer].Member[_make_keys_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

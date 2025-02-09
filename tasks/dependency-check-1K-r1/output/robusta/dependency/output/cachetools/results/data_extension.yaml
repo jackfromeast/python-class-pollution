@@ -1,0 +1,10 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - cachetools
+    - Member[cachetools].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint

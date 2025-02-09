@@ -1,0 +1,59 @@
+[
+  {
+    "The callable [get_error_message](1) is a class pollution taint propagation API in [Module gotrue.helpers](2) \n- Parameter: Arg0\n- Function: get_error_message\n- Module: Module gotrue.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.py": "The callable [get_error_message](1) is a class pollution taint propagation API in [Module gotrue.helpers](2) \n- Parameter: Arg0\n- Function: get_error_message\n- Module: Module gotrue.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.py",
+    "package": "gotrue",
+    "model": {
+      "callable": "get_error_message",
+      "parameter": "Arg0",
+      "function": "get_error_message",
+      "module": "gotrue.helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.p",
+      "package_name": "gotrue"
+    },
+    "data_extension": [
+      "gotrue",
+      "Member[gotrue].Member[helpers].Member[get_error_message]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_error_code](1) is a class pollution taint propagation API in [Module gotrue.helpers](2) \n- Parameter: Arg0\n- Function: get_error_code\n- Module: Module gotrue.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.py": "The callable [get_error_code](1) is a class pollution taint propagation API in [Module gotrue.helpers](2) \n- Parameter: Arg0\n- Function: get_error_code\n- Module: Module gotrue.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.py",
+    "package": "gotrue",
+    "model": {
+      "callable": "get_error_code",
+      "parameter": "Arg0",
+      "function": "get_error_code",
+      "module": "gotrue.helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.p",
+      "package_name": "gotrue"
+    },
+    "data_extension": [
+      "gotrue",
+      "Member[gotrue].Member[helpers].Member[get_error_code]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decode_jwt_payload](1) is a class pollution taint propagation API in [Module gotrue.helpers](2) \n- Parameter: Arg0\n- Function: decode_jwt_payload\n- Module: Module gotrue.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.py": "The callable [decode_jwt_payload](1) is a class pollution taint propagation API in [Module gotrue.helpers](2) \n- Parameter: Arg0\n- Function: decode_jwt_payload\n- Module: Module gotrue.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.py",
+    "package": "gotrue",
+    "model": {
+      "callable": "decode_jwt_payload",
+      "parameter": "Arg0",
+      "function": "decode_jwt_payload",
+      "module": "gotrue.helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/gotrue/codebase/gotrue/helpers.p",
+      "package_name": "gotrue"
+    },
+    "data_extension": [
+      "gotrue",
+      "Member[gotrue].Member[helpers].Member[decode_jwt_payload]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

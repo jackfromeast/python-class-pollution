@@ -1,0 +1,352 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[ini].Member[__init__].Member[replacer]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[toml].Member[_validate].Member[validate]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[pip].Member[req].Member[args].Member[_validate_hash]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[session].Member[cmd].Member[run].Member[common].Member[report]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[session].Member[cmd].Member[run].Member[common].Member[_get_outcome_message]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[session].Member[env_select].Member[register_env_select_flags]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[cli].Member[env_var].Member[get_env_var]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[ini].Member[factor].Member[filter_for_env]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[ini].Member[factor].Member[explode_factor]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[ini].Member[factor].Member[name_with_negate]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[cli].Member[parse].Member[_get_all]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[cli].Member[parser].Member[keep]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[pip].Member[pip_install].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[pip].Member[pip_install].Member[remove_prefix]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[provision].Member[_get_missing]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[pytest].Member[disable_pip_pypi_access]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[pytest].Member[enable_pip_pypi_access_fixture]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[replacer].Member[find_replace_expr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[replacer].Member[replace]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[replacer].Member[_flatten_string_fragments]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[replacer].Member[replace_pos_args]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[replacer].Member[replace_env]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[replacer].Member[replace_tty]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[report].Member[_c]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[execute].Member[request].Member[shell_cmd]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[runner].Member[ensure_one_line]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[runner].Member[skip_missing_interpreters_post_process]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[set_env].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[sets].Member[set_env_post_process]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[session].Member[cmd].Member[show_config].Member[_colored]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[config].Member[loader].Member[stringify].Member[stringify]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[pip].Member[req].Member[util].Member[get_url_scheme]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[virtual_env].Member[package].Member[util].Member[dependencies_with_extras]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[virtual_env].Member[package].Member[util].Member[dependencies_with_extras_from_markers]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[virtual_env].Member[package].Member[util].Member[extract_extra_markers]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[virtual_env].Member[package].Member[util].Member[_extract_extra_markers]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[python].Member[virtual_env].Member[package].Member[util].Member[_get_extra]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[util].Member[_post_process_change_dir]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tox
+    - Member[tox].Member[tox_env].Member[util].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint

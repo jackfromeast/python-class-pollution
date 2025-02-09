@@ -1,0 +1,46 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - h11
+    - Member[h11].Member[_headers].Member[get_comma_header]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - h11
+    - Member[h11].Member[_util].Member[bytesify]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - h11
+    - Member[h11].Member[tests].Member[helpers].Member[normalize_data_events]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - h11
+    - Member[h11].Member[tests].Member[test_connection].Member[headers]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - h11
+    - Member[h11].Member[tests].Member[test_io].Member[makebuf]
+    - Argument[0]
+    - ReturnValue
+    - taint

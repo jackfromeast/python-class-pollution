@@ -1,0 +1,458 @@
+[
+  {
+    "The callable [naturalsize](1) is a class pollution taint propagation API in [Module humanize.filesize](2) \n- Parameter: Arg0\n- Function: naturalsize\n- Module: Module humanize.filesize\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/filesize.py\nThe callable [naturalsize](1) is a class pollution taint propagation API in [Module humanize.filesize](2) \n- Parameter: Arg3\n- Function: naturalsize\n- Module: Module humanize.filesize\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/filesize.py": "The callable [naturalsize](1) is a class pollution taint propagation API in [Module humanize.filesize](2) \n- Parameter: Arg0\n- Function: naturalsize\n- Module: Module humanize.filesize\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/filesize.py\nThe callable [naturalsize](1) is a class pollution taint propagation API in [Module humanize.filesize](2) \n- Parameter: Arg3\n- Function: naturalsize\n- Module: Module humanize.filesize\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/filesize.py",
+    "package": "humanize",
+    "model": {
+      "callable": "naturalsize",
+      "parameter": "Arg0",
+      "function": "naturalsize",
+      "module": "humanize.filesize",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/filesize.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[filesize].Member[naturalsize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_gettext_noop](1) is a class pollution taint propagation API in [Module humanize.i18n](2) \n- Parameter: Arg0\n- Function: _gettext_noop\n- Module: Module humanize.i18n\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py": "The callable [_gettext_noop](1) is a class pollution taint propagation API in [Module humanize.i18n](2) \n- Parameter: Arg0\n- Function: _gettext_noop\n- Module: Module humanize.i18n\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_gettext_noop",
+      "parameter": "Arg0",
+      "function": "_gettext_noop",
+      "module": "humanize.i18n",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[i18n].Member[_gettext_noop]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ngettext_noop](1) is a class pollution taint propagation API in [Module humanize.i18n](2) \n- Parameter: Arg0\n- Function: _ngettext_noop\n- Module: Module humanize.i18n\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py\nThe callable [_ngettext_noop](1) is a class pollution taint propagation API in [Module humanize.i18n](2) \n- Parameter: Arg1\n- Function: _ngettext_noop\n- Module: Module humanize.i18n\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py": "The callable [_ngettext_noop](1) is a class pollution taint propagation API in [Module humanize.i18n](2) \n- Parameter: Arg0\n- Function: _ngettext_noop\n- Module: Module humanize.i18n\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py\nThe callable [_ngettext_noop](1) is a class pollution taint propagation API in [Module humanize.i18n](2) \n- Parameter: Arg1\n- Function: _ngettext_noop\n- Module: Module humanize.i18n\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_ngettext_noop",
+      "parameter": "Arg0",
+      "function": "_ngettext_noop",
+      "module": "humanize.i18n",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/i18n.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[i18n].Member[_ngettext_noop]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [natural_list](1) is a class pollution taint propagation API in [Module humanize.lists](2) \n- Parameter: Arg0\n- Function: natural_list\n- Module: Module humanize.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/lists.py": "The callable [natural_list](1) is a class pollution taint propagation API in [Module humanize.lists](2) \n- Parameter: Arg0\n- Function: natural_list\n- Module: Module humanize.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/lists.py",
+    "package": "humanize",
+    "model": {
+      "callable": "natural_list",
+      "parameter": "Arg0",
+      "function": "natural_list",
+      "module": "humanize.lists",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/lists.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[lists].Member[natural_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ordinal](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: ordinal\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [ordinal](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: ordinal\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "ordinal",
+      "parameter": "Arg0",
+      "function": "ordinal",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[ordinal]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [intcomma](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: intcomma\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [intcomma](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: intcomma\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [intcomma](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: intcomma\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [intcomma](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: intcomma\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "intcomma",
+      "parameter": "Arg0",
+      "function": "intcomma",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[intcomma]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [intword](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: intword\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [intword](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: intword\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [intword](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: intword\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [intword](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: intword\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "intword",
+      "parameter": "Arg0",
+      "function": "intword",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[intword]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apnumber](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: apnumber\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [apnumber](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: apnumber\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "apnumber",
+      "parameter": "Arg0",
+      "function": "apnumber",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[apnumber]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [fractional](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: fractional\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [fractional](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: fractional\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "fractional",
+      "parameter": "Arg0",
+      "function": "fractional",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[fractional]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [scientific](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: scientific\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [scientific](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: scientific\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "scientific",
+      "parameter": "Arg0",
+      "function": "scientific",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[scientific]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg2\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg3\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg4\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg5\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg2\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg3\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg4\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [clamp](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg5\n- Function: clamp\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "clamp",
+      "parameter": "Arg0",
+      "function": "clamp",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[clamp]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [metric](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: metric\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [metric](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: metric\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py": "The callable [metric](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg0\n- Function: metric\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py\nThe callable [metric](1) is a class pollution taint propagation API in [Module humanize.number](2) \n- Parameter: Arg1\n- Function: metric\n- Module: Module humanize.number\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+    "package": "humanize",
+    "model": {
+      "callable": "metric",
+      "parameter": "Arg0",
+      "function": "metric",
+      "module": "humanize.number",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/number.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[number].Member[metric]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_abs_timedelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _abs_timedelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_abs_timedelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _abs_timedelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_abs_timedelta",
+      "parameter": "Arg0",
+      "function": "_abs_timedelta",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_abs_timedelta]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_date_and_delta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _date_and_delta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_date_and_delta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _date_and_delta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_date_and_delta",
+      "parameter": "Arg0",
+      "function": "_date_and_delta",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_date_and_delta]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [naturaldelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturaldelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [naturaldelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturaldelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "naturaldelta",
+      "parameter": "Arg0",
+      "function": "naturaldelta",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[naturaldelta]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [naturaltime](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturaltime\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [naturaltime](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturaltime\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "naturaltime",
+      "parameter": "Arg0",
+      "function": "naturaltime",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[naturaltime]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_convert_aware_datetime](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _convert_aware_datetime\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_convert_aware_datetime](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _convert_aware_datetime\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_convert_aware_datetime",
+      "parameter": "Arg0",
+      "function": "_convert_aware_datetime",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_convert_aware_datetime]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [naturalday](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturalday\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [naturalday](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturalday\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "naturalday",
+      "parameter": "Arg0",
+      "function": "naturalday",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[naturalday]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [naturaldate](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturaldate\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [naturaldate](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: naturaldate\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "naturaldate",
+      "parameter": "Arg0",
+      "function": "naturaldate",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[naturaldate]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_quotient_and_remainder](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _quotient_and_remainder\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_quotient_and_remainder](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _quotient_and_remainder\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_quotient_and_remainder",
+      "parameter": "Arg0",
+      "function": "_quotient_and_remainder",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_quotient_and_remainder]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_carry](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _carry\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py\nThe callable [_carry](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg1\n- Function: _carry\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_carry](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _carry\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py\nThe callable [_carry](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg1\n- Function: _carry\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_carry",
+      "parameter": "Arg0",
+      "function": "_carry",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_carry]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_suitable_minimum_unit](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _suitable_minimum_unit\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_suitable_minimum_unit](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: _suitable_minimum_unit\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_suitable_minimum_unit",
+      "parameter": "Arg0",
+      "function": "_suitable_minimum_unit",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_suitable_minimum_unit]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_suppress_lower_units](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg1\n- Function: _suppress_lower_units\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [_suppress_lower_units](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg1\n- Function: _suppress_lower_units\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "_suppress_lower_units",
+      "parameter": "Arg1",
+      "function": "_suppress_lower_units",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.p",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[_suppress_lower_units]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [precisedelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: precisedelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py\nThe callable [precisedelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg3\n- Function: precisedelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py": "The callable [precisedelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg0\n- Function: precisedelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py\nThe callable [precisedelta](1) is a class pollution taint propagation API in [Module humanize.time](2) \n- Parameter: Arg3\n- Function: precisedelta\n- Module: Module humanize.time\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+    "package": "humanize",
+    "model": {
+      "callable": "precisedelta",
+      "parameter": "Arg0",
+      "function": "precisedelta",
+      "module": "humanize.time",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/humanize/codebase/humanize/time.py",
+      "package_name": "humanize"
+    },
+    "data_extension": [
+      "humanize",
+      "Member[humanize].Member[time].Member[precisedelta]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

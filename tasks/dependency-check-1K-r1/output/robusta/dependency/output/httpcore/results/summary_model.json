@@ -1,0 +1,135 @@
+[
+  {
+    "The callable [enforce_bytes](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_bytes\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py": "The callable [enforce_bytes](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_bytes\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "enforce_bytes",
+      "parameter": "Arg0",
+      "function": "enforce_bytes",
+      "module": "httpcore._models",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.p",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_models].Member[enforce_bytes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [enforce_url](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_url\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py": "The callable [enforce_url](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_url\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "enforce_url",
+      "parameter": "Arg0",
+      "function": "enforce_url",
+      "module": "httpcore._models",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.p",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_models].Member[enforce_url]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [enforce_headers](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_headers\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py": "The callable [enforce_headers](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_headers\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "enforce_headers",
+      "parameter": "Arg0",
+      "function": "enforce_headers",
+      "module": "httpcore._models",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.p",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_models].Member[enforce_headers]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [enforce_stream](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_stream\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py": "The callable [enforce_stream](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: enforce_stream\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "enforce_stream",
+      "parameter": "Arg0",
+      "function": "enforce_stream",
+      "module": "httpcore._models",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.p",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_models].Member[enforce_stream]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [include_request_headers](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: include_request_headers\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py": "The callable [include_request_headers](1) is a class pollution taint propagation API in [Module httpcore._models](2) \n- Parameter: Arg0\n- Function: include_request_headers\n- Module: Module httpcore._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "include_request_headers",
+      "parameter": "Arg0",
+      "function": "include_request_headers",
+      "module": "httpcore._models",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_models.p",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_models].Member[include_request_headers]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._sync.http_proxy](2) \n- Parameter: Arg0\n- Function: merge_headers\n- Module: Module httpcore._sync.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_sync/http_proxy.py\nThe callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._sync.http_proxy](2) \n- Parameter: Arg1\n- Function: merge_headers\n- Module: Module httpcore._sync.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_sync/http_proxy.py": "The callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._sync.http_proxy](2) \n- Parameter: Arg0\n- Function: merge_headers\n- Module: Module httpcore._sync.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_sync/http_proxy.py\nThe callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._sync.http_proxy](2) \n- Parameter: Arg1\n- Function: merge_headers\n- Module: Module httpcore._sync.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_sync/http_proxy.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "merge_headers",
+      "parameter": "Arg0",
+      "function": "merge_headers",
+      "module": "httpcore._sync.http_proxy",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_sync/http_proxy.py",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_sync].Member[http_proxy].Member[merge_headers]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._async.http_proxy](2) \n- Parameter: Arg0\n- Function: merge_headers\n- Module: Module httpcore._async.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_async/http_proxy.py\nThe callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._async.http_proxy](2) \n- Parameter: Arg1\n- Function: merge_headers\n- Module: Module httpcore._async.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_async/http_proxy.py": "The callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._async.http_proxy](2) \n- Parameter: Arg0\n- Function: merge_headers\n- Module: Module httpcore._async.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_async/http_proxy.py\nThe callable [merge_headers](1) is a class pollution taint propagation API in [Module httpcore._async.http_proxy](2) \n- Parameter: Arg1\n- Function: merge_headers\n- Module: Module httpcore._async.http_proxy\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_async/http_proxy.py",
+    "package": "httpcore",
+    "model": {
+      "callable": "merge_headers",
+      "parameter": "Arg0",
+      "function": "merge_headers",
+      "module": "httpcore._async.http_proxy",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpcore/codebase/httpcore/_async/http_proxy.py",
+      "package_name": "httpcore"
+    },
+    "data_extension": [
+      "httpcore",
+      "Member[httpcore].Member[_async].Member[http_proxy].Member[merge_headers]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

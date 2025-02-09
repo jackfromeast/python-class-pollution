@@ -1,0 +1,59 @@
+[
+  {
+    "The callable [setattr_hookspec_opts](1) is a class pollution taint propagation API in [Module pluggy._hooks](2) \n- Parameter: Arg0\n- Function: setattr_hookspec_opts\n- Module: Module pluggy._hooks\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_hooks.py": "The callable [setattr_hookspec_opts](1) is a class pollution taint propagation API in [Module pluggy._hooks](2) \n- Parameter: Arg0\n- Function: setattr_hookspec_opts\n- Module: Module pluggy._hooks\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_hooks.py",
+    "package": "pluggy",
+    "model": {
+      "callable": "setattr_hookspec_opts",
+      "parameter": "Arg0",
+      "function": "setattr_hookspec_opts",
+      "module": "pluggy._hooks",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_hooks.p",
+      "package_name": "pluggy"
+    },
+    "data_extension": [
+      "pluggy",
+      "Member[pluggy].Member[_hooks].Member[setattr_hookspec_opts]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [setattr_hookimpl_opts](1) is a class pollution taint propagation API in [Module pluggy._hooks](2) \n- Parameter: Arg0\n- Function: setattr_hookimpl_opts\n- Module: Module pluggy._hooks\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_hooks.py": "The callable [setattr_hookimpl_opts](1) is a class pollution taint propagation API in [Module pluggy._hooks](2) \n- Parameter: Arg0\n- Function: setattr_hookimpl_opts\n- Module: Module pluggy._hooks\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_hooks.py",
+    "package": "pluggy",
+    "model": {
+      "callable": "setattr_hookimpl_opts",
+      "parameter": "Arg0",
+      "function": "setattr_hookimpl_opts",
+      "module": "pluggy._hooks",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_hooks.p",
+      "package_name": "pluggy"
+    },
+    "data_extension": [
+      "pluggy",
+      "Member[pluggy].Member[_hooks].Member[setattr_hookimpl_opts]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_formatdef](1) is a class pollution taint propagation API in [Module pluggy._manager](2) \n- Parameter: Arg0\n- Function: _formatdef\n- Module: Module pluggy._manager\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_manager.py": "The callable [_formatdef](1) is a class pollution taint propagation API in [Module pluggy._manager](2) \n- Parameter: Arg0\n- Function: _formatdef\n- Module: Module pluggy._manager\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_manager.py",
+    "package": "pluggy",
+    "model": {
+      "callable": "_formatdef",
+      "parameter": "Arg0",
+      "function": "_formatdef",
+      "module": "pluggy._manager",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/pluggy/codebase/pluggy/_manager.p",
+      "package_name": "pluggy"
+    },
+    "data_extension": [
+      "pluggy",
+      "Member[pluggy].Member[_manager].Member[_formatdef]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [_split_path](1) is a class pollution source API in [Module dpath.__init__](2). \n- Function: _split_path\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [_split_path](1) is a class pollution source API in [Module dpath.__init__](2). \n- Function: _split_path\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "_split_path",
+      "parameter": "le [_split_path](1) is a class pollution source API in [Module dpath.__init__](2).",
+      "function": "_split_path",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[_split_path]",
+      "class-pollution-source"
+    ]
+  }
+]

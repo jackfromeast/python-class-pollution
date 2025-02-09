@@ -1,0 +1,572 @@
+[
+  {
+    "The callable [localize_timezone](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: localize_timezone\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [localize_timezone](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: localize_timezone\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "localize_timezone",
+      "parameter": "Arg0",
+      "function": "localize_timezone",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[localize_timezone]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apply_tzdatabase_timezone](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: apply_tzdatabase_timezone\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [apply_tzdatabase_timezone](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: apply_tzdatabase_timezone\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "apply_tzdatabase_timezone",
+      "parameter": "Arg0",
+      "function": "apply_tzdatabase_timezone",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[apply_tzdatabase_timezone]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apply_timezone](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: apply_timezone\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [apply_timezone](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: apply_timezone\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "apply_timezone",
+      "parameter": "Arg0",
+      "function": "apply_timezone",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[apply_timezone]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apply_timezone_from_settings](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: apply_timezone_from_settings\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [apply_timezone_from_settings](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: apply_timezone_from_settings\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "apply_timezone_from_settings",
+      "parameter": "Arg0",
+      "function": "apply_timezone_from_settings",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[apply_timezone_from_settings]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_previous_leap_year](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_previous_leap_year\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [get_previous_leap_year](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_previous_leap_year\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "get_previous_leap_year",
+      "parameter": "Arg0",
+      "function": "get_previous_leap_year",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[get_previous_leap_year]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_next_leap_year](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_next_leap_year\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [get_next_leap_year](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_next_leap_year\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "get_next_leap_year",
+      "parameter": "Arg0",
+      "function": "get_next_leap_year",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[get_next_leap_year]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_leap_year](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: _get_leap_year\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [_get_leap_year](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: _get_leap_year\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "_get_leap_year",
+      "parameter": "Arg0",
+      "function": "_get_leap_year",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[_get_leap_year]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [set_correct_day_from_settings](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: set_correct_day_from_settings\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [set_correct_day_from_settings](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: set_correct_day_from_settings\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "set_correct_day_from_settings",
+      "parameter": "Arg0",
+      "function": "set_correct_day_from_settings",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[set_correct_day_from_settings]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [set_correct_month_from_settings](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: set_correct_month_from_settings\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [set_correct_month_from_settings](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: set_correct_month_from_settings\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "set_correct_month_from_settings",
+      "parameter": "Arg0",
+      "function": "set_correct_month_from_settings",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[set_correct_month_from_settings]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [registry](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: registry\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [registry](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: registry\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "registry",
+      "parameter": "Arg0",
+      "function": "registry",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[registry]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [constructor](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: constructor\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py": "The callable [constructor](1) is a class pollution taint propagation API in [Module dateparser.utils.__init__](2) \n- Parameter: Arg0\n- Function: constructor\n- Module: Module dateparser.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "constructor",
+      "parameter": "Arg0",
+      "function": "constructor",
+      "module": "dateparser.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/utils/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[utils].Member[__init__].Member[constructor]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [search_dates](1) is a class pollution taint propagation API in [Module dateparser.search.__init__](2) \n- Parameter: Arg2\n- Function: search_dates\n- Module: Module dateparser.search.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/__init__.py": "The callable [search_dates](1) is a class pollution taint propagation API in [Module dateparser.search.__init__](2) \n- Parameter: Arg2\n- Function: search_dates\n- Module: Module dateparser.search.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/__init__.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "search_dates",
+      "parameter": "Arg2",
+      "function": "search_dates",
+      "module": "dateparser.search.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/__init__.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[search].Member[__init__].Member[search_dates]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apply_time](1) is a class pollution taint propagation API in [Module dateparser.freshness_date_parser](2) \n- Parameter: Arg0\n- Function: apply_time\n- Module: Module dateparser.freshness_date_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/freshness_date_parser.py": "The callable [apply_time](1) is a class pollution taint propagation API in [Module dateparser.freshness_date_parser](2) \n- Parameter: Arg0\n- Function: apply_time\n- Module: Module dateparser.freshness_date_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/freshness_date_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "apply_time",
+      "parameter": "Arg0",
+      "function": "apply_time",
+      "module": "dateparser.freshness_date_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/freshness_date_parser.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[freshness_date_parser].Member[apply_time]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser_scripts.get_cldr_data](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser_scripts.get_cldr_data\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/get_cldr_data.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser_scripts.get_cldr_data](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser_scripts.get_cldr_data\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/get_cldr_data.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser_scripts.get_cldr_data",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/get_cldr_data.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser_scripts].Member[get_cldr_data].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py\nThe callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py\nThe callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser.calendars.jalali_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[calendars].Member[jalali_parser].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py\nThe callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py\nThe callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser.calendars.jalali_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[calendars].Member[jalali_parser].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [comp_key](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: comp_key\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py": "The callable [comp_key](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: comp_key\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "comp_key",
+      "parameter": "Arg0",
+      "function": "comp_key",
+      "module": "dateparser.calendars.jalali_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[calendars].Member[jalali_parser].Member[comp_key]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py\nThe callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py\nThe callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.calendars.jalali_parser](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module dateparser.calendars.jalali_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser.calendars.jalali_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/calendars/jalali_parser.py",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[calendars].Member[jalali_parser].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_filter_valid_locales](1) is a class pollution taint propagation API in [Module dateparser.languages.loader](2) \n- Parameter: Arg0\n- Function: _filter_valid_locales\n- Module: Module dateparser.languages.loader\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py": "The callable [_filter_valid_locales](1) is a class pollution taint propagation API in [Module dateparser.languages.loader](2) \n- Parameter: Arg0\n- Function: _filter_valid_locales\n- Module: Module dateparser.languages.loader\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "_filter_valid_locales",
+      "parameter": "Arg0",
+      "function": "_filter_valid_locales",
+      "module": "dateparser.languages.loader",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[languages].Member[loader].Member[_filter_valid_locales]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_construct_locales](1) is a class pollution taint propagation API in [Module dateparser.languages.loader](2) \n- Parameter: Arg0\n- Function: _construct_locales\n- Module: Module dateparser.languages.loader\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py\nThe callable [_construct_locales](1) is a class pollution taint propagation API in [Module dateparser.languages.loader](2) \n- Parameter: Arg1\n- Function: _construct_locales\n- Module: Module dateparser.languages.loader\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py": "The callable [_construct_locales](1) is a class pollution taint propagation API in [Module dateparser.languages.loader](2) \n- Parameter: Arg0\n- Function: _construct_locales\n- Module: Module dateparser.languages.loader\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py\nThe callable [_construct_locales](1) is a class pollution taint propagation API in [Module dateparser.languages.loader](2) \n- Parameter: Arg1\n- Function: _construct_locales\n- Module: Module dateparser.languages.loader\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "_construct_locales",
+      "parameter": "Arg0",
+      "function": "_construct_locales",
+      "module": "dateparser.languages.loader",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/languages/loader.py",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[languages].Member[loader].Member[_construct_locales]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser_scripts.order_languages](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser_scripts.order_languages\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/order_languages.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser_scripts.order_languages](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser_scripts.order_languages\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/order_languages.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser_scripts.order_languages",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/order_languages.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser_scripts].Member[order_languages].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[parser].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_missing_error](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg0\n- Function: _get_missing_error\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py": "The callable [_get_missing_error](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg0\n- Function: _get_missing_error\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "_get_missing_error",
+      "parameter": "Arg0",
+      "function": "_get_missing_error",
+      "module": "dateparser.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[parser].Member[_get_missing_error]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [set_and_return](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg2\n- Function: set_and_return\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py\nThe callable [set_and_return](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg3\n- Function: set_and_return\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py": "The callable [set_and_return](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg2\n- Function: set_and_return\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py\nThe callable [set_and_return](1) is a class pollution taint propagation API in [Module dateparser.parser](2) \n- Parameter: Arg3\n- Function: set_and_return\n- Module: Module dateparser.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "set_and_return",
+      "parameter": "Arg2",
+      "function": "set_and_return",
+      "module": "dateparser.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/parser.py",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[parser].Member[set_and_return]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.search.search](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.search.search\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/search.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.search.search](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.search.search\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/search.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser.search.search",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/search.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[search].Member[search].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.search.text_detection](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.search.text_detection\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/text_detection.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser.search.text_detection](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser.search.text_detection\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/text_detection.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser.search.text_detection",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/search/text_detection.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[search].Member[text_detection].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pop_tz_offset_from_string](1) is a class pollution taint propagation API in [Module dateparser.timezone_parser](2) \n- Parameter: Arg0\n- Function: pop_tz_offset_from_string\n- Module: Module dateparser.timezone_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/timezone_parser.py": "The callable [pop_tz_offset_from_string](1) is a class pollution taint propagation API in [Module dateparser.timezone_parser](2) \n- Parameter: Arg0\n- Function: pop_tz_offset_from_string\n- Module: Module dateparser.timezone_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/timezone_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "pop_tz_offset_from_string",
+      "parameter": "Arg0",
+      "function": "pop_tz_offset_from_string",
+      "module": "dateparser.timezone_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/timezone_parser.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[timezone_parser].Member[pop_tz_offset_from_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_offset](1) is a class pollution taint propagation API in [Module dateparser.timezone_parser](2) \n- Parameter: Arg0\n- Function: get_offset\n- Module: Module dateparser.timezone_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/timezone_parser.py": "The callable [get_offset](1) is a class pollution taint propagation API in [Module dateparser.timezone_parser](2) \n- Parameter: Arg0\n- Function: get_offset\n- Module: Module dateparser.timezone_parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/timezone_parser.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "get_offset",
+      "parameter": "Arg0",
+      "function": "get_offset",
+      "module": "dateparser.timezone_parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser/timezone_parser.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser].Member[timezone_parser].Member[get_offset]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [to_string](1) is a class pollution taint propagation API in [Script dateparser_scripts.update_supported_languages_and_locales](2) \n- Parameter: Arg0\n- Function: to_string\n- Module: Script dateparser_scripts.update_supported_languages_and_locales\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/update_supported_languages_and_locales.py": "The callable [to_string](1) is a class pollution taint propagation API in [Script dateparser_scripts.update_supported_languages_and_locales](2) \n- Parameter: Arg0\n- Function: to_string\n- Module: Script dateparser_scripts.update_supported_languages_and_locales\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/update_supported_languages_and_locales.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "to_string",
+      "parameter": "Arg0",
+      "function": "to_string",
+      "module": "Script dateparser_scripts.update_supported_languages_and_locales",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/update_supported_languages_and_locales.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[Script dateparser_scripts].Member[update_supported_languages_and_locales].Member[to_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser_scripts.write_complete_data](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser_scripts.write_complete_data\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/write_complete_data.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module dateparser_scripts.write_complete_data](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module dateparser_scripts.write_complete_data\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/write_complete_data.py",
+    "package": "dateparser",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "dateparser_scripts.write_complete_data",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dateparser/codebase/dateparser_scripts/write_complete_data.p",
+      "package_name": "dateparser"
+    },
+    "data_extension": [
+      "dateparser",
+      "Member[dateparser_scripts].Member[write_complete_data].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "The callable [_io_wrapper](1) is a class pollution taint propagation API in [Module importlib_resources._adapters](2) \n- Parameter: Arg0\n- Function: _io_wrapper\n- Module: Module importlib_resources._adapters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_adapters.py": "The callable [_io_wrapper](1) is a class pollution taint propagation API in [Module importlib_resources._adapters](2) \n- Parameter: Arg0\n- Function: _io_wrapper\n- Module: Module importlib_resources._adapters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_adapters.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_io_wrapper",
+      "parameter": "Arg0",
+      "function": "_io_wrapper",
+      "module": "importlib_resources._adapters",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_adapters.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_adapters].Member[_io_wrapper]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: resolve\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py": "The callable [resolve](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: resolve\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "resolve",
+      "parameter": "Arg0",
+      "function": "resolve",
+      "module": "importlib_resources._common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_common].Member[resolve]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_temp_file](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: _temp_file\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py": "The callable [_temp_file](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: _temp_file\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_temp_file",
+      "parameter": "Arg0",
+      "function": "_temp_file",
+      "module": "importlib_resources._common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_common].Member[_temp_file]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [as_file](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: as_file\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py": "The callable [as_file](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: as_file\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "as_file",
+      "parameter": "Arg0",
+      "function": "as_file",
+      "module": "importlib_resources._common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_common].Member[as_file]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_write_contents](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: _write_contents\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py\nThe callable [_write_contents](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg1\n- Function: _write_contents\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py": "The callable [_write_contents](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg0\n- Function: _write_contents\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py\nThe callable [_write_contents](1) is a class pollution taint propagation API in [Module importlib_resources._common](2) \n- Parameter: Arg1\n- Function: _write_contents\n- Module: Module importlib_resources._common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_write_contents",
+      "parameter": "Arg0",
+      "function": "_write_contents",
+      "module": "importlib_resources._common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_common.py",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_common].Member[_write_contents]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_encoding_arg](1) is a class pollution taint propagation API in [Module importlib_resources._functional](2) \n- Parameter: Arg1\n- Function: _get_encoding_arg\n- Module: Module importlib_resources._functional\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_functional.py": "The callable [_get_encoding_arg](1) is a class pollution taint propagation API in [Module importlib_resources._functional](2) \n- Parameter: Arg1\n- Function: _get_encoding_arg\n- Module: Module importlib_resources._functional\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_functional.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_get_encoding_arg",
+      "parameter": "Arg1",
+      "function": "_get_encoding_arg",
+      "module": "importlib_resources._functional",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_functional.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_functional].Member[_get_encoding_arg]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [only](1) is a class pollution taint propagation API in [Module importlib_resources._itertools](2) \n- Parameter: Arg1\n- Function: only\n- Module: Module importlib_resources._itertools\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_itertools.py": "The callable [only](1) is a class pollution taint propagation API in [Module importlib_resources._itertools](2) \n- Parameter: Arg1\n- Function: only\n- Module: Module importlib_resources._itertools\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_itertools.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "only",
+      "parameter": "Arg1",
+      "function": "only",
+      "module": "importlib_resources._itertools",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/_itertools.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[_itertools].Member[only]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ensure_tree_maker](1) is a class pollution taint propagation API in [Module importlib_resources.tests._path](2) \n- Parameter: Arg0\n- Function: _ensure_tree_maker\n- Module: Module importlib_resources.tests._path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/_path.py": "The callable [_ensure_tree_maker](1) is a class pollution taint propagation API in [Module importlib_resources.tests._path](2) \n- Parameter: Arg0\n- Function: _ensure_tree_maker\n- Module: Module importlib_resources.tests._path\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/_path.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_ensure_tree_maker",
+      "parameter": "Arg0",
+      "function": "_ensure_tree_maker",
+      "module": "importlib_resources.tests._path",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/_path.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[tests].Member[_path].Member[_ensure_tree_maker]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_skip_degenerate](1) is a class pollution taint propagation API in [Module importlib_resources.future.adapters](2) \n- Parameter: Arg0\n- Function: _skip_degenerate\n- Module: Module importlib_resources.future.adapters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/future/adapters.py": "The callable [_skip_degenerate](1) is a class pollution taint propagation API in [Module importlib_resources.future.adapters](2) \n- Parameter: Arg0\n- Function: _skip_degenerate\n- Module: Module importlib_resources.future.adapters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/future/adapters.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_skip_degenerate",
+      "parameter": "Arg0",
+      "function": "_skip_degenerate",
+      "module": "importlib_resources.future.adapters",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/future/adapters.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[future].Member[adapters].Member[_skip_degenerate]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ensure_traversable](1) is a class pollution taint propagation API in [Module importlib_resources.readers](2) \n- Parameter: Arg0\n- Function: _ensure_traversable\n- Module: Module importlib_resources.readers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/readers.py": "The callable [_ensure_traversable](1) is a class pollution taint propagation API in [Module importlib_resources.readers](2) \n- Parameter: Arg0\n- Function: _ensure_traversable\n- Module: Module importlib_resources.readers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/readers.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "_ensure_traversable",
+      "parameter": "Arg0",
+      "function": "_ensure_traversable",
+      "module": "importlib_resources.readers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/readers.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[readers].Member[_ensure_traversable]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [part](1) is a class pollution taint propagation API in [Module importlib_resources.tests.util](2) \n- Parameter: Arg0\n- Function: part\n- Module: Module importlib_resources.tests.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.py": "The callable [part](1) is a class pollution taint propagation API in [Module importlib_resources.tests.util](2) \n- Parameter: Arg0\n- Function: part\n- Module: Module importlib_resources.tests.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "part",
+      "parameter": "Arg0",
+      "function": "part",
+      "module": "importlib_resources.tests.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[tests].Member[util].Member[part]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module importlib_resources.tests.util](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module importlib_resources.tests.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module importlib_resources.tests.util](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module importlib_resources.tests.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "importlib_resources.tests.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[tests].Member[util].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_zip_file](1) is a class pollution taint propagation API in [Module importlib_resources.tests.zip](2) \n- Parameter: Arg1\n- Function: make_zip_file\n- Module: Module importlib_resources.tests.zip\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/zip.py": "The callable [make_zip_file](1) is a class pollution taint propagation API in [Module importlib_resources.tests.zip](2) \n- Parameter: Arg1\n- Function: make_zip_file\n- Module: Module importlib_resources.tests.zip\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/zip.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "make_zip_file",
+      "parameter": "Arg1",
+      "function": "make_zip_file",
+      "module": "importlib_resources.tests.zip",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/zip.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[tests].Member[zip].Member[make_zip_file]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

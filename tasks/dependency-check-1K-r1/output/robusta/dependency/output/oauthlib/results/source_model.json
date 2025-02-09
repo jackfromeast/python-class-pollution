@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [scope_to_list](1) is a class pollution source API in [Module oauthlib.oauth2.rfc6749.utils](2). \n- Function: scope_to_list\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py": "The callable [scope_to_list](1) is a class pollution source API in [Module oauthlib.oauth2.rfc6749.utils](2). \n- Function: scope_to_list\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "scope_to_list",
+      "parameter": "le [scope_to_list](1) is a class pollution source API in [Module oauthlib.oauth2.rfc6749.utils](2).",
+      "function": "scope_to_list",
+      "module": "oauthlib.oauth2.rfc6749.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[scope_to_list]",
+      "class-pollution-source"
+    ]
+  }
+]

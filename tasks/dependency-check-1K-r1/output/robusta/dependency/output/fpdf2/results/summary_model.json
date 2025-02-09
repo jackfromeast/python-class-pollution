@@ -1,0 +1,1104 @@
+[
+  {
+    "The callable [force_nodocument](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: force_nodocument\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [force_nodocument](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: force_nodocument\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "force_nodocument",
+      "parameter": "Arg0",
+      "function": "force_nodocument",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[force_nodocument]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [force_document](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: force_document\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [force_document](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: force_document\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "force_document",
+      "parameter": "Arg0",
+      "function": "force_document",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[force_document]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_check_range](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: _check_range\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [_check_range](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: _check_range\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_check_range",
+      "parameter": "Arg0",
+      "function": "_check_range",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[_check_range]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [number_to_str](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: number_to_str\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [number_to_str](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: number_to_str\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "number_to_str",
+      "parameter": "Arg0",
+      "function": "number_to_str",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[number_to_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [render_pdf_primitive](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: render_pdf_primitive\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [render_pdf_primitive](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: render_pdf_primitive\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "render_pdf_primitive",
+      "parameter": "Arg0",
+      "function": "render_pdf_primitive",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[render_pdf_primitive]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [convert_to_device_color](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: convert_to_device_color\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [convert_to_device_color](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: convert_to_device_color\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "convert_to_device_color",
+      "parameter": "Arg0",
+      "function": "convert_to_device_color",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[convert_to_device_color]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_render_line](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: _render_line\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py": "The callable [_render_line](1) is a class pollution taint propagation API in [Module fpdf.drawing](2) \n- Parameter: Arg0\n- Function: _render_line\n- Module: Module fpdf.drawing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_render_line",
+      "parameter": "Arg0",
+      "function": "_render_line",
+      "module": "fpdf.drawing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/drawing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[drawing].Member[_render_line]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [char_map](1) is a class pollution taint propagation API in [Module fpdf.encryption](2) \n- Parameter: Arg0\n- Function: char_map\n- Module: Module fpdf.encryption\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/encryption.py": "The callable [char_map](1) is a class pollution taint propagation API in [Module fpdf.encryption](2) \n- Parameter: Arg0\n- Function: char_map\n- Module: Module fpdf.encryption\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/encryption.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "char_map",
+      "parameter": "Arg0",
+      "function": "char_map",
+      "module": "fpdf.encryption",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/encryption.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[encryption].Member[char_map]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_cluster_from_text_index](1) is a class pollution taint propagation API in [Module fpdf.fonts](2) \n- Parameter: Arg0\n- Function: get_cluster_from_text_index\n- Module: Module fpdf.fonts\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/fonts.py": "The callable [get_cluster_from_text_index](1) is a class pollution taint propagation API in [Module fpdf.fonts](2) \n- Parameter: Arg0\n- Function: get_cluster_from_text_index\n- Module: Module fpdf.fonts\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/fonts.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "get_cluster_from_text_index",
+      "parameter": "Arg0",
+      "function": "get_cluster_from_text_index",
+      "module": "fpdf.fonts",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/fonts.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[fonts].Member[get_cluster_from_text_index]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_page_format](1) is a class pollution taint propagation API in [Module fpdf.fpdf](2) \n- Parameter: Arg0\n- Function: get_page_format\n- Module: Module fpdf.fpdf\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/fpdf.py": "The callable [get_page_format](1) is a class pollution taint propagation API in [Module fpdf.fpdf](2) \n- Parameter: Arg0\n- Function: get_page_format\n- Module: Module fpdf.fpdf\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/fpdf.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "get_page_format",
+      "parameter": "Arg0",
+      "function": "get_page_format",
+      "module": "fpdf.fpdf",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/fpdf.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[fpdf].Member[get_page_format]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.html](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.html\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.html](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.html\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.html",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[html].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ul_prefix](1) is a class pollution taint propagation API in [Module fpdf.html](2) \n- Parameter: Arg0\n- Function: ul_prefix\n- Module: Module fpdf.html\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.py": "The callable [ul_prefix](1) is a class pollution taint propagation API in [Module fpdf.html](2) \n- Parameter: Arg0\n- Function: ul_prefix\n- Module: Module fpdf.html\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "ul_prefix",
+      "parameter": "Arg0",
+      "function": "ul_prefix",
+      "module": "fpdf.html",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[html].Member[ul_prefix]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ol_prefix](1) is a class pollution taint propagation API in [Module fpdf.html](2) \n- Parameter: Arg1\n- Function: ol_prefix\n- Module: Module fpdf.html\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.py": "The callable [ol_prefix](1) is a class pollution taint propagation API in [Module fpdf.html](2) \n- Parameter: Arg1\n- Function: ol_prefix\n- Module: Module fpdf.html\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "ol_prefix",
+      "parameter": "Arg1",
+      "function": "ol_prefix",
+      "module": "fpdf.html",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/html.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[html].Member[ol_prefix]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [preload_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: preload_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py\nThe callable [preload_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg1\n- Function: preload_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py": "The callable [preload_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: preload_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py\nThe callable [preload_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg1\n- Function: preload_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "preload_image",
+      "parameter": "Arg0",
+      "function": "preload_image",
+      "module": "fpdf.image_parsing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[image_parsing].Member[preload_image]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [load_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: load_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py": "The callable [load_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: load_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "load_image",
+      "parameter": "Arg0",
+      "function": "load_image",
+      "module": "fpdf.image_parsing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[image_parsing].Member[load_image]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_decode_base64_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: _decode_base64_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py": "The callable [_decode_base64_image](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: _decode_base64_image\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_decode_base64_image",
+      "parameter": "Arg0",
+      "function": "_decode_base64_image",
+      "module": "fpdf.image_parsing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[image_parsing].Member[_decode_base64_image]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_svg_info](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: get_svg_info\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py": "The callable [get_svg_info](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: get_svg_info\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "get_svg_info",
+      "parameter": "Arg0",
+      "function": "get_svg_info",
+      "module": "fpdf.image_parsing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[image_parsing].Member[get_svg_info]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ccitt_payload_location_from_pil](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: ccitt_payload_location_from_pil\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py": "The callable [ccitt_payload_location_from_pil](1) is a class pollution taint propagation API in [Module fpdf.image_parsing](2) \n- Parameter: Arg0\n- Function: ccitt_payload_location_from_pil\n- Module: Module fpdf.image_parsing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "ccitt_payload_location_from_pil",
+      "parameter": "Arg0",
+      "function": "ccitt_payload_location_from_pil",
+      "module": "fpdf.image_parsing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/image_parsing.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[image_parsing].Member[ccitt_payload_location_from_pil]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_code](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: format_code\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [format_code](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: format_code\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "format_code",
+      "parameter": "Arg0",
+      "function": "format_code",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[format_code]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg1\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg2\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg3\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg4\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg1\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg2\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg3\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [stream_content_for_raster_image](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg4\n- Function: stream_content_for_raster_image\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "stream_content_for_raster_image",
+      "parameter": "Arg0",
+      "function": "stream_content_for_raster_image",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[stream_content_for_raster_image]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_dimensions_to_mediabox](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: _dimensions_to_mediabox\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [_dimensions_to_mediabox](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: _dimensions_to_mediabox\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_dimensions_to_mediabox",
+      "parameter": "Arg0",
+      "function": "_dimensions_to_mediabox",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[_dimensions_to_mediabox]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_sizeof_fmt](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: _sizeof_fmt\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [_sizeof_fmt](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg1\n- Function: _sizeof_fmt\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py": "The callable [_sizeof_fmt](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg0\n- Function: _sizeof_fmt\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py\nThe callable [_sizeof_fmt](1) is a class pollution taint propagation API in [Module fpdf.output](2) \n- Parameter: Arg1\n- Function: _sizeof_fmt\n- Module: Module fpdf.output\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_sizeof_fmt",
+      "parameter": "Arg0",
+      "function": "_sizeof_fmt",
+      "module": "fpdf.output",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/output.py",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[output].Member[_sizeof_fmt]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [sign_content](1) is a class pollution taint propagation API in [Module fpdf.sign](2) \n- Parameter: Arg1\n- Function: sign_content\n- Module: Module fpdf.sign\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/sign.py": "The callable [sign_content](1) is a class pollution taint propagation API in [Module fpdf.sign](2) \n- Parameter: Arg1\n- Function: sign_content\n- Module: Module fpdf.sign\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/sign.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "sign_content",
+      "parameter": "Arg1",
+      "function": "sign_content",
+      "module": "fpdf.sign",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/sign.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[sign].Member[sign_content]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_pkcs11_aligned](1) is a class pollution taint propagation API in [Module fpdf.sign](2) \n- Parameter: Arg0\n- Function: _pkcs11_aligned\n- Module: Module fpdf.sign\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/sign.py": "The callable [_pkcs11_aligned](1) is a class pollution taint propagation API in [Module fpdf.sign](2) \n- Parameter: Arg0\n- Function: _pkcs11_aligned\n- Module: Module fpdf.sign\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/sign.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_pkcs11_aligned",
+      "parameter": "Arg0",
+      "function": "_pkcs11_aligned",
+      "module": "fpdf.sign",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/sign.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[sign].Member[_pkcs11_aligned]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [force_nodocument](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: force_nodocument\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [force_nodocument](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: force_nodocument\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "force_nodocument",
+      "parameter": "Arg0",
+      "function": "force_nodocument",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[force_nodocument]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [xmlns](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg1\n- Function: xmlns\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [xmlns](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg1\n- Function: xmlns\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "xmlns",
+      "parameter": "Arg1",
+      "function": "xmlns",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[xmlns]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [without_ns](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: without_ns\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [without_ns](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: without_ns\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "without_ns",
+      "parameter": "Arg0",
+      "function": "without_ns",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[without_ns]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [inheritable](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: inheritable\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [inheritable](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: inheritable\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "inheritable",
+      "parameter": "Arg0",
+      "function": "inheritable",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[inheritable]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [optional](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: optional\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [optional](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: optional\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "optional",
+      "parameter": "Arg0",
+      "function": "optional",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[optional]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.svg](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.svg\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.svg",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/svg.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[svg].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [clear_empty_fields](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: clear_empty_fields\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [clear_empty_fields](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: clear_empty_fields\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "clear_empty_fields",
+      "parameter": "Arg0",
+      "function": "clear_empty_fields",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[clear_empty_fields]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg1\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg2\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg3\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg4\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg1\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg2\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg3\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py\nThe callable [create_dictionary_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg4\n- Function: create_dictionary_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "create_dictionary_string",
+      "parameter": "Arg0",
+      "function": "create_dictionary_string",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[create_dictionary_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [create_list_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: create_list_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [create_list_string](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: create_list_string\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "create_list_string",
+      "parameter": "Arg0",
+      "function": "create_list_string",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[create_list_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [iobj_ref](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: iobj_ref\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [iobj_ref](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: iobj_ref\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "iobj_ref",
+      "parameter": "Arg0",
+      "function": "iobj_ref",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[iobj_ref]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [create_stream](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: create_stream\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [create_stream](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: create_stream\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "create_stream",
+      "parameter": "Arg0",
+      "function": "create_stream",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[create_stream]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [camel_case](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: camel_case\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py": "The callable [camel_case](1) is a class pollution taint propagation API in [Module fpdf.syntax](2) \n- Parameter: Arg0\n- Function: camel_case\n- Module: Module fpdf.syntax\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "camel_case",
+      "parameter": "Arg0",
+      "function": "camel_case",
+      "module": "fpdf.syntax",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/syntax.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[syntax].Member[camel_case]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.table](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.table\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/table.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.table](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.table\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/table.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.table",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/table.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[table].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_rgb](1) is a class pollution taint propagation API in [Module fpdf.template](2) \n- Parameter: Arg0\n- Function: _rgb\n- Module: Module fpdf.template\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/template.py": "The callable [_rgb](1) is a class pollution taint propagation API in [Module fpdf.template](2) \n- Parameter: Arg0\n- Function: _rgb\n- Module: Module fpdf.template\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/template.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "_rgb",
+      "parameter": "Arg0",
+      "function": "_rgb",
+      "module": "fpdf.template",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/template.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[template].Member[_rgb]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.template](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.template\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/template.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module fpdf.template](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module fpdf.template\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/template.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "fpdf.template",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/template.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[template].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [buffer_subst](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg0\n- Function: buffer_subst\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py\nThe callable [buffer_subst](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg2\n- Function: buffer_subst\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py": "The callable [buffer_subst](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg0\n- Function: buffer_subst\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py\nThe callable [buffer_subst](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg2\n- Function: buffer_subst\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "buffer_subst",
+      "parameter": "Arg0",
+      "function": "buffer_subst",
+      "module": "fpdf.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[util].Member[buffer_subst]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape_parens](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg0\n- Function: escape_parens\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py": "The callable [escape_parens](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg0\n- Function: escape_parens\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "escape_parens",
+      "parameter": "Arg0",
+      "function": "escape_parens",
+      "module": "fpdf.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[util].Member[escape_parens]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_mem_usage](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg0\n- Function: get_mem_usage\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py": "The callable [get_mem_usage](1) is a class pollution taint propagation API in [Module fpdf.util](2) \n- Parameter: Arg0\n- Function: get_mem_usage\n- Module: Module fpdf.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.py",
+    "package": "fpdf2",
+    "model": {
+      "callable": "get_mem_usage",
+      "parameter": "Arg0",
+      "function": "get_mem_usage",
+      "module": "fpdf.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/fpdf2/codebase/fpdf/util.p",
+      "package_name": "fpdf2"
+    },
+    "data_extension": [
+      "fpdf2",
+      "Member[fpdf].Member[util].Member[get_mem_usage]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

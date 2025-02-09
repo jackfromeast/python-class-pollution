@@ -1,0 +1,192 @@
+[
+  {
+    "The callable [parse_structured_value](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: parse_structured_value\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [parse_structured_value](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: parse_structured_value\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "parse_structured_value",
+      "parameter": "Arg0",
+      "function": "parse_structured_value",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[parse_structured_value]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [lambda](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unhash_code](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: unhash_code\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [unhash_code](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: unhash_code\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "unhash_code",
+      "parameter": "Arg0",
+      "function": "unhash_code",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[unhash_code]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [calculate_toc_html](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: calculate_toc_html\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [calculate_toc_html](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: calculate_toc_html\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "calculate_toc_html",
+      "parameter": "Arg0",
+      "function": "calculate_toc_html",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[calculate_toc_html]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_regex_from_encoded_pattern](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _regex_from_encoded_pattern\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [_regex_from_encoded_pattern](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _regex_from_encoded_pattern\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "_regex_from_encoded_pattern",
+      "parameter": "Arg0",
+      "function": "_regex_from_encoded_pattern",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[_regex_from_encoded_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_dedentlines](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _dedentlines\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [_dedentlines](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _dedentlines\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "_dedentlines",
+      "parameter": "Arg0",
+      "function": "_dedentlines",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[_dedentlines]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_dedent](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _dedent\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [_dedent](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _dedent\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "_dedent",
+      "parameter": "Arg0",
+      "function": "_dedent",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[_dedent]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_xml_escape_attr](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _xml_escape_attr\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [_xml_escape_attr](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _xml_escape_attr\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "_xml_escape_attr",
+      "parameter": "Arg0",
+      "function": "_xml_escape_attr",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[_xml_escape_attr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_xml_encode_email_char_at_random](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _xml_encode_email_char_at_random\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [_xml_encode_email_char_at_random](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _xml_encode_email_char_at_random\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "_xml_encode_email_char_at_random",
+      "parameter": "Arg0",
+      "function": "_xml_encode_email_char_at_random",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[_xml_encode_email_char_at_random]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_html_escape_url](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _html_escape_url\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py": "The callable [_html_escape_url](1) is a class pollution taint propagation API in [Script markdown2.py](2) \n- Parameter: Arg0\n- Function: _html_escape_url\n- Module: Script markdown2.py\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.py",
+    "package": "markdown2",
+    "model": {
+      "callable": "_html_escape_url",
+      "parameter": "Arg0",
+      "function": "_html_escape_url",
+      "module": "Script markdown2.py",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown2/codebase/markdown2.p",
+      "package_name": "markdown2"
+    },
+    "data_extension": [
+      "markdown2",
+      "Member[Script markdown2].Member[py].Member[_html_escape_url]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

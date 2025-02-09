@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [decode_rfc2231](1) is a class pollution source API in [Module future.backports.email.utils](2). \n- Function: decode_rfc2231\n- Module: Module future.backports.email.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/email/utils.py": "The callable [decode_rfc2231](1) is a class pollution source API in [Module future.backports.email.utils](2). \n- Function: decode_rfc2231\n- Module: Module future.backports.email.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/email/utils.py",
+    "package": "future",
+    "model": {
+      "callable": "decode_rfc2231",
+      "parameter": "le [decode_rfc2231](1) is a class pollution source API in [Module future.backports.email.utils](2).",
+      "function": "decode_rfc2231",
+      "module": "future.backports.email.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/email/utils.p",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[future].Member[backports].Member[email].Member[utils].Member[decode_rfc2231]",
+      "class-pollution-source"
+    ]
+  }
+]

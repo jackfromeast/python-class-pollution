@@ -1,0 +1,477 @@
+[
+  {
+    "The callable [details](1) is a class pollution taint propagation API in [Module apprise.plugins.__init__](2) \n- Parameter: Arg0\n- Function: details\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py": "The callable [details](1) is a class pollution taint propagation API in [Module apprise.plugins.__init__](2) \n- Parameter: Arg0\n- Function: details\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py",
+    "package": "apprise",
+    "model": {
+      "callable": "details",
+      "parameter": "Arg0",
+      "function": "details",
+      "module": "apprise.plugins.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[plugins].Member[__init__].Member[details]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decode_b64_dict](1) is a class pollution taint propagation API in [Module apprise.utils.base64](2) \n- Parameter: Arg0\n- Function: decode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py": "The callable [decode_b64_dict](1) is a class pollution taint propagation API in [Module apprise.utils.base64](2) \n- Parameter: Arg0\n- Function: decode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py",
+    "package": "apprise",
+    "model": {
+      "callable": "decode_b64_dict",
+      "parameter": "Arg0",
+      "function": "decode_b64_dict",
+      "module": "apprise.utils.base64",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[base64].Member[decode_b64_dict]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [encode_b64_dict](1) is a class pollution taint propagation API in [Module apprise.utils.base64](2) \n- Parameter: Arg0\n- Function: encode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py": "The callable [encode_b64_dict](1) is a class pollution taint propagation API in [Module apprise.utils.base64](2) \n- Parameter: Arg0\n- Function: encode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py",
+    "package": "apprise",
+    "model": {
+      "callable": "encode_b64_dict",
+      "parameter": "Arg0",
+      "function": "encode_b64_dict",
+      "module": "apprise.utils.base64",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[base64].Member[encode_b64_dict]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module apprise.cli](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module apprise.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/cli.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module apprise.cli](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module apprise.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/cli.py",
+    "package": "apprise",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "apprise.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/cli.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[cli].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [convert_between](1) is a class pollution taint propagation API in [Module apprise.conversion](2) \n- Parameter: Arg2\n- Function: convert_between\n- Module: Module apprise.conversion\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/conversion.py": "The callable [convert_between](1) is a class pollution taint propagation API in [Module apprise.conversion](2) \n- Parameter: Arg2\n- Function: convert_between\n- Module: Module apprise.conversion\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/conversion.py",
+    "package": "apprise",
+    "model": {
+      "callable": "convert_between",
+      "parameter": "Arg2",
+      "function": "convert_between",
+      "module": "apprise.conversion",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/conversion.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[conversion].Member[convert_between]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [html_to_text](1) is a class pollution taint propagation API in [Module apprise.conversion](2) \n- Parameter: Arg0\n- Function: html_to_text\n- Module: Module apprise.conversion\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/conversion.py": "The callable [html_to_text](1) is a class pollution taint propagation API in [Module apprise.conversion](2) \n- Parameter: Arg0\n- Function: html_to_text\n- Module: Module apprise.conversion\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/conversion.py",
+    "package": "apprise",
+    "model": {
+      "callable": "html_to_text",
+      "parameter": "Arg0",
+      "function": "html_to_text",
+      "module": "apprise.conversion",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/conversion.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[conversion].Member[html_to_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [cwe312_word](1) is a class pollution taint propagation API in [Module apprise.utils.cwe312](2) \n- Parameter: Arg0\n- Function: cwe312_word\n- Module: Module apprise.utils.cwe312\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/cwe312.py": "The callable [cwe312_word](1) is a class pollution taint propagation API in [Module apprise.utils.cwe312](2) \n- Parameter: Arg0\n- Function: cwe312_word\n- Module: Module apprise.utils.cwe312\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/cwe312.py",
+    "package": "apprise",
+    "model": {
+      "callable": "cwe312_word",
+      "parameter": "Arg0",
+      "function": "cwe312_word",
+      "module": "apprise.utils.cwe312",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/cwe312.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[cwe312].Member[cwe312_word]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [cwe312_url](1) is a class pollution taint propagation API in [Module apprise.utils.cwe312](2) \n- Parameter: Arg0\n- Function: cwe312_url\n- Module: Module apprise.utils.cwe312\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/cwe312.py": "The callable [cwe312_url](1) is a class pollution taint propagation API in [Module apprise.utils.cwe312](2) \n- Parameter: Arg0\n- Function: cwe312_url\n- Module: Module apprise.utils.cwe312\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/cwe312.py",
+    "package": "apprise",
+    "model": {
+      "callable": "cwe312_url",
+      "parameter": "Arg0",
+      "function": "cwe312_url",
+      "module": "apprise.utils.cwe312",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/cwe312.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[cwe312].Member[cwe312_url]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [path_decode](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg0\n- Function: path_decode\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py": "The callable [path_decode](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg0\n- Function: path_decode\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py",
+    "package": "apprise",
+    "model": {
+      "callable": "path_decode",
+      "parameter": "Arg0",
+      "function": "path_decode",
+      "module": "apprise.utils.disk",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[disk].Member[path_decode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tidy_path](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg0\n- Function: tidy_path\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py": "The callable [tidy_path](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg0\n- Function: tidy_path\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py",
+    "package": "apprise",
+    "model": {
+      "callable": "tidy_path",
+      "parameter": "Arg0",
+      "function": "tidy_path",
+      "module": "apprise.utils.disk",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[disk].Member[tidy_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [dir_size](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg0\n- Function: dir_size\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py\nThe callable [dir_size](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg4\n- Function: dir_size\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py": "The callable [dir_size](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg0\n- Function: dir_size\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py\nThe callable [dir_size](1) is a class pollution taint propagation API in [Module apprise.utils.disk](2) \n- Parameter: Arg4\n- Function: dir_size\n- Module: Module apprise.utils.disk\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py",
+    "package": "apprise",
+    "model": {
+      "callable": "dir_size",
+      "parameter": "Arg0",
+      "function": "dir_size",
+      "module": "apprise.utils.disk",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/disk.py",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[disk].Member[dir_size]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apply_emojis](1) is a class pollution taint propagation API in [Module apprise.emojis](2) \n- Parameter: Arg0\n- Function: apply_emojis\n- Module: Module apprise.emojis\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/emojis.py": "The callable [apply_emojis](1) is a class pollution taint propagation API in [Module apprise.emojis](2) \n- Parameter: Arg0\n- Function: apply_emojis\n- Module: Module apprise.emojis\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/emojis.py",
+    "package": "apprise",
+    "model": {
+      "callable": "apply_emojis",
+      "parameter": "Arg0",
+      "function": "apply_emojis",
+      "module": "apprise.emojis",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/emojis.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[emojis].Member[apply_emojis]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [wrapper](1) is a class pollution taint propagation API in [Module apprise.decorators.notify](2) \n- Parameter: Arg0\n- Function: wrapper\n- Module: Module apprise.decorators.notify\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/decorators/notify.py": "The callable [wrapper](1) is a class pollution taint propagation API in [Module apprise.decorators.notify](2) \n- Parameter: Arg0\n- Function: wrapper\n- Module: Module apprise.decorators.notify\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/decorators/notify.py",
+    "package": "apprise",
+    "model": {
+      "callable": "wrapper",
+      "parameter": "Arg0",
+      "function": "wrapper",
+      "module": "apprise.decorators.notify",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/decorators/notify.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[decorators].Member[notify].Member[wrapper]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [is_ipaddr](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_ipaddr\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [is_ipaddr](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_ipaddr\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "is_ipaddr",
+      "parameter": "Arg0",
+      "function": "is_ipaddr",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[is_ipaddr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [is_hostname](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_hostname\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [is_hostname](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_hostname\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "is_hostname",
+      "parameter": "Arg0",
+      "function": "is_hostname",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[is_hostname]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [is_phone_no](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_phone_no\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [is_phone_no](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_phone_no\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "is_phone_no",
+      "parameter": "Arg0",
+      "function": "is_phone_no",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[is_phone_no]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [is_call_sign](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_call_sign\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [is_call_sign](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_call_sign\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "is_call_sign",
+      "parameter": "Arg0",
+      "function": "is_call_sign",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[is_call_sign]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [is_email](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_email\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [is_email](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: is_email\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "is_email",
+      "parameter": "Arg0",
+      "function": "is_email",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[is_email]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_bool](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg1\n- Function: parse_bool\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [parse_bool](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg1\n- Function: parse_bool\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "parse_bool",
+      "parameter": "Arg1",
+      "function": "parse_bool",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[parse_bool]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_no_encode](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: _no_encode\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [_no_encode](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: _no_encode\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "_no_encode",
+      "parameter": "Arg0",
+      "function": "_no_encode",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[_no_encode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [urlencode](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: urlencode\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [urlencode](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: urlencode\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "urlencode",
+      "parameter": "Arg0",
+      "function": "urlencode",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[urlencode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_regex](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: validate_regex\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py\nThe callable [validate_regex](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg4\n- Function: validate_regex\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py": "The callable [validate_regex](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg0\n- Function: validate_regex\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py\nThe callable [validate_regex](1) is a class pollution taint propagation API in [Module apprise.utils.parse](2) \n- Parameter: Arg4\n- Function: validate_regex\n- Module: Module apprise.utils.parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+    "package": "apprise",
+    "model": {
+      "callable": "validate_regex",
+      "parameter": "Arg0",
+      "function": "validate_regex",
+      "module": "apprise.utils.parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/parse.py",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[parse].Member[validate_regex]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [apply_template](1) is a class pollution taint propagation API in [Module apprise.utils.templates](2) \n- Parameter: Arg0\n- Function: apply_template\n- Module: Module apprise.utils.templates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.py": "The callable [apply_template](1) is a class pollution taint propagation API in [Module apprise.utils.templates](2) \n- Parameter: Arg0\n- Function: apply_template\n- Module: Module apprise.utils.templates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.py",
+    "package": "apprise",
+    "model": {
+      "callable": "apply_template",
+      "parameter": "Arg0",
+      "function": "apply_template",
+      "module": "apprise.utils.templates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[templates].Member[apply_template]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_escape_raw](1) is a class pollution taint propagation API in [Module apprise.utils.templates](2) \n- Parameter: Arg0\n- Function: _escape_raw\n- Module: Module apprise.utils.templates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.py": "The callable [_escape_raw](1) is a class pollution taint propagation API in [Module apprise.utils.templates](2) \n- Parameter: Arg0\n- Function: _escape_raw\n- Module: Module apprise.utils.templates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.py",
+    "package": "apprise",
+    "model": {
+      "callable": "_escape_raw",
+      "parameter": "Arg0",
+      "function": "_escape_raw",
+      "module": "apprise.utils.templates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[templates].Member[_escape_raw]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_escape_json](1) is a class pollution taint propagation API in [Module apprise.utils.templates](2) \n- Parameter: Arg0\n- Function: _escape_json\n- Module: Module apprise.utils.templates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.py": "The callable [_escape_json](1) is a class pollution taint propagation API in [Module apprise.utils.templates](2) \n- Parameter: Arg0\n- Function: _escape_json\n- Module: Module apprise.utils.templates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.py",
+    "package": "apprise",
+    "model": {
+      "callable": "_escape_json",
+      "parameter": "Arg0",
+      "function": "_escape_json",
+      "module": "apprise.utils.templates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/templates.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[templates].Member[_escape_json]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

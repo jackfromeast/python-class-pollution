@@ -1,0 +1,335 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sourceModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[_split_path]
+    - class-pollution-source
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[new].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[set].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[get].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[f].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[values].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[search].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[f].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[merge].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[merger].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[make_walkable].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[walk].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[set].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[fold].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[view].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[f].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[new].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[set].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[get].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[values].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[search].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[merge].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[_split_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[new]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[get]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[values]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[search]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[__init__].Member[merge]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[make_walkable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[get]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[types]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[int_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[extend]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[set]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[fold]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[foldm]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[segments].Member[view]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[new]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[get]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[values]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[search]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dpath
+    - Member[dpath].Member[util].Member[merge]
+    - Argument[0]
+    - ReturnValue
+    - taint

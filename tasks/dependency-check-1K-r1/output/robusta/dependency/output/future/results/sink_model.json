@@ -1,0 +1,122 @@
+[
+  {
+    "The callable [bind_method](1) is a class pollution sink API in [Module future.utils.__init__](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: bind_method\n- Module: Module future.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/utils/__init__.py": "The callable [bind_method](1) is a class pollution sink API in [Module future.utils.__init__](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: bind_method\n- Module: Module future.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/utils/__init__.py",
+    "package": "future",
+    "model": {
+      "callable": "bind_method",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg2",
+      "function": "bind_method",
+      "module": "future.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/utils/__init__.p",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[future].Member[utils].Member[__init__].Member[bind_method].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [_count_elements](1) is a class pollution sink API in [Module future.backports.misc](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: _count_elements\n- Module: Module future.backports.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/misc.py": "The callable [_count_elements](1) is a class pollution sink API in [Module future.backports.misc](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: _count_elements\n- Module: Module future.backports.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/misc.py",
+    "package": "future",
+    "model": {
+      "callable": "_count_elements",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg0",
+      "function": "_count_elements",
+      "module": "future.backports.misc",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/misc.p",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[future].Member[backports].Member[misc].Member[_count_elements].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg0\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py\nThe callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg2\n- Value: Arg0\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py\nThe callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg2\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py\nThe callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg3\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py": "The callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg0\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py\nThe callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg2\n- Value: Arg0\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py\nThe callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg2\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py\nThe callable [Proc8](1) is a class pollution sink API in [Script future.backports.test.pystone](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg3\n- Function: Proc8\n- Module: Script future.backports.test.pystone\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py",
+    "package": "future",
+    "model": {
+      "callable": "Proc8",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg2",
+      "value": "Arg0",
+      "function": "Proc8",
+      "module": "Script future.backports.test.pystone",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/pystone.py",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[Script future].Member[backports].Member[test].Member[pystone].Member[Proc8].Argument[2]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [swap_attr](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: swap_attr\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py\nThe callable [swap_attr](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: swap_attr\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py": "The callable [swap_attr](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: swap_attr\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py\nThe callable [swap_attr](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: swap_attr\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py",
+    "package": "future",
+    "model": {
+      "callable": "swap_attr",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg0",
+      "function": "swap_attr",
+      "module": "future.backports.test.support",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[future].Member[backports].Member[test].Member[support].Member[swap_attr].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [swap_item](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: swap_item\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py\nThe callable [swap_item](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: swap_item\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py": "The callable [swap_item](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: swap_item\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py\nThe callable [swap_item](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: swap_item\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py",
+    "package": "future",
+    "model": {
+      "callable": "swap_item",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg0",
+      "function": "swap_item",
+      "module": "future.backports.test.support",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[future].Member[backports].Member[test].Member[support].Member[swap_item].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [patch](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setattr\n- Base: Arg1\n- Key: Arg2\n- Value: Arg3\n- Function: patch\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py": "The callable [patch](1) is a class pollution sink API in [Module future.backports.test.support](2) \n- Type: setattr\n- Base: Arg1\n- Key: Arg2\n- Value: Arg3\n- Function: patch\n- Module: Module future.backports.test.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.py",
+    "package": "future",
+    "model": {
+      "callable": "patch",
+      "type": "setattr",
+      "base": "Arg1",
+      "key": "Arg2",
+      "value": "Arg3",
+      "function": "patch",
+      "module": "future.backports.test.support",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/future/codebase/future/backports/test/support.p",
+      "package_name": "future"
+    },
+    "data_extension": [
+      "future",
+      "Member[future].Member[backports].Member[test].Member[support].Member[patch].Argument[2]",
+      "class-pollution-sink"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "The callable [_parseline](1) is a class pollution taint propagation API in [Module iniconfig._parse](2) \n- Parameter: Arg1\n- Function: _parseline\n- Module: Module iniconfig._parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/iniconfig/codebase/iniconfig/_parse.py": "The callable [_parseline](1) is a class pollution taint propagation API in [Module iniconfig._parse](2) \n- Parameter: Arg1\n- Function: _parseline\n- Module: Module iniconfig._parse\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/iniconfig/codebase/iniconfig/_parse.py",
+    "package": "iniconfig",
+    "model": {
+      "callable": "_parseline",
+      "parameter": "Arg1",
+      "function": "_parseline",
+      "module": "iniconfig._parse",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/iniconfig/codebase/iniconfig/_parse.p",
+      "package_name": "iniconfig"
+    },
+    "data_extension": [
+      "iniconfig",
+      "Member[iniconfig].Member[_parse].Member[_parseline]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

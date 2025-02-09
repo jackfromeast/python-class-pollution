@@ -1,0 +1,197 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sourceModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[scope_to_list]
+    - class-pollution-source
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[endpoints].Member[base].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[common].Member[quote]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[common].Member[unquote]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[common].Member[to_unicode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[common].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[parameters].Member[prepare_token_revocation_request]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[parameters].Member[_append_params]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[parameters].Member[prepare_form_encoded_body]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[signature_base_string]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[normalize_parameters]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[sign_plaintext_with_client]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[sign_plaintext]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[tokens].Member[prepare_mac_header]
+    - Argument[5]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[tokens].Member[prepare_bearer_headers]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[tokens].Member[get_token_from_header]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[list_to_scope]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[scope_to_list]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[escape]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[utils].Member[escape]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - oauthlib
+    - Member[oauthlib].Member[oauth1].Member[rfc5849].Member[utils].Member[unescape]
+    - Argument[0]
+    - ReturnValue
+    - taint

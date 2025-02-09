@@ -1,0 +1,278 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - dateparser
+    - Member[dateparser_scripts].Member[write_complete_data].Member[_write_file].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[localize_timezone]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[apply_tzdatabase_timezone]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[apply_timezone]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[apply_timezone_from_settings]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[get_previous_leap_year]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[get_next_leap_year]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[_get_leap_year]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[set_correct_day_from_settings]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[set_correct_month_from_settings]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[registry]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[utils].Member[__init__].Member[constructor]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[search].Member[__init__].Member[search_dates]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[freshness_date_parser].Member[apply_time]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser_scripts].Member[get_cldr_data].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[calendars].Member[jalali_parser].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[calendars].Member[jalali_parser].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[calendars].Member[jalali_parser].Member[comp_key]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[calendars].Member[jalali_parser].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[languages].Member[loader].Member[_filter_valid_locales]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[languages].Member[loader].Member[_construct_locales]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser_scripts].Member[order_languages].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[parser].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[parser].Member[_get_missing_error]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[parser].Member[set_and_return]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[search].Member[search].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[search].Member[text_detection].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[timezone_parser].Member[pop_tz_offset_from_string]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser].Member[timezone_parser].Member[get_offset]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[Script dateparser_scripts].Member[update_supported_languages_and_locales].Member[to_string]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - dateparser
+    - Member[dateparser_scripts].Member[write_complete_data].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint

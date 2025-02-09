@@ -1,0 +1,19 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - imagesize
+    - Member[Script imagesize].Member[py].Member[_convertToDPI]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - imagesize
+    - Member[imagesize].Member[imagesize].Member[_convertToDPI]
+    - Argument[0]
+    - ReturnValue
+    - taint

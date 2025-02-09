@@ -1,0 +1,22 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - pyyaml
+    - Member[yaml].Member[__init__].Member[add_path_resolver].Argument[2]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - pyyaml
+    - Member[yaml].Member[__init__].Member[add_representer].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - pyyaml
+    - Member[yaml].Member[__init__].Member[add_multi_representer].Argument[0]
+    - class-pollution-sink

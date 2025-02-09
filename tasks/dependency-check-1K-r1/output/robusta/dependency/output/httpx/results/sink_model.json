@@ -1,0 +1,22 @@
+[
+  {
+    "The callable [_parse_header_links](1) is a class pollution sink API in [Module httpx._models](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: _parse_header_links\n- Module: Module httpx._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpx/codebase/httpx/_models.py": "The callable [_parse_header_links](1) is a class pollution sink API in [Module httpx._models](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: _parse_header_links\n- Module: Module httpx._models\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpx/codebase/httpx/_models.py",
+    "package": "httpx",
+    "model": {
+      "callable": "_parse_header_links",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "_parse_header_links",
+      "module": "httpx._models",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/httpx/codebase/httpx/_models.p",
+      "package_name": "httpx"
+    },
+    "data_extension": [
+      "httpx",
+      "Member[httpx].Member[_models].Member[_parse_header_links].Argument[0]",
+      "class-pollution-sink"
+    ]
+  }
+]

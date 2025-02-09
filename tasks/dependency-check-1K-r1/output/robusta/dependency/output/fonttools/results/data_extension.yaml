@@ -1,0 +1,3756 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sourceModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[parse_glyphs]
+    - class-pollution-source
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[_remap_index_map].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[build_many].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateTupleVariationStore].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[changeTupleVariationsAxisLimits].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[changeTupleVariationAxisLimit].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[_instantiateGvarGlyph].Argument[5]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateGvarGlyph].Argument[2]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateGvar].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateCvar].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[_instantiateVHVAR].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateHVAR].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateVVAR].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateVariableFont].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avar].Member[mappings_from_avar].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avar].Member[dictcomp].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[buildPairPosClassesSubtable].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[classifyTools].Member[classify].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[overlayBox].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[visit].Argument[2]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[visit].Argument[2]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[glifLib].Member[_relaxedSetattr].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[optimize].Member[gpos].Member[cluster_pairs_by_class2_coverage_custom_cost].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatable].Member[recursivelyAddGlyph].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[_ClassDef_invert].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[splitMultipleSubst].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[splitAlternateSubst].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[splitLigatureSubst].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[removeOverlaps].Member[removeTTGlyphOverlaps].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[removeOverlaps].Member[removeOverlaps].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[splitInterpolable].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[dictcomp].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[splitVariableFonts].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[convert5to4].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[_extractSubSpace].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[sstruct].Member[unpack].Argument[2]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[sstruct].Member[unpack2].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[statNames].Member[getStatNames].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[statNames].Member[_getSortedAxisLabels].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[statNames].Member[_getAxisLabelsForUserLocation].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[tobytes].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[bytechr].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[bytesjoin].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[genexpr].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[C_B_D_T_].Member[_removeUnsupportedForColor]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[D_S_I_G_].Member[b64encode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[F__e_a_t].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[F__e_a_t].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[F__e_a_t].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[M_E_T_A_].Member[mapUTF8toXML]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[S__i_l_f].Member[content_string]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[S__i_l_f].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[S__i_l_f].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[S__i_l_f].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[S__i_l_f].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[T_S_I__0].Member[fixlongs]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[TupleVariation].Member[decompileSharedTuples]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[TupleVariation].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[unicodedata].Member[__init__].Member[script_name]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[unicodedata].Member[__init__].Member[_normalize_property_name]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[unicodedata].Member[__init__].Member[script_code]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[unicodedata].Member[__init__].Member[script_horizontal_direction]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[unicodedata].Member[__init__].Member[ot_tags_from_script]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[unicodedata].Member[__init__].Member[ot_tag_to_script]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[makeGlyph]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[makeGlyphs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[mapLookup]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[mapFeature]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[stripSplitComma]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[Script fontTools].Member[mtiLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[__init__].Member[getter]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[__init__].Member[processRules]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[__init__].Member[tagForAxisName]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[plistlib].Member[__init__].Member[_date_to_string]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[plistlib].Member[__init__].Member[_encode_base64]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[t1Lib].Member[__init__].Member[decryptType1]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[t1Lib].Member[__init__].Member[findEncryptedChunks]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[t1Lib].Member[__init__].Member[assertType1]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[readCard8]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[packCard8]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[buildOrder]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[parseCharset0]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[parseCharset]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[packFDSelect0]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[packFDSelect3]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[__init__].Member[encodeNumber]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[_dict_subset]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[_list_subset]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[intersect_glyphs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[intersect]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[intersect_class]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[subset]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[__subset_classify_context]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[collect_lookups]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[closure_lookups]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[subset_lookups]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[subset_lookups]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[collect_features]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[_remap_index_map]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[closure_glyphs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[__init__].Member[parse_glyphs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[build]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[load_masters]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[__init__].Member[_feature_variations_tags]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[__init__].Member[makeUFOPath]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[__init__].Member[convertFontInfoValueForAttributeFromVersion1ToVersion2]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[__init__].Member[convertFontInfoValueForAttributeFromVersion2ToVersion1]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[__init__].Member[convertFontInfoValueForAttributeFromVersion2ToVersion3]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[__init__].Member[convertFontInfoValueForAttributeFromVersion3ToVersion2]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[changeTupleVariationsAxisLimits]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[changeTupleVariationAxisLimit]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[fetchBlendsFromVarStore]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[axisValuesFromAxisLimits]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[instantiateVariableFont]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[__init__].Member[parseArgs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[_c_m_a_p].Member[splitRange]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[_c_m_a_p].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[_g_l_y_f].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[_g_l_y_f].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[_p_o_s_t].Member[unpackPStrings]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[_p_o_s_t].Member[packPStrings]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[afmLib].Member[myKey]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[arrayTools].Member[updateBounds]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[arrayTools].Member[scaleRect]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[arrayTools].Member[offsetRect]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[arrayTools].Member[insetRect]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[ast].Member[deviceToString]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[ast].Member[asFea]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[ast].Member[simplify_name_attributes]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[ast].Member[escape]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[ast].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avar].Member[_denormalize]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avar].Member[_pruneLocations]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avar].Member[mappings_from_avar]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avar].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avarPlanner].Member[interpolateLinear]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avarPlanner].Member[makeDesignspaceSnippet]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[avarPlanner].Member[processAxis]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[pens].Member[basePen].Member[decomposeSuperBezierSegment]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[pens].Member[basePen].Member[decomposeQuadraticSegment]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[_split_cubic_into_two]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[_dot]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[splitLine]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[splitQuadratic]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[splitCubic]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[splitQuadraticAtT]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[splitCubicAtT]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[splitCubicIntoTwoAtTC]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[_splitQuadraticAtT]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[_splitCubicAtT]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[calcQuadraticParameters]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[calcCubicParameters]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[calcCubicParametersC]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[calcQuadraticPoints]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[calcCubicPoints]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[calcCubicPointsC]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[linePointAtT]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[quadraticPointAtT]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[cubicPointAtT]
+    - Argument[4]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[cubicPointAtTC]
+    - Argument[4]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[_split_segment_at_t]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[bezierTools].Member[_segmentrepr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[_getValueFormat]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[_getSinglePosTableKey]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[_getSinglePosValueKey]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[_makeDeviceTuple]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[builder].Member[_addName]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[builder].Member[_beforeBuildPaintRadialGradient]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[builder].Member[buildClipBox]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[builder].Member[_tuple_safe]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[builder].Member[listToColrLayers]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[builder].Member[_format_glyph_errors]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[builder].Member[_reorderItem]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[builder].Member[VarData_calculateNumShorts]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[builder].Member[VarData_CalculateNumShorts]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[builder].Member[VarData_optimize]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[cff].Member[conv_to_int]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[cff].Member[get_private]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[cff].Member[_cff_or_cff2]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[cff].Member[_get_cs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[classifyTools].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[classifyTools].Member[classify]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[cliTools].Member[makeOutputFileName]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[converters].Member[convertUFO1OrUFO2KerningToUFO3Kerning]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[converters].Member[findKnownKerningGroups]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[converters].Member[makeUniqueGroupName]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[dot]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[calc_cubic_points]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[calc_cubic_parameters]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[split_cubic_into_n_iter]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[split_cubic_into_two]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[split_cubic_into_three]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[cubic_approx_control]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[calc_intersect]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[cubic_approx_quadratic]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[cu2qu].Member[cubic_approx_spline]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[cython].Member[_empty_decorator]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[encodingTools].Member[getEncoding]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[etree].Member[_tounicode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[etree].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[etree].Member[_escape_cdata]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[etree].Member[_escape_attrib]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[_existingVariableFeatures]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[overlayBox]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[cleanupBox]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[makeSubstitutionsHashable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[featureVars].Member[findFeatureVariationRecord]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[filenames].Member[userNameToFileName]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[filenames].Member[handleClash1]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[filenames].Member[handleClash2]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[filenames].Member[userNameToFileName]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[filenames].Member[handleClash1]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[filenames].Member[handleClash2]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[fixedTools].Member[ensureVersionIsLong]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[glifLib].Member[glyphNameToFileName]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[glifLib].Member[validateLayerInfoVersion3Data]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[optimize].Member[gpos].Member[compact]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[optimize].Member[gpos].Member[compact_pair_pos]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[optimize].Member[gpos].Member[_getClassRanges]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[optimize].Member[gpos].Member[cluster_pairs_by_class2_coverage_custom_cost]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[grUtils].Member[decompress]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[grUtils].Member[compress]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[grUtils].Member[entries]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[grUtils].Member[num2tag]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatable].Member[ensure_parent_dir]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatable].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatableHelpers].Member[sort_problems]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatableHelpers].Member[rot_list]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatableHelpers].Member[contour_vector_from_stats]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatablePlot].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatableTestStartingPoint].Member[test_starting_point]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatableTestStartingPoint].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolatableTestStartingPoint].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolate_layout].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolate_layout].Member[interpolate_layout]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[interpolate_layout].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[iup].Member[iup_contour]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[iup].Member[_rot_list]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[iup].Member[_rot_set]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[iup].Member[iup_contour_optimize]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[kerning].Member[lookupKerningValue]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[layout].Member[mergeScripts]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[layout].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[layout].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[layout].Member[merge]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[layout].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[layout].Member[__merge_classify_context]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[macCreatorType].Member[_reverseString]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[maxContextCalc].Member[maxCtxSubtable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[otlLib].Member[maxContextCalc].Member[maxCtxContextualSubtable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[_SinglePosUpgradeToFormat2]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[_merge_GlyphOrders]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[_Lookup_SinglePos_get_effective_value]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[_Lookup_PairPos_get_effective_value_pair]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[_Lookup_PairPos_subtables_canonicalize]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[buildVarDevTable]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[merger].Member[listToColrLayers]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[models].Member[nonNone]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[models].Member[piecewiseLinearMap]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[multiVarStore].Member[_getLocationKey]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[multiVarStore].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[multiVarStore].Member[SparseVarRegion_get_support]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[mutator].Member[instantiateVariableFont]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[mutator].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[names].Member[getVariationNameIDs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[names].Member[_sortAxisValues]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[names].Member[_updatePSNameRecord]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[names].Member[_updateUniqueIdNameRecord]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[names].Member[_fontVersion]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[_read_uint32var]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[read_transform_component]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[tables].Member[otTables].Member[_getGlyphsFromCoverageTable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[plot].Member[stops]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_operator]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_byte]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_smallInt1]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_smallInt2]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_shortInt]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_longInt]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_fixed1616]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_reserved]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[read_realNumber]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psCharStrings].Member[encodeInt]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psLib].Member[unpack_item]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psOperators].Member[_type1_item_repr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[psOperators].Member[_type1_Encoding_repr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[qu2cu].Member[qu2cu].Member[elevate_quadratic]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[qu2cu].Member[qu2cu].Member[merge_curves]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[qu2cu].Member[qu2cu].Member[add_implicit_on_curves]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[qu2cu].Member[qu2cu].Member[quadratic_to_curves]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[qu2cu].Member[qu2cu].Member[spline_to_curves]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[removeOverlaps].Member[_round_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[removeOverlaps].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[reorderGlyphs].Member[_get_dotted_attr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[roundTools].Member[noRound]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[roundTools].Member[maybeRound]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[roundTools].Member[roundFunc]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[sfnt].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[svgLib].Member[path].Member[shapes].Member[_ntos]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[svgLib].Member[path].Member[shapes].Member[_strip_xml_ns]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[solver].Member[_solve]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[instancer].Member[solver].Member[rebaseTent]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[stringToProgram]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[programToString]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[programToCommands]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[_flattenBlendArgs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[commandsToProgram]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[generalizeCommands]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[generalizeProgram]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[_categorizeVector]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[_mergeCategories]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[_negateCategory]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[_convertToBlendCmds]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[_addArgs]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[specializeCommands]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[specializer].Member[specializeProgram]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[defaultMakeInstanceFilename]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[maybeExpandDesignLocation]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[split].Member[_filterLocation]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[sstruct].Member[unpack]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[sstruct].Member[unpack2]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[sstruct].Member[getformat]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[statNames].Member[_getSortedAxisLabels]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[statNames].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[designspaceLib].Member[statNames].Member[_getAxisLabelsForUserLocation]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[svg].Member[href_local_target]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[pens].Member[svgPathPen].Member[pointToString]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[table_builder].Member[_assignable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[table_builder].Member[_split_format]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[table_builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[table_builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[table_builder].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[tables].Member[merge]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[tables].Member[merge]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[merge].Member[tables].Member[merge]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[testTools].Member[parseXmlInto]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[testTools].Member[stripVariableItemsFromTTX]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[caselessSort]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[pad]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[tostr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[tobytes]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[bytechr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[byteord]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[strjoin]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[textTools].Member[bytesjoin]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[tfmLib].Member[read_fixed]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[timeTools].Member[asctime]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[transform].Member[_normSinCos]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[transforms].Member[_uniq_sort]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[treeTools].Member[build_n_ary_tree]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[ttFont].Member[getClassTag]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[ttFont].Member[_escapechar]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[ttFont].Member[identifierToTag]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[ttFont].Member[xmlToTag]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[ttFont].Member[sortedTagList]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[ufo].Member[_glyphs_to_quadratic]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cu2qu].Member[ufo].Member[glyphs_to_quadratic]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[colorLib].Member[unbuilder].Member[unbuildColrV1]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[subset].Member[util].Member[_uniq_sort]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[validators].Member[layerContentsValidator]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[validators].Member[groupsValidator]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[validators].Member[fontLibValidator]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ufoLib].Member[validators].Member[glyphLibValidator]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[varStore].Member[_getLocationKey]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[varStore].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[varLib].Member[varStore].Member[VarRegion_get_support]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[feaLib].Member[variableScalar].Member[Location]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[cffLib].Member[width].Member[byteCost]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[woff2].Member[withSign]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[woff2].Member[unpackBase128]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[ttLib].Member[woff2].Member[unpack255UShort]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[xmlWriter].Member[escape]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[xmlWriter].Member[escapeattr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - fonttools
+    - Member[fontTools].Member[misc].Member[xmlWriter].Member[escapechar]
+    - Argument[0]
+    - ReturnValue
+    - taint

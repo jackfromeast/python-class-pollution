@@ -1,0 +1,22 @@
+[
+  {
+    "The callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: merge\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py\nThe callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py": "The callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: merge\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py\nThe callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py",
+    "package": "babel",
+    "model": {
+      "callable": "merge",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg0",
+      "function": "merge",
+      "module": "babel.localedata",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[localedata].Member[merge].Argument[1]",
+      "class-pollution-sink"
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[parse_structured_value]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[unhash_code]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[calculate_toc_html]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[_regex_from_encoded_pattern]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[_dedentlines]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[_dedent]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[_xml_escape_attr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[_xml_encode_email_char_at_random]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - markdown2
+    - Member[Script markdown2].Member[py].Member[_html_escape_url]
+    - Argument[0]
+    - ReturnValue
+    - taint

@@ -1,0 +1,22 @@
+[
+  {
+    "The callable [new_context](1) is a class pollution sink API in [Module jinja2.runtime](2) \n- Type: setItem\n- Base: Arg3\n- Key: Arg6\n- Value: Arg6\n- Function: new_context\n- Module: Module jinja2.runtime\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/jinja2/codebase/jinja2/runtime.py\nThe callable [new_context](1) is a class pollution sink API in [Module jinja2.runtime](2) \n- Type: setItem\n- Base: Arg5\n- Key: Arg6\n- Value: Arg6\n- Function: new_context\n- Module: Module jinja2.runtime\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/jinja2/codebase/jinja2/runtime.py": "The callable [new_context](1) is a class pollution sink API in [Module jinja2.runtime](2) \n- Type: setItem\n- Base: Arg3\n- Key: Arg6\n- Value: Arg6\n- Function: new_context\n- Module: Module jinja2.runtime\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/jinja2/codebase/jinja2/runtime.py\nThe callable [new_context](1) is a class pollution sink API in [Module jinja2.runtime](2) \n- Type: setItem\n- Base: Arg5\n- Key: Arg6\n- Value: Arg6\n- Function: new_context\n- Module: Module jinja2.runtime\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/jinja2/codebase/jinja2/runtime.py",
+    "package": "jinja2",
+    "model": {
+      "callable": "new_context",
+      "type": "setItem",
+      "base": "Arg3",
+      "key": "Arg6",
+      "value": "Arg6",
+      "function": "new_context",
+      "module": "jinja2.runtime",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/jinja2/codebase/jinja2/runtime.py",
+      "package_name": "jinja2"
+    },
+    "data_extension": [
+      "jinja2",
+      "Member[jinja2].Member[runtime].Member[new_context].Argument[6]",
+      "class-pollution-sink"
+    ]
+  }
+]

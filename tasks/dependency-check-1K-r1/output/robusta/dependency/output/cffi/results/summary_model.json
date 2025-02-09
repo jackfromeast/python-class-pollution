@@ -1,0 +1,610 @@
+[
+  {
+    "The callable [find_module](1) is a class pollution taint propagation API in [Module cffi._imp_emulation](2) \n- Parameter: Arg0\n- Function: find_module\n- Module: Module cffi._imp_emulation\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/_imp_emulation.py\nThe callable [find_module](1) is a class pollution taint propagation API in [Module cffi._imp_emulation](2) \n- Parameter: Arg1\n- Function: find_module\n- Module: Module cffi._imp_emulation\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/_imp_emulation.py": "The callable [find_module](1) is a class pollution taint propagation API in [Module cffi._imp_emulation](2) \n- Parameter: Arg0\n- Function: find_module\n- Module: Module cffi._imp_emulation\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/_imp_emulation.py\nThe callable [find_module](1) is a class pollution taint propagation API in [Module cffi._imp_emulation](2) \n- Parameter: Arg1\n- Function: find_module\n- Module: Module cffi._imp_emulation\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/_imp_emulation.py",
+    "package": "cffi",
+    "model": {
+      "callable": "find_module",
+      "parameter": "Arg0",
+      "function": "find_module",
+      "module": "cffi._imp_emulation",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/_imp_emulation.py",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[_imp_emulation].Member[find_module]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.backend_ctypes](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.backend_ctypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/backend_ctypes.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.backend_ctypes](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.backend_ctypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/backend_ctypes.py",
+    "package": "cffi",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cffi.backend_ctypes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/backend_ctypes.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[backend_ctypes].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [getter](1) is a class pollution taint propagation API in [Module cffi.backend_ctypes](2) \n- Parameter: Arg0\n- Function: getter\n- Module: Module cffi.backend_ctypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/backend_ctypes.py": "The callable [getter](1) is a class pollution taint propagation API in [Module cffi.backend_ctypes](2) \n- Parameter: Arg0\n- Function: getter\n- Module: Module cffi.backend_ctypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/backend_ctypes.py",
+    "package": "cffi",
+    "model": {
+      "callable": "getter",
+      "parameter": "Arg0",
+      "function": "getter",
+      "module": "cffi.backend_ctypes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/backend_ctypes.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[backend_ctypes].Member[getter]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve_common_type](1) is a class pollution taint propagation API in [Module cffi.commontypes](2) \n- Parameter: Arg0\n- Function: resolve_common_type\n- Module: Module cffi.commontypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/commontypes.py\nThe callable [resolve_common_type](1) is a class pollution taint propagation API in [Module cffi.commontypes](2) \n- Parameter: Arg1\n- Function: resolve_common_type\n- Module: Module cffi.commontypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/commontypes.py": "The callable [resolve_common_type](1) is a class pollution taint propagation API in [Module cffi.commontypes](2) \n- Parameter: Arg0\n- Function: resolve_common_type\n- Module: Module cffi.commontypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/commontypes.py\nThe callable [resolve_common_type](1) is a class pollution taint propagation API in [Module cffi.commontypes](2) \n- Parameter: Arg1\n- Function: resolve_common_type\n- Module: Module cffi.commontypes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/commontypes.py",
+    "package": "cffi",
+    "model": {
+      "callable": "resolve_common_type",
+      "parameter": "Arg0",
+      "function": "resolve_common_type",
+      "module": "cffi.commontypes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/commontypes.py",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[commontypes].Member[resolve_common_type]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_workaround_for_old_pycparser](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _workaround_for_old_pycparser\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py": "The callable [_workaround_for_old_pycparser](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _workaround_for_old_pycparser\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_workaround_for_old_pycparser",
+      "parameter": "Arg0",
+      "function": "_workaround_for_old_pycparser",
+      "module": "cffi.cparser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[cparser].Member[_workaround_for_old_pycparser]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_preprocess_extern_python](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _preprocess_extern_python\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py": "The callable [_preprocess_extern_python](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _preprocess_extern_python\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_preprocess_extern_python",
+      "parameter": "Arg0",
+      "function": "_preprocess_extern_python",
+      "module": "cffi.cparser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[cparser].Member[_preprocess_extern_python]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_remove_line_directives](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _remove_line_directives\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py": "The callable [_remove_line_directives](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _remove_line_directives\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_remove_line_directives",
+      "parameter": "Arg0",
+      "function": "_remove_line_directives",
+      "module": "cffi.cparser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[cparser].Member[_remove_line_directives]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_put_back_line_directives](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _put_back_line_directives\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py": "The callable [_put_back_line_directives](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _put_back_line_directives\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_put_back_line_directives",
+      "parameter": "Arg0",
+      "function": "_put_back_line_directives",
+      "module": "cffi.cparser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[cparser].Member[_put_back_line_directives]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_preprocess](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _preprocess\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py": "The callable [_preprocess](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _preprocess\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_preprocess",
+      "parameter": "Arg0",
+      "function": "_preprocess",
+      "module": "cffi.cparser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[cparser].Member[_preprocess]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_common_type_names](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _common_type_names\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py": "The callable [_common_type_names](1) is a class pollution taint propagation API in [Module cffi.cparser](2) \n- Parameter: Arg0\n- Function: _common_type_names\n- Module: Module cffi.cparser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_common_type_names",
+      "parameter": "Arg0",
+      "function": "_common_type_names",
+      "module": "cffi.cparser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/cparser.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[cparser].Member[_common_type_names]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [maybe_relative_path](1) is a class pollution taint propagation API in [Module cffi.ffiplatform](2) \n- Parameter: Arg0\n- Function: maybe_relative_path\n- Module: Module cffi.ffiplatform\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/ffiplatform.py": "The callable [maybe_relative_path](1) is a class pollution taint propagation API in [Module cffi.ffiplatform](2) \n- Parameter: Arg0\n- Function: maybe_relative_path\n- Module: Module cffi.ffiplatform\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/ffiplatform.py",
+    "package": "cffi",
+    "model": {
+      "callable": "maybe_relative_path",
+      "parameter": "Arg0",
+      "function": "maybe_relative_path",
+      "module": "cffi.ffiplatform",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/ffiplatform.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[ffiplatform].Member[maybe_relative_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [qualify](1) is a class pollution taint propagation API in [Module cffi.model](2) \n- Parameter: Arg1\n- Function: qualify\n- Module: Module cffi.model\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.py": "The callable [qualify](1) is a class pollution taint propagation API in [Module cffi.model](2) \n- Parameter: Arg1\n- Function: qualify\n- Module: Module cffi.model\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.py",
+    "package": "cffi",
+    "model": {
+      "callable": "qualify",
+      "parameter": "Arg1",
+      "function": "qualify",
+      "module": "cffi.model",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[model].Member[qualify]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [global_cache](1) is a class pollution taint propagation API in [Module cffi.model](2) \n- Parameter: Arg1\n- Function: global_cache\n- Module: Module cffi.model\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.py": "The callable [global_cache](1) is a class pollution taint propagation API in [Module cffi.model](2) \n- Parameter: Arg1\n- Function: global_cache\n- Module: Module cffi.model\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.py",
+    "package": "cffi",
+    "model": {
+      "callable": "global_cache",
+      "parameter": "Arg1",
+      "function": "global_cache",
+      "module": "cffi.model",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[model].Member[global_cache]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pointer_cache](1) is a class pollution taint propagation API in [Module cffi.model](2) \n- Parameter: Arg0\n- Function: pointer_cache\n- Module: Module cffi.model\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.py": "The callable [pointer_cache](1) is a class pollution taint propagation API in [Module cffi.model](2) \n- Parameter: Arg0\n- Function: pointer_cache\n- Module: Module cffi.model\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.py",
+    "package": "cffi",
+    "model": {
+      "callable": "pointer_cache",
+      "parameter": "Arg0",
+      "function": "pointer_cache",
+      "module": "cffi.model",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/model.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[model].Member[pointer_cache]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [merge_flags](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: merge_flags\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [merge_flags](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: merge_flags\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "merge_flags",
+      "parameter": "Arg0",
+      "function": "merge_flags",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[merge_flags]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_include_dirs](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_include_dirs\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [get_include_dirs](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_include_dirs\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "get_include_dirs",
+      "parameter": "Arg0",
+      "function": "get_include_dirs",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[get_include_dirs]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_library_dirs](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_library_dirs\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [get_library_dirs](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_library_dirs\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "get_library_dirs",
+      "parameter": "Arg0",
+      "function": "get_library_dirs",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[get_library_dirs]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_libraries](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_libraries\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [get_libraries](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_libraries\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "get_libraries",
+      "parameter": "Arg0",
+      "function": "get_libraries",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[get_libraries]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_macros](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_macros\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [get_macros](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_macros\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "get_macros",
+      "parameter": "Arg0",
+      "function": "get_macros",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[get_macros]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_macro](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: _macro\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [_macro](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: _macro\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_macro",
+      "parameter": "Arg0",
+      "function": "_macro",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[_macro]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_other_cflags](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_other_cflags\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [get_other_cflags](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_other_cflags\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "get_other_cflags",
+      "parameter": "Arg0",
+      "function": "get_other_cflags",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[get_other_cflags]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_other_libs](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_other_libs\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py": "The callable [get_other_libs](1) is a class pollution taint propagation API in [Module cffi.pkgconfig](2) \n- Parameter: Arg0\n- Function: get_other_libs\n- Module: Module cffi.pkgconfig\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.py",
+    "package": "cffi",
+    "model": {
+      "callable": "get_other_libs",
+      "parameter": "Arg0",
+      "function": "get_other_libs",
+      "module": "cffi.pkgconfig",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/pkgconfig.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[pkgconfig].Member[get_other_libs]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_modname_to_file](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: _modname_to_file\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py\nThe callable [_modname_to_file](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: _modname_to_file\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [_modname_to_file](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg0\n- Function: _modname_to_file\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py\nThe callable [_modname_to_file](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: _modname_to_file\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_modname_to_file",
+      "parameter": "Arg0",
+      "function": "_modname_to_file",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[_modname_to_file]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_patch_meth](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: _patch_meth\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [_patch_meth](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: _patch_meth\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_patch_meth",
+      "parameter": "Arg1",
+      "function": "_patch_meth",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[_patch_meth]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg1",
+      "function": "lambda",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[lambda]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [recompile](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: recompile\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py\nThe callable [recompile](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg3\n- Function: recompile\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py\nThe callable [recompile](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg5\n- Function: recompile\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py": "The callable [recompile](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg1\n- Function: recompile\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py\nThe callable [recompile](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg3\n- Function: recompile\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py\nThe callable [recompile](1) is a class pollution taint propagation API in [Module cffi.recompiler](2) \n- Parameter: Arg5\n- Function: recompile\n- Module: Module cffi.recompiler\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+    "package": "cffi",
+    "model": {
+      "callable": "recompile",
+      "parameter": "Arg1",
+      "function": "recompile",
+      "module": "cffi.recompiler",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/recompiler.py",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[recompiler].Member[recompile]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_set_py_limited_api](1) is a class pollution taint propagation API in [Module cffi.setuptools_ext](2) \n- Parameter: Arg1\n- Function: _set_py_limited_api\n- Module: Module cffi.setuptools_ext\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/setuptools_ext.py": "The callable [_set_py_limited_api](1) is a class pollution taint propagation API in [Module cffi.setuptools_ext](2) \n- Parameter: Arg1\n- Function: _set_py_limited_api\n- Module: Module cffi.setuptools_ext\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/setuptools_ext.py",
+    "package": "cffi",
+    "model": {
+      "callable": "_set_py_limited_api",
+      "parameter": "Arg1",
+      "function": "_set_py_limited_api",
+      "module": "cffi.setuptools_ext",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/setuptools_ext.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[setuptools_ext].Member[_set_py_limited_api]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_mod](1) is a class pollution taint propagation API in [Module cffi.setuptools_ext](2) \n- Parameter: Arg0\n- Function: make_mod\n- Module: Module cffi.setuptools_ext\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/setuptools_ext.py": "The callable [make_mod](1) is a class pollution taint propagation API in [Module cffi.setuptools_ext](2) \n- Parameter: Arg0\n- Function: make_mod\n- Module: Module cffi.setuptools_ext\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/setuptools_ext.py",
+    "package": "cffi",
+    "model": {
+      "callable": "make_mod",
+      "parameter": "Arg0",
+      "function": "make_mod",
+      "module": "cffi.setuptools_ext",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/cffi/codebase/cffi/setuptools_ext.p",
+      "package_name": "cffi"
+    },
+    "data_extension": [
+      "cffi",
+      "Member[cffi].Member[setuptools_ext].Member[make_mod]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

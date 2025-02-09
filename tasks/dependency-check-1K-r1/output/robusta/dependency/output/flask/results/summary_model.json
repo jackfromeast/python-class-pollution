@@ -1,0 +1,515 @@
+[
+  {
+    "The callable [dumps](1) is a class pollution taint propagation API in [Module flask.json.__init__](2) \n- Parameter: Arg0\n- Function: dumps\n- Module: Module flask.json.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.py": "The callable [dumps](1) is a class pollution taint propagation API in [Module flask.json.__init__](2) \n- Parameter: Arg0\n- Function: dumps\n- Module: Module flask.json.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.py",
+    "package": "flask",
+    "model": {
+      "callable": "dumps",
+      "parameter": "Arg0",
+      "function": "dumps",
+      "module": "flask.json.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[json].Member[__init__].Member[dumps]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [loads](1) is a class pollution taint propagation API in [Module flask.json.__init__](2) \n- Parameter: Arg0\n- Function: loads\n- Module: Module flask.json.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.py": "The callable [loads](1) is a class pollution taint propagation API in [Module flask.json.__init__](2) \n- Parameter: Arg0\n- Function: loads\n- Module: Module flask.json.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.py",
+    "package": "flask",
+    "model": {
+      "callable": "loads",
+      "parameter": "Arg0",
+      "function": "loads",
+      "module": "flask.json.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[json].Member[__init__].Member[loads]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [load](1) is a class pollution taint propagation API in [Module flask.json.__init__](2) \n- Parameter: Arg0\n- Function: load\n- Module: Module flask.json.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.py": "The callable [load](1) is a class pollution taint propagation API in [Module flask.json.__init__](2) \n- Parameter: Arg0\n- Function: load\n- Module: Module flask.json.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.py",
+    "package": "flask",
+    "model": {
+      "callable": "load",
+      "parameter": "Arg0",
+      "function": "load",
+      "module": "flask.json.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/__init__.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[json].Member[__init__].Member[load]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_make_timedelta](1) is a class pollution taint propagation API in [Module flask.app](2) \n- Parameter: Arg0\n- Function: _make_timedelta\n- Module: Module flask.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/app.py": "The callable [_make_timedelta](1) is a class pollution taint propagation API in [Module flask.app](2) \n- Parameter: Arg0\n- Function: _make_timedelta\n- Module: Module flask.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/app.py",
+    "package": "flask",
+    "model": {
+      "callable": "_make_timedelta",
+      "parameter": "Arg0",
+      "function": "_make_timedelta",
+      "module": "flask.app",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/app.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[app].Member[_make_timedelta]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_make_timedelta](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: _make_timedelta\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py": "The callable [_make_timedelta](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: _make_timedelta\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py",
+    "package": "flask",
+    "model": {
+      "callable": "_make_timedelta",
+      "parameter": "Arg0",
+      "function": "_make_timedelta",
+      "module": "flask.sansio.app",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[app].Member[_make_timedelta]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.app",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[app].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.app",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[app].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.app](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.app\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.app",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/app.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[app].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.blueprints",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[blueprints].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.blueprints",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[blueprints].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.blueprints",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[blueprints].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.blueprints](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.blueprints\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.blueprints",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/blueprints.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[blueprints].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [find_best_app](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg0\n- Function: find_best_app\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [find_best_app](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg0\n- Function: find_best_app\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "find_best_app",
+      "parameter": "Arg0",
+      "function": "find_best_app",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[find_best_app]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [find_app_by_string](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg0\n- Function: find_app_by_string\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [find_app_by_string](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg0\n- Function: find_app_by_string\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "find_app_by_string",
+      "parameter": "Arg0",
+      "function": "find_app_by_string",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[find_app_by_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [prepare_import](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg0\n- Function: prepare_import\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [prepare_import](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg0\n- Function: prepare_import\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "prepare_import",
+      "parameter": "Arg0",
+      "function": "prepare_import",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[prepare_import]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_set_app](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _set_app\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [_set_app](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _set_app\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "_set_app",
+      "parameter": "Arg2",
+      "function": "_set_app",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[_set_app]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_set_debug](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _set_debug\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [_set_debug](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _set_debug\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "_set_debug",
+      "parameter": "Arg2",
+      "function": "_set_debug",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[_set_debug]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_env_file_callback](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _env_file_callback\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [_env_file_callback](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _env_file_callback\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "_env_file_callback",
+      "parameter": "Arg2",
+      "function": "_env_file_callback",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[_env_file_callback]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_validate_key](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _validate_key\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py": "The callable [_validate_key](1) is a class pollution taint propagation API in [Module flask.cli](2) \n- Parameter: Arg2\n- Function: _validate_key\n- Module: Module flask.cli\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.py",
+    "package": "flask",
+    "model": {
+      "callable": "_validate_key",
+      "parameter": "Arg2",
+      "function": "_validate_key",
+      "module": "flask.cli",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/cli.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[cli].Member[_validate_key]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [after_this_request](1) is a class pollution taint propagation API in [Module flask.ctx](2) \n- Parameter: Arg0\n- Function: after_this_request\n- Module: Module flask.ctx\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/ctx.py": "The callable [after_this_request](1) is a class pollution taint propagation API in [Module flask.ctx](2) \n- Parameter: Arg0\n- Function: after_this_request\n- Module: Module flask.ctx\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/ctx.py",
+    "package": "flask",
+    "model": {
+      "callable": "after_this_request",
+      "parameter": "Arg0",
+      "function": "after_this_request",
+      "module": "flask.ctx",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/ctx.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[ctx].Member[after_this_request]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_load_dotenv](1) is a class pollution taint propagation API in [Module flask.helpers](2) \n- Parameter: Arg0\n- Function: get_load_dotenv\n- Module: Module flask.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/helpers.py": "The callable [get_load_dotenv](1) is a class pollution taint propagation API in [Module flask.helpers](2) \n- Parameter: Arg0\n- Function: get_load_dotenv\n- Module: Module flask.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/helpers.py",
+    "package": "flask",
+    "model": {
+      "callable": "get_load_dotenv",
+      "parameter": "Arg0",
+      "function": "get_load_dotenv",
+      "module": "flask.helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/helpers.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[helpers].Member[get_load_dotenv]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_split_blueprint_path](1) is a class pollution taint propagation API in [Module flask.helpers](2) \n- Parameter: Arg0\n- Function: _split_blueprint_path\n- Module: Module flask.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/helpers.py": "The callable [_split_blueprint_path](1) is a class pollution taint propagation API in [Module flask.helpers](2) \n- Parameter: Arg0\n- Function: _split_blueprint_path\n- Module: Module flask.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/helpers.py",
+    "package": "flask",
+    "model": {
+      "callable": "_split_blueprint_path",
+      "parameter": "Arg0",
+      "function": "_split_blueprint_path",
+      "module": "flask.helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/helpers.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[helpers].Member[_split_blueprint_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_default](1) is a class pollution taint propagation API in [Module flask.json.provider](2) \n- Parameter: Arg0\n- Function: _default\n- Module: Module flask.json.provider\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/provider.py": "The callable [_default](1) is a class pollution taint propagation API in [Module flask.json.provider](2) \n- Parameter: Arg0\n- Function: _default\n- Module: Module flask.json.provider\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/provider.py",
+    "package": "flask",
+    "model": {
+      "callable": "_default",
+      "parameter": "Arg0",
+      "function": "_default",
+      "module": "flask.json.provider",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/json/provider.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[json].Member[provider].Member[_default]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.scaffold",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[scaffold].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.scaffold",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[scaffold].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py",
+    "package": "flask",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "flask.sansio.scaffold",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[scaffold].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_endpoint_from_view_func](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: _endpoint_from_view_func\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py": "The callable [_endpoint_from_view_func](1) is a class pollution taint propagation API in [Module flask.sansio.scaffold](2) \n- Parameter: Arg0\n- Function: _endpoint_from_view_func\n- Module: Module flask.sansio.scaffold\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.py",
+    "package": "flask",
+    "model": {
+      "callable": "_endpoint_from_view_func",
+      "parameter": "Arg0",
+      "function": "_endpoint_from_view_func",
+      "module": "flask.sansio.scaffold",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/flask/codebase/flask/sansio/scaffold.p",
+      "package_name": "flask"
+    },
+    "data_extension": [
+      "flask",
+      "Member[flask].Member[sansio].Member[scaffold].Member[_endpoint_from_view_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

@@ -1,0 +1,1560 @@
+[
+  {
+    "The callable [decode_path](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: decode_path\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [decode_path](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: decode_path\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "decode_path",
+      "parameter": "Arg0",
+      "function": "decode_path",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[decode_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [extract_name_value](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: extract_name_value\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [extract_name_value](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: extract_name_value\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "extract_name_value",
+      "parameter": "Arg0",
+      "function": "extract_name_value",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[extract_name_value]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [relative_path](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg1\n- Function: relative_path\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [relative_path](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg1\n- Function: relative_path\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "relative_path",
+      "parameter": "Arg1",
+      "function": "relative_path",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[relative_path]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_stylesheet_reference](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_stylesheet_reference\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [get_stylesheet_reference](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_stylesheet_reference\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "get_stylesheet_reference",
+      "parameter": "Arg0",
+      "function": "get_stylesheet_reference",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[get_stylesheet_reference]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_stylesheet_list](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_stylesheet_list\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [get_stylesheet_list](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_stylesheet_list\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "get_stylesheet_list",
+      "parameter": "Arg0",
+      "function": "get_stylesheet_list",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[get_stylesheet_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [find_file_in_dirs](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: find_file_in_dirs\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [find_file_in_dirs](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: find_file_in_dirs\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "find_file_in_dirs",
+      "parameter": "Arg0",
+      "function": "find_file_in_dirs",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[find_file_in_dirs]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_trim_footnote_ref_space](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_trim_footnote_ref_space\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [get_trim_footnote_ref_space](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_trim_footnote_ref_space\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "get_trim_footnote_ref_space",
+      "parameter": "Arg0",
+      "function": "get_trim_footnote_ref_space",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[get_trim_footnote_ref_space]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_source_line](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_source_line\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [get_source_line](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: get_source_line\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "get_source_line",
+      "parameter": "Arg0",
+      "function": "get_source_line",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[get_source_line]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape2null](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: escape2null\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [escape2null](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: escape2null\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "escape2null",
+      "parameter": "Arg0",
+      "function": "escape2null",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[escape2null]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [strip_combining_chars](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: strip_combining_chars\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [strip_combining_chars](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: strip_combining_chars\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "strip_combining_chars",
+      "parameter": "Arg0",
+      "function": "strip_combining_chars",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[strip_combining_chars]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [uniq](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: uniq\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [uniq](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: uniq\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "uniq",
+      "parameter": "Arg0",
+      "function": "uniq",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[uniq]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalize_language_tag](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: normalize_language_tag\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [normalize_language_tag](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: normalize_language_tag\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "normalize_language_tag",
+      "parameter": "Arg0",
+      "function": "normalize_language_tag",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[normalize_language_tag]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [xml_declaration](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: xml_declaration\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [xml_declaration](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: xml_declaration\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "xml_declaration",
+      "parameter": "Arg0",
+      "function": "xml_declaration",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[xml_declaration]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [version_identifier](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: version_identifier\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py": "The callable [version_identifier](1) is a class pollution taint propagation API in [Module docutils.utils.__init__](2) \n- Parameter: Arg0\n- Function: version_identifier\n- Module: Module docutils.utils.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "version_identifier",
+      "parameter": "Arg0",
+      "function": "version_identifier",
+      "module": "docutils.utils.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[__init__].Member[version_identifier]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_read_block](1) is a class pollution taint propagation API in [Module docutils.writers.latex2e.__init__](2) \n- Parameter: Arg0\n- Function: _read_block\n- Module: Module docutils.writers.latex2e.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/latex2e/__init__.py": "The callable [_read_block](1) is a class pollution taint propagation API in [Module docutils.writers.latex2e.__init__](2) \n- Parameter: Arg0\n- Function: _read_block\n- Module: Module docutils.writers.latex2e.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/latex2e/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "_read_block",
+      "parameter": "Arg0",
+      "function": "_read_block",
+      "module": "docutils.writers.latex2e.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/latex2e/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[writers].Member[latex2e].Member[__init__].Member[_read_block]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [fix_ns](1) is a class pollution taint propagation API in [Module docutils.writers.odf_odt.__init__](2) \n- Parameter: Arg0\n- Function: fix_ns\n- Module: Module docutils.writers.odf_odt.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.py": "The callable [fix_ns](1) is a class pollution taint propagation API in [Module docutils.writers.odf_odt.__init__](2) \n- Parameter: Arg0\n- Function: fix_ns\n- Module: Module docutils.writers.odf_odt.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "fix_ns",
+      "parameter": "Arg0",
+      "function": "fix_ns",
+      "module": "docutils.writers.odf_odt.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[writers].Member[odf_odt].Member[__init__].Member[fix_ns]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [add_ns](1) is a class pollution taint propagation API in [Module docutils.writers.odf_odt.__init__](2) \n- Parameter: Arg0\n- Function: add_ns\n- Module: Module docutils.writers.odf_odt.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.py": "The callable [add_ns](1) is a class pollution taint propagation API in [Module docutils.writers.odf_odt.__init__](2) \n- Parameter: Arg0\n- Function: add_ns\n- Module: Module docutils.writers.odf_odt.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "add_ns",
+      "parameter": "Arg0",
+      "function": "add_ns",
+      "module": "docutils.writers.odf_odt.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[writers].Member[odf_odt].Member[__init__].Member[add_ns]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape_cdata](1) is a class pollution taint propagation API in [Module docutils.writers.odf_odt.__init__](2) \n- Parameter: Arg0\n- Function: escape_cdata\n- Module: Module docutils.writers.odf_odt.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.py": "The callable [escape_cdata](1) is a class pollution taint propagation API in [Module docutils.writers.odf_odt.__init__](2) \n- Parameter: Arg0\n- Function: escape_cdata\n- Module: Module docutils.writers.odf_odt.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "escape_cdata",
+      "parameter": "Arg0",
+      "function": "escape_cdata",
+      "module": "docutils.writers.odf_odt.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/odf_odt/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[writers].Member[odf_odt].Member[__init__].Member[escape_cdata]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unchanged_required](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: unchanged_required\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [unchanged_required](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: unchanged_required\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "unchanged_required",
+      "parameter": "Arg0",
+      "function": "unchanged_required",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[unchanged_required]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unchanged](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: unchanged\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [unchanged](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: unchanged\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "unchanged",
+      "parameter": "Arg0",
+      "function": "unchanged",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[unchanged]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: path\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: path\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "path",
+      "parameter": "Arg0",
+      "function": "path",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_measure](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: get_measure\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [get_measure](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: get_measure\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "get_measure",
+      "parameter": "Arg0",
+      "function": "get_measure",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[get_measure]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [length_or_unitless](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: length_or_unitless\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [length_or_unitless](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: length_or_unitless\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "length_or_unitless",
+      "parameter": "Arg0",
+      "function": "length_or_unitless",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[length_or_unitless]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [length_or_percentage_or_unitless](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: length_or_percentage_or_unitless\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py\nThe callable [length_or_percentage_or_unitless](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg1\n- Function: length_or_percentage_or_unitless\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [length_or_percentage_or_unitless](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: length_or_percentage_or_unitless\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py\nThe callable [length_or_percentage_or_unitless](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg1\n- Function: length_or_percentage_or_unitless\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "length_or_percentage_or_unitless",
+      "parameter": "Arg0",
+      "function": "length_or_percentage_or_unitless",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[length_or_percentage_or_unitless]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unicode_code](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: unicode_code\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [unicode_code](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: unicode_code\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "unicode_code",
+      "parameter": "Arg0",
+      "function": "unicode_code",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[unicode_code]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [single_char_or_unicode](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: single_char_or_unicode\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [single_char_or_unicode](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: single_char_or_unicode\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "single_char_or_unicode",
+      "parameter": "Arg0",
+      "function": "single_char_or_unicode",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[single_char_or_unicode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [single_char_or_whitespace_or_unicode](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: single_char_or_whitespace_or_unicode\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [single_char_or_whitespace_or_unicode](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: single_char_or_whitespace_or_unicode\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "single_char_or_whitespace_or_unicode",
+      "parameter": "Arg0",
+      "function": "single_char_or_whitespace_or_unicode",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[single_char_or_whitespace_or_unicode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [encoding](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: encoding\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [encoding](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: encoding\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "encoding",
+      "parameter": "Arg0",
+      "function": "encoding",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[encoding]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [choice](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: choice\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [choice](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: choice\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "choice",
+      "parameter": "Arg0",
+      "function": "choice",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[choice]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_values](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: format_values\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [format_values](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: format_values\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "format_values",
+      "parameter": "Arg0",
+      "function": "format_values",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[format_values]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [auto_or_other](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: auto_or_other\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py": "The callable [auto_or_other](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.__init__](2) \n- Parameter: Arg0\n- Function: auto_or_other\n- Module: Module docutils.parsers.rst.directives.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "auto_or_other",
+      "parameter": "Arg0",
+      "function": "auto_or_other",
+      "module": "docutils.parsers.rst.directives.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[__init__].Member[auto_or_other]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [keyfun](1) is a class pollution taint propagation API in [Module docutils.transforms.__init__](2) \n- Parameter: Arg0\n- Function: keyfun\n- Module: Module docutils.transforms.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/transforms/__init__.py": "The callable [keyfun](1) is a class pollution taint propagation API in [Module docutils.transforms.__init__](2) \n- Parameter: Arg0\n- Function: keyfun\n- Module: Module docutils.transforms.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/transforms/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "keyfun",
+      "parameter": "Arg0",
+      "function": "keyfun",
+      "module": "docutils.transforms.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/transforms/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[transforms].Member[__init__].Member[keyfun]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [toplevel_code](1) is a class pollution taint propagation API in [Module docutils.utils.math.__init__](2) \n- Parameter: Arg0\n- Function: toplevel_code\n- Module: Module docutils.utils.math.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/__init__.py": "The callable [toplevel_code](1) is a class pollution taint propagation API in [Module docutils.utils.math.__init__](2) \n- Parameter: Arg0\n- Function: toplevel_code\n- Module: Module docutils.utils.math.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "toplevel_code",
+      "parameter": "Arg0",
+      "function": "toplevel_code",
+      "module": "docutils.utils.math.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[__init__].Member[toplevel_code]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [wrap_math_code](1) is a class pollution taint propagation API in [Module docutils.utils.math.__init__](2) \n- Parameter: Arg0\n- Function: wrap_math_code\n- Module: Module docutils.utils.math.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/__init__.py": "The callable [wrap_math_code](1) is a class pollution taint propagation API in [Module docutils.utils.math.__init__](2) \n- Parameter: Arg0\n- Function: wrap_math_code\n- Module: Module docutils.utils.math.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "wrap_math_code",
+      "parameter": "Arg0",
+      "function": "wrap_math_code",
+      "module": "docutils.utils.math.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[__init__].Member[wrap_math_code]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [find_theme](1) is a class pollution taint propagation API in [Module docutils.writers.s5_html.__init__](2) \n- Parameter: Arg0\n- Function: find_theme\n- Module: Module docutils.writers.s5_html.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/s5_html/__init__.py": "The callable [find_theme](1) is a class pollution taint propagation API in [Module docutils.writers.s5_html.__init__](2) \n- Parameter: Arg0\n- Function: find_theme\n- Module: Module docutils.writers.s5_html.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/s5_html/__init__.py",
+    "package": "docutils",
+    "model": {
+      "callable": "find_theme",
+      "parameter": "Arg0",
+      "function": "find_theme",
+      "module": "docutils.writers.s5_html.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/writers/s5_html/__init__.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[writers].Member[s5_html].Member[__init__].Member[find_theme]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [publish_parts](1) is a class pollution taint propagation API in [Module docutils.core](2) \n- Parameter: Arg8\n- Function: publish_parts\n- Module: Module docutils.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/core.py": "The callable [publish_parts](1) is a class pollution taint propagation API in [Module docutils.core](2) \n- Parameter: Arg8\n- Function: publish_parts\n- Module: Module docutils.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/core.py",
+    "package": "docutils",
+    "model": {
+      "callable": "publish_parts",
+      "parameter": "Arg8",
+      "function": "publish_parts",
+      "module": "docutils.core",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/core.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[core].Member[publish_parts]",
+      "Argument[8]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_encoding](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_encoding\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_encoding](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_encoding\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_encoding](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_encoding\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_encoding](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_encoding\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_encoding",
+      "parameter": "Arg0",
+      "function": "validate_encoding",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_encoding]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_encoding_error_handler](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_encoding_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_encoding_error_handler](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_encoding_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_encoding_error_handler](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_encoding_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_encoding_error_handler](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_encoding_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_encoding_error_handler",
+      "parameter": "Arg0",
+      "function": "validate_encoding_error_handler",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_encoding_error_handler]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_encoding_and_error_handler](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_encoding_and_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_encoding_and_error_handler](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_encoding_and_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_encoding_and_error_handler",
+      "parameter": "Arg1",
+      "function": "validate_encoding_and_error_handler",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_encoding_and_error_handler]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_boolean](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_boolean\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_boolean](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_boolean\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_boolean](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_boolean\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_boolean](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_boolean\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_boolean",
+      "parameter": "Arg0",
+      "function": "validate_boolean",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_boolean]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_ternary](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_ternary\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_ternary](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_ternary\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_ternary](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_ternary\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_ternary](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_ternary\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_ternary",
+      "parameter": "Arg0",
+      "function": "validate_ternary",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_ternary]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_colon_separated_string_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_colon_separated_string_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_colon_separated_string_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_colon_separated_string_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_colon_separated_string_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_colon_separated_string_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_colon_separated_string_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_colon_separated_string_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_colon_separated_string_list",
+      "parameter": "Arg0",
+      "function": "validate_colon_separated_string_list",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_colon_separated_string_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_comma_separated_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_comma_separated_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_comma_separated_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_comma_separated_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_comma_separated_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_comma_separated_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_comma_separated_list](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_comma_separated_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_comma_separated_list",
+      "parameter": "Arg0",
+      "function": "validate_comma_separated_list",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_comma_separated_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_math_output](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_math_output\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_math_output](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_math_output\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_math_output](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_math_output\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_math_output](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_math_output\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_math_output",
+      "parameter": "Arg0",
+      "function": "validate_math_output",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_math_output]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_url_trailing_slash](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_url_trailing_slash\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_url_trailing_slash](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_url_trailing_slash\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_url_trailing_slash](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_url_trailing_slash\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_url_trailing_slash](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_url_trailing_slash\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_url_trailing_slash",
+      "parameter": "Arg0",
+      "function": "validate_url_trailing_slash",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_url_trailing_slash]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_strip_class](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_strip_class\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_strip_class](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_strip_class\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_strip_class](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_strip_class\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_strip_class](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_strip_class\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_strip_class",
+      "parameter": "Arg0",
+      "function": "validate_strip_class",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_strip_class]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [validate_smartquotes_locales](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_smartquotes_locales\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_smartquotes_locales](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_smartquotes_locales\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_smartquotes_locales](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: validate_smartquotes_locales\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [validate_smartquotes_locales](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: validate_smartquotes_locales\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_smartquotes_locales",
+      "parameter": "Arg0",
+      "function": "validate_smartquotes_locales",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_smartquotes_locales]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_one_path_absolute](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: make_one_path_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [make_one_path_absolute](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: make_one_path_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [make_one_path_absolute](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: make_one_path_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [make_one_path_absolute](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg1\n- Function: make_one_path_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "make_one_path_absolute",
+      "parameter": "Arg0",
+      "function": "make_one_path_absolute",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[make_one_path_absolute]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [filter_settings_spec](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: filter_settings_spec\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [filter_settings_spec](1) is a class pollution taint propagation API in [Module docutils.frontend](2) \n- Parameter: Arg0\n- Function: filter_settings_spec\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "filter_settings_spec",
+      "parameter": "Arg0",
+      "function": "filter_settings_spec",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[filter_settings_spec]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [error_string](1) is a class pollution taint propagation API in [Module docutils.io](2) \n- Parameter: Arg0\n- Function: error_string\n- Module: Module docutils.io\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/io.py": "The callable [error_string](1) is a class pollution taint propagation API in [Module docutils.io](2) \n- Parameter: Arg0\n- Function: error_string\n- Module: Module docutils.io\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/io.py",
+    "package": "docutils",
+    "model": {
+      "callable": "error_string",
+      "parameter": "Arg0",
+      "function": "error_string",
+      "module": "docutils.io",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/io.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[io].Member[error_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tex_cmdname](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_cmdname\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [tex_cmdname](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_cmdname\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "tex_cmdname",
+      "parameter": "Arg0",
+      "function": "tex_cmdname",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[tex_cmdname]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tex_number](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_number\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [tex_number](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_number\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "tex_number",
+      "parameter": "Arg0",
+      "function": "tex_number",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[tex_number]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tex_token](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_token\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [tex_token](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_token\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "tex_token",
+      "parameter": "Arg0",
+      "function": "tex_token",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[tex_token]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tex_group](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_group\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [tex_group](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_group\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "tex_group",
+      "parameter": "Arg0",
+      "function": "tex_group",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[tex_group]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tex_token_or_group](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_token_or_group\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [tex_token_or_group](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_token_or_group\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "tex_token_or_group",
+      "parameter": "Arg0",
+      "function": "tex_token_or_group",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[tex_token_or_group]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tex_optarg](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_optarg\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [tex_optarg](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: tex_optarg\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "tex_optarg",
+      "parameter": "Arg0",
+      "function": "tex_optarg",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[tex_optarg]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_latex_math](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: parse_latex_math\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py\nThe callable [parse_latex_math](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: parse_latex_math\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [parse_latex_math](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: parse_latex_math\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py\nThe callable [parse_latex_math](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: parse_latex_math\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "parse_latex_math",
+      "parameter": "Arg0",
+      "function": "parse_latex_math",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[parse_latex_math]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [handle_cmd](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: handle_cmd\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py\nThe callable [handle_cmd](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg2\n- Function: handle_cmd\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [handle_cmd](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: handle_cmd\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py\nThe callable [handle_cmd](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg2\n- Function: handle_cmd\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "handle_cmd",
+      "parameter": "Arg1",
+      "function": "handle_cmd",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[handle_cmd]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [handle_math_alphabet](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: handle_math_alphabet\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py\nThe callable [handle_math_alphabet](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg2\n- Function: handle_math_alphabet\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [handle_math_alphabet](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: handle_math_alphabet\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py\nThe callable [handle_math_alphabet](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg2\n- Function: handle_math_alphabet\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "handle_math_alphabet",
+      "parameter": "Arg1",
+      "function": "handle_math_alphabet",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[handle_math_alphabet]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [handle_script_or_limit](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: handle_script_or_limit\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [handle_script_or_limit](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg0\n- Function: handle_script_or_limit\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "handle_script_or_limit",
+      "parameter": "Arg0",
+      "function": "handle_script_or_limit",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[handle_script_or_limit]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [begin_environment](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: begin_environment\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [begin_environment](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: begin_environment\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "begin_environment",
+      "parameter": "Arg1",
+      "function": "begin_environment",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[begin_environment]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [end_environment](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: end_environment\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py": "The callable [end_environment](1) is a class pollution taint propagation API in [Module docutils.utils.math.latex2mathml](2) \n- Parameter: Arg1\n- Function: end_environment\n- Module: Module docutils.utils.math.latex2mathml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.py",
+    "package": "docutils",
+    "model": {
+      "callable": "end_environment",
+      "parameter": "Arg1",
+      "function": "end_environment",
+      "module": "docutils.utils.math.latex2mathml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/math/latex2mathml.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[utils].Member[math].Member[latex2mathml].Member[end_environment]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [adapt_path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.misc](2) \n- Parameter: Arg0\n- Function: adapt_path\n- Module: Module docutils.parsers.rst.directives.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py\nThe callable [adapt_path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.misc](2) \n- Parameter: Arg1\n- Function: adapt_path\n- Module: Module docutils.parsers.rst.directives.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py\nThe callable [adapt_path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.misc](2) \n- Parameter: Arg2\n- Function: adapt_path\n- Module: Module docutils.parsers.rst.directives.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py": "The callable [adapt_path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.misc](2) \n- Parameter: Arg0\n- Function: adapt_path\n- Module: Module docutils.parsers.rst.directives.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py\nThe callable [adapt_path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.misc](2) \n- Parameter: Arg1\n- Function: adapt_path\n- Module: Module docutils.parsers.rst.directives.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py\nThe callable [adapt_path](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.misc](2) \n- Parameter: Arg2\n- Function: adapt_path\n- Module: Module docutils.parsers.rst.directives.misc\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py",
+    "package": "docutils",
+    "model": {
+      "callable": "adapt_path",
+      "parameter": "Arg0",
+      "function": "adapt_path",
+      "module": "docutils.parsers.rst.directives.misc",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/misc.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[misc].Member[adapt_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unescape](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: unescape\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py": "The callable [unescape](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: unescape\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "unescape",
+      "parameter": "Arg0",
+      "function": "unescape",
+      "module": "docutils.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[nodes].Member[unescape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [fully_normalize_name](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: fully_normalize_name\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py": "The callable [fully_normalize_name](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: fully_normalize_name\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "fully_normalize_name",
+      "parameter": "Arg0",
+      "function": "fully_normalize_name",
+      "module": "docutils.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[nodes].Member[fully_normalize_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [whitespace_normalize_name](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: whitespace_normalize_name\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py": "The callable [whitespace_normalize_name](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: whitespace_normalize_name\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "whitespace_normalize_name",
+      "parameter": "Arg0",
+      "function": "whitespace_normalize_name",
+      "module": "docutils.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[nodes].Member[whitespace_normalize_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [serial_escape](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: serial_escape\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py": "The callable [serial_escape](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: serial_escape\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "serial_escape",
+      "parameter": "Arg0",
+      "function": "serial_escape",
+      "module": "docutils.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[nodes].Member[serial_escape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pseudo_quoteattr](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: pseudo_quoteattr\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py": "The callable [pseudo_quoteattr](1) is a class pollution taint propagation API in [Module docutils.nodes](2) \n- Parameter: Arg0\n- Function: pseudo_quoteattr\n- Module: Module docutils.nodes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "pseudo_quoteattr",
+      "parameter": "Arg0",
+      "function": "pseudo_quoteattr",
+      "module": "docutils.nodes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/nodes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[nodes].Member[pseudo_quoteattr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [mask_email](1) is a class pollution taint propagation API in [Module docutils.transforms.peps](2) \n- Parameter: Arg0\n- Function: mask_email\n- Module: Module docutils.transforms.peps\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/transforms/peps.py": "The callable [mask_email](1) is a class pollution taint propagation API in [Module docutils.transforms.peps](2) \n- Parameter: Arg0\n- Function: mask_email\n- Module: Module docutils.transforms.peps\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/transforms/peps.py",
+    "package": "docutils",
+    "model": {
+      "callable": "mask_email",
+      "parameter": "Arg0",
+      "function": "mask_email",
+      "module": "docutils.transforms.peps",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/transforms/peps.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[transforms].Member[peps].Member[mask_email]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalized_role_options](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.roles](2) \n- Parameter: Arg0\n- Function: normalized_role_options\n- Module: Module docutils.parsers.rst.roles\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/roles.py": "The callable [normalized_role_options](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.roles](2) \n- Parameter: Arg0\n- Function: normalized_role_options\n- Module: Module docutils.parsers.rst.roles\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/roles.py",
+    "package": "docutils",
+    "model": {
+      "callable": "normalized_role_options",
+      "parameter": "Arg0",
+      "function": "normalized_role_options",
+      "module": "docutils.parsers.rst.roles",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/roles.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[roles].Member[normalized_role_options]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [smartyPants](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: smartyPants\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [smartyPants](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: smartyPants\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "smartyPants",
+      "parameter": "Arg0",
+      "function": "smartyPants",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[smartyPants]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateQuotes](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateQuotes\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateQuotes](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateQuotes\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateQuotes",
+      "parameter": "Arg0",
+      "function": "educateQuotes",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateQuotes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateBackticks](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateBackticks\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateBackticks](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateBackticks\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateBackticks",
+      "parameter": "Arg0",
+      "function": "educateBackticks",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateBackticks]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateSingleBackticks](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateSingleBackticks\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateSingleBackticks](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateSingleBackticks\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateSingleBackticks",
+      "parameter": "Arg0",
+      "function": "educateSingleBackticks",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateSingleBackticks]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateDashes](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateDashes\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateDashes](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateDashes\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateDashes",
+      "parameter": "Arg0",
+      "function": "educateDashes",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateDashes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateDashesOldSchool](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateDashesOldSchool\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateDashesOldSchool](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateDashesOldSchool\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateDashesOldSchool",
+      "parameter": "Arg0",
+      "function": "educateDashesOldSchool",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateDashesOldSchool]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateDashesOldSchoolInverted](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateDashesOldSchoolInverted\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateDashesOldSchoolInverted](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateDashesOldSchoolInverted\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateDashesOldSchoolInverted",
+      "parameter": "Arg0",
+      "function": "educateDashesOldSchoolInverted",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateDashesOldSchoolInverted]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [educateEllipses](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateEllipses\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [educateEllipses](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: educateEllipses\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "educateEllipses",
+      "parameter": "Arg0",
+      "function": "educateEllipses",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[educateEllipses]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [stupefyEntities](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: stupefyEntities\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [stupefyEntities](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: stupefyEntities\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "stupefyEntities",
+      "parameter": "Arg0",
+      "function": "stupefyEntities",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[stupefyEntities]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [processEscapes](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: processEscapes\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py": "The callable [processEscapes](1) is a class pollution taint propagation API in [Script docutils.utils.smartquotes](2) \n- Parameter: Arg0\n- Function: processEscapes\n- Module: Script docutils.utils.smartquotes\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.py",
+    "package": "docutils",
+    "model": {
+      "callable": "processEscapes",
+      "parameter": "Arg0",
+      "function": "processEscapes",
+      "module": "Script docutils.utils.smartquotes",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/utils/smartquotes.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[Script docutils].Member[utils].Member[smartquotes].Member[processEscapes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [string2lines](1) is a class pollution taint propagation API in [Module docutils.statemachine](2) \n- Parameter: Arg0\n- Function: string2lines\n- Module: Module docutils.statemachine\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/statemachine.py": "The callable [string2lines](1) is a class pollution taint propagation API in [Module docutils.statemachine](2) \n- Parameter: Arg0\n- Function: string2lines\n- Module: Module docutils.statemachine\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/statemachine.py",
+    "package": "docutils",
+    "model": {
+      "callable": "string2lines",
+      "parameter": "Arg0",
+      "function": "string2lines",
+      "module": "docutils.statemachine",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/statemachine.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[statemachine].Member[string2lines]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [align](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.tables](2) \n- Parameter: Arg0\n- Function: align\n- Module: Module docutils.parsers.rst.directives.tables\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/tables.py": "The callable [align](1) is a class pollution taint propagation API in [Module docutils.parsers.rst.directives.tables](2) \n- Parameter: Arg0\n- Function: align\n- Module: Module docutils.parsers.rst.directives.tables\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/tables.py",
+    "package": "docutils",
+    "model": {
+      "callable": "align",
+      "parameter": "Arg0",
+      "function": "align",
+      "module": "docutils.parsers.rst.directives.tables",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/parsers/rst/directives/tables.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[parsers].Member[rst].Member[directives].Member[tables].Member[align]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

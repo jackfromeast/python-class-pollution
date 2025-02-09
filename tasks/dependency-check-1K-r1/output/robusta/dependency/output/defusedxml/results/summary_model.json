@@ -1,0 +1,78 @@
+[
+  {
+    "The callable [parse](1) is a class pollution taint propagation API in [Module defusedxml.lxml](2) \n- Parameter: Arg0\n- Function: parse\n- Module: Module defusedxml.lxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/lxml.py": "The callable [parse](1) is a class pollution taint propagation API in [Module defusedxml.lxml](2) \n- Parameter: Arg0\n- Function: parse\n- Module: Module defusedxml.lxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/lxml.py",
+    "package": "defusedxml",
+    "model": {
+      "callable": "parse",
+      "parameter": "Arg0",
+      "function": "parse",
+      "module": "defusedxml.lxml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/lxml.p",
+      "package_name": "defusedxml"
+    },
+    "data_extension": [
+      "defusedxml",
+      "Member[defusedxml].Member[lxml].Member[parse]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [fromstring](1) is a class pollution taint propagation API in [Module defusedxml.lxml](2) \n- Parameter: Arg0\n- Function: fromstring\n- Module: Module defusedxml.lxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/lxml.py": "The callable [fromstring](1) is a class pollution taint propagation API in [Module defusedxml.lxml](2) \n- Parameter: Arg0\n- Function: fromstring\n- Module: Module defusedxml.lxml\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/lxml.py",
+    "package": "defusedxml",
+    "model": {
+      "callable": "fromstring",
+      "parameter": "Arg0",
+      "function": "fromstring",
+      "module": "defusedxml.lxml",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/lxml.p",
+      "package_name": "defusedxml"
+    },
+    "data_extension": [
+      "defusedxml",
+      "Member[defusedxml].Member[lxml].Member[fromstring]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse](1) is a class pollution taint propagation API in [Module defusedxml.pulldom](2) \n- Parameter: Arg0\n- Function: parse\n- Module: Module defusedxml.pulldom\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/pulldom.py": "The callable [parse](1) is a class pollution taint propagation API in [Module defusedxml.pulldom](2) \n- Parameter: Arg0\n- Function: parse\n- Module: Module defusedxml.pulldom\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/pulldom.py",
+    "package": "defusedxml",
+    "model": {
+      "callable": "parse",
+      "parameter": "Arg0",
+      "function": "parse",
+      "module": "defusedxml.pulldom",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/pulldom.p",
+      "package_name": "defusedxml"
+    },
+    "data_extension": [
+      "defusedxml",
+      "Member[defusedxml].Member[pulldom].Member[parse]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parseString](1) is a class pollution taint propagation API in [Module defusedxml.pulldom](2) \n- Parameter: Arg0\n- Function: parseString\n- Module: Module defusedxml.pulldom\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/pulldom.py": "The callable [parseString](1) is a class pollution taint propagation API in [Module defusedxml.pulldom](2) \n- Parameter: Arg0\n- Function: parseString\n- Module: Module defusedxml.pulldom\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/pulldom.py",
+    "package": "defusedxml",
+    "model": {
+      "callable": "parseString",
+      "parameter": "Arg0",
+      "function": "parseString",
+      "module": "defusedxml.pulldom",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/defusedxml/codebase/defusedxml/pulldom.p",
+      "package_name": "defusedxml"
+    },
+    "data_extension": [
+      "defusedxml",
+      "Member[defusedxml].Member[pulldom].Member[parseString]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

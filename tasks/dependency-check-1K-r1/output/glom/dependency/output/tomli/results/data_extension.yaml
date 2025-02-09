@@ -1,0 +1,172 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[skip_chars]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[skip_comment]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[skip_comments_and_array_ws]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[create_dict_rule]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[create_list_rule]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[key_value_rule]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_key_value_pair]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_key]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_key_part]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_one_line_basic_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_array]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_inline_table]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_basic_str_escape]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_basic_str_escape_multiline]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_hex_char]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_literal_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_multiline_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_basic_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - tomli
+    - Member[tomli].Member[_parser].Member[parse_value]
+    - Argument[0]
+    - ReturnValue
+    - taint

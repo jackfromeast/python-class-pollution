@@ -1,0 +1,401 @@
+[
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.__init__](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module oauthlib.oauth1.rfc5849.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/__init__.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.__init__](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module oauthlib.oauth1.rfc5849.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/__init__.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "oauthlib.oauth1.rfc5849.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/__init__.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[__init__].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.endpoints.base](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module oauthlib.oauth1.rfc5849.endpoints.base\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/endpoints/base.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.endpoints.base](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module oauthlib.oauth1.rfc5849.endpoints.base\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/endpoints/base.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "oauthlib.oauth1.rfc5849.endpoints.base",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/endpoints/base.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[endpoints].Member[base].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [quote](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: quote\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py": "The callable [quote](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: quote\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "quote",
+      "parameter": "Arg0",
+      "function": "quote",
+      "module": "oauthlib.common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[common].Member[quote]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unquote](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: unquote\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py": "The callable [unquote](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: unquote\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "unquote",
+      "parameter": "Arg0",
+      "function": "unquote",
+      "module": "oauthlib.common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[common].Member[unquote]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [to_unicode](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: to_unicode\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py": "The callable [to_unicode](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: to_unicode\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "to_unicode",
+      "parameter": "Arg0",
+      "function": "to_unicode",
+      "module": "oauthlib.common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[common].Member[to_unicode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module oauthlib.common](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module oauthlib.common\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "oauthlib.common",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/common.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[common].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [prepare_token_revocation_request](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.parameters](2) \n- Parameter: Arg0\n- Function: prepare_token_revocation_request\n- Module: Module oauthlib.oauth2.rfc6749.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/parameters.py\nThe callable [prepare_token_revocation_request](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.parameters](2) \n- Parameter: Arg4\n- Function: prepare_token_revocation_request\n- Module: Module oauthlib.oauth2.rfc6749.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/parameters.py": "The callable [prepare_token_revocation_request](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.parameters](2) \n- Parameter: Arg0\n- Function: prepare_token_revocation_request\n- Module: Module oauthlib.oauth2.rfc6749.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/parameters.py\nThe callable [prepare_token_revocation_request](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.parameters](2) \n- Parameter: Arg4\n- Function: prepare_token_revocation_request\n- Module: Module oauthlib.oauth2.rfc6749.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/parameters.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "prepare_token_revocation_request",
+      "parameter": "Arg0",
+      "function": "prepare_token_revocation_request",
+      "module": "oauthlib.oauth2.rfc6749.parameters",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/parameters.py",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[parameters].Member[prepare_token_revocation_request]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_append_params](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.parameters](2) \n- Parameter: Arg1\n- Function: _append_params\n- Module: Module oauthlib.oauth1.rfc5849.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/parameters.py": "The callable [_append_params](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.parameters](2) \n- Parameter: Arg1\n- Function: _append_params\n- Module: Module oauthlib.oauth1.rfc5849.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/parameters.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "_append_params",
+      "parameter": "Arg1",
+      "function": "_append_params",
+      "module": "oauthlib.oauth1.rfc5849.parameters",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/parameters.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[parameters].Member[_append_params]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [prepare_form_encoded_body](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.parameters](2) \n- Parameter: Arg1\n- Function: prepare_form_encoded_body\n- Module: Module oauthlib.oauth1.rfc5849.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/parameters.py": "The callable [prepare_form_encoded_body](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.parameters](2) \n- Parameter: Arg1\n- Function: prepare_form_encoded_body\n- Module: Module oauthlib.oauth1.rfc5849.parameters\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/parameters.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "prepare_form_encoded_body",
+      "parameter": "Arg1",
+      "function": "prepare_form_encoded_body",
+      "module": "oauthlib.oauth1.rfc5849.parameters",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/parameters.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[parameters].Member[prepare_form_encoded_body]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [signature_base_string](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg0\n- Function: signature_base_string\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py\nThe callable [signature_base_string](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg1\n- Function: signature_base_string\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py\nThe callable [signature_base_string](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg2\n- Function: signature_base_string\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py": "The callable [signature_base_string](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg0\n- Function: signature_base_string\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py\nThe callable [signature_base_string](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg1\n- Function: signature_base_string\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py\nThe callable [signature_base_string](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg2\n- Function: signature_base_string\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "signature_base_string",
+      "parameter": "Arg0",
+      "function": "signature_base_string",
+      "module": "oauthlib.oauth1.rfc5849.signature",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[signature_base_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalize_parameters](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg0\n- Function: normalize_parameters\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py": "The callable [normalize_parameters](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg0\n- Function: normalize_parameters\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "normalize_parameters",
+      "parameter": "Arg0",
+      "function": "normalize_parameters",
+      "module": "oauthlib.oauth1.rfc5849.signature",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[normalize_parameters]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [sign_plaintext_with_client](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg1\n- Function: sign_plaintext_with_client\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py": "The callable [sign_plaintext_with_client](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg1\n- Function: sign_plaintext_with_client\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "sign_plaintext_with_client",
+      "parameter": "Arg1",
+      "function": "sign_plaintext_with_client",
+      "module": "oauthlib.oauth1.rfc5849.signature",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[sign_plaintext_with_client]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [sign_plaintext](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg0\n- Function: sign_plaintext\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py\nThe callable [sign_plaintext](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg1\n- Function: sign_plaintext\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py": "The callable [sign_plaintext](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg0\n- Function: sign_plaintext\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py\nThe callable [sign_plaintext](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.signature](2) \n- Parameter: Arg1\n- Function: sign_plaintext\n- Module: Module oauthlib.oauth1.rfc5849.signature\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "sign_plaintext",
+      "parameter": "Arg0",
+      "function": "sign_plaintext",
+      "module": "oauthlib.oauth1.rfc5849.signature",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/signature.py",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[signature].Member[sign_plaintext]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [prepare_mac_header](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.tokens](2) \n- Parameter: Arg5\n- Function: prepare_mac_header\n- Module: Module oauthlib.oauth2.rfc6749.tokens\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.py": "The callable [prepare_mac_header](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.tokens](2) \n- Parameter: Arg5\n- Function: prepare_mac_header\n- Module: Module oauthlib.oauth2.rfc6749.tokens\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "prepare_mac_header",
+      "parameter": "Arg5",
+      "function": "prepare_mac_header",
+      "module": "oauthlib.oauth2.rfc6749.tokens",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[tokens].Member[prepare_mac_header]",
+      "Argument[5]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [prepare_bearer_headers](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.tokens](2) \n- Parameter: Arg1\n- Function: prepare_bearer_headers\n- Module: Module oauthlib.oauth2.rfc6749.tokens\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.py": "The callable [prepare_bearer_headers](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.tokens](2) \n- Parameter: Arg1\n- Function: prepare_bearer_headers\n- Module: Module oauthlib.oauth2.rfc6749.tokens\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "prepare_bearer_headers",
+      "parameter": "Arg1",
+      "function": "prepare_bearer_headers",
+      "module": "oauthlib.oauth2.rfc6749.tokens",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[tokens].Member[prepare_bearer_headers]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_token_from_header](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.tokens](2) \n- Parameter: Arg0\n- Function: get_token_from_header\n- Module: Module oauthlib.oauth2.rfc6749.tokens\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.py": "The callable [get_token_from_header](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.tokens](2) \n- Parameter: Arg0\n- Function: get_token_from_header\n- Module: Module oauthlib.oauth2.rfc6749.tokens\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "get_token_from_header",
+      "parameter": "Arg0",
+      "function": "get_token_from_header",
+      "module": "oauthlib.oauth2.rfc6749.tokens",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/tokens.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[tokens].Member[get_token_from_header]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [list_to_scope](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.utils](2) \n- Parameter: Arg0\n- Function: list_to_scope\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py": "The callable [list_to_scope](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.utils](2) \n- Parameter: Arg0\n- Function: list_to_scope\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "list_to_scope",
+      "parameter": "Arg0",
+      "function": "list_to_scope",
+      "module": "oauthlib.oauth2.rfc6749.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[list_to_scope]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [scope_to_list](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.utils](2) \n- Parameter: Arg0\n- Function: scope_to_list\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py": "The callable [scope_to_list](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.utils](2) \n- Parameter: Arg0\n- Function: scope_to_list\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "scope_to_list",
+      "parameter": "Arg0",
+      "function": "scope_to_list",
+      "module": "oauthlib.oauth2.rfc6749.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[scope_to_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.utils](2) \n- Parameter: Arg0\n- Function: escape\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py": "The callable [escape](1) is a class pollution taint propagation API in [Module oauthlib.oauth2.rfc6749.utils](2) \n- Parameter: Arg0\n- Function: escape\n- Module: Module oauthlib.oauth2.rfc6749.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "escape",
+      "parameter": "Arg0",
+      "function": "escape",
+      "module": "oauthlib.oauth2.rfc6749.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth2/rfc6749/utils.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth2].Member[rfc6749].Member[utils].Member[escape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.utils](2) \n- Parameter: Arg0\n- Function: escape\n- Module: Module oauthlib.oauth1.rfc5849.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/utils.py": "The callable [escape](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.utils](2) \n- Parameter: Arg0\n- Function: escape\n- Module: Module oauthlib.oauth1.rfc5849.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/utils.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "escape",
+      "parameter": "Arg0",
+      "function": "escape",
+      "module": "oauthlib.oauth1.rfc5849.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/utils.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[utils].Member[escape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unescape](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.utils](2) \n- Parameter: Arg0\n- Function: unescape\n- Module: Module oauthlib.oauth1.rfc5849.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/utils.py": "The callable [unescape](1) is a class pollution taint propagation API in [Module oauthlib.oauth1.rfc5849.utils](2) \n- Parameter: Arg0\n- Function: unescape\n- Module: Module oauthlib.oauth1.rfc5849.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/utils.py",
+    "package": "oauthlib",
+    "model": {
+      "callable": "unescape",
+      "parameter": "Arg0",
+      "function": "unescape",
+      "module": "oauthlib.oauth1.rfc5849.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/oauthlib/codebase/oauthlib/oauth1/rfc5849/utils.p",
+      "package_name": "oauthlib"
+    },
+    "data_extension": [
+      "oauthlib",
+      "Member[oauthlib].Member[oauth1].Member[rfc5849].Member[utils].Member[unescape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [part](1) is a class pollution source API in [Module importlib_resources.tests.util](2). \n- Function: part\n- Module: Module importlib_resources.tests.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.py": "The callable [part](1) is a class pollution source API in [Module importlib_resources.tests.util](2). \n- Function: part\n- Module: Module importlib_resources.tests.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.py",
+    "package": "importlib-resources",
+    "model": {
+      "callable": "part",
+      "parameter": "le [part](1) is a class pollution source API in [Module importlib_resources.tests.util](2).",
+      "function": "part",
+      "module": "importlib_resources.tests.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/importlib-resources/codebase/importlib_resources/tests/util.p",
+      "package_name": "importlib-resources"
+    },
+    "data_extension": [
+      "importlib-resources",
+      "Member[importlib_resources].Member[tests].Member[util].Member[part]",
+      "class-pollution-source"
+    ]
+  }
+]

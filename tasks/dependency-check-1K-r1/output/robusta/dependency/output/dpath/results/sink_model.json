@@ -1,0 +1,422 @@
+[
+  {
+    "The callable [new](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: new\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [new](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: new\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "new",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg2",
+      "function": "new",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[new].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [set](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg2\n- Function: set\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [set](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg2\n- Function: set\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "set",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg2",
+      "function": "set",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[set].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [get](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: get\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [get](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: get\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "get",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "get",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[get].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [f](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: f\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [f](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: f\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "f",
+      "type": "setItem",
+      "base": "Arg1",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "f",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[f].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [values](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: values\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [values](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: values\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "values",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "values",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[values].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg3\n- Value: Arg0\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg3\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg3\n- Value: Arg3\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg3\n- Value: Arg0\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg3\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [search](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg3\n- Value: Arg3\n- Function: search\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "search",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "search",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[search].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [f](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg1\n- Value: Arg1\n- Function: f\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [f](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg1\n- Value: Arg1\n- Function: f\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "f",
+      "type": "setItem",
+      "base": "Arg2",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "f",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[f].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [merge](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [merge](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [merge](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [merge](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "merge",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "merge",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[merge].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [merger](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merger\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [merger](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg1\n- Function: merger\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py": "The callable [merger](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merger\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py\nThe callable [merger](1) is a class pollution sink API in [Module dpath.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg1\n- Function: merger\n- Module: Module dpath.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+    "package": "dpath",
+    "model": {
+      "callable": "merger",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "merger",
+      "module": "dpath.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/__init__.py",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[__init__].Member[merger].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [make_walkable](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: make_walkable\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py": "The callable [make_walkable](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: make_walkable\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+    "package": "dpath",
+    "model": {
+      "callable": "make_walkable",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "make_walkable",
+      "module": "dpath.segments",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[segments].Member[make_walkable].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg0\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg0\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py": "The callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg0\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg0\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg0\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [walk](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: walk\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+    "package": "dpath",
+    "model": {
+      "callable": "walk",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "walk",
+      "module": "dpath.segments",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[segments].Member[walk].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [set](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: set\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py": "The callable [set](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: set\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+    "package": "dpath",
+    "model": {
+      "callable": "set",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg2",
+      "function": "set",
+      "module": "dpath.segments",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[segments].Member[set].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg0\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg2\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg0\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg2\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py": "The callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg0\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg2\n- Value: Arg0\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg2\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg0\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py\nThe callable [fold](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg2\n- Value: Arg2\n- Function: fold\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+    "package": "dpath",
+    "model": {
+      "callable": "fold",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "fold",
+      "module": "dpath.segments",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[segments].Member[fold].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [view](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: view\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py": "The callable [view](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: view\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+    "package": "dpath",
+    "model": {
+      "callable": "view",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "view",
+      "module": "dpath.segments",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[segments].Member[view].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [f](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg1\n- Value: Arg1\n- Function: f\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py": "The callable [f](1) is a class pollution sink API in [Module dpath.segments](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg1\n- Value: Arg1\n- Function: f\n- Module: Module dpath.segments\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.py",
+    "package": "dpath",
+    "model": {
+      "callable": "f",
+      "type": "setItem",
+      "base": "Arg2",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "f",
+      "module": "dpath.segments",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/segments.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[segments].Member[f].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [new](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: new\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py": "The callable [new](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: new\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+    "package": "dpath",
+    "model": {
+      "callable": "new",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg2",
+      "function": "new",
+      "module": "dpath.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[util].Member[new].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [set](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg2\n- Function: set\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py": "The callable [set](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg2\n- Function: set\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+    "package": "dpath",
+    "model": {
+      "callable": "set",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg2",
+      "function": "set",
+      "module": "dpath.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[util].Member[set].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [get](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: get\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py": "The callable [get](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: get\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+    "package": "dpath",
+    "model": {
+      "callable": "get",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "get",
+      "module": "dpath.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[util].Member[get].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [values](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: values\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py": "The callable [values](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: values\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+    "package": "dpath",
+    "model": {
+      "callable": "values",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "values",
+      "module": "dpath.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[util].Member[values].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [search](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: search\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py": "The callable [search](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: search\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+    "package": "dpath",
+    "model": {
+      "callable": "search",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "search",
+      "module": "dpath.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.p",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[util].Member[search].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [merge](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py\nThe callable [merge](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py": "The callable [merge](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py\nThe callable [merge](1) is a class pollution sink API in [Module dpath.util](2) \n- Type: setItem\n- Base: Arg1\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module dpath.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+    "package": "dpath",
+    "model": {
+      "callable": "merge",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "merge",
+      "module": "dpath.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/dpath/codebase/dpath/util.py",
+      "package_name": "dpath"
+    },
+    "data_extension": [
+      "dpath",
+      "Member[dpath].Member[util].Member[merge].Argument[1]",
+      "class-pollution-sink"
+    ]
+  }
+]

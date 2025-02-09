@@ -1,0 +1,1712 @@
+[
+  {
+    "The callable [values_to_compare](1) is a class pollution taint propagation API in [Module babel.messages.catalog](2) \n- Parameter: Arg0\n- Function: values_to_compare\n- Module: Module babel.messages.catalog\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.py": "The callable [values_to_compare](1) is a class pollution taint propagation API in [Module babel.messages.catalog](2) \n- Parameter: Arg0\n- Function: values_to_compare\n- Module: Module babel.messages.catalog\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.py",
+    "package": "babel",
+    "model": {
+      "callable": "values_to_compare",
+      "parameter": "Arg0",
+      "function": "values_to_compare",
+      "module": "babel.messages.catalog",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[catalog].Member[values_to_compare]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_force_text](1) is a class pollution taint propagation API in [Module babel.messages.catalog](2) \n- Parameter: Arg0\n- Function: _force_text\n- Module: Module babel.messages.catalog\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.py": "The callable [_force_text](1) is a class pollution taint propagation API in [Module babel.messages.catalog](2) \n- Parameter: Arg0\n- Function: _force_text\n- Module: Module babel.messages.catalog\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.py",
+    "package": "babel",
+    "model": {
+      "callable": "_force_text",
+      "parameter": "Arg0",
+      "function": "_force_text",
+      "module": "babel.messages.catalog",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[catalog].Member[_force_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [default_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg1\n- Function: default_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py": "The callable [default_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg1\n- Function: default_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py",
+    "package": "babel",
+    "model": {
+      "callable": "default_locale",
+      "parameter": "Arg1",
+      "function": "default_locale",
+      "module": "babel.core",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[core].Member[default_locale]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [negotiate_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg0\n- Function: negotiate_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py\nThe callable [negotiate_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg2\n- Function: negotiate_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py\nThe callable [negotiate_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg3\n- Function: negotiate_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py": "The callable [negotiate_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg0\n- Function: negotiate_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py\nThe callable [negotiate_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg2\n- Function: negotiate_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py\nThe callable [negotiate_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg3\n- Function: negotiate_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py",
+    "package": "babel",
+    "model": {
+      "callable": "negotiate_locale",
+      "parameter": "Arg0",
+      "function": "negotiate_locale",
+      "module": "babel.core",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[core].Member[negotiate_locale]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg0\n- Function: parse_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py": "The callable [parse_locale](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg0\n- Function: parse_locale\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py",
+    "package": "babel",
+    "model": {
+      "callable": "parse_locale",
+      "parameter": "Arg0",
+      "function": "parse_locale",
+      "module": "babel.core",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[core].Member[parse_locale]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_locale_identifier](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg0\n- Function: get_locale_identifier\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py\nThe callable [get_locale_identifier](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg1\n- Function: get_locale_identifier\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py": "The callable [get_locale_identifier](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg0\n- Function: get_locale_identifier\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py\nThe callable [get_locale_identifier](1) is a class pollution taint propagation API in [Module babel.core](2) \n- Parameter: Arg1\n- Function: get_locale_identifier\n- Module: Module babel.core\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_locale_identifier",
+      "parameter": "Arg0",
+      "function": "get_locale_identifier",
+      "module": "babel.core",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/core.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[core].Member[get_locale_identifier]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_localize](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: _localize\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_localize](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: _localize\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_localize",
+      "parameter": "Arg1",
+      "function": "_localize",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_localize]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_dt_and_tzinfo](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_dt_and_tzinfo\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_get_dt_and_tzinfo](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_dt_and_tzinfo\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_dt_and_tzinfo",
+      "parameter": "Arg0",
+      "function": "_get_dt_and_tzinfo",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_get_dt_and_tzinfo]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_tz_name](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_tz_name\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_get_tz_name](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_tz_name\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_tz_name",
+      "parameter": "Arg0",
+      "function": "_get_tz_name",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_get_tz_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_datetime](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_datetime\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_get_datetime](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_datetime\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_datetime",
+      "parameter": "Arg0",
+      "function": "_get_datetime",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_get_datetime]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ensure_datetime_tzinfo](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _ensure_datetime_tzinfo\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_ensure_datetime_tzinfo](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _ensure_datetime_tzinfo\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_ensure_datetime_tzinfo",
+      "parameter": "Arg0",
+      "function": "_ensure_datetime_tzinfo",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_ensure_datetime_tzinfo]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_time](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_time\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_get_time](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: _get_time\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_time",
+      "parameter": "Arg0",
+      "function": "_get_time",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_get_time]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_timezone](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: get_timezone\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_timezone](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: get_timezone\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_timezone",
+      "parameter": "Arg0",
+      "function": "get_timezone",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_timezone]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_period_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_period_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_period_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_period_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_period_names",
+      "parameter": "Arg2",
+      "function": "get_period_names",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_period_names]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_day_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_day_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_day_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_day_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_day_names",
+      "parameter": "Arg2",
+      "function": "get_day_names",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_day_names]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_month_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_month_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_month_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_month_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_month_names",
+      "parameter": "Arg2",
+      "function": "get_month_names",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_month_names]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_quarter_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_quarter_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_quarter_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_quarter_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_quarter_names",
+      "parameter": "Arg2",
+      "function": "get_quarter_names",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_quarter_names]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_era_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_era_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_era_names](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_era_names\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_era_names",
+      "parameter": "Arg1",
+      "function": "get_era_names",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_era_names]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_date_format](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_date_format\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_date_format](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_date_format\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_date_format",
+      "parameter": "Arg1",
+      "function": "get_date_format",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_date_format]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_datetime_format](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_datetime_format\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_datetime_format](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_datetime_format\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_datetime_format",
+      "parameter": "Arg1",
+      "function": "get_datetime_format",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_datetime_format]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_time_format](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_time_format\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_time_format](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_time_format\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_time_format",
+      "parameter": "Arg1",
+      "function": "get_time_format",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_time_format]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_timezone_gmt](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_timezone_gmt\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_timezone_gmt](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: get_timezone_gmt\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_timezone_gmt",
+      "parameter": "Arg2",
+      "function": "get_timezone_gmt",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_timezone_gmt]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_timezone_location](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: get_timezone_location\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [get_timezone_location](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_timezone_location\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_timezone_location](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: get_timezone_location\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [get_timezone_location](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: get_timezone_location\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_timezone_location",
+      "parameter": "Arg0",
+      "function": "get_timezone_location",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_timezone_location]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_timezone_name](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: get_timezone_name\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [get_timezone_name](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: get_timezone_name\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_timezone_name](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: get_timezone_name\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [get_timezone_name](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: get_timezone_name\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_timezone_name",
+      "parameter": "Arg0",
+      "function": "get_timezone_name",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_timezone_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_date](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: format_date\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [format_date](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: format_date\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [format_date](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: format_date\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [format_date](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg2\n- Function: format_date\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_date",
+      "parameter": "Arg1",
+      "function": "format_date",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[format_date]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_datetime](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: format_datetime\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [format_datetime](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: format_datetime\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [format_datetime](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: format_datetime\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [format_datetime](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: format_datetime\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_datetime",
+      "parameter": "Arg1",
+      "function": "format_datetime",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[format_datetime]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_time](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: format_time\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [format_time](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: format_time\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [format_time](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: format_time\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py\nThe callable [format_time](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: format_time\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_time",
+      "parameter": "Arg1",
+      "function": "format_time",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[format_time]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_skeleton](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg4\n- Function: format_skeleton\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [format_skeleton](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg4\n- Function: format_skeleton\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_skeleton",
+      "parameter": "Arg4",
+      "function": "format_skeleton",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[format_skeleton]",
+      "Argument[4]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_timedelta](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg5\n- Function: format_timedelta\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [format_timedelta](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg5\n- Function: format_timedelta\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_timedelta",
+      "parameter": "Arg5",
+      "function": "format_timedelta",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[format_timedelta]",
+      "Argument[5]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_fallback_interval](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg4\n- Function: _format_fallback_interval\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [_format_fallback_interval](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg4\n- Function: _format_fallback_interval\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "_format_fallback_interval",
+      "parameter": "Arg4",
+      "function": "_format_fallback_interval",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[_format_fallback_interval]",
+      "Argument[4]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_interval](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg5\n- Function: format_interval\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [format_interval](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg5\n- Function: format_interval\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_interval",
+      "parameter": "Arg5",
+      "function": "format_interval",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[format_interval]",
+      "Argument[5]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_period_id](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: get_period_id\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [get_period_id](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg3\n- Function: get_period_id\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_period_id",
+      "parameter": "Arg3",
+      "function": "get_period_id",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[get_period_id]",
+      "Argument[3]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: parse_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [parse_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: parse_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "parse_pattern",
+      "parameter": "Arg0",
+      "function": "parse_pattern",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[parse_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [tokenize_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: tokenize_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [tokenize_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: tokenize_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "tokenize_pattern",
+      "parameter": "Arg0",
+      "function": "tokenize_pattern",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[tokenize_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [untokenize_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: untokenize_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [untokenize_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: untokenize_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "untokenize_pattern",
+      "parameter": "Arg0",
+      "function": "untokenize_pattern",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[untokenize_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [split_interval_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: split_interval_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [split_interval_pattern](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg0\n- Function: split_interval_pattern\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "split_interval_pattern",
+      "parameter": "Arg0",
+      "function": "split_interval_pattern",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[split_interval_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [match_skeleton](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: match_skeleton\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py": "The callable [match_skeleton](1) is a class pollution taint propagation API in [Module babel.dates](2) \n- Parameter: Arg1\n- Function: match_skeleton\n- Module: Module babel.dates\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.py",
+    "package": "babel",
+    "model": {
+      "callable": "match_skeleton",
+      "parameter": "Arg1",
+      "function": "match_skeleton",
+      "module": "babel.dates",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/dates.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[dates].Member[match_skeleton]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_strip](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg0\n- Function: _strip\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py": "The callable [_strip](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg0\n- Function: _strip\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py",
+    "package": "babel",
+    "model": {
+      "callable": "_strip",
+      "parameter": "Arg0",
+      "function": "_strip",
+      "module": "babel.messages.extract",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[extract].Member[_strip]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_match_messages_against_spec](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg0\n- Function: _match_messages_against_spec\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py\nThe callable [_match_messages_against_spec](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg1\n- Function: _match_messages_against_spec\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py\nThe callable [_match_messages_against_spec](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg2\n- Function: _match_messages_against_spec\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py": "The callable [_match_messages_against_spec](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg0\n- Function: _match_messages_against_spec\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py\nThe callable [_match_messages_against_spec](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg1\n- Function: _match_messages_against_spec\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py\nThe callable [_match_messages_against_spec](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg2\n- Function: _match_messages_against_spec\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py",
+    "package": "babel",
+    "model": {
+      "callable": "_match_messages_against_spec",
+      "parameter": "Arg0",
+      "function": "_match_messages_against_spec",
+      "module": "babel.messages.extract",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[extract].Member[_match_messages_against_spec]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_parse_python_string](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg0\n- Function: _parse_python_string\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py\nThe callable [_parse_python_string](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg1\n- Function: _parse_python_string\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py": "The callable [_parse_python_string](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg0\n- Function: _parse_python_string\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py\nThe callable [_parse_python_string](1) is a class pollution taint propagation API in [Module babel.messages.extract](2) \n- Parameter: Arg1\n- Function: _parse_python_string\n- Module: Module babel.messages.extract\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py",
+    "package": "babel",
+    "model": {
+      "callable": "_parse_python_string",
+      "parameter": "Arg0",
+      "function": "_parse_python_string",
+      "module": "babel.messages.extract",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/extract.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[extract].Member[_parse_python_string]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_list](1) is a class pollution taint propagation API in [Module babel.lists](2) \n- Parameter: Arg0\n- Function: format_list\n- Module: Module babel.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py\nThe callable [format_list](1) is a class pollution taint propagation API in [Module babel.lists](2) \n- Parameter: Arg2\n- Function: format_list\n- Module: Module babel.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py": "The callable [format_list](1) is a class pollution taint propagation API in [Module babel.lists](2) \n- Parameter: Arg0\n- Function: format_list\n- Module: Module babel.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py\nThe callable [format_list](1) is a class pollution taint propagation API in [Module babel.lists](2) \n- Parameter: Arg2\n- Function: format_list\n- Module: Module babel.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_list",
+      "parameter": "Arg0",
+      "function": "format_list",
+      "module": "babel.lists",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[lists].Member[format_list]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_resolve_list_style](1) is a class pollution taint propagation API in [Module babel.lists](2) \n- Parameter: Arg0\n- Function: _resolve_list_style\n- Module: Module babel.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py": "The callable [_resolve_list_style](1) is a class pollution taint propagation API in [Module babel.lists](2) \n- Parameter: Arg0\n- Function: _resolve_list_style\n- Module: Module babel.lists\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.py",
+    "package": "babel",
+    "model": {
+      "callable": "_resolve_list_style",
+      "parameter": "Arg0",
+      "function": "_resolve_list_style",
+      "module": "babel.lists",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/lists.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[lists].Member[_resolve_list_style]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve_locale_filename](1) is a class pollution taint propagation API in [Module babel.localedata](2) \n- Parameter: Arg0\n- Function: resolve_locale_filename\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py": "The callable [resolve_locale_filename](1) is a class pollution taint propagation API in [Module babel.localedata](2) \n- Parameter: Arg0\n- Function: resolve_locale_filename\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.py",
+    "package": "babel",
+    "model": {
+      "callable": "resolve_locale_filename",
+      "parameter": "Arg0",
+      "function": "resolve_locale_filename",
+      "module": "babel.localedata",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/localedata.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[localedata].Member[resolve_locale_filename]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [list_currencies](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: list_currencies\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [list_currencies](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: list_currencies\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "list_currencies",
+      "parameter": "Arg0",
+      "function": "list_currencies",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[list_currencies]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalize_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: normalize_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [normalize_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: normalize_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "normalize_currency",
+      "parameter": "Arg0",
+      "function": "normalize_currency",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[normalize_currency]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_currency_name](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_currency_name\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [get_currency_name](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: get_currency_name\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_currency_name](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_currency_name\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [get_currency_name](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: get_currency_name\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_currency_name",
+      "parameter": "Arg0",
+      "function": "get_currency_name",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_currency_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_currency_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_currency_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [get_currency_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: get_currency_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_currency_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_currency_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [get_currency_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: get_currency_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_currency_symbol",
+      "parameter": "Arg0",
+      "function": "get_currency_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_currency_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_currency_unit_pattern](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: get_currency_unit_pattern\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_currency_unit_pattern](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: get_currency_unit_pattern\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_currency_unit_pattern",
+      "parameter": "Arg2",
+      "function": "get_currency_unit_pattern",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_currency_unit_pattern]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_numbering_system](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _get_numbering_system\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [_get_numbering_system](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _get_numbering_system\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [_get_numbering_system](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _get_numbering_system\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [_get_numbering_system](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _get_numbering_system\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_numbering_system",
+      "parameter": "Arg0",
+      "function": "_get_numbering_system",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[_get_numbering_system]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_number_symbols](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _get_number_symbols\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [_get_number_symbols](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _get_number_symbols\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_number_symbols",
+      "parameter": "Arg0",
+      "function": "_get_number_symbols",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[_get_number_symbols]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_decimal_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_decimal_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_decimal_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_decimal_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_decimal_symbol",
+      "parameter": "Arg0",
+      "function": "get_decimal_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_decimal_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_plus_sign_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_plus_sign_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_plus_sign_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_plus_sign_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_plus_sign_symbol",
+      "parameter": "Arg0",
+      "function": "get_plus_sign_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_plus_sign_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_minus_sign_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_minus_sign_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_minus_sign_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_minus_sign_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_minus_sign_symbol",
+      "parameter": "Arg0",
+      "function": "get_minus_sign_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_minus_sign_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_exponential_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_exponential_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_exponential_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_exponential_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_exponential_symbol",
+      "parameter": "Arg0",
+      "function": "get_exponential_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_exponential_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_group_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_group_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_group_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_group_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_group_symbol",
+      "parameter": "Arg0",
+      "function": "get_group_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_group_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_infinity_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_infinity_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [get_infinity_symbol](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: get_infinity_symbol\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_infinity_symbol",
+      "parameter": "Arg0",
+      "function": "get_infinity_symbol",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[get_infinity_symbol]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_number](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_number\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_number](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_number\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_number",
+      "parameter": "Arg1",
+      "function": "format_number",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_number]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_decimal",
+      "parameter": "Arg1",
+      "function": "format_decimal",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_decimal]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_compact_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: format_compact_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_compact_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: format_compact_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_compact_decimal",
+      "parameter": "Arg0",
+      "function": "format_compact_decimal",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_compact_decimal]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_compact_format](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _get_compact_format\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [_get_compact_format](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _get_compact_format\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [_get_compact_format](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _get_compact_format\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [_get_compact_format](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _get_compact_format\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "_get_compact_format",
+      "parameter": "Arg0",
+      "function": "_get_compact_format",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[_get_compact_format]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg3\n- Function: format_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg3\n- Function: format_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_currency",
+      "parameter": "Arg1",
+      "function": "format_currency",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_currency]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_currency_long_name](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _format_currency_long_name\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [_format_currency_long_name](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _format_currency_long_name\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "_format_currency_long_name",
+      "parameter": "Arg1",
+      "function": "_format_currency_long_name",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[_format_currency_long_name]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_compact_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: format_compact_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_compact_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_compact_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_compact_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: format_compact_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_compact_currency](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_compact_currency\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_compact_currency",
+      "parameter": "Arg0",
+      "function": "format_compact_currency",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_compact_currency]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_percent](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_percent\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_percent](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_percent\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_percent](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_percent\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_percent](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_percent\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_percent",
+      "parameter": "Arg1",
+      "function": "format_percent",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_percent]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_scientific](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_scientific\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_scientific](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_scientific\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [format_scientific](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: format_scientific\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [format_scientific](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg2\n- Function: format_scientific\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_scientific",
+      "parameter": "Arg1",
+      "function": "format_scientific",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[format_scientific]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_remove_trailing_zeros_after_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _remove_trailing_zeros_after_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [_remove_trailing_zeros_after_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _remove_trailing_zeros_after_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [_remove_trailing_zeros_after_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: _remove_trailing_zeros_after_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py\nThe callable [_remove_trailing_zeros_after_decimal](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg1\n- Function: _remove_trailing_zeros_after_decimal\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "_remove_trailing_zeros_after_decimal",
+      "parameter": "Arg0",
+      "function": "_remove_trailing_zeros_after_decimal",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[_remove_trailing_zeros_after_decimal]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_pattern](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: parse_pattern\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py": "The callable [parse_pattern](1) is a class pollution taint propagation API in [Module babel.numbers](2) \n- Parameter: Arg0\n- Function: parse_pattern\n- Module: Module babel.numbers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.py",
+    "package": "babel",
+    "model": {
+      "callable": "parse_pattern",
+      "parameter": "Arg0",
+      "function": "parse_pattern",
+      "module": "babel.numbers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/numbers.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[numbers].Member[parse_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [to_javascript](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: to_javascript\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [to_javascript](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: to_javascript\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "to_javascript",
+      "parameter": "Arg0",
+      "function": "to_javascript",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[to_javascript]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [cldr_modulo](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: cldr_modulo\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py\nThe callable [cldr_modulo](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg1\n- Function: cldr_modulo\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [cldr_modulo](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: cldr_modulo\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py\nThe callable [cldr_modulo](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg1\n- Function: cldr_modulo\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "cldr_modulo",
+      "parameter": "Arg0",
+      "function": "cldr_modulo",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[cldr_modulo]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [test_next_token](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: test_next_token\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [test_next_token](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: test_next_token\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "test_next_token",
+      "parameter": "Arg0",
+      "function": "test_next_token",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[test_next_token]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [skip_token](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: skip_token\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [skip_token](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: skip_token\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "skip_token",
+      "parameter": "Arg0",
+      "function": "skip_token",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[skip_token]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [value_node](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: value_node\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [value_node](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: value_node\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "value_node",
+      "parameter": "Arg0",
+      "function": "value_node",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[value_node]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ident_node](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: ident_node\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [ident_node](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: ident_node\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "ident_node",
+      "parameter": "Arg0",
+      "function": "ident_node",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[ident_node]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [range_list_node](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: range_list_node\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [range_list_node](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: range_list_node\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "range_list_node",
+      "parameter": "Arg0",
+      "function": "range_list_node",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[range_list_node]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [negate](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: negate\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py": "The callable [negate](1) is a class pollution taint propagation API in [Module babel.plural](2) \n- Parameter: Arg0\n- Function: negate\n- Module: Module babel.plural\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.py",
+    "package": "babel",
+    "model": {
+      "callable": "negate",
+      "parameter": "Arg0",
+      "function": "negate",
+      "module": "babel.plural",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/plural.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[plural].Member[negate]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unescape](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: unescape\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [unescape](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: unescape\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "unescape",
+      "parameter": "Arg0",
+      "function": "unescape",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[unescape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [denormalize](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: denormalize\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [denormalize](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: denormalize\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "denormalize",
+      "parameter": "Arg0",
+      "function": "denormalize",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[denormalize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_extract_locations](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: _extract_locations\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [_extract_locations](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: _extract_locations\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "_extract_locations",
+      "parameter": "Arg0",
+      "function": "_extract_locations",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[_extract_locations]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: escape\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [escape](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: escape\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "escape",
+      "parameter": "Arg0",
+      "function": "escape",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[escape]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalize](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: normalize\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py\nThe callable [normalize](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg1\n- Function: normalize\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [normalize](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: normalize\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py\nThe callable [normalize](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg1\n- Function: normalize\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "normalize",
+      "parameter": "Arg0",
+      "function": "normalize",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[normalize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_enclose_filename_if_necessary](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: _enclose_filename_if_necessary\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [_enclose_filename_if_necessary](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: _enclose_filename_if_necessary\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "_enclose_filename_if_necessary",
+      "parameter": "Arg0",
+      "function": "_enclose_filename_if_necessary",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[_enclose_filename_if_necessary]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_sort_messages](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: _sort_messages\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [_sort_messages](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: _sort_messages\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "_sort_messages",
+      "parameter": "Arg0",
+      "function": "_sort_messages",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[_sort_messages]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module babel.messages.pofile](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module babel.messages.pofile\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.py",
+    "package": "babel",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "babel.messages.pofile",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/messages/pofile.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[messages].Member[pofile].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_locales_to_names](1) is a class pollution taint propagation API in [Module babel.support](2) \n- Parameter: Arg0\n- Function: _locales_to_names\n- Module: Module babel.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/support.py": "The callable [_locales_to_names](1) is a class pollution taint propagation API in [Module babel.support](2) \n- Parameter: Arg0\n- Function: _locales_to_names\n- Module: Module babel.support\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/support.py",
+    "package": "babel",
+    "model": {
+      "callable": "_locales_to_names",
+      "parameter": "Arg0",
+      "function": "_locales_to_names",
+      "module": "babel.support",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/support.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[support].Member[_locales_to_names]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_unit_name](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg2\n- Function: get_unit_name\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py": "The callable [get_unit_name](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg2\n- Function: get_unit_name\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+    "package": "babel",
+    "model": {
+      "callable": "get_unit_name",
+      "parameter": "Arg2",
+      "function": "get_unit_name",
+      "module": "babel.units",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.p",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[units].Member[get_unit_name]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_find_unit_pattern](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: _find_unit_pattern\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [_find_unit_pattern](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: _find_unit_pattern\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py": "The callable [_find_unit_pattern](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: _find_unit_pattern\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [_find_unit_pattern](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: _find_unit_pattern\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+    "package": "babel",
+    "model": {
+      "callable": "_find_unit_pattern",
+      "parameter": "Arg0",
+      "function": "_find_unit_pattern",
+      "module": "babel.units",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[units].Member[_find_unit_pattern]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg3\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg4\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py": "The callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg3\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg4\n- Function: format_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_unit",
+      "parameter": "Arg0",
+      "function": "format_unit",
+      "module": "babel.units",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[units].Member[format_unit]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_find_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: _find_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [_find_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: _find_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [_find_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg2\n- Function: _find_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py": "The callable [_find_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: _find_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [_find_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: _find_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [_find_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg2\n- Function: _find_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+    "package": "babel",
+    "model": {
+      "callable": "_find_compound_unit",
+      "parameter": "Arg0",
+      "function": "_find_compound_unit",
+      "module": "babel.units",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[units].Member[_find_compound_unit]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg2\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg3\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg5\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg6\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py": "The callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg0\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg1\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg2\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg3\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg5\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py\nThe callable [format_compound_unit](1) is a class pollution taint propagation API in [Module babel.units](2) \n- Parameter: Arg6\n- Function: format_compound_unit\n- Module: Module babel.units\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+    "package": "babel",
+    "model": {
+      "callable": "format_compound_unit",
+      "parameter": "Arg0",
+      "function": "format_compound_unit",
+      "module": "babel.units",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/babel/codebase/babel/units.py",
+      "package_name": "babel"
+    },
+    "data_extension": [
+      "babel",
+      "Member[babel].Member[units].Member[format_compound_unit]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

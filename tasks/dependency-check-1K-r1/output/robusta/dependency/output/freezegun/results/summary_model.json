@@ -1,0 +1,116 @@
+[
+  {
+    "The callable [_get_module_attributes](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: _get_module_attributes\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py": "The callable [_get_module_attributes](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: _get_module_attributes\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py",
+    "package": "freezegun",
+    "model": {
+      "callable": "_get_module_attributes",
+      "parameter": "Arg0",
+      "function": "_get_module_attributes",
+      "module": "freezegun.api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.p",
+      "package_name": "freezegun"
+    },
+    "data_extension": [
+      "freezegun",
+      "Member[freezegun].Member[api].Member[_get_module_attributes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [convert_to_timezone_naive](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: convert_to_timezone_naive\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py": "The callable [convert_to_timezone_naive](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: convert_to_timezone_naive\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py",
+    "package": "freezegun",
+    "model": {
+      "callable": "convert_to_timezone_naive",
+      "parameter": "Arg0",
+      "function": "convert_to_timezone_naive",
+      "module": "freezegun.api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.p",
+      "package_name": "freezegun"
+    },
+    "data_extension": [
+      "freezegun",
+      "Member[freezegun].Member[api].Member[convert_to_timezone_naive]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pickle_fake_date](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: pickle_fake_date\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py": "The callable [pickle_fake_date](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: pickle_fake_date\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py",
+    "package": "freezegun",
+    "model": {
+      "callable": "pickle_fake_date",
+      "parameter": "Arg0",
+      "function": "pickle_fake_date",
+      "module": "freezegun.api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.p",
+      "package_name": "freezegun"
+    },
+    "data_extension": [
+      "freezegun",
+      "Member[freezegun].Member[api].Member[pickle_fake_date]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pickle_fake_datetime](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: pickle_fake_datetime\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py": "The callable [pickle_fake_datetime](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: pickle_fake_datetime\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py",
+    "package": "freezegun",
+    "model": {
+      "callable": "pickle_fake_datetime",
+      "parameter": "Arg0",
+      "function": "pickle_fake_datetime",
+      "module": "freezegun.api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.p",
+      "package_name": "freezegun"
+    },
+    "data_extension": [
+      "freezegun",
+      "Member[freezegun].Member[api].Member[pickle_fake_datetime]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_parse_time_to_freeze](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: _parse_time_to_freeze\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py": "The callable [_parse_time_to_freeze](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: _parse_time_to_freeze\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py",
+    "package": "freezegun",
+    "model": {
+      "callable": "_parse_time_to_freeze",
+      "parameter": "Arg0",
+      "function": "_parse_time_to_freeze",
+      "module": "freezegun.api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.p",
+      "package_name": "freezegun"
+    },
+    "data_extension": [
+      "freezegun",
+      "Member[freezegun].Member[api].Member[_parse_time_to_freeze]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_parse_tz_offset](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: _parse_tz_offset\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py": "The callable [_parse_tz_offset](1) is a class pollution taint propagation API in [Module freezegun.api](2) \n- Parameter: Arg0\n- Function: _parse_tz_offset\n- Module: Module freezegun.api\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.py",
+    "package": "freezegun",
+    "model": {
+      "callable": "_parse_tz_offset",
+      "parameter": "Arg0",
+      "function": "_parse_tz_offset",
+      "module": "freezegun.api",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/freezegun/codebase/freezegun/api.p",
+      "package_name": "freezegun"
+    },
+    "data_extension": [
+      "freezegun",
+      "Member[freezegun].Member[api].Member[_parse_tz_offset]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

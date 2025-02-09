@@ -1,0 +1,1028 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sourceModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[_get_plugin_specs_as_list]
+    - class-pollution-source
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sourceModel
+    data:
+    - pytest
+    - Member[_pytest].Member[junitxml].Member[mangle_test_address]
+    - class-pollution-source
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[insert_missing_modules].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - pytest
+    - Member[_pytest].Member[reports].Member[_report_to_json].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[filename_arg]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[directory_arg]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[_get_directory]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[_get_plugin_specs_as_list]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[__init__].Member[parse_warning_filter]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[__init__].Member[pytest_assertrepr_compare]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[cacheprovider].Member[cache]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[cacheprovider].Member[pytest_report_header]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[iscoroutinefunction]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[is_async_function]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[getlocation]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[get_real_func]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[get_real_method]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[getimfunc]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[compat].Member[safe_getattr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[debugging].Member[_validate_usepdb_cls]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[debugging].Member[_enter_pdb]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[debugging].Member[_postmortem_traceback]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[doctest].Member[remove_prefixes]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[findpaths].Member[make_scalar]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[findpaths].Member[locate_config]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[findpaths].Member[get_common_ancestor]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[findpaths].Member[get_dirs_from_args]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[findpaths].Member[get_file_part_from_node_id]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[config].Member[findpaths].Member[get_dir_from_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[get_scope_package]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[getfixturemarker]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[reorder_items_atscope]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[resolve_fixture_function]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[pytestconfig]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[_pretty_fixture_path]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[fixtures].Member[get_best_relpath]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[junitxml].Member[bin_xml_escape]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[junitxml].Member[record_testsuite_property]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[junitxml].Member[mangle_test_address]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[logging].Member[_remove_ansi_escape_sequences]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[main].Member[validate_basetemp]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[monkeypatch].Member[annotated_getattr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[monkeypatch].Member[derive_importpath]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[nodes].Member[_imply_path]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[nodes].Member[get_fslocation_from_item]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[nodes].Member[_check_initialpaths_for_relpath]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[outcomes].Member[decorate]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_py].Member[path].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_py].Member[path].Member[getuserid]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_py].Member[path].Member[getgroupid]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_py].Member[path].Member[create_lockfile]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[get_lock_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[ensure_extended_length_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[get_extended_length_path_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[make_numbered_dir]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[create_cleanup_lock]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[make_numbered_dir_with_cleanup]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[resolve_from_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[parts]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[module_name_from_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[resolve_pkg_root_and_module_name]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[compute_module_name]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[absolutepath]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[commonpath]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pathlib].Member[bestrelpath]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pytester].Member[get_public_names]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[pytester].Member[to_text]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python].Member[sort_key]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python].Member[_get_first_non_fixture_func]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python].Member[get_direct_param_fixture_func]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python].Member[_ascii_escaped_by_config]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python_api].Member[_compare_approx]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python_api].Member[get_value_from_nested_list]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python_api].Member[set_default]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[python_api].Member[_as_numpy_array]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[reports].Member[getworkerinfoline]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[reports].Member[_report_to_json]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[reports].Member[serialize_exception_longrepr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[reports].Member[_report_kwargs_from_json]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[rewrite].Member[_saferepr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[rewrite].Member[_format_assertmsg]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[rewrite].Member[_format_boolop]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[rewrite].Member[get_cache_dir]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[runner].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_io].Member[saferepr].Member[_try_repr_or_str]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_io].Member[saferepr].Member[_format_repr_exception]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_io].Member[saferepr].Member[_ellipsize]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[setupplan].Member[pytest_fixture_setup]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[skipping].Member[evaluate_condition]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_code].Member[source].Member[getrawcode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_code].Member[source].Member[deindent]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[_code].Member[source].Member[getstatementrange_ast]
+    - Argument[3]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[mark].Member[structures].Member[get_unpacked_marks]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[getreportopt]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[pytest_report_teststatus]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[_format_trimmed]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[_get_line_with_reprcrash_message]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[pluralize]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[_plugin_nameversions]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[format_session_duration]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[terminal].Member[_get_raw_skip_reason]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[tmpdir].Member[tmp_path_factory]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[truncate].Member[truncate_if_required]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[truncate].Member[_truncate_explanation]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[truncate].Member[_truncate_by_char_count]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[format_explanation]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[_split_explanation]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[_format_lines]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[assertrepr_compare]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[_compare_eq_any]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[_set_one_sided_diff]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - pytest
+    - Member[_pytest].Member[assertion].Member[util].Member[_compare_eq_cls]
+    - Argument[0]
+    - ReturnValue
+    - taint

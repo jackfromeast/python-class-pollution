@@ -1,0 +1,40 @@
+[
+  {
+    "The callable [make_id](1) is a class pollution taint propagation API in [Module blinker._utilities](2) \n- Parameter: Arg0\n- Function: make_id\n- Module: Module blinker._utilities\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/blinker/codebase/blinker/_utilities.py": "The callable [make_id](1) is a class pollution taint propagation API in [Module blinker._utilities](2) \n- Parameter: Arg0\n- Function: make_id\n- Module: Module blinker._utilities\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/blinker/codebase/blinker/_utilities.py",
+    "package": "blinker",
+    "model": {
+      "callable": "make_id",
+      "parameter": "Arg0",
+      "function": "make_id",
+      "module": "blinker._utilities",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/blinker/codebase/blinker/_utilities.p",
+      "package_name": "blinker"
+    },
+    "data_extension": [
+      "blinker",
+      "Member[blinker].Member[_utilities].Member[make_id]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorator](1) is a class pollution taint propagation API in [Module blinker.base](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module blinker.base\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/blinker/codebase/blinker/base.py": "The callable [decorator](1) is a class pollution taint propagation API in [Module blinker.base](2) \n- Parameter: Arg0\n- Function: decorator\n- Module: Module blinker.base\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/blinker/codebase/blinker/base.py",
+    "package": "blinker",
+    "model": {
+      "callable": "decorator",
+      "parameter": "Arg0",
+      "function": "decorator",
+      "module": "blinker.base",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/blinker/codebase/blinker/base.p",
+      "package_name": "blinker"
+    },
+    "data_extension": [
+      "blinker",
+      "Member[blinker].Member[base].Member[decorator]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

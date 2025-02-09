@@ -1,0 +1,102 @@
+[
+  {
+    "The callable [attrs](1) is a class pollution sink API in [Module attr._make](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: attrs\n- Module: Module attr._make\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_make.py": "The callable [attrs](1) is a class pollution sink API in [Module attr._make](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: attrs\n- Module: Module attr._make\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_make.py",
+    "package": "attrs",
+    "model": {
+      "callable": "attrs",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "attrs",
+      "module": "attr._make",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_make.p",
+      "package_name": "attrs"
+    },
+    "data_extension": [
+      "attrs",
+      "Member[attr].Member[_make].Member[attrs].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [wrap](1) is a class pollution sink API in [Module attr._make](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: wrap\n- Module: Module attr._make\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_make.py": "The callable [wrap](1) is a class pollution sink API in [Module attr._make](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: wrap\n- Module: Module attr._make\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_make.py",
+    "package": "attrs",
+    "model": {
+      "callable": "wrap",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "wrap",
+      "module": "attr._make",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_make.p",
+      "package_name": "attrs"
+    },
+    "data_extension": [
+      "attrs",
+      "Member[attr].Member[_make].Member[wrap].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [define](1) is a class pollution sink API in [Module attr._next_gen](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: define\n- Module: Module attr._next_gen\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.py": "The callable [define](1) is a class pollution sink API in [Module attr._next_gen](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: define\n- Module: Module attr._next_gen\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.py",
+    "package": "attrs",
+    "model": {
+      "callable": "define",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "define",
+      "module": "attr._next_gen",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.p",
+      "package_name": "attrs"
+    },
+    "data_extension": [
+      "attrs",
+      "Member[attr].Member[_next_gen].Member[define].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [do_it](1) is a class pollution sink API in [Module attr._next_gen](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: do_it\n- Module: Module attr._next_gen\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.py": "The callable [do_it](1) is a class pollution sink API in [Module attr._next_gen](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: do_it\n- Module: Module attr._next_gen\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.py",
+    "package": "attrs",
+    "model": {
+      "callable": "do_it",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "do_it",
+      "module": "attr._next_gen",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.p",
+      "package_name": "attrs"
+    },
+    "data_extension": [
+      "attrs",
+      "Member[attr].Member[_next_gen].Member[do_it].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [wrap](1) is a class pollution sink API in [Module attr._next_gen](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: wrap\n- Module: Module attr._next_gen\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.py": "The callable [wrap](1) is a class pollution sink API in [Module attr._next_gen](2) \n- Type: setattr\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: wrap\n- Module: Module attr._next_gen\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.py",
+    "package": "attrs",
+    "model": {
+      "callable": "wrap",
+      "type": "setattr",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "wrap",
+      "module": "attr._next_gen",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/attrs/codebase/attr/_next_gen.p",
+      "package_name": "attrs"
+    },
+    "data_extension": [
+      "attrs",
+      "Member[attr].Member[_next_gen].Member[wrap].Argument[0]",
+      "class-pollution-sink"
+    ]
+  }
+]

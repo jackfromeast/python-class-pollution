@@ -1,0 +1,268 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - apprise
+    - Member[apprise].Member[plugins].Member[__init__].Member[_sanitize_token].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - apprise
+    - Member[apprise].Member[plugins].Member[__init__].Member[details].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[base64].Member[decode_b64_dict].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[base64].Member[encode_b64_dict].Argument[0]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[logic].Member[dict_full_update].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[logic].Member[_merge].Argument[1]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[plugins].Member[__init__].Member[details]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[base64].Member[decode_b64_dict]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[base64].Member[encode_b64_dict]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[cli].Member[lambda]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[conversion].Member[convert_between]
+    - Argument[2]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[conversion].Member[html_to_text]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[cwe312].Member[cwe312_word]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[cwe312].Member[cwe312_url]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[disk].Member[path_decode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[disk].Member[tidy_path]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[disk].Member[dir_size]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[emojis].Member[apply_emojis]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[decorators].Member[notify].Member[wrapper]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[is_ipaddr]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[is_hostname]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[is_phone_no]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[is_call_sign]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[is_email]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[parse_bool]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[_no_encode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[urlencode]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[parse].Member[validate_regex]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[templates].Member[apply_template]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[templates].Member[_escape_raw]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - apprise
+    - Member[apprise].Member[utils].Member[templates].Member[_escape_json]
+    - Argument[0]
+    - ReturnValue
+    - taint

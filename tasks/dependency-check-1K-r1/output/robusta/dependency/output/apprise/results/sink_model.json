@@ -1,0 +1,122 @@
+[
+  {
+    "The callable [_sanitize_token](1) is a class pollution sink API in [Module apprise.plugins.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: _sanitize_token\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py\nThe callable [_sanitize_token](1) is a class pollution sink API in [Module apprise.plugins.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg1\n- Function: _sanitize_token\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py": "The callable [_sanitize_token](1) is a class pollution sink API in [Module apprise.plugins.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: _sanitize_token\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py\nThe callable [_sanitize_token](1) is a class pollution sink API in [Module apprise.plugins.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg1\n- Function: _sanitize_token\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py",
+    "package": "apprise",
+    "model": {
+      "callable": "_sanitize_token",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "_sanitize_token",
+      "module": "apprise.plugins.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[plugins].Member[__init__].Member[_sanitize_token].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [details](1) is a class pollution sink API in [Module apprise.plugins.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: details\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py": "The callable [details](1) is a class pollution sink API in [Module apprise.plugins.__init__](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: details\n- Module: Module apprise.plugins.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.py",
+    "package": "apprise",
+    "model": {
+      "callable": "details",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "details",
+      "module": "apprise.plugins.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/plugins/__init__.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[plugins].Member[__init__].Member[details].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [decode_b64_dict](1) is a class pollution sink API in [Module apprise.utils.base64](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: decode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py": "The callable [decode_b64_dict](1) is a class pollution sink API in [Module apprise.utils.base64](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: decode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py",
+    "package": "apprise",
+    "model": {
+      "callable": "decode_b64_dict",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "decode_b64_dict",
+      "module": "apprise.utils.base64",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[base64].Member[decode_b64_dict].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [encode_b64_dict](1) is a class pollution sink API in [Module apprise.utils.base64](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: encode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py": "The callable [encode_b64_dict](1) is a class pollution sink API in [Module apprise.utils.base64](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: encode_b64_dict\n- Module: Module apprise.utils.base64\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.py",
+    "package": "apprise",
+    "model": {
+      "callable": "encode_b64_dict",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "encode_b64_dict",
+      "module": "apprise.utils.base64",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/base64.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[base64].Member[encode_b64_dict].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [dict_full_update](1) is a class pollution sink API in [Module apprise.utils.logic](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: dict_full_update\n- Module: Module apprise.utils.logic\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/logic.py": "The callable [dict_full_update](1) is a class pollution sink API in [Module apprise.utils.logic](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: dict_full_update\n- Module: Module apprise.utils.logic\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/logic.py",
+    "package": "apprise",
+    "model": {
+      "callable": "dict_full_update",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "dict_full_update",
+      "module": "apprise.utils.logic",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/logic.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[logic].Member[dict_full_update].Argument[1]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [_merge](1) is a class pollution sink API in [Module apprise.utils.logic](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: _merge\n- Module: Module apprise.utils.logic\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/logic.py": "The callable [_merge](1) is a class pollution sink API in [Module apprise.utils.logic](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: _merge\n- Module: Module apprise.utils.logic\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/logic.py",
+    "package": "apprise",
+    "model": {
+      "callable": "_merge",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg1",
+      "function": "_merge",
+      "module": "apprise.utils.logic",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/apprise/codebase/apprise/utils/logic.p",
+      "package_name": "apprise"
+    },
+    "data_extension": [
+      "apprise",
+      "Member[apprise].Member[utils].Member[logic].Member[_merge].Argument[1]",
+      "class-pollution-sink"
+    ]
+  }
+]

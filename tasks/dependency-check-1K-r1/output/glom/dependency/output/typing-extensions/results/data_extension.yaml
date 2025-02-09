@@ -1,0 +1,172 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[final]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_flatten_literal_params]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[runtime_checkable]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[inner]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[assert_type]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_strip_extras]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[get_origin]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[get_args]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_tvar_prepare_subst]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_paramspec_prepare_subst]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_typevartuple_prepare_subst]
+    - Argument[1]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[reveal_type]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[decorator]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[override]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_collect_type_vars]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[_collect_parameters]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[get_original_bases]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[is_protocol]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - typing-extensions
+    - Member[Script typing_extensions].Member[py].Member[get_protocol_members]
+    - Argument[0]
+    - ReturnValue
+    - taint

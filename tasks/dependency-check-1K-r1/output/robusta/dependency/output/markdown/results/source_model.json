@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [_handle_key_value](1) is a class pollution source API in [Module markdown.extensions.attr_list](2). \n- Function: _handle_key_value\n- Module: Module markdown.extensions.attr_list\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown/codebase/markdown/extensions/attr_list.py": "The callable [_handle_key_value](1) is a class pollution source API in [Module markdown.extensions.attr_list](2). \n- Function: _handle_key_value\n- Module: Module markdown.extensions.attr_list\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown/codebase/markdown/extensions/attr_list.py",
+    "package": "markdown",
+    "model": {
+      "callable": "_handle_key_value",
+      "parameter": "le [_handle_key_value](1) is a class pollution source API in [Module markdown.extensions.attr_list](2).",
+      "function": "_handle_key_value",
+      "module": "markdown.extensions.attr_list",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/markdown/codebase/markdown/extensions/attr_list.p",
+      "package_name": "markdown"
+    },
+    "data_extension": [
+      "markdown",
+      "Member[markdown].Member[extensions].Member[attr_list].Member[_handle_key_value]",
+      "class-pollution-source"
+    ]
+  }
+]

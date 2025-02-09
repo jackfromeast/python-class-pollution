@@ -1,0 +1,28 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - zipp
+    - Member[zipp].Member[__init__].Member[_extract_text_encoding]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - zipp
+    - Member[zipp].Member[glob].Member[separate]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - zipp
+    - Member[zipp].Member[compat].Member[py310].Member[_text_encoding]
+    - Argument[0]
+    - ReturnValue
+    - taint

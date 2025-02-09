@@ -1,0 +1,21 @@
+[
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module cachetools.__init__](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cachetools.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/cachetools/codebase/cachetools/__init__.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module cachetools.__init__](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module cachetools.__init__\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/cachetools/codebase/cachetools/__init__.py",
+    "package": "cachetools",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "cachetools.__init__",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/cachetools/codebase/cachetools/__init__.p",
+      "package_name": "cachetools"
+    },
+    "data_extension": [
+      "cachetools",
+      "Member[cachetools].Member[__init__].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

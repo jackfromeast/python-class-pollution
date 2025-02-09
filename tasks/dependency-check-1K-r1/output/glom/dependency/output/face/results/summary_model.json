@@ -1,0 +1,724 @@
+[
+  {
+    "The callable [_get_default_name](1) is a class pollution taint propagation API in [Module face.command](2) \n- Parameter: Arg0\n- Function: _get_default_name\n- Module: Module face.command\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/command.py": "The callable [_get_default_name](1) is a class pollution taint propagation API in [Module face.command](2) \n- Parameter: Arg0\n- Function: _get_default_name\n- Module: Module face.command\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/command.py",
+    "package": "face",
+    "model": {
+      "callable": "_get_default_name",
+      "parameter": "Arg0",
+      "function": "_get_default_name",
+      "module": "face.command",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/command.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[command].Member[_get_default_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_docstring_to_doc](1) is a class pollution taint propagation API in [Module face.command](2) \n- Parameter: Arg0\n- Function: _docstring_to_doc\n- Module: Module face.command\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/command.py": "The callable [_docstring_to_doc](1) is a class pollution taint propagation API in [Module face.command](2) \n- Parameter: Arg0\n- Function: _docstring_to_doc\n- Module: Module face.command\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/command.py",
+    "package": "face",
+    "model": {
+      "callable": "_docstring_to_doc",
+      "parameter": "Arg0",
+      "function": "_docstring_to_doc",
+      "module": "face.command",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/command.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[command].Member[_docstring_to_doc]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_stout_layout](1) is a class pollution taint propagation API in [Module face.helpers](2) \n- Parameter: Arg3\n- Function: get_stout_layout\n- Module: Module face.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/helpers.py\nThe callable [get_stout_layout](1) is a class pollution taint propagation API in [Module face.helpers](2) \n- Parameter: Arg5\n- Function: get_stout_layout\n- Module: Module face.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/helpers.py": "The callable [get_stout_layout](1) is a class pollution taint propagation API in [Module face.helpers](2) \n- Parameter: Arg3\n- Function: get_stout_layout\n- Module: Module face.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/helpers.py\nThe callable [get_stout_layout](1) is a class pollution taint propagation API in [Module face.helpers](2) \n- Parameter: Arg5\n- Function: get_stout_layout\n- Module: Module face.helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/helpers.py",
+    "package": "face",
+    "model": {
+      "callable": "get_stout_layout",
+      "parameter": "Arg3",
+      "function": "get_stout_layout",
+      "module": "face.helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/helpers.py",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[helpers].Member[get_stout_layout]",
+      "Argument[3]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [face_middleware](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg0\n- Function: face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py": "The callable [face_middleware](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg0\n- Function: face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py",
+    "package": "face",
+    "model": {
+      "callable": "face_middleware",
+      "parameter": "Arg0",
+      "function": "face_middleware",
+      "module": "face.middleware",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[middleware].Member[face_middleware]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [decorate_face_middleware](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg0\n- Function: decorate_face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py": "The callable [decorate_face_middleware](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg0\n- Function: decorate_face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py",
+    "package": "face",
+    "model": {
+      "callable": "decorate_face_middleware",
+      "parameter": "Arg0",
+      "function": "decorate_face_middleware",
+      "module": "face.middleware",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[middleware].Member[decorate_face_middleware]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_middleware_chain](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg0\n- Function: get_middleware_chain\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py\nThe callable [get_middleware_chain](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg1\n- Function: get_middleware_chain\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py": "The callable [get_middleware_chain](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg0\n- Function: get_middleware_chain\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py\nThe callable [get_middleware_chain](1) is a class pollution taint propagation API in [Module face.middleware](2) \n- Parameter: Arg1\n- Function: get_middleware_chain\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py",
+    "package": "face",
+    "model": {
+      "callable": "get_middleware_chain",
+      "parameter": "Arg0",
+      "function": "get_middleware_chain",
+      "module": "face.middleware",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[middleware].Member[get_middleware_chain]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_arg_to_subcmd](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg0\n- Function: _arg_to_subcmd\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_arg_to_subcmd](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg0\n- Function: _arg_to_subcmd\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_arg_to_subcmd",
+      "parameter": "Arg0",
+      "function": "_arg_to_subcmd",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_arg_to_subcmd]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_multi_error](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _multi_error\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_multi_error](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _multi_error\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_multi_error",
+      "parameter": "Arg1",
+      "function": "_multi_error",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_multi_error]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_multi_extend](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _multi_extend\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_multi_extend](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _multi_extend\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_multi_extend",
+      "parameter": "Arg1",
+      "function": "_multi_extend",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_multi_extend]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_multi_override](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _multi_override\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_multi_override](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _multi_override\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_multi_override",
+      "parameter": "Arg1",
+      "function": "_multi_override",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_multi_override]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_validate_char](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg0\n- Function: _validate_char\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_validate_char](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg0\n- Function: _validate_char\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_validate_char",
+      "parameter": "Arg0",
+      "function": "_validate_char",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_validate_char]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_posargs_to_provides](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _posargs_to_provides\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_posargs_to_provides](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg1\n- Function: _posargs_to_provides\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_posargs_to_provides",
+      "parameter": "Arg1",
+      "function": "_posargs_to_provides",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_posargs_to_provides]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ensure_posargspec](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg0\n- Function: _ensure_posargspec\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py": "The callable [_ensure_posargspec](1) is a class pollution taint propagation API in [Module face.parser](2) \n- Parameter: Arg0\n- Function: _ensure_posargspec\n- Module: Module face.parser\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.py",
+    "package": "face",
+    "model": {
+      "callable": "_ensure_posargspec",
+      "parameter": "Arg0",
+      "function": "_ensure_posargspec",
+      "module": "face.parser",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/parser.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[parser].Member[_ensure_posargspec]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_fb](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: get_fb\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py": "The callable [get_fb](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: get_fb\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+    "package": "face",
+    "model": {
+      "callable": "get_fb",
+      "parameter": "Arg0",
+      "function": "get_fb",
+      "module": "face.sinter",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[sinter].Member[get_fb]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_callable_labels](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: get_callable_labels\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py": "The callable [get_callable_labels](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: get_callable_labels\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+    "package": "face",
+    "model": {
+      "callable": "get_callable_labels",
+      "parameter": "Arg0",
+      "function": "get_callable_labels",
+      "module": "face.sinter",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[sinter].Member[get_callable_labels]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg1\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg2\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg4\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py": "The callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg1\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg2\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [build_chain_str](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg4\n- Function: build_chain_str\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+    "package": "face",
+    "model": {
+      "callable": "build_chain_str",
+      "parameter": "Arg0",
+      "function": "build_chain_str",
+      "module": "face.sinter",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[sinter].Member[build_chain_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [compile_chain](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: compile_chain\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py": "The callable [compile_chain](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: compile_chain\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+    "package": "face",
+    "model": {
+      "callable": "compile_chain",
+      "parameter": "Arg0",
+      "function": "compile_chain",
+      "module": "face.sinter",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[sinter].Member[compile_chain]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [compile_code](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg2\n- Function: compile_code\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py": "The callable [compile_code](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg2\n- Function: compile_code\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+    "package": "face",
+    "model": {
+      "callable": "compile_code",
+      "parameter": "Arg2",
+      "function": "compile_code",
+      "module": "face.sinter",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[sinter].Member[compile_code]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_chain](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: make_chain\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [make_chain](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg2\n- Function: make_chain\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py": "The callable [make_chain](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg0\n- Function: make_chain\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py\nThe callable [make_chain](1) is a class pollution taint propagation API in [Module face.sinter](2) \n- Parameter: Arg2\n- Function: make_chain\n- Module: Module face.sinter\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+    "package": "face",
+    "model": {
+      "callable": "make_chain",
+      "parameter": "Arg0",
+      "function": "make_chain",
+      "module": "face.sinter",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/sinter.py",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[sinter].Member[make_chain]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module face.test.test_basic](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module face.test.test_basic\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_basic.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module face.test.test_basic](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module face.test.test_basic\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_basic.py",
+    "package": "face",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg1",
+      "function": "lambda",
+      "module": "face.test.test_basic",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_basic.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[test].Member[test_basic].Member[lambda]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unres_cmd](1) is a class pollution taint propagation API in [Module face.test.test_mw](2) \n- Parameter: Arg0\n- Function: unres_cmd\n- Module: Module face.test.test_mw\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_mw.py": "The callable [unres_cmd](1) is a class pollution taint propagation API in [Module face.test.test_mw](2) \n- Parameter: Arg0\n- Function: unres_cmd\n- Module: Module face.test.test_mw\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_mw.py",
+    "package": "face",
+    "model": {
+      "callable": "unres_cmd",
+      "parameter": "Arg0",
+      "function": "unres_cmd",
+      "module": "face.test.test_mw",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_mw.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[test].Member[test_mw].Member[unres_cmd]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_ls](1) is a class pollution taint propagation API in [Module face.test.test_search_cmd](2) \n- Parameter: Arg0\n- Function: _ls\n- Module: Module face.test.test_search_cmd\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_search_cmd.py": "The callable [_ls](1) is a class pollution taint propagation API in [Module face.test.test_search_cmd](2) \n- Parameter: Arg0\n- Function: _ls\n- Module: Module face.test.test_search_cmd\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_search_cmd.py",
+    "package": "face",
+    "model": {
+      "callable": "_ls",
+      "parameter": "Arg0",
+      "function": "_ls",
+      "module": "face.test.test_search_cmd",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/test/test_search_cmd.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[test].Member[test_search_cmd].Member[_ls]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_make_input_stream](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg0\n- Function: _make_input_stream\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py": "The callable [_make_input_stream](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg0\n- Function: _make_input_stream\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py",
+    "package": "face",
+    "model": {
+      "callable": "_make_input_stream",
+      "parameter": "Arg0",
+      "function": "_make_input_stream",
+      "module": "face.testing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[testing].Member[_make_input_stream]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_exp_code_text](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg0\n- Function: _get_exp_code_text\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py": "The callable [_get_exp_code_text](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg0\n- Function: _get_exp_code_text\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py",
+    "package": "face",
+    "model": {
+      "callable": "_get_exp_code_text",
+      "parameter": "Arg0",
+      "function": "_get_exp_code_text",
+      "module": "face.testing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[testing].Member[_get_exp_code_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_sync_env](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg2\n- Function: _sync_env\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py": "The callable [_sync_env](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg2\n- Function: _sync_env\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py",
+    "package": "face",
+    "model": {
+      "callable": "_sync_env",
+      "parameter": "Arg2",
+      "function": "_sync_env",
+      "module": "face.testing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[testing].Member[_sync_env]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module face.testing](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py",
+    "package": "face",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "face.testing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[testing].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [process_command_name](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: process_command_name\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [process_command_name](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: process_command_name\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "process_command_name",
+      "parameter": "Arg0",
+      "function": "process_command_name",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[process_command_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalize_flag_name](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: normalize_flag_name\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [normalize_flag_name](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: normalize_flag_name\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "normalize_flag_name",
+      "parameter": "Arg0",
+      "function": "normalize_flag_name",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[normalize_flag_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [flag_to_identifier](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: flag_to_identifier\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [flag_to_identifier](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: flag_to_identifier\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "flag_to_identifier",
+      "parameter": "Arg0",
+      "function": "flag_to_identifier",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[flag_to_identifier]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [identifier_to_flag](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: identifier_to_flag\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [identifier_to_flag](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: identifier_to_flag\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "identifier_to_flag",
+      "parameter": "Arg0",
+      "function": "identifier_to_flag",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[identifier_to_flag]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_flag_label](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: format_flag_label\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [format_flag_label](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: format_flag_label\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "format_flag_label",
+      "parameter": "Arg0",
+      "function": "format_flag_label",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[format_flag_label]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_posargs_label](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: format_posargs_label\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [format_posargs_label](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: format_posargs_label\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "format_posargs_label",
+      "parameter": "Arg0",
+      "function": "format_posargs_label",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[format_posargs_label]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_cardinalized_args_label](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: get_cardinalized_args_label\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [get_cardinalized_args_label](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: get_cardinalized_args_label\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "get_cardinalized_args_label",
+      "parameter": "Arg0",
+      "function": "get_cardinalized_args_label",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[get_cardinalized_args_label]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_flag_post_doc](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: format_flag_post_doc\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [format_flag_post_doc](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: format_flag_post_doc\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "format_flag_post_doc",
+      "parameter": "Arg0",
+      "function": "format_flag_post_doc",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[format_flag_post_doc]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_type_desc](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: get_type_desc\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [get_type_desc](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: get_type_desc\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "get_type_desc",
+      "parameter": "Arg0",
+      "function": "get_type_desc",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[get_type_desc]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unwrap_text](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: unwrap_text\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [unwrap_text](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: unwrap_text\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "unwrap_text",
+      "parameter": "Arg0",
+      "function": "unwrap_text",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[unwrap_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_minimal_executable](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: get_minimal_executable\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [get_minimal_executable](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: get_minimal_executable\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "get_minimal_executable",
+      "parameter": "Arg0",
+      "function": "get_minimal_executable",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[get_minimal_executable]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_text](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: _get_text\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py": "The callable [_get_text](1) is a class pollution taint propagation API in [Module face.utils](2) \n- Parameter: Arg0\n- Function: _get_text\n- Module: Module face.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.py",
+    "package": "face",
+    "model": {
+      "callable": "_get_text",
+      "parameter": "Arg0",
+      "function": "_get_text",
+      "module": "face.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/utils.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[utils].Member[_get_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

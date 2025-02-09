@@ -1,0 +1,97 @@
+[
+  {
+    "The callable [code_to_chars](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: code_to_chars\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py": "The callable [code_to_chars](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: code_to_chars\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py",
+    "package": "colorama",
+    "model": {
+      "callable": "code_to_chars",
+      "parameter": "Arg0",
+      "function": "code_to_chars",
+      "module": "colorama.ansi",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.p",
+      "package_name": "colorama"
+    },
+    "data_extension": [
+      "colorama",
+      "Member[colorama].Member[ansi].Member[code_to_chars]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [set_title](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: set_title\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py": "The callable [set_title](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: set_title\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py",
+    "package": "colorama",
+    "model": {
+      "callable": "set_title",
+      "parameter": "Arg0",
+      "function": "set_title",
+      "module": "colorama.ansi",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.p",
+      "package_name": "colorama"
+    },
+    "data_extension": [
+      "colorama",
+      "Member[colorama].Member[ansi].Member[set_title]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [clear_screen](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: clear_screen\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py": "The callable [clear_screen](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: clear_screen\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py",
+    "package": "colorama",
+    "model": {
+      "callable": "clear_screen",
+      "parameter": "Arg0",
+      "function": "clear_screen",
+      "module": "colorama.ansi",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.p",
+      "package_name": "colorama"
+    },
+    "data_extension": [
+      "colorama",
+      "Member[colorama].Member[ansi].Member[clear_screen]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [clear_line](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: clear_line\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py": "The callable [clear_line](1) is a class pollution taint propagation API in [Module colorama.ansi](2) \n- Parameter: Arg0\n- Function: clear_line\n- Module: Module colorama.ansi\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.py",
+    "package": "colorama",
+    "model": {
+      "callable": "clear_line",
+      "parameter": "Arg0",
+      "function": "clear_line",
+      "module": "colorama.ansi",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/ansi.p",
+      "package_name": "colorama"
+    },
+    "data_extension": [
+      "colorama",
+      "Member[colorama].Member[ansi].Member[clear_line]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [wrap_stream](1) is a class pollution taint propagation API in [Module colorama.initialise](2) \n- Parameter: Arg0\n- Function: wrap_stream\n- Module: Module colorama.initialise\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/initialise.py": "The callable [wrap_stream](1) is a class pollution taint propagation API in [Module colorama.initialise](2) \n- Parameter: Arg0\n- Function: wrap_stream\n- Module: Module colorama.initialise\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/initialise.py",
+    "package": "colorama",
+    "model": {
+      "callable": "wrap_stream",
+      "parameter": "Arg0",
+      "function": "wrap_stream",
+      "module": "colorama.initialise",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/colorama/codebase/colorama/initialise.p",
+      "package_name": "colorama"
+    },
+    "data_extension": [
+      "colorama",
+      "Member[colorama].Member[initialise].Member[wrap_stream]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [validate_colon_separated_string_list](1) is a class pollution source API in [Module docutils.frontend](2). \n- Function: validate_colon_separated_string_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_colon_separated_string_list](1) is a class pollution source API in [Module docutils.frontend](2). \n- Function: validate_colon_separated_string_list\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_colon_separated_string_list",
+      "parameter": "le [validate_colon_separated_string_list](1) is a class pollution source API in [Module docutils.frontend](2).",
+      "function": "validate_colon_separated_string_list",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_colon_separated_string_list]",
+      "class-pollution-source"
+    ]
+  }
+]

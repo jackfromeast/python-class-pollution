@@ -1,0 +1,66 @@
+SCHEDULER:
+  TEST_NAME: "CLASS-POLLUTION-CODEQL"
+
+  # Path to workspace (base directory for storing results)
+  # WORKSPACE/output will be created to store the results
+  WORKSPACE: "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1"
+
+  MODE: "seed" # Option: "seed" or "list"
+  SOURCE: "GITHUB" # "PIP" or "GITHUB"
+  REPO: "https://github.com/mahmoud/glom"
+  REPO_LIST: "github-20101001-20241001-stars-1000.txt" # Relative path to WORKSPACE/input/ or absolute path
+  URL_LIST_FROM: 0
+  URL_LIST_TO: 200
+
+  # Maximum number of workers to run in parallel
+  MAX_WORKER: 4
+
+  # Time budget for each worker to analyze each repo
+  # TIMEOUT_PER_WORKER > CODEQL.TIMEOUT * Queries.length
+  TIMEOUT_PER_WORKER: 1800 # 30 minutes
+
+  PASS:
+    DEPENDENCY_ANALYSIS: True
+    CLASS_POLLUTION_ANALYSIS: False
+    DYNAMIC_VERIFIER: False
+
+CODEQL:
+  CLI: "/home/jackfromeast/Downloads/codeql/codeql"
+  THREADS: 1
+  RAM: 8192 # MB
+  TIMEOUT: 600 # 10 minutes
+
+DEPENDENCY_ANALYSIS:
+  CACHE_PATH: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/dependency-analysis/cache"
+  QUERY_MODE: query # query or qlpack
+  QUERIES:
+    SOURCE: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSource.ql"
+    SINK: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql"
+    SUMMARY: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionTaintProp.ql"
+    TYPE: ""
+
+  DEBUG: True
+
+CLASS_POLLUTION_ANALYSIS:
+  QUERY_MODE: query # query or qlpack
+  QUERIES: [
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql",
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSource.ql",
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionTaintProp.ql"
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQuery.ql",
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncLocalQuery.ql",
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncQuery.ql",
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartSettingFuncLocalQuery.ql"
+  ]
+
+  DELETE_AFTER_QUERY: False # False when debugging
+  DELETE_IF_NO_FLOWS: True
+
+LOG:
+  LOG_PATH: "" # Default: WORKSPACE/log
+  LOG_TO_CONSOLE: True
+  LOG_TO_LOCAL_FILE: True # WORKSPACE/output/{repo}/log/{LEVEL}.log
+  LOG_TO_GLOBAL_FILE: True # WORKSPACE/log/analysis/error.log
+  LOG_RESULT: True  # WORKSPACE/log/result.log
+  LOG_LEVEL: "INFO"
+  LOG_ERROR_DETAILS: True

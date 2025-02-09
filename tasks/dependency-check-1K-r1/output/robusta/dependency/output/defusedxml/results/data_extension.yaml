@@ -1,0 +1,37 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - defusedxml
+    - Member[defusedxml].Member[lxml].Member[parse]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - defusedxml
+    - Member[defusedxml].Member[lxml].Member[fromstring]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - defusedxml
+    - Member[defusedxml].Member[pulldom].Member[parse]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - defusedxml
+    - Member[defusedxml].Member[pulldom].Member[parseString]
+    - Argument[0]
+    - ReturnValue
+    - taint

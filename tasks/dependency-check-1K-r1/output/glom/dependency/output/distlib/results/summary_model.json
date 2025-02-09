@@ -1,0 +1,819 @@
+[
+  {
+    "The callable [which](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: which\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py\nThe callable [which](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg2\n- Function: which\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py": "The callable [which](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: which\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py\nThe callable [which](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg2\n- Function: which\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+    "package": "distlib",
+    "model": {
+      "callable": "which",
+      "parameter": "Arg0",
+      "function": "which",
+      "module": "distlib.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[compat].Member[which]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [fsencode](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: fsencode\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py": "The callable [fsencode](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: fsencode\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+    "package": "distlib",
+    "model": {
+      "callable": "fsencode",
+      "parameter": "Arg0",
+      "function": "fsencode",
+      "module": "distlib.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[compat].Member[fsencode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [fsdecode](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: fsdecode\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py": "The callable [fsdecode](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: fsdecode\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+    "package": "distlib",
+    "model": {
+      "callable": "fsdecode",
+      "parameter": "Arg0",
+      "function": "fsdecode",
+      "module": "distlib.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[compat].Member[fsdecode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_normal_name](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: _get_normal_name\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py": "The callable [_get_normal_name](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: _get_normal_name\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_get_normal_name",
+      "parameter": "Arg0",
+      "function": "_get_normal_name",
+      "module": "distlib.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[compat].Member[_get_normal_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [find_cookie](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: find_cookie\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py": "The callable [find_cookie](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: find_cookie\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+    "package": "distlib",
+    "model": {
+      "callable": "find_cookie",
+      "parameter": "Arg0",
+      "function": "find_cookie",
+      "module": "distlib.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[compat].Member[find_cookie]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [cache_from_source](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: cache_from_source\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py": "The callable [cache_from_source](1) is a class pollution taint propagation API in [Module distlib.compat](2) \n- Parameter: Arg0\n- Function: cache_from_source\n- Module: Module distlib.compat\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.py",
+    "package": "distlib",
+    "model": {
+      "callable": "cache_from_source",
+      "parameter": "Arg0",
+      "function": "cache_from_source",
+      "module": "distlib.compat",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/compat.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[compat].Member[cache_from_source]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_dependent_dists](1) is a class pollution taint propagation API in [Module distlib.database](2) \n- Parameter: Arg0\n- Function: get_dependent_dists\n- Module: Module distlib.database\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/database.py\nThe callable [get_dependent_dists](1) is a class pollution taint propagation API in [Module distlib.database](2) \n- Parameter: Arg1\n- Function: get_dependent_dists\n- Module: Module distlib.database\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/database.py": "The callable [get_dependent_dists](1) is a class pollution taint propagation API in [Module distlib.database](2) \n- Parameter: Arg0\n- Function: get_dependent_dists\n- Module: Module distlib.database\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/database.py\nThe callable [get_dependent_dists](1) is a class pollution taint propagation API in [Module distlib.database](2) \n- Parameter: Arg1\n- Function: get_dependent_dists\n- Module: Module distlib.database\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/database.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_dependent_dists",
+      "parameter": "Arg0",
+      "function": "get_dependent_dists",
+      "module": "distlib.database",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/database.py",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[database].Member[get_dependent_dists]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.locators](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module distlib.locators\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/locators.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.locators](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module distlib.locators\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/locators.py",
+    "package": "distlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "distlib.locators",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/locators.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[locators].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_full_version](1) is a class pollution taint propagation API in [Module distlib.markers](2) \n- Parameter: Arg0\n- Function: format_full_version\n- Module: Module distlib.markers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/markers.py": "The callable [format_full_version](1) is a class pollution taint propagation API in [Module distlib.markers](2) \n- Parameter: Arg0\n- Function: format_full_version\n- Module: Module distlib.markers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/markers.py",
+    "package": "distlib",
+    "model": {
+      "callable": "format_full_version",
+      "parameter": "Arg0",
+      "function": "format_full_version",
+      "module": "distlib.markers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/markers.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[markers].Member[format_full_version]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [interpret](1) is a class pollution taint propagation API in [Module distlib.markers](2) \n- Parameter: Arg0\n- Function: interpret\n- Module: Module distlib.markers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/markers.py": "The callable [interpret](1) is a class pollution taint propagation API in [Module distlib.markers](2) \n- Parameter: Arg0\n- Function: interpret\n- Module: Module distlib.markers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/markers.py",
+    "package": "distlib",
+    "model": {
+      "callable": "interpret",
+      "parameter": "Arg0",
+      "function": "interpret",
+      "module": "distlib.markers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/markers.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[markers].Member[interpret]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_get_name_and_version](1) is a class pollution taint propagation API in [Module distlib.metadata](2) \n- Parameter: Arg0\n- Function: _get_name_and_version\n- Module: Module distlib.metadata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py\nThe callable [_get_name_and_version](1) is a class pollution taint propagation API in [Module distlib.metadata](2) \n- Parameter: Arg1\n- Function: _get_name_and_version\n- Module: Module distlib.metadata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py": "The callable [_get_name_and_version](1) is a class pollution taint propagation API in [Module distlib.metadata](2) \n- Parameter: Arg0\n- Function: _get_name_and_version\n- Module: Module distlib.metadata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py\nThe callable [_get_name_and_version](1) is a class pollution taint propagation API in [Module distlib.metadata](2) \n- Parameter: Arg1\n- Function: _get_name_and_version\n- Module: Module distlib.metadata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_get_name_and_version",
+      "parameter": "Arg0",
+      "function": "_get_name_and_version",
+      "module": "distlib.metadata",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[metadata].Member[_get_name_and_version]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [process_entries](1) is a class pollution taint propagation API in [Module distlib.metadata](2) \n- Parameter: Arg0\n- Function: process_entries\n- Module: Module distlib.metadata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py": "The callable [process_entries](1) is a class pollution taint propagation API in [Module distlib.metadata](2) \n- Parameter: Arg0\n- Function: process_entries\n- Module: Module distlib.metadata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.py",
+    "package": "distlib",
+    "model": {
+      "callable": "process_entries",
+      "parameter": "Arg0",
+      "function": "process_entries",
+      "module": "distlib.metadata",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/metadata.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[metadata].Member[process_entries]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [enquote_executable](1) is a class pollution taint propagation API in [Module distlib.scripts](2) \n- Parameter: Arg0\n- Function: enquote_executable\n- Module: Module distlib.scripts\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/scripts.py": "The callable [enquote_executable](1) is a class pollution taint propagation API in [Module distlib.scripts](2) \n- Parameter: Arg0\n- Function: enquote_executable\n- Module: Module distlib.scripts\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/scripts.py",
+    "package": "distlib",
+    "model": {
+      "callable": "enquote_executable",
+      "parameter": "Arg0",
+      "function": "enquote_executable",
+      "module": "distlib.scripts",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/scripts.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[scripts].Member[enquote_executable]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_marker](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: parse_marker\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [parse_marker](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: parse_marker\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "parse_marker",
+      "parameter": "Arg0",
+      "function": "parse_marker",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[parse_marker]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [marker_var](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker_var\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [marker_var](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker_var\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "marker_var",
+      "parameter": "Arg0",
+      "function": "marker_var",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[marker_var]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [marker_expr](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker_expr\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [marker_expr](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker_expr\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "marker_expr",
+      "parameter": "Arg0",
+      "function": "marker_expr",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[marker_expr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [marker_and](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker_and\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [marker_and](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker_and\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "marker_and",
+      "parameter": "Arg0",
+      "function": "marker_and",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[marker_and]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [marker](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [marker](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: marker\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "marker",
+      "parameter": "Arg0",
+      "function": "marker",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[marker]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_versions](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: get_versions\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [get_versions](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: get_versions\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_versions",
+      "parameter": "Arg0",
+      "function": "get_versions",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[get_versions]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_rel_path](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg1\n- Function: get_rel_path\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [get_rel_path](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg1\n- Function: get_rel_path\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_rel_path",
+      "parameter": "Arg1",
+      "function": "get_rel_path",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[get_rel_path]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [proceed](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg3\n- Function: proceed\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [proceed](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg3\n- Function: proceed\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "proceed",
+      "parameter": "Arg3",
+      "function": "proceed",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[proceed]",
+      "Argument[3]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [convert_path](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: convert_path\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [convert_path](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: convert_path\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "convert_path",
+      "parameter": "Arg0",
+      "function": "convert_path",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[convert_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_cache_base](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: get_cache_base\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [get_cache_base](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: get_cache_base\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_cache_base",
+      "parameter": "Arg0",
+      "function": "get_cache_base",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[get_cache_base]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [path_to_cache_dir](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: path_to_cache_dir\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [path_to_cache_dir](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: path_to_cache_dir\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "path_to_cache_dir",
+      "parameter": "Arg0",
+      "function": "path_to_cache_dir",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[path_to_cache_dir]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ensure_slash](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: ensure_slash\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [ensure_slash](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: ensure_slash\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "ensure_slash",
+      "parameter": "Arg0",
+      "function": "ensure_slash",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[ensure_slash]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_credentials](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: parse_credentials\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [parse_credentials](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: parse_credentials\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "parse_credentials",
+      "parameter": "Arg0",
+      "function": "parse_credentials",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[parse_credentials]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [split_filename](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: split_filename\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [split_filename](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: split_filename\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "split_filename",
+      "parameter": "Arg0",
+      "function": "split_filename",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[split_filename]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_name_and_version](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: parse_name_and_version\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [parse_name_and_version](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: parse_name_and_version\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "parse_name_and_version",
+      "parameter": "Arg0",
+      "function": "parse_name_and_version",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[parse_name_and_version]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_extras](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: get_extras\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [get_extras](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: get_extras\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_extras",
+      "parameter": "Arg0",
+      "function": "get_extras",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[get_extras]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [iglob](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: iglob\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [iglob](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: iglob\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "iglob",
+      "parameter": "Arg0",
+      "function": "iglob",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[iglob]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [normalize_name](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: normalize_name\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py": "The callable [normalize_name](1) is a class pollution taint propagation API in [Module distlib.util](2) \n- Parameter: Arg0\n- Function: normalize_name\n- Module: Module distlib.util\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.py",
+    "package": "distlib",
+    "model": {
+      "callable": "normalize_name",
+      "parameter": "Arg0",
+      "function": "normalize_name",
+      "module": "distlib.util",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/util.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[util].Member[normalize_name]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_pep_440_key](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _pep_440_key\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [_pep_440_key](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _pep_440_key\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_pep_440_key",
+      "parameter": "Arg0",
+      "function": "_pep_440_key",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[_pep_440_key]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_suggest_semantic_version](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _suggest_semantic_version\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [_suggest_semantic_version](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _suggest_semantic_version\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_suggest_semantic_version",
+      "parameter": "Arg0",
+      "function": "_suggest_semantic_version",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[_suggest_semantic_version]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_suggest_normalized_version](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _suggest_normalized_version\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [_suggest_normalized_version](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _suggest_normalized_version\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_suggest_normalized_version",
+      "parameter": "Arg0",
+      "function": "_suggest_normalized_version",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[_suggest_normalized_version]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_legacy_key](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _legacy_key\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [_legacy_key](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _legacy_key\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_legacy_key",
+      "parameter": "Arg0",
+      "function": "_legacy_key",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[_legacy_key]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_parts](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: get_parts\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [get_parts](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: get_parts\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_parts",
+      "parameter": "Arg0",
+      "function": "get_parts",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[get_parts]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_semantic_key](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _semantic_key\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [_semantic_key](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: _semantic_key\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "_semantic_key",
+      "parameter": "Arg0",
+      "function": "_semantic_key",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[_semantic_key]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [make_tuple](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: make_tuple\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py\nThe callable [make_tuple](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg1\n- Function: make_tuple\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [make_tuple](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg0\n- Function: make_tuple\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py\nThe callable [make_tuple](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg1\n- Function: make_tuple\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "make_tuple",
+      "parameter": "Arg0",
+      "function": "make_tuple",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[make_tuple]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.version](2) \n- Parameter: Arg1\n- Function: lambda\n- Module: Module distlib.version\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.py",
+    "package": "distlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg1",
+      "function": "lambda",
+      "module": "distlib.version",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/version.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[version].Member[lambda]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py",
+    "package": "distlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "distlib.wheel",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[wheel].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py",
+    "package": "distlib",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "distlib.wheel",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[wheel].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [sorter](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: sorter\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py": "The callable [sorter](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: sorter\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py",
+    "package": "distlib",
+    "model": {
+      "callable": "sorter",
+      "parameter": "Arg0",
+      "function": "sorter",
+      "module": "distlib.wheel",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[wheel].Member[sorter]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_version](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: get_version\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py": "The callable [get_version](1) is a class pollution taint propagation API in [Module distlib.wheel](2) \n- Parameter: Arg0\n- Function: get_version\n- Module: Module distlib.wheel\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.py",
+    "package": "distlib",
+    "model": {
+      "callable": "get_version",
+      "parameter": "Arg0",
+      "function": "get_version",
+      "module": "distlib.wheel",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/distlib/codebase/distlib/wheel.p",
+      "package_name": "distlib"
+    },
+    "data_extension": [
+      "distlib",
+      "Member[distlib].Member[wheel].Member[get_version]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

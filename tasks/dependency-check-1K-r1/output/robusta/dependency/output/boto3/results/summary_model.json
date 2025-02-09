@@ -1,0 +1,249 @@
+[
+  {
+    "The callable [get_identifier](1) is a class pollution taint propagation API in [Module boto3.resources.factory](2) \n- Parameter: Arg0\n- Function: get_identifier\n- Module: Module boto3.resources.factory\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.py": "The callable [get_identifier](1) is a class pollution taint propagation API in [Module boto3.resources.factory](2) \n- Parameter: Arg0\n- Function: get_identifier\n- Module: Module boto3.resources.factory\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.py",
+    "package": "boto3",
+    "model": {
+      "callable": "get_identifier",
+      "parameter": "Arg0",
+      "function": "get_identifier",
+      "module": "boto3.resources.factory",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[resources].Member[factory].Member[get_identifier]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_identifier](1) is a class pollution taint propagation API in [Module boto3.resources.factory](2) \n- Parameter: Arg0\n- Function: get_identifier\n- Module: Module boto3.resources.factory\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.py": "The callable [get_identifier](1) is a class pollution taint propagation API in [Module boto3.resources.factory](2) \n- Parameter: Arg0\n- Function: get_identifier\n- Module: Module boto3.resources.factory\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.py",
+    "package": "boto3",
+    "model": {
+      "callable": "get_identifier",
+      "parameter": "Arg0",
+      "function": "get_identifier",
+      "module": "boto3.resources.factory",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[resources].Member[factory].Member[get_identifier]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [property_loader](1) is a class pollution taint propagation API in [Module boto3.resources.factory](2) \n- Parameter: Arg0\n- Function: property_loader\n- Module: Module boto3.resources.factory\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.py": "The callable [property_loader](1) is a class pollution taint propagation API in [Module boto3.resources.factory](2) \n- Parameter: Arg0\n- Function: property_loader\n- Module: Module boto3.resources.factory\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.py",
+    "package": "boto3",
+    "model": {
+      "callable": "property_loader",
+      "parameter": "Arg0",
+      "function": "property_loader",
+      "module": "boto3.resources.factory",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/factory.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[resources].Member[factory].Member[property_loader]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [bucket_copy](1) is a class pollution taint propagation API in [Module boto3.s3.inject](2) \n- Parameter: Arg0\n- Function: bucket_copy\n- Module: Module boto3.s3.inject\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/s3/inject.py": "The callable [bucket_copy](1) is a class pollution taint propagation API in [Module boto3.s3.inject](2) \n- Parameter: Arg0\n- Function: bucket_copy\n- Module: Module boto3.s3.inject\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/s3/inject.py",
+    "package": "boto3",
+    "model": {
+      "callable": "bucket_copy",
+      "parameter": "Arg0",
+      "function": "bucket_copy",
+      "module": "boto3.s3.inject",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/s3/inject.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[s3].Member[inject].Member[bucket_copy]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [object_copy](1) is a class pollution taint propagation API in [Module boto3.s3.inject](2) \n- Parameter: Arg0\n- Function: object_copy\n- Module: Module boto3.s3.inject\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/s3/inject.py": "The callable [object_copy](1) is a class pollution taint propagation API in [Module boto3.s3.inject](2) \n- Parameter: Arg0\n- Function: object_copy\n- Module: Module boto3.s3.inject\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/s3/inject.py",
+    "package": "boto3",
+    "model": {
+      "callable": "object_copy",
+      "parameter": "Arg0",
+      "function": "object_copy",
+      "module": "boto3.s3.inject",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/s3/inject.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[s3].Member[inject].Member[object_copy]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_data_member](1) is a class pollution taint propagation API in [Module boto3.resources.params](2) \n- Parameter: Arg0\n- Function: get_data_member\n- Module: Module boto3.resources.params\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/params.py": "The callable [get_data_member](1) is a class pollution taint propagation API in [Module boto3.resources.params](2) \n- Parameter: Arg0\n- Function: get_data_member\n- Module: Module boto3.resources.params\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/params.py",
+    "package": "boto3",
+    "model": {
+      "callable": "get_data_member",
+      "parameter": "Arg0",
+      "function": "get_data_member",
+      "module": "boto3.resources.params",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/params.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[resources].Member[params].Member[get_data_member]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [create_request_parameters](1) is a class pollution taint propagation API in [Module boto3.resources.params](2) \n- Parameter: Arg2\n- Function: create_request_parameters\n- Module: Module boto3.resources.params\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/params.py": "The callable [create_request_parameters](1) is a class pollution taint propagation API in [Module boto3.resources.params](2) \n- Parameter: Arg2\n- Function: create_request_parameters\n- Module: Module boto3.resources.params\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/params.py",
+    "package": "boto3",
+    "model": {
+      "callable": "create_request_parameters",
+      "parameter": "Arg2",
+      "function": "create_request_parameters",
+      "module": "boto3.resources.params",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/params.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[resources].Member[params].Member[create_request_parameters]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [build_identifiers](1) is a class pollution taint propagation API in [Module boto3.resources.response](2) \n- Parameter: Arg1\n- Function: build_identifiers\n- Module: Module boto3.resources.response\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py\nThe callable [build_identifiers](1) is a class pollution taint propagation API in [Module boto3.resources.response](2) \n- Parameter: Arg2\n- Function: build_identifiers\n- Module: Module boto3.resources.response\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py\nThe callable [build_identifiers](1) is a class pollution taint propagation API in [Module boto3.resources.response](2) \n- Parameter: Arg3\n- Function: build_identifiers\n- Module: Module boto3.resources.response\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py": "The callable [build_identifiers](1) is a class pollution taint propagation API in [Module boto3.resources.response](2) \n- Parameter: Arg1\n- Function: build_identifiers\n- Module: Module boto3.resources.response\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py\nThe callable [build_identifiers](1) is a class pollution taint propagation API in [Module boto3.resources.response](2) \n- Parameter: Arg2\n- Function: build_identifiers\n- Module: Module boto3.resources.response\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py\nThe callable [build_identifiers](1) is a class pollution taint propagation API in [Module boto3.resources.response](2) \n- Parameter: Arg3\n- Function: build_identifiers\n- Module: Module boto3.resources.response\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py",
+    "package": "boto3",
+    "model": {
+      "callable": "build_identifiers",
+      "parameter": "Arg1",
+      "function": "build_identifiers",
+      "module": "boto3.resources.response",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/resources/response.py",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[resources].Member[response].Member[build_identifiers]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boto3.docs.subresource](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boto3.docs.subresource\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/subresource.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boto3.docs.subresource](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boto3.docs.subresource\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/subresource.py",
+    "package": "boto3",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boto3.docs.subresource",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/subresource.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[docs].Member[subresource].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [copy_dynamodb_params](1) is a class pollution taint propagation API in [Module boto3.dynamodb.transform](2) \n- Parameter: Arg0\n- Function: copy_dynamodb_params\n- Module: Module boto3.dynamodb.transform\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/dynamodb/transform.py": "The callable [copy_dynamodb_params](1) is a class pollution taint propagation API in [Module boto3.dynamodb.transform](2) \n- Parameter: Arg0\n- Function: copy_dynamodb_params\n- Module: Module boto3.dynamodb.transform\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/dynamodb/transform.py",
+    "package": "boto3",
+    "model": {
+      "callable": "copy_dynamodb_params",
+      "parameter": "Arg0",
+      "function": "copy_dynamodb_params",
+      "module": "boto3.dynamodb.transform",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/dynamodb/transform.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[dynamodb].Member[transform].Member[copy_dynamodb_params]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_identifier_values_for_example](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg0\n- Function: get_identifier_values_for_example\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py": "The callable [get_identifier_values_for_example](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg0\n- Function: get_identifier_values_for_example\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py",
+    "package": "boto3",
+    "model": {
+      "callable": "get_identifier_values_for_example",
+      "parameter": "Arg0",
+      "function": "get_identifier_values_for_example",
+      "module": "boto3.docs.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[docs].Member[utils].Member[get_identifier_values_for_example]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_identifier_args_for_signature](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg0\n- Function: get_identifier_args_for_signature\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py": "The callable [get_identifier_args_for_signature](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg0\n- Function: get_identifier_args_for_signature\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py",
+    "package": "boto3",
+    "model": {
+      "callable": "get_identifier_args_for_signature",
+      "parameter": "Arg0",
+      "function": "get_identifier_args_for_signature",
+      "module": "boto3.docs.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.p",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[docs].Member[utils].Member[get_identifier_args_for_signature]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_identifier_description](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg0\n- Function: get_identifier_description\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py\nThe callable [get_identifier_description](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg1\n- Function: get_identifier_description\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py": "The callable [get_identifier_description](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg0\n- Function: get_identifier_description\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py\nThe callable [get_identifier_description](1) is a class pollution taint propagation API in [Module boto3.docs.utils](2) \n- Parameter: Arg1\n- Function: get_identifier_description\n- Module: Module boto3.docs.utils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py",
+    "package": "boto3",
+    "model": {
+      "callable": "get_identifier_description",
+      "parameter": "Arg0",
+      "function": "get_identifier_description",
+      "module": "boto3.docs.utils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/boto3/codebase/boto3/docs/utils.py",
+      "package_name": "boto3"
+    },
+    "data_extension": [
+      "boto3",
+      "Member[boto3].Member[docs].Member[utils].Member[get_identifier_description]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

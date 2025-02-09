@@ -1,0 +1,42 @@
+[
+  {
+    "The callable [validate_encoding_and_error_handler](1) is a class pollution sink API in [Module docutils.frontend](2) \n- Type: setattr\n- Base: Arg2\n- Key: Arg0\n- Value: Arg1\n- Function: validate_encoding_and_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [validate_encoding_and_error_handler](1) is a class pollution sink API in [Module docutils.frontend](2) \n- Type: setattr\n- Base: Arg2\n- Key: Arg0\n- Value: Arg1\n- Function: validate_encoding_and_error_handler\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "validate_encoding_and_error_handler",
+      "type": "setattr",
+      "base": "Arg2",
+      "key": "Arg0",
+      "value": "Arg1",
+      "function": "validate_encoding_and_error_handler",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.p",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[validate_encoding_and_error_handler].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [make_paths_absolute](1) is a class pollution sink API in [Module docutils.frontend](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: make_paths_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [make_paths_absolute](1) is a class pollution sink API in [Module docutils.frontend](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: make_paths_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py": "The callable [make_paths_absolute](1) is a class pollution sink API in [Module docutils.frontend](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: make_paths_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py\nThe callable [make_paths_absolute](1) is a class pollution sink API in [Module docutils.frontend](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg2\n- Function: make_paths_absolute\n- Module: Module docutils.frontend\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+    "package": "docutils",
+    "model": {
+      "callable": "make_paths_absolute",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg1",
+      "value": "Arg0",
+      "function": "make_paths_absolute",
+      "module": "docutils.frontend",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/docutils/codebase/docutils/frontend.py",
+      "package_name": "docutils"
+    },
+    "data_extension": [
+      "docutils",
+      "Member[docutils].Member[frontend].Member[make_paths_absolute].Argument[1]",
+      "class-pollution-sink"
+    ]
+  }
+]

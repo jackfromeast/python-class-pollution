@@ -1,0 +1,10 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - chardet
+    - Member[chardet].Member[cli].Member[chardetect].Member[description_of]
+    - Argument[1]
+    - ReturnValue
+    - taint

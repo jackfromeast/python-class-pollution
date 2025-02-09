@@ -1,0 +1,22 @@
+[
+  {
+    "The callable [override_config](1) is a class pollution sink API in [Module coverage.control](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: override_config\n- Module: Module coverage.control\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/coverage/codebase/coverage/control.py": "The callable [override_config](1) is a class pollution sink API in [Module coverage.control](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: override_config\n- Module: Module coverage.control\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/coverage/codebase/coverage/control.py",
+    "package": "coverage",
+    "model": {
+      "callable": "override_config",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "override_config",
+      "module": "coverage.control",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/coverage/codebase/coverage/control.p",
+      "package_name": "coverage"
+    },
+    "data_extension": [
+      "coverage",
+      "Member[coverage].Member[control].Member[override_config].Argument[0]",
+      "class-pollution-sink"
+    ]
+  }
+]

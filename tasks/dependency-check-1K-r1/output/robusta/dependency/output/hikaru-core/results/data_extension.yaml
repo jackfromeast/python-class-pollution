@@ -1,0 +1,125 @@
+extensions:
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: sinkModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[crd].Member[_set_if_non_null].Argument[3]
+    - class-pollution-sink
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[app].Member[get_label_selector_for_instance_id]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[crd].Member[register_crd_class]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[generate].Member[_determine_version_kind]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[generate].Member[_vk_mapper]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[naming].Member[process_api_version]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[naming].Member[full_swagger_name]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[naming].Member[process_swagger_name]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[naming].Member[make_swagger_name]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[naming].Member[camel_to_pep8]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[tweaks].Member[_register]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[utils].Member[get_args]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[utils].Member[get_origin]
+    - Argument[0]
+    - ReturnValue
+    - taint
+- addsTo:
+    pack: jackfromeast/class-pollution-all
+    extensible: summaryModel
+    data:
+    - hikaru-core
+    - Member[hikaru].Member[utils].Member[rollback_cm]
+    - Argument[0]
+    - ReturnValue
+    - taint

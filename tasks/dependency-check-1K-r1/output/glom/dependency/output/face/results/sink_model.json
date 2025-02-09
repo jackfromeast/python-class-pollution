@@ -1,0 +1,62 @@
+[
+  {
+    "The callable [face_middleware](1) is a class pollution sink API in [Module face.middleware](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py": "The callable [face_middleware](1) is a class pollution sink API in [Module face.middleware](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py",
+    "package": "face",
+    "model": {
+      "callable": "face_middleware",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "face_middleware",
+      "module": "face.middleware",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[middleware].Member[face_middleware].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [decorate_face_middleware](1) is a class pollution sink API in [Module face.middleware](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: decorate_face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py": "The callable [decorate_face_middleware](1) is a class pollution sink API in [Module face.middleware](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg0\n- Value: Arg0\n- Function: decorate_face_middleware\n- Module: Module face.middleware\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.py",
+    "package": "face",
+    "model": {
+      "callable": "decorate_face_middleware",
+      "type": "setItem",
+      "base": "Arg0",
+      "key": "Arg0",
+      "value": "Arg0",
+      "function": "decorate_face_middleware",
+      "module": "face.middleware",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/middleware.p",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[middleware].Member[decorate_face_middleware].Argument[0]",
+      "class-pollution-sink"
+    ]
+  },
+  {
+    "The callable [_sync_env](1) is a class pollution sink API in [Module face.testing](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg1\n- Value: Arg0\n- Function: _sync_env\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py\nThe callable [_sync_env](1) is a class pollution sink API in [Module face.testing](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: _sync_env\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py": "The callable [_sync_env](1) is a class pollution sink API in [Module face.testing](2) \n- Type: setItem\n- Base: Arg2\n- Key: Arg1\n- Value: Arg0\n- Function: _sync_env\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py\nThe callable [_sync_env](1) is a class pollution sink API in [Module face.testing](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: _sync_env\n- Module: Module face.testing\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py",
+    "package": "face",
+    "model": {
+      "callable": "_sync_env",
+      "type": "setItem",
+      "base": "Arg2",
+      "key": "Arg1",
+      "value": "Arg0",
+      "function": "_sync_env",
+      "module": "face.testing",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/face/codebase/face/testing.py",
+      "package_name": "face"
+    },
+    "data_extension": [
+      "face",
+      "Member[face].Member[testing].Member[_sync_env].Argument[1]",
+      "class-pollution-sink"
+    ]
+  }
+]

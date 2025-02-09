@@ -1,0 +1,1902 @@
+[
+  {
+    "The callable [make_cache_key](1) is a class pollution taint propagation API in [Module boltons.cacheutils](2) \n- Parameter: Arg0\n- Function: make_cache_key\n- Module: Module boltons.cacheutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py\nThe callable [make_cache_key](1) is a class pollution taint propagation API in [Module boltons.cacheutils](2) \n- Parameter: Arg3\n- Function: make_cache_key\n- Module: Module boltons.cacheutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py": "The callable [make_cache_key](1) is a class pollution taint propagation API in [Module boltons.cacheutils](2) \n- Parameter: Arg0\n- Function: make_cache_key\n- Module: Module boltons.cacheutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py\nThe callable [make_cache_key](1) is a class pollution taint propagation API in [Module boltons.cacheutils](2) \n- Parameter: Arg3\n- Function: make_cache_key\n- Module: Module boltons.cacheutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "make_cache_key",
+      "parameter": "Arg0",
+      "function": "make_cache_key",
+      "module": "boltons.cacheutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[cacheutils].Member[make_cache_key]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.cacheutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.cacheutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.cacheutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.cacheutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.cacheutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/cacheutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[cacheutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [dumps](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: dumps\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py": "The callable [dumps](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: dumps\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "dumps",
+      "parameter": "Arg0",
+      "function": "dumps",
+      "module": "boltons.ecoutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[ecoutils].Member[dumps]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_escape_shell_args](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: _escape_shell_args\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py": "The callable [_escape_shell_args](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: _escape_shell_args\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_escape_shell_args",
+      "parameter": "Arg0",
+      "function": "_escape_shell_args",
+      "module": "boltons.ecoutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[ecoutils].Member[_escape_shell_args]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_args2sh](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: _args2sh\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py": "The callable [_args2sh](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: _args2sh\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_args2sh",
+      "parameter": "Arg0",
+      "function": "_args2sh",
+      "module": "boltons.ecoutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[ecoutils].Member[_args2sh]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_args2cmd](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: _args2cmd\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py": "The callable [_args2cmd](1) is a class pollution taint propagation API in [Module boltons.ecoutils](2) \n- Parameter: Arg0\n- Function: _args2cmd\n- Module: Module boltons.ecoutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_args2cmd",
+      "parameter": "Arg0",
+      "function": "_args2cmd",
+      "module": "boltons.ecoutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/ecoutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[ecoutils].Member[_args2cmd]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [path_to_unicode](1) is a class pollution taint propagation API in [Module boltons.fileutils](2) \n- Parameter: Arg0\n- Function: path_to_unicode\n- Module: Module boltons.fileutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/fileutils.py": "The callable [path_to_unicode](1) is a class pollution taint propagation API in [Module boltons.fileutils](2) \n- Parameter: Arg0\n- Function: path_to_unicode\n- Module: Module boltons.fileutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/fileutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "path_to_unicode",
+      "parameter": "Arg0",
+      "function": "path_to_unicode",
+      "module": "boltons.fileutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/fileutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[fileutils].Member[path_to_unicode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [construct_format_field_str](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg0\n- Function: construct_format_field_str\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py\nThe callable [construct_format_field_str](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg1\n- Function: construct_format_field_str\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py\nThe callable [construct_format_field_str](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg2\n- Function: construct_format_field_str\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py": "The callable [construct_format_field_str](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg0\n- Function: construct_format_field_str\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py\nThe callable [construct_format_field_str](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg1\n- Function: construct_format_field_str\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py\nThe callable [construct_format_field_str](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg2\n- Function: construct_format_field_str\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "construct_format_field_str",
+      "parameter": "Arg0",
+      "function": "construct_format_field_str",
+      "module": "boltons.formatutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[formatutils].Member[construct_format_field_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [infer_positional_format_args](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg0\n- Function: infer_positional_format_args\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py": "The callable [infer_positional_format_args](1) is a class pollution taint propagation API in [Module boltons.formatutils](2) \n- Parameter: Arg0\n- Function: infer_positional_format_args\n- Module: Module boltons.formatutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "infer_positional_format_args",
+      "parameter": "Arg0",
+      "function": "infer_positional_format_args",
+      "module": "boltons.formatutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/formatutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[formatutils].Member[infer_positional_format_args]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [inspect_formatargspec](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg1\n- Function: inspect_formatargspec\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [inspect_formatargspec](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: inspect_formatargspec\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [inspect_formatargspec](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg4\n- Function: inspect_formatargspec\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [inspect_formatargspec](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg1\n- Function: inspect_formatargspec\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [inspect_formatargspec](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: inspect_formatargspec\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [inspect_formatargspec](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg4\n- Function: inspect_formatargspec\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "inspect_formatargspec",
+      "parameter": "Arg1",
+      "function": "inspect_formatargspec",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[inspect_formatargspec]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [formatargandannotation](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: formatargandannotation\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [formatargandannotation](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: formatargandannotation\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "formatargandannotation",
+      "parameter": "Arg0",
+      "function": "formatargandannotation",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[formatargandannotation]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [partial_ordering](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: partial_ordering\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [partial_ordering](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: partial_ordering\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "partial_ordering",
+      "parameter": "Arg0",
+      "function": "partial_ordering",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[partial_ordering]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_invocation](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: format_invocation\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_invocation](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: format_invocation\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [format_invocation](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: format_invocation\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_invocation](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: format_invocation\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "format_invocation",
+      "parameter": "Arg0",
+      "function": "format_invocation",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[format_invocation]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_exp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: format_exp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_exp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: format_exp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_exp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg3\n- Function: format_exp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [format_exp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: format_exp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_exp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: format_exp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_exp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg3\n- Function: format_exp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "format_exp_repr",
+      "parameter": "Arg0",
+      "function": "format_exp_repr",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[format_exp_repr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_nonexp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: format_nonexp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_nonexp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg1\n- Function: format_nonexp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_nonexp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: format_nonexp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [format_nonexp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: format_nonexp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_nonexp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg1\n- Function: format_nonexp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [format_nonexp_repr](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: format_nonexp_repr\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "format_nonexp_repr",
+      "parameter": "Arg0",
+      "function": "format_nonexp_repr",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[format_nonexp_repr]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_parse_wraps_expected](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: _parse_wraps_expected\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [_parse_wraps_expected](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: _parse_wraps_expected\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_parse_wraps_expected",
+      "parameter": "Arg0",
+      "function": "_parse_wraps_expected",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[_parse_wraps_expected]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_indent](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: _indent\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [_indent](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg1\n- Function: _indent\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [_indent](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: _indent\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py": "The callable [_indent](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg0\n- Function: _indent\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [_indent](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg1\n- Function: _indent\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py\nThe callable [_indent](1) is a class pollution taint propagation API in [Module boltons.funcutils](2) \n- Parameter: Arg2\n- Function: _indent\n- Module: Module boltons.funcutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_indent",
+      "parameter": "Arg0",
+      "function": "_indent",
+      "module": "boltons.funcutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/funcutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[funcutils].Member[_indent]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [split](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: split\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [split](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: split\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "split",
+      "parameter": "Arg0",
+      "function": "split",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[split]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lstrip](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: lstrip\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [lstrip](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: lstrip\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lstrip",
+      "parameter": "Arg0",
+      "function": "lstrip",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[lstrip]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [rstrip](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: rstrip\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [rstrip](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: rstrip\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "rstrip",
+      "parameter": "Arg0",
+      "function": "rstrip",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[rstrip]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [strip](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: strip\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [strip](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: strip\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "strip",
+      "parameter": "Arg0",
+      "function": "strip",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[strip]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [strip_iter](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: strip_iter\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [strip_iter](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: strip_iter\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "strip_iter",
+      "parameter": "Arg0",
+      "function": "strip_iter",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[strip_iter]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "postprocess",
+      "parameter": "Arg0",
+      "function": "postprocess",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[postprocess]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "postprocess",
+      "parameter": "Arg0",
+      "function": "postprocess",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[postprocess]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [postprocess](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: postprocess\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "postprocess",
+      "parameter": "Arg0",
+      "function": "postprocess",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[postprocess]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "key_func",
+      "parameter": "Arg0",
+      "function": "key_func",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[key_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "key_func",
+      "parameter": "Arg0",
+      "function": "key_func",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[key_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [value_transform](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: value_transform\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [value_transform](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: value_transform\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "value_transform",
+      "parameter": "Arg0",
+      "function": "value_transform",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[value_transform]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [value_transform](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: value_transform\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [value_transform](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: value_transform\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "value_transform",
+      "parameter": "Arg0",
+      "function": "value_transform",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[value_transform]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unique](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: unique\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [unique](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: unique\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "unique",
+      "parameter": "Arg0",
+      "function": "unique",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[unique]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "key_func",
+      "parameter": "Arg0",
+      "function": "key_func",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[key_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "key_func",
+      "parameter": "Arg0",
+      "function": "key_func",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[key_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [redundant](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: redundant\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [redundant](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: redundant\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "redundant",
+      "parameter": "Arg0",
+      "function": "redundant",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[redundant]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [key_func](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: key_func\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "key_func",
+      "parameter": "Arg0",
+      "function": "key_func",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[key_func]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [one](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: one\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [one](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: one\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "one",
+      "parameter": "Arg1",
+      "function": "one",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[one]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [first](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: first\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [first](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: first\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "first",
+      "parameter": "Arg1",
+      "function": "first",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[first]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [flatten](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: flatten\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [flatten](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: flatten\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "flatten",
+      "parameter": "Arg0",
+      "function": "flatten",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[flatten]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [default_visit](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: default_visit\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [default_visit](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: default_visit\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [default_visit](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: default_visit\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [default_visit](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: default_visit\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "default_visit",
+      "parameter": "Arg1",
+      "function": "default_visit",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[default_visit]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [default_enter](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: default_enter\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [default_enter](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: default_enter\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "default_enter",
+      "parameter": "Arg2",
+      "function": "default_enter",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[default_enter]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [default_exit](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg3\n- Function: default_exit\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [default_exit](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg3\n- Function: default_exit\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "default_exit",
+      "parameter": "Arg3",
+      "function": "default_exit",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[default_exit]",
+      "Argument[3]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [remap](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: remap\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [remap](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: remap\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "remap",
+      "parameter": "Arg0",
+      "function": "remap",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[remap]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [get_path](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: get_path\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [get_path](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: get_path\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [get_path](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: get_path\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [get_path](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: get_path\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "get_path",
+      "parameter": "Arg0",
+      "function": "get_path",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[get_path]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [research](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: research\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [research](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: research\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "research",
+      "parameter": "Arg0",
+      "function": "research",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[research]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_enter](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: _enter\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [_enter](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: _enter\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_enter",
+      "parameter": "Arg2",
+      "function": "_enter",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[_enter]",
+      "Argument[2]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [soft_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: soft_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [soft_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: soft_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [soft_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: soft_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [soft_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: soft_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [soft_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg1\n- Function: soft_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py\nThe callable [soft_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg2\n- Function: soft_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "soft_sorted",
+      "parameter": "Arg0",
+      "function": "soft_sorted",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[soft_sorted]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [untyped_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: untyped_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py": "The callable [untyped_sorted](1) is a class pollution taint propagation API in [Module boltons.iterutils](2) \n- Parameter: Arg0\n- Function: untyped_sorted\n- Module: Module boltons.iterutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "untyped_sorted",
+      "parameter": "Arg0",
+      "function": "untyped_sorted",
+      "module": "boltons.iterutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/iterutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[iterutils].Member[untyped_sorted]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ceil](1) is a class pollution taint propagation API in [Module boltons.mathutils](2) \n- Parameter: Arg1\n- Function: ceil\n- Module: Module boltons.mathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/mathutils.py": "The callable [ceil](1) is a class pollution taint propagation API in [Module boltons.mathutils](2) \n- Parameter: Arg1\n- Function: ceil\n- Module: Module boltons.mathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/mathutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "ceil",
+      "parameter": "Arg1",
+      "function": "ceil",
+      "module": "boltons.mathutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/mathutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[mathutils].Member[ceil]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [floor](1) is a class pollution taint propagation API in [Module boltons.mathutils](2) \n- Parameter: Arg1\n- Function: floor\n- Module: Module boltons.mathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/mathutils.py": "The callable [floor](1) is a class pollution taint propagation API in [Module boltons.mathutils](2) \n- Parameter: Arg1\n- Function: floor\n- Module: Module boltons.mathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/mathutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "floor",
+      "parameter": "Arg1",
+      "function": "floor",
+      "module": "boltons.mathutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/mathutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[mathutils].Member[floor]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg0\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg1\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg2\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg3\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg4\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg5\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py": "The callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg0\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg1\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg2\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg3\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg4\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [augpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg5\n- Function: augpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "augpath",
+      "parameter": "Arg0",
+      "function": "augpath",
+      "module": "boltons.pathutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[pathutils].Member[augpath]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [shrinkuser](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg0\n- Function: shrinkuser\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [shrinkuser](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg1\n- Function: shrinkuser\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py": "The callable [shrinkuser](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg0\n- Function: shrinkuser\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py\nThe callable [shrinkuser](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg1\n- Function: shrinkuser\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "shrinkuser",
+      "parameter": "Arg0",
+      "function": "shrinkuser",
+      "module": "boltons.pathutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[pathutils].Member[shrinkuser]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [expandpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg0\n- Function: expandpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py": "The callable [expandpath](1) is a class pollution taint propagation API in [Module boltons.pathutils](2) \n- Parameter: Arg0\n- Function: expandpath\n- Module: Module boltons.pathutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "expandpath",
+      "parameter": "Arg0",
+      "function": "expandpath",
+      "module": "boltons.pathutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/pathutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[pathutils].Member[expandpath]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_norm_args_typeerror](1) is a class pollution taint propagation API in [Module boltons.setutils](2) \n- Parameter: Arg0\n- Function: _norm_args_typeerror\n- Module: Module boltons.setutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/setutils.py": "The callable [_norm_args_typeerror](1) is a class pollution taint propagation API in [Module boltons.setutils](2) \n- Parameter: Arg0\n- Function: _norm_args_typeerror\n- Module: Module boltons.setutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/setutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_norm_args_typeerror",
+      "parameter": "Arg0",
+      "function": "_norm_args_typeerror",
+      "module": "boltons.setutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/setutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[setutils].Member[_norm_args_typeerror]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_norm_args_notimplemented](1) is a class pollution taint propagation API in [Module boltons.setutils](2) \n- Parameter: Arg0\n- Function: _norm_args_notimplemented\n- Module: Module boltons.setutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/setutils.py": "The callable [_norm_args_notimplemented](1) is a class pollution taint propagation API in [Module boltons.setutils](2) \n- Parameter: Arg0\n- Function: _norm_args_notimplemented\n- Module: Module boltons.setutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/setutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_norm_args_notimplemented",
+      "parameter": "Arg0",
+      "function": "_norm_args_notimplemented",
+      "module": "boltons.setutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/setutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[setutils].Member[_norm_args_notimplemented]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.statsutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.statsutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/statsutils.py": "The callable [lambda](1) is a class pollution taint propagation API in [Module boltons.statsutils](2) \n- Parameter: Arg0\n- Function: lambda\n- Module: Module boltons.statsutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/statsutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "lambda",
+      "parameter": "Arg0",
+      "function": "lambda",
+      "module": "boltons.statsutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/statsutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[statsutils].Member[lambda]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [camel2under](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: camel2under\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [camel2under](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: camel2under\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "camel2under",
+      "parameter": "Arg0",
+      "function": "camel2under",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[camel2under]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [under2camel](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: under2camel\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [under2camel](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: under2camel\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "under2camel",
+      "parameter": "Arg0",
+      "function": "under2camel",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[under2camel]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [slugify](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: slugify\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [slugify](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: slugify\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [slugify](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: slugify\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [slugify](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: slugify\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "slugify",
+      "parameter": "Arg0",
+      "function": "slugify",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[slugify]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [split_punct_ws](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: split_punct_ws\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [split_punct_ws](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: split_punct_ws\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "split_punct_ws",
+      "parameter": "Arg0",
+      "function": "split_punct_ws",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[split_punct_ws]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unit_len](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: unit_len\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [unit_len](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: unit_len\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "unit_len",
+      "parameter": "Arg1",
+      "function": "unit_len",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[unit_len]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [ordinalize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: ordinalize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [ordinalize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: ordinalize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "ordinalize",
+      "parameter": "Arg0",
+      "function": "ordinalize",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[ordinalize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [cardinalize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: cardinalize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [cardinalize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: cardinalize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "cardinalize",
+      "parameter": "Arg0",
+      "function": "cardinalize",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[cardinalize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [singularize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: singularize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [singularize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: singularize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "singularize",
+      "parameter": "Arg0",
+      "function": "singularize",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[singularize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [pluralize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: pluralize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [pluralize](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: pluralize\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "pluralize",
+      "parameter": "Arg0",
+      "function": "pluralize",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[pluralize]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_match_case](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: _match_case\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [_match_case](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: _match_case\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_match_case",
+      "parameter": "Arg1",
+      "function": "_match_case",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[_match_case]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [find_hashtags](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: find_hashtags\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [find_hashtags](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: find_hashtags\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "find_hashtags",
+      "parameter": "Arg0",
+      "function": "find_hashtags",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[find_hashtags]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [a10n](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: a10n\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [a10n](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: a10n\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "a10n",
+      "parameter": "Arg0",
+      "function": "a10n",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[a10n]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [strip_ansi](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: strip_ansi\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [strip_ansi](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: strip_ansi\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "strip_ansi",
+      "parameter": "Arg0",
+      "function": "strip_ansi",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[strip_ansi]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [asciify](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: asciify\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [asciify](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: asciify\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "asciify",
+      "parameter": "Arg0",
+      "function": "asciify",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[asciify]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [bytes2human](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: bytes2human\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [bytes2human](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: bytes2human\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "bytes2human",
+      "parameter": "Arg1",
+      "function": "bytes2human",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[bytes2human]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [html2text](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: html2text\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [html2text](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: html2text\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "html2text",
+      "parameter": "Arg0",
+      "function": "html2text",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[html2text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [indent](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: indent\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [indent](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: indent\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [indent](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg2\n- Function: indent\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [indent](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: indent\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [indent](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: indent\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [indent](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg2\n- Function: indent\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "indent",
+      "parameter": "Arg0",
+      "function": "indent",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[indent]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape_shell_args](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: escape_shell_args\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [escape_shell_args](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: escape_shell_args\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "escape_shell_args",
+      "parameter": "Arg0",
+      "function": "escape_shell_args",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[escape_shell_args]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [args2sh](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: args2sh\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [args2sh](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: args2sh\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "args2sh",
+      "parameter": "Arg0",
+      "function": "args2sh",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[args2sh]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [args2cmd](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: args2cmd\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [args2cmd](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: args2cmd\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "args2cmd",
+      "parameter": "Arg0",
+      "function": "args2cmd",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[args2cmd]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: format_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [format_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg2\n- Function: format_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [format_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: format_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [format_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg2\n- Function: format_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "format_int_list",
+      "parameter": "Arg1",
+      "function": "format_int_list",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[format_int_list]",
+      "Argument[1]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [complement_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg3\n- Function: complement_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [complement_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg4\n- Function: complement_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [complement_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg3\n- Function: complement_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [complement_int_list](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg4\n- Function: complement_int_list\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "complement_int_list",
+      "parameter": "Arg3",
+      "function": "complement_int_list",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[complement_int_list]",
+      "Argument[3]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unwrap_text](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: unwrap_text\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [unwrap_text](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: unwrap_text\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [unwrap_text](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: unwrap_text\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py\nThe callable [unwrap_text](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg1\n- Function: unwrap_text\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "unwrap_text",
+      "parameter": "Arg0",
+      "function": "unwrap_text",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[unwrap_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [removeprefix](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: removeprefix\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py": "The callable [removeprefix](1) is a class pollution taint propagation API in [Module boltons.strutils](2) \n- Parameter: Arg0\n- Function: removeprefix\n- Module: Module boltons.strutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "removeprefix",
+      "parameter": "Arg0",
+      "function": "removeprefix",
+      "module": "boltons.strutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/strutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[strutils].Member[removeprefix]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [to_text](1) is a class pollution taint propagation API in [Module boltons.tableutils](2) \n- Parameter: Arg0\n- Function: to_text\n- Module: Module boltons.tableutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tableutils.py": "The callable [to_text](1) is a class pollution taint propagation API in [Module boltons.tableutils](2) \n- Parameter: Arg0\n- Function: to_text\n- Module: Module boltons.tableutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tableutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "to_text",
+      "parameter": "Arg0",
+      "function": "to_text",
+      "module": "boltons.tableutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tableutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[tableutils].Member[to_text]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [escape_html](1) is a class pollution taint propagation API in [Module boltons.tableutils](2) \n- Parameter: Arg0\n- Function: escape_html\n- Module: Module boltons.tableutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tableutils.py": "The callable [escape_html](1) is a class pollution taint propagation API in [Module boltons.tableutils](2) \n- Parameter: Arg0\n- Function: escape_html\n- Module: Module boltons.tableutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tableutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "escape_html",
+      "parameter": "Arg0",
+      "function": "escape_html",
+      "module": "boltons.tableutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tableutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[tableutils].Member[escape_html]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [format_exception_only](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg0\n- Function: format_exception_only\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py\nThe callable [format_exception_only](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg1\n- Function: format_exception_only\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py": "The callable [format_exception_only](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg0\n- Function: format_exception_only\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py\nThe callable [format_exception_only](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg1\n- Function: format_exception_only\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "format_exception_only",
+      "parameter": "Arg0",
+      "function": "format_exception_only",
+      "module": "boltons.tbutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[tbutils].Member[format_exception_only]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_some_str](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg0\n- Function: _some_str\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py": "The callable [_some_str](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg0\n- Function: _some_str\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_some_str",
+      "parameter": "Arg0",
+      "function": "_some_str",
+      "module": "boltons.tbutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[tbutils].Member[_some_str]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_format_final_exc_line](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg0\n- Function: _format_final_exc_line\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py\nThe callable [_format_final_exc_line](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg1\n- Function: _format_final_exc_line\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py": "The callable [_format_final_exc_line](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg0\n- Function: _format_final_exc_line\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py\nThe callable [_format_final_exc_line](1) is a class pollution taint propagation API in [Module boltons.tbutils](2) \n- Parameter: Arg1\n- Function: _format_final_exc_line\n- Module: Module boltons.tbutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_format_final_exc_line",
+      "parameter": "Arg0",
+      "function": "_format_final_exc_line",
+      "module": "boltons.tbutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/tbutils.py",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[tbutils].Member[_format_final_exc_line]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_cardinalize_time_unit](1) is a class pollution taint propagation API in [Module boltons.timeutils](2) \n- Parameter: Arg0\n- Function: _cardinalize_time_unit\n- Module: Module boltons.timeutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/timeutils.py": "The callable [_cardinalize_time_unit](1) is a class pollution taint propagation API in [Module boltons.timeutils](2) \n- Parameter: Arg0\n- Function: _cardinalize_time_unit\n- Module: Module boltons.timeutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/timeutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_cardinalize_time_unit",
+      "parameter": "Arg0",
+      "function": "_cardinalize_time_unit",
+      "module": "boltons.timeutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/timeutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[timeutils].Member[_cardinalize_time_unit]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [_first_sunday_on_or_after](1) is a class pollution taint propagation API in [Module boltons.timeutils](2) \n- Parameter: Arg0\n- Function: _first_sunday_on_or_after\n- Module: Module boltons.timeutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/timeutils.py": "The callable [_first_sunday_on_or_after](1) is a class pollution taint propagation API in [Module boltons.timeutils](2) \n- Parameter: Arg0\n- Function: _first_sunday_on_or_after\n- Module: Module boltons.timeutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/timeutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "_first_sunday_on_or_after",
+      "parameter": "Arg0",
+      "function": "_first_sunday_on_or_after",
+      "module": "boltons.timeutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/timeutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[timeutils].Member[_first_sunday_on_or_after]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [to_unicode](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: to_unicode\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [to_unicode](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: to_unicode\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "to_unicode",
+      "parameter": "Arg0",
+      "function": "to_unicode",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[to_unicode]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [quote_path_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_path_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [quote_path_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_path_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "quote_path_part",
+      "parameter": "Arg0",
+      "function": "quote_path_part",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[quote_path_part]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [quote_query_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_query_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [quote_query_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_query_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "quote_query_part",
+      "parameter": "Arg0",
+      "function": "quote_query_part",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[quote_query_part]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [quote_fragment_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_fragment_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [quote_fragment_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_fragment_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "quote_fragment_part",
+      "parameter": "Arg0",
+      "function": "quote_fragment_part",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[quote_fragment_part]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [quote_userinfo_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_userinfo_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [quote_userinfo_part](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: quote_userinfo_part\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "quote_userinfo_part",
+      "parameter": "Arg0",
+      "function": "quote_userinfo_part",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[quote_userinfo_part]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unquote](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: unquote\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [unquote](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: unquote\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "unquote",
+      "parameter": "Arg0",
+      "function": "unquote",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[unquote]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [unquote_to_bytes](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: unquote_to_bytes\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [unquote_to_bytes](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: unquote_to_bytes\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "unquote_to_bytes",
+      "parameter": "Arg0",
+      "function": "unquote_to_bytes",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[unquote_to_bytes]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [resolve_path_parts](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: resolve_path_parts\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [resolve_path_parts](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: resolve_path_parts\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "resolve_path_parts",
+      "parameter": "Arg0",
+      "function": "resolve_path_parts",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[resolve_path_parts]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_host](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: parse_host\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [parse_host](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: parse_host\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "parse_host",
+      "parameter": "Arg0",
+      "function": "parse_host",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[parse_host]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  },
+  {
+    "The callable [parse_qsl](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: parse_qsl\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py": "The callable [parse_qsl](1) is a class pollution taint propagation API in [Module boltons.urlutils](2) \n- Parameter: Arg0\n- Function: parse_qsl\n- Module: Module boltons.urlutils\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.py",
+    "package": "boltons",
+    "model": {
+      "callable": "parse_qsl",
+      "parameter": "Arg0",
+      "function": "parse_qsl",
+      "module": "boltons.urlutils",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/dependency/output/boltons/codebase/boltons/urlutils.p",
+      "package_name": "boltons"
+    },
+    "data_extension": [
+      "boltons",
+      "Member[boltons].Member[urlutils].Member[parse_qsl]",
+      "Argument[0]",
+      "ReturnValue",
+      "taint"
+    ]
+  }
+]

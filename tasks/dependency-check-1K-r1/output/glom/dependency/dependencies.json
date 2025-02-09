@@ -1,0 +1,9 @@
+{
+  "Pip": [
+    "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/glom/codebase/requirements.txt"
+  ],
+  "Poetry": [],
+  "Pipenv": [],
+  "PDM": [],
+  "Conda": []
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "The callable [string_to_scopes](1) is a class pollution source API in [Module auth._helpers](2). \n- Function: string_to_scopes\n- Module: Module auth._helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/google-auth/codebase/google/auth/_helpers.py": "The callable [string_to_scopes](1) is a class pollution source API in [Module auth._helpers](2). \n- Function: string_to_scopes\n- Module: Module auth._helpers\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/google-auth/codebase/google/auth/_helpers.py",
+    "package": "google-auth",
+    "model": {
+      "callable": "string_to_scopes",
+      "parameter": "le [string_to_scopes](1) is a class pollution source API in [Module auth._helpers](2).",
+      "function": "string_to_scopes",
+      "module": "auth._helpers",
+      "file": "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output/robusta/dependency/output/google-auth/codebase/google/auth/_helpers.p",
+      "package_name": "google-auth"
+    },
+    "data_extension": [
+      "google-auth",
+      "Member[auth].Member[_helpers].Member[string_to_scopes]",
+      "class-pollution-source"
+    ]
+  }
+]
