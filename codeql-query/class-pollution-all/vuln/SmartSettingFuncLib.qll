@@ -39,5 +39,3 @@ predicate isSmartSettingFuncLocal(Function func, ControlFlowNode setItemNode, Co
   )
 }
 }
-
-

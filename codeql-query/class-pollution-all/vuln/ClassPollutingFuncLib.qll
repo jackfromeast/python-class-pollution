@@ -106,18 +106,7 @@ class SplitKeyNames extends DataFlow::Node {
 
 module TrackingSplitResultConfiguration implements DataFlow::ConfigSig {
   predicate isSource(DataFlow::Node list) {
-    exists(MethodCallNode call|
-      call.getMethodName() = "split" and
-      call = list
-    ) or 
-    exists( API::CallNode call |
-      (
-        API::moduleImport("re").getMember("split").getACall() = call or
-        API::moduleImport("re").getMember("findall").getACall() = call or
-        API::moduleImport("regex").getMember("split").getACall() = call // https://pypi.org/project/regex/
-      ) and
-      call.asCfgNode() = list.asCfgNode()
-    )
+    isSplitResultImmediate(list)
   }
 
   predicate isSink(DataFlow::Node sink) {
@@ -170,6 +159,21 @@ module TrackingSplitResultFlow = TaintTracking::Global<TrackingSplitResultConfig
 predicate isSplitResult(DataFlow::Node list) {
   exists (DataFlow::Node call|
     TrackingSplitResultFlow::flow(call, list)
+  )
+}
+
+predicate isSplitResultImmediate(DataFlow::Node list) {
+  exists(MethodCallNode call|
+    call.getMethodName() = "split" and
+    call = list
+  ) or 
+  exists( API::CallNode call |
+    (
+      API::moduleImport("re").getMember("split").getACall() = call or
+      API::moduleImport("re").getMember("findall").getACall() = call or
+      API::moduleImport("regex").getMember("split").getACall() = call // https://pypi.org/project/regex/
+    ) and
+    call.asCfgNode() = list.asCfgNode()
   )
 }
 

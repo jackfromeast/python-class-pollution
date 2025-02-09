@@ -138,23 +138,6 @@ predicate isSetattrCall(Expr obj, Expr key, Expr val, Call call) {
     call.getArg(1) = key and
     call.getArg(2) = val
   ) 
-
-  //
-  // Case 4: External library calls whose name contains "setattr" or "set"
-  //
-  // exists (Name funcName |
-  //   (
-  //     funcName.getId().matches("%setattr%") or
-  //     funcName.getId().matches("%set\\_%")
-  //   ) and
-  //   not isBuiltinFuncCall(call) and
-  //   call.getFunc() = funcName and
-  //   // We don't assume fixed argument positions for library calls,
-  //   // so we check that obj, key, and val all appear somewhere in the arguments.
-  //   call.getAnArg() = obj and
-  //   call.getAnArg() = key and
-  //   call.getAnArg() = val
-  // )
 }
 
 }

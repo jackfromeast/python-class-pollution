@@ -4,6 +4,44 @@ import semmle.python.dataflow.new.TaintTracking
 
 module ClassPolltionUtils {
   /**
+   * @description
+   * ----------------------
+   * Determine the import path of the callable.
+   * 
+   * 1/ If the callable is a function, the import path = module path + function name.
+   * 2/ If the callable is a method, the import path = module path + class name + method name.
+   * 3/ If the callable is a nested function/generator, ignore it.
+   */
+  predicate callableImportPath(Function func, string moduleName, string className, string functionName, string filePath) {
+    if func.isMethod() 
+    then 
+      exists (Class cls, Module mod |
+        methodImportPath(func, mod, cls) and
+        cls.getName() = className and
+        mod.toString() = moduleName and
+        mod.getPath().toString() = filePath
+      )
+      and functionName = func.getName() 
+    else
+      exists (Module mod |
+        functionImportPath(func, mod) and
+        mod.toString() = moduleName and
+        className = "" and
+        mod.getPath().toString() = filePath
+      )
+      and functionName = func.getName() 
+  }
+
+  predicate methodImportPath(Function func, Module mod, Class cls) {
+    func.getEnclosingScope() = cls and
+    cls.getEnclosingModule() = mod
+  }
+
+  predicate functionImportPath(Function func, Module mod) {
+    func.getEnclosingModule() = mod
+  }
+
+  /**
    * Predicate to check if a function is a callee of another function.
    */
   predicate hasCallEdgeOneJump(Function caller, Function callee) {
