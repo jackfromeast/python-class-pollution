@@ -9,3 +9,6 @@ output/**
 !output/**/results/
 !output/**/results/**
 dataset/github
+logs/**
+data_extension.yml
+data_extension.yaml
