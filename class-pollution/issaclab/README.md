@@ -21,73 +21,69 @@ https://github.com/isaac-sim/IsaacLab
 ### Vulnerable Code Snippet
 
 ```
-def convert_dict_to_backend(
-    data: dict, backend: str = "numpy", array_types: Iterable[str] = ("numpy", "torch", "warp")
-) -> dict:
-    """Convert all arrays or tensors in a dictionary to a given backend.
+https://github.com/isaac-sim/IsaacLab/blob/157c6b74ed4d9892c5e5ccc0d38d7835f27e98f9/source/isaaclab/isaaclab/utils/dict.py#L74-L135
+def update_class_from_dict(obj, data: dict[str, Any], _ns: str = "") -> None:
+    """Reads a dictionary and sets object variables recursively.
 
-    This function iterates over the dictionary, converts all arrays or tensors with the given types to
-    the desired backend, and stores them in a new dictionary. It also works with nested dictionaries.
-
-    Currently supported backends are "numpy", "torch", and "warp".
-
-    Note:
-        This function only converts arrays or tensors. Other types of data are left unchanged. Mutable types
-        (e.g. lists) are referenced by the new dictionary, so they are not copied.
+    This function performs in-place update of the class member attributes.
 
     Args:
-        data: An input dict containing array or tensor data as values.
-        backend: The backend ("numpy", "torch", "warp") to which arrays in this dict should be converted.
-            Defaults to "numpy".
-        array_types: A list containing the types of arrays that should be converted to
-            the desired backend. Defaults to ("numpy", "torch", "warp").
+        obj: An instance of a class to update.
+        data: Input dictionary to update from.
+        _ns: Namespace of the current object. This is useful for nested configuration
+            classes or dictionaries. Defaults to "".
 
     Raises:
-        ValueError: If the specified ``backend`` or ``array_types`` are unknown, i.e. not in the list of supported
-            backends ("numpy", "torch", "warp").
-
-    Returns:
-        The updated dict with the data converted to the desired backend.
+        TypeError: When input is not a dictionary.
+        ValueError: When dictionary has a value that does not match default config type.
+        KeyError: When dictionary has a key that does not exist in the default config type.
     """
-    # THINK: Should we also support converting to a specific device, e.g. "cuda:0"?
-    # Check the backend is valid.
-    if backend not in TENSOR_TYPE_CONVERSIONS:
-        raise ValueError(f"Unknown backend '{backend}'. Supported backends are 'numpy', 'torch', and 'warp'.")
-    # Define the conversion functions for each backend.
-    tensor_type_conversions = TENSOR_TYPE_CONVERSIONS[backend]
-
-    # Parse the array types and convert them to the corresponding types: "numpy" -> np.ndarray, etc.
-    parsed_types = list()
-    for t in array_types:
-        # Check type is valid.
-        if t not in TENSOR_TYPES:
-            raise ValueError(f"Unknown array type: '{t}'. Supported array types are 'numpy', 'torch', and 'warp'.")
-        # Exclude types that match the backend, since we do not need to convert these.
-        if t == backend:
-            continue
-        # Convert the string types to the corresponding types.
-        parsed_types.append(TENSOR_TYPES[t])
-
-    # Convert the data to the desired backend.
-    output_dict = dict()
     for key, value in data.items():
-        # Obtain the data type of the current value.
-        data_type = type(value)
-        # -- arrays
-        if data_type in parsed_types:
-            # check if we have a known conversion.
-            if data_type not in tensor_type_conversions:
-                raise ValueError(f"No registered conversion for data type: {data_type} to {backend}!")
-            # convert the data to the desired backend.
-            output_dict[key] = tensor_type_conversions[data_type](value)
-        # -- nested dictionaries
-        elif isinstance(data[key], dict):
-            output_dict[key] = convert_dict_to_backend(value)
-        # -- everything else
+        # key_ns is the full namespace of the key
+        key_ns = _ns + "/" + key
+        # check if key is present in the object
+        if hasattr(obj, key) or isinstance(obj, dict):
+            obj_mem = obj[key] if isinstance(obj, dict) else getattr(obj, key)
+            if isinstance(value, Mapping):
+                # recursively call if it is a dictionary
+                update_class_from_dict(obj_mem, value, _ns=key_ns)
+                continue
+            if isinstance(value, Iterable) and not isinstance(value, str):
+                # check length of value to be safe
+                if len(obj_mem) != len(value) and obj_mem is not None:
+                    raise ValueError(
+                        f"[Config]: Incorrect length under namespace: {key_ns}."
+                        f" Expected: {len(obj_mem)}, Received: {len(value)}."
+                    )
+                if isinstance(obj_mem, tuple):
+                    value = tuple(value)
+                else:
+                    set_obj = True
+                    # recursively call if iterable contains dictionaries
+                    for i in range(len(obj_mem)):
+                        if isinstance(value[i], dict):
+                            update_class_from_dict(obj_mem[i], value[i], _ns=key_ns)
+                            set_obj = False
+                    # do not set value to obj, otherwise it overwrites the cfg class with the dict
+                    if not set_obj:
+                        continue
+            elif callable(obj_mem):
+                # update function name
+                value = string_to_callable(value)
+            elif isinstance(value, type(obj_mem)) or value is None:
+                pass
+            else:
+                raise ValueError(
+                    f"[Config]: Incorrect type under namespace: {key_ns}."
+                    f" Expected: {type(obj_mem)}, Received: {type(value)}."
+                )
+            # set value
+            if isinstance(obj, dict):
+                obj[key] = value
+            else:
+                setattr(obj, key, value)
         else:
-            output_dict[key] = value
-
-    return output_dict
+            raise KeyError(f"[Config]: Key not found under namespace: {key_ns}.")
 ```
 ### PoC
 

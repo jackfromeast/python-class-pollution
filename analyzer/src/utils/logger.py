@@ -90,6 +90,7 @@ class LoggerFactory:
       cls._instance.global_logging_path = cls._instance.config.LOG_PATH if cls._instance.config.LOG_PATH else os.path.join(workspace_path, "logs")
       cls._instance.file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)')
       cls.log_error_details = config.LOG.LOG_ERROR_DETAILS
+      cls._instance.log_error_details = config.LOG.LOG_ERROR_DETAILS
 
   @classmethod
   def get_logger(cls, name, level=logging.INFO, global_level=logging.ERROR,
