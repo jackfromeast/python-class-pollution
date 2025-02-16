@@ -208,7 +208,7 @@ class DependencyAnalyzer:
       self.logger.info(f"Cache hit for {dep_name}. Skip.")
 
       # Copy the cache file to the output folder and rename it.
-      destination_path = os.path.join(dep_path, "results", "data_extension.yaml")
+      destination_path = os.path.join(dep_path, "results", f"{dep_name}.model.yaml")
       os.makedirs(os.path.dirname(destination_path), exist_ok=True)
       shutil.copy(cache_file, destination_path)
 
@@ -245,11 +245,11 @@ class DependencyAnalyzer:
       return
 
     # 4/ Output the data extension file
-    self.save_as_data_extension(dependency_models, dep_path)
+    self.save_as_data_extension(dependency_models, dep_path, dep_name)
 
     # 5/ Cache the data extension file
     if self.use_cache:
-      self.cache.set(dep_name, os.path.join(dep_path, "results", "data_extension.yaml"), copy_to_cache=True)
+      self.cache.set(dep_name, os.path.join(dep_path, "results", f"{dep_name}.model.yaml"), copy_to_cache=True)
   
   def check_ql_results(self, dep_path):
     """
@@ -287,51 +287,56 @@ class DependencyAnalyzer:
     
     return dependency_models
 
-  def save_as_data_extension(self, dependency_models, dep_path):
+  def save_as_data_extension(self, dependency_models, dep_path, dep_name):
     """
     @description
     Save the dependency analysis result as data extension format, grouping extensions by model type.
 
     @param dependency_models: dict - The dependency analysis result.
     @param dep_path: str - The path to the dependency codebase.
+    @param dep_name: str - The name of the dependency.
     """
-    data_extension_path = os.path.join(dep_path, "results", "data_extension.yaml")
+    data_extension_path = os.path.join(dep_path, "results", f"{dep_name}.model.yaml")
 
-    # Convert the data structure to ruamel.yaml's CommentedMap and CommentedSeq
+    predefined_model_types = [
+        "sourceModel",
+        "sinkModel",
+        "summaryModel",
+        "neutralModel",
+        "typeModel"
+    ]
+
     data_extension = CommentedMap({
-      "extensions": CommentedSeq()
+        "extensions": CommentedSeq()
     })
 
-    grouped_extensions = {}
+    grouped_extensions = {
+        model_type: CommentedMap({
+            "addsTo": CommentedMap({
+                "pack": "codeql/python-all",
+                "extensible": model_type
+            }),
+            "data": CommentedSeq()
+        }) for model_type in predefined_model_types
+    }
 
     for model_type, results in dependency_models.items():
-      if model_type not in grouped_extensions:
-        grouped_extensions[model_type] = CommentedMap({
-          "addsTo": CommentedMap({
-            "pack": "codeql/class-pollution-all",  # Reverted pack name
-            "extensible": f"{model_type}Model"
-          }),
-          "data": CommentedSeq()
-        })
-
-      for result in results:
-        # Assuming result["data_extension"] is a list that matches the desired format
-        data_extension_item = CommentedSeq(result["data_extension"])
-        data_extension_item.fa.set_flow_style()  # Set flow style for inner lists
-        grouped_extensions[model_type]["data"].append(data_extension_item)
+        if f"{model_type}Model" in grouped_extensions:
+            for result in results:
+                data_extension_item = CommentedSeq(result["data_extension"])
+                data_extension_item.fa.set_flow_style()
+                grouped_extensions[f"{model_type}Model"]["data"].append(data_extension_item)
 
     for model_type, extension_data in grouped_extensions.items():
-      data_extension["extensions"].append(CommentedMap({
-        "addsTo": extension_data["addsTo"],
-        "data": extension_data["data"]
-      }))
+        data_extension["extensions"].append(CommentedMap({
+            "addsTo": extension_data["addsTo"],
+            "data": extension_data["data"]
+        }))
 
-    # Use ruamel.yaml to dump the data with the desired formatting
     yaml = ruamel.yaml.YAML()
-    yaml.indent(mapping=2, sequence=2, offset=2)  # Set indentation to 2 spaces
     yaml.width = 256
-    
+
     with open(data_extension_path, "w") as f:
-      yaml.dump(data_extension, f)
+        yaml.dump(data_extension, f)
 
     self.logger.info(f"Data extension saved to {data_extension_path}")

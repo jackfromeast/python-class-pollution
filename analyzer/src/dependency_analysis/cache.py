@@ -8,11 +8,6 @@ import json
 import shutil
 from utils.logger import LoggerFactory
 
-import os
-import json
-import shutil
-from utils.logger import LoggerFactory
-
 class Cache:
   """
   This class helps to maintain a cache map for the libraries.
@@ -34,24 +29,26 @@ class Cache:
     @param data_extension_file_path: The path to the data file.
     @param copy_to_cache: Whether to copy the data file to the cache.
 
-    copy to the self.cache_path/package_name/package_version/data_extension
+    copy to the self.cache_path/package_name_package_version.model.yaml
     """
     # Ensure the cache directory exists
-    package_cache_dir = os.path.join(self.cache_path, package_name, package_version)
+    package_cache_dir = os.path.join(self.cache_path, "models")
+    package_cache_name = f"{package_name}.{package_version}.model.yaml"
     os.makedirs(package_cache_dir, exist_ok=True)
 
     # Copy the data extension file to the cache directory if required
     if copy_to_cache:
-      destination_path = os.path.join(package_cache_dir, "data_extension.yaml")
+      destination_path = os.path.join(package_cache_dir, package_cache_name)
       shutil.copy(data_extension_file_path, destination_path)
       self.logger.info(f"Copied data extension file to cache: {destination_path}")
+      relative_path = os.path.relpath(destination_path, self.cache_path)
     else:
-      destination_path = data_extension_file_path
+      relative_path = os.path.relpath(data_extension_file_path, self.cache_path)
 
     # Update the cache map
     if package_name not in self.cache_map:
       self.cache_map[package_name] = {}
-    self.cache_map[package_name][package_version] = destination_path
+    self.cache_map[package_name][package_version] = relative_path
 
     # Save the updated cache map
     self.save_cache_map()
@@ -66,10 +63,11 @@ class Cache:
     @return data_extension: The data stored in the cache.
     """
     if package_name in self.cache_map and package_version in self.cache_map[package_name]:
-      cache_entry = self.cache_map[package_name][package_version]
-      if os.path.exists(cache_entry):
+      relative_path = self.cache_map[package_name][package_version]
+      absolute_path = os.path.join(self.cache_path, relative_path)
+      if os.path.exists(absolute_path):
         self.logger.info(f"Cache hit for {package_name} (version: {package_version})")
-        return cache_entry
+        return absolute_path
       else:
         self.logger.warning(f"Cache entry for {package_name} (version: {package_version}) is missing. Removing from cache.")
         del self.cache_map[package_name][package_version]
