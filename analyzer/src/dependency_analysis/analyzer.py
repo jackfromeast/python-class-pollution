@@ -17,14 +17,17 @@ Given the repository URL, this module helps to run the dependency analysis inclu
 """
 import os
 import json
-import yaml
+import shutil
 from packageurl import PackageURL
 from .resolver import DependencyResolver
 from .sarif_processor import SarifProcessor
+from .cache import Cache
 from codeql_driver.runner import CodeQLRunner
 from utils.helper import resolve_repo_name, cleanup_folders
 from utils.logger import LoggerFactory
 from utils.downloader import download
+import ruamel.yaml
+from ruamel.yaml.comments import CommentedSeq, CommentedMap
 
 class DependencyAnalyzer:
   """
@@ -59,6 +62,7 @@ class DependencyAnalyzer:
     self.repo_workspace_path = repo_workspace_path
 
     self.cache_dir = self.config.CACHE_PATH
+    self.use_cache = self.config.USE_CACHE
     self.codeql_source_query = self.config.QUERIES.SOURCE
     self.codeql_sink_query = self.config.QUERIES.SINK
     self.codeql_summary_query = self.config.QUERIES.SUMMARY
@@ -67,8 +71,10 @@ class DependencyAnalyzer:
     self.codebase_path = os.path.join(self.repo_workspace_path, "codebase")
     self.dependency_workspace_path = os.path.join(self.repo_workspace_path, "dependency")
 
+    self.cache = Cache(self.cache_dir, log_path=os.path.join(self.dependency_workspace_path, "logs"))
+
     self.logger = LoggerFactory.get_logger("DependencyAnalyzer",
-                                          local_logger_folder=os.path.join(self.dependency_workspace_path, "logs"), result_logger=True)
+                                          local_logger_folder=os.path.join(self.dependency_workspace_path, "logs"))
 
   def run(self):
     """
@@ -194,9 +200,22 @@ class DependencyAnalyzer:
     @param dep_name: str - The name of the dependency.
     @param dep_path: str - The path to the dependency codebase.
     """
-    # 1/ Download the codebase
     os.makedirs(dep_path, exist_ok=True)
-    if not download(dep_name, dep_path, pip=True):
+
+    # 0/ Check the cache
+    cache_file = self.cache.get(dep_name)
+    if cache_file and self.use_cache:
+      self.logger.info(f"Cache hit for {dep_name}. Skip.")
+
+      # Copy the cache file to the output folder and rename it.
+      destination_path = os.path.join(dep_path, "results", "data_extension.yaml")
+      os.makedirs(os.path.dirname(destination_path), exist_ok=True)
+      shutil.copy(cache_file, destination_path)
+
+      return
+      
+    # 1/ Download the codebase
+    if not download(dep_name, dep_path):
       self.logger.error(f"Failed to download codebase for {dep_name}")
       return
     
@@ -227,6 +246,10 @@ class DependencyAnalyzer:
 
     # 4/ Output the data extension file
     self.save_as_data_extension(dependency_models, dep_path)
+
+    # 5/ Cache the data extension file
+    if self.use_cache:
+      self.cache.set(dep_name, os.path.join(dep_path, "results", "data_extension.yaml"), copy_to_cache=True)
   
   def check_ql_results(self, dep_path):
     """
@@ -265,41 +288,50 @@ class DependencyAnalyzer:
     return dependency_models
 
   def save_as_data_extension(self, dependency_models, dep_path):
-      """
-      @description
-      Save the dependency analysis result as data extension format.
+    """
+    @description
+    Save the dependency analysis result as data extension format, grouping extensions by model type.
 
-      @param dependency_models: dict - The dependency analysis result.
-      @param dep_path: str - The path to the dependency codebase.
-      """
-      data_extension_path = os.path.join(dep_path, "results", "data_extension.yaml")
+    @param dependency_models: dict - The dependency analysis result.
+    @param dep_path: str - The path to the dependency codebase.
+    """
+    data_extension_path = os.path.join(dep_path, "results", "data_extension.yaml")
 
-      data_extension = {
-        "extensions": []
-      }
+    # Convert the data structure to ruamel.yaml's CommentedMap and CommentedSeq
+    data_extension = CommentedMap({
+      "extensions": CommentedSeq()
+    })
 
-      for model_type, results in dependency_models.items():
-        for result in results:
-          extension = {
-            "addsTo": {
-              "pack": "jackfromeast/class-pollution-all",
-              "extensible": f"{model_type}Model",
-              "data": result["data_extension"]
-            }
-          }
-          data_extension["extensions"].append(extension)
+    grouped_extensions = {}
 
-      with open(data_extension_path, "w") as f:
-        yaml.dump(data_extension, f, default_flow_style=False, sort_keys=False)
+    for model_type, results in dependency_models.items():
+      if model_type not in grouped_extensions:
+        grouped_extensions[model_type] = CommentedMap({
+          "addsTo": CommentedMap({
+            "pack": "codeql/class-pollution-all",  # Reverted pack name
+            "extensible": f"{model_type}Model"
+          }),
+          "data": CommentedSeq()
+        })
 
-      self.logger.info(f"Data extension saved to {data_extension_path}")
+      for result in results:
+        # Assuming result["data_extension"] is a list that matches the desired format
+        data_extension_item = CommentedSeq(result["data_extension"])
+        data_extension_item.fa.set_flow_style()  # Set flow style for inner lists
+        grouped_extensions[model_type]["data"].append(data_extension_item)
+
+    for model_type, extension_data in grouped_extensions.items():
+      data_extension["extensions"].append(CommentedMap({
+        "addsTo": extension_data["addsTo"],
+        "data": extension_data["data"]
+      }))
+
+    # Use ruamel.yaml to dump the data with the desired formatting
+    yaml = ruamel.yaml.YAML()
+    yaml.indent(mapping=2, sequence=2, offset=2)  # Set indentation to 2 spaces
+    yaml.width = 256
     
+    with open(data_extension_path, "w") as f:
+      yaml.dump(data_extension, f)
 
-
-
-
-
-
-    
-
-  
+    self.logger.info(f"Data extension saved to {data_extension_path}")
