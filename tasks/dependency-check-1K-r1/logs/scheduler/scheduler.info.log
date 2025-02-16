@@ -1,4 +1,0 @@
-2025-02-09 15:56:57,354 - Scheduler - INFO - Scheduling tasks for 1 repositories with 4 workers. (base_scheduler.py:70)
-2025-02-09 15:56:57,359 - Scheduler - INFO - Starting worker for repo: https://github.com/mahmoud/glom (run_dependency_analysis.py:28)
-2025-02-09 16:04:03,549 - Scheduler - INFO - Worker completed for repo: https://github.com/mahmoud/glom (run_dependency_analysis.py:35)
-2025-02-09 16:04:03,556 - Scheduler - INFO - Progress: 1/1 repositories scanned. (base_scheduler.py:103)

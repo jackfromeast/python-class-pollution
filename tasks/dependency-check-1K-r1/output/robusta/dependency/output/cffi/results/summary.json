@@ -1,5 +1,0 @@
-{
-  "DependencyClassPollutionSink.ql.sarif": 6,
-  "DependencyClassPollutionSource.ql.sarif": 0,
-  "DependencyClassPollutionTaintProp.ql.sarif": 32
-}

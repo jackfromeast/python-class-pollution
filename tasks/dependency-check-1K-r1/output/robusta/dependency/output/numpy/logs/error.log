@@ -1,2 +1,0 @@
-2025-02-09 15:48:04,101 - CodeQLRunner - ERROR - Query /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql timed out. (logger.py:41)
-2025-02-09 15:48:04,318 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql (logger.py:41)

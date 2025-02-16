@@ -1,6 +1,0 @@
-2025-01-16 17:49:50,508 - WORKER_RESULT - INFO - https://github.com/MegEngine/MegEngine.git - MultiLevelClassPollutionQuery.ql.sarif: 12 flows detected. (run.py:272)
-2025-01-16 17:55:24,866 - WORKER_RESULT - INFO - https://github.com/NVIDIA/DALI.git - MultiLevelClassPollutionQuery.ql.sarif: 4 flows detected. (run.py:272)
-2025-01-16 19:34:46,844 - WORKER_RESULT - INFO - https://github.com/allegroai/clearml.git - MultiLevelClassPollutionQuery.ql.sarif: 5 flows detected. (run.py:272)
-2025-01-16 20:48:54,622 - WORKER_RESULT - INFO - https://github.com/cisco-system-traffic-generator/trex-core.git - MultiLevelClassPollutionQuery.ql.sarif: 17 flows detected. (run.py:272)
-2025-01-16 20:48:59,912 - WORKER_RESULT - INFO - https://github.com/clearml/clearml.git - MultiLevelClassPollutionQuery.ql.sarif: 5 flows detected. (run.py:272)
-2025-01-16 21:19:21,584 - WORKER_RESULT - INFO - https://github.com/datahub-project/datahub.git - MultiLevelClassPollutionQuery.ql.sarif: 4 flows detected. (run.py:272)
