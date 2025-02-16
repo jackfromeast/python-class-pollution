@@ -32,6 +32,7 @@ class MultiLogger:
   def __init__(self, logger, result_logger, log_error_details=False):
     self.logger = logger
     self.result_logger = result_logger
+    self.logger.log_error_details = log_error_details
     self.log_error_details = log_error_details
 
   def _log(self, level, msg, *args, result=False, **kwargs):
@@ -204,4 +205,5 @@ class LoggerFactory:
 
       return MultiLogger(logger, result_logger, log_error_details=cls.log_error_details)
 
+    logger.log_error_details = cls.log_error_details
     return logger
