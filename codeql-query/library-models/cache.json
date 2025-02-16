@@ -1,0 +1,29 @@
+{
+  "anyio": {
+    "latest": "models/anyio.latest.model.yaml"
+  },
+  "apprise": {
+    "latest": "models/apprise.latest.model.yaml"
+  },
+  "attrs": {
+    "latest": "models/attrs.latest.model.yaml"
+  },
+  "babel": {
+    "latest": "models/babel.latest.model.yaml"
+  },
+  "blinker": {
+    "latest": "models/blinker.latest.model.yaml"
+  },
+  "boto3": {
+    "latest": "models/boto3.latest.model.yaml"
+  },
+  "botocore": {
+    "latest": "models/botocore.latest.model.yaml"
+  },
+  "cachetools": {
+    "latest": "models/cachetools.latest.model.yaml"
+  },
+  "cffi": {
+    "latest": "models/cffi.latest.model.yaml"
+  }
+}
