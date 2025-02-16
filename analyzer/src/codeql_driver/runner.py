@@ -172,8 +172,7 @@ class CodeQLRunner:
     process = None
     stderr = None
     try:
-      process = subprocess.Popen(
-        [
+      command = [
           self.codeql_config.CLI, "database", "analyze", self.db_path,
           query_file,
           "--format=sarif-latest",
@@ -181,7 +180,17 @@ class CodeQLRunner:
           f"--ram={self.codeql_config.RAM}",
           f"--timeout={self.timeout}",
           "--output", output_file,
-        ],
+        ]
+
+      if self.codeql_config.USE_MODEL_PACK:
+        model_pack = self.codeql_config.MODEL_PACK
+        model_pack_path = self.codeql_config.MODEL_PACK_PATH
+
+        command.append(f"--model-packs={model_pack}")
+        command.append(f"--additional-packs={model_pack_path}")
+
+      process = subprocess.Popen(
+        command,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
       )

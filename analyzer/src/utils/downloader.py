@@ -3,14 +3,39 @@ import shutil
 import psutil
 import zipfile
 import subprocess
+from urllib.parse import urlparse
 from utils.logger import LoggerFactory
 
-def download(repo_url, repo_save_path, pip=False):
-  if pip:
-    downloader = PipDownloader(repo_url, repo_save_path)
-  else:
-    downloader = GithubDownloader(repo_url, repo_save_path)
-  return downloader.clone_repo()
+def download(repo_url_or_package, repo_save_path):
+    """
+    Downloads a repository or package from the given input using the appropriate downloader.
+
+    @params repo_url_or_package (str): The GitHub URL, PyPI URL, or package name.
+    @params repo_save_path (str): The path where the repository or package will be saved.
+    """
+    try:
+      parsed_url = urlparse(repo_url_or_package)
+      is_url = all([parsed_url.scheme, parsed_url.netloc])
+    except Exception:
+      is_url = False
+
+    if is_url:
+      domain = parsed_url.netloc
+      if domain == "github.com":
+        downloader = GithubDownloader(repo_url_or_package, repo_save_path)
+      elif domain == "pypi.org":
+        # if last char is /, remove it
+        if repo_url_or_package[-1] == "/":
+          repo_url_or_package = repo_url_or_package[:-1]
+
+        package_name = parsed_url.path.split("/")[-1]
+        downloader = PipDownloader(package_name, repo_save_path)
+      else:
+        raise ValueError(f"Unsupported url link: {parse_url}")
+    else:
+      downloader = PipDownloader(repo_url_or_package, repo_save_path)
+
+    return downloader.clone_repo()
 
 class GithubDownloader:
   def __init__(self, repo_url, repo_save_path):
@@ -48,7 +73,7 @@ class GithubDownloader:
         self.logger.info(f"Repository cloned successfully to {codebase_save_path}")
         return True
       else:
-        self.logger.error(f"Failed to clone repository: {process.stderr.read().decode()}")
+        self.logger.error(f"Failed to clone repository: {stderr.decode()}")
         if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode().strip()}")
         return False
@@ -150,7 +175,7 @@ class PipDownloader:
       _, stderr = process.communicate(timeout=self.timeout)
 
       if process.returncode != 0:
-        self.logger.error(f"Failed to download package: {process.stderr.read().decode()}")
+        self.logger.error(f"Failed to download package: {stderr.decode()}")
         return False
 
       # Step 2: Find the downloaded .whl file

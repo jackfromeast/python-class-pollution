@@ -32,6 +32,7 @@ class MultiLogger:
   def __init__(self, logger, result_logger, log_error_details=False):
     self.logger = logger
     self.result_logger = result_logger
+    self.logger.log_error_details = log_error_details
     self.log_error_details = log_error_details
 
   def _log(self, level, msg, *args, result=False, **kwargs):
@@ -90,6 +91,7 @@ class LoggerFactory:
       cls._instance.global_logging_path = cls._instance.config.LOG_PATH if cls._instance.config.LOG_PATH else os.path.join(workspace_path, "logs")
       cls._instance.file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)')
       cls.log_error_details = config.LOG.LOG_ERROR_DETAILS
+      cls._instance.log_error_details = config.LOG.LOG_ERROR_DETAILS
 
   @classmethod
   def get_logger(cls, name, level=logging.INFO, global_level=logging.ERROR,
@@ -203,4 +205,5 @@ class LoggerFactory:
 
       return MultiLogger(logger, result_logger, log_error_details=cls.log_error_details)
 
+    logger.log_error_details = cls.log_error_details
     return logger

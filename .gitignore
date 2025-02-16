@@ -8,4 +8,10 @@ __pycache__
 output/**
 !output/**/results/
 !output/**/results/**
+output/**/dependency/output
+output/**/dependency/output/**
+output/**/dependency/logs
+output/**/dependency/logs/**
 dataset/github
+data_extension.yml
+data_extension.yaml

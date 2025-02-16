@@ -57,7 +57,7 @@ class DependencyAnalysis(BaseScheduler):
     repo_workspace_path = self.setup_workspace_for_repo(repo_url)
 
     # Download the codebase
-    if not download(repo_url, repo_workspace_path, pip=self.config.SCHEDULER.SOURCE=="PIP"):
+    if not download(repo_url, repo_workspace_path):
       self.logger.error(f"Failed to download codebase for {repo_url}")
       self.cleanup_folders(repo_workspace_path)
       return
