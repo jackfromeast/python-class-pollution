@@ -1,7 +1,0 @@
-2024-12-07 15:27:08,233 - WORKER - INFO - Cloning repository: https://github.com/Xpra-org/xpra.git to /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output/xpra/codebase (run.py:56)
-2024-12-07 15:27:08,233 - WORKER - INFO - Removing existing codebase... (run.py:60)
-2024-12-07 15:27:17,172 - WORKER - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output/xpra/codebase (run.py:72)
-2024-12-07 15:27:17,172 - WORKER - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output/xpra/codebase (run.py:110)
-2024-12-07 15:27:30,950 - WORKER - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output/xpra/codeql-db (run.py:123)
-2024-12-07 15:27:30,950 - WORKER - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output/xpra/codeql-db (run.py:193)
-2024-12-07 15:27:30,950 - WORKER - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/ClassPollutingFuncQuery.ql (run.py:198)

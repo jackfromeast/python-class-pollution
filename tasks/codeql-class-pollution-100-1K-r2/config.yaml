@@ -1,0 +1,41 @@
+SCHEDULER:
+  TEST_NAME: "CLASS-POLLUTION-CODEQL"
+
+  # Path to workspace (base directory for storing results)
+  # WORKSPACE/output/ will be created to store the results
+  WORKSPACE: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-100-1K-r2/output"
+
+  # Option: "seed" or "list"
+  MODE: "seed"
+  USE_PIP: False
+  REPO: "https://github.com/mlc-ai/relax.git"
+  REPO_LIST: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-100-1K-r2/input/lost.txt"
+  URL_LIST_FROM: 0
+  URL_LIST_TO: 3
+
+  # Maximum number of workers to run in parallel
+  MAX_WORKER: 4
+
+  # Time budget for each worker to analyze each repo
+  # TIMEOUT_PER_WORKER > CODEQL.TIMEOUT * Queries.length
+  TIMEOUT_PER_WORKER: 1000 # 10 minutes
+
+WORKER:
+  CODEQL:
+    CLI: "/home/jackfromeast/Downloads/codeql/codeql"
+    THREADS: 1
+    RAM: 4096 # MB
+    TIMEOUT: 600 # 10 minutes
+
+  # TODO: Consider using query qlpack 
+  QUERY_MODE: query # query or qlpack
+  QUERIES: [
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/MultiLevelAttrOnlyClassPollutionQuery.ql",
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQuery.ql"
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncLocalQuery.ql",
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncQuery.ql",
+    # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartSettingFuncLocalQuery.ql"
+  ]
+
+  DELETE_AFTER_QUERY: False # False when debugging
+  DELETE_IF_NO_FLOWS: True

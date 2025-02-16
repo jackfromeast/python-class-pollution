@@ -1,0 +1,1 @@
+2025-01-16 21:06:53,076 - SCHEDULER - ERROR - Error in worker for repo: https://github.com/cms-sw/cmssw.git - [Errno 39] Directory not empty: 'cache' (scheduler.py:122)

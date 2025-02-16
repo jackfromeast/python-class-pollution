@@ -1,0 +1,4 @@
+2025-01-16 13:29:22,188 - SCHEDULER - INFO - Scheduling tasks for 1 repositories with 4 workers. (scheduler.py:113)
+2025-01-16 13:29:22,188 - SCHEDULER - INFO - Starting worker for repo: https://github.com/mlc-ai/relax.git (scheduler.py:65)
+2025-01-16 13:37:07,089 - SCHEDULER - INFO - Worker completed successfully for repo: https://github.com/mlc-ai/relax.git (scheduler.py:81)
+2025-01-16 13:37:07,089 - SCHEDULER - INFO - Progress: 1/1 repositories scanned. (scheduler.py:102)

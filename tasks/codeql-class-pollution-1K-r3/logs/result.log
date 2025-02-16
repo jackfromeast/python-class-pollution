@@ -1,0 +1,2 @@
+2025-02-05 21:02:42,989 - Result - INFO - code - MultiLevelClassPollutionQuery.ql.sarif: 2 flows detected. (logger.py:38)
+2025-02-05 21:14:00,082 - Result - INFO - beanie - MultiLevelClassPollutionQuery.ql.sarif: 14 flows detected. (logger.py:38)

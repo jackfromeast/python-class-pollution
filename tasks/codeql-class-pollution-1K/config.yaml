@@ -29,7 +29,7 @@ WORKER:
   # TODO: Consider using query qlpack 
   QUERY_MODE: query # query or qlpack
   QUERIES: [
-    "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/ClassPollutingFuncQuery.ql"
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/ClassPolluMultiLevelClassPollutionQuerytingFuncQuery.ql"
     # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncLocalQuery.ql",
     # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncQuery.ql",
     # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartSettingFuncLocalQuery.ql"
