@@ -6,12 +6,11 @@ SCHEDULER:
   WORKSPACE: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-all-known/output"
 
   # Option: "seed" or "list"
-  MODE: "seed"
-  USE_PIP: false
-  REPO: "azure-cli-core"
-  REPO_LIST: "all-known-class-pollution.txt"
+  MODE: "list"
+  REPO_URL: "https://github.com/jupyterhub/repo2docker.git"
+  REPO_URL_LIST: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-all-known/input/all-known-class-pollution.txt"
   URL_LIST_FROM: 0
-  URL_LIST_TO: 30
+  URL_LIST_TO: 10
 
   # Maximum number of workers to run in parallel
   MAX_WORKER: 1
@@ -24,13 +23,13 @@ WORKER:
   CODEQL:
     CLI: "/home/jackfromeast/Downloads/codeql/codeql"
     THREADS: 1
-    RAM: 8192 # MB
+    RAM: 2048 # MB
     TIMEOUT: 600 # 10 minutes
 
   # TODO: Consider using query qlpack 
   QUERY_MODE: query # query or qlpack
   QUERIES: [
-    "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQuery.ql"
+    "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQuery.ql"
     # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncLocalQuery.ql",
     # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartGettingFuncQuery.ql",
     # "/home/jackfromeast/Desktop/python-class-pollution/codeql/codeql-query/class-pollution-all/query/SmartSettingFuncLocalQuery.ql"
