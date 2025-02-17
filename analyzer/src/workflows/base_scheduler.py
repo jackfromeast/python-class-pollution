@@ -15,7 +15,6 @@ class BaseScheduler:
     self.workspace = self.config.SCHEDULER.WORKSPACE
     self.test_name = self.config.SCHEDULER.TEST_NAME
     self.mode = self.config.SCHEDULER.MODE
-    self.source = self.config.SCHEDULER.SOURCE
     self.max_workers = self.config.SCHEDULER.MAX_WORKER
 
     if self.mode == "list":
