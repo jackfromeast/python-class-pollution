@@ -96,7 +96,7 @@ class CodeQLRunner:
         return False
 
     except subprocess.TimeoutExpired:
-      self.logger.error("Building CodeQL database timed out.")
+      self.logger.error(f"Building CodeQL database timed out: {self.repo_name}")
       return False
 
     except Exception as e:
@@ -208,7 +208,7 @@ class CodeQLRunner:
         return False
 
     except subprocess.TimeoutExpired:
-      self.logger.error(f"Query {query_file} timed out.")
+      self.logger.error(f"Query timed out for {self.repo_name}: {query_file}")
       return False
 
     except Exception as e:
