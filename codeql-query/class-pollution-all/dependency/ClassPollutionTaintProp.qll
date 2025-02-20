@@ -3,9 +3,9 @@ import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import semmle.python.dataflow.new.TaintTracking
-import shared.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
-import shared.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
-import shared.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
+import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
+import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
+import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
 import vuln.ClassPollutingFuncLib::ClassPollutionAssignment
 
 module ClassPollutionTaintPropDependencyModel {

@@ -2,8 +2,8 @@ import python
 import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
-import Utils::ClassPolltionUtils
-import GetOp::ClassPollutionGetOp
+import shared.Utils::ClassPolltionUtils
+import shared.GetOp::ClassPollutionGetOp
 
 
 module ClassPollutionAdditionalFlowStepNamedtuple {

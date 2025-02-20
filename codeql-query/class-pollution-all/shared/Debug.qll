@@ -9,6 +9,10 @@ predicate restrictedByFunctionName(DataFlow::Node node, string functionName) {
   node.getScope().getName() = functionName
 }
 
+predicate checkFunc(DataFlow::Node node1, DataFlow::Node node2) {
+  TaintTracking::localTaint(node1, node2)
+}
+
 /**
  * @description
  * ----------------------

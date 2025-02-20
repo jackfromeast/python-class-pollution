@@ -1,7 +1,7 @@
 import python
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
-import shared.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
+import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
 import semmle.python.ApiGraphs
 import codeql.dataflow.DataFlow
 import semmle.python.dataflow.new.DataFlow

@@ -3,7 +3,7 @@ import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import Utils::ClassPolltionUtils
-import shared.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
+import shared.flowsteps.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
 
 module ClassPollutionGetOp {
   
@@ -141,13 +141,12 @@ predicate isObjectGetattributeCall(Expr obj, Expr key, Call call) {
 predicate isLibraryWrapperCall(Expr obj, Expr key, Call call) {
   exists (Name funcName |
     (
-      funcName.getId().matches("%get%attr%") or
-      funcName.getId().matches("%attr%get%")
+      funcName.getId().matches("getprop")
     ) and
     not isBuiltinFuncCall(call) and
     call.getFunc() = funcName and
-    call.getAnArg() = obj and
-    call.getAnArg() = key
+    call.getArg(0) = obj and
+    call.getArg(1) = key
   ) or
   // https://hikaru.readthedocs.io/en/latest/hikaru-base.html#object-at-path
   // A methodCall named object_at_path and has been defined in the hikaru module

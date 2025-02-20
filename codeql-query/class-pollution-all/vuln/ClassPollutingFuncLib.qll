@@ -6,181 +6,19 @@ import semmle.python.dataflow.new.TaintTracking
 import vuln.SmartGettingFuncLib::ClassPollutionSmartGetting
 import vuln.SmartSettingFuncLib::ClassPollutionSmartSetting
 import shared.Utils::ClassPolltionUtils
-import shared.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
-import shared.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
-import shared.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
-import shared.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
+import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
+import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
+import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
+import shared.flowsteps.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
+import shared.types.EnumeratedKeyNames
+import shared.types.EnumeratedObjects
+import shared.types.SplitObjects
+import shared.types.SplitKeyNames
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
 import shared.Debug::Debugging
 
 module ClassPollutionAssignment {
-/**
- * @description
- * ----------------------
- * Represents a node that holds the key names that are enumerated in the code.
- * 
- * @example
- * ----------------------
- * `key` in `for key in dict:`
- * `key` and `val` in `for key, val in dict.items():`
- * `key` in `for key in dict.keys():`
- * `key` in `for key in keys`
- * 
- */
-class EnumeratedKeyNames extends DataFlow::Node {
-  EnumeratedKeyNames() {
-    // Match for `for key in dict`
-    exists(For forLoop |
-      this.asExpr() = forLoop.getTarget() and
-      not forLoop.getTarget() instanceof Tuple
-    )
-    or
-    // Match for `for k, v in dict.items()`
-    exists(For forLoop, MethodCallNode call, Tuple tuple |
-      forLoop.getIter() = call.asExpr() and
-      call.getMethodName() = "items" and
-      tuple = forLoop.getTarget() and
-      (
-        tuple.getElt(0) = this.asExpr() or
-        tuple.getElt(1) = this.asExpr()
-      )
-    )
-    or
-    // Match for `for key in dict.keys():`
-    exists(For forLoop, MethodCallNode call |
-      forLoop.getIter() = call.asExpr() and
-      call.getMethodName() = "keys" and
-      this.asExpr() = forLoop.getTarget()
-    )
-    or 
-    // Match for for `key, value in enumerate(dict):`
-    exists(For forLoop, API::CallNode call, Tuple tuple |
-      API::builtin("enumerate").getACall() = call and
-      forLoop.getIter() = call.asExpr() and
-      tuple = forLoop.getTarget() and
-      (
-        tuple.getElt(0) = this.asExpr() or
-        tuple.getElt(1) = this.asExpr()
-      )
-    )
-  }
-}
-
-/**
- * @description
- * ----------------------
- * Represents a node that holds the key names that are split from a string.
- * 
- * @example
- * ----------------------
- * `key` in `keys = val.split('.'); for key in keys:`
- * `key` in `keys = val.split('.'); keys[index]`
- * `key` in `keys = regex.split(any); for key in keys:`
- * `key` in `keys = regex.split(any); keys[index]`
- * 
- */
-class SplitKeyNames extends DataFlow::Node {
-  SplitKeyNames() {
-    // Match for nodes iterating over or accessing elements from the split list
-    exists(DataFlow::Node list |
-      isSplitResult(list) and 
-      (
-        // Iterating over the split list in a for loop
-        exists(For forLoop |
-          forLoop.getIter() = list.asExpr() and
-          this.asExpr() = forLoop.getTarget()
-        )
-        or
-        // Accessing elements of the split list by index
-        exists(Subscript subscript |
-          subscript.getObject() = list.asExpr() and
-          this.asExpr() = subscript
-        )
-        or 
-        this = list
-      )
-    )
-  }
-}
-
-module TrackingSplitResultConfiguration implements DataFlow::ConfigSig {
-  predicate isSource(DataFlow::Node list) {
-    isSplitResultImmediate(list)
-  }
-
-  predicate isSink(DataFlow::Node sink) {
-    any()
-  }
-
-  predicate isAdditionalFlowStep(DataFlow::Node source, DataFlow::Node target) {
-    // source -> filter(none, source)
-    (
-      exists(Call call, DataFlow::Node immediateNode, Name name |
-        name.getId() = "filter" and
-        call.getFunc() = name and 
-        call.getArg(1) = immediateNode.asExpr() and
-        (
-          immediateNode = source or
-          DataFlow::localFlow(source, immediateNode)
-        ) and
-        (
-          call = target.asExpr() or
-          hasDataFlowExpr(call, target.asExpr())
-        )
-    ) or
-    // source -> [key for key in source]
-    exists(Comp comp, DataFlow::Node immediateNode|
-      comp.getIterable() = source.asExpr() and
-      immediateNode.asExpr() = comp and
-      DataFlow::localFlow(immediateNode, target)
-    )
-  )
-  }
-}
-
-module TrackingSplitResultFlow = TaintTracking::Global<TrackingSplitResultConfiguration>;
-
-/**
- * @description
- * ----------------------
- * Find all the split results from the `split` method call.
- * 
- * @example
- * ----------------------
- * `keys` in `keys = val.split('.')`
- * `keys` in `keys = [for key in val.split('.')]`
- * `keys` in `keys = [for key in filter(None, val.split('.'))]`
- * `keys` in `keys = regex.split(any);`
- * `keys` in `keys = regex.findall(any)`
- * 
- * 
- */
-predicate isSplitResult(DataFlow::Node list) {
-  exists (DataFlow::Node call|
-    TrackingSplitResultFlow::flow(call, list)
-  )
-}
-
-predicate isSplitResultImmediate(DataFlow::Node list) {
-  exists(MethodCallNode call|
-    call.getMethodName() = "split" and
-    call = list
-  ) or 
-  exists( API::CallNode call |
-    (
-      API::moduleImport("re").getMember("split").getACall() = call or
-      API::moduleImport("re").getMember("findall").getACall() = call or
-      API::moduleImport("regex").getMember("split").getACall() = call // https://pypi.org/project/regex/
-    ) and
-    call.asCfgNode() = list.asCfgNode()
-  )
-}
-
-predicate isItemSettingOrAttributeSetting(DataFlow::Node obj, DataFlow::Node key, DataFlow::Node val) {
-  isSetItemExpr(obj.asExpr(), key.asExpr(), val.asExpr(), _) or
-  isSetattrCall(obj.asExpr(), key.asExpr(), val.asExpr(), _)
-}
 
 /**
  * @description
@@ -190,6 +28,51 @@ predicate isItemSettingOrAttributeSetting(DataFlow::Node obj, DataFlow::Node key
 abstract class FlowState extends string {
   bindingset[this]
   FlowState() { any() }
+}
+
+class GetOperationType extends string {
+  GetOperationType() { 
+    this = "None" or
+    this = "GetItem" or
+    this = "GetAttr" or
+    this = "GetBoth" 
+  }
+}
+
+class SetOperationType extends string {
+  SetOperationType() { 
+    this = "None" or
+    this = "SetItem" or
+    this = "SetAttr" or
+    this = "SetBoth" 
+  }
+}
+
+class PrototypeObjectFlowState extends ClassPollutionAssignment::FlowState {
+  GetOperationType getOperationType; 
+  SetOperationType setOperationType;
+
+  PrototypeObjectFlowState() { this = "PrototypeObject" }
+
+  string toString() {
+    result = "Base Object at" + setOperationType + " through " + getOperationType
+  }
+}
+
+class EnumeratedKeyFlowState extends ClassPollutionAssignment::FlowState {
+  EnumeratedKeyFlowState() { this = "EnumeratedKey" }
+}
+
+class InitFuncParamterFlowState extends ClassPollutionAssignment::FlowState {
+  InitFuncParamterFlowState() { this = "InitFuncParamter" }
+}
+
+class PrototypeObjectThroughGetItemFlowState extends ClassPollutionAssignment::FlowState {
+  PrototypeObjectThroughGetItemFlowState() { this = "PrototypeObjectThroughGetItem" }
+}
+
+class PrototypeObjectThroughGetAttrFlowState extends ClassPollutionAssignment::FlowState {
+  PrototypeObjectThroughGetAttrFlowState() { this = "PrototypeObjectThroughGetAttr" }
 }
 
 class UsedAsBaseObjectInSetItemFlowState extends ClassPollutionAssignment::FlowState {
@@ -208,6 +91,7 @@ class UsedAsKeyInSetAttrFlowState extends ClassPollutionAssignment::FlowState {
   UsedAsKeyInSetAttrFlowState() { this = "UsedAsKeyInSetAttr" }
 }
 
+
 /**
  * @description
  * ----------------------
@@ -215,17 +99,17 @@ class UsedAsKeyInSetAttrFlowState extends ClassPollutionAssignment::FlowState {
  * 
  * @example
  * ----------------------
-   def merge(src, dst):
+  def merge(src, dst):
     for k, v in src.items():
       if hasattr(dst, '__getitem__'):
-            if dst.get(k) and type(v) == dict:
-                merge(v, dst.get(k))
-            else:
-                dst[k] = v
-        elif hasattr(dst, k) and type(v) == dict:
-            merge(v, getattr(dst, k))
+        if dst.get(k) and type(v) == dict:
+          merge(v, dst.get(k))
         else:
-            setattr(dst, k, v)
+          dst[k] = v
+        elif hasattr(dst, k) and type(v) == dict:
+          merge(v, getattr(dst, k))
+        else:
+          setattr(dst, k, v)
 
  * @condition
  * ----------------------
@@ -245,7 +129,7 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   class FlowState = ClassPollutionAssignment::FlowState;
 
   predicate isSource(DataFlow::Node source, FlowState state) {
-    isClassPollutedKeyNames(source) 
+    isClassPollutedKeyNamesOrBaseObjects(source) 
   }
 
   predicate isSink(DataFlow::Node sink, FlowState state) {
@@ -368,11 +252,15 @@ module Flow = TrackingClassPollutionKeyToAssignmentFlow; // For shortening the n
  * @description
  * Extension of `DataFlow::Node` to identify nodes that hold key names that are enumerated or from split method call.
  */
-predicate isClassPollutedKeyNames(DataFlow::Node source) {
+predicate isClassPollutedKeyNamesOrBaseObjects(DataFlow::Node key) {
   // restrictedByFunctionName(source, "update_item_attr") and
   (
-    source instanceof EnumeratedKeyNames or
-    source instanceof SplitKeyNames
+    key instanceof EnumeratedKeyNames or
+    key instanceof SplitKeyNames
+  ) or
+  (
+    key instanceof EnumeratedObjects or
+    key instanceof SplitObjects
   )
 }
 
@@ -388,8 +276,8 @@ predicate debugTest(Flow::PathNode sourceKeyToKey, Flow::PathNode setItemKey) {
 predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj, Flow::PathNode setItemKey, Flow::PathNode sourceKeyToObj, Flow::PathNode sourceKeyToKey) {
   isSetItemExpr(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), _, _) and
   (
-    isClassPollutedKeyNames(sourceKeyToObj.getNode()) and
-    isClassPollutedKeyNames(sourceKeyToKey.getNode()) and
+    isClassPollutedKeyNamesOrBaseObjects(sourceKeyToObj.getNode()) and
+    isClassPollutedKeyNamesOrBaseObjects(sourceKeyToKey.getNode()) and
     sourceKeyToObj.getNode() = sourceKeyToKey.getNode()
   ) and
   (
@@ -405,8 +293,8 @@ predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj,
 predicate isClassPollutedAssignmentThroughAttrSetting(Flow::PathNode setAttrObj, Flow::PathNode setAttrKey, Flow::PathNode sourceKeyToObj, Flow::PathNode sourceKeyToKey) {
   isSetattrCall(setAttrObj.getNode().asExpr(), setAttrKey.getNode().asExpr(), _, _) and
   (
-    isClassPollutedKeyNames(sourceKeyToObj.getNode()) and
-    isClassPollutedKeyNames(sourceKeyToKey.getNode()) and
+    isClassPollutedKeyNamesOrBaseObjects(sourceKeyToObj.getNode()) and
+    isClassPollutedKeyNamesOrBaseObjects(sourceKeyToKey.getNode()) and
     sourceKeyToObj.getNode() = sourceKeyToKey.getNode()
   ) and
   (

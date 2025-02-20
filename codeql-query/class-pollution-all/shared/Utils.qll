@@ -1,6 +1,9 @@
 import python 
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.TaintTracking
+import Debug::Debugging
+import GetOp::ClassPollutionGetOp
+import SetOp::ClassPollutionSetOp
 
 module ClassPolltionUtils {
   /**
@@ -32,6 +35,13 @@ module ClassPolltionUtils {
       and functionName = func.getName() 
   }
 
+  predicate isFunctionParam(DataFlow::Node node) {
+    exists (Function func, Parameter param | 
+      func.getAnArg() = param and
+      node.asExpr() = param
+    )
+  }
+  
   predicate methodImportPath(Function func, Module mod, Class cls) {
     func.getEnclosingScope() = cls and
     cls.getEnclosingModule() = mod
@@ -184,8 +194,97 @@ module ClassPolltionUtils {
     )
   }
 
+  /**
+   * @description
+   * ----------------------
+   * Holds if two dataflow nodes have the same local dataflow source.
+   */
   predicate hasSameLocalSource(DataFlow::Node source, DataFlow::Node sink) {
     source.getALocalSource() = sink.getALocalSource()
+  }
+
+  /**
+   * @description
+   * ----------------------
+   * Holds if two dataflow nodes have the same dataflow source across one jump.
+   * 
+   * @example
+   * ----------------------
+   * Select out the obj1 and obj2 from the following code:
+   * 
+   * def func1(obj1):
+   *  setattr(obj1, "key1", "value1")
+   *  func2(obj1)
+   * 
+   * def func2(obj2):
+   *  setattr(obj2, "key2", "value2")
+   */
+  predicate hasSameLocalSourceOneJump(DataFlow::Node node1, DataFlow::Node node2) {
+    // node1.getALocalSource() = node2.getALocalSource() or
+    exists (DataFlow::Node localRefersToNode1, DataFlow::Node localSourceNode2 |
+      hasSameLocalSource(node1, localRefersToNode1) and
+      node2.getALocalSource() = localSourceNode2 and
+      exists (CallNode callNode, Function func |
+        callNode.getScope() = localRefersToNode1.getScope() and
+        callNode.getAnArg() = localRefersToNode1.asCfgNode() and
+        func.getFunctionObject().getACall() = callNode and
+        // The following part is imprecise.
+        exists (int i |
+          func.getArg(i) = localSourceNode2.asExpr() and
+          callNode.getArg(i) = localRefersToNode1.asCfgNode()
+        )
+      )
+    )
+  }
+
+  /**
+   * @description
+   * ----------------------
+   * Holds if two dataflow nodes have the same dataflow source.
+   * 
+   */
+  predicate hasSameSource(DataFlow::Node node1, DataFlow::Node node2) {
+    // restrictedByFunctionName(node1, "set_instance_value") and
+    // restrictedByFunctionName(node2, "set_instance_item") and
+    node1.asCfgNode().pointsTo() = node2.asCfgNode().pointsTo()
+  }
+
+  module PrototypeObjectTracking implements DataFlow::ConfigSig {
+    /**
+     * @description
+     * ----------------------
+     * Sources for prototype object tracking should be results of getOperation. 
+     */
+    predicate isSource(DataFlow::Node source) {
+      exists (Expr getOpExpr |
+        (isGetItemOp(_, _, getOpExpr) or
+        isGetattrCall(_, _, getOpExpr)) and
+        source.asExpr() = getOpExpr
+      )
+    }
+  
+    predicate isSink(DataFlow::Node sink) {
+      exists (Expr baseObj |
+        (isSetItemExpr(baseObj, _, _, _) or
+        isSetattrCall(baseObj, _, _, _)) and
+        sink.asExpr() = baseObj
+      )
+    }
+  }
+  
+  module PrototypeObjectTrackingFlow = DataFlow::Global<PrototypeObjectTracking>;
+
+  /**
+   * @description
+   * ----------------------
+   * Dataflow Tracking for prototype object with shared source.
+   */
+  predicate hasSameSourcePrototypeObject(DataFlow::Node node1, DataFlow::Node node2) {
+    hasSameLocalSource(node1, node2) or
+    exists (DataFlow::Node sharedSource |
+      PrototypeObjectTrackingFlow::flow(sharedSource, node1) and
+      PrototypeObjectTrackingFlow::flow(sharedSource, node2)
+    )
   }
 
   /**

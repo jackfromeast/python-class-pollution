@@ -2,8 +2,9 @@ import python
 import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
-import Utils::ClassPolltionUtils
-import GetOp::ClassPollutionGetOp
+import shared.Utils::ClassPolltionUtils
+import shared.GetOp::ClassPollutionGetOp
+import shared.Debug::Debugging
 
 module ClassPollutionAdditionalFlowStep {
 
@@ -33,19 +34,19 @@ predicate additionalFlowStepGetItem(DataFlow::Node fromNode, DataFlow::Node toNo
     else
       toNode.asExpr() = forLoop.getTarget()
   )
-  // or
+  or
   // TODO: The following pattern will get v20.0.0 codeql binary stuck
-  // // Match for `for k, v in dict.items()`
-  // exists(For forLoop, MethodCallNode call, Tuple tuple |
-  //   forLoop.getIter() = call.asExpr() and
-  //   (
-  //     call.getMethodName() = "items" or
-  //     call.getMethodName() = "enumerate"
-  //   ) and
-  //   tuple = forLoop.getTarget() and
-  //   tuple.getAnElt() = fromNode.asExpr() and
-  //   fromNode.asExpr() = call.getObject().asExpr()
-  // )
+  // Match for `for k, v in dict.items()`
+  exists(For forLoop, MethodCallNode call, Tuple tuple |
+    forLoop.getIter() = call.asExpr() and
+    (
+      call.getMethodName() = "items" or
+      call.getMethodName() = "enumerate"
+    ) and
+    tuple = forLoop.getTarget() and
+    tuple.getAnElt() = fromNode.asExpr() and
+    fromNode.asExpr() = call.getObject().asExpr()
+  )
   or
   // Match for `for key in dict.keys():`
   exists(For forLoop, MethodCallNode call |
@@ -53,6 +54,18 @@ predicate additionalFlowStepGetItem(DataFlow::Node fromNode, DataFlow::Node toNo
     call.getMethodName() = "keys" and
     toNode.asExpr() = forLoop.getTarget() and
     fromNode.asExpr() = call.getObject().asExpr()
+  ) 
+  or 
+  // Match for `for key, value in zip(list1, list2):`
+  exists(For forLoop, Call call, API::CallNode callNode, Tuple tuple |
+    forLoop.getIter() = call and
+    callNode.asExpr() = call and
+    callNode =  API::builtin("zip").getACall() and
+    tuple = forLoop.getTarget() and
+    exists (int i |
+      tuple.getElt(i) = toNode.asExpr() and
+      call.getArg(i) = fromNode.asExpr()
+    ) 
   )
 }
 
@@ -60,16 +73,20 @@ predicate additionalFlowStepGetItem(DataFlow::Node fromNode, DataFlow::Node toNo
  * @description
  * ----------------------
  * Propagate the data flow from getItem operation when key is tainted.
+ * 
+ * @note
+ * ----------------------
+ * This should be precise that fromNode is the key and toNode is the val.
  */
 predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  // restrictedByFunctionName(fromNode, "_t_eval") and
+  // restrictedByFunctionName(toNode, "_t_eval") and
+  (
   // Propagate taint on every getValue operation with the polluted key
   // key -> obj[key]
   exists( DataFlow::Node getItemExpr | 
     isGetItemOp(_, fromNode.asExpr(), getItemExpr.asExpr()) and
-    (
-      DataFlow::localFlow(getItemExpr, toNode) or
-      getItemExpr = toNode
-    )
+    toNode = getItemExpr
   ) or
   //  for k, v in src.items() -> k -> v
   exists(For forLoop, MethodCallNode call, Tuple tuple |
@@ -82,7 +99,7 @@ predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::No
       tuple.getElt(0) = fromNode.asExpr() and
       tuple.getElt(1) = toNode.asExpr()
     )
-  )
+  ))
 }
 
 /**
@@ -91,27 +108,27 @@ predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::No
  * Propagate the data flow from getAttr operation when object is tainted.
  */
 predicate additionalFlowStepGetAttr(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  // restrictedByFunctionName(fromNode, "_t_eval") and
   exists(AttrRead addrRead |
     addrRead.getObject() = fromNode and
     toNode = addrRead
-  )
+  ) or
+  isGetattrCall(fromNode.asExpr(), _, toNode.asExpr())
 }
 
 /**
  * @description
  * ----------------------
  * Propagate the data flow from getAttr operation when key is tainted.
+ * 
+ * @note
+ * ----------------------
+ * This should be precise that fromNode is the key and toNode is the val.
  */
 predicate additionalFlowStepGetAttrReverse(DataFlow::Node fromNode, DataFlow::Node toNode) {
-  // Propagate taint on every getValue operation with the polluted key
-  // key -> getattr(obj, key)
-  exists( DataFlow::Node getattrCall |
-    isGetattrCall(_, fromNode.asExpr(), getattrCall.asExpr()) and
-    (
-      DataFlow::localFlow(getattrCall, toNode) or
-      getattrCall = toNode
-    )
-  )
+  // restrictedByFunctionName(fromNode, "_t_eval") and
+  // restrictedByFunctionName(toNode, "_t_eval") and
+  isGetattrCall(_, fromNode.asExpr(), toNode.asExpr())
 }
 
 }

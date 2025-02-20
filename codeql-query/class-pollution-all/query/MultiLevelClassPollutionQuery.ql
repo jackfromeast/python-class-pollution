@@ -34,6 +34,5 @@ where
   (
     Flow::flowPath(classPollutingKey, setAttrKey) and
     msg = "An enumeration key is used in class polluting assignments: $@ (setAttr) and $@ (setItem)."
-
   )
 select classPollutingKey, classPollutingKey, setAttrKey, msg, setAttrKey, setAttrKey.toString(), setItemKey, setItemKey.toString()

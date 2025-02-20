@@ -3,10 +3,10 @@ import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import semmle.python.dataflow.new.TaintTracking
-import shared.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
-import shared.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
-import shared.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
-import vuln.ClassPollutingFuncLib::ClassPollutionAssignment
+import shared.types.SplitKeyNames
+import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
+import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
+import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
 
 module ClassPollutionSourceDependencyModel {
 
@@ -19,7 +19,7 @@ module TrackingParamToPollutionSourceConfig implements DataFlow::ConfigSig {
   }
 
   predicate isSink(DataFlow::Node sink) {
-    isSplitResultImmediate(sink) 
+    isSplitResultImmediate(sink, _) 
   }
 
   predicate isAdditionalFlowStep(DataFlow::Node fromNode, DataFlow::Node toNode) {
@@ -32,7 +32,7 @@ module TrackingParamToPollutionSourceConfig implements DataFlow::ConfigSig {
 
 module TrackingPollutionSourceToRetConfig implements DataFlow::ConfigSig {
   predicate isSource(DataFlow::Node source) {
-    isSplitResultImmediate(source) 
+    isSplitResultImmediate(source, _) 
   }
 
   predicate isSink(DataFlow::Node sink) {
