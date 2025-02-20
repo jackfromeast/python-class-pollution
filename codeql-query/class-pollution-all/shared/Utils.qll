@@ -41,6 +41,15 @@ module ClassPolltionUtils {
       node.asExpr() = param
     )
   }
+
+  predicate isSameFunctionParam(DataFlow::Node node1, DataFlow::Node node2) {
+    exists (Function func, Parameter param1, Parameter param2 | 
+      func.getAnArg() = param1 and
+      func.getAnArg() = param2 and
+      node1.asExpr() = param1 and
+      node2.asExpr() = param2
+    )
+  }
   
   predicate methodImportPath(Function func, Module mod, Class cls) {
     func.getEnclosingScope() = cls and

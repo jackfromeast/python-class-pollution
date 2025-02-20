@@ -276,9 +276,7 @@ predicate debugTest(Flow::PathNode sourceKey, Flow::PathNode setItemObjOrKey, Fl
 predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj, Flow::PathNode setItemKey, Flow::PathNode sourceParamToObj, Flow::PathNode sourceParamToKey, string getOpType) {
   isSetItemExpr(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), _, _) and
   (
-    sourceParamToObj.getNode().getScope() = sourceParamToKey.getNode().getScope() and
-    isFunctionParam(sourceParamToObj.getNode()) and
-    isFunctionParam(sourceParamToKey.getNode())
+    isSameFunctionParam(sourceParamToObj.getNode(), sourceParamToKey.getNode())
   ) and
   (
     TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceParamToKey, setItemKey) and
@@ -302,9 +300,7 @@ predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj,
 predicate isClassPollutedAssignmentThroughAttrSetting(Flow::PathNode setAttrObj, Flow::PathNode setAttrKey, Flow::PathNode sourceParamToObj, Flow::PathNode sourceParamToKey, string getOpType) {
   isSetattrCall(setAttrObj.getNode().asExpr(), setAttrKey.getNode().asExpr(), _, _) and
   (
-    sourceParamToObj.getNode().getScope() = sourceParamToKey.getNode().getScope() and
-    isFunctionParam(sourceParamToObj.getNode()) and
-    isFunctionParam(sourceParamToKey.getNode())
+    isSameFunctionParam(sourceParamToObj.getNode(), sourceParamToKey.getNode())
   ) and
   (
     TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceParamToKey, setAttrKey) and
@@ -339,7 +335,7 @@ predicate isClassPollutedAssignmentThroughAttrSetting(Flow::PathNode setAttrObj,
  * @param setOpSecondObj - The secondary object node that used in the setItem/setAttr operation. For pollution with SetBoth, this is the object of SetItem.
  * @param pollutionType - The type of pollution.
  */
-predicate isClassPollutedAssignment(DataFlow::Node classPollutingSourceToKey, DataFlow::Node classPollutingSourceToObj, DataFlow::Node setOpPrimKey, DataFlow::Node setOpSecondKey, DataFlow::Node setOpPrimObj, DataFlow::Node setOpSecondObj,string pollutionType) {
+predicate isClassPollutedAssignmentAll(DataFlow::Node classPollutingSourceToKey, DataFlow::Node classPollutingSourceToObj, DataFlow::Node setOpPrimKey, DataFlow::Node setOpSecondKey, DataFlow::Node setOpPrimObj, DataFlow::Node setOpSecondObj,string pollutionType) {
   // CASE 1: SetBoth-GetBoth
   exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode sourceC, Flow::PathNode sourceD, 
     Flow::PathNode setItemObj1, Flow::PathNode setItemObj2, Flow::PathNode setAttrObj1, Flow::PathNode setAttrObj2,
@@ -381,84 +377,130 @@ predicate isClassPollutedAssignment(DataFlow::Node classPollutingSourceToKey, Da
     setOpSecondObj = setItemObj.getNode() and
     pollutionType = "SetBoth-GetAttr"
   )
-  // or 
+  or 
   // CASE 3: SetItem-GetBoth
-  // exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setItemKey,
-  //        Flow::PathNode setItemObj1, Flow::PathNode setItemObj2 |
-  //   isClassPollutedAssignmentThroughItemSetting(setItemObj1, _, sourceA, sourceB, "GetItem") and
-  //   isClassPollutedAssignmentThroughItemSetting(setItemObj2, setItemKey, sourceA, sourceB, "GetAttr") and
-  //   not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
-  //     (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") or
-  //     isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetAttr")) and
-  //     sourceA.getNode() = sourceC.getNode() and
-  //     sourceB.getNode() = sourceD.getNode()
-  //   ) and
-  //   setItemObj1.getNode() = setItemObj2.getNode() and
-  //   classPollutingSourceToObj = sourceA.getNode() and
-  //   classPollutingSourceToKey = sourceB.getNode() and
-  //   setOpPrimKey = setItemKey.getNode() and
-  //   setOpSecondKey = setItemKey.getNode() and
-  //   setOpPrimObj = setItemObj1.getNode() and
-  //   setOpSecondObj = setItemObj1.getNode() and
-  //   pollutionType = "SetItem-GetBoth"
-  // )
-  // or  
+  exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setItemKey,
+         Flow::PathNode setItemObj1, Flow::PathNode setItemObj2 |
+    isClassPollutedAssignmentThroughItemSetting(setItemObj1, _, sourceA, sourceB, "GetItem") and
+    isClassPollutedAssignmentThroughItemSetting(setItemObj2, setItemKey, sourceA, sourceB, "GetAttr") and
+    not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
+      (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") or
+      isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetAttr")) and
+      sourceA.getNode() = sourceC.getNode() and
+      sourceB.getNode() = sourceD.getNode()
+    ) and
+    setItemObj1.getNode() = setItemObj2.getNode() and
+    classPollutingSourceToObj = sourceA.getNode() and
+    classPollutingSourceToKey = sourceB.getNode() and
+    setOpPrimKey = setItemKey.getNode() and
+    setOpSecondKey = setItemKey.getNode() and
+    setOpPrimObj = setItemObj1.getNode() and
+    setOpSecondObj = setItemObj1.getNode() and
+    pollutionType = "SetItem-GetBoth"
+  )
+  or  
   // CASE 4: SetItem-GetAttr
-  // exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setItemKey, Flow::PathNode setItemObj |
-  //   isClassPollutedAssignmentThroughItemSetting(setItemObj, setItemKey, sourceA, sourceB, "GetAttr") and
-  //   not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
-  //     (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") or
-  //     isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, _)) and
-  //     sourceA.getNode() = sourceC.getNode() and
-  //     sourceB.getNode() = sourceD.getNode()
-  //   ) and
-  //   classPollutingSourceToObj = sourceA.getNode() and
-  //   classPollutingSourceToKey = sourceB.getNode() and
-  //   setOpPrimKey = setItemKey.getNode() and
-  //   setOpSecondKey = setItemKey.getNode() and
-  //   setOpPrimObj = setItemObj.getNode() and
-  //   setOpSecondObj = setItemObj.getNode() and
-  //   pollutionType = "SetItem-GetAttr"
-  // )
-  // or
+  exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setItemKey, Flow::PathNode setItemObj |
+    isClassPollutedAssignmentThroughItemSetting(setItemObj, setItemKey, sourceA, sourceB, "GetAttr") and
+    not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
+      (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") or
+      isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, _)) and
+      sourceA.getNode() = sourceC.getNode() and
+      sourceB.getNode() = sourceD.getNode()
+    ) and
+    classPollutingSourceToObj = sourceA.getNode() and
+    classPollutingSourceToKey = sourceB.getNode() and
+    setOpPrimKey = setItemKey.getNode() and
+    setOpSecondKey = setItemKey.getNode() and
+    setOpPrimObj = setItemObj.getNode() and
+    setOpSecondObj = setItemObj.getNode() and
+    pollutionType = "SetItem-GetAttr"
+  )
+  or
   // CASE 5: SetAttr-GetBoth
-  // exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setAttrKey, Flow::PathNode setAttrObj1, Flow::PathNode setAttrObj2|
-  //   isClassPollutedAssignmentThroughAttrSetting(setAttrObj1, _, sourceA, sourceB, "GetItem") and
-  //   isClassPollutedAssignmentThroughAttrSetting(setAttrObj2, setAttrKey, sourceA, sourceB, "GetAttr") and
-  //   not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
-  //     isClassPollutedAssignmentThroughItemSetting(_, _, sourceC, sourceD, _) and
-  //     sourceA.getNode() = sourceC.getNode() and
-  //     sourceB.getNode() = sourceD.getNode()
-  //   ) and
-  //   setAttrObj1.getNode() = setAttrObj2.getNode() and
-  //   classPollutingSourceToObj = sourceA.getNode() and
-  //   classPollutingSourceToKey = sourceB.getNode() and
-  //   setOpPrimKey = setAttrKey.getNode() and
-  //   setOpSecondKey = setAttrKey.getNode() and
-  //   setOpPrimObj = setAttrObj1.getNode() and
-  //   setOpSecondObj = setAttrObj1.getNode() and
-  //   pollutionType = "SetAttr-GetBoth"
-  // )
-  // or
+  exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setAttrKey, Flow::PathNode setAttrObj1, Flow::PathNode setAttrObj2|
+    isClassPollutedAssignmentThroughAttrSetting(setAttrObj1, _, sourceA, sourceB, "GetItem") and
+    isClassPollutedAssignmentThroughAttrSetting(setAttrObj2, setAttrKey, sourceA, sourceB, "GetAttr") and
+    not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
+      isClassPollutedAssignmentThroughItemSetting(_, _, sourceC, sourceD, _) and
+      sourceA.getNode() = sourceC.getNode() and
+      sourceB.getNode() = sourceD.getNode()
+    ) and
+    setAttrObj1.getNode() = setAttrObj2.getNode() and
+    classPollutingSourceToObj = sourceA.getNode() and
+    classPollutingSourceToKey = sourceB.getNode() and
+    setOpPrimKey = setAttrKey.getNode() and
+    setOpSecondKey = setAttrKey.getNode() and
+    setOpPrimObj = setAttrObj1.getNode() and
+    setOpSecondObj = setAttrObj1.getNode() and
+    pollutionType = "SetAttr-GetBoth"
+  )
+  or
   // CASE 6: SetAttr-GetAttr
-  // exists (Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setAttrKey, Flow::PathNode setAttrObj|
-  //   isClassPollutedAssignmentThroughAttrSetting(setAttrObj, setAttrKey, sourceA, sourceB, "GetAttr") and
-  //   not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
-  //     (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") or
-  //     isClassPollutedAssignmentThroughItemSetting(_, _, sourceC, sourceD, _)) and
-  //     sourceA.getNode() = sourceC.getNode() and
-  //     sourceB.getNode() = sourceD.getNode()
-  //   ) and
-  //   classPollutingSourceToObj = sourceA.getNode() and
-  //   classPollutingSourceToKey = sourceB.getNode() and
-  //   setOpPrimKey = setAttrKey.getNode() and
-  //   setOpSecondKey = setAttrKey.getNode() and
-  //   setOpPrimObj = setAttrObj.getNode() and
-  //   pollutionType = "SetAttr-GetAttr"
-  // )
+  exists (Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setAttrKey, Flow::PathNode setAttrObj|
+    isClassPollutedAssignmentThroughAttrSetting(setAttrObj, setAttrKey, sourceA, sourceB, "GetAttr") and
+    not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
+      (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") or
+      isClassPollutedAssignmentThroughItemSetting(_, _, sourceC, sourceD, _)) and
+      sourceA.getNode() = sourceC.getNode() and
+      sourceB.getNode() = sourceD.getNode()
+    ) and
+    classPollutingSourceToObj = sourceA.getNode() and
+    classPollutingSourceToKey = sourceB.getNode() and
+    setOpPrimKey = setAttrKey.getNode() and
+    setOpSecondKey = setAttrKey.getNode() and
+    setOpPrimObj = setAttrObj.getNode() and
+    pollutionType = "SetAttr-GetAttr"
+  )
 }
 
 
+predicate isClassPollutedAssignmentSetBothGetBoth(DataFlow::Node classPollutingSourceToKey, DataFlow::Node classPollutingSourceToObj, DataFlow::Node setOpPrimKey, DataFlow::Node setOpSecondKey, DataFlow::Node setOpPrimObj, DataFlow::Node setOpSecondObj,string pollutionType) {
+  // CASE 1: SetBoth-GetBoth
+  pollutionType = "SetBoth-GetBoth" and
+  exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode sourceC, Flow::PathNode sourceD, 
+    Flow::PathNode setItemObj1, Flow::PathNode setItemObj2, Flow::PathNode setAttrObj1, Flow::PathNode setAttrObj2,
+    Flow::PathNode setAttrKey, Flow::PathNode setItemKey |
+    isClassPollutedAssignmentThroughItemSetting(setItemObj1, _, sourceA, sourceB, "GetItem") and
+    isClassPollutedAssignmentThroughItemSetting(setItemObj2, setItemKey, sourceA, sourceB, "GetAttr") and
+    isClassPollutedAssignmentThroughAttrSetting(setAttrObj1, _, sourceC, sourceD, "GetItem") and
+    isClassPollutedAssignmentThroughAttrSetting(setAttrObj2, setAttrKey, sourceC, sourceD, "GetAttr") and
+    setItemObj1.getNode() = setItemObj2.getNode() and
+    setAttrObj1.getNode() = setAttrObj2.getNode() and
+    hasSameSourcePrototypeObject(setItemObj1.getNode(), setAttrObj1.getNode()) and
+    sourceA.getNode() = sourceC.getNode() and
+    sourceB.getNode() = sourceD.getNode() and
+    classPollutingSourceToObj = sourceA.getNode() and
+    classPollutingSourceToKey = sourceB.getNode() and
+    setOpPrimKey = setAttrKey.getNode() and
+    setOpSecondKey = setItemKey.getNode() and
+    setOpPrimObj = setAttrObj1.getNode() and
+    setOpSecondObj = setItemObj1.getNode() and
+    pollutionType = "SetBoth-GetBoth"
+  ) 
+}
 
+
+predicate isClassPollutedAssignmentSetBothGetAttr(DataFlow::Node classPollutingSourceToKey, DataFlow::Node classPollutingSourceToObj, DataFlow::Node setOpPrimKey, DataFlow::Node setOpSecondKey, DataFlow::Node setOpPrimObj, DataFlow::Node setOpSecondObj,string pollutionType) {
+  // CASE 2: SetBoth-GetAttr
+  pollutionType = "SetBoth-GetAttr" and
+  exists(Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode sourceC, Flow::PathNode sourceD,
+    Flow::PathNode setItemObj, Flow::PathNode setAttrObj, 
+    Flow::PathNode setAttrKey, Flow::PathNode setItemKey |
+    isClassPollutedAssignmentThroughItemSetting(setItemObj, setItemKey, sourceA, sourceB, "GetAttr") and
+    isClassPollutedAssignmentThroughAttrSetting(setAttrObj, setAttrKey, sourceC, sourceD, "GetAttr") and
+    not isClassPollutedAssignmentThroughItemSetting(_, _, sourceA, sourceB, "GetItem") and
+    not isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem") and
+    hasSameSourcePrototypeObject(setItemObj.getNode(), setAttrObj.getNode()) and
+    sourceA.getNode() = sourceC.getNode() and
+    sourceB.getNode() = sourceD.getNode() and
+    classPollutingSourceToObj = sourceA.getNode() and
+    classPollutingSourceToKey = sourceB.getNode() and
+    setOpPrimKey = setAttrKey.getNode() and
+    setOpSecondKey = setItemKey.getNode() and
+    setOpPrimObj = setAttrObj.getNode() and
+    setOpSecondObj = setItemObj.getNode()
+  ) 
+}
 
 }

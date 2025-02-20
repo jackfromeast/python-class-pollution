@@ -20,22 +20,23 @@
  
  module Flow = TrackingClassPollutionKeyToAssignmentFlow;
  
- 
- from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg,
+ from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg,
  DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
  where
-  exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
-    isClassPollutedAssignment(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType) and
-    sourceParamObjNode.asExpr() = sourceParamObj and
-    sourceParamKeyNode.asExpr() = sourceParamKey
+  (
+    isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType) or
+    isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType)
   ) and
-  func.getAnArg() = sourceParamKey and
-  func.getAnArg() = sourceParamObj and
+  func.getAnArg() = sourceParamKeyNode.asExpr() and
+  // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.
+  // The following line would cause the query stuck in the analysis (I don't know why right now).
+  // func.getAnArg() = sourceParamObjNode.asExpr() and
   (
     (
       (vulnType = "SetBoth-GetBoth" or vulnType = "SetBoth-GetAttr") and 
       msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@, Set item Op Key: $@."
-    ) or
+    ) 
+    or
     (
       (vulnType = "SetAttr-GetBoth" or vulnType = "SetAttr-GetAttr") and 
       msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@."
@@ -45,4 +46,4 @@
       msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set item Key: $@."
     )
   )
- select func, msg, func, func.toString(), sourceParamKey, sourceParamKey.getName(), sourceParamObj, sourceParamObj.getName(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString()
+ select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString()
