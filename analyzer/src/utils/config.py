@@ -7,6 +7,20 @@ Holds the configuration settings for all the analysis tasks.
 import os
 import yaml
 
+def load_config(config_path):
+    """Load the YAML configuration file."""
+    with open(config_path, 'r') as file:
+        return yaml.safe_load(file)
+
+def get_workflow_from_config(config):
+    """Determine the workflow from the config file."""
+    if config.get('WORKFLOW', {}).get('CLASS_POLLUTION_ANALYSIS', False):
+        return "class_pollution"
+    elif config.get('WORKFLOW', {}).get('DEPENDENCY_ANALYSIS', False):
+        return "dependency_analysis"
+    else:
+        raise ValueError("No valid workflow specified in the config file.")
+
 class ConfigDict:
   """A wrapper around Python dictionaries to support dot notation access."""
   def __init__(self, dictionary):
