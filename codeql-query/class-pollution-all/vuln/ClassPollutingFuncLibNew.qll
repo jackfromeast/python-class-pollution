@@ -136,7 +136,8 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   }
 
   predicate isSink(DataFlow::Node sink, FlowState state) {
-    // restrictedByFunctionName(sink, "_init_reference_module") 
+    // restrictedByFunctionName(sink, "_t_eval") and
+    // state instanceof EnumeratedKeyFlowState
     (
       isSetItemExpr(_, sink.asExpr(), _, _) and
       ((
@@ -176,7 +177,8 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   }
 
   predicate isAdditionalFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
-    // General flow steps
+    // TYPE1: General flow steps
+    // From ANY FlowState to ANY FlowState
     (
       (
         additionalFlowStepThroughNamedtuple(fromNode, toNode) or
@@ -208,10 +210,12 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
       ) and
       toState = fromState
     ) or
-    // From InitFuncParamterFlowState to EnumeratedKeyFlowState
-    // if iter is from node, taint the enumerated items with EnumeratedKeyFlowState label
+    // TYPE 2: From InitFuncParamterFlowState to EnumeratedKeyFlowState
+    // Loop/Split/Enumerate the value with InitFuncParamterFlowState label would lead to EnumeratedKeyFlowState label
     (
-      isClassPollutedKeyNamesOrBaseObjects(toNode, fromNode) and
+      (
+        isClassPollutedKeyNamesOrBaseObjects(toNode, fromNode)
+      ) and
       (
         fromState instanceof EnumeratedKeyFlowState or 
         fromState instanceof InitFuncParamterFlowState
@@ -220,9 +224,12 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
         toState instanceof EnumeratedKeyFlowState or 
         toState instanceof InitFuncParamterFlowState
       )
-    ) or 
-    // From EnumeratedKeyFlowState to PrototypeObjectFlowState
-    (
+    ) or
+    // TYPE 3: From EnumeratedKeyFlowState to PrototypeObjectFlowState
+    // If key is enumerated, taint the object with PrototypeObjectFlowState label
+    // This is how we make sure that the get operation is recursive. 
+    ( 
+      fromState instanceof EnumeratedKeyFlowState and
       (
         additionalFlowStepThroughCustomLibHoldPrototypeObject(fromNode, toNode) or
         additionalFlowStepGetAttrReverse(fromNode, toNode)
@@ -233,6 +240,7 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
       )
     ) or
     (
+      fromState instanceof EnumeratedKeyFlowState and
       (
         additionalFlowStepGetItemReverse(fromNode, toNode) or
         additionalFlowStepThroughCustomLibHoldPrototypeObject(fromNode, toNode)
@@ -260,7 +268,7 @@ predicate isClassPollutedKeyNamesOrBaseObjects(DataFlow::Node key, DataFlow::Nod
 predicate debugTest(Flow::PathNode sourceKey, Flow::PathNode setItemObjOrKey, FlowState state) {
   exists (Function func | 
     func.getAnArg() = sourceKey.getNode().asExpr() and
-    func.getName() = "update_item_attr"
+    func.getName() = "_t_eval"
   ) and
   TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceKey, setItemObjOrKey) and
   // setItemObjOrKey.getState() instanceof PrototypeObjectFlowState and

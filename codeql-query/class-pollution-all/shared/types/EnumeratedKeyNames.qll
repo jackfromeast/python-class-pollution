@@ -1,6 +1,7 @@
 import python
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
+import semmle.python.dataflow.new.TaintTracking
 import semmle.python.ApiGraphs
 import shared.Debug::Debugging
 
@@ -61,6 +62,36 @@ class EnumeratedKeyNames extends DataFlow::Node {
         tuple.getElt(1) = this.asExpr()
       )
     )
+    or
+    // Match for `while i < ANY: key = list[i]; i += 1`
+    exists(While whileLoop, Subscript subscript, Compare cmp, Lt ltOp, LtE lteOp, Expr iInLoop, Expr iInSubscript |
+      whileLoop.contains(cmp) and
+      (
+        cmp.compares(iInLoop, ltOp, _) or
+        cmp.compares(iInLoop, lteOp, _)
+      ) and
+
+      // Match for `key = list[i]` or `key = list[i+1]`
+      exists( DataFlow::Node iInLoopNode, DataFlow::Node iInSubscriptNode |
+        iInLoopNode.asExpr() = iInLoop and
+        iInSubscriptNode.asExpr() = iInSubscript and
+        TaintTracking::localTaint(iInLoopNode, iInSubscriptNode) and
+        subscript = this.asExpr() and
+        subscript.getIndex() = iInSubscriptNode.asExpr()
+      ) 
+    )
+    or
+    // Match for `for i in range(len(list)): key = list[i]`
+    exists(For forLoop, Expr iInLoop, Expr iInSubscript, Subscript subscript|
+      forLoop.getTarget() = iInLoop and
+      exists (DataFlow::Node iInLoopNode, DataFlow::Node iInSubscriptNode |
+        iInLoopNode.asExpr() = iInLoop and
+        iInSubscriptNode.asExpr() = iInSubscript and
+        TaintTracking::localTaint(iInLoopNode, iInSubscriptNode) and
+        subscript = this.asExpr() and
+        subscript.getIndex() = iInSubscriptNode.asExpr()
+      )
+    )
   }
 }
 
@@ -111,6 +142,37 @@ predicate enumeratedKeyNamesAndObjectPair(DataFlow::Node key, DataFlow::Node obj
     (
       tuple.getElt(0) = key.asExpr() or
       tuple.getElt(1) = key.asExpr()
+    )
+  )
+  or 
+  // Match for `while i < ANY: key = list[i]; i += 1`
+  exists(While whileLoop, Subscript subscript, Compare cmp, Lt ltOp, LtE lteOp, Expr iInLoop, Expr iInSubscript |
+    whileLoop.contains(cmp) and
+    (
+      cmp.compares(iInLoop, ltOp, _) or
+      cmp.compares(iInLoop, lteOp, _)
+    ) and
+    // Match for `key = list[i]`
+    exists( DataFlow::Node iInLoopNode, DataFlow::Node iInSubscriptNode |
+      iInLoopNode.asExpr() = iInLoop and
+      iInSubscriptNode.asExpr() = iInSubscript and
+      TaintTracking::localTaint(iInLoopNode, iInSubscriptNode) and
+      subscript.getObject() = obj.asExpr() and
+      subscript = key.asExpr() and
+      subscript.getIndex() = iInSubscript
+    ) 
+  )
+  or 
+  // Match for `for i in range(len(list)): key = list[i]`
+  exists(For forLoop, Expr iInLoop, Expr iInSubscript, Subscript subscript|
+    forLoop.getTarget() = iInLoop and
+    exists (DataFlow::Node iInLoopNode, DataFlow::Node iInSubscriptNode |
+      iInLoopNode.asExpr() = iInLoop and
+      iInSubscriptNode.asExpr() = iInSubscript and
+      TaintTracking::localTaint(iInLoopNode, iInSubscriptNode) and
+      subscript.getObject() = obj.asExpr() and
+      subscript = key.asExpr() and
+      subscript.getIndex() = iInSubscript
     )
   )
 }
