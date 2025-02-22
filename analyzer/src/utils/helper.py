@@ -4,9 +4,39 @@ import psutil
 import subprocess
 
 def resolve_repo_name(repo_url):
-  if repo_url.endswith(".git"):
-    return repo_url.split("/")[-1].replace(".git", "")
-  return repo_url.split("/")[-1]
+  """
+  Extracts the repository or package name from a URL.
+
+  @param repo_url: The URL of the repository or package.
+  e.g.,
+  - https://pypi.org/project/laboneq/2.44.0/
+  - https://pypi.org/project/laboneq
+  - https://github.com/xxx/laboneq.git
+  - https://github.com/xxx/laboneq
+  @return: The repository or package name.
+  """
+  repo_url = repo_url.rstrip("/")
+
+  # Handle GitHub URLs
+  if "github.com" in repo_url:
+    if repo_url.endswith(".git"):
+      return repo_url.split("/")[-1].replace(".git", "")
+    return repo_url.split("/")[-1]
+
+  # Handle PyPI URLs
+  elif "pypi.org" in repo_url:
+    # Split the URL by "/" and get the second-to-last part (project name)
+    parts = repo_url.split("/")
+    if len(parts) >= 5 and parts[-2] == "project":
+      return parts[-1]
+    elif len(parts) >= 5 and parts[-3] == "project":
+      return parts[-2]
+    else:
+      raise ValueError(f"Invalid PyPI URL: {repo_url}")
+
+  # Handle other URLs
+  else:
+    raise ValueError(f"Unsupported URL: {repo_url}")
 
 def cleanup_folders(folder_path):
   if os.path.exists(folder_path):

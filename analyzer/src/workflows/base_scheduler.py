@@ -5,6 +5,7 @@ import logging
 import psutil
 from utils.config import Config
 from utils.logger import LoggerFactory
+from utils.helper import resolve_repo_name, cleanup_folders
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from multiprocessing import Manager
 
@@ -46,7 +47,7 @@ class BaseScheduler:
 
   def setup_workspace_for_repo(self, repo_url):
     """Setup the workspace for the repository."""
-    repo_name = self.resolve_repo_name(repo_url)
+    repo_name = resolve_repo_name(repo_url)
     repo_workspace_path = os.path.join(self.workspace, 'output', repo_name)
     os.makedirs(repo_workspace_path, exist_ok=True)
 
