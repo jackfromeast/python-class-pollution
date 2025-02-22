@@ -30,13 +30,12 @@ from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string v
     Flow::PathNode setOpPrimKeyFlowNode, Flow::PathNode sourceParamKeyFlowNode, DataFlow::Node setOpSecondKeyNode
 where
   exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
-    isClassPollutedAssignment(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType) and
+    isClassPollutedAssignmentAll(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType) and
     sourceParamObjNode.asExpr() = sourceParamObj and
     sourceParamKeyNode.asExpr() = sourceParamKey
   ) and
   (
-    func.getAnArg() = sourceParamKey and
-    func.getAnArg() = sourceParamObj
+    func.getAnArg() = sourceParamKey
   ) and
   (
     (
