@@ -1,0 +1,188 @@
+2025-02-22 23:15:42,922 - CodeQLRunner - ERROR - Query timed out for litellm: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-22 23:15:43,103 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-22 23:29:55,162 - CodeQLRunner - ERROR - Failed to build CodeQL database: UnknownError: Initializing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/PhotoGIMP/codeql-db.
+Running build command: []
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/PhotoGIMP/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/autobuild.sh]
+Finalizing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/PhotoGIMP/codeql-db.
+CodeQL detected code written in Python but could not process any of it. For more information, review our troubleshooting guide at https://gh.io/troubleshooting-code-scanning/no-source-code-seen-during-build.
+ (logger.py:42)
+2025-02-22 23:58:33,706 - CodeQLRunner - ERROR - Query timed out for FlexLLMGen: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-22 23:58:33,965 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:08:05,930 - CodeQLRunner - ERROR - Query timed out for GAM: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:08:06,187 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:11:54,947 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 00:28:17,291 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 00:31:20,977 - CodeQLRunner - ERROR - Query timed out for ironpython3: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:31:21,194 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:42:16,101 - CodeQLRunner - ERROR - Query timed out for KomodoEdit: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:42:16,403 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:43:25,028 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 00:58:19,314 - CodeQLRunner - ERROR - Query timed out for Kunlun-M: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 00:58:19,611 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 01:13:32,119 - CodeQLRunner - ERROR - Query timed out for NeMo: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 01:13:32,420 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 01:17:55,308 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 01:19:05,785 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 01:42:22,178 - CodeQLRunner - ERROR - Query timed out for PaddleNLP: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 01:42:22,399 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 01:56:49,626 - CodeQLRunner - ERROR - Query timed out for MONAI: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 01:56:49,807 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 02:07:14,455 - CodeQLRunner - ERROR - Query timed out for pyomo: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 02:07:14,799 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 02:43:37,070 - CodeQLRunner - ERROR - Query timed out for Tautulli: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 02:43:37,290 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 02:52:23,663 - CodeQLRunner - ERROR - Query timed out for Theano: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 02:52:23,924 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:14:03,530 - CodeQLRunner - ERROR - Query timed out for Vitis-AI: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:14:03,788 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:25:46,462 - CodeQLRunner - ERROR - Query timed out for aaPanel: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:25:46,644 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:34:41,035 - CodeQLRunner - ERROR - Query timed out for aesara: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:34:41,333 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:53:19,920 - CodeQLRunner - ERROR - Query timed out for aliyun-openapi-python-sdk: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 03:53:20,141 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 04:04:21,876 - CodeQLRunner - ERROR - Query timed out for ansible: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 04:04:22,138 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 04:12:14,499 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 04:27:45,303 - CodeQLRunner - ERROR - Query timed out for astropy: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 04:27:45,604 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 04:35:13,775 - CodeQLRunner - ERROR - Query timed out for sagemaker-python-sdk: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 04:35:14,034 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 05:23:56,790 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 05:32:00,387 - CodeQLRunner - ERROR - Query timed out for nogil: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 05:32:00,604 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 05:48:35,309 - CodeQLRunner - ERROR - Query timed out for dagster: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 05:48:35,490 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 05:57:58,277 - CodeQLRunner - ERROR - Failed to build CodeQL database: UnknownError: Initializing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/kitty-themes/codeql-db.
+Running build command: []
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/kitty-themes/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/autobuild.sh]
+Finalizing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/kitty-themes/codeql-db.
+CodeQL detected code written in Python but could not process any of it. For more information, review our troubleshooting guide at https://gh.io/troubleshooting-code-scanning/no-source-code-seen-during-build.
+ (logger.py:42)
+2025-02-23 05:58:43,627 - CodeQLRunner - ERROR - Query timed out for python-phonenumbers: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 05:58:43,844 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 06:16:48,531 - CodeQLRunner - ERROR - Query timed out for content: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 06:16:48,800 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 06:18:36,164 - CodeQLRunner - ERROR - Query timed out for skidl: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 06:18:36,501 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 06:37:30,043 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 06:41:40,761 - CodeQLRunner - ERROR - Query timed out for edgedb: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 06:41:41,122 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:04:22,296 - CodeQLRunner - ERROR - Query timed out for Ax: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:04:22,559 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:05:44,225 - CodeQLRunner - ERROR - Query timed out for cinder: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:05:44,446 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:09:46,902 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 07:09:48,295 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 07:43:47,197 - CodeQLRunner - ERROR - Query timed out for lettuce: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:43:47,458 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:44:36,189 - CodeQLRunner - ERROR - Query timed out for galaxy: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:44:36,486 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:53:39,629 - CodeQLRunner - ERROR - Query timed out for sentry: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 07:53:39,767 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 08:13:26,480 - CodeQLRunner - ERROR - Query timed out for google-ctf: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 08:13:26,781 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 08:27:46,380 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 08:46:01,778 - CodeQLRunner - ERROR - Query timed out for holoviews: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 08:46:01,995 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 09:01:33,876 - CodeQLRunner - ERROR - Query timed out for transformers: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 09:01:34,178 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 09:26:12,657 - CodeQLRunner - ERROR - Query timed out for ivre: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 09:26:13,038 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 09:54:29,588 - CodeQLRunner - ERROR - Query timed out for NSC_BUILDER: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 09:54:29,846 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 10:06:36,658 - CodeQLRunner - ERROR - Query timed out for keras: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 10:06:36,795 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 10:41:00,957 - CodeQLRunner - ERROR - Query timed out for localstack: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 10:41:01,254 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 10:51:33,172 - CodeQLRunner - ERROR - Query timed out for mage-ai: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 10:51:33,429 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:00:18,808 - CodeQLRunner - ERROR - Failed to build CodeQL database: UnknownError: Initializing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/AI/codeql-db.
+Running build command: []
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/AI/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/autobuild.sh]
+Finalizing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/AI/codeql-db.
+CodeQL detected code written in Python but could not process any of it. For more information, review our troubleshooting guide at https://gh.io/troubleshooting-code-scanning/no-source-code-seen-during-build.
+ (logger.py:42)
+2025-02-23 11:23:41,105 - CodeQLRunner - ERROR - Query timed out for LMOps: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:23:41,325 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:24:00,937 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 11:30:21,945 - CodeQLRunner - ERROR - Query timed out for Sick-Beard: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:30:22,204 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:46:19,129 - CodeQLRunner - ERROR - Query timed out for mlrun: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:46:19,385 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:47:05,878 - CodeQLRunner - ERROR - Query timed out for mne-python: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:47:06,059 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:58:25,587 - CodeQLRunner - ERROR - Query timed out for bazarr: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 11:58:25,806 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 12:03:43,527 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 12:12:36,051 - CodeQLRunner - ERROR - Query timed out for mylar3: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 12:12:36,349 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 12:45:16,623 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 13:12:29,201 - CodeQLRunner - ERROR - Query timed out for graalpython: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 13:12:29,462 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 13:23:03,923 - CodeQLRunner - ERROR - Query timed out for pandas: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 13:23:04,179 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 13:54:38,282 - CodeQLRunner - ERROR - Query timed out for xarray: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 13:54:38,458 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:00:56,204 - CodeQLRunner - ERROR - Query timed out for Medusa: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:00:56,425 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:10:05,007 - CodeQLRunner - ERROR - Query timed out for pypy: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:10:05,183 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:21:49,363 - CodeQLRunner - ERROR - Query timed out for pyston: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:21:49,580 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:27:42,168 - CodeQLRunner - ERROR - Query timed out for python-telegram-bot: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:27:42,385 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:30:30,835 - CodeQLRunner - ERROR - Query timed out for mypy: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:30:31,093 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:32:58,154 - CodeQLRunner - ERROR - Query timed out for cpython: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:32:58,331 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:34:55,953 - CodeQLRunner - ERROR - Failed to build CodeQL database: UnknownError: Initializing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/CoDeF/codeql-db.
+Running build command: []
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/CoDeF/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/autobuild.sh]
+Finalizing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/CoDeF/codeql-db.
+CodeQL detected code written in JavaScript/TypeScript, but not any written in Python. Confirm that there is some source code for Python in the project. For more information, review our troubleshooting guide at https://gh.io/troubleshooting-code-scanning/no-source-code-seen-during-build.
+ (logger.py:42)
+2025-02-23 14:43:34,366 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 14:56:31,511 - CodeQLRunner - ERROR - Query timed out for Cirq: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 14:56:31,768 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:13:39,817 - CodeQLRunner - ERROR - Failed to build CodeQL database: UnknownError: Initializing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/EasY_HaCk/codeql-db.
+Running build command: []
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/EasY_HaCk/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/autobuild.sh]
+Finalizing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/EasY_HaCk/codeql-db.
+CodeQL detected code written in Python but could not process any of it. For more information, review our troubleshooting guide at https://gh.io/troubleshooting-code-scanning/no-source-code-seen-during-build.
+ (logger.py:42)
+2025-02-23 15:34:58,872 - CodeQLRunner - ERROR - Query timed out for sage-archive-2023-02-01: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:34:59,129 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:35:13,766 - CodeQLRunner - ERROR - Query timed out for sage: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:35:13,983 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:40:06,555 - CodeQLRunner - ERROR - Query timed out for salt: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:40:06,772 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:48:06,866 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 15:52:03,800 - CodeQLRunner - ERROR - Failed to build CodeQL database: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-02-23 15:52:19,037 - CodeQLRunner - ERROR - Query timed out for scikit-learn: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 15:52:19,219 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 16:16:13,490 - CodeQLRunner - ERROR - Query timed out for sktime: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 16:16:13,751 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 16:44:16,463 - CodeQLRunner - ERROR - Query timed out for sympy: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 16:44:16,724 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
+2025-02-23 16:51:20,822 - CodeQLRunner - ERROR - Failed to build CodeQL database: UnknownError: Initializing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codeql-db.
+Running build command: []
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/autobuild.sh]
+Finalizing database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codeql-db.
+Running pre-finalize script /home/jackfromeast/Downloads/codeql/python/tools/pre-finalize.sh in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codebase.
+Running command in /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codebase: [/home/jackfromeast/Downloads/codeql/python/tools/pre-finalize.sh]
+Running TRAP import for CodeQL database at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codeql-db...
+Importing TRAP files
+Merging relations
+A fatal error occurred: Cannot create backup extensional pool
+(eventual cause: NoSuchFileException "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1...")
+A fatal error occurred: Dataset import for /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/teleport/codeql-db/db-python failed with code 2.
+Failed to write diagnostic information.
+ (logger.py:42)
+2025-02-23 16:51:57,941 - CodeQLRunner - ERROR - Failed to execute query /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql: UnknownError: Running queries.
+Compiling query plan for /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql.
+WARNING: unused variable 'val' (/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/shared/flowsteps/AdditionalFlowStepNamedtuple.qll:43,69-72)
+WARNING: unused variable 'state' (/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/vuln/SmartGettingFuncLib.qll:98,55-60)
+A fatal error occurred: Could not read dbscheme at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/graphtage/codeql-db/db-python/semmlecode.python.dbscheme: java.nio.file.NoSuchFileException: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r3/output/graphtage/codeql-db/db-python/semmlecode.python.dbscheme
+ (logger.py:42)
+2025-02-23 16:51:57,941 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/MultiLevelClassPollutionQueryNew.ql (logger.py:42)
