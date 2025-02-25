@@ -22,6 +22,12 @@ class CodeQLDriverExceptions:
     error_log_message = None
     if "CodeQL did not detect any code written in languages" in stderr:
       error_log_message = "NoPythonCodeFoundException: No Python code found in the repository."
+    if "but not any written in Python" in stderr:
+      error_log_message = "NoPythonCodeFoundException: No Python code found in the repository."
+    if "CodeQL did not detect any code written in languages supported by this CodeQL distribution" in stderr:
+      error_log_message = "NoSupportedCodeFoundException: No supported code found in the repository."
+    if "CodeQL detected code written in Python but could not process any of it." in stderr:
+      error_log_message = "NoSupportedPythonCodeFound: No supported code found in the repository."
     else:
       error_log_message = f"UnknownError: {stderr}"
 
