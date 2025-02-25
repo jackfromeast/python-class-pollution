@@ -24,7 +24,7 @@ def parse_result_log(file_path):
   try:
     with open(file_path, "r") as file:
       for line in file:
-        match = re.search(r"INFO - ([\w\-\d]+) - MultiLevelClassPollutionQueryNew\.ql\.sarif:", line)
+        match = re.search(r"INFO - ([\w\-\d]+) - .*\.ql\.sarif:", line)
         if match:
           package_name = match.group(1)
           detected_packages.add(package_name)
