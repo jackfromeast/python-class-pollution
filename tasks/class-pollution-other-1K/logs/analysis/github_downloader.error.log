@@ -1,0 +1,139 @@
+2025-02-27 22:07:18,818 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-02-27 23:55:04,533 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/DARKARMY/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/D4RK-4RMY/DARKARMY.git/'
+ (downloader.py:85)
+2025-02-28 01:02:44,536 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/comfyui-reactor-node/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Access to this repository has been disabled by GitHub staff.
+remote: If you are the repository owner, you can contact support via https://support.github.com/contact for more information.
+fatal: Authentication failed for 'https://github.com/Gourieff/comfyui-reactor-node.git/'
+ (downloader.py:85)
+2025-02-28 02:25:04,602 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/Navigation-Learning/codebase'...
+Updating files:  70% (329/466)Updating files:  71% (331/466)Updating files:  72% (336/466)Updating files:  73% (341/466)Updating files:  74% (345/466)Updating files:  75% (350/466)Updating files:  76% (355/466)Updating files:  77% (359/466)Updating files:  78% (364/466)Updating files:  79% (369/466)Updating files:  80% (373/466)Updating files:  81% (378/466)Updating files:  82% (383/466)Updating files:  83% (387/466)Updating files:  84% (392/466)Updating files:  85% (397/466)Updating files:  86% (401/466)Updating files:  87% (406/466)Updating files:  88% (411/466)Updating files:  89% (415/466)Updating files:  90% (420/466)Updating files:  91% (425/466)Updating files:  92% (429/466)Updating files:  93% (434/466)Updating files:  94% (439/466)Updating files:  95% (443/466)Updating files:  96% (448/466)Updating files:  97% (453/466)Updating files:  98% (457/466)error: unable to create file 课程学习：Kalman滤波/10-卡尔曼滤波原理（十）量测故障检测与强跟踪滤波：量测故障检测与隔离、量测方差自适应滤波、单重渐消因子自适应滤波、多重渐消因子自适应滤波、基于序贯算法的多重渐消因子自适应滤波.md: File name too long
+Updating files:  99% (462/466)Updating files: 100% (466/466)Updating files: 100% (466/466), done.
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore --source=HEAD :/'
+
+ (downloader.py:85)
+2025-02-28 05:14:59,717 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-02-28 07:54:25,338 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/empyrean/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/addi00000/empyrean.git/'
+ (downloader.py:85)
+2025-02-28 10:17:25,840 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-02-28 11:09:24,559 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/cstealer/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/can-kat/cstealer.git/'
+ (downloader.py:85)
+2025-02-28 11:23:17,314 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-02-28 12:56:20,662 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-02-28 22:42:44,280 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/DarkGPT/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/luijait/DarkGPT.git/'
+ (downloader.py:85)
+2025-03-01 02:57:43,996 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-01 03:54:09,720 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-01 10:32:50,088 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-01 12:43:52,635 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-other-1K/output/serv00-login/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Access to this repository has been disabled by GitHub staff.
+remote: If you are the repository owner, you can contact support via https://support.github.com/contact for more information.
+fatal: Authentication failed for 'https://github.com/yixiu001/serv00-login.git/'
+ (downloader.py:85)
