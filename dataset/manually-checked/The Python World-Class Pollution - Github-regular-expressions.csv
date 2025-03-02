@@ -1,0 +1,19 @@
+Application,Stars,URL,Confirmed,Codeql,FP Reason,Types,,Input,Comment
+,,,,,,Get,Set,,
+gensphere,110,https://github.com/octopus2023-inc/gensphere,Y,N,,Attr/Field,Attr/Field,Local,"/\bsetattr\(\s*obj\w*\s*,\s*\w+\s*,\s*\w+\s*\)/ /\bobj\[\w+\]\s*=|\bobj\.get\(/ /\bobj\s*=/ /\(\s*\w*(obj|parent|target|instance|dict|dest|conf)\w*/ language:Python"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+meta-dataset,768,https://github.com/google-research/meta-dataset,Y,N,,Attr/Field,Attr/Field,Function,"/\bsetattr\(\s*target\s*,\s*\w+\s*,\s*\w+\s*\)/ /\btarget\[\w+\]\s*=|\btarget\.get\(/ /\btarget\s*=/"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+GCFT,101,https://github.com/LagoLunatic/GCFT,Y,N,,Attr/Field,Attr/Field,Local,"/\bsetattr\(instance\w*\s*,\s*\w+\s*,\s*\w+\s*\)/ /\binstance\w*\[\w+\]\s*=|\binstance\w*\.get\(/ /\binstance\w*\s*=/ language:Python  "
