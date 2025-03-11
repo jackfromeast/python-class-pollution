@@ -68,7 +68,6 @@ predicate isGetItemCall(Expr obj, Expr key, Call call) {
   // )
 }
 
-
 /**
  * @description
  * ----------------------

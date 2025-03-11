@@ -17,7 +17,7 @@
  */
 
 import python
-import vuln.ClassPollutingFuncLibNew::ClassPollutionAssignment
+import vuln.ClassPollutingAssignLibNew::ClassPollutionAssignment
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
 import semmle.python.dataflow.new.DataFlow
 import shared.Utils::ClassPolltionUtils
@@ -30,7 +30,11 @@ from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string v
     Flow::PathNode setOpPrimKeyFlowNode, Flow::PathNode sourceParamKeyFlowNode, DataFlow::Node setOpSecondKeyNode
 where
   exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
-    isClassPollutedAssignmentAll(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType) and
+    (
+      // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _) or
+      // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _) or
+      isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _)
+    ) and
     sourceParamObjNode.asExpr() = sourceParamObj and
     sourceParamKeyNode.asExpr() = sourceParamKey
   ) and

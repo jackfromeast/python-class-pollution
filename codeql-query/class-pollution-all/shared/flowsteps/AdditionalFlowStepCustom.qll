@@ -11,7 +11,7 @@ module ClassPollutionAdditionalFlowStepCustom {
 
 predicate additionalFlowStepThroughCustomLibAnyState(DataFlow::Node fromNode, DataFlow::Node toNode){
   additionalFlowStepThroughHikaru(fromNode, toNode) or
-  additionalFlowStepThroughBuiltinStr(fromNode, toNode) or
+  // additionalFlowStepThroughBuiltinStr(fromNode, toNode) or
   additionalFlowStepThroughGlom(fromNode, toNode) or 
   additionalFlowStepThroughAST(fromNode, toNode)
 }
@@ -34,10 +34,11 @@ predicate additionalFlowStepThroughCustomLibHoldPrototypeObject(DataFlow::Node f
  * `str(fromNode)` -> `toNode`
  */
 predicate additionalFlowStepThroughBuiltinStr(DataFlow::Node fromNode, DataFlow::Node toNode) {
-  exists(API::CallNode call | 
-    fromNode = API::builtin("str").getACall().getArg(0) and
+  exists(API::CallNode call, Call callExpr| 
     call = API::builtin("str").getACall() and
-    toNode.asExpr() = call.asExpr()
+    call.asExpr() = callExpr and
+    callExpr.getArg(0) = fromNode.asExpr() and
+    toNode.asExpr() = callExpr
   )
 }
 

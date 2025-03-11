@@ -13,7 +13,7 @@
  */
 
 import python
-import vuln.ClassPollutingFuncLib::ClassPollutionAssignment
+import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
 
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;

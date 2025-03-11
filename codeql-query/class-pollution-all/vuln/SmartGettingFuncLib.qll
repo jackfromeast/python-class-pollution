@@ -2,6 +2,7 @@ import python
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
 import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
+import vuln.ClassPollutionTaintTrackingLib::ClassPollutionTaintTracking
 import semmle.python.ApiGraphs
 import codeql.dataflow.DataFlow
 import semmle.python.dataflow.new.DataFlow
@@ -203,12 +204,12 @@ predicate isSmartGettingFunction(Function func) {
  * 
  * @example
  * ----------------------
- * def base_set(obj, key, value, allow_override=True):
+ * def base_get(obj, key, value, allow_override=True):
  *  if isinstance(obj, dict):
  *   if allow_override or key not in obj:
- *    obj[key] = value
+ *    return obj[key]
  *  elif (allow_override or not hasattr(obj, key)) and obj is not None:
- *    setattr(obj, key, value)
+ *    return getattr(obj, key)
  */
 predicate isSmartGettingFuncLocal(Function func) {
   exists( DataFlow::Node key, DataFlow::Node obj, 

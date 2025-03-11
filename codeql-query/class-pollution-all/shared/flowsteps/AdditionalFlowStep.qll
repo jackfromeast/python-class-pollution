@@ -4,6 +4,7 @@ import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
+import vuln.SelfReferringGetOpLib::SelfReferringGetOp
 import shared.Debug::Debugging
 
 module ClassPollutionAdditionalFlowStep {
@@ -99,7 +100,8 @@ predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::No
       tuple.getElt(0) = fromNode.asExpr() and
       tuple.getElt(1) = toNode.asExpr()
     )
-  ))
+  )) and
+  toNode instanceof SelfReferringGetOp
 }
 
 /**
@@ -128,7 +130,8 @@ predicate additionalFlowStepGetAttr(DataFlow::Node fromNode, DataFlow::Node toNo
 predicate additionalFlowStepGetAttrReverse(DataFlow::Node fromNode, DataFlow::Node toNode) {
   // restrictedByFunctionName(fromNode, "_t_eval") and
   // restrictedByFunctionName(toNode, "_t_eval") and
-  isGetattrCall(_, fromNode.asExpr(), toNode.asExpr())
+  isGetattrCall(_, fromNode.asExpr(), toNode.asExpr()) and
+  toNode instanceof SelfReferringGetOp
 }
 
 }

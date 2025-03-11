@@ -24,12 +24,7 @@
  DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
  where
   (
-    // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    // isClassPollutedAssignmentSetItemGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or  
-    isClassPollutedAssignmentSetItemGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    isClassPollutedAssignmentSetAttrGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    isClassPollutedAssignmentSetAttrGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
+    isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
   // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.
