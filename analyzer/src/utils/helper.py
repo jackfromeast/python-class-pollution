@@ -48,9 +48,9 @@ def cleanup_folders(folder_path):
       print(f"Unexpected error deleting {folder_path}: {e}")
 
 def cleanup_folders(folder_path):
-    """Removes a directory."""
-    if os.path.exists(folder_path):
-      shutil.rmtree(folder_path)
+  """Removes a directory."""
+  if os.path.exists(folder_path):
+    shutil.rmtree(folder_path)
 
   
 def terminate_process(pid):
