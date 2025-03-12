@@ -5,7 +5,7 @@
 + Library: django-unicorn
 + Stars: 2.4K
 + Version: 0.61.0
-+ CVE: N/A
++ CVE: [CVE-2025-24370](https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43)
 + Status: Pending
 + Payload: ```django_unicorn.views.action_parsers.utils.set_property_value(unicornViewObj, '__init__.__globals__["__name__"]', 'polluted')```
 + Foundby: Zhong

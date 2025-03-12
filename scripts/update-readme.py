@@ -16,12 +16,15 @@ This repository contains a list of packages that are vulnerable to class polluti
 """
 
 def convert_stars_to_number(stars_str):
-    if 'K' in stars_str:
-        return float(stars_str.replace('K', '')) * 1000
-    elif 'M' in stars_str:
-        return float(stars_str.replace('M', '')) * 1000000
-    else:
-        return float(stars_str)
+    try:
+        if 'K' in stars_str:
+            return float(stars_str.replace('K', '')) * 1000
+        elif 'M' in stars_str:
+            return float(stars_str.replace('M', '')) * 1000000
+        else:
+            return float(stars_str)
+    except ValueError:
+        return -1
 
 def extract_metadata(file_path):
     with open(file_path, 'r') as file:
