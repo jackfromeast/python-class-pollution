@@ -1,0 +1,10 @@
+setup.py
+polluter.egg-info/PKG-INFO
+polluter.egg-info/SOURCES.txt
+polluter.egg-info/dependency_links.txt
+polluter.egg-info/top_level.txt
+src/__init__.py
+src/pollute.py
+src/search_pollutables.py
+tests/__init__.py
+tests/math.py
