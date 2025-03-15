@@ -1,0 +1,5 @@
+setup.py
+src/polluter.egg-info/PKG-INFO
+src/polluter.egg-info/SOURCES.txt
+src/polluter.egg-info/dependency_links.txt
+src/polluter.egg-info/top_level.txt
