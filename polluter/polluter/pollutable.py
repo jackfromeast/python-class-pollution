@@ -74,7 +74,10 @@ class Pollutable:
     else:
       self.visited.add(obj_id)
     
-    for name in dir(obj):
+    # Not sure why __base__ is not included
+    attributes_to_be_checked = dir(obj) + ["__base__", "__bases__"]
+
+    for name in attributes_to_be_checked:
       try:
         value = getattr(obj, name)
         logging.debug(f"Accessed attribute: {name}")
