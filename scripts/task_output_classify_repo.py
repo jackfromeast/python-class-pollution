@@ -89,7 +89,6 @@ REMOTE_INDICATORS = {
     **{k: re.compile(v) for k, v in ROUTE_REGEX.items()}
 }
 
-
 LOCAL_INDICATORS = {}
 
 def classify(repo_src_path):

@@ -6,7 +6,7 @@
  * @problem.severity warning
  * @security-severity 6.1
  * @sub-severity low
- * @id py/class-polliution/set-attr-get-attr
+ * @id py/class-polliution/set-both-get-attr
  * @tags security
  *       external/cwe/cwe-915
  * @precision high
@@ -24,7 +24,7 @@
  DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
  where
   (
-    isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
+    isClassPollutedAssignmentSetBothGetAttrStrict(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
   // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.

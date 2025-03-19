@@ -6,7 +6,7 @@
  * @problem.severity warning
  * @security-severity 6.1
  * @sub-severity low
- * @id py/class-polliution/class-pollution-func-new
+ * @id py/class-polliution/set-item-get-attr
  * @tags security
  *       external/cwe/cwe-915
  * @precision high

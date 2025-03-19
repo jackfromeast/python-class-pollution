@@ -56,36 +56,31 @@ def parse_result_log(log_file):
 
   with open(log_file, 'r', encoding='utf-8') as f:
     for line in f:
-      # Updated regex to allow hyphens in repository names and capture the query name
-      match = re.search(r"INFO - ([\w-]+) - (.+?)\.ql\.sarif:", line)
+      match = re.search(r"INFO - ([\w-]+) - .*/([^/]+?):", line)
       if match:
         repo_name = match.group(1)
-        query_name = match.group(2)
+        query_name = match.group(2).lower()  # Ensure lowercase for consistency
 
-        # Determine GetType and SetType based on the query name
-        if "SetAttrGetBoth" in query_name:
-          get_type = "Attr/Field"
-          set_type = "Attr"
-        elif "SetAttrGetAttr" in query_name:
-          get_type = "Attr"
-          set_type = "Attr"
-        elif "SetItemGetBoth" in query_name:
-          get_type = "Attr/Field"
-          set_type = "Field"
-        elif "SetItemGetAttr" in query_name:
-          get_type = "Attr"
-          set_type = "Field"
-        elif "SetBothGetAttr" in query_name:
-          get_type = "Attr"
-          set_type = "Attr/Field"
-        elif "SetBothGetBoth" in query_name:
-          get_type = "Attr/Field"
-          set_type = "Attr/Field"
-        else:
-          get_type = ""
-          set_type = ""
+        # Define mappings for set and get types
+        set_type_map = {
+            'attr': 'Attr',
+            'item': 'Field',
+            'both': 'Attr/Field'
+        }
+        get_type_map = {
+            'attr': 'Attr',
+            'both': 'Attr/Field'
+        }
+
+        parts = query_name.split('-')
+        set_type = ''
+        get_type = ''
+        if len(parts) >= 4 and parts[0] == 'set' and parts[2] == 'get':
+          set_part = parts[1]
+          get_part = parts[3]
+          set_type = set_type_map.get(set_part, '')
+          get_type = get_type_map.get(get_part, '')
         
-        # Classify the repository
         repo_src_path = os.path.join(output_path, repo_name, "codebase")
         web_patterns, local_patterns = classify(repo_src_path)
 

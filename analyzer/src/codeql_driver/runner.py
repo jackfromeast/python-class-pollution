@@ -300,13 +300,17 @@ class CodeQLRunner:
           sarif_data = json.load(f)
         
         runs = sarif_data.get("runs", [])
-        flow_count = 0
         for run in runs:
           results = run.get("results", [])
-          flow_count += len(results)
-        
-        query_name = os.path.basename(result_file)
-        summary[query_name] = flow_count
+
+          flow_count = 0
+          for res in results:
+            rule_id = res.get("ruleId", "")
+            if rule_id not in summary:
+              summary[rule_id] = 1
+            summary[rule_id] += 1
+            flow_count += 1
+
         self.logger.info(f"Processed {result_file}: {flow_count} flows detected.")
       except (json.JSONDecodeError, KeyError) as e:
         self.logger.error(f"Failed to process {result_file}: {e}")
@@ -321,9 +325,9 @@ class CodeQLRunner:
       self.logger.error(f"Failed to save summary to {output_file}: {e}")
 
     # Output the summary to the result logger
-    for query_name, flow_count in summary.items():
+    for rule_id, flow_count in summary.items():
       if flow_count > 0:
-        self.logger.info(f"{self.repo_name} - {query_name}: {flow_count} flows detected.", result=True)
+        self.logger.info(f"{self.repo_name} - {rule_id}: {flow_count} flows detected.", result=True)
 
     return summary
 
