@@ -20,15 +20,34 @@ module ClassPollutionAdditionalFlowStepReduce {
  * 
  * def _lookup(obj, key):
  *  return obj[key]
+ * 
+ * def reduce(function, iterable, initial=initial_missing, /):
+    it = iter(iterable)
+    if initial is initial_missing:
+        value = next(it)
+    else:
+        value = initial
+    for element in it:
+        value = function(value, element)
+    return value
  */
 predicate additionalFlowStepThroughReduce(DataFlow::Node fromNode, DataFlow::Node toNode) {
   // From argument of reduce call to the object argument of the function
   exists(ReduceCall reduceCall, Function targetFunc, string funcName | 
     reduceCall.getArg(0).toString() = funcName and
     targetFunc.getName() = funcName and
-    exists( int i | 
-      reduceCall.getArg(i+1) = fromNode.asExpr() and
-      targetFunc.getArg(i) = toNode.asExpr() 
+    ( 
+      // From the arg1 of the reduce call to every argument of the target function
+      (
+        reduceCall.getArg(1) = fromNode.asExpr() and
+        targetFunc.getAnArg() = toNode.asExpr() 
+      ) or 
+      // Taint Propagate the inital value
+      // https://docs.python.org/3/library/functools.html
+      (
+        reduceCall.getArg(2) = fromNode.asExpr() and
+        targetFunc.getArg(0) = toNode.asExpr()
+      ) 
     )
   ) or
   // From the return value of the function to the return value of the reduce call
@@ -37,6 +56,13 @@ predicate additionalFlowStepThroughReduce(DataFlow::Node fromNode, DataFlow::Nod
     targetFunc.getName() = funcName and
     targetFunc.getAReturnValueFlowNode() = fromNode.asCfgNode() and
     reduceCall = toNode.asExpr()
+  ) or
+  // From the return value of the function to its first argument
+  exists(ReduceCall reduceCall, Function targetFunc, string funcName | 
+    reduceCall.getArg(0).toString() = funcName and
+    targetFunc.getName() = funcName and
+    targetFunc.getAReturnValueFlowNode() = fromNode.asCfgNode() and
+    targetFunc.getArg(0) = toNode.asExpr()
   )
 }
 
@@ -45,6 +71,8 @@ class ReduceCall extends Call {
     exists ( Name name |
       name.getId() = "reduce" and
       this.getFunc() = name
+    ) or (
+      API::moduleImport("functools").getMember("reduce").getACall().asExpr() = this
     )
   }
 }

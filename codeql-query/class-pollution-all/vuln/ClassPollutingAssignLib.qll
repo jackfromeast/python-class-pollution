@@ -227,7 +227,7 @@ predicate isAdditionalFlowStepThroughGetAttr(DataFlow::Node source, DataFlow::No
   // Propagate taint on every getValue operation with the polluted key
   // key -> getattr(obj, key)
   exists( DataFlow::Node getattrCall |
-    isGetattrCall(_, source.asExpr(), getattrCall.asExpr()) and
+    isGetAttrOp(_, source.asExpr(), getattrCall.asExpr()) and
     (
       DataFlow::localFlow(getattrCall, target) or
       getattrCall = target
@@ -236,7 +236,7 @@ predicate isAdditionalFlowStepThroughGetAttr(DataFlow::Node source, DataFlow::No
   // Propagate taint on every getValue operation from polluted object
   // obj -> getattr(obj, key)
   exists( DataFlow::Node getattrCall | 
-    isGetattrCall(source.asExpr(), _, getattrCall.asExpr()) and
+    isGetAttrOp(source.asExpr(), _, getattrCall.asExpr()) and
     (
       DataFlow::localFlow(getattrCall, target) or
       getattrCall = target

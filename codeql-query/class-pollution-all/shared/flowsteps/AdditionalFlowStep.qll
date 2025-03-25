@@ -4,7 +4,8 @@ import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
-import vuln.SelfReferringGetOpLib::SelfReferringGetOp
+import shared.types.SelfReferringGetOpLib::SelfReferringGetOp
+import shared.types.DunderDictObject
 import shared.Debug::Debugging
 
 module ClassPollutionAdditionalFlowStep {
@@ -85,8 +86,10 @@ predicate additionalFlowStepGetItemReverse(DataFlow::Node fromNode, DataFlow::No
   (
   // Propagate taint on every getValue operation with the polluted key
   // key -> obj[key]
-  exists( DataFlow::Node getItemExpr | 
-    isGetItemOp(_, fromNode.asExpr(), getItemExpr.asExpr()) and
+  exists( DataFlow::Node getItemExpr, DataFlow::Node baseObj | 
+    isGetItemOp(baseObj.asExpr(), fromNode.asExpr(), getItemExpr.asExpr()) and
+    // toNode should never be a getItem operation whose base object is an dunder dict object.
+    not exists (DunderDictObject dunerDictObject | dunerDictObject = baseObj) and
     toNode = getItemExpr
   ) or
   //  for k, v in src.items() -> k -> v
@@ -115,7 +118,7 @@ predicate additionalFlowStepGetAttr(DataFlow::Node fromNode, DataFlow::Node toNo
     addrRead.getObject() = fromNode and
     toNode = addrRead
   ) or
-  isGetattrCall(fromNode.asExpr(), _, toNode.asExpr())
+  isGetAttrOp(fromNode.asExpr(), _, toNode.asExpr())
 }
 
 /**
@@ -128,9 +131,9 @@ predicate additionalFlowStepGetAttr(DataFlow::Node fromNode, DataFlow::Node toNo
  * This should be precise that fromNode is the key and toNode is the val.
  */
 predicate additionalFlowStepGetAttrReverse(DataFlow::Node fromNode, DataFlow::Node toNode) {
-  // restrictedByFunctionName(fromNode, "_t_eval") and
+  // restrictedByFunctionName(fromNode, "getattr_through_dict_attr_1") and
   // restrictedByFunctionName(toNode, "_t_eval") and
-  isGetattrCall(_, fromNode.asExpr(), toNode.asExpr()) and
+  isGetAttrOp(_, fromNode.asExpr(), toNode.asExpr()) and
   toNode instanceof SelfReferringGetOp
 }
 

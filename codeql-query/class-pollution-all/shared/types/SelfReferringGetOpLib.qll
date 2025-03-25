@@ -21,7 +21,7 @@ class SourceLocationFlowState extends SelfReferringGetOp::FlowState {
   SourceLocationFlowState() { 
     exists( Expr getOpExpr | 
       (isGetItemOp(_, _, getOpExpr) or
-      isGetattrCall(_, _, getOpExpr)) and
+      isGetAttrOp(_, _, getOpExpr)) and
       this = getOpExpr.getLocation().toString()
     )
   }
@@ -33,7 +33,7 @@ module TrackingNestedGettingOpConfiguration implements DataFlow::StateConfigSig 
   predicate isSource(DataFlow::Node source, FlowState state) {
     (
       isGetItemOp(_, _, source.asExpr()) or
-      isGetattrCall(_, _, source.asExpr())
+      isGetAttrOp(_, _, source.asExpr())
     ) and
     state instanceof SourceLocationFlowState and
     source.asExpr().getLocation().toString() = state
@@ -43,7 +43,7 @@ module TrackingNestedGettingOpConfiguration implements DataFlow::StateConfigSig 
     exists (Expr getOpExpr |
       (
         isGetItemOp(sink.asExpr(), _, getOpExpr) or
-        isGetattrCall(sink.asExpr(), _, getOpExpr)
+        isGetAttrOp(sink.asExpr(), _, getOpExpr)
       ) and
       state instanceof SourceLocationFlowState and
       getOpExpr.getLocation().toString() = state
@@ -88,9 +88,10 @@ class SelfReferringGetOp extends DataFlow::Node {
 
   SelfReferringGetOp() {
     (
-      isGetattrCall(baseObj.asExpr(), key.asExpr(), this.asExpr()) or
+      isGetAttrOp(baseObj.asExpr(), key.asExpr(), this.asExpr()) or
       isGetItemOp(baseObj.asExpr(), key.asExpr(), this.asExpr())
-    ) and
+    ) 
+    and
     TrackingNestedGettingOpFlow::flow(this, baseObj)
   }
 }

@@ -26,11 +26,11 @@ module Flow = TrackingClassPollutionKeyToAssignmentFlow; // For shortening the n
 predicate debugTest(Flow::PathNode sourceKey, Flow::PathNode setItemObjOrKey, FlowState state) {
   exists (Function func | 
     func.getAnArg() = sourceKey.getNode().asExpr() and
-    func.getName() = "m"
+    func.getName() = "getattr_through_eval"
   ) and
   TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceKey, setItemObjOrKey) and
   setItemObjOrKey.getState() instanceof PrototypeObjectFlowState and
-  setItemObjOrKey.getState().(PrototypeObjectFlowState).getGetOperationType() = "GetItem" and
+  setItemObjOrKey.getState().(PrototypeObjectFlowState).getGetOperationType() = "GetAttr" and
   state = setItemObjOrKey.getState()
 }
 
@@ -529,8 +529,10 @@ predicate isClassPollutedAssignmentSetAttrGetAttrStrict(DataFlow::Node classPoll
   exists (Flow::PathNode sourceA, Flow::PathNode sourceB, Flow::PathNode setAttrKey, Flow::PathNode setAttrObj|
     isClassPollutedAssignmentThroughAttrSettingStrict(setAttrObj, setAttrKey, sourceA, sourceB, _, _, "GetAttr", occur) and
     not exists (Flow::PathNode sourceC, Flow::PathNode sourceD |
-      (isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem", _) or
-      isClassPollutedAssignmentThroughItemSetting(_, _, sourceC, sourceD, _, _)) and
+      (
+        isClassPollutedAssignmentThroughAttrSetting(_, _, sourceC, sourceD, "GetItem", _) or
+        isClassPollutedAssignmentThroughItemSetting(_, _, sourceC, sourceD, _, _)
+      ) and
       sourceA.getNode() = sourceC.getNode() and
       sourceB.getNode() = sourceD.getNode()
     ) and

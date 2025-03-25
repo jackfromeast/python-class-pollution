@@ -11,10 +11,12 @@ import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowSte
 import shared.flowsteps.AdditionalFlowStepReduce::ClassPollutionAdditionalFlowStepReduce
 import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
 import shared.flowsteps.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
+import shared.flowsteps.AdditionalFlowStepOperator::ClassPollutionAdditionalFlowStepOperator
 import shared.types.EnumeratedKeyNames
 import shared.types.EnumeratedObjects
 import shared.types.SplitObjects
 import shared.types.SplitKeyNames
+import shared.types.DunderDictObject
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
 import shared.Debug::Debugging
@@ -147,6 +149,7 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   }
 
   predicate isSink(DataFlow::Node sink, FlowState state) {
+    // any() or 
     // restrictedByFunctionName(sink, "_t_eval") and
     // state instanceof EnumeratedKeyFlowState
     (
@@ -215,11 +218,10 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
     // TYPE 3: From EnumeratedKeyFlowState to PrototypeObjectFlowState
     // If key is enumerated, taint the object with PrototypeObjectFlowState label
     // This is how we make sure that the get operation is recursive. 
-    enumeratedKeyToPrototypeObjectFlowStep(fromNode, fromState, toNode, toState)
-    // or
-    // TODO: Unsupported:
-    // TYPE 4: From PrototypeObjectFlowState (Occurrence=One) to PrototypeObjectFlowState (Occurrence=MoreThanOne)
-    // prototypeObjectOneToPrototypeObjectMoreThanOneFlowStep(fromNode, fromState, toNode, toState)
+    enumeratedKeyToPrototypeObjectFlowStep(fromNode, fromState, toNode, toState) 
+    or 
+    // TYPE 4: From InitFuncParamterFlowState to PrototypeObjectFlowState
+    initFuncParamterToPrototypeObjectFlowStep(fromNode, fromState, toNode, toState)
   }
 }
 
@@ -321,7 +323,7 @@ predicate enumeratedKeyToPrototypeObjectFlowStep(DataFlow::Node fromNode, FlowSt
       toState.(PrototypeObjectFlowState).getGetOperationType() = "GetItem" and
       toState.(PrototypeObjectFlowState).getOccurrence() = "One"
     )
-  )
+  ) 
 }
 
 predicate prototypeObjectOneToPrototypeObjectMoreThanOneFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
@@ -334,6 +336,43 @@ predicate prototypeObjectOneToPrototypeObjectMoreThanOneFlowStep(DataFlow::Node 
   and
   toState instanceof PrototypeObjectFlowState and
   toState.(PrototypeObjectFlowState).getOccurrence() = "MoreThanOne"
+}
+
+
+predicate initFuncParamterToPrototypeObjectFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
+  (
+    fromState instanceof InitFuncParamterFlowState and
+    (
+      (
+        additionalFlowStepThroughGetAttrOperator(fromNode, toNode) and 
+        toState instanceof PrototypeObjectFlowState and
+        toState.(PrototypeObjectFlowState).getGetOperationType() = "GetAttr" and
+        toState.(PrototypeObjectFlowState).getOccurrence() = "One"
+      ) or
+      (
+        additionalFlowStepThroughGetItemOperator(fromNode, toNode) and 
+        toState instanceof PrototypeObjectFlowState and
+        toState.(PrototypeObjectFlowState).getGetOperationType() = "GetItem" and
+        toState.(PrototypeObjectFlowState).getOccurrence() = "One"
+      )
+    )
+  ) or
+  // val = eval(expression, obj)
+  (
+    fromState instanceof InitFuncParamterFlowState and
+    exists (Name funcName , Call call|
+      funcName.getId().matches("eval") and
+      call.getFunc() = funcName and
+      call.getArg(0) = fromNode.asExpr() and
+      call = toNode.asExpr()
+    ) and
+    toState instanceof PrototypeObjectFlowState and
+    (
+      toState.(PrototypeObjectFlowState).getGetOperationType() = "GetItem" or
+      toState.(PrototypeObjectFlowState).getGetOperationType() = "GetAttr"
+    ) and
+    toState.(PrototypeObjectFlowState).getOccurrence() = "One"
+  )
 }
 
 }

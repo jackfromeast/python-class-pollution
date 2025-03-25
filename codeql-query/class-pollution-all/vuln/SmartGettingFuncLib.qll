@@ -36,7 +36,7 @@ predicate hasSubscriptOpFunc(Function func, Expr objArg, Expr keyArg) {
  */
 predicate hasGetattrCallFunc(Function func, Expr objArg, Expr keyArg) {
   exists(Expr obj, Expr key |
-    isGetattrCall(obj, key, _) and
+    isGetAttrOp(obj, key, _) and
     obj.getScope() = func.getEvaluatingScope() and
     key.getScope() = func.getEvaluatingScope() and
     localExprTaint(objArg, obj) and
@@ -106,8 +106,8 @@ module TrackingParamToSmartGettingOpConfiguration implements DataFlow::StateConf
   predicate isSink(DataFlow::Node sink, FlowState state) {
     (isGetItemOp(_, sink.asExpr(), _) and state instanceof UsedAsKeyInGetItemFlowState) or
     (isGetItemOp(sink.asExpr(), _, _) and state instanceof UsedAsBaseObjectInGetItemFlowState) or
-    (isGetattrCall(_, sink.asExpr(), _) and state instanceof UsedAsKeyInGetAttrFlowState) or
-    (isGetattrCall(sink.asExpr(), _, _) and state instanceof UsedAsBaseObjectInGetAttrFlowState)
+    (isGetAttrOp(_, sink.asExpr(), _) and state instanceof UsedAsKeyInGetAttrFlowState) or
+    (isGetAttrOp(sink.asExpr(), _, _) and state instanceof UsedAsBaseObjectInGetAttrFlowState)
   }
 
   predicate isAdditionalFlowStep(DataFlow::Node fromNode, DataFlow::Node toNode) {
@@ -169,7 +169,7 @@ predicate isSmartGettingFunction_ (Flow::PathNode sourceObjToItem, Flow::PathNod
   ) and
   (
     isGetItemOp(getItemObj.getNode().asExpr(), getItemKey.getNode().asExpr(), _) and
-    isGetattrCall(getAttrObj.getNode().asExpr(), getAttrKey.getNode().asExpr(), _)
+    isGetAttrOp(getAttrObj.getNode().asExpr(), getAttrKey.getNode().asExpr(), _)
   ) and
   (
     Flow::flowPath(sourceObjToItem, getItemObj) and
@@ -218,7 +218,7 @@ predicate isSmartGettingFuncLocal(Function func) {
     key.getScope() = func.getEvaluatingScope() and
     obj.getScope() = func.getEvaluatingScope() and
     isGetItemOp(obj1.asExpr(), key1.asExpr(), _) and
-    isGetattrCall(obj2.asExpr(), key2.asExpr(), _) and
+    isGetAttrOp(obj2.asExpr(), key2.asExpr(), _) and
     (
       DataFlow::localFlow(obj, obj1) or 
       obj = obj1

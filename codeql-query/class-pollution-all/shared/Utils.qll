@@ -267,7 +267,7 @@ module ClassPolltionUtils {
     predicate isSource(DataFlow::Node source) {
       exists (Expr getOpExpr |
         (isGetItemOp(_, _, getOpExpr) or
-        isGetattrCall(_, _, getOpExpr)) and
+        isGetAttrOp(_, _, getOpExpr)) and
         source.asExpr() = getOpExpr
       )
     }

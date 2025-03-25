@@ -4,6 +4,7 @@ import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import Utils::ClassPolltionUtils
 import shared.flowsteps.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
+import shared.types.DunderDictObject
 
 module ClassPollutionGetOp {
   
@@ -82,6 +83,18 @@ predicate isGetItemOp(Expr obj, Expr key, Expr getItemExpr) {
 /**
  * @description
  * ----------------------
+ * Check if the expression represents a getAttr operation.
+ */
+predicate isGetAttrOp(Expr obj, Expr key, Expr getAttrExpr) {
+  // `obj.__dict__[key]`
+  isGetAttrThoughObjectDunderDictSubscript(obj, key, getAttrExpr.(Subscript))
+  or  
+  isGetattrCall(obj, key, getAttrExpr.(Call))
+}
+
+/**
+ * @description
+ * ----------------------
  * Check if the expression represents a `getattr` operation like `getattr(obj, key)`.
  * Supports direct calls to `getattr`, `__getattribute__`, or library wrappers.
  */
@@ -92,6 +105,8 @@ predicate isGetattrCall(Expr obj, Expr key, Call call) {
   isGetattributeCall(obj, key, call) or
   // `object.__getattribute__(obj, key)`
   isObjectGetattributeCall(obj, key, call) or
+  // `obj.__dict__.get(key)`
+  isGetAttrThoughObjectDunderDictCall(obj, key, call) or
   // Library wrapper API calls, e.g., `lib.resolveAttr(obj, key)`
   isLibraryWrapperCall(obj, key, call)
 }
@@ -131,6 +146,26 @@ predicate isObjectGetattributeCall(Expr obj, Expr key, Call call) {
     call.getFunc() = attrAccess.asExpr() and
     call.getArg(0) = obj and
     call.getArg(1) = key
+  )
+}
+
+/**
+ * Calls to `obj.__dict__.get(key)` or `obj.__dict__[key]`.
+ */
+predicate isGetAttrThoughObjectDunderDictCall(Expr obj, Expr key, Call call) {
+  exists ( DunderDictObject dunderDictObject |
+    dunderDictObject.getBaseObject().asExpr() = obj and
+    isGetItemCall(dunderDictObject.asExpr(), key, call)
+  )
+}
+
+/**
+ * Calls to `obj.__dict__.get(key)` or `obj.__dict__[key]`.
+ */
+predicate isGetAttrThoughObjectDunderDictSubscript(Expr obj, Expr key, Subscript subscript) {
+  exists ( DunderDictObject dunderDictObject |
+    dunderDictObject.getBaseObject().asExpr() = obj and
+    isSubscriptOp(dunderDictObject.asExpr(), key, subscript)
   )
 }
 

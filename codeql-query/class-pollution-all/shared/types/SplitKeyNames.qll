@@ -85,7 +85,8 @@ predicate splitKeyNamesAndObjectPair(DataFlow::Node key, DataFlow::Node obj) {
  * `keys` in `keys = [for key in filter(None, val.split('.'))]`
  * `keys` in `keys = regex.split(/x/, base);`
  * `keys` in `keys = regex.findall(/x/, base);`
- * 
+ * `key1/2` in `key1, key2 = val.partition('.')`
+ * `key1/2` in `key1, key2 = val.rpartition('.')`
  * 
  */
 predicate isSplitResult(DataFlow::Node list, DataFlow::Node base) {
@@ -135,10 +136,15 @@ module TrackingSplitResultFlow = TaintTracking::Global<TrackingSplitResultConfig
 
 predicate isSplitResultImmediate(DataFlow::Node list, DataFlow::Node base) {
   exists(MethodCallNode call|
-    call.getMethodName() = "split" and
+    (
+      call.getMethodName() = "split" or
+      call.getMethodName() = "rpartition" or
+      call.getMethodName() = "partition"
+    ) and
     call = list and
     call.getObject() = base
   ) or 
+
   exists( API::CallNode call |
     (
       API::moduleImport("re").getMember("split").getACall() = call or
