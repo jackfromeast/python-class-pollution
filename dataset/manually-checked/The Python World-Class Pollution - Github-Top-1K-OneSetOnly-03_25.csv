@@ -1,0 +1,158 @@
+Application,Stars,URL,Confirmed,Codeql,FP Reason,Types,,Input,,,Status,Comment
+,,,,,,Get,Set,,Remote,Local,,
+ScoutSuite,6779,https://github.com/nccgroup/ScoutSuite,N,Y,duplicated,Attr/Field,Field,Function,,,,
+litestar,5663,https://github.com/litestar-org/litestar,N,Y,sanitization after recursive get,Attr/Field,Field,,,,,
+rekall,1933,https://github.com/google/rekall,N,Y,prototyeObj label over-tainting,Attr/Field,Field,,,,,
+pyRevit,1328,https://github.com/pyrevitlabs/pyRevit,N,Y,,Attr/Field,Field,,,,,
+open-interpreter,57277,https://github.com/OpenInterpreter/open-interpreter,Y,Y,,Attr,Attr,Local,,,,
+pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,Y,,Attr,Attr,Function,,,,
+sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,Attr,Attr,Local,,,Todo,"DoS, TODO: @Zhengyu Write PoC"
+taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,Attr,Attr,Remote,,,Reported,TODO: @Zhengyu Write PoC
+airbyte,16374,https://github.com/airbytehq/airbyte,Y,Y,,Attr,Attr,Function,,,,in tests only
+PaddleHub,12755,https://github.com/PaddlePaddle/PaddleHub,N,Y,getItem index needs to be an int,Attr/Field,Attr,,,,,
+RWKV-LM,12737,https://github.com/BlinkDL/RWKV-LM,Y,Y,getItem index needs to be an int,Attr,Attr,Function,,,,
+PySyft,9542,https://github.com/OpenMined/PySyft,N,Y,sanitization on base object,Attr,Attr,,,,,
+ChatRWKV,9434,https://github.com/BlinkDL/ChatRWKV,Y,Y,,Attr,Attr,Function,,,,
+clearml,5726,https://github.com/allegroai/clearml,N,Y,"key needs to be ""{}/{}""",Attr/Field,Field,,,,,
+clearml,5726,https://github.com/allegroai/clearml,N,Y,"key needs to be ""{}/{}""",Attr,Field,,,,,
+gluonts,4663,https://github.com/awslabs/gluonts,N,Y,type check,Attr,Attr,,,,,
+AutoGPTQ,4541,https://github.com/AutoGPTQ/AutoGPTQ,Y,Y,,Attr,Attr,Function,,,,
+coremltools,4462,https://github.com/apple/coremltools,N/A,Y,,Attr/Field,Attr,,,,,
+coremltools,4462,https://github.com/apple/coremltools,N/A,Y,,Attr,Attr,,,,,
+mm-cot,3823,https://github.com/amazon-science/mm-cot,Y,Y,,Attr,Attr,Function,,,,
+PINTO_model_zoo,3624,https://github.com/PINTO0309/PINTO_model_zoo,Y,Y,,Attr,Attr,Function,,,,
+Otter,3565,https://github.com/Luodian/Otter,Y,Y,,Attr,Attr,Function,,,,
+alpa,3083,https://github.com/alpa-projects/alpa,Y,Y,,Attr,Attr,,,,,
+AI-Writer,2989,https://github.com/BlinkDL/AI-Writer,Y,Y,,Attr,Attr,,,,,
+BlenderTools,2829,https://github.com/EpicGamesExt/BlenderTools,Y,Y,,Attr,Attr,,,,,
+OFA,2429,https://github.com/OFA-Sys/OFA,Y,Y,,Attr,Attr,,,,,
+django-unicorn,2393,https://github.com/adamghill/django-unicorn,N/A,Y,,Attr,Attr,,,,,
+JittorLLMs,2386,https://github.com/Jittor/JittorLLMs,Y,Y,,Attr,Attr,,,,,
+ComfyUI,59080,https://github.com/comfyanonymous/ComfyUI,Y,Y,,Attr,Attr,Function,.get/.post/.api_route|import_aiohttp,,,"set_attr, set_attr_param"
+ColossalAI,38869,https://github.com/hpcaitech/ColossalAI,Y,Y,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route|import_starlette|import_sanic,,,"module_params_sharding_pass, setattr_"
+DeepSpeed,35764,https://github.com/microsoft/DeepSpeed,Y,Y,,Attr,Attr,Function,,,,"recursive_setattr, "
+pytorch-image-models,32491,https://github.com/huggingface/pytorch-image-models,Y,Y,,Attr,Attr,Function,,,,set_layer
+fairseq,30638,https://github.com/facebookresearch/fairseq,Y,Y,,Attr,Attr,Function,,,,"_set_module_by_path, attrsetter"
+spaCy,30588,https://github.com/explosion/spaCy,Y,Y,,Attr,Attr,Function,,,,DocCleaner.__call__ (built in pipeline function)
+python-fire,27202,https://github.com/secretflow/secretflow,N/A,Y,can't find nested get,Attr,Field,,,,,
+ragflow,24695,https://github.com/infiniflow/ragflow,N/A,Y,,Attr,Attr,Remote,import_flask|.route,,Reported,https://gist.github.com/superboy-zjc/e7c676f39f714ec4c4a6afa3a0ba037d
+insightface,23651,https://github.com/deepinsight/insightface,N/A,Y,,Attr,Attr,,,,,
+reflex,20541,https://github.com/reflex-dev/reflex,N/A,Y,,Attr,Field,None,import_fastapi|import_starlette,,,
+minGPT,20333,https://github.com/karpathy/minGPT,N/A,Y,,Attr,Attr,,,,,
+unilm,20316,https://github.com/microsoft/unilm,N/A,Y,,Attr,Attr,Function,import_flask|import_fastapi|import_starlette|import_tornado|.route,,,"resolve_attr, _set_module_by_path"
+mlflow,18953,https://github.com/mlflow/mlflow,N/A,Y,,Attr,Attr,,import_flask|import_aiohttp|.get/.post/.api_route|import_fastapi|import_starlette|.route,,,
+zipline,17891,https://github.com/quantopian/zipline,N/A,Y,,Attr,Attr,,,,,
+ivy,14015,https://github.com/ivy-llc/ivy,N/A,Y,,Attr,Attr,,,,,
+edgedb,13164,https://github.com/edgedb/edgedb,N/A,Y,,Attr,Attr,,,,,
+pytest,12199,https://github.com/pytest-dev/pytest,N/A,Y,,Attr,Attr,,,,,
+peewee,11300,https://github.com/coleifer/peewee,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+jinja,10492,https://github.com/pallets/jinja,N/A,Y,,Attr,Attr,,,,,
+nerfstudio,9621,https://github.com/nerfstudio-project/nerfstudio,N/A,Y,,Attr,Field,,,,,
+text-generation-inference,9192,https://github.com/huggingface/text-generation-inference,N/A,Y,,Attr,Attr,,import_aiohttp,,,
+stable-diffusion-webui-forge,8736,https://github.com/lllyasviel/stable-diffusion-webui-forge,N/A,Y,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route|import_starlette,,Todo,set_attr_raw
+hummingbot,8472,https://github.com/hummingbot/hummingbot,N/A,Y,,Attr,Attr,Function,import_aiohttp|.route,,Todo,"decrypt_all_secure_data, prompt_a_config; cli config"
+conan,8316,https://github.com/conan-io/conan,N/A,Y,,Attr,Attr,,import_bottle,,,
+accelerate,8025,https://github.com/huggingface/accelerate,N/A,Y,,Attr,Attr,,,,,
+ragas,7467,https://github.com/explodinggradients/ragas,N/A,Y,,Attr,Attr,,,,,
+modelscope,7070,https://github.com/modelscope/modelscope,N/A,Y,,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_starlette,,,
+ipex-llm,6770,https://github.com/intel-analytics/ipex-llm,N/A,Y,,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_starlette|import_aiohttp,,,
+sphinx,6645,https://github.com/sphinx-doc/sphinx,N/A,Y,,Attr,Field,,,,,
+metaseq,6518,https://github.com/facebookresearch/metaseq,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+pytext,6336,https://github.com/facebookresearch/pytext,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+tensorpack,6302,https://github.com/tensorpack/tensorpack,N/A,Y,,Attr,Attr,,,,,
+progressive_growing_of_gans,6102,https://github.com/tkarras/progressive_growing_of_gans,N/A,Y,,Attr,Attr,,,,,
+chainer,5897,https://github.com/chainer/chainer,N/A,Y,,Attr,Attr,,,,,
+deepchem,5574,https://github.com/deepchem/deepchem,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+infinigen,5430,https://github.com/princeton-vl/infinigen,N/A,Y,,Attr,Attr,,,,,
+Flashlight,5387,https://github.com/nate-parrott/Flashlight,N/A,Y,,Attr,Attr,,,,,
+ibis,5365,https://github.com/ibis-project/ibis,N/A,Y,,Attr,Attr,,,,,
+river,5109,https://github.com/online-ml/river,N/A,Y,,Attr,Attr,,,,,
+captum,4962,https://github.com/pytorch/captum,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+panel,4837,https://github.com/holoviz/panel,N/A,Y,,Attr,Attr,None,import_flask|import_aiohttp|.get/.post/.api_route|import_fastapi|import_django|import_tornado|django_path,,,
+coremltools,4462,https://github.com/apple/coremltools,N/A,Y,,Attr/Field,Attr,,,,,
+coremltools,4462,https://github.com/apple/coremltools,N/A,Y,,Attr,Attr,,,,,
+OpenPrompt,4388,https://github.com/thunlp/OpenPrompt,N/A,Y,,Attr,Attr,,,,,
+datasets,4324,https://github.com/tensorflow/datasets,N/A,Y,,Attr,Attr,,,,,
+DAMO-YOLO,3794,https://github.com/tinyvision/DAMO-YOLO,N/A,Y,,Attr,Attr,,,,,
+consensus-specs,3590,https://github.com/ethereum/consensus-specs,N/A,Y,,Attr,Attr,,,,,
+ai-toolkit,3550,https://github.com/ostris/ai-toolkit,N/A,Y,,Attr,Attr,Function,,,,replace_module_by_path
+chartify,3541,https://github.com/spotify/chartify,N/A,Y,lib,Attr,Attr,,,,,
+Paints-UNDO,3535,https://github.com/lllyasviel/Paints-UNDO,N/A,Y,model,Attr,Attr,,,,,
+mmpretrain,3495,https://github.com/open-mmlab/mmpretrain,N/A,Y,lib,Attr,Attr,,,,,
+headphones,3431,https://github.com/rembo10/headphones,N/A,Y,"lib meko, ast traverse",Attr,Attr,None,import_flask|import_cherrypy|import_tornado|django_path|.route,,,
+vispy,3344,https://github.com/vispy/vispy,N/A,Y,lib,Attr,Attr,,,,,
+django-import-export,3100,https://github.com/django-import-export/django-import-export,N/A,Y,require database table name and relation,Attr,Attr,Function,import_django,,,Class Field -> def save
+fastNLP,3073,https://github.com/fastnlp/fastNLP,N/A,Y,lib,Attr,Attr,,,,,
+docarray,2993,https://github.com/docarray/docarray,N/A,Y,lib,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,
+dlt,2764,https://github.com/dlt-hub/dlt,N/A,Y,lib,Attr,Field,,,,,
+mars,2705,https://github.com/mars-project/mars,N/A,Y,lib,Attr,Attr,,import_tornado,,,
+deepdoctection,2619,https://github.com/deepdoctection/deepdoctection,N/A,Y,lib,Attr,Attr,,,,,
+optimum,2603,https://github.com/huggingface/optimum,N/A,Y,lib,Attr,Attr,,,,,
+llm-awq,2567,https://github.com/mit-han-lab/llm-awq,N/A,Y,lib,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,
+virt-manager,2451,https://github.com/virt-manager/virt-manager,N/A,Y,,Attr,Attr,,,,,
+rl,2392,https://github.com/pytorch/rl,N/A,Y,,Attr/Field,Attr,,,,,
+rl,2392,https://github.com/pytorch/rl,N/A,Y,,Attr,Attr,,,,,
+comfyui_controlnet_aux,2367,https://github.com/Fannovel16/comfyui_controlnet_aux,N/A,Y,,Attr,Attr,,,,,local
+ansible-cmdb,2361,https://github.com/fboender/ansible-cmdb,N/A,Y,,Attr,Attr,,,,,
+secretflow,2360,https://github.com/secretflow/secretflow,N/A,Y,,Attr,Attr,,,,,
+shuup,2258,https://github.com/shuup/shuup,Y,Y,,Attr,Attr,Function,import_django,,,remote
+neural-compressor,2243,https://github.com/intel/neural-compressor,N/A,Y,,Attr,Attr,,,,,
+lorax,2234,https://github.com/predibase/lorax,Y,Y,,Attr,Attr,Function,import_aiohttp,,,"remote, key is uncontrollable"
+ariadne,2228,https://github.com/mirumee/ariadne,N,Y,,Attr,Attr,,import_starlette,,,remote
+wrapt,2085,https://github.com/GrahamDumpleton/wrapt,N/A,Y,,Attr,Attr,,,,,library
+sparseml,2078,https://github.com/neuralmagic/sparseml,N/A,Y,,Attr,Attr,,,,,
+AliceMind,1983,https://github.com/alibaba/AliceMind,Y,Y,,Attr,Attr,Function,import_tornado,,,
+transparent_latent_gan,1972,https://github.com/SummitKwan/transparent_latent_gan,N/A,Y,,Attr,Attr,,,,,
+helm,1967,https://github.com/stanford-crfm/helm,Y,Y,,Attr,Attr,Function,import_bottle|.get/.post/.api_route,,,
+godot-python,1907,https://github.com/touilleMan/godot-python,N/A,Y,,Attr,Attr,,,,,local
+OnmyojiAutoScript,1891,https://github.com/runhey/OnmyojiAutoScript,Y,Y,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route,,,
+evennia,1832,https://github.com/evennia/evennia,N/A,Y,,Attr,Attr,,import_django|django_path|.get/.post/.api_route,,,remote
+Medusa,1813,https://github.com/pymedusa/Medusa,N/A,Y,,Attr,Attr,,@get/post/route|import_django|add_handlers|import_tornado|rule_instantiation,,,
+AutoAWQ,1806,https://github.com/casper-hansen/AutoAWQ,N/A,Y,,Attr,Attr,,,,,
+EasyCV,1805,https://github.com/alibaba/EasyCV,N/A,Y,,Attr,Attr,,,,,
+PokemonGo-DesktopMap,1762,https://github.com/mchristopher/PokemonGo-DesktopMap,N/A,Y,,Attr,Attr,,,,,remote
+hangups,1714,https://github.com/tdryer/hangups,N/A,Y,,Attr,Attr,,import_aiohttp,,,looks promising :>
+distilabel,1708,https://github.com/argilla-io/distilabel,N/A,Y,,Attr,Attr,,,,,
+ormar,1681,https://github.com/collerek/ormar,N,Y,type check,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,library
+generative-ai-python,1665,https://github.com/google-gemini/generative-ai-python,Y,Y,,Attr,Attr,,,,,client 
+fast-transformers,1652,https://github.com/idiap/fast-transformers,N/A,Y,,Attr,Attr,,,,,
+intel-extension-for-pytorch,1638,https://github.com/intel/intel-extension-for-pytorch,N/A,Y,,Attr,Attr,,,,,
+ao,1638,https://github.com/pytorch/ao,N/A,Y,,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,
+Olive,1634,https://github.com/microsoft/Olive,N/A,Y,,Attr,Attr,,import_falcon,,,
+TransformerLens,1632,https://github.com/TransformerLensOrg/TransformerLens,N/A,Y,,Attr,Attr,,,,,
+codeshell,1617,https://github.com/WisdomShell/codeshell,N/A,Y,,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,
+TimeSformer,1573,https://github.com/facebookresearch/TimeSformer,N/A,Y,,Attr,Attr,,,,,
+interfacegan,1509,https://github.com/genforce/interfacegan,N/A,Y,,Attr,Attr,,,,,
+mmrazor,1489,https://github.com/open-mmlab/mmrazor,N/A,Y,,Attr,Attr,,,,,
+Multimodal-GPT,1478,https://github.com/open-mmlab/Multimodal-GPT,N/A,Y,,Attr,Attr,,,,,
+piccolo,1460,https://github.com/piccolo-orm/piccolo,Y,Y,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route,,,key is not under control
+OpenNMT-tf,1458,https://github.com/OpenNMT/OpenNMT-tf,N/A,Y,,Attr/Field,Attr,,,,,
+legged_gym,1450,https://github.com/leggedrobotics/legged_gym,N/A,Y,,Attr,Attr,,,,,
+NeuralSpeech,1395,https://github.com/microsoft/NeuralSpeech,N/A,Y,,Attr,Attr,,,,,
+building_tools,1376,https://github.com/ranjian0/building_tools,N/A,Y,,Attr,Attr,,,,,blender addon
+python-opcua,1374,https://github.com/FreeOpcUa/python-opcua,N/A,Y,,Attr,Attr,,,,,
+Lidar_AI_Solution,1349,https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution,N/A,Y,,Attr,Attr,,,,,
+flask-restplus-server-example,1341,https://github.com/frol/flask-restplus-server-example,N,Y,,Attr,Attr,,import_flask|.route,,,
+mayavi,1323,https://github.com/enthought/mayavi,N/A,Y,,Attr,Attr,,,,,
+dnf,1258,https://github.com/rpm-software-management/dnf,N/A,Y,,Attr,Attr,,,,,
+pykka,1234,https://github.com/jodal/pykka,N/A,Y,,Attr,Attr,,,,,library
+brevitas,1217,https://github.com/Xilinx/brevitas,N/A,Y,,Attr,Attr,,,,,
+teleport,1183,https://github.com/tp4a/teleport,N/A,Y,,Attr,Attr,,import_tornado,,,
+chainerrl,1179,https://github.com/chainer/chainerrl,N/A,Y,,Attr,Attr,,,,,
+nut,1138,https://github.com/blawar/nut,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+spyne,1132,https://github.com/arskom/spyne,N/A,Y,,Attr,Attr,,route_name=|import_flask|import_cherrypy|import_pyramid|import_django|add_route|.route,,,
+spyne,1132,https://github.com/arskom/spyne,N/A,Y,,Attr,Field,,route_name=|import_flask|import_cherrypy|import_pyramid|import_django|add_route|.route,,,remote
+xorbits,1130,https://github.com/xorbitsai/xorbits,N/A,Y,,Attr,Attr,,import_tornado,,,key is not under control
+steam,1111,https://github.com/ValvePython/steam,N/A,Y,,Attr,Attr,,import_flask|.route,,,
+fastapi-amis-admin,1100,https://github.com/amisadmin/fastapi-amis-admin,N/A,Y,,Attr,Attr,,import_fastapi|import_starlette,,,library
+ComfyUI-CogVideoXWrapper,1094,https://github.com/kijai/ComfyUI-CogVideoXWrapper,N/A,Y,,Attr,Attr,,,,,
+noise2noise,1081,https://github.com/yu4u/noise2noise,N/A,Y,,Attr,Attr,,,,,
+seed-tts-eval,1068,https://github.com/BytedanceSpeech/seed-tts-eval,N/A,Y,,Attr,Attr,,,,,
+convmixer,1062,https://github.com/locuslab/convmixer,N/A,Y,,Attr,Attr,,,,,
+sentiment-discovery,1061,https://github.com/NVIDIA/sentiment-discovery,N/A,Y,,Attr,Attr,,,,,
+CrossHair,1038,https://github.com/pschanely/CrossHair,N/A,Y,,Attr,Attr,,,,,
+CrossHair,1038,https://github.com/pschanely/CrossHair,N/A,Y,,Attr,Field,,,,,
+evotorch,1024,https://github.com/nnaisense/evotorch,N/A,Y,,Attr,Attr,,,,,
+OpenDelta,1007,https://github.com/thunlp/OpenDelta,N/A,Y,,Attr,Attr,,,,,
+,,,,,,,,,,,,
+,,,12,,,,,,,,,
