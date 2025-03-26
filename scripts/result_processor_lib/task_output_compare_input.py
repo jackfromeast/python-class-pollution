@@ -8,6 +8,7 @@ import sys
 import os
 
 # Default file paths
+PROJECT_ROOT = os.path.join(__file__, "..")
 DEFAULT_RESULT_LOG_FILE = "tasks/codeql-class-pollution-all-known/logs/result.log"
 DEFAULT_INPUT_FILE = "tasks/codeql-class-pollution-all-known/input/all-known-class-pollution.txt"
 
@@ -66,8 +67,8 @@ if __name__ == "__main__":
     check_cwd()
 
     # Get the absolute paths for the input and result log files
-    result_log_file = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.getcwd(), DEFAULT_RESULT_LOG_FILE)
-    input_file = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.getcwd(), DEFAULT_INPUT_FILE)
+    result_log_file = sys.argv[1] if len(sys.argv) > 1 else os.path.join(PROJECT_ROOT, DEFAULT_RESULT_LOG_FILE)
+    input_file = sys.argv[2] if len(sys.argv) > 2 else os.path.join(PROJECT_ROOT, DEFAULT_INPUT_FILE)
 
     # Parse the result log and input file
     detected_packages = parse_result_log(result_log_file)

@@ -14,21 +14,10 @@ import csv
 import sys
 import argparse
 import logging
+from .constants import KNOWN_CLASS_POLLUTION_FOLDER_PATH, CSV_COLUMNS, HEADER_ROWS, METADATA_PATH
+from .task_output_classify_repo import classify
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from task_output_classify_repo import classify
-
-# Metadata files
-metadata_files = [
-  "/home/jackfromeast/Desktop/Blurt/crawler/output/python-20100101-20141001-star-1K.json",
-  "/home/jackfromeast/Desktop/Blurt/crawler/output/python-20141001-20241001-star-100-1K.json",
-  "/home/jackfromeast/Desktop/Blurt/crawler/output/python-20191001-20241001-star-1K.json"
-]
-
-# Path to the manually checked CSV file
-KNOWN_CLASS_POLLUTION_FOLDER_PATH = "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked"
 
 # Function to load metadata from JSON files
 def load_metadata(metadata_files):
@@ -104,6 +93,7 @@ def parse_manually_checked_csv(folder_path):
 
   try:
     # Check if the folder exists
+    folder_path = os.path.join(PROJECT_ROOT, folder_path)
     if not os.path.exists(folder_path):
       raise FileNotFoundError(f"Folder '{folder_path}' not found.")
 
@@ -133,7 +123,6 @@ def parse_manually_checked_csv(folder_path):
 
   return known_true_positives, known_false_positives
 
-# Function to generate the CSV output
 def generate_csv_output(flagged_repos, repo_metadata, output_file, filter_repos=None):
   # Sort flagged_repos by stars (descending order)
   flagged_repos_sorted = sorted(
@@ -170,33 +159,16 @@ def generate_csv_output(flagged_repos, repo_metadata, output_file, filter_repos=
         "Local": "|".join(repo["local_patterns"])
       })
 
-def main():
-  parser = argparse.ArgumentParser(description="Summarize flagged repositories from result.log.")
-  parser.add_argument("log_file", help="Path to the result.log file")
-  parser.add_argument("--output", help="Output CSV file name (default: same folder as result.log)")
-  parser.add_argument("--filter", action="store_true", help="Filter out manually checked repositories")
-  args = parser.parse_args()
+def summary_csv(log_file, output_file, filter=False):
+  repo_metadata = load_metadata(METADATA_PATH)
 
-  # Determine the output file path
-  if args.output:
-    output_file = args.output
-  else:
-    # Default to the same folder as result.log
-    log_dir = os.path.dirname(args.log_file)
-    output_file = os.path.join(log_dir, "flagged_repos.csv")
-
-  repo_metadata = load_metadata(metadata_files)
-
-  flagged_repos = parse_result_log(args.log_file)
+  flagged_repos = parse_result_log(log_file)
 
   filter_repos = None
-  if args.filter:
+  if filter:
     known_true_positives, known_false_positives = parse_manually_checked_csv(KNOWN_CLASS_POLLUTION_FOLDER_PATH)
     filter_repos = known_true_positives.union(known_false_positives)
 
   generate_csv_output(flagged_repos, repo_metadata, output_file, filter_repos)
 
   logging.info(f"CSV file '{output_file}' generated successfully.")
-
-if __name__ == "__main__":
-  main()
