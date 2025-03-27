@@ -41,7 +41,10 @@ class BaseScheduler:
     if self.mode == "list":
       with open(self.repo_list_path, "r") as f:
         urls = f.read().splitlines()
-      return urls[self.url_list_from:self.url_list_to]
+      if self.url_list_to == -1:
+        return urls[self.url_list_from:]
+      else:
+        return urls[self.url_list_from:self.url_list_to]
     else:
       return [self.config.SCHEDULER.REPO]
 
