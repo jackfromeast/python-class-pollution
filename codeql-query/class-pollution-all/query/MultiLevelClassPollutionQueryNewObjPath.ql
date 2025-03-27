@@ -17,7 +17,7 @@
  */
 
 import python
-import vuln.ClassPollutingAssignLibNew::ClassPollutionAssignment
+import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
 import vuln.ClassPollutionTaintTrackingLib::ClassPollutionTaintTracking
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
 import semmle.python.dataflow.new.DataFlow
@@ -30,11 +30,12 @@ module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg,
     Flow::PathNode setOpPrimObjFlowNode, Flow::PathNode sourceParamObjFlowNode, DataFlow::Node setOpSecondObjNode
 where
+  // func.getName() = "calc_libraries_info" and
   exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
     (
       // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, _, _, setOpPrimObjFlowNode.getNode(), setOpSecondObjNode, vulnType, _) or
       // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyNode, sourceParamObjNode, _, _, setOpPrimObjFlowNode.getNode(), setOpSecondObjNode, vulnType, _) or 
-      isClassPollutedAssignmentSetItemGetAttrStrict(sourceParamKeyNode, sourceParamObjNode, _, _, setOpPrimObjFlowNode.getNode(), setOpSecondObjNode, vulnType, _)
+      isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, sourceParamObjNode, _, _, setOpPrimObjFlowNode.getNode(), setOpSecondObjNode, vulnType, _)
     ) and
     sourceParamObjNode.asExpr() = sourceParamObj and
     sourceParamKeyNode.asExpr() = sourceParamKey

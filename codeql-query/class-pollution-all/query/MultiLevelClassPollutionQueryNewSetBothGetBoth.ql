@@ -13,7 +13,7 @@
  */
 
  import python
- import vuln.ClassPollutingAssignLibNew::ClassPollutionAssignment
+ import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
  import semmle.python.dataflow.new.DataFlow
  import shared.Utils::ClassPolltionUtils
  import shared.Debug::Debugging
@@ -24,7 +24,7 @@
  DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
  where
   (
-    isClassPollutedAssignmentSetBothGetBothStrict(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
+    isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
   // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.

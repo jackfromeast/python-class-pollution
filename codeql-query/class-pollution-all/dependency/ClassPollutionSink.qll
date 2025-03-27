@@ -7,7 +7,7 @@ import shared.SetOp::ClassPollutionSetOp
 import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
 import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
 import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
-import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
+import vuln.deprecated.ClassPollutingAssignLib::ClassPollutionAssignment
 
 module ClassPollutionSinkDependencyModel {
 

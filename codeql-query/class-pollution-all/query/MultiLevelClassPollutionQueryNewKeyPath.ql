@@ -17,7 +17,7 @@
  */
 
 import python
-import vuln.ClassPollutingAssignLibNew::ClassPollutionAssignment
+import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
 import semmle.python.dataflow.new.DataFlow
 import shared.Utils::ClassPolltionUtils

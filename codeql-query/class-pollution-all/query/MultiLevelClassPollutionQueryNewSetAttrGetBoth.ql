@@ -13,7 +13,7 @@
  */
 
  import python
- import vuln.ClassPollutingAssignLibNew::ClassPollutionAssignment
+ import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
  import semmle.python.dataflow.new.DataFlow
  import shared.Utils::ClassPolltionUtils
  import shared.Debug::Debugging
