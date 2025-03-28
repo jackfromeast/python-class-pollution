@@ -8,7 +8,7 @@ import shared.Debug::Debugging
 /**
  * @description
  * ----------------------
- * Represents a node that generated from reading the __dict__ attribute of an object.
+ * Represents a node that generated from reading the __dict__ or __slots__ attribute of an object.
  * 
  * @example
  * ----------------------
@@ -26,7 +26,10 @@ class DunderDictObject extends DataFlow::Node {
 
   DunderDictObject() {
     exists(AttrRead attrRead |
-      attrRead.getAttributeName() = "__dict__" and
+      (
+        attrRead.getAttributeName() = "__dict__" or
+        attrRead.getAttributeName() = "__slots__"
+      ) and
       attrRead.getObject() = baseObj and
       (
         DataFlow::localFlow(attrRead, this) or

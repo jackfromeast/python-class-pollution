@@ -87,7 +87,7 @@ predicate isGetItemOp(Expr obj, Expr key, Expr getItemExpr) {
  */
 predicate isGetAttrOp(Expr obj, Expr key, Expr getAttrExpr) {
   // `obj.__dict__[key]`
-  isGetAttrThoughObjectDunderDictSubscript(obj, key, getAttrExpr.(Subscript))
+  isGetAttrThroughObjectDunderDictSubscript(obj, key, getAttrExpr.(Subscript))
   or  
   isGetattrCall(obj, key, getAttrExpr.(Call))
 }
@@ -106,7 +106,9 @@ predicate isGetattrCall(Expr obj, Expr key, Call call) {
   // `object.__getattribute__(obj, key)`
   isObjectGetattributeCall(obj, key, call) or
   // `obj.__dict__.get(key)`
-  isGetAttrThoughObjectDunderDictCall(obj, key, call) or
+  isGetAttrThroughObjectDunderDictCall(obj, key, call) or
+  // `inspect.getattr_static(obj, attr)`
+  isGetAttrThroughInspect(obj, key, call) or
   // Library wrapper API calls, e.g., `lib.resolveAttr(obj, key)`
   isLibraryWrapperCall(obj, key, call)
 }
@@ -152,7 +154,7 @@ predicate isObjectGetattributeCall(Expr obj, Expr key, Call call) {
 /**
  * Calls to `obj.__dict__.get(key)` or `obj.__dict__[key]`.
  */
-predicate isGetAttrThoughObjectDunderDictCall(Expr obj, Expr key, Call call) {
+predicate isGetAttrThroughObjectDunderDictCall(Expr obj, Expr key, Call call) {
   exists ( DunderDictObject dunderDictObject |
     dunderDictObject.getBaseObject().asExpr() = obj and
     isGetItemCall(dunderDictObject.asExpr(), key, call)
@@ -162,11 +164,20 @@ predicate isGetAttrThoughObjectDunderDictCall(Expr obj, Expr key, Call call) {
 /**
  * Calls to `obj.__dict__.get(key)` or `obj.__dict__[key]`.
  */
-predicate isGetAttrThoughObjectDunderDictSubscript(Expr obj, Expr key, Subscript subscript) {
+predicate isGetAttrThroughObjectDunderDictSubscript(Expr obj, Expr key, Subscript subscript) {
   exists ( DunderDictObject dunderDictObject |
     dunderDictObject.getBaseObject().asExpr() = obj and
     isSubscriptOp(dunderDictObject.asExpr(), key, subscript)
   )
+}
+
+/**
+ * Calls to `inspect.getattr_static(obj, attr)`
+ */
+predicate isGetAttrThroughInspect(Expr obj, Expr key, Call call) {
+  API::moduleImport("inspect").getMember("getattr_static").getACall().asExpr() = call and
+  call.getArg(0) = obj and
+  call.getArg(1) = key 
 }
 
 /**
