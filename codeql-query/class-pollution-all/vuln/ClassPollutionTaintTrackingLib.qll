@@ -243,22 +243,42 @@ module TrackingClassPollutionKeyToAssignmentConfiguration implements DataFlow::S
   }
 }
 
+module TrackingPrototypeObjectToAssignmentConfiguration implements DataFlow::ConfigSig {
+  predicate isSource(DataFlow::Node source) {
+   source instanceof PossibleGetOpNode
+  }
+
+  predicate isSink(DataFlow::Node sink) {
+    isSetItemExpr(sink.asExpr(), _, _, _) 
+    or
+    isSetAttrExpr(sink.asExpr(), _, _, _)
+  }
+
+  predicate isAdditionalFlowStep(DataFlow::Node fromNode, DataFlow::Node toNode) {
+    generalDataFlowStepNoState(fromNode, toNode)
+  }
+}
+
+/**
+ * @description
+ * ----------------------
+ * Flow steps in generalDataFlowStep is precise data flow tracking step.
+ */
+predicate generalDataFlowStepNoState(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  additionalFlowStepThroughNamedtuple(fromNode, toNode) or
+  additionalFlowStepThroughDequeAppendPop(fromNode, toNode) or
+  additionalFlowStepThroughReduce(fromNode, toNode) or
+  additionalFlowStepThroughCustomLibAnyState(fromNode, toNode)
+}
+
 /**
  * @description
  * ----------------------
  * Flow steps in generalDataFlowStep is precise data flow tracking step.
  */
 predicate generalDataFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
-  // restrictedByFunctionName(toNode, "_t_eval") and
-  (
-    (
-      additionalFlowStepThroughNamedtuple(fromNode, toNode) or
-      additionalFlowStepThroughDequeAppendPop(fromNode, toNode) or
-      additionalFlowStepThroughReduce(fromNode, toNode) or
-      additionalFlowStepThroughCustomLibAnyState(fromNode, toNode)
-    ) and
-    toState = fromState
-  )
+  generalDataFlowStepNoState(fromNode, toNode) and
+  toState = fromState
 }
 
 predicate generalTaintFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {

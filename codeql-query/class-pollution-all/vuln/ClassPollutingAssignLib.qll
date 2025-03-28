@@ -24,6 +24,9 @@ module ClassPollutionAssignment {
 module TrackingClassPollutionKeyToAssignmentFlow = TaintTracking::GlobalWithState<TrackingClassPollutionKeyToAssignmentConfiguration>;
 module Flow = TrackingClassPollutionKeyToAssignmentFlow; // For shortening the name
 
+module TrackingPrototypeObjectToAssignmentFlow = DataFlow::Global<TrackingPrototypeObjectToAssignmentConfiguration>;
+module PrototypeObjectDataFlow = TrackingPrototypeObjectToAssignmentFlow; // For shortening the name
+
 predicate debugTest(Flow::PathNode sourceKey, Flow::PathNode setItemObjOrKey, FlowState state) {
   exists (Function func | 
     func.getAnArg() = sourceKey.getNode().asExpr() and
@@ -69,6 +72,10 @@ predicate isClassPollutedAssignmentThroughItemSetting(Flow::PathNode setItemObj,
  * @description
  * ----------------------
  * Holds if the assignment can overwrite the dunder attributes/items of the object with the value from the function as well.
+ * 
+ * In the strict version, we also 
+ * 1/ check the value of the setItem/setAttr.
+ * 2/ make sure the flow step for prototype object is data flow step (not taint flow step)
  */
 predicate isClassPollutedAssignmentThroughItemSettingStrict(Flow::PathNode setItemObj, Flow::PathNode setItemKey, Flow::PathNode sourceParamToObj, Flow::PathNode sourceParamToKey, Flow::PathNode setItemVal, Flow::PathNode sourceParamToVal, string getOpType, string occur) {
   isSetItemExpr(setItemObj.getNode().asExpr(), setItemKey.getNode().asExpr(), setItemVal.getNode().asExpr(), _) and
@@ -92,7 +99,9 @@ predicate isClassPollutedAssignmentThroughItemSettingStrict(Flow::PathNode setIt
     setItemObj.getState() instanceof PrototypeObjectFlowState and
     setItemObj.getState().(PrototypeObjectFlowState).getSetOperationType() = "SetItem" and 
     setItemObj.getState().(PrototypeObjectFlowState).getGetOperationType() = getOpType and
-    setItemObj.getState().(PrototypeObjectFlowState).getOccurrence() = occur
+    setItemObj.getState().(PrototypeObjectFlowState).getOccurrence() = occur 
+    // Restrict the condition here will cause codeql stuck, so I moved to its caller predicates
+    // PrototypeObjectDataFlow::flow(setItemObj.getState().(PrototypeObjectFlowState).getGetOpNode(), setItemObj.getNode())
   )
   and
   (
@@ -149,7 +158,9 @@ predicate isClassPollutedAssignmentThroughAttrSettingStrict(Flow::PathNode setAt
     setAttrObj.getState() instanceof PrototypeObjectFlowState and
     setAttrObj.getState().(PrototypeObjectFlowState).getSetOperationType() = "SetAttr" and 
     setAttrObj.getState().(PrototypeObjectFlowState).getGetOperationType() = getOpType and
-    setAttrObj.getState().(PrototypeObjectFlowState).getOccurrence() = occur
+    setAttrObj.getState().(PrototypeObjectFlowState).getOccurrence() = occur 
+    // Restrict the condition here will cause codeql stuck, so I moved to its caller predicates
+    // PrototypeObjectDataFlow::flow(setAttrObj.getState().(PrototypeObjectFlowState).getGetOpNode(), setAttrObj.getNode())
   ) and
   (
     TrackingClassPollutionKeyToAssignmentFlow::flowPath(sourceParamToVal, setAttrVal) and
@@ -342,8 +353,9 @@ predicate isClassPollutedAssignmentSetBothGetBothStrict(DataFlow::Node classPoll
     setOpSecondObj = setItemObj1.getNode() and
     pollutionType = "SetBoth-GetBoth" and
     getAttrOpNode = setAttrObj2.getState().(PrototypeObjectFlowState).getGetOpNode() and
-    getItemOpNode = setAttrObj1.getState().(PrototypeObjectFlowState).getGetOpNode()
-  ) 
+    getItemOpNode = setAttrObj1.getState().(PrototypeObjectFlowState).getGetOpNode() and
+    PrototypeObjectDataFlow::flow(getAttrOpNode, setAttrObj2.getNode())
+  )
 }
 
 predicate isClassPollutedAssignmentSetBothGetAttr(DataFlow::Node classPollutingSourceToKey, DataFlow::Node classPollutingSourceToObj, DataFlow::Node setOpPrimKey, DataFlow::Node setOpSecondKey, DataFlow::Node setOpPrimObj, DataFlow::Node setOpSecondObj, string pollutionType, string occur, PossibleGetOpNode getOpNode) {
@@ -388,7 +400,8 @@ predicate isClassPollutedAssignmentSetBothGetAttrStrict(DataFlow::Node classPoll
     setOpSecondKey = setItemKey.getNode() and
     setOpPrimObj = setAttrObj.getNode() and
     setOpSecondObj = setItemObj.getNode() and
-    getOpNode = setAttrObj.getState().(PrototypeObjectFlowState).getGetOpNode()
+    getOpNode = setAttrObj.getState().(PrototypeObjectFlowState).getGetOpNode() and
+    PrototypeObjectDataFlow::flow(getOpNode, setAttrObj.getNode())
   ) 
 }
 
@@ -436,7 +449,8 @@ predicate isClassPollutedAssignmentSetItemGetBothStrict(DataFlow::Node classPoll
     setOpSecondObj = setItemObj1.getNode() and
     pollutionType = "SetItem-GetBoth" and
     getAttrOpNode = setItemObj2.getState().(PrototypeObjectFlowState).getGetOpNode() and
-    getItemOpNode = setItemObj1.getState().(PrototypeObjectFlowState).getGetOpNode()
+    getItemOpNode = setItemObj1.getState().(PrototypeObjectFlowState).getGetOpNode() and
+    PrototypeObjectDataFlow::flow(getAttrOpNode, setItemObj2.getNode())
   )
 }
 
@@ -476,7 +490,8 @@ predicate isClassPollutedAssignmentSetItemGetAttrStrict(DataFlow::Node classPoll
     setOpPrimObj = setItemObj.getNode() and
     setOpSecondObj = setItemObj.getNode() and
     pollutionType = "SetItem-GetAttr" and
-    getOpNode = setItemObj.getState().(PrototypeObjectFlowState).getGetOpNode()
+    getOpNode = setItemObj.getState().(PrototypeObjectFlowState).getGetOpNode() and
+    PrototypeObjectDataFlow::flow(getOpNode, setItemObj.getNode())
   )
 }
 
@@ -520,7 +535,8 @@ predicate isClassPollutedAssignmentSetAttrGetBothStrict(DataFlow::Node classPoll
     setOpSecondObj = setAttrObj1.getNode() and
     pollutionType = "SetAttr-GetBoth" and
     getAttrOpNode = setAttrObj2.getState().(PrototypeObjectFlowState).getGetOpNode() and
-    getItemOpNode = setAttrObj1.getState().(PrototypeObjectFlowState).getGetOpNode()
+    getItemOpNode = setAttrObj1.getState().(PrototypeObjectFlowState).getGetOpNode() and
+    PrototypeObjectDataFlow::flow(getAttrOpNode, setAttrObj2.getNode())
   )
 }
 
@@ -560,7 +576,8 @@ predicate isClassPollutedAssignmentSetAttrGetAttrStrict(DataFlow::Node classPoll
     setOpSecondKey = setAttrKey.getNode() and
     setOpPrimObj = setAttrObj.getNode() and
     pollutionType = "SetAttr-GetAttr" and
-    getOpNode = setAttrObj.getState().(PrototypeObjectFlowState).getGetOpNode()
+    getOpNode = setAttrObj.getState().(PrototypeObjectFlowState).getGetOpNode() and
+    PrototypeObjectDataFlow::flow(getOpNode, setAttrObj.getNode())
   )
 }
 
