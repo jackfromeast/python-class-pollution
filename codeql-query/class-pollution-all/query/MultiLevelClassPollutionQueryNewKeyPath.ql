@@ -21,19 +21,20 @@ import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
 import TrackingClassPollutionKeyToAssignmentFlow::PathGraph
 import semmle.python.dataflow.new.DataFlow
 import shared.Utils::ClassPolltionUtils
+import shared.types.PossibleGetOpNode
 import shared.Debug::Debugging
 
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 
 
-from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg,
+from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg, PossibleGetOpNode getOpNode,
     Flow::PathNode setOpPrimKeyFlowNode, Flow::PathNode sourceParamKeyFlowNode, DataFlow::Node setOpSecondKeyNode
 where
   exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
     (
       // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _) or
       // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _) or
-      isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _)
+      isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _, getOpNode)
     ) and
     sourceParamObjNode.asExpr() = sourceParamObj and
     sourceParamKeyNode.asExpr() = sourceParamKey
@@ -46,19 +47,19 @@ where
       (vulnType = "SetBoth-GetBoth" or vulnType = "SetBoth-GetAttr") and 
       sourceParamKeyFlowNode.getNode().asExpr() = sourceParamKey and
       Flow::flowPath(sourceParamKeyFlowNode, setOpPrimKeyFlowNode) and
-      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@, Set item Op Key: $@."
+      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@, Set item Op Key: $@. Get attribute Op: $@."
     ) or
     (
       ( vulnType = "SetAttr-GetBoth" or vulnType = "SetAttr-GetAttr") and 
       sourceParamKeyFlowNode.getNode().asExpr() = sourceParamKey and
       Flow::flowPath(sourceParamKeyFlowNode, setOpPrimKeyFlowNode) and
-      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@."
+      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@. Get attribute Op: $@."
     ) or
     (
       (vulnType = "SetItem-GetBoth" or vulnType = "SetItem-GetAttr") and 
       sourceParamKeyFlowNode.getNode().asExpr() = sourceParamKey and
       Flow::flowPath(sourceParamKeyFlowNode, setOpPrimKeyFlowNode) and
-      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set item Key: $@."
+      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set item Key: $@. Get attribute Op: $@."
     )
   )
-select func, sourceParamKeyFlowNode, setOpPrimKeyFlowNode, msg, func, func.toString(), sourceParamKey, sourceParamKey.getName(), sourceParamObj, sourceParamObj.getName(), setOpPrimKeyFlowNode, setOpPrimKeyFlowNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString()
+select func, sourceParamKeyFlowNode, setOpPrimKeyFlowNode, msg, func, func.toString(), sourceParamKey, sourceParamKey.getName(), sourceParamObj, sourceParamObj.getName(), setOpPrimKeyFlowNode, setOpPrimKeyFlowNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString(), getOpNode, getOpNode.toString()

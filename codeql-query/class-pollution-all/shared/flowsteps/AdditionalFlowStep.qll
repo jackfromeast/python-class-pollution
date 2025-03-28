@@ -4,8 +4,12 @@ import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
-import shared.types.SelfReferringGetOpLib::SelfReferringGetOp
+import shared.types.SelfReferringGetOp::SelfReferringGetOp
 import shared.types.DunderDictObject
+import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
+import shared.flowsteps.AdditionalFlowStepReduce::ClassPollutionAdditionalFlowStepReduce
+import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
+import shared.flowsteps.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
 import shared.Debug::Debugging
 
 module ClassPollutionAdditionalFlowStep {

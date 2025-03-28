@@ -16,38 +16,25 @@
  import vuln.ClassPollutingAssignLib::ClassPollutionAssignment
  import semmle.python.dataflow.new.DataFlow
  import shared.Utils::ClassPolltionUtils
+ import shared.types.PossibleGetOpNode
  import shared.Debug::Debugging
- 
+ import shared.Message::ClassPollutionMessage
  module Flow = TrackingClassPollutionKeyToAssignmentFlow;
  
- from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg,
+ from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg, PossibleGetOpNode getOpNode,
  DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
  where
   (
     // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
     // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
     // isClassPollutedAssignmentSetItemGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or  
-    isClassPollutedAssignmentSetItemGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    isClassPollutedAssignmentSetAttrGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    isClassPollutedAssignmentSetAttrGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _)
+    isClassPollutedAssignmentSetItemGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode) or
+    isClassPollutedAssignmentSetAttrGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode) or
+    isClassPollutedAssignmentSetAttrGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
   // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.
   // The following line would cause the query stuck in the analysis (I don't know why right now).
   // func.getAnArg() = sourceParamObjNode.asExpr() and
-  (
-    (
-      (vulnType = "SetBoth-GetBoth" or vulnType = "SetBoth-GetAttr") and 
-      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@, Set item Op Key: $@."
-    ) 
-    or
-    (
-      (vulnType = "SetAttr-GetBoth" or vulnType = "SetAttr-GetAttr") and 
-      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute Key: $@."
-    ) or
-    (
-      (vulnType = "SetItem-GetBoth" or vulnType = "SetItem-GetAttr") and 
-      msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set item Key: $@."
-    )
-  )
- select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString()
+  outputMsg(vulnType, msg)
+ select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString(), getOpNode, getOpNode.toString()

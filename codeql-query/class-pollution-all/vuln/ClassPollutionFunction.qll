@@ -12,7 +12,7 @@ class ClassPollutionFunction extends Function {
 
   ClassPollutionFunction() {
     this.getAnArg() = sourceParamKeyNode.asExpr() and
-    isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyNode, sourceParamObjNode, _, _, _, _, vulnType, _)
+    isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyNode, sourceParamObjNode, _, _, _, _, vulnType, _, _)
   }
 }
 

@@ -12,7 +12,7 @@
  */
 
 import python
-import shared.types.SelfReferringGetOpLib::SelfReferringGetOp
+import shared.types.SelfReferringGetOp::SelfReferringGetOp
 import TrackingNestedGettingOpFlow::PathGraph
 
 module Flow = TrackingNestedGettingOpFlow;

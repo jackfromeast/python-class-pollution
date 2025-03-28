@@ -3,7 +3,6 @@ import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import semmle.python.dataflow.new.TaintTracking
-import vuln.SmartGettingFuncLib::ClassPollutionSmartGetting
 import vuln.SmartSettingFuncLib::ClassPollutionSmartSetting
 import shared.Utils::ClassPolltionUtils
 import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep

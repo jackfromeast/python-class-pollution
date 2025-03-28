@@ -2,7 +2,10 @@ import python
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
 import shared.flowsteps.AdditionalFlowStep::ClassPollutionAdditionalFlowStep
-import vuln.ClassPollutionTaintTrackingLib::ClassPollutionTaintTracking
+import shared.flowsteps.AdditionalFlowStepNamedtuple::ClassPollutionAdditionalFlowStepNamedtuple
+import shared.flowsteps.AdditionalFlowStepDeque::ClassPollutionAdditionalFlowStepDeque
+import shared.flowsteps.AdditionalFlowStepReduce::ClassPollutionAdditionalFlowStepReduce
+import shared.flowsteps.AdditionalFlowStepCustom::ClassPollutionAdditionalFlowStepCustom
 import semmle.python.ApiGraphs
 import codeql.dataflow.DataFlow
 import semmle.python.dataflow.new.DataFlow
@@ -56,6 +59,23 @@ module TrackingNestedGettingOpConfiguration implements DataFlow::StateConfigSig 
     ) and
     fromState = toState
   }
+}
+
+/**
+ * @description
+ * ----------------------
+ * Flow steps in generalDataFlowStep is precise data flow tracking step.
+ */
+predicate generalDataFlowStep(DataFlow::Node fromNode, FlowState fromState, DataFlow::Node toNode, FlowState toState) {
+  (
+    (
+      additionalFlowStepThroughNamedtuple(fromNode, toNode) or
+      additionalFlowStepThroughDequeAppendPop(fromNode, toNode) or
+      additionalFlowStepThroughReduce(fromNode, toNode) or
+      additionalFlowStepThroughCustomLibAnyState(fromNode, toNode)
+    ) and
+    toState = fromState
+  )
 }
 
 
