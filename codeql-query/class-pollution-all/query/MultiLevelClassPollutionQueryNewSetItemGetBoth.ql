@@ -34,5 +34,4 @@
   // func.getAnArg() = sourceParamObjNode.asExpr() and
   outputMsg(vulnType, msg)
  select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(),
-   setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString(), getAttrOpNode, getAttrOpNode.toString(),
-   getItemOpNode, getItemOpNode.toString()
+   setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), getAttrOpNode, getAttrOpNode.toString(), getItemOpNode, getItemOpNode.toString()

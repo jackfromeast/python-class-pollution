@@ -32,4 +32,4 @@
   // The following line would cause the query stuck in the analysis (I don't know why right now).
   // func.getAnArg() = sourceParamObjNode.asExpr() and
   outputMsg(vulnType, msg)
- select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString(), getOpNode, getOpNode.toString()
+ select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), getOpNode, getOpNode.toString()

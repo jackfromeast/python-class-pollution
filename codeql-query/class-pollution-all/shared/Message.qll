@@ -13,7 +13,7 @@ module ClassPollutionMessage {
       or 
       (
         vulnType = "SetAttr-GetBoth" and 
-        msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute key: $@. Get attribute op: $@. Get attribute op: $@. Get item op: $@."
+        msg = "Type:" + vulnType + " Class pollution function: $@, with key source: $@, and object source: $@. Set attribute key: $@. Get attribute op: $@. Get item op: $@."
       )
       or
       (
