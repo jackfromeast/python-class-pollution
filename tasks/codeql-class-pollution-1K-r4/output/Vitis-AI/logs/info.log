@@ -1,0 +1,5 @@
+2025-03-29 00:44:16,451 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/Vitis-AI/codebase (logger.py:42)
+2025-03-29 00:44:46,273 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/Vitis-AI/codeql-db (logger.py:42)
+2025-03-29 00:44:46,273 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/Vitis-AI/codeql-db (logger.py:42)
+2025-03-29 00:44:46,273 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-29 01:03:31,982 - CodeQLRunner - INFO - Terminated all spawned processes for PID 2172740 (logger.py:42)

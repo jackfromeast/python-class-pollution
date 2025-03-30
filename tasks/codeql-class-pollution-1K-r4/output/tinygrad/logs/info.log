@@ -1,0 +1,2 @@
+2025-03-29 09:05:04,667 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/tinygrad/codebase (logger.py:42)
+2025-03-29 09:25:00,310 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1000924 (logger.py:42)

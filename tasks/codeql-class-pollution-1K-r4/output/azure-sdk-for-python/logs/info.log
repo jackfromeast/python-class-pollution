@@ -1,0 +1,5 @@
+2025-03-28 22:06:08,797 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/azure-sdk-for-python/codebase (logger.py:42)
+2025-03-28 22:16:09,921 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/azure-sdk-for-python/codeql-db (logger.py:42)
+2025-03-28 22:16:09,924 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/azure-sdk-for-python/codeql-db (logger.py:42)
+2025-03-28 22:16:09,924 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-28 22:25:03,839 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1263771 (logger.py:42)

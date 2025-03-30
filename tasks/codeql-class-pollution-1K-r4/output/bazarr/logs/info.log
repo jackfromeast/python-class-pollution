@@ -1,0 +1,5 @@
+2025-03-29 06:02:33,321 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/bazarr/codebase (logger.py:42)
+2025-03-29 06:04:48,736 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/bazarr/codeql-db (logger.py:42)
+2025-03-29 06:04:48,736 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/bazarr/codeql-db (logger.py:42)
+2025-03-29 06:04:48,736 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-29 06:22:22,833 - CodeQLRunner - INFO - Terminated all spawned processes for PID 6854 (logger.py:42)
