@@ -1,0 +1,2 @@
+2025-03-31 00:23:01,434 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/fuzzbunch-debian/codebase (logger.py:42)
+2025-03-31 00:42:56,364 - CodeQLRunner - INFO - Terminated all spawned processes for PID 4184486 (logger.py:42)

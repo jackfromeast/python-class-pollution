@@ -1,0 +1,5 @@
+2025-03-30 04:19:09,896 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/alipay-sdk-python-all/codebase (logger.py:42)
+2025-03-30 04:22:09,565 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/alipay-sdk-python-all/codeql-db (logger.py:42)
+2025-03-30 04:22:09,568 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/alipay-sdk-python-all/codeql-db (logger.py:42)
+2025-03-30 04:22:09,568 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-30 04:39:07,323 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1960782 (logger.py:42)

@@ -1,0 +1,5 @@
+2025-03-31 10:31:05,370 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sonic-mgmt/codebase (logger.py:42)
+2025-03-31 10:31:46,218 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sonic-mgmt/codeql-db (logger.py:42)
+2025-03-31 10:31:46,219 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sonic-mgmt/codeql-db (logger.py:42)
+2025-03-31 10:31:46,219 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-31 10:50:56,731 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1021663 (logger.py:42)

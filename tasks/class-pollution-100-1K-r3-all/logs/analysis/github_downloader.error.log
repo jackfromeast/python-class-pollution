@@ -1,0 +1,1450 @@
+2025-03-29 11:07:39,792 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/aircrackauto/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/1ucif3r/aircrackauto.git/'
+ (downloader.py:85)
+2025-03-29 11:08:03,430 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Goby/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/20142995/Goby.git/'
+ (downloader.py:85)
+2025-03-29 11:08:03,654 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/nuclei-templates/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/20142995/nuclei-templates.git/'
+ (downloader.py:85)
+2025-03-29 11:08:04,017 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/pocsuite3/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/20142995/pocsuite3.git/'
+ (downloader.py:85)
+2025-03-29 11:08:04,260 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sectool/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/20142995/sectool.git/'
+ (downloader.py:85)
+2025-03-29 12:15:27,823 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Just-A-Rather-Very-Intelligent-System/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/AnubhavChaturvedi-GitHub/Just-A-Rather-Very-Intelligent-System.git/'
+ (downloader.py:85)
+2025-03-29 12:25:10,113 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Discord-Token-Grabber-V2/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/AstraaDev/Discord-Token-Grabber-V2.git/'
+ (downloader.py:85)
+2025-03-29 13:23:34,138 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Crypter/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/CSec0ps/Crypter.git/'
+ (downloader.py:85)
+2025-03-29 13:26:04,509 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 14:15:49,557 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/ThorCryptocurrencyQuant/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/CryptoQiantang/ThorCryptocurrencyQuant.git/'
+ (downloader.py:85)
+2025-03-29 14:56:16,919 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/frida-ceserver/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/DoranekoSystems/frida-ceserver.git/'
+ (downloader.py:85)
+2025-03-29 15:10:11,558 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 15:10:21,642 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 15:23:10,395 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 15:32:53,503 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/stink/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/FallenAstaroth/stink.git/'
+ (downloader.py:85)
+2025-03-29 15:37:13,084 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/pdfgrabber/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/FelixFrog/pdfgrabber.git/'
+ (downloader.py:85)
+2025-03-29 16:03:12,410 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/elevenlabs-unleashed/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/GaspardCulis/elevenlabs-unleashed.git/'
+ (downloader.py:85)
+2025-03-29 16:26:16,943 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Discord-Member-Booster/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/H4cK3dR4Du/Discord-Member-Booster.git/'
+ (downloader.py:85)
+2025-03-29 16:26:17,177 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Spotify-Account-Generator/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/H4cK3dR4Du/Spotify-Account-Generator.git/'
+ (downloader.py:85)
+2025-03-29 16:26:17,429 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Tiktok-Account-Massreport/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/H4cK3dR4Du/Tiktok-Account-Massreport.git/'
+ (downloader.py:85)
+2025-03-29 17:17:30,020 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Roblox-Account-Generator/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Imagine-YT/Roblox-Account-Generator.git/'
+ (downloader.py:85)
+2025-03-29 17:42:31,743 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/PyTorch-Radial-Basis-Function-Layer/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/JeremyLinux/PyTorch-Radial-Basis-Function-Layer.git/'
+ (downloader.py:85)
+2025-03-29 18:26:28,078 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Smiles-TO-iUpac-Translator/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Kohulan/Smiles-TO-iUpac-Translator.git/'
+ (downloader.py:85)
+2025-03-29 18:28:27,598 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Programming-CookBook/codebase'...
+error: unable to create symlink Programming Languages/C/fundamentals/roadmap/readme.md: File name too long
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore --source=HEAD :/'
+
+ (downloader.py:85)
+2025-03-29 18:40:33,802 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/TensorFlow2-tutorial/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/LambdaColdStorage/TensorFlow2-tutorial.git/'
+ (downloader.py:85)
+2025-03-29 19:08:19,246 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/alchemy-framework/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/LoyaltyNZ/alchemy-framework.git/'
+ (downloader.py:85)
+2025-03-29 19:16:09,569 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 19:26:44,103 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/cookbook/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/MULTI-ON/cookbook.git/'
+ (downloader.py:85)
+2025-03-29 19:39:08,195 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/FB-INSTA/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Master-Bruno/FB-INSTA.git/'
+ (downloader.py:85)
+2025-03-29 19:39:08,377 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Hack-Telegram/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Master-Bruno/Hack-Telegram.git/'
+ (downloader.py:85)
+2025-03-29 19:55:50,271 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Calani-AIO/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Mickey758/Calani-AIO.git/'
+ (downloader.py:85)
+2025-03-29 20:01:33,264 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/MisakaF_Emby/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/MisakaFxxk/MisakaF_Emby.git/'
+ (downloader.py:85)
+2025-03-29 20:01:33,462 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/PingHijack/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/MisakaFxxk/PingHijack.git/'
+ (downloader.py:85)
+2025-03-29 20:02:39,295 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/MissAV-Downloader/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/MiyukiQAQ/MissAV-Downloader.git/'
+ (downloader.py:85)
+2025-03-29 20:46:55,473 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 21:25:23,493 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 21:52:18,740 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 21:55:18,053 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/PhoenixAdult.bundle/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/PhoenixPlexCode/PhoenixAdult.bundle.git/'
+ (downloader.py:85)
+2025-03-29 22:06:51,241 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-29 22:09:49,729 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Proxlight-Designer-v2/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Proxlight/Proxlight-Designer-v2.git/'
+ (downloader.py:85)
+2025-03-29 22:58:18,325 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/eKW-pobieracz/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Rzezimioszek/eKW-pobieracz.git/'
+ (downloader.py:85)
+2025-03-29 23:49:22,704 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Luna-Grabber/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/Smug246/Luna-Grabber.git/' not found
+ (downloader.py:85)
+2025-03-30 00:41:28,766 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/awada/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/TeamWiseFlow/awada.git/' not found
+ (downloader.py:85)
+2025-03-30 01:17:28,741 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/HACKING-LAB/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/U7P4L-IN/HACKING-LAB.git/' not found
+ (downloader.py:85)
+2025-03-30 01:19:28,756 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/backend/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/UISSH/backend.git/' not found
+ (downloader.py:85)
+2025-03-30 01:21:09,027 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 01:27:50,415 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 02:30:28,770 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/notpixel/codebase'...
+remote: Access to this repository has been disabled by GitHub staff.
+remote: If you are the repository owner, you can contact support via https://support.github.com/contact for more information.
+fatal: unable to access 'https://github.com/YarmolenkoD/notpixel.git/': The requested URL returned error: 403
+ (downloader.py:85)
+2025-03-30 03:03:28,755 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Simulation-Platform-for-UAV-network/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/Zihao-Howard-Zhou/Simulation-Platform-for-UAV-network.git/' not found
+ (downloader.py:85)
+2025-03-30 06:42:28,799 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/roop/codebase'...
+remote: Access to this repository has been disabled by GitHub staff.
+remote: If you are the repository owner, you can contact support via https://support.github.com/contact for more information.
+fatal: unable to access 'https://github.com/based9based/roop.git/': The requested URL returned error: 403
+ (downloader.py:85)
+2025-03-30 07:07:28,789 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/ComfyUI-CLIPSeg/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/biegert/ComfyUI-CLIPSeg.git/' not found
+ (downloader.py:85)
+2025-03-30 08:12:28,796 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/crypto-wallet-tracker/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/can-kat/crypto-wallet-tracker.git/' not found
+ (downloader.py:85)
+2025-03-30 08:16:30,303 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 08:31:40,429 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 09:30:28,884 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/WZRY/codebase'...
+remote: Repository not found.
+fatal: repository 'https://github.com/cndaqiang/WZRY.git/' not found
+ (downloader.py:85)
+2025-03-30 09:33:13,373 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 09:49:23,704 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 10:04:56,420 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 10:46:36,136 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 11:00:38,245 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/AutoML/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/dataloop-ai/AutoML.git/'
+ (downloader.py:85)
+2025-03-30 11:13:50,973 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 12:13:21,854 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Discord-Token-Creator/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/dropoutarchive/Discord-Token-Creator.git/'
+ (downloader.py:85)
+2025-03-30 12:16:21,394 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/daddylive-m3u/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/dtankdempse/daddylive-m3u.git/'
+ (downloader.py:85)
+2025-03-30 12:39:40,166 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 12:39:51,955 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 13:23:43,394 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 14:54:24,152 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/SF-Hello/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/g-cqd/SF-Hello.git/'
+ (downloader.py:85)
+2025-03-30 15:16:35,918 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/flask-swagger/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository 'getsling/flask-swagger' is disabled.
+remote: Please ask the owner to check their account.
+fatal: Authentication failed for 'https://github.com/getsling/flask-swagger.git/'
+ (downloader.py:85)
+2025-03-30 15:31:31,979 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/inthewilddb/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/gmatuz/inthewilddb.git/'
+ (downloader.py:85)
+2025-03-30 15:35:10,284 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/OPMS/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/goer3/OPMS.git/'
+ (downloader.py:85)
+2025-03-30 15:35:10,460 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/OPMS_v3/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/goer3/OPMS_v3.git/'
+ (downloader.py:85)
+2025-03-30 16:29:11,430 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/12306-booking/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/hack12306/12306-booking.git/'
+ (downloader.py:85)
+2025-03-30 18:13:52,308 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-30 18:28:51,557 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Discord-Account-Creator/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/imvast/Discord-Account-Creator.git/'
+ (downloader.py:85)
+2025-03-30 18:28:51,809 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Discord-MassDM/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/imvast/Discord-MassDM.git/'
+ (downloader.py:85)
+2025-03-30 18:54:28,353 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/TeamViewer-5min/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/itgoyo/TeamViewer-5min.git/'
+ (downloader.py:85)
+2025-03-30 19:15:14,099 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/jmesh-tools/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/jayanam/jmesh-tools.git/'
+ (downloader.py:85)
+2025-03-30 19:15:14,288 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/jremesh-tools/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/jayanam/jremesh-tools.git/'
+ (downloader.py:85)
+2025-03-30 19:15:14,471 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/jsculpt-tools/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/jayanam/jsculpt-tools.git/'
+ (downloader.py:85)
+2025-03-30 21:07:45,473 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Imports-in-Python/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/khesualdo/Imports-in-Python.git/'
+ (downloader.py:85)
+2025-03-30 22:33:30,792 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/python-tecent-slider-crack/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/little-gg-bound/python-tecent-slider-crack.git/'
+ (downloader.py:85)
+2025-03-30 23:15:34,464 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/scroll-first-letters/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/lukeboi/scroll-first-letters.git/'
+ (downloader.py:85)
+2025-03-30 23:49:27,479 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 01:57:04,748 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/max/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/modularml/max.git/'
+ (downloader.py:85)
+2025-03-31 02:10:07,965 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/KRNL-Executor/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/mounirzx/KRNL-Executor.git/'
+ (downloader.py:85)
+2025-03-31 02:17:07,141 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/Dedockify/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/mrhavens/Dedockify.git/'
+ (downloader.py:85)
+2025-03-31 04:18:39,468 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 04:21:46,901 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 05:40:19,762 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 06:11:38,331 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/SceneClassify/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/puke3615/SceneClassify.git/'
+ (downloader.py:85)
+2025-03-31 06:16:42,440 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 06:50:39,314 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/igotolibrary/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/qmppz/igotolibrary.git/'
+ (downloader.py:85)
+2025-03-31 07:05:09,450 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/twitter-saucenao/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/rainyroads/twitter-saucenao.git/'
+ (downloader.py:85)
+2025-03-31 07:15:47,881 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 08:39:03,201 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 09:41:41,463 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 09:44:32,407 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 10:17:40,045 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/webEye/codebase'...
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/sma11new/webEye.git/'
+ (downloader.py:85)
+2025-03-31 10:43:01,307 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/db_platform/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/speedocjx/db_platform.git/'
+ (downloader.py:85)
+2025-03-31 10:53:36,478 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/chatglm2_finetuning/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/ssbuild/chatglm2_finetuning.git/'
+ (downloader.py:85)
+2025-03-31 11:07:51,975 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/JITStreamer-2.0/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/stossy11/JITStreamer-2.0.git/'
+ (downloader.py:85)
+2025-03-31 11:09:46,037 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/500lines-pdf/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/strump/500lines-pdf.git/'
+ (downloader.py:85)
+2025-03-31 12:03:48,430 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/INSTAHACK/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/termuxhackers-id/INSTAHACK.git/'
+ (downloader.py:85)
+2025-03-31 12:03:48,689 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/SARA/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/termuxhackers-id/SARA.git/'
+ (downloader.py:85)
+2025-03-31 12:03:48,885 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/SIGIT/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/termuxhackers-id/SIGIT.git/'
+ (downloader.py:85)
+2025-03-31 14:19:26,918 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/AutoMultisender-DeFi-Bot/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/vitalka14101996/AutoMultisender-DeFi-Bot.git/'
+ (downloader.py:85)
+2025-03-31 14:30:04,610 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 14:46:54,731 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/InstructAvatar/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/wangyuchi369/InstructAvatar.git/'
+ (downloader.py:85)
+2025-03-31 16:46:26,356 - GithubDownloader - ERROR - Cloning repository timed out after 300 seconds. (downloader.py:91)
+2025-03-31 16:51:07,513 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/HackerRank/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/ynyeh0221/HackerRank.git/'
+ (downloader.py:85)
+2025-03-31 17:09:26,082 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/raycast_api_proxy/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository unavailable due to DMCA takedown.
+remote: See the takedown notice for more details:
+remote:   https://github.com/github/dmca/blob/master/2025/03/2025-03-26-raycast.md.
+fatal: Authentication failed for 'https://github.com/yufeikang/raycast_api_proxy.git/'
+ (downloader.py:85)
+2025-03-31 18:00:08,332 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/GraphSleepNet/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/ziyujia/GraphSleepNet.git/'
+ (downloader.py:85)
+2025-03-31 18:15:01,013 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/taobaoCouponSpider/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-7bd689bac0.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-7bd689bac0.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/zxfgds/taobaoCouponSpider.git/'
+ (downloader.py:85)

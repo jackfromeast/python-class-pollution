@@ -1,0 +1,2 @@
+2025-03-31 10:24:03,860 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/python-code-disasters/codebase (logger.py:42)
+2025-03-31 10:44:03,751 - CodeQLRunner - INFO - Terminated all spawned processes for PID 964172 (logger.py:42)

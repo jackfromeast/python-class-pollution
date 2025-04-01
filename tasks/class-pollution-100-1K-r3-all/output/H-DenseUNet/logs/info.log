@@ -1,0 +1,5 @@
+2025-03-31 16:00:42,509 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/H-DenseUNet/codebase (logger.py:42)
+2025-03-31 16:00:50,507 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/H-DenseUNet/codeql-db (logger.py:42)
+2025-03-31 16:00:50,508 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/H-DenseUNet/codeql-db (logger.py:42)
+2025-03-31 16:00:50,508 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-31 16:20:42,910 - CodeQLRunner - INFO - Terminated all spawned processes for PID 3966734 (logger.py:42)

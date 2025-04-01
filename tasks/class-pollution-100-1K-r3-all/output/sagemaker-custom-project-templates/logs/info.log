@@ -1,0 +1,5 @@
+2025-03-30 06:10:59,548 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sagemaker-custom-project-templates/codebase (logger.py:42)
+2025-03-30 06:11:25,735 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sagemaker-custom-project-templates/codeql-db (logger.py:42)
+2025-03-30 06:11:25,735 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/sagemaker-custom-project-templates/codeql-db (logger.py:42)
+2025-03-30 06:11:25,737 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-03-30 06:30:58,941 - CodeQLRunner - INFO - Terminated all spawned processes for PID 2875852 (logger.py:42)
