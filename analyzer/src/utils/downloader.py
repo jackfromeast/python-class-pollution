@@ -169,7 +169,7 @@ class PipDownloader:
     @return: A tuple (package_name, version) or (package_name, None) if no version is specified.
     """
     # If the input is a URL, extract the package name and version
-    if package_input.startswith("http"):
+    if package_input.startswith("https://"):
       parsed_url = urlparse(package_input)
       path_parts = parsed_url.path.strip("/").split("/")
       if len(path_parts) >= 2:
