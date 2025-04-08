@@ -2,6 +2,30 @@
 
 > The Python World-Class Pollution: Understanding the New Python Prototype Pollution Vulnerability and its Consequnces
 
+### Install
+
+1. Install the [CodeQL CLI](https://github.com/github/codeql-cli-binaries) and add it to the environment path.  
+
+2. Run `install.sh`
+
+### Run
+
+Our tool uses "task" concept to help define the input, output, and configurations of an analysis task for better pipeline orchestration. All the tasks are located at `/tasks` path. To start any new analysis task, you should create a folder under the `/tasks` and update the `config.yml` within it following the template at `analyzer/new-config-example.yaml`.
+
+1. Update the config file under the task folder (e.g., `task/your-new-task-name`):
+  + `SCHEDULER.WORKSPACE`: The absolute path to the current task folder.
+  + `CODEQL.CLI`: The absolute path to the codeql binary (`which codeql`).
+  + `CLASS_POLLUTION_ANALYSIS.QUERIES`: The absolute path to the codeql query to want to execute.
+
+2. Start the analyzer through the following command:
+
+```
+cd analyzer/src # This is important for python to resolve the modules
+python3 run.py --config /absolute/path/to/tasks/<task-name>/config.yaml
+```
+
+### Class Pollution Vulnerabilities
+
 This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
 
 | Name | Type | Stars | Version | Payloads | Input | Found By | Status | CVE |
