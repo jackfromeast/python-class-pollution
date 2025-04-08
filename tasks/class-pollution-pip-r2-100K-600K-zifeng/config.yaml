@@ -28,7 +28,7 @@ CODEQL:
   THREADS: 2
   RAM: 16384 # MB
   TIMEOUT: 1000 # 20 minutes
-  USE_MODEL_PACK: True
+  USE_MODEL_PACK: False
   MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
   MODEL_PACK_PATH: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/library-models
   
@@ -52,7 +52,7 @@ CLASS_POLLUTION_ANALYSIS:
   ]
 
   DELETE_AFTER_QUERY: False # False when debugging
-  DELETE_IF_NO_FLOWS: False
+  DELETE_IF_NO_FLOWS: True
 
 LOG:
   LOG_PATH: "" # Default: WORKSPACE/log
