@@ -2,6 +2,7 @@ import os
 import shutil
 import psutil
 import zipfile
+import tarfile
 import subprocess
 from urllib.parse import urlparse
 from utils.logger import LoggerFactory
@@ -151,6 +152,26 @@ class PipDownloader:
       self.logger.error(f"Unexpected error: {e}")
       return False
 
+  def _extract_source_file(self, source_path, extract_to):
+    """Extract a source distribution file and adjust directory structure if necessary."""
+    self.logger.info(f"Extracting {source_path} to {extract_to}")
+    try:
+      # Extract the source file
+      if source_path.endswith(('.tar.gz', '.tgz', '.tar.bz2', '.tar.xz')):
+        with tarfile.open(source_path, 'r:*') as tar:
+            tar.extractall(extract_to)
+      elif source_path.endswith('.zip'):
+        with zipfile.ZipFile(source_path, 'r') as zip_ref:
+            zip_ref.extractall(extract_to)
+      else:
+        self.logger.error(f"Unsupported file format: {source_path}")
+        return False
+
+      return True
+    except Exception as e:
+      self.logger.error(f"Failed to extract source file {source_path}: {e}")
+      return False
+
   def _clean_directory(self, path):
     """Remove the directory if it exists."""
     if os.path.exists(path):
@@ -217,14 +238,24 @@ class PipDownloader:
         return False
 
       # Step 2: Find the downloaded .whl file
-      whl_files = [f for f in os.listdir(whl_save_path) if f.endswith(".whl")]
+      downloaded_files = os.listdir(whl_save_path)
+      whl_files = [f for f in downloaded_files if f.endswith(".whl")]
       if not whl_files:
-        self.logger.error("No .whl file found in the download directory.")
-        return False
+        source_files = [f for f in downloaded_files if f.endswith(('.tar.gz', '.zip', '.tar.bz2', '.tar.xz'))]
 
-      # Step 3: Extract the first .whl file found
-      whl_path = os.path.join(whl_save_path, whl_files[0])
-      if not self._extract_whl_file(whl_path, codebase_save_path):
+        if not whl_files and not source_files:
+          self.logger.error("No .whl or source distribution files found in the download directory.")
+          return False
+
+      # Step 3: Extract the first .whl file found or the first source file
+      if whl_files:
+        whl_path = os.path.join(whl_save_path, whl_files[0])
+        success = self._extract_whl_file(whl_path, codebase_save_path)
+      else:
+        source_path = os.path.join(whl_save_path, source_files[0])
+        success = self._extract_source_file(source_path, codebase_save_path)
+
+      if not success:
         return False
 
       self.logger.info(f"Repository cloned successfully to {codebase_save_path}")

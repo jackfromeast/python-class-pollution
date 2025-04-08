@@ -90,7 +90,7 @@ class CodeQLRunner:
         return True
       else:
         error_msg = CodeQLDriverExceptions.handle_build_exception(stderr.decode() if stderr else "")
-        self.logger.error(f"Failed to build CodeQL database: {error_msg}")
+        self.logger.error(f"Failed to build CodeQL database for {self.repo_name}: {error_msg}")
         if (self.logger.log_error_details):
           self.logger.error(f"Error details: {stderr.decode() if stderr else ""}")
         return False
@@ -101,7 +101,7 @@ class CodeQLRunner:
 
     except Exception as e:
       error_msg = CodeQLDriverExceptions.handle_build_exception(stderr.decode() if stderr else "")
-      self.logger.error(f"Failed to build CodeQL database with Exception {e}: {error_msg}")
+      self.logger.error(f"Failed to build CodeQL database for {self.repo_name}: {error_msg}")
       if (self.logger.log_error_details):
         self.logger.error(f"Error details: {stderr.decode() if stderr else ""}")
       return False
