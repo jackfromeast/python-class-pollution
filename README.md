@@ -2,11 +2,15 @@
 
 > The Python World-Class Pollution: Understanding the New Python Prototype Pollution Vulnerability and its Consequnces
 
-### Install
+### Installation
 
-1. Install the [CodeQL CLI](https://github.com/github/codeql-cli-binaries) and add it to the environment path.  
+1. Install the [CodeQL CLI v2.20.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.4) and add it to the environment path.  
 
 2. Run `install.sh`
+
+```
+cd python-class-pollution && bash install.sh
+```
 
 ### Run
 
