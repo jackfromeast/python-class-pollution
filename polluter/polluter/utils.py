@@ -12,13 +12,25 @@ stdlib_paths = {
   )
 }
 
+def is_c_wrapper(obj):
+  """
+  Check if the object is a C wrapper.
+  Objects in this type are non-interesting, and don't need to futher checking its attributes.
+
+  method-wrapper: methods implemented in C code, bound to an instance of a class.
+  builtin_function_or_method: built-in functions or methods implemented in C. Not bound to a class instance and can be called directly.
+  """
+  try:
+    if type(obj).__name__ in ["method-wrapper", "builtin_function_or_method", "method_descriptor", "getset_descriptor"]:
+      return True
+  except AttributeError:
+    pass
+  return False
+
 def is_from_standard_library(obj):
   module = inspect.getmodule(obj)
   if module is None:
-    # If obj is a method-wrapper:
-    if type(obj).__name__ in ["method-wrapper", "builtin_function_or_method", "method_descriptor", "getset_descriptor"]:
-      return True
-    return False
+    return is_c_wrapper(obj)
 
   module_file = getattr(module, "__file__", None)
   # No module file, then it's module builtins

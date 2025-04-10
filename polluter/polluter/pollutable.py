@@ -9,7 +9,8 @@ po = new pl.Pollutable(obj, max_layer=1, lookup_type="getAttr")
 """
 import inspect
 import logging
-from .utils import get_type, get_name_info, is_instance, is_from_standard_library, is_primitive, is_c_written, support_getField_op, is_callable
+import re
+from .utils import get_type, get_name_info, is_instance, is_c_wrapper, is_from_standard_library, is_primitive, is_c_written, support_getField_op, is_callable
 
 logging.basicConfig(
   level=logging.INFO,
@@ -47,19 +48,46 @@ class Pollutable:
 
     logging.debug(f"Starting find_all_pollutables. Type: {self.lookup_type}, Layer: {0}, Max Layer: {max_layer}")
 
+    def lookup_getattr(obj, name):
+      try:
+        ret = getattr(obj, name)
+        logging.debug(f"Accessed attribute: {name}")
+        return (ret, 'attr')
+      except AttributeError as e:
+        logging.warning(f"Could not access attribute '{name}': {str(e)}")
+        return None
+
+    def lookup_getboth(obj, name):
+      if hasattr(obj, '__getitem__'):
+        try:
+          ret = obj[name]
+          logging.debug(f"Accessed item: {name}")
+          return (ret, 'item')
+        except (KeyError, IndexError, TypeError, AttributeError) as e:
+          logging.debug(f"Failed to access item '{name}': {str(e)}")
+          pass
+
+      try:
+        ret = getattr(obj, name)
+        logging.debug(f"Accessed attribute: {name}")
+        return (ret, 'attr')
+      except AttributeError as e:
+        logging.debug(f"Could not access attribute or item '{name}': {str(e)}")
+        return None
+      
     if self.lookup_type == "getAttr":
       logging.info("Using 'getAttr' method to find pollutables.")
-      self.summary = self.find_all_pollutables_getattr_only(self.target, 0, max_layer)
+      self.summary = self.find_all_pollutables(self.target, 0, max_layer, False, lookup_getattr, '')
     elif self.lookup_type == "getBoth":
-      logging.warning("'getBoth' type is not implemented yet.")
-      raise NotImplementedError("getBoth is not implemented")
+      logging.info("Using 'getBoth' method to find pollutables.")
+      self.summary = self.find_all_pollutables(self.target, 0, max_layer, False, lookup_getboth, '')
     else:
       logging.error(f"Unknown type specified: {self.lookup_type}")
       raise Exception(f"Unknown type: {self.lookup_type}")
 
     return self.summary
   
-  def find_all_pollutables_getattr_only(self, obj, layer=0, max_layer=1, callable_only=False):
+  def find_all_pollutables(self, obj, layer=0, max_layer=1, callable_only=False, lookup_func=None, parent_full_path=''):
     """Find all pollutables in the given object using getattr recursively, logging module names."""
     logging.debug(f"Entering layer {layer}. Object type: {type(obj)}")
     
@@ -74,26 +102,33 @@ class Pollutable:
     else:
       self.visited.add(obj_id)
     
-    # Not sure why __base__ is not included
     attributes_to_be_checked = dir(obj) + ["__base__", "__bases__"]
 
     for name in attributes_to_be_checked:
-      try:
-        value = getattr(obj, name)
-        logging.debug(f"Accessed attribute: {name}")
-      except Exception as e:
-        logging.warning(f"Could not access attribute '{name}': {str(e)}")
+      if lookup_func:
+        result = lookup_func(obj, name)
+        if not result:
+          continue
+        value, access_type = result
+      else:
         continue
       
       if callable_only and not callable(value):
         logging.debug(f"Skipping non-callable attribute: {name}")
         continue
       
-      continue_search_flag = False
-      current_path = name
+      # Build current_full_path based on access_type and parent_full_path
+      if access_type == 'attr':
+        if parent_full_path:
+          current_full_path = f"{parent_full_path}.{name}"
+        else:
+          current_full_path = name
+      elif access_type == 'item':
+        current_full_path = f'{parent_full_path}["{name}"]'
+      else:
+        continue
       
-      # Summerize the current value information
-      pollutables[current_path] = self.summerize_value(value)
+      pollutables[current_full_path] = self.summerize_value(value)
 
       # Decide whether to recurse into its attributes
       # If the value is a module, stop searching
@@ -101,22 +136,18 @@ class Pollutable:
       # If the value is a class, class instance, callable, continue searching
       # If the value is a string, number, boolean, stop searching
       type_info = get_type(value)
-      
       continue_search_flag = (
         layer < max_layer and
-        not is_from_standard_library(value) and
+        not is_c_wrapper(value) and
         not is_primitive(type_info)
       )
-      
+
       if continue_search_flag:
-        logging.debug(f"Recursing into attribute: {current_path} at layer {layer + 1}")
-        sub_pollutables = self.find_all_pollutables_getattr_only(
-          value, layer + 1, max_layer, callable_only
+        logging.debug(f"Recursing into attribute: {current_full_path} at layer {layer + 1}")
+        sub_pollutables = self.find_all_pollutables(
+          value, layer + 1, max_layer, callable_only, lookup_func, current_full_path
         )
-        for sub_path, sub_type in sub_pollutables.items():
-          full_path = f"{current_path}.{sub_path}"
-          pollutables[full_path] = sub_type
-          logging.debug(f"Added sub-attribute: {full_path} (Type: {sub_type})")
+        pollutables.update(sub_pollutables)
     
     return pollutables
 
@@ -134,19 +165,56 @@ class Pollutable:
     @params value: The value to summarize.
     @return: The summary of the value.
     """
-    # First of all, determine the type of the value
     type_info = get_type(value)
-
-    # Secondly, determine the name of the value
     name_info = get_name_info(value)
-    
-    # Thirdly, determine where does the value come from
     is_standard = is_from_standard_library(value)
-
-    # Finally, determine if the value is writable
     writable = is_c_written(value, type_info)
-
     return (type_info, name_info, is_standard, writable)
+
+  def parse_path(self, path):
+    components = []
+    i = 0
+    n = len(path)
+    while i < n:
+      if path[i] == '.' and i+1 < n and path[i+1] == '[':
+        i += 1
+        if path[i] == '[':
+          if i+1 < n and path[i+1] == '"':
+            j = path.find('"]', i+2)
+            if j == -1:
+              raise ValueError(f"Invalid path: unterminated [\" at position {i}")
+            name = path[i+2:j]
+            components.append(('item', name))
+            i = j + 2
+          else:
+            raise ValueError(f"Invalid item access at position {i}")
+        else:
+          raise ValueError(f"Unexpected character '{path[i]}' at position {i}")
+      elif path[i] == '.':
+        j = i + 1
+        while j < n and (path[j].isalnum() or path[j] == '_'):
+          j += 1
+        attr = path[i+1:j]
+        components.append(('attr', attr))
+        i = j
+      elif path[i] == '[':
+        if i+1 < n and path[i+1] == '"':
+          j = path.find('"]', i+2)
+          if j == -1:
+            raise ValueError(f"Invalid path: unterminated [\" at position {i}")
+          name = path[i+2:j]
+          components.append(('item', name))
+          i = j + 2
+        else:
+          raise ValueError(f"Unsupported item access syntax at position {i}")
+      else:
+        j = i
+        while j < n and (path[j].isalnum() or path[j] == '_'):
+          j += 1
+        attr = path[i:j]
+        components.append(('attr', attr))
+        i = j
+    return components
 
   def find(self, path):
     """
@@ -155,9 +223,15 @@ class Pollutable:
     @params path: The path to find the object.
     @return obj: The object found based on the path.
     """
+    components = self.parse_path(path)
     obj = self.target
-    for attr in path.split('.'):
-      obj = getattr(obj, attr)
+    for access_type, name in components:
+      if access_type == 'attr':
+        obj = getattr(obj, name)
+      elif access_type == 'item':
+        obj = obj[name]
+      else:
+        raise ValueError(f"Unknown access type: {access_type}")
     return obj
   
   def select(self, query):
@@ -178,6 +252,7 @@ class Pollutable:
     - "type=number" -> Select the numbers.
     - "type=boolean" -> Select the booleans.
     - "builtin=no" -> Select the user-defined objects.
+    - "name=???" -> Select the object with __name__=???.
     - Combined queries like "type=class&builtin=no" -> Select user-defined classes.
 
     @return selected: A dictionary of selected paths and their values.
@@ -198,6 +273,10 @@ class Pollutable:
           if not self._match_builtin(q_value, is_standard):
             match = False
             break
+        elif key == 'name':
+          if not self._match_name(name_info, type_info, q_value):
+            match = False
+            break
         else:
           match = False
           break
@@ -207,9 +286,26 @@ class Pollutable:
     
     return selected
 
+  def select_by_func(self, func):
+    """
+    Select the object based on the function.
+
+    @params func: The function to select the object.
+    @return selected: A dictionary of selected paths and their values.
+    """
+    selected = {}
+    for path, value in self.summary.items():
+      type_info, name_info, is_standard, writable = value
+      if func(type_info, name_info, is_standard, writable):
+        selected[path] = value
+    return selected
+
+  def _match_name(self, name_info, type_info, match_name):
+    """Handle name-based matching"""
+    return name_info == match_name
+
   def _match_type(self, q_value, type_info, full_value):
     """Handle type-based matching"""
-    # Direct type matches (updated)
     direct_types = {
       'module': 'module',
       'function': 'function',
@@ -243,11 +339,9 @@ class Pollutable:
       return is_instance(type_info)
     if q_value == 'dict':
       return support_getField_op(type_info) and type_info != 'str'
-      
     return False
 
   def _match_builtin(self, q_value, is_standard):
-    """Handle built-in checks"""
     if q_value == 'yes':
       return is_standard
     if q_value == 'no':
