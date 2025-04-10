@@ -14,8 +14,8 @@ import csv
 import sys
 import argparse
 import logging
-from .helpers import load_metadata, parse_result_log
-from .constants import KNOWN_CLASS_POLLUTION_FOLDER_PATH, CSV_COLUMNS, HEADER_ROWS, METADATA_PATH
+from .helpers import load_metadata, load_pip_metadata, parse_result_log, load_all_known_repos
+from .constants import KNOWN_CLASS_POLLUTION_FOLDER_PATH, CSV_COLUMNS, HEADER_ROWS, METADATA_PATH, PIP_METADATA_PATH, PROJECT_ROOT, CSV_COLUMNS_PIP
 from .task_output_classify_repo import classify
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -56,44 +56,89 @@ def parse_manually_checked_csv(folder_path):
 
   return known_true_positives, known_false_positives
 
-def generate_csv_output(flagged_repos, repo_metadata, output_file, filter_repos=None):
-  # Sort flagged_repos by stars (descending order)
-  flagged_repos_sorted = sorted(
-    flagged_repos,
-    key=lambda x: repo_metadata.get(x["repo_name"], {}).get("stargazers_count", -1),
-    reverse=True
-  )
-
-  with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-    fieldnames = ["repo_name", "stars", "url", "Confirmed", "CodeQL", "FP Reason", "GetType", "SetType", "Input", "Remote", "Local"]
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-    writer.writeheader()
-    for repo in flagged_repos_sorted:
-      if filter_repos and repo["repo_name"] in filter_repos:
-        continue  # Skip this repo if it's in the filter list
-
+def generate_csv_output(flagged_repos, repo_metadata, output_file, all_known_repos, use_pip_metadata=False):
+  all_repos = []
+  
+  # Process new flagged repos
+  for repo in flagged_repos:
+    NewlyAdded = "Yes"
+    if repo["repo_name"] in all_known_repos:
+      NewlyAdded = "No"
+    
+    if not use_pip_metadata:
       repo_info = repo_metadata.get(repo["repo_name"], {
         "name": repo["repo_name"],
         "stargazers_count": -1,
         "html_url": f"https://github.com/{repo['repo_name']}"
       })
-      writer.writerow({
-        "repo_name": repo_info["name"],
-        "stars": repo_info["stargazers_count"],
-        "url": repo_info["html_url"],
-        "Confirmed": "N/A",  # Empty by default
-        "CodeQL": "Y",    # Always set to "Yes"
-        "FP Reason": "",  # Empty by default
-        "GetType": repo["get_type"],
-        "SetType": repo["set_type"],
-        "Input": "",
-        "Remote": "|".join(repo["remote_patterns"]),
-        "Local": "|".join(repo["local_patterns"])
+    else:
+      repo_info = repo_metadata.get(repo["repo_name"], {
+        "name": repo["repo_name"],
+        "downloads": -1,
+        "html_url": f"https://pypi.org/project/{repo['repo_name']}"
       })
 
-def summary_csv(log_file, output_file, filter=False):
-  repo_metadata = load_metadata(METADATA_PATH)
+    repo_data = {
+      "Application": repo_info["name"],
+      # "Stars": repo_info["stargazers_count"],
+      "URL": repo_info["html_url"],
+      "Confirmed": "N/A",
+      "CodeQL": "Y",
+      "FP Reason": "",
+      "GetType": repo["get_type"],
+      "SetType": repo["set_type"],
+      "Input": "",
+      "Remote": "|".join(repo["remote_patterns"]),
+      "Local": "|".join(repo["local_patterns"]),
+      "Status": "",
+      "Comment": "",
+      "NewlyAdded": NewlyAdded
+    }
+
+    if use_pip_metadata:
+      repo_data["Downloads"] = repo_info["downloads"]
+    else:
+      repo_data["Stars"] = repo_info["stargazers_count"]
+  
+    all_repos.append(repo_data)
+
+  # Sort all repos by stars (descending)
+  if use_pip_metadata:
+    all_repos_sorted = sorted(
+      all_repos,
+      key=lambda x: int(x.get("Downloads", 0)) if str(x.get("Downloads", 0)).isdigit() else 0,
+      reverse=True
+    )
+  else:
+    all_repos_sorted = sorted(
+      all_repos,
+      key=lambda x: int(x.get("Stars", 0)) if str(x.get("Stars", 0)).isdigit() else 0,
+      reverse=True
+    )
+
+  with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
+    # Write custom header rows
+    csvfile.write(HEADER_ROWS)
+    
+    # Create writer and write data rows
+    if use_pip_metadata:
+      writer = csv.DictWriter(csvfile, fieldnames=CSV_COLUMNS_PIP)
+    else:
+      writer = csv.DictWriter(csvfile, fieldnames=CSV_COLUMNS)
+
+    for repo in all_repos_sorted:
+      # Ensure all columns are present
+      if use_pip_metadata:
+        clean_repo = {col: repo.get(col, "") for col in CSV_COLUMNS_PIP}
+      else:
+        clean_repo = {col: repo.get(col, "") for col in CSV_COLUMNS}
+      writer.writerow(clean_repo)
+
+def summary_csv(log_file, output_file, filter=False, use_pip_metadata=False):
+  if use_pip_metadata:
+    repo_metadata = load_pip_metadata(PIP_METADATA_PATH)
+  else:
+    repo_metadata = load_metadata(METADATA_PATH)
 
   flagged_repos = parse_result_log(log_file)
 
@@ -102,6 +147,7 @@ def summary_csv(log_file, output_file, filter=False):
     known_true_positives, known_false_positives = parse_manually_checked_csv(KNOWN_CLASS_POLLUTION_FOLDER_PATH)
     filter_repos = known_true_positives.union(known_false_positives)
 
-  generate_csv_output(flagged_repos, repo_metadata, output_file, filter_repos)
+  all_known_repos = load_all_known_repos(KNOWN_CLASS_POLLUTION_FOLDER_PATH)
+  generate_csv_output(flagged_repos, repo_metadata, output_file, all_known_repos, use_pip_metadata)
 
   logging.info(f"CSV file '{output_file}' generated successfully.")

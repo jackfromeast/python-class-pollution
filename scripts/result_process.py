@@ -8,12 +8,17 @@ python result_process.py compare_true_positives --result /home/jackfromeast/Desk
 
 2/ Summarize the result.log and generate the new CSV file:
 python result_process.py summary --result /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/logs/result.log
+python result_process.py summary --pip --result /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/logs/result.log
 
 3/ Summarize the result.log and update the existing CSV file (same dataset that generated before):
 python result_process.py update --result /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/logs/result.log --csv "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - Github-Top-1K-OneSetOnly-03_25.csv"
+python result_process.py update --pip --result /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-top-10K-downloads/logs/result.log --csv "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - PIP-Top-10K-0410.csv"
 
 4/ Compare the new flagged repositories with all manually checked repositories:
 python result_process.py compare --result /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/logs/result.log
+
+python result_process.py update --result /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/logs/result.log --csv "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - Github-Top-100-1K-Codeql-01_07.csv" "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - Github-Top-100-1K-Codeql-SmartSetter-01_10.csv"
+
 """
 import os
 import argparse
@@ -23,7 +28,8 @@ def main():
   parser = argparse.ArgumentParser(description="Summarize flagged repositories from result.log.")
   parser.add_argument('action', choices=['update', 'summary', 'compare', 'clean', 'compare_true_positives'], help='Action to perform')
   parser.add_argument("--result", help="Path to the result.log file")
-  parser.add_argument("--csv", help="Path to the CSV file to be updated")
+  parser.add_argument("--pip", action='store_true', help="Use pip metadata")
+  parser.add_argument("--csv", nargs='+', help="Paths to the CSV files to be updated")
   parser.add_argument("--output", help="Output CSV file name (default: same folder as result.log)")
   args = parser.parse_args()
 
@@ -38,7 +44,7 @@ def main():
       log_dir = os.path.dirname(args.result)
       output_file = os.path.join(log_dir, "updated_results.csv")
 
-    update_csv(args.result, args.csv, output_file)
+    update_csv(args.result, args.csv, output_file, args.pip)
 
   if args.action == 'summary':
     if args.result is None:
@@ -52,9 +58,9 @@ def main():
       output_file = os.path.join(log_dir, "results.csv")
     
     if hasattr(args, 'filter') and args.filter:
-      summary_csv(args.result, output_file, True)
+      summary_csv(args.result, output_file, True, args.pip)
     else:
-      summary_csv(args.result, output_file)
+      summary_csv(args.result, output_file, False, args.pip)
 
   if args.action == 'compare':
     if args.result is None:
