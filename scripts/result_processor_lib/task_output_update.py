@@ -14,36 +14,13 @@ import csv
 import sys
 import argparse
 import logging
-from .helpers import load_metadata, parse_result_log
-from .constants import KNOWN_CLASS_POLLUTION_FOLDER_PATH, CSV_COLUMNS, HEADER_ROWS, METADATA_PATH, PROJECT_ROOT
+from .helpers import load_metadata, parse_result_log, load_all_known_repos, load_pip_metadata
+from .constants import KNOWN_CLASS_POLLUTION_FOLDER_PATH, CSV_COLUMNS, HEADER_ROWS, METADATA_PATH, PROJECT_ROOT, PIP_METADATA_PATH, CSV_COLUMNS_PIP
 from .task_output_classify_repo import classify
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def load_all_known_repos(folder_path):
-  known_repos = set()
-  if not os.path.isdir(folder_path):
-    logging.warning(f"Known class pollution folder not found: {folder_path}")
-    return known_repos
-
-  for filename in os.listdir(folder_path):
-    if not filename.endswith('.csv'):
-      continue
-    csv_path = os.path.join(folder_path, filename)
-    try:
-      with open(csv_path, 'r', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        next(reader) 
-        next(reader)  # Skip second header row
-        for row in reader:
-          if row:  # Check for non-empty rows
-            app_name = row[0].strip()  # Application is first column
-            known_repos.add(app_name)
-    except Exception as e:
-      logging.error(f"Error reading {csv_path}: {e}")
-  return known_repos
-
-def parse_existing_csv(csv_file):
+def parse_existing_csv(csv_file, use_pip_metadata=False):
   existing_repos = []
   try:
     with open(csv_file, 'r', encoding='utf-8') as f:
@@ -53,6 +30,10 @@ def parse_existing_csv(csv_file):
       
       for row in reader:
         repo_dict = {}
+
+        if use_pip_metadata:
+          CSV_COLUMNS = CSV_COLUMNS_PIP
+
         for i, column in enumerate(CSV_COLUMNS):
           value = row[i] if i < len(row) else ''
 
@@ -67,7 +48,7 @@ def parse_existing_csv(csv_file):
     
   return existing_repos
 
-def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_file, all_known_repos):
+def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_file, all_known_repos, use_pip_metadata):
   # Merge existing and new repos, marking new entries
   all_repos = []
   
@@ -80,15 +61,22 @@ def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_fil
     if repo["repo_name"] in all_known_repos:
       NewlyAdded = "No"
       
-    repo_info = repo_metadata.get(repo["repo_name"], {
-      "name": repo["repo_name"],
-      "stargazers_count": -1,
-      "html_url": f"https://github.com/{repo['repo_name']}"
-    })
+    if not use_pip_metadata:
+      repo_info = repo_metadata.get(repo["repo_name"], {
+        "name": repo["repo_name"],
+        "stargazers_count": -1,
+        "html_url": f"https://github.com/{repo['repo_name']}"
+      })
+    else:
+      repo_info = repo_metadata.get(repo["repo_name"], {
+        "name": repo["repo_name"],
+        "downloads": -1,
+        "html_url": f"https://pypi.org/project/{repo['repo_name']}"
+      })
     
-    all_repos.append({
+    repo_data = {
       "Application": repo_info["name"],
-      "Stars": repo_info["stargazers_count"],
+      # "Stars": repo_info["stargazers_count"],
       "URL": repo_info["html_url"],
       "Confirmed": "N/A",
       "CodeQL": "Y",
@@ -101,36 +89,66 @@ def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_fil
       "Status": "",
       "Comment": "",
       "NewlyAdded": NewlyAdded
-    })
+    }
+
+    if use_pip_metadata:
+      repo_data["Downloads"] = repo_info["downloads"]
+    else:
+      repo_data["Stars"] = repo_info["stargazers_count"]
+  
+    all_repos.append(repo_data)
 
   # Add existing repos (preserve their data)
   all_repos.extend(existing_repos)
 
   # Sort all repos by stars (descending) 
-  all_repos_sorted = sorted(
-    all_repos,
-    key=lambda x: int(x.get("Stars", 0)) if str(x.get("Stars", 0)).isdigit() else 0,
-    reverse=True
-  )
+  if use_pip_metadata:
+    all_repos_sorted = sorted(
+      all_repos,
+      key=lambda x: int(x.get("Downloads", 0)) if str(x.get("Downloads", 0)).isdigit() else 0,
+      reverse=True
+    )
+  else:
+    all_repos_sorted = sorted(
+      all_repos,
+      key=lambda x: int(x.get("Stars", 0)) if str(x.get("Stars", 0)).isdigit() else 0,
+      reverse=True
+    )
 
   with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
     # Write custom header rows
     csvfile.write(HEADER_ROWS)
     
     # Create writer and write data rows
-    writer = csv.DictWriter(csvfile, fieldnames=CSV_COLUMNS)
-    
+    if use_pip_metadata:
+      writer = csv.DictWriter(csvfile, fieldnames=CSV_COLUMNS_PIP)
+    else:
+      writer = csv.DictWriter(csvfile, fieldnames=CSV_COLUMNS)
+
     for repo in all_repos_sorted:
       # Ensure all columns are present
-      clean_repo = {col: repo.get(col, "") for col in CSV_COLUMNS}
+      if use_pip_metadata:
+        clean_repo = {col: repo.get(col, "") for col in CSV_COLUMNS_PIP}
+      else:
+        clean_repo = {col: repo.get(col, "") for col in CSV_COLUMNS}
       writer.writerow(clean_repo)
 
-def update_csv(result_file, csv_file, output_file):
-  repo_metadata = load_metadata(METADATA_PATH)
+
+def update_csv(result_file, csv_files, output_file, use_pip_metadata=False):
+  if use_pip_metadata:
+    repo_metadata = load_pip_metadata(PIP_METADATA_PATH)
+  else:
+    repo_metadata = load_metadata(METADATA_PATH)
+
   flagged_repos = parse_result_log(result_file)
 
-  existing_repos = parse_existing_csv(csv_file)
+  existing_repos = []
+  for csv_file in csv_files:
+    existing_repos += parse_existing_csv(csv_file, use_pip_metadata)
+
+  print(existing_repos[:1])
+
   all_known_repos = load_all_known_repos(KNOWN_CLASS_POLLUTION_FOLDER_PATH)
-  generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_file, all_known_repos)
+  generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_file, all_known_repos, use_pip_metadata)
 
   logging.info(f"CSV file '{output_file}' generated successfully.")

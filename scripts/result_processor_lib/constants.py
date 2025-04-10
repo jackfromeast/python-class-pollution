@@ -10,8 +10,12 @@ PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..", ".." )
 # Metadata files for the repositories
 METADATA_PATH = [
   "dataset/github/python-20100101-20141001-star-1K.json",
-  "dataset/github/python-20141001-20241001-star-100-1K.json",
-  "dataset/github/python-20191001-20241001-star-1K.json"
+  "dataset/github/python-20141001-20241001-star-1K.json",
+  "dataset/github/python-20141001-20241001-star-100-1K.json"
+]
+
+PIP_METADATA_PATH = [
+  "dataset/pip/pip_all_packages_download_last_month_03_2025.csv"
 ]
 
 # Path to all the manually checked CSV files
@@ -23,5 +27,11 @@ TRUE_POSITIVES_FILE_PATH = "dataset/manually-checked/The Python World-Class Poll
 # Result CSV columns
 CSV_COLUMNS = ["Application", "Stars", "URL", "Confirmed", "CodeQL", "FP Reason", "GetType", "SetType", "Input", "Remote", "Local", "Status", "Comment", "NewlyAdded"]
 HEADER_ROWS = """Application,Stars,URL,Confirmed,Codeql,FP Reason,Types,,Input,,,Status,Comment
+,,,,,,Get,Set,,Remote,Local,,
+"""
+
+# Result CSV columns for pip
+CSV_COLUMNS_PIP = ["Application", "Downloads", "URL", "Confirmed", "CodeQL", "FP Reason", "GetType", "SetType", "Input", "Remote", "Local", "Status", "Comment", "NewlyAdded"]
+HEADER_ROWS = """Application,Downloads,URL,Confirmed,Codeql,FP Reason,Types,,Input,,,Status,Comment
 ,,,,,,Get,Set,,Remote,Local,,
 """
