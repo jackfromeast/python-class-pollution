@@ -19,7 +19,7 @@ import subprocess
 from .exceptions import CodeQLDriverExceptions
 from utils.logger import LoggerFactory
 from utils.config import Config
-from utils.helper import resolve_repo_name, cleanup_folders
+from utils.helper import resolve_repo_name, cleanup_folders, resolve_relative_path
 from utils.downloader import GithubDownloader, PipDownloader
 from argparse import ArgumentParser
 
@@ -67,12 +67,17 @@ class CodeQLRunner:
     """
     self.logger.info(f"Building CodeQL database for: {self.codebase_path}")
 
+    cli = resolve_relative_path(self.codeql_config.CLI)
+    if not os.path.exists(cli):
+      self.logger.error(f"CodeQL CLI not found: {cli}")
+      return False
+
     process = None
     stderr = None
     try:
       process = subprocess.Popen(
         [
-          self.codeql_config.CLI, "database", "create", self.db_path,
+          cli, "database", "create", self.db_path,
           "--source-root", self.codebase_path,
           "--language=python",
           f"--threads={self.codeql_config.THREADS}",
@@ -137,6 +142,11 @@ class CodeQLRunner:
     """
     self.logger.info(f"Running CodeQL queries on database: {self.db_path}")
     for query_file in self.queries:
+      query_file = resolve_relative_path(query_file)
+      if not os.path.exists(query_file):
+        self.logger.error(f"Query file not found: {query_file}")
+        continue
+      
       output_file = os.path.join(
         self.results_dir, f"{os.path.basename(query_file)}.sarif"
       )
@@ -162,7 +172,7 @@ class CodeQLRunner:
         self.cleanup(everything=True)
 
     if self.delete_after_query:
-      self.cleanup()
+      self.cleanup(everything=True)
 
   def run_single_query(self, query_file, output_file):
     """
@@ -184,7 +194,7 @@ class CodeQLRunner:
 
       if self.codeql_config.USE_MODEL_PACK:
         model_pack = self.codeql_config.MODEL_PACK
-        model_pack_path = self.codeql_config.MODEL_PACK_PATH
+        model_pack_path = resolve_relative_path(self.codeql_config.MODEL_PACK_PATH)
 
         command.append(f"--model-packs={model_pack}")
         command.append(f"--additional-packs={model_pack_path}")

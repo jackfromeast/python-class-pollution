@@ -6,6 +6,7 @@ Manages the cache for the dependency analysis.
 import os
 import json
 import shutil
+from utils.helper import resolve_relative_path
 from utils.logger import LoggerFactory
 
 class Cache:
@@ -16,7 +17,7 @@ class Cache:
   @param log_path: The path to the log file.
   """
   def __init__(self, cache_path, log_path=None):
-    self.cache_path = cache_path
+    self.cache_path = resolve_relative_path(cache_path)
     self.logger = LoggerFactory.get_logger("CacheMaintainer", local_logger_folder=log_path)
     self.cache_map = self.load_cache_map()
 

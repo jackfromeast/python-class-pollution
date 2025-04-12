@@ -3,9 +3,9 @@
 ---------------------
 Holds the configuration settings for all the analysis tasks.
 """
-
 import os
 import yaml
+from .helper import resolve_relative_path
 
 def load_config(config_path):
     """Load the YAML configuration file."""
@@ -78,7 +78,7 @@ class Config:
 
   def resolve_paths(self):
     """Resolve relative paths within the configuration."""
-    workspace = self.config.get("SCHEDULER.WORKSPACE", "")
+    workspace = resolve_relative_path(self.config.get("SCHEDULER.WORKSPACE", ""))
 
     if workspace:
       # Ensure LOG_PATH defaults to WORKSPACE/log/ if not set

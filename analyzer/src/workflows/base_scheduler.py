@@ -5,7 +5,7 @@ import logging
 import psutil
 from utils.config import Config
 from utils.logger import LoggerFactory
-from utils.helper import resolve_repo_name, cleanup_folders
+from utils.helper import resolve_repo_name, cleanup_folders, resolve_relative_path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from multiprocessing import Manager
 
@@ -13,7 +13,7 @@ class BaseScheduler:
   def __init__(self, config_path):
     self.config = Config(config_path)
 
-    self.workspace = self.config.SCHEDULER.WORKSPACE
+    self.workspace = resolve_relative_path(self.config.SCHEDULER.WORKSPACE)
     self.test_name = self.config.SCHEDULER.TEST_NAME
     self.mode = self.config.SCHEDULER.MODE
     self.max_workers = self.config.SCHEDULER.MAX_WORKER

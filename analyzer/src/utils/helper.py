@@ -3,6 +3,22 @@ import shutil
 import psutil
 import subprocess
 
+def resolve_relative_path(path):
+  """
+  Resolves a relative path to an absolute path based on the root directory.
+
+  @param path: The relative path to resolve.
+  @return: The absolute path.
+  """  
+  base_dir = os.path.abspath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..")
+  )
+
+  if os.path.isabs(path):
+    return path
+  else:
+    return os.path.abspath(os.path.join(base_dir, path))
+
 def resolve_repo_name(repo_url):
   """
   Extracts the repository or package name from a URL.
