@@ -51,6 +51,22 @@ class CodeQLRunner:
     self.delete_if_no_flows = delete_if_no_flows
     self.timeout = timeout if timeout else self.codeql_config.TIMEOUT
 
+    self.setup_cli()
+
+  def setup_cli(self):
+    """
+    Setup the CodeQL CLI path.
+    """
+    if not os.path.exists(self.codeql_config.CLI):
+      # use which codeql to check its path
+      cli = subprocess.run(["which", "codeql"], stdout=subprocess.PIPE, text=True).stdout.strip()
+      if not cli:
+        self.logger.error("CodeQL CLI not found in PATH.")
+        return False
+      self.cli = cli
+    else:
+      self.cli = self.codeql_config.CLI
+
   def work_folder_sanity_check(self):
     if not os.path.exists(self.codebase_path):
       self.logger.error(f"Codebase path does not exist: {self.codebase_path}")
@@ -67,17 +83,12 @@ class CodeQLRunner:
     """
     self.logger.info(f"Building CodeQL database for: {self.codebase_path}")
 
-    cli = resolve_relative_path(self.codeql_config.CLI)
-    if not os.path.exists(cli):
-      self.logger.error(f"CodeQL CLI not found: {cli}")
-      return False
-
     process = None
     stderr = None
     try:
       process = subprocess.Popen(
         [
-          cli, "database", "create", self.db_path,
+          self.cli, "database", "create", self.db_path,
           "--source-root", self.codebase_path,
           "--language=python",
           f"--threads={self.codeql_config.THREADS}",
@@ -146,7 +157,7 @@ class CodeQLRunner:
       if not os.path.exists(query_file):
         self.logger.error(f"Query file not found: {query_file}")
         continue
-      
+
       output_file = os.path.join(
         self.results_dir, f"{os.path.basename(query_file)}.sarif"
       )
@@ -183,7 +194,7 @@ class CodeQLRunner:
     stderr = None
     try:
       command = [
-          self.codeql_config.CLI, "database", "analyze", self.db_path,
+          self.cli, "database", "analyze", self.db_path,
           query_file,
           "--format=sarif-latest",
           f"--threads={self.codeql_config.THREADS}",
