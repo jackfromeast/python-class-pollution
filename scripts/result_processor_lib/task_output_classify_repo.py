@@ -60,7 +60,15 @@ IMPORT_FRAMEWORK_REGEX = {
   "import_fastapi": r"^\s*(from\s+fastapi\b[\w.]*\s+import|import\s+fastapi\b[\w.]*)\b",
   "import_pyramid": r"^\s*(from\s+pyramid\b[\w.]*\s+import|import\s+pyramid\b[\w.]*)\b",
   "import_falcon": r"^\s*(from\s+falcon\b[\w.]*\s+import|import\s+falcon\b[\w.]*)\b",
-  
+  "import_streamlit": r"^\s*(from\s+streamlit\b[\w.]*\s+import|import\s+streamlit\b[\w.]*)\b",
+  "import_gradio": r"^\s*(from\s+gradio\b[\w.]*\s+import|import\s+gradio\b[\w.]*)\b",
+  "import_mesop": r"^\s*(from\s+mesop\b[\w.]*\s+import|import\s+mesop\b[\w.]*)\b",
+  "import_turbogears": r"^\s*(from\s+tg\b[\w.]*\s+import|import\s+tg\b[\w.]*)\b",
+  "import_web2py": r"^\s*(from\s+web2py\b[\w.]*\s+import|import\s+web2py\b[\w.]*)\b",
+  "import_flask_restful": r"^\s*(from\s+flask_restful\b[\w.]*\s+import|import\s+flask_restful\b[\w.]*)\b",
+  "import_dash": r"^\s*(from\s+dash\b[\w.]*\s+import|import\s+dash\b[\w.]*)\b",
+  "import_pytorch_lightning": r"^\s*(from\s+lightning\b[\w.]*\s+import|import\s+lightning\b[\w.]*)\b",
+
   # Async frameworks
   "import_aiohttp": r"^\s*(from\s+aiohttp\b[\w.]*\s+import|import\s+aiohttp\b[\w.]*)\b",
   "import_quart": r"^\s*(from\s+quart\b[\w.]*\s+import|import\s+quart\b[\w.]*)\b",

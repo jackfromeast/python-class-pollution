@@ -28,13 +28,12 @@ def parse_existing_csv(csv_file, use_pip_metadata=False):
       next(reader)
       next(reader)
       
+      columns_to_use = CSV_COLUMNS_PIP if use_pip_metadata else CSV_COLUMNS
+
       for row in reader:
         repo_dict = {}
 
-        if use_pip_metadata:
-          CSV_COLUMNS = CSV_COLUMNS_PIP
-
-        for i, column in enumerate(CSV_COLUMNS):
+        for i, column in enumerate(columns_to_use):
           value = row[i] if i < len(row) else ''
 
           if isinstance(value, str):
@@ -55,8 +54,13 @@ def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_fil
   # Process new flagged repos
   for repo in flagged_repos:
     if any(repo["repo_name"] == existing_repo["Application"] for existing_repo in existing_repos):
+      # Support updating the patterns of existing repos
+      # Find the existing repo in the list
+      existing_repo = next(existing_repo for existing_repo in existing_repos if repo["repo_name"] == existing_repo["Application"])
+      existing_repo["Remote"] = "|".join(repo["remote_patterns"])
+      existing_repo["Local"] = "|".join(repo["local_patterns"])      
       continue
-    
+
     NewlyAdded = "Yes"
     if repo["repo_name"] in all_known_repos:
       NewlyAdded = "No"
