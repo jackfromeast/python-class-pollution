@@ -1,5 +1,6 @@
 setup.py
 polluter/__init__.py
+polluter/find_getattr_gadgets.py
 polluter/pollutable.py
 polluter/pollute.py
 polluter/utils.py
