@@ -30,18 +30,18 @@ class ClassPollutionAnalysis(BaseScheduler):
     signal.signal(signal.SIGALRM, timeout_handler)
     signal.alarm(self.timeout_per_worker)  # Set alarm for timeout
 
+    repo_workspace_path = self.setup_workspace_for_repo(repo_url)
+
     try:
-      self.run_codeql_query(repo_url)
+      self.run_codeql_query(repo_url, repo_workspace_path)
       self.logger.info(f"Worker completed for repo: {repo_url}")
 
     except TimeoutException:
-      repo_save_path = os.path.join(self.workspace, repo_url.split("/")[-1].replace(".git", ""))
-      self.cleanup_folders(repo_save_path)
+      self.cleanup_folders(repo_workspace_path)
       self.logger.error(f"Worker timed out for repo: {repo_url}")
 
     except Exception as e:
-      repo_save_path = os.path.join(self.workspace, repo_url.split("/")[-1].replace(".git", ""))
-      self.cleanup_folders(repo_save_path)
+      self.cleanup_folders(repo_workspace_path)
       self.logger.error(f"Unexpected error for repo: {repo_url}: {e}")
 
     finally:
@@ -49,14 +49,13 @@ class ClassPollutionAnalysis(BaseScheduler):
       self.kill_all_spawn_processes()
       self.increment_completed_repos()
   
-  def run_codeql_query(self, repo_url):
+  def run_codeql_query(self, repo_url, repo_workspace_path):
     """
     Run the CodeQL pipeline for a given repository.
     
     @param repo: GitHub URL or pip package name.
     @param config: Config object.
     """
-    repo_workspace_path = self.setup_workspace_for_repo(repo_url)
 
     if not download(repo_url, repo_workspace_path):
       self.logger.error(f"Failed to download codebase for {repo_url}")

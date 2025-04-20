@@ -58,8 +58,7 @@ class BaseScheduler:
 
   def cleanup_folders(self, folder_path):
     """Removes a directory."""
-    if os.path.exists(folder_path):
-      shutil.rmtree(folder_path)
+    cleanup_folders(folder_path)
 
   def schedule_tasks(self):
     """

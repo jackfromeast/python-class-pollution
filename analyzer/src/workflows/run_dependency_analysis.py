@@ -30,18 +30,18 @@ class DependencyAnalysis(BaseScheduler):
     signal.signal(signal.SIGALRM, timeout_handler)
     signal.alarm(self.timeout_per_worker)  # Set alarm for timeout
 
+    repo_workspace_path = self.setup_workspace_for_repo(repo_url)
+
     try:
-      self.run_dependency_analysis(repo_url)
+      self.run_dependency_analysis(repo_url, repo_workspace_path)
       self.logger.info(f"Worker completed for repo: {repo_url}")
 
     except TimeoutException:
-      repo_save_path = os.path.join(self.workspace, repo_url.split("/")[-1].replace(".git", ""))
-      self.cleanup_folders(repo_save_path)
+      self.cleanup_folders(repo_workspace_path)
       self.logger.error(f"Worker timed out for repo: {repo_url}")
 
     except Exception as e:
-      repo_save_path = os.path.join(self.workspace, repo_url.split("/")[-1].replace(".git", ""))
-      self.cleanup_folders(repo_save_path)
+      self.cleanup_folders(repo_workspace_path)
       self.logger.error(f"Unexpected error for repo: {repo_url}: {e}")
 
     finally:
@@ -49,13 +49,10 @@ class DependencyAnalysis(BaseScheduler):
       self.kill_all_spawn_processes()
       self.increment_completed_repos()
 
-  def run_dependency_analysis(self, repo_url):
+  def run_dependency_analysis(self, repo_url, repo_workspace_path):
     """
     Run the dependency analysis on the specified codebase.
     """
-    # Setup the workspace for the repository
-    repo_workspace_path = self.setup_workspace_for_repo(repo_url)
-
     # Download the codebase
     if not download(repo_url, repo_workspace_path):
       self.logger.error(f"Failed to download codebase for {repo_url}")
