@@ -10,6 +10,8 @@ po = new pl.Pollutable(obj, max_layer=1, lookup_type="getAttr")
 import inspect
 import logging
 import re
+import types
+import collections.abc
 from .utils import get_type, get_name_info, is_instance, is_c_wrapper, is_from_standard_library, is_primitive, is_c_written, support_getField_op, is_callable
 
 logging.basicConfig(
@@ -54,7 +56,9 @@ class Pollutable:
         logging.debug(f"Accessed attribute: {name}")
         return (ret, 'attr')
       except AttributeError as e:
-        logging.warning(f"Could not access attribute '{name}': {str(e)}")
+        # logging.warning(f"Could not access attribute '{name}': {str(e)}")
+        return None
+      except TypeError as e:
         return None
 
     def lookup_getboth(obj, name):
@@ -72,7 +76,7 @@ class Pollutable:
         logging.debug(f"Accessed attribute: {name}")
         return (ret, 'attr')
       except AttributeError as e:
-        logging.debug(f"Could not access attribute or item '{name}': {str(e)}")
+        # logging.debug(f"Could not access attribute or item '{name}': {str(e)}")
         return None
       
     if self.lookup_type == "getAttr":
@@ -88,67 +92,67 @@ class Pollutable:
     return self.summary
   
   def find_all_pollutables(self, obj, layer=0, max_layer=1, callable_only=False, lookup_func=None, parent_full_path=''):
-    """Find all pollutables in the given object using getattr recursively, logging module names."""
-    logging.debug(f"Entering layer {layer}. Object type: {type(obj)}")
-    
+    """Find all pollutables in the given object using getattr recursively, logging module names (BFS version)."""
+    import collections
+    logging.debug(f"Starting BFS for pollutables. Type: {type(obj)}")
+
     pollutables = {}
-    if layer >= max_layer:
-      logging.debug(f"Reached maximum layer ({max_layer}). Stopping recursion.")
-      return pollutables
+    queue = collections.deque()
+    queue.append((obj, layer, parent_full_path))
 
-    obj_id = id(obj)
-    if obj_id in self.visited:
-      return pollutables
-    else:
+    while queue:
+      current_obj, current_layer, current_path = queue.popleft()
+      if current_layer >= max_layer and max_layer != -1:
+        continue
+
+      obj_id = id(current_obj)
+      if obj_id in self.visited:
+        continue
       self.visited.add(obj_id)
-    
-    attributes_to_be_checked = dir(obj) + ["__base__", "__bases__"]
 
-    for name in attributes_to_be_checked:
-      if lookup_func:
-        result = lookup_func(obj, name)
-        if not result:
-          continue
-        value, access_type = result
-      else:
-        continue
-      
-      if callable_only and not callable(value):
-        logging.debug(f"Skipping non-callable attribute: {name}")
-        continue
-      
-      # Build current_full_path based on access_type and parent_full_path
-      if access_type == 'attr':
-        if parent_full_path:
-          current_full_path = f"{parent_full_path}.{name}"
+      attributes_to_be_checked = dir(current_obj) + ["__base__", "__bases__"]
+      items_to_be_checked = []
+      if isinstance(current_obj, collections.abc.Mapping):
+        items_to_be_checked.extend(current_obj.keys())
+      elif isinstance(current_obj, collections.abc.Sequence) and not isinstance(current_obj, (str, bytes, bytearray)):
+        items_to_be_checked.extend(range(len(current_obj)))
+      attributes_to_be_checked.extend(items_to_be_checked)
+
+      for name in attributes_to_be_checked:
+        if lookup_func:
+          result = lookup_func(current_obj, name)
+          if not result:
+            continue
+          value, access_type = result
         else:
-          current_full_path = name
-      elif access_type == 'item':
-        current_full_path = f'{parent_full_path}["{name}"]'
-      else:
-        continue
-      
-      pollutables[current_full_path] = self.summerize_value(value)
+          continue
 
-      # Decide whether to recurse into its attributes
-      # If the value is a module, stop searching
-      # If the value can holds user-defined attributes, continue searching
-      # If the value is a class, class instance, callable, continue searching
-      # If the value is a string, number, boolean, stop searching
-      type_info = get_type(value)
-      continue_search_flag = (
-        layer < max_layer and
-        not is_c_wrapper(value) and
-        not is_primitive(type_info)
-      )
+        if callable_only and not callable(value):
+          logging.debug(f"Skipping non-callable attribute: {name}")
+          continue
 
-      if continue_search_flag:
-        logging.debug(f"Recursing into attribute: {current_full_path} at layer {layer + 1}")
-        sub_pollutables = self.find_all_pollutables(
-          value, layer + 1, max_layer, callable_only, lookup_func, current_full_path
+        # Build current_full_path based on access_type and current_path
+        if access_type == 'attr':
+          current_full_path = f"{current_path}.{name}" if current_path else name
+        elif access_type == 'item':
+          current_full_path = f'{current_path}["{name}"]'
+        else:
+          continue
+
+        pollutables[current_full_path] = self.summerize_value(value)
+
+        # Decide whether to enqueue for further search
+        type_info = get_type(value)
+        continue_search_flag = (
+          (current_layer < max_layer or max_layer == -1) and
+          not is_c_wrapper(value) and
+          not is_primitive(type_info)     
         )
-        pollutables.update(sub_pollutables)
-    
+
+        if continue_search_flag:
+          logging.debug(f"Enqueuing attribute: {current_full_path} at layer {current_layer + 1}")
+          queue.append((value, current_layer + 1, current_full_path))
+
     return pollutables
 
   def summerize_value(self, value):
@@ -274,6 +278,10 @@ class Pollutable:
             match = False
             break
         elif key == 'name':
+          if not self._match_name_precise(name_info, type_info, q_value):
+            match = False
+            break
+        elif key == 'namelike':
           if not self._match_name(name_info, type_info, q_value):
             match = False
             break
@@ -300,9 +308,13 @@ class Pollutable:
         selected[path] = value
     return selected
 
+  def _match_name_precise(self, name_info, type_info, match_name):
+    """Handle name-based matching"""
+    return match_name == name_info
+
   def _match_name(self, name_info, type_info, match_name):
     """Handle name-based matching"""
-    return name_info == match_name
+    return match_name in name_info
 
   def _match_type(self, q_value, type_info, full_value):
     """Handle type-based matching"""
