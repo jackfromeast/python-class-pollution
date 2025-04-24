@@ -9,4 +9,4 @@ polluter.egg-info/SOURCES.txt
 polluter.egg-info/dependency_links.txt
 polluter.egg-info/top_level.txt
 tests/__init__.py
-tests/math.py
+tests/test_math.py
