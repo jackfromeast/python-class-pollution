@@ -1,0 +1,27 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [freezegun, 'Member[freezegun].Member[api].Member[_get_module_attributes]', 'Argument[0]', ReturnValue, taint]
+  - [freezegun, 'Member[freezegun].Member[api].Member[convert_to_timezone_naive]', 'Argument[0]', ReturnValue, taint]
+  - [freezegun, 'Member[freezegun].Member[api].Member[pickle_fake_date]', 'Argument[0]', ReturnValue, taint]
+  - [freezegun, 'Member[freezegun].Member[api].Member[pickle_fake_datetime]', 'Argument[0]', ReturnValue, taint]
+  - [freezegun, 'Member[freezegun].Member[api].Member[_parse_time_to_freeze]', 'Argument[0]', ReturnValue, taint]
+  - [freezegun, 'Member[freezegun].Member[api].Member[_parse_tz_offset]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

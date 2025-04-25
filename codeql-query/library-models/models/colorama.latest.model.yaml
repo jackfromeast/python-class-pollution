@@ -1,0 +1,26 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [colorama, 'Member[colorama].Member[ansi].Member[code_to_chars]', 'Argument[0]', ReturnValue, taint]
+  - [colorama, 'Member[colorama].Member[ansi].Member[set_title]', 'Argument[0]', ReturnValue, taint]
+  - [colorama, 'Member[colorama].Member[ansi].Member[clear_screen]', 'Argument[0]', ReturnValue, taint]
+  - [colorama, 'Member[colorama].Member[ansi].Member[clear_line]', 'Argument[0]', ReturnValue, taint]
+  - [colorama, 'Member[colorama].Member[initialise].Member[wrap_stream]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

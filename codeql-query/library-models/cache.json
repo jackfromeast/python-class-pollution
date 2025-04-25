@@ -25,5 +25,110 @@
   },
   "cffi": {
     "latest": "models/cffi.latest.model.yaml"
+  },
+  "charset-normalizer": {
+    "latest": "models/charset-normalizer.latest.model.yaml"
+  },
+  "click": {
+    "latest": "models/click.latest.model.yaml"
+  },
+  "colorama": {
+    "latest": "models/colorama.latest.model.yaml"
+  },
+  "contourpy": {
+    "latest": "models/contourpy.latest.model.yaml"
+  },
+  "croniter": {
+    "latest": "models/croniter.latest.model.yaml"
+  },
+  "cryptography": {
+    "latest": "models/cryptography.latest.model.yaml"
+  },
+  "dateparser": {
+    "latest": "models/dateparser.latest.model.yaml"
+  },
+  "defusedxml": {
+    "latest": "models/defusedxml.latest.model.yaml"
+  },
+  "docutils": {
+    "latest": "models/docutils.latest.model.yaml"
+  },
+  "dpath": {
+    "latest": "models/dpath.latest.model.yaml"
+  },
+  "exceptiongroup": {
+    "latest": "models/exceptiongroup.latest.model.yaml"
+  },
+  "flask": {
+    "latest": "models/flask.latest.model.yaml"
+  },
+  "fonttools": {
+    "latest": "models/fonttools.latest.model.yaml"
+  },
+  "fpdf2": {
+    "latest": "models/fpdf2.latest.model.yaml"
+  },
+  "freezegun": {
+    "latest": "models/freezegun.latest.model.yaml"
+  },
+  "future": {
+    "latest": "models/future.latest.model.yaml"
+  },
+  "google-auth": {
+    "latest": "models/google-auth.latest.model.yaml"
+  },
+  "gotrue": {
+    "latest": "models/gotrue.latest.model.yaml"
+  },
+  "h11": {
+    "latest": "models/h11.latest.model.yaml"
+  },
+  "hikaru-core": {
+    "latest": "models/hikaru-core.latest.model.yaml"
+  },
+  "httpcore": {
+    "latest": "models/httpcore.latest.model.yaml"
+  },
+  "httpx": {
+    "latest": "models/httpx.latest.model.yaml"
+  },
+  "humanize": {
+    "latest": "models/humanize.latest.model.yaml"
+  },
+  "idna": {
+    "latest": "models/idna.latest.model.yaml"
+  },
+  "imagesize": {
+    "latest": "models/imagesize.latest.model.yaml"
+  },
+  "importlib-metadata": {
+    "latest": "models/importlib-metadata.latest.model.yaml"
+  },
+  "importlib-resources": {
+    "latest": "models/importlib-resources.latest.model.yaml"
+  },
+  "itsdangerous": {
+    "latest": "models/itsdangerous.latest.model.yaml"
+  },
+  "jinja2": {
+    "latest": "models/jinja2.latest.model.yaml"
+  },
+  "jmespath": {
+    "latest": "models/jmespath.latest.model.yaml"
+  },
+  "kubernetes": {
+    "latest": "models/kubernetes.latest.model.yaml"
+  },
+  "markdown": {
+    "latest": "models/markdown.latest.model.yaml"
+  },
+  "markdown2": {
+    "latest": "models/markdown2.latest.model.yaml"
+  },
+  "markupsafe": {
+    "latest": "models/markupsafe.latest.model.yaml"
+  },
+  "matplotlib": {
+    "latest": "models/matplotlib.latest.model.yaml"
   }
 }

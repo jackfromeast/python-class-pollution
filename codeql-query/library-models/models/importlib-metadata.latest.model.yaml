@@ -1,0 +1,32 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [importlib-metadata, 'Member[importlib_metadata].Member[__init__].Member[make_condition]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[__init__].Member[_topmost]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[__init__].Member[_get_toplevel_name]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[_adapters].Member[redent]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[_adapters].Member[transform]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[_compat].Member[install]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[_compat].Member[pypy_partial]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[_itertools].Member[always_iterable]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[compat].Member[py311].Member[relative_to]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[compat].Member[py311].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [importlib-metadata, 'Member[importlib_metadata].Member[compat].Member[py39].Member[normalized_name]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

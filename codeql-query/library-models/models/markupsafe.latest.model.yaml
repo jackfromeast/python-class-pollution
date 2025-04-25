@@ -1,0 +1,23 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [markupsafe, 'Member[markupsafe].Member[__init__].Member[soft_str]', 'Argument[0]', ReturnValue, taint]
+  - [markupsafe, 'Member[markupsafe].Member[_native].Member[_escape_inner]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

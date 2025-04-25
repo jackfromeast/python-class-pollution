@@ -1,0 +1,28 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [httpcore, 'Member[httpcore].Member[_models].Member[enforce_bytes]', 'Argument[0]', ReturnValue, taint]
+  - [httpcore, 'Member[httpcore].Member[_models].Member[enforce_url]', 'Argument[0]', ReturnValue, taint]
+  - [httpcore, 'Member[httpcore].Member[_models].Member[enforce_headers]', 'Argument[0]', ReturnValue, taint]
+  - [httpcore, 'Member[httpcore].Member[_models].Member[enforce_stream]', 'Argument[0]', ReturnValue, taint]
+  - [httpcore, 'Member[httpcore].Member[_models].Member[include_request_headers]', 'Argument[0]', ReturnValue, taint]
+  - [httpcore, 'Member[httpcore].Member[_sync].Member[http_proxy].Member[merge_headers]', 'Argument[0]', ReturnValue, taint]
+  - [httpcore, 'Member[httpcore].Member[_async].Member[http_proxy].Member[merge_headers]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

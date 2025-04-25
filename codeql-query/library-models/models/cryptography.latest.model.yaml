@@ -1,0 +1,51 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[_cipheralgorithm].Member[_verify_key_size]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[x509].Member[base].Member[_convert_to_naive_utc_time]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[x509].Member[extensions].Member[iter_method]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[x509].Member[extensions].Member[getitem_method]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[twofactor].Member[hotp].Member[_generate_uri]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[_wrap_core]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_wrap]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[_unwrap_core]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_wrap_with_padding]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_unwrap_with_padding]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[keywrap].Member[aes_key_unwrap]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[x509].Member[name].Member[_escape_dn_value]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[x509].Member[name].Member[_unescape_dn_value]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_padding_update]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_padding_pad]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_unpadding_update]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[padding].Member[_byte_unpadding_check]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[_modinv]', 'Argument[1]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[rsa_crt_iqmp]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[rsa_crt_dmp1]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[asymmetric].Member[rsa].Member[rsa_crt_dmq1]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_ssh_pem_encode]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_u32]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_u64]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_sshstr]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[_get_mpint]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[load_application]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[hazmat].Member[primitives].Member[serialization].Member[ssh].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [cryptography, 'Member[cryptography].Member[utils].Member[inner]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

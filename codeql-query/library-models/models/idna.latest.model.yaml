@@ -1,0 +1,29 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [idna, 'Member[idna].Member[compat].Member[ToASCII]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[compat].Member[ToUnicode]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[core].Member[_punycode]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[core].Member[_unot]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[core].Member[alabel]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[core].Member[ulabel]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[core].Member[encode]', 'Argument[0]', ReturnValue, taint]
+  - [idna, 'Member[idna].Member[core].Member[decode]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []
