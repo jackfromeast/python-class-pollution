@@ -175,7 +175,7 @@ class CodeQLRunner:
       if os.path.exists(summary_file):
         with open(summary_file, "r") as f:
           summary = json.load(f)
-        if all([v == 0 for v in summary.values()]):
+        if all([v == 0 for v in summary["rules"].values()]):
           self.logger.info("No flows detected. Cleaning up...")
           self.cleanup(everything=True)
       else:
@@ -308,7 +308,10 @@ class CodeQLRunner:
     @param: output_file (str): Path to the JSON file where the summary will be saved.
     """
     self.logger.info("Summarizing CodeQL results...")
-    summary = {}
+    summary = {
+      "rules": {},
+      "details": set()
+    }
     results_files = glob.glob(os.path.join(self.results_dir, "*.sarif"))
 
     if not results_files:
@@ -327,11 +330,17 @@ class CodeQLRunner:
           flow_count = 0
           for res in results:
             rule_id = res.get("ruleId", "")
-            if rule_id not in summary:
-              summary[rule_id] = 1
-            summary[rule_id] += 1
-            flow_count += 1
+            text_message = res.get("message", "").get("text", "")
 
+            if rule_id not in summary["rules"]:
+              summary["rules"][rule_id] = 0
+              summary["details"].add(text_message)
+
+            summary["rules"][rule_id] += 1
+            summary["details"].add(text_message)
+            flow_count += 1
+        
+        summary["details"] = list(summary["details"])
         self.logger.info(f"Processed {result_file}: {flow_count} flows detected.")
       except (json.JSONDecodeError, KeyError) as e:
         self.logger.error(f"Failed to process {result_file}: {e}")
@@ -346,7 +355,7 @@ class CodeQLRunner:
       self.logger.error(f"Failed to save summary to {output_file}: {e}")
 
     # Output the summary to the result logger
-    for rule_id, flow_count in summary.items():
+    for rule_id, flow_count in summary["rules"].items():
       if flow_count > 0:
         self.logger.info(f"{self.repo_name} - {rule_id}: {flow_count} flows detected.", result=True)
 

@@ -34,7 +34,7 @@ class Cache:
     """
     # Ensure the cache directory exists
     package_cache_dir = os.path.join(self.cache_path, "models")
-    package_cache_name = f"{package_name}.{package_version}.model.yaml"
+    package_cache_name = f"{package_name}.{package_version}.auto.yaml"
     os.makedirs(package_cache_dir, exist_ok=True)
 
     # Copy the data extension file to the cache directory if required
