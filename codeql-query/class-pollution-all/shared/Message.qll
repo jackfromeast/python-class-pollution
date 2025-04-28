@@ -32,4 +32,13 @@ module ClassPollutionMessage {
       )
     )
   }
+
+  predicate outputMsgFromExternal(string vulnType, string msg, string etype) {
+    exists (string originMsg | 
+      outputMsg(vulnType, originMsg) and
+      (etype = "Local" or etype = "Remote") and
+      msg = "External Input:" + etype + " " + originMsg
+    )
+  }
+
 }

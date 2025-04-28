@@ -2,6 +2,7 @@ import python
 import semmle.python.ApiGraphs
 import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.RemoteFlowSources
+import semmle.python.Concepts
 
 module ClassPollutionRemoteSource {
   /**
@@ -14,9 +15,12 @@ module ClassPollutionRemoteSource {
    * @return true if the source is a remote source
    */
   predicate isRemoteSource(DataFlow::Node source) {
-    source instanceof RemoteFlowSource or isTaintSourceFromMesop(source)
+    (source instanceof ThreatModelSource and
+    source.(ThreatModelSource).getThreatModel() = "remote") 
+    // or
+    // isTaintSourceFromMesop(source)
   }
-
+  
   // Mark the arguments to generate_data function as tainted
   predicate isTaintSourceFromMesop(DataFlow::Node source) {
     exists (Call call, Name name|

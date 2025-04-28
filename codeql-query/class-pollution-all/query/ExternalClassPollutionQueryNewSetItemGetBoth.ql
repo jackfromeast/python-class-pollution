@@ -22,19 +22,18 @@
  import shared.sources.remote::ClassPollutionRemoteSource
  import vuln.ExternalInputTaintTrackingLib
  module Flow = TrackingClassPollutionKeyToAssignmentFlow;
- module ExternalFlow = TrackingExternalInputToClassPollutionFlow;
 
  from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg, PossibleGetOpNode getAttrOpNode, PossibleGetOpNode getItemOpNode,
- DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
+ DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode, string external
  where
   (
     isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getAttrOpNode, getItemOpNode) and
-    ExternalFlow::flow(_, sourceParamKeyNode)
+    flowFromExternalInput(_, sourceParamKeyNode, external)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
   // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.
   // The following line would cause the query stuck in the analysis (I don't know why right now).
   // func.getAnArg() = sourceParamObjNode.asExpr() and
-  outputMsg(vulnType, msg)
+  outputMsgFromExternal(vulnType, msg, external)
  select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(),
    setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), getAttrOpNode, getAttrOpNode.toString(), getItemOpNode, getItemOpNode.toString()

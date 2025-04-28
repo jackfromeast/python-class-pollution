@@ -19,13 +19,15 @@ import shared.types.SplitKeyNames
 import shared.types.DunderDictObject
 import shared.types.SelfReferringGetOp::SelfReferringGetOp
 import shared.sources.remote::ClassPollutionRemoteSource
+import shared.sources.local::ClassPollutionLocalSource
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
 import shared.Debug::Debugging
 
 module TrackingExternalInputToClassPollutionConfiguration implements DataFlow::ConfigSig {
   predicate isSource(DataFlow::Node source) {
-    isRemoteSource(source)  
+    isRemoteSource(source) 
+    or isLocalSource(source)
   }
 
   /**
@@ -41,7 +43,7 @@ module TrackingExternalInputToClassPollutionConfiguration implements DataFlow::C
   predicate isAdditionalFlowStep(DataFlow::Node fromNode, DataFlow::Node toNode) {
     // TYPE1: General flow steps
     // From ANY FlowState to ANY FlowState
-    generalDataFlowStepNoState(fromNode, toNode)
+    generalDataFlowStepNoState(fromNode, toNode) 
   }
 }
 
@@ -58,3 +60,11 @@ predicate generalDataFlowStepNoState(DataFlow::Node fromNode, DataFlow::Node toN
   additionalFlowStepThroughReduce(fromNode, toNode) or
   additionalFlowStepThroughCustomLibAnyState(fromNode, toNode)
 }
+
+predicate flowFromExternalInput(DataFlow::Node fromNode, DataFlow::Node toNode, string type) {
+  TrackingExternalInputToClassPollutionFlow::flow(fromNode, toNode) and
+  if isRemoteSource(fromNode)
+  then type = "Remote"
+  else type = "Local"
+}
+  

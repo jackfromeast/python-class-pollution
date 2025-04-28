@@ -40,7 +40,7 @@ class NamedtupleTemplateObj extends DataFlow::Node {
  * TODO: precise the flow
  */
 predicate additionalFlowStepThroughNamedtuple(DataFlow::Node fromNode, DataFlow::Node toNode) {
-  exists( NamedtupleTemplateObj namedtupleObj, CallNode call, Value val| 
+  exists( NamedtupleTemplateObj namedtupleObj, CallNode call| 
     call.getFunction() =  namedtupleObj.asCfgNode() and
     call.getArg(0) = fromNode.asCfgNode() and
     call.getNode() = toNode.asExpr()

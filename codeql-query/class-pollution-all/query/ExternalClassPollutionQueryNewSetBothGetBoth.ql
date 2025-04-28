@@ -23,17 +23,15 @@
  import shared.sources.remote::ClassPollutionRemoteSource
 
  module Flow = TrackingClassPollutionKeyToAssignmentFlow;
- module ExternalFlow = TrackingExternalInputToClassPollutionFlow;
- 
 
  from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg, PossibleGetOpNode getAttrNode, PossibleGetOpNode getItemNode,  
- DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
+ DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode, string external
  where
   (
     isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getAttrNode, getItemNode) and
-    ExternalFlow::flow(_, sourceParamKeyNode)
+    flowFromExternalInput(_, sourceParamKeyNode, external)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
-  outputMsg(vulnType, msg)
+  outputMsgFromExternal(vulnType, msg, external)
  select func, msg, func, func.toString(), sourceParamKeyNode, sourceParamKeyNode.toString(), sourceParamObjNode, sourceParamObjNode.toString(), setOpPrimdKeyNode, setOpPrimdKeyNode.toString(), setOpSecondKeyNode, setOpSecondKeyNode.toString(), 
   getAttrNode, getAttrNode.toString(), getItemNode, getItemNode.toString()
