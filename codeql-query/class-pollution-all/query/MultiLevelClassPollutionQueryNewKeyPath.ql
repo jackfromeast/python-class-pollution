@@ -27,14 +27,14 @@ import shared.Debug::Debugging
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 
 
-from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg, PossibleGetOpNode getOpNode,
+from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg, PossibleGetOpNode getOpNode, PossibleGetOpNode getOpNode2,
     Flow::PathNode setOpPrimKeyFlowNode, Flow::PathNode sourceParamKeyFlowNode, DataFlow::Node setOpSecondKeyNode
 where
   exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
     (
       // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _) or
       // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _) or
-      isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _, getOpNode)
+      isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyFlowNode.getNode(), sourceParamObjNode, setOpPrimKeyFlowNode.getNode(), setOpSecondKeyNode, _, _, vulnType, _, getOpNode)
     ) and
     sourceParamObjNode.asExpr() = sourceParamObj and
     sourceParamKeyNode.asExpr() = sourceParamKey

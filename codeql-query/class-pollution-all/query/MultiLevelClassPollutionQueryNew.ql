@@ -21,15 +21,15 @@
  import shared.Message::ClassPollutionMessage
  module Flow = TrackingClassPollutionKeyToAssignmentFlow;
  
- from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg, PossibleGetOpNode getOpNode,
+ from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg, PossibleGetOpNode getOpNode, PossibleGetOpNode getOpNode2,
  DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode
  where
   (
-    // isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    // isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or
-    // isClassPollutedAssignmentSetItemGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _) or  
+    isClassPollutedAssignmentSetBothGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode, getOpNode2) or
+    isClassPollutedAssignmentSetBothGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode) or
+    isClassPollutedAssignmentSetItemGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode, getOpNode2) or  
     isClassPollutedAssignmentSetItemGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode) or
-    isClassPollutedAssignmentSetAttrGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode) or
+    isClassPollutedAssignmentSetAttrGetBoth(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode, getOpNode2) or
     isClassPollutedAssignmentSetAttrGetAttr(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode)
   ) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
