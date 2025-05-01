@@ -4,6 +4,7 @@ import semmle.python.dataflow.new.DataFlow
 import semmle.python.dataflow.new.internal.DataFlowPublic
 import shared.Utils::ClassPolltionUtils
 import shared.GetOp::ClassPollutionGetOp
+import shared.Debug::Debugging
 
 // TODO: Consider move all of this to the library models
 

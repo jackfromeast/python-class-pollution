@@ -141,4 +141,23 @@ predicate additionalFlowStepGetAttrReverse(DataFlow::Node fromNode, DataFlow::No
   toNode instanceof SelfReferringGetOp
 }
 
+/**
+ * @description
+ * ----------------------
+ * Propagate the data flow from the second args of getItem operation to return value.
+ * 
+ * @example
+ * ----------------------
+ * val -> obj.get(key, val)
+ */
+predicate additionalFlowStepGetItemDefault(DataFlow::Node fromNode, DataFlow::Node toNode) {
+  exists(MethodCallNode callNode, Call call|
+    callNode.asExpr() = call and
+    callNode.getMethodName() = "get" and
+    call.getArg(1) = fromNode.asExpr() and
+    toNode.asExpr() = call
+  ) 
+}
+
+
 }

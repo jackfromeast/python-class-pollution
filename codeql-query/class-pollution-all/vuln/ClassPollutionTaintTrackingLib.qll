@@ -268,7 +268,8 @@ predicate generalDataFlowStepNoState(DataFlow::Node fromNode, DataFlow::Node toN
   additionalFlowStepThroughNamedtuple(fromNode, toNode) or
   additionalFlowStepThroughDequeAppendPop(fromNode, toNode) or
   additionalFlowStepThroughReduce(fromNode, toNode) or
-  additionalFlowStepThroughCustomLibAnyState(fromNode, toNode)
+  additionalFlowStepThroughCustomLibAnyState(fromNode, toNode) or
+  additionalFlowStepGetItemDefault(fromNode, toNode)
 }
 
 /**

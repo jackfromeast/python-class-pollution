@@ -90,7 +90,9 @@ predicate splitKeyNamesAndObjectPair(DataFlow::Node key, DataFlow::Node obj) {
  */
 predicate isSplitResult(DataFlow::Node list, DataFlow::Node base) {
   exists ( DataFlow::Node call |
-    TrackingSplitResultFlow::flow(call, list) and 
+    // Leads to too many false positives
+    // TrackingSplitResultFlow::flow(call, list) and 
+    DataFlow::localFlow(call, list) and
     isSplitResultImmediate(call, base)
   )
 }
