@@ -1,0 +1,11 @@
+{
+  "repo": "https://github.com/mahmoud/glom",
+  "class_pollution_func": [
+    "_glom",
+    "_make_stack",
+    "_t_eval",
+    "_test_exc",
+    "first",
+    "from_text"
+  ]
+}

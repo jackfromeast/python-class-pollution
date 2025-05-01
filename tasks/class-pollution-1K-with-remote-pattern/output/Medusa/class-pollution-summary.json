@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/pymedusa/Medusa",
+  "class_pollution_func": [
+    "iter_fields",
+    "resolve_path"
+  ]
+}

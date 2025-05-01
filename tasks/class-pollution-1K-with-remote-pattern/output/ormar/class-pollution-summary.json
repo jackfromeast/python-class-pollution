@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/collerek/ormar",
+  "class_pollution_func": [
+    "merge_two_instances"
+  ]
+}

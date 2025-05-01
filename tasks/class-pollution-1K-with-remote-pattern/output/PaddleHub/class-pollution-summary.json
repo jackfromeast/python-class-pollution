@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/PaddlePaddle/PaddleHub",
+  "class_pollution_func": [
+    "__init__",
+    "init_res",
+    "listcomp",
+    "parse_pattern_str",
+    "update_res"
+  ]
+}

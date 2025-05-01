@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/microsoft/Olive",
+  "class_pollution_func": [
+    "get_attr",
+    "listcomp"
+  ]
+}

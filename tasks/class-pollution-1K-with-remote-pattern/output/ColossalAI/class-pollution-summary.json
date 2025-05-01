@@ -1,0 +1,13 @@
+{
+  "repo": "https://github.com/hpcaitech/ColossalAI",
+  "class_pollution_func": [
+    "_recursive_replace_layer",
+    "_replace_attr",
+    "_replace_sub_module",
+    "module_params_sharding_pass",
+    "node_args_converting_pass",
+    "setattr_",
+    "size_value_converting_pass",
+    "solution_annotation_pass"
+  ]
+}

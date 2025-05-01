@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/Mikubill/sd-webui-controlnet",
+  "class_pollution_func": [
+    "get_state_dict",
+    "recursive_set"
+  ]
+}

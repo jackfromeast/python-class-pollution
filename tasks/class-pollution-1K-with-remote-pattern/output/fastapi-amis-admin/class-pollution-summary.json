@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/amisadmin/fastapi-amis-admin",
+  "class_pollution_func": [
+    "_update_items",
+    "model_fields"
+  ]
+}

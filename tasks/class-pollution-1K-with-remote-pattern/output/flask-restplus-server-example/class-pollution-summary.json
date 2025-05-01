@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/frol/flask-restplus-server-example",
+  "class_pollution_func": [
+    "_apply_decorator_to_methods",
+    "decorator"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "repo": "https://github.com/google/mesop",
+  "class_pollution_func": [
+    "_recursive_update_dataclass_from_json_obj",
+    "generate_data",
+    "ws_generate_data"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 12
+  },
+  "details": [
+    "This function [Function _load_state_dict_into_model_low_mem](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function get_from_cache](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _set_module_by_path](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function resolve_attr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _setattr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function find_submodule_and_param_name](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function from_pretrained](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function get_from_cache](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function lambda](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

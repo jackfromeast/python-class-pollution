@@ -1,0 +1,23 @@
+{
+  "repo": "https://github.com/holoviz/panel",
+  "class_pollution_func": [
+    "__init__",
+    "__panel__",
+    "_create_view",
+    "_get_model",
+    "_get_properties",
+    "_get_root_model",
+    "_get_specs",
+    "_init_callback",
+    "_process_param_change",
+    "_render_model",
+    "_repr_mimebundle_",
+    "_update_figure",
+    "_update_renderers",
+    "get_root",
+    "link_to_jslink",
+    "listcomp",
+    "panel",
+    "select"
+  ]
+}

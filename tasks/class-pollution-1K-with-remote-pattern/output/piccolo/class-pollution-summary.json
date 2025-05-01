@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/piccolo-orm/piccolo",
+  "class_pollution_func": [
+    "_update_instance"
+  ]
+}

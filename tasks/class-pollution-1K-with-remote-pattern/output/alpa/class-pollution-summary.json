@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/alpa-projects/alpa",
+  "class_pollution_func": [
+    "_get_nested_attr",
+    "lambda"
+  ]
+}

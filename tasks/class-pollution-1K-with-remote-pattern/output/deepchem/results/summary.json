@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 41
+  },
+  "details": [
+    "This function [Function getlinopparams](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _getparamnames](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function symeig](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 5 other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function uselinopparams](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function backward](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function symeig](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function cached_getparamnames](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function getparamnames](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function solve](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _setup_idxs](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

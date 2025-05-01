@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/neuralmagic/deepsparse",
+  "class_pollution_func": [
+    "prep_for_serialization"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/OpenMined/PySyft",
+  "class_pollution_func": [
+    "attach_attribute_to_syft_object",
+    "debox_arg_and_migrate"
+  ]
+}

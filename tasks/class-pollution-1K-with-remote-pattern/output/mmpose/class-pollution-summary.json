@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/open-mmlab/mmpose",
+  "class_pollution_func": [
+    "__init__",
+    "rsetattr"
+  ]
+}

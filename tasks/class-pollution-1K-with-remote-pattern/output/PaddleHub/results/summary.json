@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 10,
+    "py/class-polliution/leaf-class-pollution-functions": 50
+  },
+  "details": [
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function parse_pattern_str](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function init_res](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function parse_pattern_str](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function update_res](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

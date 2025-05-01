@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/openvinotoolkit/training_extensions",
+  "class_pollution_func": [
+    "set_using_dot_delimited_key"
+  ]
+}

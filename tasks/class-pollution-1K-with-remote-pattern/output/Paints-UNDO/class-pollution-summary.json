@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/lllyasviel/Paints-UNDO",
+  "class_pollution_func": [
+    "set_attr_recursive"
+  ]
+}

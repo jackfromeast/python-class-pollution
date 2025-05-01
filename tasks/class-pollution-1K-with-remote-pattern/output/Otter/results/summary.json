@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 6,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "This function [Function init_flamingo](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function init_flamingo](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function setattr_recursive](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function init_otter](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _set_decoder_layers](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _set_decoder_layers](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function setattr_recursive](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function init_otter](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

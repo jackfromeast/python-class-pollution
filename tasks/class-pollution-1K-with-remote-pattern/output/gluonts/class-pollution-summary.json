@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/awslabs/gluonts",
+  "class_pollution_func": [
+    "update_configs"
+  ]
+}

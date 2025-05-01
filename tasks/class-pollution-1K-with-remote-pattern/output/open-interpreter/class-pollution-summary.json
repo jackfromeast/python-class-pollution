@@ -1,0 +1,11 @@
+{
+  "repo": "https://github.com/OpenInterpreter/open-interpreter",
+  "class_pollution_func": [
+    "__init__",
+    "apply_profile_to_object",
+    "get_argument_dictionary",
+    "get_profile",
+    "listcomp",
+    "start_terminal_interface"
+  ]
+}

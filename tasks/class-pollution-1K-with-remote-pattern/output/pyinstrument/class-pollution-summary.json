@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/joerick/pyinstrument",
+  "class_pollution_func": [
+    "set_value_at_keypath"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/intel-analytics/ipex-llm",
+  "class_pollution_func": [
+    "dictcomp",
+    "set_op_by_name"
+  ]
+}

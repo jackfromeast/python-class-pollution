@@ -1,0 +1,14 @@
+{
+  "repo": "https://github.com/arskom/spyne",
+  "class_pollution_func": [
+    "_complex_to_csv",
+    "_complex_to_doc",
+    "_complex_to_list",
+    "_get_member_pairs",
+    "_object_to_doc",
+    "_sanitize",
+    "_to_dict_value",
+    "get",
+    "get_cls_attrs"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/blawar/nut",
+  "class_pollution_func": [
+    "onStateChanged",
+    "set"
+  ]
+}

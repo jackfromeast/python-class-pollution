@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/ibis-project/ibis",
+  "class_pollution_func": [
+    "set"
+  ]
+}

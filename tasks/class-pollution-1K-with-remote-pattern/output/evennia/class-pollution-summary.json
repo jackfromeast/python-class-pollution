@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/evennia/evennia",
+  "class_pollution_func": [
+    "_menu_savefunc",
+    "menu_setattr"
+  ]
+}

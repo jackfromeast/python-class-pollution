@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/pytorch/captum",
+  "class_pollution_func": [
+    "_model_reinsert_params"
+  ]
+}

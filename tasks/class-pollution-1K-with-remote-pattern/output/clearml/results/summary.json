@@ -1,0 +1,27 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 5,
+    "py/class-polliution/leaf-class-pollution-functions": 23
+  },
+  "details": [
+    "This function [Function _launch_job](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _step](1) with type:SetBoth-GetBoth has the largest number of caller-callee relationships with 4 other functions.",
+    "This function [Function dictcomp](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function current_task](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _step](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function __deserialize_section](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function start_remotely](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _get_data_property](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function _get_data_property](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _deserialize](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _deserialize_state](1) with type:SetBoth-GetBoth has the largest number of caller-callee relationships with 4 other functions.",
+    "This function [Function _deserialize_state](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function update](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function __deserialize_triggers](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _deserialize](1) with type:SetBoth-GetBoth has the largest number of caller-callee relationships with 4 other functions.",
+    "This function [Function __deserialize_scheduled_jobs](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function _launch_job_task](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function init](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions."
+  ]
+}

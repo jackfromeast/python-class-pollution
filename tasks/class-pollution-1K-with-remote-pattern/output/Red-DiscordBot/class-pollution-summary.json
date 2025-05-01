@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/Cog-Creators/Red-DiscordBot",
+  "class_pollution_func": [
+    "rsetattr"
+  ]
+}

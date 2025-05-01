@@ -1,0 +1,2 @@
+2025-04-30 23:56:50,333 - CodeQLRunner - ERROR - Query timed out for spyne: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution-function-only.qls (logger.py:42)
+2025-04-30 23:56:50,468 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution-function-only.qls (logger.py:42)

@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/infiniflow/ragflow",
+  "class_pollution_func": [
+    "_recursive_update_param"
+  ]
+}

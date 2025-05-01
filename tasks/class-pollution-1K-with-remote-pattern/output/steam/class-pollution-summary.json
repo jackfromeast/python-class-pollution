@@ -1,0 +1,19 @@
+{
+  "repo": "https://github.com/ValvePython/steam",
+  "class_pollution_func": [
+    "__handle_set_persona",
+    "genexpr",
+    "get_app_ticket",
+    "get_cdn_auth_token",
+    "get_changes_since",
+    "get_depot_key",
+    "get_encrypted_app_ticket",
+    "get_player_count",
+    "listcomp",
+    "proto_fill_from_dict",
+    "register_product_key",
+    "send_job",
+    "send_job_and_wait",
+    "send_message_and_wait"
+  ]
+}

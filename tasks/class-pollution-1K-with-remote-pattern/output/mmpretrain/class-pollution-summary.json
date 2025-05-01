@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/open-mmlab/mmpretrain",
+  "class_pollution_func": [
+    "_set_decoder_layers",
+    "setattr_recursive"
+  ]
+}

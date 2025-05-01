@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/django-import-export/django-import-export",
+  "class_pollution_func": [
+    "__init__",
+    "save"
+  ]
+}

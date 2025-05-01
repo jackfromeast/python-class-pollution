@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/facebookresearch/metaseq",
+  "class_pollution_func": [
+    "_set_module_by_path",
+    "listcomp"
+  ]
+}

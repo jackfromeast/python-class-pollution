@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/ostris/ai-toolkit",
+  "class_pollution_func": [
+    "replace_module_by_path"
+  ]
+}

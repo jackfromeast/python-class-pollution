@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/huggingface/text-generation-inference",
+  "class_pollution_func": [
+    "setdeepattr"
+  ]
+}

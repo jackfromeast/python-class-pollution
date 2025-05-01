@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/comfyanonymous/ComfyUI",
+  "class_pollution_func": [
+    "set_attr"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "repo": "https://github.com/rembo10/headphones",
+  "class_pollution_func": [
+    "__init__",
+    "_compile",
+    "_compile_module_file",
+    "_parse_attributes",
+    "compile",
+    "iter_fields",
+    "listcomp",
+    "parse",
+    "undeclared_identifiers",
+    "write_toplevel"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/adamghill/django-unicorn",
+  "class_pollution_func": [
+    "__init__",
+    "_process_component_request",
+    "handle",
+    "set_property_from_data",
+    "set_property_value"
+  ]
+}

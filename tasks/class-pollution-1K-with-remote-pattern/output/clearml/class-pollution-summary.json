@@ -1,0 +1,21 @@
+{
+  "repo": "https://github.com/allegroai/clearml",
+  "class_pollution_func": [
+    "__deserialize_scheduled_jobs",
+    "__deserialize_section",
+    "__deserialize_triggers",
+    "__init__",
+    "_deserialize",
+    "_deserialize_state",
+    "_get_data_property",
+    "_launch_job",
+    "_launch_job_task",
+    "_step",
+    "current_task",
+    "dictcomp",
+    "init",
+    "listcomp",
+    "start_remotely",
+    "update"
+  ]
+}

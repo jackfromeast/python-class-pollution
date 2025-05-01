@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/facebookresearch/pytext",
+  "class_pollution_func": [
+    "find_param",
+    "replace_param"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "This function [Function _auto_get_scale](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_op_by_name](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function dictcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_op_by_name](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

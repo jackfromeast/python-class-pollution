@@ -1,0 +1,617 @@
+[
+  {
+    "repo": "https://github.com/comfyanonymous/ComfyUI",
+    "class_pollution_func": [
+      "set_attr"
+    ]
+  },
+  {
+    "repo": "https://github.com/OpenInterpreter/open-interpreter",
+    "class_pollution_func": [
+      "__init__",
+      "apply_profile_to_object",
+      "get_argument_dictionary",
+      "get_profile",
+      "listcomp",
+      "start_terminal_interface"
+    ]
+  },
+  {
+    "repo": "https://github.com/hpcaitech/ColossalAI",
+    "class_pollution_func": [
+      "_recursive_replace_layer",
+      "_replace_attr",
+      "_replace_sub_module",
+      "module_params_sharding_pass",
+      "node_args_converting_pass",
+      "setattr_",
+      "size_value_converting_pass",
+      "solution_annotation_pass"
+    ]
+  },
+  {
+    "repo": "https://github.com/LAION-AI/Open-Assistant",
+    "class_pollution_func": [
+      "rsetattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/Lightning-AI/pytorch-lightning",
+    "class_pollution_func": [
+      "_find_shared_parameters",
+      "_set_module_by_path",
+      "listcomp"
+    ]
+  },
+  {
+    "repo": "https://github.com/huggingface/diffusers",
+    "class_pollution_func": [
+      "get_module_from_name"
+    ]
+  },
+  {
+    "repo": "https://github.com/infiniflow/ragflow",
+    "class_pollution_func": [
+      "_recursive_update_param"
+    ]
+  },
+  {
+    "repo": "https://github.com/Mikubill/sd-webui-controlnet",
+    "class_pollution_func": [
+      "get_state_dict",
+      "recursive_set"
+    ]
+  },
+  {
+    "repo": "https://github.com/Avaiga/taipy",
+    "class_pollution_func": [
+      "__assign_var",
+      "__check_readable_editable",
+      "__init__",
+      "_attrsetter",
+      "_expr_decode",
+      "_setscopeattr_drill",
+      "_variable_decode",
+      "act_on_jobs",
+      "crud_scenario",
+      "edit_data_node",
+      "edit_entity",
+      "lock_datanode_for_edit",
+      "re_evaluate_expr",
+      "submit_entity",
+      "tabular_data_edit",
+      "update_data"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/nni",
+    "class_pollution_func": [
+      "copy_attr_new",
+      "set_nested_attr"
+    ]
+  },
+  {
+    "repo": "https://github.com/PaddlePaddle/PaddleHub",
+    "class_pollution_func": [
+      "__init__",
+      "init_res",
+      "listcomp",
+      "parse_pattern_str",
+      "update_res"
+    ]
+  },
+  {
+    "repo": "https://github.com/OpenMined/PySyft",
+    "class_pollution_func": [
+      "attach_attribute_to_syft_object",
+      "debox_arg_and_migrate"
+    ]
+  },
+  {
+    "repo": "https://github.com/wandb/wandb",
+    "class_pollution_func": [
+      "__init__",
+      "_collect_conflicts_between",
+      "_collect_conflicts_between_fields_and_fragment",
+      "_collect_conflicts_between_fragments",
+      "_collect_conflicts_within",
+      "_collect_fields_and_fragment_names",
+      "_find_conflict",
+      "_find_conflicts_between_sub_selection_sets",
+      "_get_fields_and_fragments_names",
+      "_get_referenced_fields_and_fragment_names",
+      "_same_arguments",
+      "decorator",
+      "dictcomp",
+      "execute",
+      "get_fragment",
+      "get_named_type",
+      "get_variable_values",
+      "is_valid_literal_value",
+      "wandb_log"
+    ]
+  },
+  {
+    "repo": "https://github.com/huggingface/text-generation-inference",
+    "class_pollution_func": [
+      "setdeepattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
+    "class_pollution_func": [
+      "dictcomp",
+      "forge_patch_model",
+      "forge_unpatch_model",
+      "set_attr",
+      "set_attr_raw",
+      "set_parameter_devices"
+    ]
+  },
+  {
+    "repo": "https://github.com/hummingbot/hummingbot",
+    "class_pollution_func": [
+      "__init__",
+      "genexpr",
+      "keys",
+      "traverse"
+    ]
+  },
+  {
+    "repo": "https://github.com/modelscope/modelscope",
+    "class_pollution_func": [
+      "_setattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/intel-analytics/ipex-llm",
+    "class_pollution_func": [
+      "dictcomp",
+      "set_op_by_name"
+    ]
+  },
+  {
+    "repo": "https://github.com/joerick/pyinstrument",
+    "class_pollution_func": [
+      "set_value_at_keypath"
+    ]
+  },
+  {
+    "repo": "https://github.com/facebookresearch/metaseq",
+    "class_pollution_func": [
+      "_set_module_by_path",
+      "listcomp"
+    ]
+  },
+  {
+    "repo": "https://github.com/facebookresearch/pytext",
+    "class_pollution_func": [
+      "find_param",
+      "replace_param"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-mmlab/mmpose",
+    "class_pollution_func": [
+      "__init__",
+      "rsetattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/allegroai/clearml",
+    "class_pollution_func": [
+      "__deserialize_scheduled_jobs",
+      "__deserialize_section",
+      "__deserialize_triggers",
+      "__init__",
+      "_deserialize",
+      "_deserialize_state",
+      "_get_data_property",
+      "_launch_job",
+      "_launch_job_task",
+      "_step",
+      "current_task",
+      "dictcomp",
+      "init",
+      "listcomp",
+      "start_remotely",
+      "update"
+    ]
+  },
+  {
+    "repo": "https://github.com/google/mesop",
+    "class_pollution_func": [
+      "_recursive_update_dataclass_from_json_obj",
+      "generate_data",
+      "ws_generate_data"
+    ]
+  },
+  {
+    "repo": "https://github.com/deepchem/deepchem",
+    "class_pollution_func": [
+      "__init__",
+      "_getparamnames",
+      "_setup_idxs",
+      "backward",
+      "cached_getparamnames",
+      "getlinopparams",
+      "getparamnames",
+      "listcomp",
+      "solve",
+      "symeig",
+      "uselinopparams"
+    ]
+  },
+  {
+    "repo": "https://github.com/ibis-project/ibis",
+    "class_pollution_func": [
+      "set"
+    ]
+  },
+  {
+    "repo": "https://github.com/pytorch/captum",
+    "class_pollution_func": [
+      "_model_reinsert_params"
+    ]
+  },
+  {
+    "repo": "https://github.com/Cog-Creators/Red-DiscordBot",
+    "class_pollution_func": [
+      "rsetattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/holoviz/panel",
+    "class_pollution_func": [
+      "__init__",
+      "__panel__",
+      "_create_view",
+      "_get_model",
+      "_get_properties",
+      "_get_root_model",
+      "_get_specs",
+      "_init_callback",
+      "_process_param_change",
+      "_render_model",
+      "_repr_mimebundle_",
+      "_update_figure",
+      "_update_renderers",
+      "get_root",
+      "link_to_jslink",
+      "listcomp",
+      "panel",
+      "select"
+    ]
+  },
+  {
+    "repo": "https://github.com/awslabs/gluonts",
+    "class_pollution_func": [
+      "update_configs"
+    ]
+  },
+  {
+    "repo": "https://github.com/zenml-io/zenml",
+    "class_pollution_func": [
+      "create"
+    ]
+  },
+  {
+    "repo": "https://github.com/Luodian/Otter",
+    "class_pollution_func": [
+      "_set_decoder_layers",
+      "init_flamingo",
+      "init_otter",
+      "setattr_recursive"
+    ]
+  },
+  {
+    "repo": "https://github.com/ostris/ai-toolkit",
+    "class_pollution_func": [
+      "replace_module_by_path"
+    ]
+  },
+  {
+    "repo": "https://github.com/lllyasviel/Paints-UNDO",
+    "class_pollution_func": [
+      "set_attr_recursive"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-mmlab/mmpretrain",
+    "class_pollution_func": [
+      "_set_decoder_layers",
+      "setattr_recursive"
+    ]
+  },
+  {
+    "repo": "https://github.com/rembo10/headphones",
+    "class_pollution_func": [
+      "__init__",
+      "_compile",
+      "_compile_module_file",
+      "_parse_attributes",
+      "compile",
+      "iter_fields",
+      "listcomp",
+      "parse",
+      "undeclared_identifiers",
+      "write_toplevel"
+    ]
+  },
+  {
+    "repo": "https://github.com/django-import-export/django-import-export",
+    "class_pollution_func": [
+      "__init__",
+      "save"
+    ]
+  },
+  {
+    "repo": "https://github.com/alpa-projects/alpa",
+    "class_pollution_func": [
+      "_get_nested_attr",
+      "lambda"
+    ]
+  },
+  {
+    "repo": "https://github.com/neuralmagic/deepsparse",
+    "class_pollution_func": [
+      "prep_for_serialization"
+    ]
+  },
+  {
+    "repo": "https://github.com/docarray/docarray",
+    "class_pollution_func": [
+      "__getitem__"
+    ]
+  },
+  {
+    "repo": "https://github.com/mars-project/mars",
+    "class_pollution_func": [
+      "fill_serialized",
+      "setvalue"
+    ]
+  },
+  {
+    "repo": "https://github.com/robusta-dev/robusta",
+    "class_pollution_func": [
+      "_set_attr_by_path",
+      "update_item_attr"
+    ]
+  },
+  {
+    "repo": "https://github.com/mit-han-lab/llm-awq",
+    "class_pollution_func": [
+      "_auto_get_scale",
+      "dictcomp",
+      "set_op_by_name"
+    ]
+  },
+  {
+    "repo": "https://github.com/adamghill/django-unicorn",
+    "class_pollution_func": [
+      "__init__",
+      "_process_component_request",
+      "handle",
+      "set_property_from_data",
+      "set_property_value"
+    ]
+  },
+  {
+    "repo": "https://github.com/Jittor/JittorLLMs",
+    "class_pollution_func": [
+      "__init__"
+    ]
+  },
+  {
+    "repo": "https://github.com/shuup/shuup",
+    "class_pollution_func": [
+      "_set_part"
+    ]
+  },
+  {
+    "repo": "https://github.com/predibase/lorax",
+    "class_pollution_func": [
+      "setdeepattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/mirumee/ariadne",
+    "class_pollution_func": [
+      "_purge_directive_nodes",
+      "genexpr"
+    ]
+  },
+  {
+    "repo": "https://github.com/Kedreamix/Linly-Talker",
+    "class_pollution_func": [
+      "rsetattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/alibaba/AliceMind",
+    "class_pollution_func": [
+      "_load_state_dict_into_model_low_mem",
+      "_set_module_by_path",
+      "_setattr",
+      "find_submodule_and_param_name",
+      "from_pretrained",
+      "get_from_cache",
+      "lambda",
+      "listcomp",
+      "resolve_attr"
+    ]
+  },
+  {
+    "repo": "https://github.com/stanford-crfm/helm",
+    "class_pollution_func": [
+      "_set_decoder_layers",
+      "init_flamingo",
+      "init_flamingo_layers",
+      "setattr_recursive"
+    ]
+  },
+  {
+    "repo": "https://github.com/mahmoud/glom",
+    "class_pollution_func": [
+      "_glom",
+      "_make_stack",
+      "_t_eval",
+      "_test_exc",
+      "first",
+      "from_text"
+    ]
+  },
+  {
+    "repo": "https://github.com/runhey/OnmyojiAutoScript",
+    "class_pollution_func": [
+      "deep_set"
+    ]
+  },
+  {
+    "repo": "https://github.com/evennia/evennia",
+    "class_pollution_func": [
+      "_menu_savefunc",
+      "menu_setattr"
+    ]
+  },
+  {
+    "repo": "https://github.com/pymedusa/Medusa",
+    "class_pollution_func": [
+      "iter_fields",
+      "resolve_path"
+    ]
+  },
+  {
+    "repo": "https://github.com/tdryer/hangups",
+    "class_pollution_func": [
+      "_decode_field"
+    ]
+  },
+  {
+    "repo": "https://github.com/collerek/ormar",
+    "class_pollution_func": [
+      "merge_two_instances"
+    ]
+  },
+  {
+    "repo": "https://github.com/pytorch/ao",
+    "class_pollution_func": [
+      "load_weights"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/Olive",
+    "class_pollution_func": [
+      "get_attr",
+      "listcomp"
+    ]
+  },
+  {
+    "repo": "https://github.com/WisdomShell/codeshell",
+    "class_pollution_func": [
+      "set_value"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-mmlab/Multimodal-GPT",
+    "class_pollution_func": [
+      "_set_decoder_layers",
+      "init_flamingo",
+      "setattr_recursive"
+    ]
+  },
+  {
+    "repo": "https://github.com/piccolo-orm/piccolo",
+    "class_pollution_func": [
+      "_update_instance"
+    ]
+  },
+  {
+    "repo": "https://github.com/frol/flask-restplus-server-example",
+    "class_pollution_func": [
+      "_apply_decorator_to_methods",
+      "decorator"
+    ]
+  },
+  {
+    "repo": "https://github.com/openvinotoolkit/training_extensions",
+    "class_pollution_func": [
+      "set_using_dot_delimited_key"
+    ]
+  },
+  {
+    "repo": "https://github.com/blawar/nut",
+    "class_pollution_func": [
+      "onStateChanged",
+      "set"
+    ]
+  },
+  {
+    "repo": "https://github.com/arskom/spyne",
+    "class_pollution_func": [
+      "_complex_to_csv",
+      "_complex_to_doc",
+      "_complex_to_list",
+      "_get_member_pairs",
+      "_object_to_doc",
+      "_sanitize",
+      "_to_dict_value",
+      "get",
+      "get_cls_attrs"
+    ]
+  },
+  {
+    "repo": "https://github.com/arskom/spyne",
+    "class_pollution_func": [
+      "_complex_to_csv",
+      "_complex_to_doc",
+      "_complex_to_list",
+      "_get_member_pairs",
+      "_object_to_doc",
+      "_sanitize",
+      "_to_dict_value",
+      "get",
+      "get_cls_attrs"
+    ]
+  },
+  {
+    "repo": "https://github.com/xorbitsai/xorbits",
+    "class_pollution_func": [
+      "fill_serialized",
+      "setvalue"
+    ]
+  },
+  {
+    "repo": "https://github.com/ValvePython/steam",
+    "class_pollution_func": [
+      "__handle_set_persona",
+      "genexpr",
+      "get_app_ticket",
+      "get_cdn_auth_token",
+      "get_changes_since",
+      "get_depot_key",
+      "get_encrypted_app_ticket",
+      "get_player_count",
+      "listcomp",
+      "proto_fill_from_dict",
+      "register_product_key",
+      "send_job",
+      "send_job_and_wait",
+      "send_message_and_wait"
+    ]
+  },
+  {
+    "repo": "https://github.com/amisadmin/fastapi-amis-admin",
+    "class_pollution_func": [
+      "_update_items",
+      "model_fields"
+    ]
+  },
+  {
+    "repo": "https://github.com/tdamdouni/Pythonista",
+    "class_pollution_func": [
+      "build_view",
+      "recursiveSetAttr"
+    ]
+  }
+]

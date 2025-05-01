@@ -1,0 +1,6 @@
+{
+  "repo": "https://github.com/Kedreamix/Linly-Talker",
+  "class_pollution_func": [
+    "rsetattr"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repo": "https://github.com/mars-project/mars",
+  "class_pollution_func": [
+    "fill_serialized",
+    "setvalue"
+  ]
+}

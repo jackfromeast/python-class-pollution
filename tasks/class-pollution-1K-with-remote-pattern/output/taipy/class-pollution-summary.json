@@ -1,0 +1,21 @@
+{
+  "repo": "https://github.com/Avaiga/taipy",
+  "class_pollution_func": [
+    "__assign_var",
+    "__check_readable_editable",
+    "__init__",
+    "_attrsetter",
+    "_expr_decode",
+    "_setscopeattr_drill",
+    "_variable_decode",
+    "act_on_jobs",
+    "crud_scenario",
+    "edit_data_node",
+    "edit_entity",
+    "lock_datanode_for_edit",
+    "re_evaluate_expr",
+    "submit_entity",
+    "tabular_data_edit",
+    "update_data"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "repo": "https://github.com/deepchem/deepchem",
+  "class_pollution_func": [
+    "__init__",
+    "_getparamnames",
+    "_setup_idxs",
+    "backward",
+    "cached_getparamnames",
+    "getlinopparams",
+    "getparamnames",
+    "listcomp",
+    "solve",
+    "symeig",
+    "uselinopparams"
+  ]
+}
