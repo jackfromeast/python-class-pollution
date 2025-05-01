@@ -17,7 +17,7 @@
     "repo": "https://github.com/OpenInterpreter/open-interpreter",
     "class_pollution_func": [
       {
-        "function": "apply_profile_to_obje",
+        "function": "apply_profile_to_object",
         "location": {
           "file": "interpreter/terminal_interface/profiles/profiles.py",
           "start_line": 562,
@@ -227,7 +227,7 @@
     "repo": "https://github.com/Mikubill/sd-webui-controlnet",
     "class_pollution_func": [
       {
-        "function": "recursive_se",
+        "function": "recursive_set",
         "location": {
           "file": "scripts/controlnet_lora.py",
           "start_line": 132,
@@ -236,7 +236,7 @@
         }
       },
       {
-        "function": "get_state_d",
+        "function": "get_state_dict",
         "location": {
           "file": "scripts/utils.py",
           "start_line": 29,
@@ -268,7 +268,7 @@
         }
       },
       {
-        "function": "rud_scenar",
+        "function": "rud_scenario",
         "location": {
           "file": "taipy/gui_core/_context.py",
           "start_line": 419,
@@ -322,7 +322,7 @@
         }
       },
       {
-        "function": "lock_datanode_for_ed",
+        "function": "lock_datanode_for_edit",
         "location": {
           "file": "taipy/gui_core/_context.py",
           "start_line": 970,
@@ -349,7 +349,7 @@
         }
       },
       {
-        "function": "abular_data_ed",
+        "function": "abular_data_edit",
         "location": {
           "file": "taipy/gui_core/_context.py",
           "start_line": 1101,
@@ -481,7 +481,7 @@
         }
       },
       {
-        "function": "attach_attribute_to_syft_obje",
+        "function": "attach_attribute_to_syft_object",
         "location": {
           "file": "packages/syft/src/syft/types/syft_object.py",
           "start_line": 823,
@@ -513,7 +513,7 @@
         }
       },
       {
-        "function": "_collect_conflicts_between_fields_and_fragme",
+        "function": "_collect_conflicts_between_fields_and_fragment",
         "location": {
           "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
           "start_line": 178,
@@ -531,7 +531,7 @@
         }
       },
       {
-        "function": "_collect_conflicts_with",
+        "function": "_collect_conflicts_within",
         "location": {
           "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
           "start_line": 295,
@@ -549,7 +549,7 @@
         }
       },
       {
-        "function": "get_fragme",
+        "function": "get_fragment",
         "location": {
           "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/validation.py",
           "start_line": 133,
@@ -612,7 +612,7 @@
         }
       },
       {
-        "function": "_collect_conflicts_betwee",
+        "function": "_collect_conflicts_between",
         "location": {
           "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
           "start_line": 315,
@@ -621,7 +621,7 @@
         }
       },
       {
-        "function": "_find_confl",
+        "function": "_find_conflict",
         "location": {
           "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
           "start_line": 341,
@@ -1031,7 +1031,7 @@
         }
       },
       {
-        "function": "__deserialize_se",
+        "function": "__deserialize_section",
         "location": {
           "file": "clearml/automation/trigger.py",
           "start_line": 661,
@@ -1190,7 +1190,7 @@
     "repo": "https://github.com/ibis-project/ibis",
     "class_pollution_func": [
       {
-        "function": "se",
+        "function": "set",
         "location": {
           "file": "ibis/config.py",
           "start_line": 21,
@@ -1241,7 +1241,7 @@
         }
       },
       {
-        "function": "sele",
+        "function": "select",
         "location": {
           "file": "panel/layout/accordion.py",
           "start_line": 218,
@@ -1268,7 +1268,7 @@
         }
       },
       {
-        "function": "get_r",
+        "function": "get_root",
         "location": {
           "file": "panel/pane/base.py",
           "start_line": 487,
@@ -1445,7 +1445,7 @@
         }
       },
       {
-        "function": "_flaming",
+        "function": "_flamingo",
         "location": {
           "file": "src/otter_ai/models/flamingo/modeling_flamingo.py",
           "start_line": 413,
@@ -1660,7 +1660,7 @@
     "repo": "https://github.com/neuralmagic/deepsparse",
     "class_pollution_func": [
       {
-        "function": "prep_for_serializa",
+        "function": "prep_for_serialization",
         "location": {
           "file": "src/deepsparse/utils/data.py",
           "start_line": 302,
@@ -1766,7 +1766,7 @@
     "repo": "https://github.com/adamghill/django-unicorn",
     "class_pollution_func": [
       {
-        "function": "_process_component_reques",
+        "function": "_process_component_request",
         "location": {
           "file": "django_unicorn/views/__init__.py",
           "start_line": 60,
@@ -1830,7 +1830,7 @@
     "repo": "https://github.com/shuup/shuup",
     "class_pollution_func": [
       {
-        "function": "_set_par",
+        "function": "_set_part",
         "location": {
           "file": "shuup/utils/properties.py",
           "start_line": 71,
@@ -1990,7 +1990,7 @@
         }
       },
       {
-        "function": "_flaming",
+        "function": "_flamingo",
         "location": {
           "file": "src/helm/clients/vision_language/open_flamingo/src/flamingo_lm.py",
           "start_line": 79,
@@ -2031,7 +2031,7 @@
         }
       },
       {
-        "function": "from_tex",
+        "function": "from_text",
         "location": {
           "file": "glom/core.py",
           "start_line": 641,
@@ -2049,7 +2049,7 @@
         }
       },
       {
-        "function": "firs",
+        "function": "first",
         "location": {
           "file": "glom/streaming.py",
           "start_line": 337,
@@ -2067,7 +2067,7 @@
         }
       },
       {
-        "function": "_test_ex",
+        "function": "_test_exc",
         "location": {
           "file": "glom/test/test_error.py",
           "start_line": 447,
@@ -2081,7 +2081,7 @@
     "repo": "https://github.com/runhey/OnmyojiAutoScript",
     "class_pollution_func": [
       {
-        "function": "deep_se",
+        "function": "deep_set",
         "location": {
           "file": "module/config/config_model.py",
           "start_line": 271,
@@ -2095,7 +2095,7 @@
     "repo": "https://github.com/evennia/evennia",
     "class_pollution_func": [
       {
-        "function": "_menu_savef",
+        "function": "_menu_savefunc",
         "location": {
           "file": "evennia/contrib/base_systems/building_menu/building_menu.py",
           "start_line": 153,
@@ -2229,7 +2229,7 @@
         }
       },
       {
-        "function": "_flaming",
+        "function": "_flamingo",
         "location": {
           "file": "mmgpt/models/open_flamingo/flamingo_lm.py",
           "start_line": 75,
@@ -2312,7 +2312,7 @@
         }
       },
       {
-        "function": "se",
+        "function": "set",
         "location": {
           "file": "gui/panes/filters.py",
           "start_line": 38,
@@ -2353,7 +2353,7 @@
         }
       },
       {
-        "function": "_object_to_d",
+        "function": "_object_to_doc",
         "location": {
           "file": "spyne/protocol/dictdoc/hier.py",
           "start_line": 366,
@@ -2380,7 +2380,7 @@
         }
       },
       {
-        "function": "_complex_to_d",
+        "function": "_complex_to_doc",
         "location": {
           "file": "spyne/protocol/dictdoc/hier.py",
           "start_line": 514,
@@ -2389,7 +2389,7 @@
         }
       },
       {
-        "function": "_complex_to_lis",
+        "function": "_complex_to_list",
         "location": {
           "file": "spyne/protocol/dictdoc/hier.py",
           "start_line": 569,
@@ -2398,7 +2398,7 @@
         }
       },
       {
-        "function": "ge",
+        "function": "get",
         "location": {
           "file": "spyne/util/odict.py",
           "start_line": 120,
@@ -2439,7 +2439,7 @@
         }
       },
       {
-        "function": "_object_to_d",
+        "function": "_object_to_doc",
         "location": {
           "file": "spyne/protocol/dictdoc/hier.py",
           "start_line": 366,
@@ -2466,7 +2466,7 @@
         }
       },
       {
-        "function": "_complex_to_d",
+        "function": "_complex_to_doc",
         "location": {
           "file": "spyne/protocol/dictdoc/hier.py",
           "start_line": 514,
@@ -2475,7 +2475,7 @@
         }
       },
       {
-        "function": "_complex_to_lis",
+        "function": "_complex_to_list",
         "location": {
           "file": "spyne/protocol/dictdoc/hier.py",
           "start_line": 569,
@@ -2484,7 +2484,7 @@
         }
       },
       {
-        "function": "ge",
+        "function": "get",
         "location": {
           "file": "spyne/util/odict.py",
           "start_line": 120,
@@ -2521,7 +2521,7 @@
     "repo": "https://github.com/ValvePython/steam",
     "class_pollution_func": [
       {
-        "function": "proto_fill_from_d",
+        "function": "proto_fill_from_dict",
         "location": {
           "file": "steam/utils/proto.py",
           "start_line": 66,
@@ -2539,7 +2539,7 @@
         }
       },
       {
-        "function": "send_job_and_wa",
+        "function": "send_job_and_wait",
         "location": {
           "file": "steam/client/__init__.py",
           "start_line": 342,
@@ -2548,7 +2548,7 @@
         }
       },
       {
-        "function": "send_message_and_wa",
+        "function": "send_message_and_wait",
         "location": {
           "file": "steam/client/__init__.py",
           "start_line": 366,
@@ -2557,7 +2557,7 @@
         }
       },
       {
-        "function": "get_player_",
+        "function": "get_player_count",
         "location": {
           "file": "steam/client/builtins/apps.py",
           "start_line": 25,
@@ -2575,7 +2575,7 @@
         }
       },
       {
-        "function": "get_app_ticke",
+        "function": "get_app_ticket",
         "location": {
           "file": "steam/client/builtins/apps.py",
           "start_line": 197,
@@ -2584,7 +2584,7 @@
         }
       },
       {
-        "function": "get_encrypted_app_ticke",
+        "function": "get_encrypted_app_ticket",
         "location": {
           "file": "steam/client/builtins/apps.py",
           "start_line": 210,
@@ -2602,7 +2602,7 @@
         }
       },
       {
-        "function": "get_cdn_auth_toke",
+        "function": "get_cdn_auth_token",
         "location": {
           "file": "steam/client/builtins/apps.py",
           "start_line": 242,

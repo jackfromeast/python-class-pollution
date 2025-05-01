@@ -30,7 +30,7 @@ for line in open(repo_list_path):
       physical = loc.get("physicalLocation", {})
       uri = physical.get("artifactLocation", {}).get("uri")
       region = physical.get("region", {})
-      func_name = loc.get("message", {}).get("text", "").strip("Function ")
+      func_name = loc.get("message", {}).get("text", "").lstrip("Function ")
 
       if func_name in func_names:
         continue
