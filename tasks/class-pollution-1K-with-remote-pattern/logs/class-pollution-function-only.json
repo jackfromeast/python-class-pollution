@@ -2,616 +2,2696 @@
   {
     "repo": "https://github.com/comfyanonymous/ComfyUI",
     "class_pollution_func": [
-      "set_attr"
+      {
+        "function": "set_attr",
+        "location": {
+          "file": "comfy/utils.py",
+          "start_line": 705,
+          "start_column": null,
+          "end_column": 32
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/OpenInterpreter/open-interpreter",
     "class_pollution_func": [
-      "__init__",
-      "apply_profile_to_object",
-      "get_argument_dictionary",
-      "get_profile",
-      "listcomp",
-      "start_terminal_interface"
+      {
+        "function": "apply_profile_to_obje",
+        "location": {
+          "file": "interpreter/terminal_interface/profiles/profiles.py",
+          "start_line": 562,
+          "start_column": null,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "interpreter/core/core.py",
+          "start_line": 42,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "interpreter/terminal_interface/profiles/profiles.py",
+          "start_line": 25,
+          "start_column": 26,
+          "end_column": 85
+        }
+      },
+      {
+        "function": "get_profile",
+        "location": {
+          "file": "interpreter/terminal_interface/profiles/profiles.py",
+          "start_line": 67,
+          "start_column": null,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "start_terminal_interface",
+        "location": {
+          "file": "interpreter/terminal_interface/start_terminal_interface.py",
+          "start_line": 19,
+          "start_column": null,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "get_argument_dictionary",
+        "location": {
+          "file": "interpreter/terminal_interface/start_terminal_interface.py",
+          "start_line": 595,
+          "start_column": null,
+          "end_column": 70
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/hpcaitech/ColossalAI",
     "class_pollution_func": [
-      "_recursive_replace_layer",
-      "_replace_attr",
-      "_replace_sub_module",
-      "module_params_sharding_pass",
-      "node_args_converting_pass",
-      "setattr_",
-      "size_value_converting_pass",
-      "solution_annotation_pass"
+      {
+        "function": "solution_annotation_pass",
+        "location": {
+          "file": "colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 52,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "size_value_converting_pass",
+        "location": {
+          "file": "colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 131,
+          "start_column": null,
+          "end_column": 83
+        }
+      },
+      {
+        "function": "de_args_converting_pass",
+        "location": {
+          "file": "colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 280,
+          "start_column": null,
+          "end_column": 82
+        }
+      },
+      {
+        "function": "module_params_sharding_pass",
+        "location": {
+          "file": "colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 384,
+          "start_column": null,
+          "end_column": 99
+        }
+      },
+      {
+        "function": "setattr_",
+        "location": {
+          "file": "colossalai/shardformer/_utils.py",
+          "start_line": 72,
+          "start_column": null,
+          "end_column": 59
+        }
+      },
+      {
+        "function": "_recursive_replace_layer",
+        "location": {
+          "file": "colossalai/shardformer/shard/sharder.py",
+          "start_line": 77,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_replace_attr",
+        "location": {
+          "file": "colossalai/shardformer/shard/sharder.py",
+          "start_line": 125,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_replace_sub_module",
+        "location": {
+          "file": "colossalai/shardformer/shard/sharder.py",
+          "start_line": 161,
+          "start_column": 5,
+          "end_column": 15
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/LAION-AI/Open-Assistant",
     "class_pollution_func": [
-      "rsetattr"
+      {
+        "function": "rsetattr",
+        "location": {
+          "file": "model/model_training/efficiency_utils.py",
+          "start_line": 7,
+          "start_column": null,
+          "end_column": 30
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Lightning-AI/pytorch-lightning",
     "class_pollution_func": [
-      "_find_shared_parameters",
-      "_set_module_by_path",
-      "listcomp"
+      {
+        "function": "_set_module_by_path",
+        "location": {
+          "file": "src/lightning/pytorch/utilities/parameter_tying.py",
+          "start_line": 64,
+          "start_column": null,
+          "end_column": 81
+        }
+      },
+      {
+        "function": "_find_shared_parameters",
+        "location": {
+          "file": "src/lightning/pytorch/utilities/parameter_tying.py",
+          "start_line": 31,
+          "start_column": null,
+          "end_column": 119
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "src/lightning/pytorch/utilities/parameter_tying.py",
+          "start_line": 46,
+          "start_column": 12,
+          "end_column": 63
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/huggingface/diffusers",
     "class_pollution_func": [
-      "get_module_from_name"
+      {
+        "function": "get_module_from_name",
+        "location": {
+          "file": "src/diffusers/utils/loading_utils.py",
+          "start_line": 142,
+          "start_column": null,
+          "end_column": 71
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/infiniflow/ragflow",
     "class_pollution_func": [
-      "_recursive_update_param"
+      {
+        "function": "_recursive_update_param",
+        "location": {
+          "file": "agent/component/base.py",
+          "start_line": 123,
+          "start_column": 9,
+          "end_column": 67
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Mikubill/sd-webui-controlnet",
     "class_pollution_func": [
-      "get_state_dict",
-      "recursive_set"
+      {
+        "function": "recursive_se",
+        "location": {
+          "file": "scripts/controlnet_lora.py",
+          "start_line": 132,
+          "start_column": null,
+          "end_column": 36
+        }
+      },
+      {
+        "function": "get_state_d",
+        "location": {
+          "file": "scripts/utils.py",
+          "start_line": 29,
+          "start_column": null,
+          "end_column": 23
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Avaiga/taipy",
     "class_pollution_func": [
-      "__assign_var",
-      "__check_readable_editable",
-      "__init__",
-      "_attrsetter",
-      "_expr_decode",
-      "_setscopeattr_drill",
-      "_variable_decode",
-      "act_on_jobs",
-      "crud_scenario",
-      "edit_data_node",
-      "edit_entity",
-      "lock_datanode_for_edit",
-      "re_evaluate_expr",
-      "submit_entity",
-      "tabular_data_edit",
-      "update_data"
+      {
+        "function": "_attrsetter",
+        "location": {
+          "file": "taipy/gui/utils/_attributes.py",
+          "start_line": 53,
+          "start_column": null,
+          "end_column": 68
+        }
+      },
+      {
+        "function": "_setscopeattr_drill",
+        "location": {
+          "file": "taipy/gui/utils/_attributes.py",
+          "start_line": 37,
+          "start_column": null,
+          "end_column": 62
+        }
+      },
+      {
+        "function": "rud_scenar",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 419,
+          "start_column": 5,
+          "end_column": 79
+        }
+      },
+      {
+        "function": "__assign_var",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 554,
+          "start_column": 5,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "edit_entity",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 558,
+          "start_column": 5,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "submit_entity",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 607,
+          "start_column": 5,
+          "end_column": 79
+        }
+      },
+      {
+        "function": "act_on_jobs",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 893,
+          "start_column": 5,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "edit_data_node",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 952,
+          "start_column": 5,
+          "end_column": 80
+        }
+      },
+      {
+        "function": "lock_datanode_for_ed",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 970,
+          "start_column": 5,
+          "end_column": 88
+        }
+      },
+      {
+        "function": "__check_readable_editable",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 1062,
+          "start_column": 5,
+          "end_column": 101
+        }
+      },
+      {
+        "function": "pdate_data",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 1071,
+          "start_column": 5,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "abular_data_ed",
+        "location": {
+          "file": "taipy/gui_core/_context.py",
+          "start_line": 1101,
+          "start_column": 5,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "_expr_decode",
+        "location": {
+          "file": "taipy/gui/utils/_evaluator.py",
+          "start_line": 74,
+          "start_column": 5,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "re_evaluate_expr",
+        "location": {
+          "file": "taipy/gui/utils/_evaluator.py",
+          "start_line": 305,
+          "start_column": 5,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "_variable_decode",
+        "location": {
+          "file": "taipy/gui/utils/_variable_directory.py",
+          "start_line": 148,
+          "start_column": null,
+          "end_column": 37
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "taipy/core/data/data_node.py",
+          "start_line": 119,
+          "start_column": 5,
+          "end_column": 15
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/microsoft/nni",
     "class_pollution_func": [
-      "copy_attr_new",
-      "set_nested_attr"
+      {
+        "function": "set_nested_attr",
+        "location": {
+          "file": "nni/compression/utils/attr.py",
+          "start_line": 26,
+          "start_column": null,
+          "end_column": 63
+        }
+      },
+      {
+        "function": "py_attr_new",
+        "location": {
+          "file": "nni/common/concrete_trace_utils/concrete_tracer.py",
+          "start_line": 1217,
+          "start_column": 5,
+          "end_column": 94
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/PaddlePaddle/PaddleHub",
     "class_pollution_func": [
-      "__init__",
-      "init_res",
-      "listcomp",
-      "parse_pattern_str",
-      "update_res"
+      {
+        "function": "parse_pattern_str",
+        "location": {
+          "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
+          "start_line": 236,
+          "start_column": null,
+          "end_column": 121
+        }
+      },
+      {
+        "function": "_res",
+        "location": {
+          "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
+          "start_line": 59,
+          "start_column": 5,
+          "end_column": 82
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
+          "start_line": 72,
+          "start_column": 33,
+          "end_column": 105
+        }
+      },
+      {
+        "function": "pdate_res",
+        "location": {
+          "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
+          "start_line": 162,
+          "start_column": 5,
+          "end_column": 89
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
+          "start_line": 387,
+          "start_column": 5,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/OpenMined/PySyft",
     "class_pollution_func": [
-      "attach_attribute_to_syft_object",
-      "debox_arg_and_migrate"
+      {
+        "function": "debox_arg_and_migrate",
+        "location": {
+          "file": "packages/syft/src/syft/protocol/data_protocol.py",
+          "start_line": 552,
+          "start_column": null,
+          "end_column": 66
+        }
+      },
+      {
+        "function": "attach_attribute_to_syft_obje",
+        "location": {
+          "file": "packages/syft/src/syft/types/syft_object.py",
+          "start_line": 823,
+          "start_column": null,
+          "end_column": 85
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/wandb/wandb",
     "class_pollution_func": [
-      "__init__",
-      "_collect_conflicts_between",
-      "_collect_conflicts_between_fields_and_fragment",
-      "_collect_conflicts_between_fragments",
-      "_collect_conflicts_within",
-      "_collect_fields_and_fragment_names",
-      "_find_conflict",
-      "_find_conflicts_between_sub_selection_sets",
-      "_get_fields_and_fragments_names",
-      "_get_referenced_fields_and_fragment_names",
-      "_same_arguments",
-      "decorator",
-      "dictcomp",
-      "execute",
-      "get_fragment",
-      "get_named_type",
-      "get_variable_values",
-      "is_valid_literal_value",
-      "wandb_log"
+      {
+        "function": "execute",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/execution/executor.py",
+          "start_line": 28,
+          "start_column": null,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "s_valid_literal_value",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/utils/is_valid_literal_value.py",
+          "start_line": 9,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "_collect_conflicts_between_fields_and_fragme",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 178,
+          "start_column": null,
+          "end_column": 67
+        }
+      },
+      {
+        "function": "_collect_conflicts_between_fragments",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 205,
+          "start_column": null,
+          "end_column": 98
+        }
+      },
+      {
+        "function": "_collect_conflicts_with",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 295,
+          "start_column": null,
+          "end_column": 116
+        }
+      },
+      {
+        "function": "_get_fields_and_fragments_names",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 410,
+          "start_column": null,
+          "end_column": 108
+        }
+      },
+      {
+        "function": "get_fragme",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/validation.py",
+          "start_line": 133,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/language/ast.py",
+          "start_line": 17,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "get_named_type",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/type/definition.py",
+          "start_line": 73,
+          "start_column": null,
+          "end_column": 26
+        }
+      },
+      {
+        "function": "dictcomp",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/utils/is_valid_literal_value.py",
+          "start_line": 49,
+          "start_column": 25,
+          "end_column": 86
+        }
+      },
+      {
+        "function": "wandb_log",
+        "location": {
+          "file": "wandb/integration/metaflow/metaflow.py",
+          "start_line": 290,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "decorator",
+        "location": {
+          "file": "wandb/integration/metaflow/metaflow.py",
+          "start_line": 314,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_find_conflicts_between_sub_selection_sets",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 248,
+          "start_column": null,
+          "end_column": 78
+        }
+      },
+      {
+        "function": "_collect_conflicts_betwee",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 315,
+          "start_column": null,
+          "end_column": 94
+        }
+      },
+      {
+        "function": "_find_confl",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 341,
+          "start_column": null,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "_get_referenced_fields_and_fragment_names",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 423,
+          "start_column": null,
+          "end_column": 100
+        }
+      },
+      {
+        "function": "_collect_fields_and_fragment_names",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 439,
+          "start_column": null,
+          "end_column": 107
+        }
+      },
+      {
+        "function": "_same_arguments",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 510,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "get_variable_values",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/execution/values.py",
+          "start_line": 15,
+          "start_column": null,
+          "end_column": 58
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/huggingface/text-generation-inference",
     "class_pollution_func": [
-      "setdeepattr"
+      {
+        "function": "setdeepattr",
+        "location": {
+          "file": "backends/gaudi/server/text_generation_server/layers/gptq/quantize.py",
+          "start_line": 794,
+          "start_column": null,
+          "end_column": 44
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
     "class_pollution_func": [
-      "dictcomp",
-      "forge_patch_model",
-      "forge_unpatch_model",
-      "set_attr",
-      "set_attr_raw",
-      "set_parameter_devices"
+      {
+        "function": "set_parameter_devices",
+        "location": {
+          "file": "backend/patcher/lora.py",
+          "start_line": 323,
+          "start_column": null,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "set_attr",
+        "location": {
+          "file": "packages_3rdparty/comfyui_lora_collection/utils.py",
+          "start_line": 552,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "forge_patch_model",
+        "location": {
+          "file": "backend/patcher/base.py",
+          "start_line": 257,
+          "start_column": 5,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "forge_unpatch_model",
+        "location": {
+          "file": "backend/patcher/base.py",
+          "start_line": 272,
+          "start_column": 5,
+          "end_column": 55
+        }
+      },
+      {
+        "function": "dictcomp",
+        "location": {
+          "file": "backend/patcher/lora.py",
+          "start_line": 420,
+          "start_column": 69,
+          "end_column": 122
+        }
+      },
+      {
+        "function": "set_attr_raw",
+        "location": {
+          "file": "backend/utils.py",
+          "start_line": 57,
+          "start_column": null,
+          "end_column": 36
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/hummingbot/hummingbot",
     "class_pollution_func": [
-      "__init__",
-      "genexpr",
-      "keys",
-      "traverse"
+      {
+        "function": "keys",
+        "location": {
+          "file": "hummingbot/client/config/config_helpers.py",
+          "start_line": 98,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "hummingbot/client/config/config_helpers.py",
+          "start_line": 59,
+          "start_column": 5,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "raverse",
+        "location": {
+          "file": "hummingbot/client/config/config_helpers.py",
+          "start_line": 104,
+          "start_column": 5,
+          "end_column": 91
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "hummingbot/client/config/config_helpers.py",
+          "start_line": 209,
+          "start_column": 13,
+          "end_column": 107
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/modelscope/modelscope",
     "class_pollution_func": [
-      "_setattr"
+      {
+        "function": "_setattr",
+        "location": {
+          "file": "modelscope/trainers/hooks/compression/utils.py",
+          "start_line": 116,
+          "start_column": null,
+          "end_column": 35
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/intel-analytics/ipex-llm",
     "class_pollution_func": [
-      "dictcomp",
-      "set_op_by_name"
+      {
+        "function": "set_op_by_name",
+        "location": {
+          "file": "python/llm/src/ipex_llm/transformers/awq/awq.py",
+          "start_line": 78,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "dictcomp",
+        "location": {
+          "file": "python/llm/src/ipex_llm/transformers/awq/awq.py",
+          "start_line": 118,
+          "start_column": 12,
+          "end_column": 87
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/joerick/pyinstrument",
     "class_pollution_func": [
-      "set_value_at_keypath"
+      {
+        "function": "set_value_at_keypath",
+        "location": {
+          "file": "pyinstrument/vendor/keypath.py",
+          "start_line": 62,
+          "start_column": null,
+          "end_column": 60
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/facebookresearch/metaseq",
     "class_pollution_func": [
-      "_set_module_by_path",
-      "listcomp"
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "metaseq/trainer.py",
+          "start_line": 1479,
+          "start_column": 16,
+          "end_column": 56
+        }
+      },
+      {
+        "function": "_set_module_by_path",
+        "location": {
+          "file": "metaseq/trainer.py",
+          "start_line": 1489,
+          "start_column": null,
+          "end_column": 46
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/facebookresearch/pytext",
     "class_pollution_func": [
-      "find_param",
-      "replace_param"
+      {
+        "function": "find_param",
+        "location": {
+          "file": "pytext/config/utils.py",
+          "start_line": 12,
+          "start_column": null,
+          "end_column": 41
+        }
+      },
+      {
+        "function": "replace_param",
+        "location": {
+          "file": "pytext/config/utils.py",
+          "start_line": 71,
+          "start_column": null,
+          "end_column": 43
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/open-mmlab/mmpose",
     "class_pollution_func": [
-      "__init__",
-      "rsetattr"
+      {
+        "function": "rsetattr",
+        "location": {
+          "file": "mmpose/utils/hooks.py",
+          "start_line": 55,
+          "start_column": null,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "mmpose/engine/hooks/mode_switch_hooks.py",
+          "start_line": 90,
+          "start_column": 5,
+          "end_column": 59
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/allegroai/clearml",
     "class_pollution_func": [
-      "__deserialize_scheduled_jobs",
-      "__deserialize_section",
-      "__deserialize_triggers",
-      "__init__",
-      "_deserialize",
-      "_deserialize_state",
-      "_get_data_property",
-      "_launch_job",
-      "_launch_job_task",
-      "_step",
-      "current_task",
-      "dictcomp",
-      "init",
-      "listcomp",
-      "start_remotely",
-      "update"
+      {
+        "function": "_step",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 731,
+          "start_column": 5,
+          "end_column": 29
+        }
+      },
+      {
+        "function": "_deserialize_state",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 815,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_deserialize",
+        "location": {
+          "file": "clearml/automation/trigger.py",
+          "start_line": 643,
+          "start_column": 5,
+          "end_column": 36
+        }
+      },
+      {
+        "function": "_get_data_property",
+        "location": {
+          "file": "clearml/backend_interface/task/access.py",
+          "start_line": 36,
+          "start_column": 5,
+          "end_column": 14
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "clearml/automation/job.py",
+          "start_line": 513,
+          "start_column": 5,
+          "end_column": 13
+        }
+      },
+      {
+        "function": "pdate",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 37,
+          "start_column": 5,
+          "end_column": 82
+        }
+      },
+      {
+        "function": "start_remotely",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 379,
+          "start_column": 5,
+          "end_column": 63
+        }
+      },
+      {
+        "function": "_launch_job",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 436,
+          "start_column": 5,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "_launch_job_task",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 440,
+          "start_column": 5,
+          "end_column": 31
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 741,
+          "start_column": 13,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "__deserialize_scheduled_jobs",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 851,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "dictcomp",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 855,
+          "start_column": 26,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "rrent_task",
+        "location": {
+          "file": "clearml/task.py",
+          "start_line": 262,
+          "start_column": 5,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "",
+        "location": {
+          "file": "clearml/task.py",
+          "start_line": 278,
+          "start_column": 5,
+          "end_column": 23
+        }
+      },
+      {
+        "function": "__deserialize_se",
+        "location": {
+          "file": "clearml/automation/trigger.py",
+          "start_line": 661,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "__deserialize_triggers",
+        "location": {
+          "file": "clearml/automation/trigger.py",
+          "start_line": 676,
+          "start_column": 5,
+          "end_column": 28
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/google/mesop",
     "class_pollution_func": [
-      "_recursive_update_dataclass_from_json_obj",
-      "generate_data",
-      "ws_generate_data"
+      {
+        "function": "_recursive_update_dataclass_from_json_obj",
+        "location": {
+          "file": "mesop/dataclass_utils/dataclass_utils.py",
+          "start_line": 130,
+          "start_column": null,
+          "end_column": 78
+        }
+      },
+      {
+        "function": "generate_data",
+        "location": {
+          "file": "mesop/server/server.py",
+          "start_line": 145,
+          "start_column": 3,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "ws_generate_data",
+        "location": {
+          "file": "mesop/server/server.py",
+          "start_line": 318,
+          "start_column": 7,
+          "end_column": 44
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/deepchem/deepchem",
     "class_pollution_func": [
-      "__init__",
-      "_getparamnames",
-      "_setup_idxs",
-      "backward",
-      "cached_getparamnames",
-      "getlinopparams",
-      "getparamnames",
-      "listcomp",
-      "solve",
-      "symeig",
-      "uselinopparams"
+      {
+        "function": "symeig",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/symeig.py",
+          "start_line": 41,
+          "start_column": null,
+          "end_column": 64
+        }
+      },
+      {
+        "function": "getparamnames",
+        "location": {
+          "file": "deepchem/utils/dft_utils/xc/base_xc.py",
+          "start_line": 233,
+          "start_column": 5,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "deepchem/utils/dft_utils/data/datastruct.py",
+          "start_line": 43,
+          "start_column": 5,
+          "end_column": 36
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/editable_module.py",
+          "start_line": 81,
+          "start_column": 16,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "ached_getparamnames",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/editable_module.py",
+          "start_line": 110,
+          "start_column": 5,
+          "end_column": 66
+        }
+      },
+      {
+        "function": "_getparamnames",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/grad.py",
+          "start_line": 129,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_setup_idxs",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/grad.py",
+          "start_line": 284,
+          "start_column": null,
+          "end_column": 57
+        }
+      },
+      {
+        "function": "getlinopparams",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/linop.py",
+          "start_line": 349,
+          "start_column": 5,
+          "end_column": 56
+        }
+      },
+      {
+        "function": "selinopparams",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/linop.py",
+          "start_line": 354,
+          "start_column": 5,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "solve",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/solve.py",
+          "start_line": 12,
+          "start_column": null,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "backward",
+        "location": {
+          "file": "deepchem/utils/differentiation_utils/solve.py",
+          "start_line": 202,
+          "start_column": 5,
+          "end_column": 31
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/ibis-project/ibis",
     "class_pollution_func": [
-      "set"
+      {
+        "function": "se",
+        "location": {
+          "file": "ibis/config.py",
+          "start_line": 21,
+          "start_column": 5,
+          "end_column": 49
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/pytorch/captum",
     "class_pollution_func": [
-      "_model_reinsert_params"
+      {
+        "function": "_model_reinsert_params",
+        "location": {
+          "file": "captum/influence/_utils/common.py",
+          "start_line": 1043,
+          "start_column": null,
+          "end_column": 88
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Cog-Creators/Red-DiscordBot",
     "class_pollution_func": [
-      "rsetattr"
+      {
+        "function": "rsetattr",
+        "location": {
+          "file": "redbot/cogs/audio/core/utilities/miscellaneous.py",
+          "start_line": 139,
+          "start_column": 5,
+          "end_column": 48
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/holoviz/panel",
     "class_pollution_func": [
-      "__init__",
-      "__panel__",
-      "_create_view",
-      "_get_model",
-      "_get_properties",
-      "_get_root_model",
-      "_get_specs",
-      "_init_callback",
-      "_process_param_change",
-      "_render_model",
-      "_repr_mimebundle_",
-      "_update_figure",
-      "_update_renderers",
-      "get_root",
-      "link_to_jslink",
-      "listcomp",
-      "panel",
-      "select"
+      {
+        "function": "link_to_jslink",
+        "location": {
+          "file": "panel/io/embed.py",
+          "start_line": 123,
+          "start_column": null,
+          "end_column": 63
+        }
+      },
+      {
+        "function": "sele",
+        "location": {
+          "file": "panel/layout/accordion.py",
+          "start_line": 218,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "panel",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 44,
+          "start_column": null,
+          "end_column": 59
+        }
+      },
+      {
+        "function": "_get_root_model",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 449,
+          "start_column": 5,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "get_r",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 487,
+          "start_column": 5,
+          "end_column": 16
+        }
+      },
+      {
+        "function": "_get_model",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 538,
+          "start_column": 5,
+          "end_column": 16
+        }
+      },
+      {
+        "function": "_get_properties",
+        "location": {
+          "file": "panel/custom.py",
+          "start_line": 424,
+          "start_column": 5,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "panel/io/embed.py",
+          "start_line": 243,
+          "start_column": 15,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_update_renderers",
+        "location": {
+          "file": "panel/widgets/indicators.py",
+          "start_line": 998,
+          "start_column": 5,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "_update_figure",
+        "location": {
+          "file": "panel/widgets/indicators.py",
+          "start_line": 1060,
+          "start_column": 5,
+          "end_column": 37
+        }
+      },
+      {
+        "function": "_init_callback",
+        "location": {
+          "file": "panel/links.py",
+          "start_line": 416,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_get_specs",
+        "location": {
+          "file": "panel/links.py",
+          "start_line": 579,
+          "start_column": 5,
+          "end_column": 72
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "panel/param.py",
+          "start_line": 252,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "__panel__",
+        "location": {
+          "file": "panel/pipeline.py",
+          "start_line": 224,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_process_param_change",
+        "location": {
+          "file": "panel/widgets/player.py",
+          "start_line": 185,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_render_model",
+        "location": {
+          "file": "panel/viewable.py",
+          "start_line": 635,
+          "start_column": 5,
+          "end_column": 93
+        }
+      },
+      {
+        "function": "_repr_mimebundle_",
+        "location": {
+          "file": "panel/viewable.py",
+          "start_line": 784,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_create_view",
+        "location": {
+          "file": "panel/viewable.py",
+          "start_line": 1084,
+          "start_column": 5,
+          "end_column": 28
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/awslabs/gluonts",
     "class_pollution_func": [
-      "update_configs"
+      {
+        "function": "pdate_configs",
+        "location": {
+          "file": "src/gluonts/nursery/daf/__main__.py",
+          "start_line": 66,
+          "start_column": null,
+          "end_column": 22
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/zenml-io/zenml",
     "class_pollution_func": [
-      "create"
+      {
+        "function": "reate",
+        "location": {
+          "file": "tests/integration/functional/zen_stores/utils.py",
+          "start_line": 968,
+          "start_column": 5,
+          "end_column": 37
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Luodian/Otter",
     "class_pollution_func": [
-      "_set_decoder_layers",
-      "init_flamingo",
-      "init_otter",
-      "setattr_recursive"
+      {
+        "function": "setattr_recursive",
+        "location": {
+          "file": "src/otter_ai/models/flamingo/modeling_flamingo.py",
+          "start_line": 73,
+          "start_column": null,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "_set_decoder_layers",
+        "location": {
+          "file": "src/otter_ai/models/flamingo/modeling_flamingo.py",
+          "start_line": 410,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_flaming",
+        "location": {
+          "file": "src/otter_ai/models/flamingo/modeling_flamingo.py",
+          "start_line": 413,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "_otter",
+        "location": {
+          "file": "src/otter_ai/models/otter/modeling_otter.py",
+          "start_line": 459,
+          "start_column": 5,
+          "end_column": 7
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/ostris/ai-toolkit",
     "class_pollution_func": [
-      "replace_module_by_path"
+      {
+        "function": "replace_module_by_path",
+        "location": {
+          "file": "toolkit/lorm.py",
+          "start_line": 263,
+          "start_column": null,
+          "end_column": 51
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/lllyasviel/Paints-UNDO",
     "class_pollution_func": [
-      "set_attr_recursive"
+      {
+        "function": "set_attr_recursive",
+        "location": {
+          "file": "diffusers_helper/utils.py",
+          "start_line": 37,
+          "start_column": null,
+          "end_column": 42
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/open-mmlab/mmpretrain",
     "class_pollution_func": [
-      "_set_decoder_layers",
-      "setattr_recursive"
+      {
+        "function": "_set_decoder_layers",
+        "location": {
+          "file": "mmpretrain/models/multimodal/flamingo/adapter.py",
+          "start_line": 63,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "setattr_recursive",
+        "location": {
+          "file": "mmpretrain/models/multimodal/flamingo/utils.py",
+          "start_line": 56,
+          "start_column": null,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/rembo10/headphones",
     "class_pollution_func": [
-      "__init__",
-      "_compile",
-      "_compile_module_file",
-      "_parse_attributes",
-      "compile",
-      "iter_fields",
-      "listcomp",
-      "parse",
-      "undeclared_identifiers",
-      "write_toplevel"
+      {
+        "function": "er_fields",
+        "location": {
+          "file": "lib/mako/_ast_util.py",
+          "start_line": 95,
+          "start_column": null,
+          "end_column": 23
+        }
+      },
+      {
+        "function": "parse",
+        "location": {
+          "file": "lib/mako/_ast_util.py",
+          "start_line": 90,
+          "start_column": null,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "lib/mako/ast.py",
+          "start_line": 86,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "mpile",
+        "location": {
+          "file": "lib/mako/codegen.py",
+          "start_line": 32,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "write_toplevel",
+        "location": {
+          "file": "lib/mako/codegen.py",
+          "start_line": 188,
+          "start_column": 5,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "_parse_attributes",
+        "location": {
+          "file": "lib/mako/parsetree.py",
+          "start_line": 320,
+          "start_column": 5,
+          "end_column": 62
+        }
+      },
+      {
+        "function": "declared_identifiers",
+        "location": {
+          "file": "lib/mako/parsetree.py",
+          "start_line": 496,
+          "start_column": 5,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "lib/mako/parsetree.py",
+          "start_line": 613,
+          "start_column": 17,
+          "end_column": 18
+        }
+      },
+      {
+        "function": "_compile",
+        "location": {
+          "file": "lib/mako/template.py",
+          "start_line": 701,
+          "start_column": null,
+          "end_column": 64
+        }
+      },
+      {
+        "function": "_compile_module_file",
+        "location": {
+          "file": "lib/mako/template.py",
+          "start_line": 748,
+          "start_column": null,
+          "end_column": 79
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/django-import-export/django-import-export",
     "class_pollution_func": [
-      "__init__",
-      "save"
+      {
+        "function": "__init__",
+        "location": {
+          "file": "import_export/fields.py",
+          "start_line": 45,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "save",
+        "location": {
+          "file": "import_export/fields.py",
+          "start_line": 131,
+          "start_column": 5,
+          "end_column": 59
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/alpa-projects/alpa",
     "class_pollution_func": [
-      "_get_nested_attr",
-      "lambda"
+      {
+        "function": "lambda",
+        "location": {
+          "file": "alpa/torch/nn/utils.py",
+          "start_line": 540,
+          "start_column": 26,
+          "end_column": 67
+        }
+      },
+      {
+        "function": "_get_nested_attr",
+        "location": {
+          "file": "alpa/torch/nn/__init__.py",
+          "start_line": 256,
+          "start_column": null,
+          "end_column": 64
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/neuralmagic/deepsparse",
     "class_pollution_func": [
-      "prep_for_serialization"
+      {
+        "function": "prep_for_serializa",
+        "location": {
+          "file": "src/deepsparse/utils/data.py",
+          "start_line": 302,
+          "start_column": null,
+          "end_column": 29
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/docarray/docarray",
     "class_pollution_func": [
-      "__getitem__"
+      {
+        "function": "__getitem__",
+        "location": {
+          "file": "docarray/data/torch_dataset.py",
+          "start_line": 115,
+          "start_column": 5,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/mars-project/mars",
     "class_pollution_func": [
-      "fill_serialized",
-      "setvalue"
+      {
+        "function": "setvalue",
+        "location": {
+          "file": "mars/config.py",
+          "start_line": 58,
+          "start_column": 5,
+          "end_column": 31
+        }
+      },
+      {
+        "function": "fill_serialized",
+        "location": {
+          "file": "mars/config.py",
+          "start_line": 259,
+          "start_column": 5,
+          "end_column": 34
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/robusta-dev/robusta",
     "class_pollution_func": [
-      "_set_attr_by_path",
-      "update_item_attr"
+      {
+        "function": "_set_attr_by_path",
+        "location": {
+          "file": "tests/test_change_filters.py",
+          "start_line": 49,
+          "start_column": 5,
+          "end_column": 64
+        }
+      },
+      {
+        "function": "pdate_item_attr",
+        "location": {
+          "file": "src/robusta/runner/object_updater.py",
+          "start_line": 5,
+          "start_column": null,
+          "end_column": 66
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/mit-han-lab/llm-awq",
     "class_pollution_func": [
-      "_auto_get_scale",
-      "dictcomp",
-      "set_op_by_name"
+      {
+        "function": "set_op_by_name",
+        "location": {
+          "file": "awq/utils/module.py",
+          "start_line": 9,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "_auto_get_scale",
+        "location": {
+          "file": "awq/quantize/auto_scale.py",
+          "start_line": 158,
+          "start_column": 5,
+          "end_column": 79
+        }
+      },
+      {
+        "function": "dictcomp",
+        "location": {
+          "file": "awq/quantize/pre_quant.py",
+          "start_line": 22,
+          "start_column": 12,
+          "end_column": 87
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/adamghill/django-unicorn",
     "class_pollution_func": [
-      "__init__",
-      "_process_component_request",
-      "handle",
-      "set_property_from_data",
-      "set_property_value"
+      {
+        "function": "_process_component_reques",
+        "location": {
+          "file": "django_unicorn/views/__init__.py",
+          "start_line": 60,
+          "start_column": null,
+          "end_column": 99
+        }
+      },
+      {
+        "function": "handle",
+        "location": {
+          "file": "django_unicorn/views/action_parsers/call_method.py",
+          "start_line": 26,
+          "start_column": null,
+          "end_column": 88
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "django_unicorn/views/objects.py",
+          "start_line": 18,
+          "start_column": 5,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "set_property_from_data",
+        "location": {
+          "file": "django_unicorn/views/utils.py",
+          "start_line": 15,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "set_property_value",
+        "location": {
+          "file": "django_unicorn/views/action_parsers/utils.py",
+          "start_line": 10,
+          "start_column": null,
+          "end_column": 11
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Jittor/JittorLLMs",
     "class_pollution_func": [
-      "__init__"
+      {
+        "function": "__init__",
+        "location": {
+          "file": "models/chatrwkv/RWKV_in_150_lines.py",
+          "start_line": 27,
+          "start_column": 5,
+          "end_column": 30
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/shuup/shuup",
     "class_pollution_func": [
-      "_set_part"
+      {
+        "function": "_set_par",
+        "location": {
+          "file": "shuup/utils/properties.py",
+          "start_line": 71,
+          "start_column": 5,
+          "end_column": 53
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/predibase/lorax",
     "class_pollution_func": [
-      "setdeepattr"
+      {
+        "function": "setdeepattr",
+        "location": {
+          "file": "server/lorax_server/utils/gptq/quantize.py",
+          "start_line": 741,
+          "start_column": null,
+          "end_column": 44
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/mirumee/ariadne",
     "class_pollution_func": [
-      "_purge_directive_nodes",
-      "genexpr"
+      {
+        "function": "_purge_directive_nodes",
+        "location": {
+          "file": "ariadne/contrib/federation/utils.py",
+          "start_line": 43,
+          "start_column": null,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "ariadne/contrib/federation/utils.py",
+          "start_line": 45,
+          "start_column": 9,
+          "end_column": 50
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/Kedreamix/Linly-Talker",
     "class_pollution_func": [
-      "rsetattr"
+      {
+        "function": "rsetattr",
+        "location": {
+          "file": "src/facerender/pirender/config.py",
+          "start_line": 183,
+          "start_column": null,
+          "end_column": 30
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/alibaba/AliceMind",
     "class_pollution_func": [
-      "_load_state_dict_into_model_low_mem",
-      "_set_module_by_path",
-      "_setattr",
-      "find_submodule_and_param_name",
-      "from_pretrained",
-      "get_from_cache",
-      "lambda",
-      "listcomp",
-      "resolve_attr"
+      {
+        "function": "get_from_cache",
+        "location": {
+          "file": "sofa/sofa/utils/backend/file_utils.py",
+          "start_line": 1854,
+          "start_column": null,
+          "end_column": 20
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "sofa/sofa/utils/backend/file_utils.py",
+          "start_line": 1927,
+          "start_column": 30,
+          "end_column": 14
+        }
+      },
+      {
+        "function": "from_pretrained",
+        "location": {
+          "file": "sofa/sofa/utils/backend/modeling_utils.py",
+          "start_line": 1066,
+          "start_column": 5,
+          "end_column": 119
+        }
+      },
+      {
+        "function": "_load_state_dict_into_model_low_mem",
+        "location": {
+          "file": "sofa/sofa/utils/backend/modeling_utils.py",
+          "start_line": 1629,
+          "start_column": 5,
+          "end_column": 104
+        }
+      },
+      {
+        "function": "find_submodule_and_param_name",
+        "location": {
+          "file": "sofa/sofa/utils/backend/modeling_utils.py",
+          "start_line": 1652,
+          "start_column": 9,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "_set_module_by_path",
+        "location": {
+          "file": "VECO/NLG/fairseq/trainer.py",
+          "start_line": 960,
+          "start_column": null,
+          "end_column": 46
+        }
+      },
+      {
+        "function": "lambda",
+        "location": {
+          "file": "VECO/NLG/fairseq/modules/quantization/pq/utils.py",
+          "start_line": 179,
+          "start_column": 22,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "resolve_attr",
+        "location": {
+          "file": "VECO/NLG/fairseq/modules/quantization/pq/utils.py",
+          "start_line": 321,
+          "start_column": 5,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "_setattr",
+        "location": {
+          "file": "S4/PST/pst/utils.py",
+          "start_line": 9,
+          "start_column": null,
+          "end_column": 35
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/stanford-crfm/helm",
     "class_pollution_func": [
-      "_set_decoder_layers",
-      "init_flamingo",
-      "init_flamingo_layers",
-      "setattr_recursive"
+      {
+        "function": "_set_decoder_layers",
+        "location": {
+          "file": "src/helm/clients/vision_language/open_flamingo/src/flamingo_lm.py",
+          "start_line": 76,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_flaming",
+        "location": {
+          "file": "src/helm/clients/vision_language/open_flamingo/src/flamingo_lm.py",
+          "start_line": 79,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "_flamingo_layers",
+        "location": {
+          "file": "src/helm/clients/vision_language/open_flamingo/src/flamingo_lm.py",
+          "start_line": 106,
+          "start_column": 5,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "setattr_recursive",
+        "location": {
+          "file": "src/helm/clients/vision_language/open_flamingo/src/utils.py",
+          "start_line": 29,
+          "start_column": null,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/mahmoud/glom",
     "class_pollution_func": [
-      "_glom",
-      "_make_stack",
-      "_t_eval",
-      "_test_exc",
-      "first",
-      "from_text"
+      {
+        "function": "_glom",
+        "location": {
+          "file": "glom/core.py",
+          "start_line": 2330,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "from_tex",
+        "location": {
+          "file": "glom/core.py",
+          "start_line": 641,
+          "start_column": 5,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "_t_eval",
+        "location": {
+          "file": "glom/core.py",
+          "start_line": 1538,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "firs",
+        "location": {
+          "file": "glom/streaming.py",
+          "start_line": 337,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_make_stack",
+        "location": {
+          "file": "glom/test/test_error.py",
+          "start_line": 88,
+          "start_column": null,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "_test_ex",
+        "location": {
+          "file": "glom/test/test_error.py",
+          "start_line": 447,
+          "start_column": 5,
+          "end_column": 43
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/runhey/OnmyojiAutoScript",
     "class_pollution_func": [
-      "deep_set"
+      {
+        "function": "deep_se",
+        "location": {
+          "file": "module/config/config_model.py",
+          "start_line": 271,
+          "start_column": 5,
+          "end_column": 49
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/evennia/evennia",
     "class_pollution_func": [
-      "_menu_savefunc",
-      "menu_setattr"
+      {
+        "function": "_menu_savef",
+        "location": {
+          "file": "evennia/contrib/base_systems/building_menu/building_menu.py",
+          "start_line": 153,
+          "start_column": null,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "menu_setattr",
+        "location": {
+          "file": "evennia/contrib/base_systems/building_menu/building_menu.py",
+          "start_line": 242,
+          "start_column": null,
+          "end_column": 45
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/pymedusa/Medusa",
     "class_pollution_func": [
-      "iter_fields",
-      "resolve_path"
+      {
+        "function": "er_fields",
+        "location": {
+          "file": "ext/mako/_ast_util.py",
+          "start_line": 94,
+          "start_column": null,
+          "end_column": 23
+        }
+      },
+      {
+        "function": "resolve_path",
+        "location": {
+          "file": "ext/wrapt/wrappers.py",
+          "start_line": 771,
+          "start_column": null,
+          "end_column": 32
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/tdryer/hangups",
     "class_pollution_func": [
-      "_decode_field"
+      {
+        "function": "_decode_field",
+        "location": {
+          "file": "hangups/pblite.py",
+          "start_line": 26,
+          "start_column": null,
+          "end_column": 42
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/collerek/ormar",
     "class_pollution_func": [
-      "merge_two_instances"
+      {
+        "function": "merge_two_instances",
+        "location": {
+          "file": "ormar/models/mixins/merge_mixin.py",
+          "start_line": 71,
+          "start_column": 5,
+          "end_column": 18
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/pytorch/ao",
     "class_pollution_func": [
-      "load_weights"
+      {
+        "function": "load_weights",
+        "location": {
+          "file": "torchao/prototype/quantization/mixed_precision/scripts/hessian_vhp.py",
+          "start_line": 75,
+          "start_column": 5,
+          "end_column": 82
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/microsoft/Olive",
     "class_pollution_func": [
-      "get_attr",
-      "listcomp"
+      {
+        "function": "get_attr",
+        "location": {
+          "file": "olive/common/utils.py",
+          "start_line": 331,
+          "start_column": null,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "olive/common/hf/wrapper.py",
+          "start_line": 31,
+          "start_column": 17,
+          "end_column": 66
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/WisdomShell/codeshell",
     "class_pollution_func": [
-      "set_value"
+      {
+        "function": "set_value",
+        "location": {
+          "file": "model/quantizer.py",
+          "start_line": 197,
+          "start_column": null,
+          "end_column": 49
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/open-mmlab/Multimodal-GPT",
     "class_pollution_func": [
-      "_set_decoder_layers",
-      "init_flamingo",
-      "setattr_recursive"
+      {
+        "function": "_set_decoder_layers",
+        "location": {
+          "file": "mmgpt/models/open_flamingo/flamingo_lm.py",
+          "start_line": 72,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_flaming",
+        "location": {
+          "file": "mmgpt/models/open_flamingo/flamingo_lm.py",
+          "start_line": 75,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "setattr_recursive",
+        "location": {
+          "file": "mmgpt/models/open_flamingo/utils.py",
+          "start_line": 24,
+          "start_column": null,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/piccolo-orm/piccolo",
     "class_pollution_func": [
-      "_update_instance"
+      {
+        "function": "_update_instance",
+        "location": {
+          "file": "piccolo/query/methods/refresh.py",
+          "start_line": 103,
+          "start_column": 5,
+          "end_column": 68
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/frol/flask-restplus-server-example",
     "class_pollution_func": [
-      "_apply_decorator_to_methods",
-      "decorator"
+      {
+        "function": "decorator",
+        "location": {
+          "file": "app/extensions/api/namespace.py",
+          "start_line": 123,
+          "start_column": 9,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "_apply_decorator_to_methods",
+        "location": {
+          "file": "flask_restplus_patched/resource.py",
+          "start_line": 15,
+          "start_column": 5,
+          "end_column": 53
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/openvinotoolkit/training_extensions",
     "class_pollution_func": [
-      "set_using_dot_delimited_key"
+      {
+        "function": "set_using_dot_delimited_key",
+        "location": {
+          "file": "src/otx/utils/utils.py",
+          "start_line": 51,
+          "start_column": null,
+          "end_column": 74
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/blawar/nut",
     "class_pollution_func": [
-      "onStateChanged",
-      "set"
+      {
+        "function": "StateChanged",
+        "location": {
+          "file": "gui/panes/filters.py",
+          "start_line": 24,
+          "start_column": 2,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "se",
+        "location": {
+          "file": "gui/panes/filters.py",
+          "start_line": 38,
+          "start_column": 2,
+          "end_column": 23
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/arskom/spyne",
     "class_pollution_func": [
-      "_complex_to_csv",
-      "_complex_to_doc",
-      "_complex_to_list",
-      "_get_member_pairs",
-      "_object_to_doc",
-      "_sanitize",
-      "_to_dict_value",
-      "get",
-      "get_cls_attrs"
+      {
+        "function": "get_cls_attrs",
+        "location": {
+          "file": "spyne/protocol/_base.py",
+          "start_line": 187,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "_complex_to_csv",
+        "location": {
+          "file": "spyne/protocol/csv.py",
+          "start_line": 44,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "_sanitize",
+        "location": {
+          "file": "spyne/protocol/_base.py",
+          "start_line": 86,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_object_to_d",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 366,
+          "start_column": 5,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "_get_member_pairs",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 440,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "_to_dict_value",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 478,
+          "start_column": 5,
+          "end_column": 62
+        }
+      },
+      {
+        "function": "_complex_to_d",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 514,
+          "start_column": 5,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "_complex_to_lis",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 569,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "ge",
+        "location": {
+          "file": "spyne/util/odict.py",
+          "start_line": 120,
+          "start_column": 5,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/arskom/spyne",
     "class_pollution_func": [
-      "_complex_to_csv",
-      "_complex_to_doc",
-      "_complex_to_list",
-      "_get_member_pairs",
-      "_object_to_doc",
-      "_sanitize",
-      "_to_dict_value",
-      "get",
-      "get_cls_attrs"
+      {
+        "function": "get_cls_attrs",
+        "location": {
+          "file": "spyne/protocol/_base.py",
+          "start_line": 187,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "_complex_to_csv",
+        "location": {
+          "file": "spyne/protocol/csv.py",
+          "start_line": 44,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "_sanitize",
+        "location": {
+          "file": "spyne/protocol/_base.py",
+          "start_line": 86,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_object_to_d",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 366,
+          "start_column": 5,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "_get_member_pairs",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 440,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "_to_dict_value",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 478,
+          "start_column": 5,
+          "end_column": 62
+        }
+      },
+      {
+        "function": "_complex_to_d",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 514,
+          "start_column": 5,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "_complex_to_lis",
+        "location": {
+          "file": "spyne/protocol/dictdoc/hier.py",
+          "start_line": 569,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "ge",
+        "location": {
+          "file": "spyne/util/odict.py",
+          "start_line": 120,
+          "start_column": 5,
+          "end_column": 38
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/xorbitsai/xorbits",
     "class_pollution_func": [
-      "fill_serialized",
-      "setvalue"
+      {
+        "function": "setvalue",
+        "location": {
+          "file": "python/xorbits/_mars/config.py",
+          "start_line": 57,
+          "start_column": 5,
+          "end_column": 31
+        }
+      },
+      {
+        "function": "fill_serialized",
+        "location": {
+          "file": "python/xorbits/_mars/config.py",
+          "start_line": 351,
+          "start_column": 5,
+          "end_column": 34
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/ValvePython/steam",
     "class_pollution_func": [
-      "__handle_set_persona",
-      "genexpr",
-      "get_app_ticket",
-      "get_cdn_auth_token",
-      "get_changes_since",
-      "get_depot_key",
-      "get_encrypted_app_ticket",
-      "get_player_count",
-      "listcomp",
-      "proto_fill_from_dict",
-      "register_product_key",
-      "send_job",
-      "send_job_and_wait",
-      "send_message_and_wait"
+      {
+        "function": "proto_fill_from_d",
+        "location": {
+          "file": "steam/utils/proto.py",
+          "start_line": 66,
+          "start_column": null,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "send_job",
+        "location": {
+          "file": "steam/client/__init__.py",
+          "start_line": 306,
+          "start_column": 5,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "send_job_and_wa",
+        "location": {
+          "file": "steam/client/__init__.py",
+          "start_line": 342,
+          "start_column": 5,
+          "end_column": 88
+        }
+      },
+      {
+        "function": "send_message_and_wa",
+        "location": {
+          "file": "steam/client/__init__.py",
+          "start_line": 366,
+          "start_column": 5,
+          "end_column": 107
+        }
+      },
+      {
+        "function": "get_player_",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 25,
+          "start_column": 5,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "get_changes_since",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 176,
+          "start_column": 5,
+          "end_column": 89
+        }
+      },
+      {
+        "function": "get_app_ticke",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 197,
+          "start_column": 5,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "get_encrypted_app_ticke",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 210,
+          "start_column": 5,
+          "end_column": 58
+        }
+      },
+      {
+        "function": "get_depot_key",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 224,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "get_cdn_auth_toke",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 242,
+          "start_column": 5,
+          "end_column": 54
+        }
+      },
+      {
+        "function": "register_product_key",
+        "location": {
+          "file": "steam/client/builtins/apps.py",
+          "start_line": 295,
+          "start_column": 5,
+          "end_column": 41
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "tests/test_utils.py",
+          "start_line": 120,
+          "start_column": 63,
+          "end_column": 81
+        }
+      },
+      {
+        "function": "__handle_set_persona",
+        "location": {
+          "file": "steam/client/builtins/user.py",
+          "start_line": 49,
+          "start_column": 5,
+          "end_column": 36
+        }
+      },
+      {
+        "function": "listcomp",
+        "location": {
+          "file": "steam/client/builtins/user.py",
+          "start_line": 136,
+          "start_column": 36,
+          "end_column": 79
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/amisadmin/fastapi-amis-admin",
     "class_pollution_func": [
-      "_update_items",
-      "model_fields"
+      {
+        "function": "model_fields",
+        "location": {
+          "file": "fastapi_amis_admin/utils/pydantic.py",
+          "start_line": 154,
+          "start_column": 5,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "_update_items",
+        "location": {
+          "file": "fastapi_amis_admin/crud/_sqlalchemy.py",
+          "start_line": 423,
+          "start_column": 5,
+          "end_column": 112
+        }
+      }
     ]
   },
   {
     "repo": "https://github.com/tdamdouni/Pythonista",
     "class_pollution_func": [
-      "build_view",
-      "recursiveSetAttr"
+      {
+        "function": "build_view",
+        "location": {
+          "file": "ui/loadpyui.py",
+          "start_line": 34,
+          "start_column": null,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "recursiveSetAttr",
+        "location": {
+          "file": "markdown/markdown2pdf/reportlab/lib/utils.py",
+          "start_line": 487,
+          "start_column": null,
+          "end_column": 40
+        }
+      }
     ]
   }
 ]
