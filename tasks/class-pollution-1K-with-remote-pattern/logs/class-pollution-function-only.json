@@ -94,7 +94,7 @@
         }
       },
       {
-        "function": "de_args_converting_pass",
+        "function": "node_args_converting_pass",
         "location": {
           "file": "colossalai/auto_parallel/passes/runtime_preparation_pass.py",
           "start_line": 280,
@@ -268,7 +268,7 @@
         }
       },
       {
-        "function": "rud_scenario",
+        "function": "crud_scenario",
         "location": {
           "file": "taipy/gui_core/_context.py",
           "start_line": 419,
@@ -340,7 +340,7 @@
         }
       },
       {
-        "function": "pdate_data",
+        "function": "update_data",
         "location": {
           "file": "taipy/gui_core/_context.py",
           "start_line": 1071,
@@ -349,7 +349,7 @@
         }
       },
       {
-        "function": "abular_data_edit",
+        "function": "tabular_data_edit",
         "location": {
           "file": "taipy/gui_core/_context.py",
           "start_line": 1101,
@@ -408,7 +408,7 @@
         }
       },
       {
-        "function": "py_attr_new",
+        "function": "copy_attr_new",
         "location": {
           "file": "nni/common/concrete_trace_utils/concrete_tracer.py",
           "start_line": 1217,
@@ -431,7 +431,7 @@
         }
       },
       {
-        "function": "_res",
+        "function": "init_res",
         "location": {
           "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
           "start_line": 59,
@@ -449,7 +449,7 @@
         }
       },
       {
-        "function": "pdate_res",
+        "function": "update_res",
         "location": {
           "file": "modules/image/classification/pplcnet_x1_0_imagenet/model.py",
           "start_line": 162,
@@ -504,7 +504,7 @@
         }
       },
       {
-        "function": "s_valid_literal_value",
+        "function": "is_valid_literal_value",
         "location": {
           "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/utils/is_valid_literal_value.py",
           "start_line": 9,
@@ -762,7 +762,7 @@
         }
       },
       {
-        "function": "raverse",
+        "function": "traverse",
         "location": {
           "file": "hummingbot/client/config/config_helpers.py",
           "start_line": 104,
@@ -950,7 +950,7 @@
         }
       },
       {
-        "function": "pdate",
+        "function": "update",
         "location": {
           "file": "clearml/automation/scheduler.py",
           "start_line": 37,
@@ -1013,7 +1013,7 @@
         }
       },
       {
-        "function": "rrent_task",
+        "function": "current_task",
         "location": {
           "file": "clearml/task.py",
           "start_line": 262,
@@ -1022,7 +1022,7 @@
         }
       },
       {
-        "function": "",
+        "function": "init",
         "location": {
           "file": "clearml/task.py",
           "start_line": 278,
@@ -1122,7 +1122,7 @@
         }
       },
       {
-        "function": "ached_getparamnames",
+        "function": "cached_getparamnames",
         "location": {
           "file": "deepchem/utils/differentiation_utils/editable_module.py",
           "start_line": 110,
@@ -1158,7 +1158,7 @@
         }
       },
       {
-        "function": "selinopparams",
+        "function": "uselinopparams",
         "location": {
           "file": "deepchem/utils/differentiation_utils/linop.py",
           "start_line": 354,
@@ -1399,7 +1399,7 @@
     "repo": "https://github.com/awslabs/gluonts",
     "class_pollution_func": [
       {
-        "function": "pdate_configs",
+        "function": "update_configs",
         "location": {
           "file": "src/gluonts/nursery/daf/__main__.py",
           "start_line": 66,
@@ -1413,7 +1413,7 @@
     "repo": "https://github.com/zenml-io/zenml",
     "class_pollution_func": [
       {
-        "function": "reate",
+        "function": "create",
         "location": {
           "file": "tests/integration/functional/zen_stores/utils.py",
           "start_line": 968,
@@ -1445,7 +1445,7 @@
         }
       },
       {
-        "function": "_flamingo",
+        "function": "init_flamingo",
         "location": {
           "file": "src/otter_ai/models/flamingo/modeling_flamingo.py",
           "start_line": 413,
@@ -1454,7 +1454,7 @@
         }
       },
       {
-        "function": "_otter",
+        "function": "init_otter",
         "location": {
           "file": "src/otter_ai/models/otter/modeling_otter.py",
           "start_line": 459,
@@ -1519,7 +1519,7 @@
     "repo": "https://github.com/rembo10/headphones",
     "class_pollution_func": [
       {
-        "function": "er_fields",
+        "function": "iter_fields",
         "location": {
           "file": "lib/mako/_ast_util.py",
           "start_line": 95,
@@ -1546,7 +1546,7 @@
         }
       },
       {
-        "function": "mpile",
+        "function": "compile",
         "location": {
           "file": "lib/mako/codegen.py",
           "start_line": 32,
@@ -1573,7 +1573,7 @@
         }
       },
       {
-        "function": "declared_identifiers",
+        "function": "undeclared_identifiers",
         "location": {
           "file": "lib/mako/parsetree.py",
           "start_line": 496,
@@ -1720,7 +1720,7 @@
         }
       },
       {
-        "function": "pdate_item_attr",
+        "function": "update_item_attr",
         "location": {
           "file": "src/robusta/runner/object_updater.py",
           "start_line": 5,
@@ -1990,7 +1990,7 @@
         }
       },
       {
-        "function": "_flamingo",
+        "function": "init_flamingo",
         "location": {
           "file": "src/helm/clients/vision_language/open_flamingo/src/flamingo_lm.py",
           "start_line": 79,
@@ -1999,7 +1999,7 @@
         }
       },
       {
-        "function": "_flamingo_layers",
+        "function": "init_flamingo_layers",
         "location": {
           "file": "src/helm/clients/vision_language/open_flamingo/src/flamingo_lm.py",
           "start_line": 106,
@@ -2118,7 +2118,7 @@
     "repo": "https://github.com/pymedusa/Medusa",
     "class_pollution_func": [
       {
-        "function": "er_fields",
+        "function": "iter_fields",
         "location": {
           "file": "ext/mako/_ast_util.py",
           "start_line": 94,
@@ -2229,7 +2229,7 @@
         }
       },
       {
-        "function": "_flamingo",
+        "function": "init_flamingo",
         "location": {
           "file": "mmgpt/models/open_flamingo/flamingo_lm.py",
           "start_line": 75,
@@ -2303,7 +2303,7 @@
     "repo": "https://github.com/blawar/nut",
     "class_pollution_func": [
       {
-        "function": "StateChanged",
+        "function": "onStateChanged",
         "location": {
           "file": "gui/panes/filters.py",
           "start_line": 24,
