@@ -18,21 +18,21 @@
  import semmle.python.dataflow.new.DataFlow
  import shared.Utils::ClassPolltionUtils
  import shared.types.PossibleGetOpNode
- import shared.Debug::Debugging
  import shared.Message::ClassPollutionMessage
  import vuln.ExternalInputTaintTrackingLib
+ import TrackingExternalInputToClassPollutionFlow::PathGraph
 
- module Flow = TrackingClassPollutionKeyToAssignmentFlow;
  module ExternalFlow = TrackingExternalInputToClassPollutionFlow;
  
  from Function func, DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode, string vulnType, string msg, PossibleGetOpNode getOpNode,
- DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode, string external, ExternalFlow::PathNode externalInput, Flow::PathNode sourceParamKeyFlowNode
+ DataFlow::Node setOpPrimdKeyNode, DataFlow::Node setOpSecondKeyNode, string external, ExternalFlow::PathNode externalInput, ExternalFlow::PathNode sourceParamKeyFlowNode
  where
  (
     isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, sourceParamObjNode, setOpPrimdKeyNode, setOpSecondKeyNode, _, _, vulnType, _, getOpNode) and
     flowFromExternalInput(externalInput.getNode(), sourceParamKeyFlowNode.getNode(), external) and
     sourceParamKeyFlowNode.getNode() = sourceParamKeyNode
   ) and
+  ExternalFlow::flowPath(externalInput, sourceParamKeyFlowNode) and
   func.getAnArg() = sourceParamKeyNode.asExpr() and
   // We don't need to restrict them twice here, as the isClassPollutedAssignment already does that.
   // The following line would cause the query stuck in the analysis (I don't know why right now).

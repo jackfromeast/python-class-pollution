@@ -27,7 +27,7 @@ import shared.Debug::Debugging
 module Flow = TrackingClassPollutionKeyToAssignmentFlow;
 
 
-from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg, PossibleGetOpNode getOpNode, PossibleGetOpNode getOpNode2,
+from Function func, Parameter sourceParamKey, Parameter sourceParamObj, string vulnType, string msg, PossibleGetOpNode getOpNode,
     Flow::PathNode setOpPrimKeyFlowNode, Flow::PathNode sourceParamKeyFlowNode, DataFlow::Node setOpSecondKeyNode
 where
   exists ( DataFlow::Node sourceParamKeyNode, DataFlow::Node sourceParamObjNode |
