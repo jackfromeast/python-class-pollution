@@ -60,6 +60,9 @@ class Pollutable:
         return None
       except TypeError as e:
         return None
+      except Exception as e:
+        # logging.debug(f"Failed to access attribute '{name}': {str(e)}")
+        return None
 
     def lookup_getboth(obj, name):
       if hasattr(obj, '__getitem__'):
@@ -68,7 +71,10 @@ class Pollutable:
           logging.debug(f"Accessed item: {name}")
           return (ret, 'item')
         except (KeyError, IndexError, TypeError, AttributeError) as e:
-          logging.debug(f"Failed to access item '{name}': {str(e)}")
+          # logging.debug(f"Failed to access item '{name}': {str(e)}")
+          pass
+        except Exception as e:
+          # logging.debug(f"Failed to access item '{name}': {str(e)}")
           pass
 
       try:
@@ -77,6 +83,9 @@ class Pollutable:
         return (ret, 'attr')
       except AttributeError as e:
         # logging.debug(f"Could not access attribute or item '{name}': {str(e)}")
+        return None
+      except Exception as e:
+        # logging.debug(f"Failed to access attribute or item '{name}': {str(e)}")
         return None
       
     if self.lookup_type == "getAttr":
