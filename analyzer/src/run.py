@@ -1,5 +1,6 @@
 from workflows.run_cp_analysis import ClassPollutionAnalysis
 from workflows.run_dependency_analysis import DependencyAnalysis
+from workflows.run_code_analysis_agent import CodeAnalysisAgent
 from argparse import ArgumentParser
 from utils.config import load_config, get_workflow_from_config
 
@@ -20,6 +21,8 @@ def main():
         scheduler = ClassPollutionAnalysis(args.config)
     elif workflow == "dependency_analysis":
         scheduler = DependencyAnalysis(args.config)
+    elif workflow == "code_analysis_agent":
+        scheduler = CodeAnalysisAgent(args.config)
     else:
         raise ValueError(f"Unknown workflow: {workflow}")
 

@@ -8,6 +8,7 @@ from utils.logger import LoggerFactory
 from utils.helper import resolve_repo_name, cleanup_folders, resolve_relative_path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from multiprocessing import Manager
+import json
 
 class BaseScheduler:
   def __init__(self, config_path):
@@ -22,6 +23,8 @@ class BaseScheduler:
       self.repo_list_path = self.config.SCHEDULER.REPO_LIST
       self.url_list_from = self.config.SCHEDULER.URL_LIST_FROM
       self.url_list_to = self.config.SCHEDULER.URL_LIST_TO
+    elif self.mode == "json":
+      self.repo_list_path = self.config.SCHEDULER.REPO_LIST
     
     manager = Manager()
     self.lock = manager.Lock()
@@ -45,6 +48,10 @@ class BaseScheduler:
         return urls[self.url_list_from:]
       else:
         return urls[self.url_list_from:self.url_list_to]
+    elif self.mode == "json":
+      with open(self.repo_list_path, "r") as f:
+        urls = json.load(f)
+      return urls
     else:
       return [self.config.SCHEDULER.REPO]
 
