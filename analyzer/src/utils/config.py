@@ -18,6 +18,8 @@ def get_workflow_from_config(config):
         return "class_pollution"
     elif config.get('WORKFLOW', {}).get('DEPENDENCY_ANALYSIS', False):
         return "dependency_analysis"
+    elif config.get('WORKFLOW', {}).get('CODE_ANALYSIS_AGENT', False):
+        return "code_analysis_agent"
     else:
         raise ValueError("No valid workflow specified in the config file.")
 

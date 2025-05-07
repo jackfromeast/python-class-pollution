@@ -154,6 +154,10 @@ class LoggerFactory:
           logging.INFO: "scheduler.info.log",
           logging.ERROR: "scheduler.error.log",
         },
+        "CodeAnalysisAgent": {
+          logging.INFO: "code_analysis_agent.info.log",
+          logging.ERROR: "code_analysis_agent.error.log",
+        }
       }
 
       # Default to "Other" if the logger name is not mapped

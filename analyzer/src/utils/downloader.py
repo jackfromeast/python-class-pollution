@@ -7,12 +7,13 @@ import subprocess
 from urllib.parse import urlparse
 from utils.logger import LoggerFactory
 
-def download(repo_url_or_package, repo_save_path):
+def download(repo_url_or_package, repo_save_path, codebase_name="codebase"):
   """
   Downloads a repository or package from the given input using the appropriate downloader.
 
   @params repo_url_or_package (str): The GitHub URL, PyPI URL, or package name.
   @params repo_save_path (str): The path where the repository or package will be saved.
+  @params codebase_name (str): The name of the codebase directory.
   """
   try:
     parsed_url = urlparse(repo_url_or_package)
@@ -45,7 +46,7 @@ def download(repo_url_or_package, repo_save_path):
     # If it's not a URL, assume it's a package name (with or without version)
     downloader = PipDownloader(repo_url_or_package, repo_save_path)
 
-  return downloader.clone_repo()
+  return downloader.clone_repo(codebase_name)
 
 class GithubDownloader:
   def __init__(self, repo_url, repo_save_path):
@@ -55,9 +56,12 @@ class GithubDownloader:
 
     self.logger = LoggerFactory.get_logger("GithubDownloader")
 
-  def clone_repo(self):
+  def clone_repo(self, codebase_name):
     """Clone the repository into the specified folder."""
-    codebase_save_path = os.path.join(self.repo_save_path, "codebase")
+    if codebase_name:
+      codebase_save_path = os.path.join(self.repo_save_path, codebase_name)
+    else:
+      codebase_save_path = self.repo_save_path
     self.logger.info(f"Cloning repository: {self.repo_url} to {codebase_save_path}")
 
     if os.path.exists(codebase_save_path):
