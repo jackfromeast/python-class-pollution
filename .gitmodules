@@ -1,0 +1,9 @@
+[submodule "analyzer/src/code_analysis_agent"]
+	path = analyzer/src/code_analysis_agent
+	url = git@github.com:superboy-zjc/CodeNL.git
+[submodule "analyzer/src/codeNL"]
+	path = analyzer/src/codeNL
+	url = git@github.com:superboy-zjc/CodeNL.git
+[submodule "analyzer/src/codenl"]
+	path = analyzer/src/codenl
+	url = git@github.com:superboy-zjc/CodeNL.git
