@@ -340,7 +340,6 @@ class CodeQLRunner:
             summary["details"].add(text_message)
             flow_count += 1
         
-        summary["details"] = list(summary["details"])
         self.logger.info(f"Processed {result_file}: {flow_count} flows detected.")
       except (json.JSONDecodeError, KeyError) as e:
         self.logger.error(f"Failed to process {result_file}: {e}")
@@ -349,6 +348,7 @@ class CodeQLRunner:
 
     try:
       with open(output_file, "w") as f:
+        summary["details"] = list(summary["details"])
         json.dump(summary, f, indent=2)
       self.logger.info(f"Summary saved to {output_file}")
     except Exception as e:

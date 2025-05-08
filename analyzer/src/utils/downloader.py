@@ -211,7 +211,7 @@ class PipDownloader:
     else:
       return package_input.strip(), None
 
-  def clone_repo(self):
+  def clone_repo(self, codebase_name="codebase"):
     """Clone the repository into the specified folder."""
     whl_save_path = os.path.join(self.repo_save_path, "wheel")
     codebase_save_path = os.path.join(self.repo_save_path, "codebase")
