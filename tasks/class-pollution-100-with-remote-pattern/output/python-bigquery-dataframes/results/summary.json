@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 6,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "This function [Function __call__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __exit__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __call__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _set_option](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _with_temporary](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __enter__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __exit__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _with_temporary](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __enter__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function set](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _set_option](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function set](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

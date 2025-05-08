@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "This function [Function objectpath](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 4 other functions.\nThis function [Function objectpath](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 4 other functions.",
+    "This function [Function walk](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function walk](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function __init__](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function objectpath](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function objectpath](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function walk](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 4 other functions.\nThis function [Function walk](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 4 other functions."
+  ]
+}

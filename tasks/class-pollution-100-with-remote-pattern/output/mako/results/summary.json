@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 15
+  },
+  "details": [
+    "This function [Function undeclared_identifiers](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _compile_module_file](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function write_toplevel](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function compile](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function genexpr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _compile](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function parse](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function iter_fields](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function iter_fields](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 54 other functions.",
+    "This function [Function _parse_attributes](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

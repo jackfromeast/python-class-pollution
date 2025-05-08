@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 6,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "This function [Function test_cache_set_valid_partial_and_get_uncached_paths](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions.\nThis function [Function test_cache_set_valid_partial_and_get_uncached_paths](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function test_cache_set_valid_partial_and_get_uncached_paths](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function test_cache_set_valid_partial_and_get_uncached_paths](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions."
+  ]
+}

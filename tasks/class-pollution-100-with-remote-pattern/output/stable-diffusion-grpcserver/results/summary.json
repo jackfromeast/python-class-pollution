@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 6,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "This function [Function _load_engine](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function loadPipelines](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function loadPipelines](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _load_from_reference](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _load_engine](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _load_model](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _load_model](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _load_from_reference](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

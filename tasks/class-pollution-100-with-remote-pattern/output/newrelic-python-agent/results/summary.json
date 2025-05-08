@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 33
+  },
+  "details": [
+    "This function [Function resolve_path](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 54 other functions.",
+    "This function [Function apply_config_setting](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _apply_high_security_mode_fixups](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _process_setting](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _background_task_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _remove_ignored_configs](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _module_function_glob](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function json_decode](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _external_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _error_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _memcache_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _profile_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _generator_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function decode_response](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _function_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function resolve_path](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function dictcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _transaction_name_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _database_trace_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _instrument](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _wsgi_application_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function fetch_config_setting](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _function_profile_import_hook](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function patch_function_wrapper](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

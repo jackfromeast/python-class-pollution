@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 10
+  },
+  "details": [
+    "This function [Function report_vulnerability](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function emit](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _parse_list](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _prepare_message](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function to_dict](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function start](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _parse_dict](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _parse_dict](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 6 other functions.",
+    "This function [Function emit_raw](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 3
+  },
+  "details": [
+    "This function [Function _update_enum](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function update](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function _update_class](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions."
+  ]
+}
