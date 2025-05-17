@@ -1,7 +1,7 @@
 ---
 library: true
 warnOnImplicitThis: false
-name: jackfromeast/codeql-checker
+name: jackfromeast/prevalence-checker
 version: 0.0.1
 dependencies:
   codeql/python-all: "*"
