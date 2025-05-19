@@ -25,13 +25,13 @@ KNOWN_CLASS_POLLUTION_FOLDER_PATH = "dataset/manually-checked"
 TRUE_POSITIVES_FILE_PATH = "dataset/manually-checked/The Python World-Class Pollution - All-in-one-0326.csv"
 
 # Result CSV columns
-CSV_COLUMNS = ["Application", "Stars", "URL", "Confirmed", "CodeQL", "FP Reason", "GetType", "SetType", "Input", "Remote", "Local", "Status", "Comment", "NewlyAdded"]
-HEADER_ROWS = """Application,Stars,URL,Confirmed,Codeql,FP Reason,Types,,Input,,,Status,Comment
-,,,,,,Get,Set,,Remote,Local,,
+CSV_COLUMNS = ["Application", "Stars", "URL", "CodeQL","Confirmed (Function-level)", "Func Name (Path)","FP Reason", "GetType", "SetType", "Triggering", "Remote", "Local", "Status", "Comment", "NewlyAdded"]
+HEADER_ROWS = """Application,Stars,URL,Codeql,Confirmed (Function-level),Func Name (Path),FP Reason (If Not),Types,,Input,,,Status,Comment,New
+,,,,,,,Get,Set,Triggering,Remote Pattern,Local Pattern,,,
 """
 
 # Result CSV columns for pip
-CSV_COLUMNS_PIP = ["Application", "Downloads", "URL", "Confirmed", "CodeQL", "FP Reason", "GetType", "SetType", "Input", "Remote", "Local", "Status", "Comment", "NewlyAdded"]
-HEADER_ROWS = """Application,Downloads,URL,Confirmed,Codeql,FP Reason,Types,,Input,,,Status,Comment
-,,,,,,Get,Set,,Remote,Local,,
+CSV_COLUMNS_PIP = ["Application", "Downloads", "URL", "CodeQL","Confirmed (Function-level)", "Func Name (Path)","FP Reason", "GetType", "SetType", "Triggering", "Remote", "Local", "Status", "Comment", "NewlyAdded"]
+HEADER_ROWS = """Application,Downloads,URL,Codeql,Confirmed (Function-level),Func Name (Path),FP Reason (If Not),Types,,Input,,,Status,Comment,New
+,,,,,,,Get,Set,Triggering,Remote Pattern,Local Pattern,,,
 """
