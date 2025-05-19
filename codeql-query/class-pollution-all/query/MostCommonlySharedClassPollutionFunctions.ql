@@ -26,7 +26,15 @@
 
   ClassPollutionFunction() {
     exists (DataFlow::Node sourceParamKeyNode |
-      isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) and
+      (
+        isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) or
+        isClassPollutedAssignmentSetItemGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) or
+        isClassPollutedAssignmentSetBothGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) or
+        isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _, _) or
+        isClassPollutedAssignmentSetAttrGetBothStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _, _) or
+        isClassPollutedAssignmentSetBothGetBothStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _, _) 
+      )
+      and
       this.getAnArg() = sourceParamKeyNode.asExpr()
     )
   }

@@ -5,7 +5,7 @@
  * @problem.severity warning
  * @security-severity 6.1
  * @sub-severity low
- * @id py/class-polliution/shared-class-pollution-functions
+ * @id py/class-polliution/leaf-class-pollution-functions
  * @tags security
  *       external/cwe/cwe-915
  * @precision high
@@ -26,7 +26,15 @@
 
   ClassPollutionFunction() {
     exists (DataFlow::Node sourceParamKeyNode |
-      isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) and
+      (
+        isClassPollutedAssignmentSetAttrGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) or
+        isClassPollutedAssignmentSetItemGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) or
+        isClassPollutedAssignmentSetBothGetAttrStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _) or
+        isClassPollutedAssignmentSetItemGetBothStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _, _) or
+        isClassPollutedAssignmentSetAttrGetBothStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _, _) or
+        isClassPollutedAssignmentSetBothGetBothStrict(sourceParamKeyNode, _, _, _, _, _, vulnType, _, _, _) 
+      )
+      and
       this.getAnArg() = sourceParamKeyNode.asExpr()
     )
   }
