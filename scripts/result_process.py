@@ -14,6 +14,13 @@ python result_process.py summary --pip --result /home/jackfromeast/Desktop/pytho
 python result_process.py update --result /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/logs/result.log --csv "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - Github-Top-1K-0412.csv"
 python result_process.py update --pip --result /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-top-10K-downloads/logs/result.log --csv "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - PIP-Top-10K-0414.csv"
 
+python result_process.py update --pip \
+  --result \
+    /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-0-26124/logs/result.log \
+    /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-30K-60K/logs/result.log \
+    /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-26124-30K/logs/result.log \
+  --csv "/home/jackfromeast/Desktop/python-class-pollution/dataset/manually-checked/The Python World-Class Pollution - PIP-Top-10K-0410.csv"
+  
 4/ Compare the new flagged repositories with all manually checked repositories:
 python result_process.py compare --result /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/logs/result.log
 
@@ -27,7 +34,7 @@ from result_processor_lib import update_csv, summary_csv, compare_result, compar
 def main():
   parser = argparse.ArgumentParser(description="Summarize flagged repositories from result.log.")
   parser.add_argument('action', choices=['update', 'summary', 'compare', 'clean', 'compare_true_positives'], help='Action to perform')
-  parser.add_argument("--result", help="Path to the result.log file")
+  parser.add_argument("--result", nargs='+', help="Path to the result.log file")
   parser.add_argument("--pip", action='store_true', help="Use pip metadata")
   parser.add_argument("--csv", nargs='+', help="Paths to the CSV files to be updated")
   parser.add_argument("--output", help="Output CSV file name (default: same folder as result.log)")
@@ -41,7 +48,7 @@ def main():
     if args.output:
       output_file = args.output
     else:
-      log_dir = os.path.dirname(args.result)
+      log_dir = os.path.dirname(args.result[0])
       output_file = os.path.join(log_dir, "updated_results.csv")
 
     update_csv(args.result, args.csv, output_file, args.pip)
@@ -54,7 +61,7 @@ def main():
     if args.output:
       output_file = args.output
     else:
-      log_dir = os.path.dirname(args.result)
+      log_dir = os.path.dirname(args.result[0])
       output_file = os.path.join(log_dir, "results.csv")
     
     if hasattr(args, 'filter') and args.filter:

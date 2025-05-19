@@ -135,13 +135,15 @@ def generate_csv_output(flagged_repos, repo_metadata, output_file, all_known_rep
         clean_repo = {col: repo.get(col, "") for col in CSV_COLUMNS}
       writer.writerow(clean_repo)
 
-def summary_csv(log_file, output_file, filter=False, use_pip_metadata=False):
+def summary_csv(result_files, output_file, filter=False, use_pip_metadata=False):
   if use_pip_metadata:
     repo_metadata = load_pip_metadata(PIP_METADATA_PATH)
   else:
     repo_metadata = load_metadata(METADATA_PATH)
 
-  flagged_repos = parse_result_log(log_file)
+  flagged_repos = []
+  for rf in result_files:
+      flagged_repos += parse_result_log(rf)
 
   filter_repos = None
   if filter:

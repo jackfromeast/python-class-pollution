@@ -139,13 +139,15 @@ def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_fil
       writer.writerow(clean_repo)
 
 
-def update_csv(result_file, csv_files, output_file, use_pip_metadata=False):
+def update_csv(result_files, csv_files, output_file, use_pip_metadata=False):
   if use_pip_metadata:
     repo_metadata = load_pip_metadata(PIP_METADATA_PATH)
   else:
     repo_metadata = load_metadata(METADATA_PATH)
 
-  flagged_repos = parse_result_log(result_file)
+  flagged_repos = []
+  for rf in result_files:
+    flagged_repos += parse_result_log(rf)
 
   existing_repos = []
   for csv_file in csv_files:
