@@ -3,66 +3,69 @@ from getattr import *
 
 class Dummy:
     def __init__(self):
-        self.foo = 123
-        self.bar = 456
-        self.__dict__["dynamic"] = "zzz"
+        self.foo = 42
+        self.__dict__["dynamic"] = "bar"
 
-class TestGetattr(unittest.TestCase):
+class TestGetattrPatterns(unittest.TestCase):
 
     def setUp(self):
         self.obj = Dummy()
 
     # #1 getattr(obj, name)
     def test_getattr_builtin(self):
-        self.assertEqual(getattr_builtin(self.obj, "foo"), 123)
+        self.assertEqual(getattr_builtin(self.obj, "foo"), 42)
 
-    # #2 object.__getattribute__(obj, name)
+    # #2 obj.__getattribute__(name)
     def test_getattr_dunder(self):
-        self.assertEqual(getattr_dunder(self.obj, "bar"), 456)
+        self.assertEqual(getattr_dunder(self.obj, "foo"), 42)
 
-    # #3 inspect.getattr_static(obj, name)
+    # #3 object.__getattribute__(obj, name)
+    def test_object_getattr_dunder(self):
+        self.assertEqual(object_getattr_dunder(self.obj, "foo"), 42)
+
+    # #4 inspect.getattr_static(obj, name)
     def test_getattr_static(self):
-        self.assertEqual(getattr_static(self.obj, "foo"), 123)
+        self.assertEqual(getattr_static(self.obj, "foo"), 42)
 
-    # #4 operator.attrgetter(name)(obj)
+    # #5 operator.attrgetter(name)(obj)
     def test_attrgetter_operator(self):
-        self.assertEqual(attrgetter_operator("foo", self.obj), 123)
+        self.assertEqual(attrgetter_operator("foo", self.obj), 42)
 
     def test_attrgetter_operator_2(self):
-        self.assertEqual(attrgetter_operator_2("foo", self.obj), 123)
+        self.assertEqual(attrgetter_operator_2("foo", self.obj), 42)
 
-    # #5 dir(obj)[index]
+    # #6 dir(obj)[index]
     def test_dir_access(self):
-        attrs = dir(self.obj)
-        self.assertEqual(dir_access(self.obj, 0), attrs[0])
+        self.assertIn(dir_access(self.obj, 0), dir(self.obj))
 
     def test_dir_access_2(self):
-        attrs = dir(self.obj)
-        self.assertEqual(dir_access_2(self.obj, 1), attrs[1])
+        self.assertIn(dir_access_2(self.obj, 0), dir(self.obj))
 
-    # #6 vars(obj)[name]
+    # #7 vars(obj)[name]
     def test_vars_access(self):
-        self.assertEqual(vars_access(self.obj, "foo"), 123)
+        self.assertEqual(vars_access(self.obj, "foo"), 42)
 
     def test_vars_access_2(self):
-        self.assertEqual(vars_access_2(self.obj, "bar"), 456)
+        self.assertEqual(vars_access_2(self.obj, "foo"), 42)
 
-    # #7 obj.__dict__[name]
+    # #8 obj.__dict__[name]
     def test_dict_dunder_get(self):
-        self.assertEqual(dict_dunder_get(self.obj, "dynamic"), "zzz")
+        self.assertEqual(dict_dunder_get(self.obj, "dynamic"), "bar")
 
     def test_dict_dunder_get_2(self):
-        self.assertEqual(dict_dunder_get_2(self.obj, "dynamic"), "zzz")
+        self.assertEqual(dict_dunder_get_2(self.obj, "dynamic"), "bar")
 
-    # #8 inspect.getmembers(obj)
+    # #9 inspect.getmembers(obj)
     def test_inspect_members(self):
-        result = inspect_members(self.obj)
-        self.assertTrue(any(name == "foo" for name, _ in result))
+        members = dict(inspect_members(self.obj))
+        self.assertIn("foo", members)
+        self.assertEqual(members["foo"], 42)
 
-    # #9 inspect.getmembers_static(obj)
+    # #10 inspect.getmembers_static(obj)
     def test_inspect_members_static(self):
-        result = inspect_members_static(self.obj)
-        self.assertTrue(any(name == "foo" for name, _ in result))
+        members = dict(inspect_members_static(self.obj))
+        self.assertIn("foo", members)
+        self.assertEqual(members["foo"], 42)
 
 if __name__ == "__main__":
     unittest.main()

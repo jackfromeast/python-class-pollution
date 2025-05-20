@@ -22,6 +22,18 @@ class TestEvalAndExec(unittest.TestCase):
     def test_exec_getattr(self):
         self.assertEqual(exec_getattr(self.obj, "foo"), 42)
 
+    def test_eval_dunder_getattribute(self):
+        self.assertEqual(eval_dunder_getattribute(self.obj, "foo"), 42)
+
+    def test_exec_dunder_getattribute(self):
+        self.assertEqual(exec_dunder_getattribute(self.obj, "foo"), 42)
+
+    def test_eval_object_dunder_getattribute(self):
+        self.assertEqual(eval_object_dunder_getattribute(self.obj, "foo"), 42)
+
+    def test_exec_object_dunder_getattribute(self):
+        self.assertEqual(exec_object_dunder_getattribute(self.obj, "foo"), 42)
+
     def test_eval_inspect_getattr_static(self):
         self.assertEqual(eval_inspect_getattr_static(self.obj, "foo"), 42)
 
@@ -72,6 +84,12 @@ class TestEvalAndExec(unittest.TestCase):
         d = {"x": "y"}
         self.assertEqual(exec_dict_pop(d, "x"), "y")
 
+    def test_eval_dict_dunder_getitem(self):
+        self.assertEqual(eval_dict_dunder_getitem(self.d, "foo"), 123)
+
+    def test_exec_dict_dunder_getitem(self):
+        self.assertEqual(exec_dict_dunder_getitem(self.d, "foo"), 123)
+
     def test_eval_operator_getitem(self):
         self.assertEqual(eval_operator_getitem(self.d, "foo"), 123)
 
@@ -96,6 +114,16 @@ class TestEvalAndExec(unittest.TestCase):
         exec_setattr(self.obj, "bar", 777)
         self.assertEqual(self.obj.bar, 777)
 
+    def test_eval_object_dunder_setattr(self):
+        o = Dummy()
+        eval_object_dunder_setattr(o, "a", 1)
+        self.assertEqual(o.a, 1)
+
+    def test_exec_object_dunder_setattr(self):
+        o = Dummy()
+        exec_object_dunder_setattr(o, "a", 2)
+        self.assertEqual(o.a, 2)
+
     def test_exec_obj_dict(self):
         exec_obj_dict(self.obj, "baz", "hello")
         self.assertEqual(self.obj.__dict__["baz"], "hello")
@@ -104,6 +132,26 @@ class TestEvalAndExec(unittest.TestCase):
         d = {}
         exec_dict_index_set(d, "x", 99)
         self.assertEqual(d["x"], 99)
+
+    def test_eval_dict_update(self):
+        d = {}
+        eval_dict_update(d, "foo", 999)
+        self.assertEqual(d["foo"], 999)
+
+    def test_exec_dict_update(self):
+        d = {}
+        exec_dict_update(d, "bar", 888)
+        self.assertEqual(d["bar"], 888)
+
+    def test_eval_dict_dunder_setitem(self):
+        d = {}
+        eval_dict_dunder_setitem(d, "q", 777)
+        self.assertEqual(d["q"], 777)
+
+    def test_exec_dict_dunder_setitem(self):
+        d = {}
+        exec_dict_dunder_setitem(d, "w", 666)
+        self.assertEqual(d["w"], 666)
 
     def test_exec_operator_setitem(self):
         d = {}
