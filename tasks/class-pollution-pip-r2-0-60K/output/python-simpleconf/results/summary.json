@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-both": 2,
+    "py/class-polliution/set-item-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "This function [Function load](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function load](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function load_one](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function load_one](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function load_one](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for eval()](4).\nType:SetItem-GetAttr Class pollution function: [Function load_one](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set item key: [ControlFlowNode for key](5). Get attribute op: [ControlFlowNode for eval()](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function load](1), with key source: [ControlFlowNode for conf](2), and object source: [ControlFlowNode for conf](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for eval()](4).\nType:SetItem-GetAttr Class pollution function: [Function load](1), with key source: [ControlFlowNode for conf](2), and object source: [ControlFlowNode for conf](2). Set item key: [ControlFlowNode for key](5). Get attribute op: [ControlFlowNode for eval()](4).",
+    "This function [Function load](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions.\nThis function [Function load](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetItem-GetBoth Class pollution function: [Function load_one](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).\nType:SetItem-GetBoth Class pollution function: [Function load_one](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set item key: [ControlFlowNode for key](5). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).",
+    "This function [Function load_one](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions.\nThis function [Function load_one](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetItem-GetBoth Class pollution function: [Function load](1), with key source: [ControlFlowNode for conf](2), and object source: [ControlFlowNode for conf](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).\nType:SetItem-GetBoth Class pollution function: [Function load](1), with key source: [ControlFlowNode for conf](2), and object source: [ControlFlowNode for conf](2). Set item key: [ControlFlowNode for key](5). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4)."
+  ]
+}

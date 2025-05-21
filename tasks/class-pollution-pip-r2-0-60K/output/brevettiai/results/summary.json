@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 1,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function _serialize](1), with key source: [ControlFlowNode for ns](2), and object source: [ControlFlowNode for ns](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function _serialize](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _serialize](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

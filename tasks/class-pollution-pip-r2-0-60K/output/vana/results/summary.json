@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-both": 5,
+    "py/class-polliution/set-item-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 4
+  },
+  "details": [
+    "Type:SetItem-GetBoth Class pollution function: [Function create_config](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5).",
+    "Type:SetItem-GetAttr Class pollution function: [Function __split_params__](1), with key source: [ControlFlowNode for params](2), and object source: [ControlFlowNode for params](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetItem-GetBoth Class pollution function: [Function __split_params__](1), with key source: [ControlFlowNode for params](2), and object source: [ControlFlowNode for params](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5).",
+    "Type:SetItem-GetAttr Class pollution function: [Function create_config](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function __parse_args__](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function create_config](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 2 other functions.\nThis function [Function create_config](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function __init__](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function __init__](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function __split_params__](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function __split_params__](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function create_config](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function create_config](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetBoth Class pollution function: [Function __parse_args__](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5).",
+    "Type:SetItem-GetBoth Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set item key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5).",
+    "This function [Function __parse_args__](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function __parse_args__](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions."
+  ]
+}

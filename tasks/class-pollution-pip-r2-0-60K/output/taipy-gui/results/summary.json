@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 7,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 5
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function _attrsetter](1), with key source: [ControlFlowNode for attr_str](2), and object source: [ControlFlowNode for attr_str](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _variable_decode](1), with key source: [ControlFlowNode for var_name](2), and object source: [ControlFlowNode for var_name](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _variable_decode](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _setscopeattr_drill](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function refresh](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _setscopeattr_drill](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _attrsetter](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function _expr_decode](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function re_evaluate_expr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _attrsetter](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _expr_decode](1), with key source: [ControlFlowNode for s](2), and object source: [ControlFlowNode for s](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function re_evaluate_expr](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function re_evaluate_expr](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for var_name](5). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function re_evaluate_expr](1), with key source: [ControlFlowNode for var_name](5), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function re_evaluate_expr](1), with key source: [ControlFlowNode for var_name](5), and object source: [ControlFlowNode for var_name](5). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function assign](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

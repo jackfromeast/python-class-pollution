@@ -1,0 +1,8 @@
+2025-05-20 23:18:48,504 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-0-60K/output/conan-server/codebase (logger.py:42)
+2025-05-20 23:19:00,557 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-0-60K/output/conan-server/codeql-db (logger.py:42)
+2025-05-20 23:19:00,557 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-pip-r2-0-60K/output/conan-server/codeql-db (logger.py:42)
+2025-05-20 23:19:00,557 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-05-20 23:37:20,657 - CodeQLRunner - ERROR - Query timed out for conan-server: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-05-20 23:37:21,239 - CodeQLRunner - INFO - Terminated all spawned processes for PID 2473437 (logger.py:42)
+2025-05-20 23:37:21,239 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
+2025-05-20 23:37:21,240 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution-function-only.qls (logger.py:42)

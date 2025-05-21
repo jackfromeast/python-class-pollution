@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 5,
+    "py/class-polliution/leaf-class-pollution-functions": 5
+  },
+  "details": [
+    "This function [Function _load_config_line](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function lambda](1), with key source: [ControlFlowNode for _](2), and object source: [ControlFlowNode for _](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _calculate_overriding_environment_variables](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function dictcomp](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _load_config_line](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _calculate_overriding_environment_variables](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _load_config_line](1), with key source: [ControlFlowNode for setting](2), and object source: [ControlFlowNode for setting](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dictcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function lambda](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function dictcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _calculate_overriding_environment_variables](1), with key source: [ControlFlowNode for memo](2), and object source: [ControlFlowNode for memo](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function lambda](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

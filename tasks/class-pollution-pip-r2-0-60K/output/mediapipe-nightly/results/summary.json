@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "This function [Function create_graph_options](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function create_graph_options](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for min_detection_confidence](2), and object source: [ControlFlowNode for min_detection_confidence](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function create_graph_options](1), with key source: [ControlFlowNode for values](2), and object source: [ControlFlowNode for values](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

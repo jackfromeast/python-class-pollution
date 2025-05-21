@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 7,
+    "py/class-polliution/shared-class-pollution-functions": 7,
+    "py/class-polliution/leaf-class-pollution-functions": 7
+  },
+  "details": [
+    "This function [Function __to_sigmatau_table](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __to_dstability_stochastic_parameter](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _to_dstability](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __to_dstability_stochastic_parameter](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _to_dgeoflow](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __to_sigmatau_table](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _to_dstability](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function __to_su_table](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __to_dstability_stochastic_parameter](1), with key source: [ControlFlowNode for stochastic_parameter](2), and object source: [ControlFlowNode for stochastic_parameter](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _to_dstability](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _to_dsettlement](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __transfer_soil_dict_to_model](1), with key source: [ControlFlowNode for soil_dict](2), and object source: [ControlFlowNode for soil_dict](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function __transfer_soil_dict_to_model](1), with key source: [ControlFlowNode for soil_dict](2), and object source: [ControlFlowNode for model_soil](5). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function __transfer_soil_dict_to_model](1), with key source: [ControlFlowNode for model_soil](5), and object source: [ControlFlowNode for soil_dict](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function __transfer_soil_dict_to_model](1), with key source: [ControlFlowNode for model_soil](5), and object source: [ControlFlowNode for model_soil](5). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _to_dsettlement](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __to_su_table](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __transfer_soil_dict_to_model](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __to_sigmatau_table](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _to_dsettlement](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _to_dgeoflow](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function __transfer_soil_dict_to_model](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __to_su_table](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _to_dgeoflow](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

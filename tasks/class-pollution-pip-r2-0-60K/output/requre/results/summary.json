@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 4,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function revert](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for main_key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __exit__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for main_key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _apply_module_replacement](1), with key source: [ControlFlowNode for module](2), and object source: [ControlFlowNode for what](3). Set attribute key: [ControlFlowNode for Attribute](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function _revert_modules](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _revert_modules](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function _apply_module_replacement](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _revert_modules](1), with key source: [ControlFlowNode for module_list](2), and object source: [ControlFlowNode for module_list](2). Set attribute key: [ControlFlowNode for main_key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}
