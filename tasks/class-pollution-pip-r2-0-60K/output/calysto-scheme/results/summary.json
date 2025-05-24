@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_external_member_b](1), with key source: [ControlFlowNode for components](2), and object source: [ControlFlowNode for components](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function set_external_member_b](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_external_member_b](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function b_fail_4_d](1), with key source: [ControlFlowNode for components](2), and object source: [ControlFlowNode for components](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

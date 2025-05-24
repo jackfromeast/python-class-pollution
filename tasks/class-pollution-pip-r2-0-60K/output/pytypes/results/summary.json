@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 13,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 10
+  },
+  "details": [
+    "This function [Function typelogged_module](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _typechecked_class](1), with key source: [ControlFlowNode for cls](2), and object source: [ControlFlowNode for cls](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function typelogged_class](1), with key source: [ControlFlowNode for cls](2), and object source: [ControlFlowNode for cls](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function typelogged](1), with key source: [ControlFlowNode for memb](2), and object source: [ControlFlowNode for memb](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function typelogged_module](1), with key source: [ControlFlowNode for md](2), and object source: [ControlFlowNode for md](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function typelogged](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function lambda](1), with key source: [ControlFlowNode for t](2), and object source: [ControlFlowNode for t](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function typelogged_class](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function typechecked_module](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function typechecked](1), with key source: [ControlFlowNode for memb](2), and object source: [ControlFlowNode for memb](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function typechecked](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function typechecked_class](1), with key source: [ControlFlowNode for cls](2), and object source: [ControlFlowNode for cls](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function typechecked_module](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function typechecked_module](1), with key source: [ControlFlowNode for md](2), and object source: [ControlFlowNode for md](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function _typechecked_class](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-both": 1,
+    "py/class-polliution/set-item-get-attr": 1,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function readFromRequest](1), with key source: [ControlFlowNode for handler](2), and object source: [ControlFlowNode for handler](2). Set item key: [ControlFlowNode for backName](3). Get attribute op: [ControlFlowNode for eval()](4).\nType:SetItem-GetAttr Class pollution function: [Function readFromRequest](1), with key source: [ControlFlowNode for handler](2), and object source: [ControlFlowNode for handler](2). Set item key: [ControlFlowNode for backName](3). Get attribute op: [ControlFlowNode for eval()](5).",
+    "Type:SetItem-GetBoth Class pollution function: [Function readFromRequest](1), with key source: [ControlFlowNode for handler](2), and object source: [ControlFlowNode for handler](2). Set item key: [ControlFlowNode for backName](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).\nType:SetItem-GetBoth Class pollution function: [Function readFromRequest](1), with key source: [ControlFlowNode for handler](2), and object source: [ControlFlowNode for handler](2). Set item key: [ControlFlowNode for backName](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](5).\nType:SetItem-GetBoth Class pollution function: [Function readFromRequest](1), with key source: [ControlFlowNode for handler](2), and object source: [ControlFlowNode for handler](2). Set item key: [ControlFlowNode for backName](3). Get attribute op: [ControlFlowNode for eval()](5). Get item op: [ControlFlowNode for eval()](4).\nType:SetItem-GetBoth Class pollution function: [Function readFromRequest](1), with key source: [ControlFlowNode for handler](2), and object source: [ControlFlowNode for handler](2). Set item key: [ControlFlowNode for backName](3). Get attribute op: [ControlFlowNode for eval()](5). Get item op: [ControlFlowNode for eval()](5).",
+    "This function [Function readFromRequest](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions.\nThis function [Function readFromRequest](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function readFromRequest](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function readFromRequest](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions."
+  ]
+}

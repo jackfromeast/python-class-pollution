@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function __getitem__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for v](2), and object source: [ControlFlowNode for v](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function taint](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function __setattr__](1), with key source: [ControlFlowNode for value](2), and object source: [ControlFlowNode for value](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function __iter__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function taint](1), with key source: [ControlFlowNode for v](2), and object source: [ControlFlowNode for v](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function taint](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 6 other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function __setitem__](1), with key source: [ControlFlowNode for value](2), and object source: [ControlFlowNode for value](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4)."
+  ]
+}

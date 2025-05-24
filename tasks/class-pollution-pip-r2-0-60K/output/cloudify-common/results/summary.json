@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-both": 2,
+    "py/class-polliution/set-item-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "This function [Function process_ctx_request](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 2 other functions.\nThis function [Function process_ctx_request](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 2 other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function process](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for request](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetItem-GetAttr Class pollution function: [Function process](1), with key source: [ControlFlowNode for request](3), and object source: [ControlFlowNode for request](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetItem-GetBoth Class pollution function: [Function process_ctx_request](1), with key source: [ControlFlowNode for ctx](2), and object source: [ControlFlowNode for args](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).\nType:SetItem-GetBoth Class pollution function: [Function process_ctx_request](1), with key source: [ControlFlowNode for args](3), and object source: [ControlFlowNode for args](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetItem-GetAttr Class pollution function: [Function process_ctx_request](1), with key source: [ControlFlowNode for ctx](2), and object source: [ControlFlowNode for args](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetItem-GetAttr Class pollution function: [Function process_ctx_request](1), with key source: [ControlFlowNode for args](3), and object source: [ControlFlowNode for args](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function process_ctx_request](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function process_ctx_request](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetBoth Class pollution function: [Function process](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for request](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).\nType:SetItem-GetBoth Class pollution function: [Function process](1), with key source: [ControlFlowNode for request](3), and object source: [ControlFlowNode for request](3). Set item key: [ControlFlowNode for prop_name](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

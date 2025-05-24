@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_symbol](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for child](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function set_symbol](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for group](5). Set attribute key: [ControlFlowNode for child](3). Get attribute op: [ControlFlowNode for getattr()](6).\nType:SetAttr-GetAttr Class pollution function: [Function set_symbol](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for group](5). Set attribute key: [ControlFlowNode for child](3). Get attribute op: [ControlFlowNode for getattr()](7).",
+    "This function [Function fixName](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for BinaryExpr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function add_component](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for BinaryExpr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function fixName](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function set_symbol](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function new_group](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for child](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function add_component](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function fixName](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for BinaryExpr](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function fixName](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for child](5). Get attribute op: [ControlFlowNode for getattr()](6)."
+  ]
+}

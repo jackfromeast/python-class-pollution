@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 4,
+    "py/class-polliution/shared-class-pollution-functions": 4,
+    "py/class-polliution/leaf-class-pollution-functions": 4
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function __delitem__](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for self](3). Set attribute key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function __delitem__](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function __setitem__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function otv](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _from_dict](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function __delitem__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _from_dict](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __delitem__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __setitem__](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for self](3). Set attribute key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function __setitem__](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function __setitem__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _from_dict](1), with key source: [ControlFlowNode for d](2), and object source: [ControlFlowNode for d](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function otv](1), with key source: [ControlFlowNode for n_backtests](2), and object source: [ControlFlowNode for n_backtests](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function otv](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}
