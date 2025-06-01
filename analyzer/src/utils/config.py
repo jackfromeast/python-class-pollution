@@ -88,8 +88,32 @@ class Config:
         self.config.LOG.LOG_PATH = os.path.join(workspace, "logs")
 
       # Resolve REPO_LIST (if it's a relative path)
+      repo_list_candidates = []
       if not os.path.isabs(self.config.SCHEDULER.REPO_LIST):
-        self.config.SCHEDULER.REPO_LIST = os.path.join(workspace, "input", self.config.SCHEDULER.REPO_LIST)
+        candidate = os.path.join(workspace, "input", self.config.SCHEDULER.REPO_LIST)
+        repo_list_candidates.append(candidate)
+      else:
+        repo_list_candidates.append(self.config.SCHEDULER.REPO_LIST)
+
+      # 2. dataset/pip/<REPO_LIST>
+      repo_list_candidates.append(
+        os.path.join(resolve_relative_path("dataset/pip/"), self.config.SCHEDULER.REPO_LIST)
+      )
+      # 3. dataset/github/<REPO_LIST>
+      repo_list_candidates.append(
+        os.path.join(resolve_relative_path("dataset/github/"), self.config.SCHEDULER.REPO_LIST)
+      )
+
+      for candidate in repo_list_candidates:
+        if os.path.exists(candidate):
+          self.config.SCHEDULER.REPO_LIST = candidate
+          break
+      else:
+        raise FileNotFoundError(
+          f"REPO_LIST not found in any of the default locations: {repo_list_candidates}"
+        )
+    
+              
 
   def __getattr__(self, name):
     """Safely access attributes from `self.config` to avoid infinite recursion."""
