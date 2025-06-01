@@ -5,6 +5,7 @@ wheel
 *.pyc
 *-db
 __pycache__
+tasks/archived
 output/**
 !output/*/results/
 !output/*/results/**
