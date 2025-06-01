@@ -1,0 +1,64 @@
+WORKFLOW:
+  DEPENDENCY_ANALYSIS: False
+  CLASS_POLLUTION_ANALYSIS: True
+  DYNAMIC_VERIFIER: False
+
+SCHEDULER:
+  TEST_NAME: "CLASS-POLLUTION-ANALYSIS-CODEQL"
+
+  # Path to workspace (base directory for storing results)
+  # WORKSPACE/output will be created to store the results
+  WORKSPACE: "tasks/class-pollution-pip-r2-370K-420K"
+
+  MODE: "list" # Option: "seed" or "list"
+  REPO: "https://pypi.org/project/ujson/"
+  REPO_LIST: "pip_all_packages_download_last_month_03_2025.txt" # Relative path to WORKSPACE/input/ or absolute path
+  URL_LIST_FROM: 370000
+  URL_LIST_TO: 420000
+  
+  # Maximum number of workers to run in parallel
+  MAX_WORKER: 5
+
+  # Time budget for each worker to analyze each repo
+  # TIMEOUT_PER_WORKER > CODEQL.TIMEOUT * Queries.length
+  TIMEOUT_PER_WORKER: 1200 # 10 minutes
+
+CODEQL:
+  CLI: "/home/class-pollution/codeql/codeql"
+  THREADS: 2
+  RAM: 16384 # MB
+  TIMEOUT: 1000 # 20 minutes
+  USE_MODEL_PACK: True
+  MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
+  MODEL_PACK_PATH: codeql-query/library-models
+  
+
+DEPENDENCY_ANALYSIS:
+  USE_CACHE: True
+  CACHE_PATH: "codeql-query/library-models"
+  QUERY_MODE: query # query or qlpack
+  QUERIES:
+    SOURCE: "codeql-query/class-pollution-all/query/DependencyClassPollutionSource.ql"
+    SINK: "codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql"
+    SUMMARY: "codeql-query/class-pollution-all/query/DependencyClassPollutionTaintProp.ql"
+    TYPE: ""
+
+  DEBUG: True
+
+CLASS_POLLUTION_ANALYSIS:
+  QUERY_MODE: query # query or qlpack
+  QUERIES: [
+    "codeql-query/class-pollution-all/class-pollution.qls"
+  ]
+
+  DELETE_AFTER_QUERY: False # False when debugging
+  DELETE_IF_NO_FLOWS: True
+
+LOG:
+  LOG_PATH: "" # Default: WORKSPACE/log
+  LOG_TO_CONSOLE: True
+  LOG_TO_LOCAL_FILE: True # WORKSPACE/output/{repo}/log/{LEVEL}.log
+  LOG_TO_GLOBAL_FILE: True # WORKSPACE/log/analysis/error.log
+  LOG_RESULT: True  # WORKSPACE/log/result.log
+  LOG_LEVEL: "INFO"
+  LOG_ERROR_DETAILS: False
