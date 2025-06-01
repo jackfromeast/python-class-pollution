@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-attr": 1
+  },
+  "details": [
+    "Type:SetBoth-GetAttr Class pollution function: [Function __iter__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

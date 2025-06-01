@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function runmacro](1), with key source: [ControlFlowNode for cmdlist](2), and object source: [ControlFlowNode for cmdlist](2). Set attribute key: [ControlFlowNode for command](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function call](1), with key source: [ControlFlowNode for mycmd](2), and object source: [ControlFlowNode for mycmd](2). Set attribute key: [ControlFlowNode for command](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function regDump](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for liste](3). Set attribute key: [ControlFlowNode for command](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function regDump](1), with key source: [ControlFlowNode for liste](3), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for command](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function regDump](1), with key source: [ControlFlowNode for liste](3), and object source: [ControlFlowNode for liste](3). Set attribute key: [ControlFlowNode for command](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

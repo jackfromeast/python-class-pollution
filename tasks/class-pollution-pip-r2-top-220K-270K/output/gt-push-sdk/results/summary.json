@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 12
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function ParseDict](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _MergeMessage](1), with key source: [ControlFlowNode for node](2), and object source: [ControlFlowNode for node](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function Parse](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function CheckParseBack](1), with key source: [ControlFlowNode for parsed_message](2), and object source: [ControlFlowNode for parsed_message](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _ConvertMapFieldValue](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _ConvertFieldValuePair](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function ConvertMessage](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function FromJsonString](1), with key source: [ControlFlowNode for value](2), and object source: [ControlFlowNode for value](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function genexpr](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function MergeMessage](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

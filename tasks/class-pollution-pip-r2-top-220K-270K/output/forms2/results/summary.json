@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function genexpr](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function save](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dict_to_model](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function dict_to_model](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for mapping](5). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function dict_to_model](1), with key source: [ControlFlowNode for mapping](5), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function dict_to_model](1), with key source: [ControlFlowNode for mapping](5), and object source: [ControlFlowNode for mapping](5). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

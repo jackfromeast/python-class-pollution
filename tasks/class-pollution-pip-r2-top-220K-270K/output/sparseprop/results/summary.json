@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 1
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function swap_module](1), with key source: [ControlFlowNode for module_name](2), and object source: [ControlFlowNode for module_name](2). Set attribute key: [ControlFlowNode for last_part](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function setattr_dot_notation](1), with key source: [ControlFlowNode for attr](2), and object source: [ControlFlowNode for attr](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function replace_layer_with](1), with key source: [ControlFlowNode for layer_name](2), and object source: [ControlFlowNode for layer_name](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function replace_layer_with_identity](1), with key source: [ControlFlowNode for layer_name](2), and object source: [ControlFlowNode for layer_name](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

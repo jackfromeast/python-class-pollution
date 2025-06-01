@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 4
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Attribute()](4).\nType:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for k](5). Get attribute op: [ControlFlowNode for Attribute()](6).",
+    "Type:SetItem-GetAttr Class pollution function: [Function tickString](1), with key source: [ControlFlowNode for msg](2), and object source: [ControlFlowNode for msg](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Attribute()](4).\nType:SetItem-GetAttr Class pollution function: [Function tickString](1), with key source: [ControlFlowNode for msg](2), and object source: [ControlFlowNode for msg](2). Set item key: [ControlFlowNode for k](5). Get attribute op: [ControlFlowNode for Attribute()](6).",
+    "Type:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for rtvol](2), and object source: [ControlFlowNode for rtvol](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Attribute()](4).\nType:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for rtvol](2), and object source: [ControlFlowNode for rtvol](2). Set item key: [ControlFlowNode for k](5). Get attribute op: [ControlFlowNode for Attribute()](6).",
+    "Type:SetItem-GetAttr Class pollution function: [Function parsecontract](1), with key source: [ControlFlowNode for dataname](2), and object source: [ControlFlowNode for dataname](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Attribute()](4).\nType:SetItem-GetAttr Class pollution function: [Function parsecontract](1), with key source: [ControlFlowNode for dataname](2), and object source: [ControlFlowNode for dataname](2). Set item key: [ControlFlowNode for k](5). Get attribute op: [ControlFlowNode for Attribute()](6)."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 7
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function dictcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function to_device](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function batch_to](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_to_collection](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function move_data_to_device](1), with key source: [ControlFlowNode for batch](2), and object source: [ControlFlowNode for batch](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function genexpr](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}
