@@ -1,0 +1,234 @@
+Application,Stars,URL,Codeql,Confirmed (Function-level),Func Name (Path),FP Reason (If Not),Types,,Input,,,Status,Comment,New
+,,,,,,,Get,Set,Triggering,Remote Pattern,Local Pattern,,,
+ComfyUI,59080,https://github.com/comfyanonymous/ComfyUI,Y,Y,,,Attr,Attr,Function,import_aiohttp|.get/.post/.api_route,,,"set_attr, set_attr_param",
+open-interpreter,57277,https://github.com/OpenInterpreter/open-interpreter,Y,Y,,,Attr,Attr,Local,import_fastapi|.get/.post/.api_route|import_starlette,,,,
+ColossalAI,38869,https://github.com/hpcaitech/ColossalAI,Y,Y,,,Attr,Attr,Function,.get/.post/.api_route|import_pytorch_lightning|import_starlette|import_gradio|import_sanic|import_fastapi,,,"module_params_sharding_pass, setattr_",
+airflow,37484,https://github.com/apache/airflow,Y,N,,not nested get; get processed between get and set;,Attr,Attr,,import_aiohttp|.get/.post/.api_route|import_starlette|.route|import_fastapi|import_flask,,,,Yes
+Open-Assistant,37102,https://github.com/LAION-AI/Open-Assistant,Y,Y,,,Attr,Attr,Function,import_aiohttp|import_fastapi_utils|.get/.post/.api_route|import_starlette|import_fastapi,,,,Yes
+DeepSpeed,35764,https://github.com/microsoft/DeepSpeed,Y,Y,,,Attr,Attr,Function,,,,"recursive_setattr,",
+pytorch-image-models,32491,https://github.com/huggingface/pytorch-image-models,Y,Y,,,Attr,Attr,Function,,,,set_layer,
+fairseq,30638,https://github.com/facebookresearch/fairseq,Y,Y,,,Attr,Attr,Function,,,,"_set_module_by_path, attrsetter",
+spaCy,30588,https://github.com/explosion/spaCy,Y,Y,,,Attr,Attr,Function,,,,DocCleaner.__call__ (built in pipeline function),
+pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,N,,,N,N,,import_fastapi|.get/.post/.api_route|import_pytorch_lightning,,,,
+pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,Y,,,Attr,Attr,Function,,,,,
+python-fire,27202,https://github.com/google/python-fire.git,Y,N,,,Attr,Field,None,,,,,
+diffusers,26481,https://github.com/huggingface/diffusers,Y,Y,,,Attr,Attr,Function,import_fastapi|import_aiohttp|.get/.post/.api_route,,Todo,"library: get_module_from_name, get_submodule_by_name",Yes
+ragflow,24695,https://github.com/infiniflow/ragflow,Y,Y,,,Attr,Attr,Remote,import_flask|.route,,Reported,https://gist.github.com/superboy-zjc/e7c676f39f714ec4c4a6afa3a0ba037d,
+insightface,23651,https://github.com/deepinsight/insightface,Y,N,,vul in external library (stylegan2); already added it to the table,Attr,Attr,,,,,,
+reflex,20541,https://github.com/reflex-dev/reflex,Y,N,,,Attr,Field,None,import_fastapi|import_starlette,,,,
+minGPT,20333,https://github.com/karpathy/minGPT,Y,Y,,,Attr,Attr,Local,,,Todo,TODO: @zhong merge_from_args; --model.n_layer=10;,
+unilm,20316,https://github.com/microsoft/unilm,Y,Y,,,Attr,Attr,Function,import_flask|import_gradio|import_tornado|import_starlette|.route|import_fastapi,,,"resolve_attr, _set_module_by_path",
+mlflow,18953,https://github.com/mlflow/mlflow,Y,N,,no deep recursive get of base obj ,Attr,Attr,,import_aiohttp|.get/.post/.api_route|import_pytorch_lightning|import_starlette|.route|import_fastapi|import_flask,,,,
+zipline,17891,https://github.com/quantopian/zipline,Y,Y,,,Attr,Attr,Local,,,Todo,PoC pending.,
+sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,,Attr,Attr,Local,import_fastapi|.get/.post/.api_route|import_gradio,,Todo,"DoS, TODO: @Zhengyu Write PoC",
+taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,,Attr,Attr,Remote,import_flask|.route|import_flask_restful,,Assigned,,
+airbyte,16374,https://github.com/airbytehq/airbyte,Y,Y,,,Attr,Attr,Function,,,,in tests only,
+nni,14071,https://github.com/microsoft/nni,Y,Y,,,Attr,Attr,None,add_handlers|import_tornado,,,TODO: Maybe can be triggered remotely,No
+ivy,14015,https://github.com/ivy-llc/ivy,Y,Y,,,Attr,Attr,Function,,,Todo,"library: _load_from_state_dict, _retrive_layer",
+dgl,13579,https://github.com/dmlc/dgl,Y,N,,type check on before get attr,Attr/Field,Field,,,,,,Yes
+dgl,13579,https://github.com/dmlc/dgl,Y,N,,,Attr,Field,,,,,,Yes
+edgedb,13164,https://github.com/edgedb/edgedb,Y,N,,,Attr,Attr,,,,,,
+PaddleHub,12755,https://github.com/PaddlePaddle/PaddleHub,Y,N,,getItem index needs to be an int,Attr/Field,Attr,,import_flask|import_gradio|.route,,,,
+RWKV-LM,12737,https://github.com/BlinkDL/RWKV-LM,Y,Y,,getItem index needs to be an int,Attr,Attr,Function,,,,,
+pytest,12199,https://github.com/pytest-dev/pytest,Y,N,,recursive import module but pytest intentionally do that ,Attr,Attr,,,,,,
+peewee,11300,https://github.com/coleifer/peewee,Y,Y,,,Attr,Attr,Function,import_flask|.route,,,,
+stylegan2,11089,https://github.com/NVlabs/stylegan2,N,Y,,,Attr,Attr,Function,,,Todo,library: create_session,
+jinja,10492,https://github.com/pallets/jinja,Y,N,,ast tree,Attr,Attr,,,,,,
+nicegui,10270,https://github.com/zauberzeug/nicegui,Y,N,,,N,N,,,,,,
+nerfstudio,9621,https://github.com/nerfstudio-project/nerfstudio,Y,N,,no recursive deep get,Attr,Field,,,,,,
+PySyft,9542,https://github.com/OpenMined/PySyft,Y,N,,sanitization on base object,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_starlette,,,,
+ChatRWKV,9434,https://github.com/BlinkDL/ChatRWKV,Y,Y,,,Attr,Attr,Function,,,,,
+wandb,9217,https://github.com/wandb/wandb,Y,N,,,N,N,,import_pytorch_lightning,,,,
+text-generation-inference,9192,https://github.com/huggingface/text-generation-inference,Y,Y,,,Attr,Attr,Local,import_aiohttp,,Todo,quantize->load_weights_pre_hook,
+stable-diffusion-webui-forge,8736,https://github.com/lllyasviel/stable-diffusion-webui-forge,Y,Y,,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route|import_starlette|import_gradio,,Todo,set_attr_raw,
+hummingbot,8472,https://github.com/hummingbot/hummingbot,Y,Y,,,Attr,Attr,Local,import_aiohttp,,Todo,"decrypt_all_secure_data, prompt_a_config; cli config",
+conan,8316,https://github.com/conan-io/conan,Y,Y,,,Attr,Attr,Function,import_bottle,,,,
+accelerate,8025,https://github.com/huggingface/accelerate,Y,Y,,,Attr,Attr,Function,,,Todo,library: load_checkpoint_in_model -> retie_parameters,
+ragas,7467,https://github.com/explodinggradients/ragas,Y,N,,type check,Attr,Attr,,,,,,
+modelscope,7070,https://github.com/modelscope/modelscope,Y,Y,,,Attr,Attr,Function,import_fastapi|import_starlette|.get/.post/.api_route|import_gradio,,,convert_sparse_network -> _setattr,
+ScoutSuite,6779,https://github.com/nccgroup/ScoutSuite,Y,N,,,N,N,,import_cherrypy,,,,
+ScoutSuite,6779,https://github.com/nccgroup/ScoutSuite,Y,N,,duplicated,Attr/Field,Field,Function,,,,,
+ipex-llm,6770,https://github.com/intel-analytics/ipex-llm,Y,Y,,,Attr,Attr,Local,import_aiohttp|.get/.post/.api_route|import_gradio|import_starlette|import_fastapi,,,"TODO: PoC, load from model weights",
+pyinstrument,6758,https://github.com/joerick/pyinstrument,Y,Y,,,Attr/Field,Attr/Field,Function,@get/post/route|import_litestar|.route|import_django|django_path|import_falcon|import_flask,,,,
+sphinx,6645,https://github.com/sphinx-doc/sphinx,Y,N,,,Attr,Field,,,,,,
+metaseq,6518,https://github.com/facebookresearch/metaseq,Y,Y,,,Attr,Attr,Function,import_flask|.route,,Todo,library: trainer.__init__ -> _set_module_by_path,
+pytext,6336,https://github.com/facebookresearch/pytext,Y,Y,,,Attr,Attr,Local,import_flask|.route,,Todo,library: replace_param,
+tensorpack,6302,https://github.com/tensorpack/tensorpack,Y,Y,,also has RCE vul,Attr,Attr,Local,,,Todo,library: update_args; where set value gets evalutated before assigned to target obj,
+progressive_growing_of_gans,6102,https://github.com/tkarras/progressive_growing_of_gans,Y,Y,,,Attr,Attr,Local,,,,,
+wfuzz,5977,https://github.com/xmendez/wfuzz,Y,N/A,,,Attr,Attr,,,,,,Yes
+mmpose,5925,https://github.com/open-mmlab/mmpose,Y,Y,,,Attr,Attr,Local,import_gradio,,,,Yes
+chainer,5897,https://github.com/chainer/chainer,Y,N,,test script,Attr,Attr,,,,,,
+clearml,5726,https://github.com/allegroai/clearml,Y,Y,,,Attr/Field,Attr/Field,Function,.get/.post/.api_route|import_pytorch_lightning|import_gradio|import_starlette|import_fastapi,,,,
+clearml,5726,https://github.com/allegroai/clearml,Y,N,,"key needs to be ""{}/{}""",Attr/Field,Field,,,,,,
+clearml,5726,https://github.com/allegroai/clearml,Y,N,,"key needs to be ""{}/{}""",Attr,Field,,,,,,
+litestar,5663,https://github.com/litestar-org/litestar,Y,N,,sanitization after recursive get,Attr/Field,Field,,,,,,
+mesop,5659,https://github.com/google/mesop,Y,Y,,,Attr,Attr/Field,Remote,import_flask|import_mesop|.route,,Assigned,,
+deepchem,5574,https://github.com/deepchem/deepchem,Y,Y,,,Attr/Field,Attr/Field,Function,import_flask|.route|import_pytorch_lightning,,Todo,Library: set_attr,
+infinigen,5430,https://github.com/princeton-vl/infinigen,Y,Y,,,Attr,Attr,Function,,,,,
+rqalpha,5413,https://github.com/ricequant/rqalpha,Y,N/A,,,Attr,Field,,,,,,Yes
+Flashlight,5387,https://github.com/nate-parrott/Flashlight,Y,N,,,Attr,Attr,,,,,,
+ibis,5365,https://github.com/ibis-project/ibis,Y,Y,,,Attr,Attr,,import_streamlit,,Todo,library: Config.set,
+river,5109,https://github.com/online-ml/river,Y,Y,,,Attr,Attr,,,,,,
+captum,4962,https://github.com/pytorch/captum,Y,Y,,,Attr,Attr,,import_flask|.route,,Todo,library: class NaiveInfluenceFunction.__init__ -> _retrieve_projections_naive_influence_function -> _compute_dataset_func -> _flatten_forward_factory -> _functional_call -> _custom_functional_call ->   _model_reinsert_params,
+lark,4940,https://github.com/lark-parser/lark,Y,N,,attr name check,Attr,Attr/Field,,,,,,Yes
+mergekit,4904,https://github.com/arcee-ai/mergekit,Y,N/A,,,Attr,Attr,,,,,,Yes
+Red-DiscordBot,4846,https://github.com/Cog-Creators/Red-DiscordBot,Y,Y,,,Attr,Attr,Function,add_route|import_aiohttp,,,rsetattr,Yes
+panel,4837,https://github.com/holoviz/panel,Y,N,,deep get is not observed,Attr,Attr,None,import_aiohttp|.get/.post/.api_route|import_flask|import_tornado|import_django|django_path|import_fastapi,,,,
+gluonts,4663,https://github.com/awslabs/gluonts,Y,N,,type check,Attr,Attr,,import_flask|.route|import_pytorch_lightning,,,,
+AutoGPTQ,4541,https://github.com/AutoGPTQ/AutoGPTQ,Y,Y,,,Attr,Attr,Function,,,,,
+ms-swift,4503,https://github.com/modelscope/ms-swift,Y,Y,,duplicate @zhengyu,Attr/Field,Attr/Field,,import_fastapi|import_aiohttp|import_gradio,,,,No
+coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr/Field,Attr,,,,,,
+coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr,Attr,,,,,,
+coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr/Field,Attr,,,,,,
+coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr,Attr,,,,,,
+neuralangelo,4413,https://github.com/NVlabs/neuralangelo,Y,N/A,,,Attr,Attr,,,,,,Yes
+OpenPrompt,4388,https://github.com/thunlp/OpenPrompt,Y,N/A,,,Attr,Attr,,,,,,
+datasets,4324,https://github.com/tensorflow/datasets,Y,N/A,,,Attr,Attr,,,,,,
+zenml,4181,https://github.com/zenml-io/zenml,Y,N,,,N,N,,import_fastapi|.get/.post/.api_route|import_starlette|import_gradio,,,,
+azure-cli-core,4071,https://github.com/Azure/azure-cli,Y,Y,,,Attr/Field,Attr/Field,Local,,,,,
+imaginaire,4021,https://github.com/NVlabs/imaginaire,Y,N/A,,,Attr,Attr,,,,,,Yes
+mm-cot,3823,https://github.com/amazon-science/mm-cot,Y,Y,,,Attr,Attr,Function,,,,,
+DAMO-YOLO,3794,https://github.com/tinyvision/DAMO-YOLO,Y,N/A,,,Attr,Attr,,,,,,
+ElegantRL,3769,https://github.com/AI4Finance-Foundation/ElegantRL,Y,N/A,,,Attr,Attr,,,,,,Yes
+PINTO_model_zoo,3624,https://github.com/PINTO0309/PINTO_model_zoo,Y,Y,,,Attr,Attr,Function,,,,,
+consensus-specs,3590,https://github.com/ethereum/consensus-specs,Y,N/A,,,Attr,Attr,,,,,,
+Otter,3565,https://github.com/Luodian/Otter,Y,Y,,,Attr,Attr,Function,import_flask|.get/.post/.api_route|.route|import_gradio|import_fastapi,,,,
+ai-toolkit,3550,https://github.com/ostris/ai-toolkit,Y,Y,,,Attr,Attr,Local,import_gradio,,Todo,"PureLoraGenerator.__init__(model_config) -> PureLoraGenerator.run() -> StableDiffusion.load_model -> load unet model from: model_config.name_or_path (https://github.com/ostris/ai-toolkit/blob/c12036df95c1c03dc0ed60823668287c329b9963/toolkit/stable_diffusion_model.py#L296, https://github.com/ostris/ai-toolkit/blob/c12036df95c1c03dc0ed60823668287c329b9963/toolkit/stable_diffusion_model.py#L985) -> unet module contains polluted key as its structure
+PureLoraGenerator.run (self.sd.unet got from stable_diffusion init and load_model())-> convert_diffusers_unet_to_lorm  (unet) -> replace_module_by_path (unet as pollution key)
+Remote trigger:
+    summary: attacker have to control the module.name_or_path configuration which points to a malicious model contraining the chained path dict key, then trigger the vulnerable function `replace_module_by_path` through flux_train_ui gradio UI, the button at here:https://github.com/ostris/ai-toolkit/blob/main/jobs/ExtensionJob.py#L22
+
+    gradio_uri training function: https://github.com/ostris/ai-toolkit/blob/main/flux_train_ui.py#L143
+    have to control local configuration config['process'][0]['module']['name_or_path'] points to the malicious unet model: https://github.com/ostris/ai-toolkit/blob/main/flux_train_ui.py#L212
+   then the run here will start PureLoraGeneration.run: https://github.com/ostris/ai-toolkit/blob/main/flux_train_ui.py#L230
+   program gets the class through dynamic extention loading process: https://github.com/ostris/ai-toolkit/blob/main/flux_train_ui.py#L229
+   The extension of PureLoraGeneration is included in the extension list: https://github.com/ostris/ai-toolkit/blob/c12036df95c1c03dc0ed60823668287c329b9963/extensions_built_in/advanced_generator/__init__.py#L58
+    which is loaded in a  dynamic way here: https://github.com/ostris/ai-toolkit/blob/main/toolkit/extension.py#L41, https://github.com/ostris/ai-toolkit/blob/main/jobs/ExtensionJob.py#L13, and run here: https://github.com/ostris/ai-toolkit/blob/main/jobs/ExtensionJob.py#L22",
+chartify,3541,https://github.com/spotify/chartify,Y,N/A,,lib,Attr,Attr,,,,,,
+KoboldAI-Client,3535,https://github.com/KoboldAI/KoboldAI-Client,Y,N,,,N,N,,,,,,
+Paints-UNDO,3535,https://github.com/lllyasviel/Paints-UNDO,Y,N/A,,model,Attr,Attr,,import_gradio,,,,
+mmpretrain,3495,https://github.com/open-mmlab/mmpretrain,Y,N/A,,lib,Attr,Attr,,import_gradio,,,,
+headphones,3431,https://github.com/rembo10/headphones,Y,N/A,,"lib meko, ast traverse",Attr,Attr,None,.route|import_cherrypy|import_tornado|django_path|import_flask,,,,
+vispy,3344,https://github.com/vispy/vispy,Y,N/A,,lib,Attr,Attr,,,,,,
+django-import-export,3100,https://github.com/django-import-export/django-import-export,Y,N,,require database table name and relation,Attr,Attr,Function,import_django,,,Class Field -> def save,
+alpa,3083,https://github.com/alpa-projects/alpa,Y,Y,,,Attr,Attr,,import_fastapi|.route|.get/.post/.api_route|import_starlette,,,,
+fastNLP,3073,https://github.com/fastnlp/fastNLP,Y,N/A,,lib,Attr,Attr,,,,,,
+deepsparse,3041,https://github.com/neuralmagic/deepsparse,Y,N,,,N,N,,.get/.post/.api_route|import_streamlit|import_starlette|import_gradio|import_fastapi,,,,
+docarray,2993,https://github.com/docarray/docarray,Y,N/A,,lib,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,,
+AI-Writer,2989,https://github.com/BlinkDL/AI-Writer,Y,Y,,,Attr,Attr,,,,,,
+BlenderTools,2829,https://github.com/EpicGamesExt/BlenderTools,Y,Y,,,Attr,Attr,,,,,,
+dlt,2764,https://github.com/dlt-hub/dlt,Y,N/A,,lib,Attr,Field,,import_streamlit,,,,
+mars,2705,https://github.com/mars-project/mars,Y,N/A,,lib,Attr,Attr,,import_tornado,,,,
+robusta,2648,https://github.com/robusta-dev/robusta,Y,Y,,,Attr/Field,Attr/Field,Function,import_flask|.route,,,,
+deepdoctection,2619,https://github.com/deepdoctection/deepdoctection,Y,N/A,,lib,Attr,Attr,,,,,,
+TensorRT,2610,https://github.com/pytorch/TensorRT,Y,N,,,N,N,,,,,,
+optimum,2603,https://github.com/huggingface/optimum,Y,N/A,,lib,Attr,Attr,,,,,,
+llm-awq,2567,https://github.com/mit-han-lab/llm-awq,Y,N/A,,lib,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_gradio,,,,
+virt-manager,2451,https://github.com/virt-manager/virt-manager,Y,N/A,,,Attr,Attr,,,,,,
+django-unicorn,2434,https://github.com/adamghill/django-unicorn,Y,Y,,,Attr/Field,Attr/Field,Remote,import_django|django_re_path|django_path,,Assigned,,
+OFA,2429,https://github.com/OFA-Sys/OFA,Y,Y,,,Attr,Attr,,,,,,
+django-unicorn,2393,https://github.com/adamghill/django-unicorn,Y,Y,,duplicate,Attr,Attr,,,,,,
+rl,2392,https://github.com/pytorch/rl,Y,N/A,,,Attr/Field,Attr,,,,,,
+rl,2392,https://github.com/pytorch/rl,Y,N/A,,,Attr,Attr,,,,,,
+JittorLLMs,2386,https://github.com/Jittor/JittorLLMs,Y,Y,,,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_gradio,,,,
+bevfusion,2380,https://github.com/mit-han-lab/bevfusion,Y,N/A,,,Attr/Field,Field,,,,,,Yes
+bevfusion,2380,https://github.com/mit-han-lab/bevfusion,Y,N/A,,,Attr,Field,,,,,,Yes
+lanenet-lane-detection,2377,https://github.com/MaybeShewill-CV/lanenet-lane-detection,Y,N/A,,,Attr/Field,Field,,,,,,Yes
+lanenet-lane-detection,2377,https://github.com/MaybeShewill-CV/lanenet-lane-detection,Y,N/A,,,Attr,Field,,,,,,Yes
+comfyui_controlnet_aux,2367,https://github.com/Fannovel16/comfyui_controlnet_aux,Y,N/A,,,Attr,Attr,,,,,local,
+ansible-cmdb,2361,https://github.com/fboender/ansible-cmdb,Y,N/A,,,Attr,Attr,,,,,,
+secretflow,2360,https://github.com/secretflow/secretflow,Y,N/A,,,Attr,Attr,,,,,,
+IsaacLab,2358,https://github.com/isaac-sim/IsaacLab,Y,Y,,,Attr/Field,Attr/Field,Function,,,,,
+sverchok,2282,https://github.com/nortikin/sverchok,Y,Y,,,Attr/Field,Attr/Field,Local,,,Reported,,No
+shuup,2258,https://github.com/shuup/shuup,Y,Y,,,Attr,Attr,Function,import_django,,,remote,
+neural-compressor,2243,https://github.com/intel/neural-compressor,Y,N/A,,,Attr,Attr,,,,,,
+lorax,2234,https://github.com/predibase/lorax,Y,Y,,,Attr,Attr,Function,import_aiohttp,,,"remote, key is uncontrollable",
+ariadne,2228,https://github.com/mirumee/ariadne,Y,N,,,Attr,Attr,,import_starlette,,,remote,
+aimet,2169,https://github.com/quic/aimet,Y,N/A,,,Attr,Attr,,,,,,Yes
+Linly-Talker,2110,https://github.com/Kedreamix/Linly-Talker,Y,N/A,,,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_gradio,,,,No
+beanie,2092,https://github.com/BeanieODM/beanie,Y,N,,,N,N,,,,,,
+wrapt,2085,https://github.com/GrahamDumpleton/wrapt,Y,N/A,,,Attr,Attr,,,,,library,
+sparseml,2078,https://github.com/neuralmagic/sparseml,Y,N/A,,,Attr,Attr,,,,,,
+omegaconf,1994,https://github.com/omry/omegaconf,Y,N,,,N,N,,,,,,
+AliceMind,1983,https://github.com/alibaba/AliceMind,Y,Y,,,Attr,Attr,Function,import_tornado,,,,
+rio,1978,https://github.com/rio-labs/rio,Y,N,,didn't find deep get pattern,Attr,Field,,import_fastapi|import_starlette,,,,Yes
+transparent_latent_gan,1972,https://github.com/SummitKwan/transparent_latent_gan,Y,N/A,,,Attr,Attr,,,,,,
+helm,1967,https://github.com/stanford-crfm/helm,Y,Y,,,Attr,Attr,Function,import_bottle|.get/.post/.api_route|import_pytorch_lightning,,,,
+rekall,1933,https://github.com/google/rekall,Y,N,,prototyeObj label over-tainting,Attr/Field,Field,,,,,,
+code,1929,https://github.com/ActiveState/code,Y,N/A,,,Attr/Field,Field,,add_handlers|import_hug|import_tornado|import_cherrypy|import_django,,,,Yes
+code,1929,https://github.com/ActiveState/code,Y,N/A,,,Attr/Field,Attr,,,,,,Yes
+code,1929,https://github.com/ActiveState/code,Y,N/A,,,Attr,Field,,,,,,Yes
+glom,1919,https://github.com/mahmoud/glom,Y,Y,,,Attr/Field,Attr/Field,Function,import_django,,Acknowledged,,
+godot-python,1907,https://github.com/touilleMan/godot-python,Y,N/A,,,Attr,Attr,,,,,local,
+OnmyojiAutoScript,1891,https://github.com/runhey/OnmyojiAutoScript,Y,Y,,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route,,,,
+mmaction,1864,https://github.com/open-mmlab/mmaction,Y,N/A,,,Attr,Attr,,,,,,Yes
+evennia,1832,https://github.com/evennia/evennia,Y,Y,,,Attr,Attr,Function,import_django|django_path|.get/.post/.api_route,,,"remote, menu_setattr",
+Medusa,1813,https://github.com/pymedusa/Medusa,Y,N,,ast,Attr,Attr,,add_handlers|@get/post/route|import_tornado|rule_instantiation|import_django,,,,
+EasyRec,1810,https://github.com/alibaba/EasyRec,Y,N,,,N,N,,,,,,
+AutoAWQ,1806,https://github.com/casper-hansen/AutoAWQ,Y,N/A,,,Attr,Attr,,,,,,
+EasyCV,1805,https://github.com/alibaba/EasyCV,Y,N/A,,,Attr,Attr,,,,,,
+PokemonGo-DesktopMap,1762,https://github.com/mchristopher/PokemonGo-DesktopMap,Y,N/A,,,Attr,Attr,,,,,remote,
+Research,1720,https://github.com/PaddlePaddle/Research,Y,N,,"invoke __getattr__ when set, which is not implemented by default; the __getattr__ implemented can not reach to special attributes;",Attr/Field,Field,,import_flask|.route,,,SegConfig __setattr__,Yes
+Research,1720,https://github.com/PaddlePaddle/Research,Y,N,,"invoke __getattr__ when set, which is not implemented by default; the __getattr__ implemented can not reach to special attributes;",Attr,Field,,.route|import_flask,,,SegConfig __setattr__,Yes
+hangups,1714,https://github.com/tdryer/hangups,Y,N/A,,,Attr,Attr,,import_aiohttp,,,looks promising :>,
+distilabel,1708,https://github.com/argilla-io/distilabel,Y,N/A,,,Attr,Attr,,,,,,
+ormar,1681,https://github.com/collerek/ormar,Y,N,,type check,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,library,
+generative-ai-python,1665,https://github.com/google-gemini/generative-ai-python,Y,Y,,,Attr,Attr,,,,,client,
+fast-transformers,1652,https://github.com/idiap/fast-transformers,Y,N/A,,,Attr,Attr,,,,,,
+intel-extension-for-pytorch,1638,https://github.com/intel/intel-extension-for-pytorch,Y,N/A,,,Attr,Attr,,,,,,
+ao,1638,https://github.com/pytorch/ao,Y,N/A,,,Attr,Attr,,import_fastapi|.get/.post/.api_route,,,,
+Olive,1634,https://github.com/microsoft/Olive,Y,Y,,,Attr,Attr,,import_falcon|import_gradio,,Todo,lib: replace_submodules,
+TransformerLens,1632,https://github.com/TransformerLensOrg/TransformerLens,Y,N/A,,,Attr,Attr,,,,,,
+fixinventory,1625,https://github.com/someengineering/fixinventory,Y,Y,,,Attr/Field,Attr/Field,Function,(Fixed) Not sure why previous cannot found.,,,,
+codeshell,1617,https://github.com/WisdomShell/codeshell,Y,N/A,,,Attr,Attr,,import_fastapi|.get/.post/.api_route|import_gradio,,,,
+TimeSformer,1573,https://github.com/facebookresearch/TimeSformer,Y,N/A,,,Attr,Attr,,,,,,
+interfacegan,1509,https://github.com/genforce/interfacegan,Y,N/A,,,Attr,Attr,,,,,,
+glTF-Blender-IO,1503,https://github.com/KhronosGroup/glTF-Blender-IO,Y,N/A,,,Attr,Attr,,,,,,Yes
+model-optimization,1499,https://github.com/tensorflow/model-optimization,Y,N/A,,,Attr,Attr,,,,,,Yes
+mmrazor,1489,https://github.com/open-mmlab/mmrazor,Y,N/A,,,Attr,Attr,,,,,,
+Multimodal-GPT,1478,https://github.com/open-mmlab/Multimodal-GPT,Y,N/A,,,Attr,Attr,,import_gradio,,,,
+piccolo,1460,https://github.com/piccolo-orm/piccolo,Y,Y,,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route,,,key is not under control,
+OpenNMT-tf,1458,https://github.com/OpenNMT/OpenNMT-tf,Y,N/A,,,Attr/Field,Attr,,,,,,
+Plex-Trakt-Scrobbler,1457,https://github.com/trakt/Plex-Trakt-Scrobbler,Y,N,,Inherited the vulnerability from jsonpickle,Attr/Field,Attr/Field,,import_flask|import_django,,,,Yes
+legged_gym,1450,https://github.com/leggedrobotics/legged_gym,Y,N/A,,,Attr,Attr,,,,,,
+NeuralSpeech,1395,https://github.com/microsoft/NeuralSpeech,Y,N/A,,,Attr,Attr,,,,,,
+building_tools,1376,https://github.com/ranjian0/building_tools,Y,N/A,,,Attr,Attr,,,,,blender addon,
+python-opcua,1374,https://github.com/FreeOpcUa/python-opcua,Y,N/A,,,Attr,Attr,,,,,,
+Lidar_AI_Solution,1349,https://github.com/NVIDIA-AI-IOT/Lidar_AI_Solution,Y,N/A,,,Attr,Attr,,,,,,
+pydash,1344,https://github.com/dgilland/pydash,Y,Y,,,Attr/Field,Attr/Field,Function,,,,,
+flask-restplus-server-example,1341,https://github.com/frol/flask-restplus-server-example,Y,N,,,Attr,Attr,,import_flask|.route,,,,
+pyRevit,1328,https://github.com/pyrevitlabs/pyRevit,Y,N,,,Attr/Field,Field,,,,,,
+mayavi,1323,https://github.com/enthought/mayavi,Y,N/A,,,Attr,Attr,,,,,,
+deepdiff,1303,https://github.com/seperman/deepdiff,Y,Y,,,Attr/Field,Attr/Field,Function,,,,,
+diplomacy_cicero,1303,https://github.com/facebookresearch/diplomacy_cicero,Y,N,,,N,N,,,,,,
+jython,1264,https://github.com/jython/jython,Y,N/A,,,Attr,Attr,,,,,,Yes
+dnf,1258,https://github.com/rpm-software-management/dnf,Y,N/A,,,Attr,Attr,,,,,,
+infernal-twin,1239,https://github.com/entropy1337/infernal-twin,Y,N/A,,,Attr/Field,Attr,,,,,,Yes
+pykka,1234,https://github.com/jodal/pykka,Y,N/A,,,Attr,Attr,,,,,library,
+brevitas,1217,https://github.com/Xilinx/brevitas,Y,N/A,,,Attr,Attr,,,,,,
+teleport,1183,https://github.com/tp4a/teleport,Y,N,,ast,Attr,Attr,,import_tornado,,,,
+chainerrl,1179,https://github.com/chainer/chainerrl,Y,N/A,,,Attr,Attr,,,,,,
+AQLM,1177,https://github.com/Vahe1994/AQLM,Y,N/A,,,Attr,Attr,,,,,,Yes
+training_extensions,1145,https://github.com/openvinotoolkit/training_extensions,Y,Y,,,Attr/Field,Attr/Field,Function,import_pytorch_lightning,,,,
+nut,1138,https://github.com/blawar/nut,Y,N/A,,,Attr,Attr,,import_flask|.route,,,,
+spyne,1132,https://github.com/arskom/spyne,Y,N,,not deep get observed,Attr,Attr,,route_name=|import_pyramid|add_route|.route|import_cherrypy|import_django|import_flask,,,,
+spyne,1132,https://github.com/arskom/spyne,Y,N,,not deep get observed,Attr,Field,,route_name=|import_flask|import_cherrypy|import_pyramid|import_django|add_route|.route,,,remote,
+xorbits,1130,https://github.com/xorbitsai/xorbits,Y,N/A,,,Attr,Attr,,import_tornado,,,key is not under control,
+EPro-PnP,1114,https://github.com/tjiiv-cprg/EPro-PnP,Y,N/A,,,Attr,Attr,,,,,,Yes
+steam,1111,https://github.com/ValvePython/steam,Y,N/A,,,Attr,Attr,,import_flask|.route,,,,
+fastapi-amis-admin,1100,https://github.com/amisadmin/fastapi-amis-admin,Y,Y,,,Attr,Attr,Remote,import_fastapi|import_starlette,,Reported,report: https://gist.github.com/superboy-zjc/0bc18ea0dc4d0568c28ef5bc2f23e3b6,
+ComfyUI-CogVideoXWrapper,1094,https://github.com/kijai/ComfyUI-CogVideoXWrapper,Y,N/A,,,Attr,Attr,,,,,,
+noise2noise,1081,https://github.com/yu4u/noise2noise,Y,N/A,,,Attr,Attr,,,,,,
+Pythonista,1080,https://github.com/tdamdouni/Pythonista,Y,Y,,"func 1 - perform a `.frame` attribute access operation after it's been deep-gotten through `eval`, which is potentially exploitable by finding and polluting a chainedly reached class having `frame` attribute, yet relatively hard to cause bad impact",Attr/Field,Attr,Function,import_aiohttp|.get/.post/.api_route|import_turbogears|import_bottle|@get/post/route|.route|import_cherrypy|import_django|rule_instantiation|import_flask,,,1 - IgnoreVal.build_view,Yes
+seed-tts-eval,1068,https://github.com/BytedanceSpeech/seed-tts-eval,Y,N/A,,,Attr,Attr,,,,,,
+modulus,1062,https://github.com/NVIDIA/modulus,Y,N/A,,,Attr,Attr,,,,,,Yes
+convmixer,1062,https://github.com/locuslab/convmixer,Y,N/A,,,Attr,Attr,,,,,,
+Diffusion-LM,1061,https://github.com/XiangLi1999/Diffusion-LM,Y,Y,,,Attr,Attr,Function,import_fastapi|import_starlette|import_streamlit,,,_load_state_dict_into_model_low_mem,Yes
+sentiment-discovery,1061,https://github.com/NVIDIA/sentiment-discovery,Y,N/A,,,Attr,Attr,,,,,,
+CrossHair,1038,https://github.com/pschanely/CrossHair,Y,N/A,,,Attr,Attr,,,,,,
+CrossHair,1038,https://github.com/pschanely/CrossHair,Y,N/A,,,Attr,Field,,,,,,
+CRNN_Tensorflow,1034,https://github.com/MaybeShewill-CV/CRNN_Tensorflow,Y,N/A,,,Attr/Field,Field,,,,,,Yes
+CRNN_Tensorflow,1034,https://github.com/MaybeShewill-CV/CRNN_Tensorflow,Y,N/A,,,Attr,Field,,,,,,Yes
+evotorch,1024,https://github.com/nnaisense/evotorch,Y,N/A,,,Attr,Attr,,,,,,
+Kunyu,1014,https://github.com/knownsec/Kunyu,Y,N/A,,,Attr/Field,Attr,,,,,,Yes
+OpenDelta,1007,https://github.com/thunlp/OpenDelta,Y,N/A,,,Attr,Attr,,,,,,
