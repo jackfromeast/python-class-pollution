@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function tree_namespace](1), with key source: [ControlFlowNode for scope](2), and object source: [ControlFlowNode for scope](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dictcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function extract_objs](1), with key source: [ControlFlowNode for scope](2), and object source: [ControlFlowNode for scope](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

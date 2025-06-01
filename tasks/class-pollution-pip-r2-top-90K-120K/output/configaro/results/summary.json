@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-both": 1,
+    "py/class-polliution/set-item-get-attr": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function _put](1), with key source: [ControlFlowNode for prop_name](2), and object source: [ControlFlowNode for prop_name](2). Set item key: [ControlFlowNode for prop_name](3). Get attribute op: [ControlFlowNode for eval()](4).",
+    "Type:SetItem-GetBoth Class pollution function: [Function _put](1), with key source: [ControlFlowNode for prop_name](2), and object source: [ControlFlowNode for prop_name](2). Set item key: [ControlFlowNode for prop_name](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4)."
+  ]
+}

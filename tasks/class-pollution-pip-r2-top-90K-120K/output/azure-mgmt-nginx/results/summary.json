@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 11
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function deserialize_from_http_generics](1), with key source: [ControlFlowNode for body_bytes](2), and object source: [ControlFlowNode for body_bytes](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _json_attemp](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __call__](1), with key source: [ControlFlowNode for response_data](2), and object source: [ControlFlowNode for response_data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function deserialize](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function deserialize_from_text](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function from_dict](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function body](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _deserialize](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _unpack_content](1), with key source: [ControlFlowNode for raw_data](2), and object source: [ControlFlowNode for raw_data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function deserialize_data](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function failsafe_deserialize](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}
