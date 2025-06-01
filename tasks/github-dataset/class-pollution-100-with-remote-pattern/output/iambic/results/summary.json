@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "This function [Function remove_expired_resources](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 5 other functions.",
+    "This function [Function apply](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function remove_expired_resources](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _apply_to_account](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

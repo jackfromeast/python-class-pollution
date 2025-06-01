@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 4,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function fuse_lora_weights_transform_pass](1), with key source: [ControlFlowNode for mg](2), and object source: [ControlFlowNode for mg](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function deepsetattr](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function deepsetattr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function insert_lora_adapter_transform_pass](1), with key source: [ControlFlowNode for mg](2), and object source: [ControlFlowNode for mg](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function deepsetattr](1), with key source: [ControlFlowNode for attr](2), and object source: [ControlFlowNode for attr](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function deepsetattr](1), with key source: [ControlFlowNode for attr_str](2), and object source: [ControlFlowNode for attr_str](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

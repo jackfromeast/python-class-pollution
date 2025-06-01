@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 7,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 5
+  },
+  "details": [
+    "This function [Function start_terminal_interface](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function start_terminal_interface](1), with key source: [ControlFlowNode for interpreter](2), and object source: [ControlFlowNode for interpreter](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function apply_profile_to_object](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function profile](1), with key source: [ControlFlowNode for filename_or_url](2), and object source: [ControlFlowNode for filename_or_url](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function get_argument_dictionary](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_profile](1), with key source: [ControlFlowNode for filename_or_url](2), and object source: [ControlFlowNode for filename_or_url](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_profile_to_object](1), with key source: [ControlFlowNode for profile](2), and object source: [ControlFlowNode for profile](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function get_profile](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function apply_profile_to_object](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_profile](1), with key source: [ControlFlowNode for profile](2), and object source: [ControlFlowNode for profile](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_argument_dictionary](1), with key source: [ControlFlowNode for arguments](2), and object source: [ControlFlowNode for arguments](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

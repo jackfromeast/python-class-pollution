@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 8,
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "This function [Function copy_property_group](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 6 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function add_material_cache](1), with key source: [ControlFlowNode for copy_from](2), and object source: [ControlFlowNode for copy_from](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function copy_property_group](1), with key source: [ControlFlowNode for group_a](2), and object source: [ControlFlowNode for group_a](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function add_object_cache](1), with key source: [ControlFlowNode for copy_from](2), and object source: [ControlFlowNode for copy_from](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function add_character_cache](1), with key source: [ControlFlowNode for copy_from](2), and object source: [ControlFlowNode for copy_from](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function copy_collection_property](1), with key source: [ControlFlowNode for prop_a](2), and object source: [ControlFlowNode for prop_a](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function copy_collection_property](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 6 other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function duplicate_character](1), with key source: [ControlFlowNode for chr_cache](2), and object source: [ControlFlowNode for chr_cache](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

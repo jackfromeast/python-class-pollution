@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 7,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_model_answers](1), with key source: [ControlFlowNode for quant_cfg](2), and object source: [ControlFlowNode for quant_cfg](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_op_by_name](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function run](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_scale](1), with key source: [ControlFlowNode for scales_list](2), and object source: [ControlFlowNode for scales_list](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function run_eval](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function apply_scale](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_op_by_name](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_awq](1), with key source: [ControlFlowNode for awq_results](2), and object source: [ControlFlowNode for awq_results](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function run_eval](1), with key source: [ControlFlowNode for quant_cfg](2), and object source: [ControlFlowNode for quant_cfg](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function apply_scale](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 5 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function build_model_from_cfg](1), with key source: [ControlFlowNode for model_cfg](2), and object source: [ControlFlowNode for model_cfg](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

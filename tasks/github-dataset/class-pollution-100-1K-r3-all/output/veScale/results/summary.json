@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "This function [Function revert_instrument](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for func_name_str_list](2), and object source: [ControlFlowNode for func_name_str_list](2). Set attribute key: [ControlFlowNode for func_name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function instrument](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function instrument](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function revert_instrument_all](1), with key source: [ControlFlowNode for func_name_str_list](2), and object source: [ControlFlowNode for func_name_str_list](2). Set attribute key: [ControlFlowNode for func_name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function instrument](1), with key source: [ControlFlowNode for func_name_str](2), and object source: [ControlFlowNode for func_name_str](2). Set attribute key: [ControlFlowNode for func_name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function instrument_all](1), with key source: [ControlFlowNode for func_name_str_list](2), and object source: [ControlFlowNode for func_name_str_list](2). Set attribute key: [ControlFlowNode for func_name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __exit__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for func_name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function __exit__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function revert_instrument](1), with key source: [ControlFlowNode for func_name_str](2), and object source: [ControlFlowNode for func_name_str](2). Set attribute key: [ControlFlowNode for func_name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

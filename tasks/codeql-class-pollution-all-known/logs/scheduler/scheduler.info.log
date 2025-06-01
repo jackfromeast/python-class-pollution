@@ -1,4 +1,0 @@
-2025-04-23 20:33:59,723 - Scheduler - INFO - Scheduling tasks for 1 repositories with 8 workers. (base_scheduler.py:72)
-2025-04-23 20:33:59,730 - Scheduler - INFO - Starting worker for repo: https://pypi.org/project/glom (run_cp_analysis.py:28)
-2025-04-23 20:34:13,763 - Scheduler - INFO - Worker completed for repo: https://pypi.org/project/glom (run_cp_analysis.py:37)
-2025-04-23 20:34:13,769 - Scheduler - INFO - Progress: 1/1 repositories scanned. (base_scheduler.py:105)

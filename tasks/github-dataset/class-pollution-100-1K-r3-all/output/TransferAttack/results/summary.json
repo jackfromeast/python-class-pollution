@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 9,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 8
+  },
+  "details": [
+    "This function [Function dhf_resnet50](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function dhf_resnet18](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function dhf_resnet101](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dhf_resnet18](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function set_layer](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dhf_resnet50](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dhf_resnet101](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dhf_inception_v3](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_layer](1), with key source: [ControlFlowNode for layer](2), and object source: [ControlFlowNode for layer](2). Set attribute key: [ControlFlowNode for l](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function dhf_resnet152](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dhf_inc_res_v2](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_layer](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function convert_to_DHF_model_inplace_](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function dhf_inception_v3](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_layer](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function dhf_inc_res_v2](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dhf_resnet152](1), with key source: [ControlFlowNode for dhf_modules](2), and object source: [ControlFlowNode for dhf_modules](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

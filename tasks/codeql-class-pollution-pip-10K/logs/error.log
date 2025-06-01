@@ -1,1 +1,0 @@
-2025-01-23 00:01:02,927 - SCHEDULER - ERROR - Error in worker for repo: compound-split - [Errno 39] Directory not empty: 'default' (scheduler.py:122)

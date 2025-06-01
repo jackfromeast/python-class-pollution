@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function do_fork](1), with key source: [ControlFlowNode for operation_dict](2), and object source: [ControlFlowNode for operation_dict](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _set_operations_by_dict](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "This function [Function deposit_from_context](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function prepare_signed_exits](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function deposit_from_context](1), with key source: [ControlFlowNode for deposit_data_list](2), and object source: [ControlFlowNode for deposit_data_list](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _set_operations_by_dict](1), with key source: [ControlFlowNode for operation_dict](2), and object source: [ControlFlowNode for operation_dict](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function build_deposit](1), with key source: [ControlFlowNode for deposit_data_list](2), and object source: [ControlFlowNode for deposit_data_list](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _set_operations_by_dict](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function prepare_signed_exits](1), with key source: [ControlFlowNode for indices](2), and object source: [ControlFlowNode for indices](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _state_transition_and_sign_block_at_slot](1), with key source: [ControlFlowNode for operation_dict](2), and object source: [ControlFlowNode for operation_dict](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

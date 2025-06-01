@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 3,
+    "py/class-polliution/set-attr-get-attr": 11,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_attribute_recursive](1), with key source: [ControlFlowNode for attributes](2), and object source: [ControlFlowNode for attributes](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function modify_weights](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_attribute_recursive](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function unpatch_ff_layer](1), with key source: [ControlFlowNode for ff_attrs](2), and object source: [ControlFlowNode for ff_attrs](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_refined_neurons](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function erase_knowledge](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_attribute_recursive](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 7 other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function modify_weights](1), with key source: [ControlFlowNode for neurons](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for Tuple](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetItem-GetAttr Class pollution function: [Function modify_weights](1), with key source: [ControlFlowNode for neurons](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for Tuple](6). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function suppress_knowledge](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function modify_activations](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_scores_for_layer](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_coarse_neurons](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function patch_ff_layer](1), with key source: [ControlFlowNode for ff_attrs](2), and object source: [ControlFlowNode for ff_attrs](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function get_scores_for_layer](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function edit_knowledge](1), with key source: [ControlFlowNode for neurons](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for Tuple](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetItem-GetAttr Class pollution function: [Function edit_knowledge](1), with key source: [ControlFlowNode for neurons](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for Tuple](6). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function get_scores](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function erase_knowledge](1), with key source: [ControlFlowNode for neurons](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for Tuple](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetItem-GetAttr Class pollution function: [Function erase_knowledge](1), with key source: [ControlFlowNode for neurons](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for Tuple](6). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function edit_knowledge](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function unpatch_ff_layers](1), with key source: [ControlFlowNode for ff_attrs](2), and object source: [ControlFlowNode for ff_attrs](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_scores](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function enhance_knowledge](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

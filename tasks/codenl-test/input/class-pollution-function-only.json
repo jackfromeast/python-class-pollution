@@ -1,0 +1,16 @@
+[
+  {
+    "repo": "https://github.com/comfyanonymous/ComfyUI",
+    "class_pollution_func": [
+      {
+        "function": "set_attr",
+        "location": {
+          "file": "comfy/utils.py",
+          "start_line": 705,
+          "start_column": null,
+          "end_column": 32
+        }
+      }
+    ]
+  }
+]

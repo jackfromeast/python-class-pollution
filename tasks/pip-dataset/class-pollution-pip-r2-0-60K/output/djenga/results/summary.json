@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 8,
+    "py/class-polliution/shared-class-pollution-functions": 8,
+    "py/class-polliution/leaf-class-pollution-functions": 8
+  },
+  "details": [
+    "This function [Function lazy_wrap](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function dictcomp](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __setitem__](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function lazy_wrap](1), with key source: [ControlFlowNode for values](2), and object source: [ControlFlowNode for values](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function __setitem__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function decrypt](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function load_file](1), with key source: [ControlFlowNode for f](2), and object source: [ControlFlowNode for f](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function decrypt](1), with key source: [ControlFlowNode for values](2), and object source: [ControlFlowNode for values](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function setdefault](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function load_file](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function assimilate_values](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function assimilate_values](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function setdefault](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __setitem__](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function decrypt](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function dictcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function assimilate_values](1), with key source: [ControlFlowNode for values](2), and object source: [ControlFlowNode for values](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function setdefault](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function load_file](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function lazy_wrap](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dictcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

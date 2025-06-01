@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "This function [Function _import_path](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _set_path](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function patch](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function unpatch_all](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function unpatch](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _import_path](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _import_path](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 5 other functions."
+  ]
+}

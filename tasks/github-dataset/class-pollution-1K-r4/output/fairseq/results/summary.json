@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 6,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "This function [Function _set_module_by_path](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function lambda](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function resolve_attr](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function lambda](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function resolve_attr](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for resolved_attr](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function resolve_attr](1), with key source: [ControlFlowNode for attr](3), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for resolved_attr](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _set_module_by_path](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function resolve_attr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function _set_module_by_path](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function lambda](1), with key source: [ControlFlowNode for x](2), and object source: [ControlFlowNode for x](2). Set attribute key: [ControlFlowNode for resolved_attr](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

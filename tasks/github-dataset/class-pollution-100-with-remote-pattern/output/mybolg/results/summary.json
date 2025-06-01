@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 3,
+    "py/class-polliution/leaf-class-pollution-functions": 7
+  },
+  "details": [
+    "This function [Function generic_visit](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 61 other functions.",
+    "This function [Function visit](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 61 other functions.",
+    "This function [Function escape](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __html__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _generate](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function iter_child_nodes](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function lambda](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function assert_error](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function iter_fields](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 1
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function remote_class](1), with key source: [ControlFlowNode for klass](2), and object source: [ControlFlowNode for module_name](3). Set attribute key: [ControlFlowNode for Attribute](4). Get attribute op: [ControlFlowNode for getattr()](5)."
-  ]
-}

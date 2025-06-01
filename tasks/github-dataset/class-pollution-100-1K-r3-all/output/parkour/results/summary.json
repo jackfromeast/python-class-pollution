@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 1,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "This function [Function update_class_from_dict](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function update_class_from_dict](1), with key source: [ControlFlowNode for dict_](2), and object source: [ControlFlowNode for dict_](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function update_class_from_dict](1), with key source: [ControlFlowNode for dict_](2), and object source: [ControlFlowNode for dict_](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function update_class_from_dict](1), with key source: [ControlFlowNode for dict_](2), and object source: [ControlFlowNode for dict_](2). Set attribute key: [ControlFlowNode for key](6). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function update_class_from_dict](1), with key source: [ControlFlowNode for dict_](2), and object source: [ControlFlowNode for dict_](2). Set attribute key: [ControlFlowNode for key](6). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function update_class_from_dict](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

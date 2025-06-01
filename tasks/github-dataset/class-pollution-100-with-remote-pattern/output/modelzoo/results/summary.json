@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 8
+  },
+  "details": [
+    "This function [Function _set_flag](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function on_train_end](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _set_flag](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function _restore_all_flags](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function on_validate_end](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _set_all_flags](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function set_flag](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function on_validate_start](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function on_train_start](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-both": 1,
+    "py/class-polliution/set-item-get-attr": 1,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetItem-GetBoth Class pollution function: [Function handle_starttag](1), with key source: [ControlFlowNode for attrs](2), and object source: [ControlFlowNode for tagname](3). Set item key: [ControlFlowNode for BinaryExpr](4). Get attribute op: [ControlFlowNode for eval()](5). Get item op: [ControlFlowNode for eval()](5).",
+    "Type:SetItem-GetAttr Class pollution function: [Function handle_starttag](1), with key source: [ControlFlowNode for attrs](2), and object source: [ControlFlowNode for tagname](3). Set item key: [ControlFlowNode for BinaryExpr](4). Get attribute op: [ControlFlowNode for eval()](5).",
+    "This function [Function handle_starttag](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function handle_starttag](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function handle_starttag](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions.\nThis function [Function handle_starttag](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

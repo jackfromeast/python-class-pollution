@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 15,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function change_task_options](1), with key source: [ControlFlowNode for options](2), and object source: [ControlFlowNode for options](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_task_recorder_settings](1), with key source: [ControlFlowNode for options](2), and object source: [ControlFlowNode for options](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_recorder_settings](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_postprocessing_settings](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_task_output_settings](1), with key source: [ControlFlowNode for options](2), and object source: [ControlFlowNode for options](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_task_danmaku_settings](1), with key source: [ControlFlowNode for options](2), and object source: [ControlFlowNode for options](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_output_settings](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function change_settings](1), with key source: [ControlFlowNode for settings](2), and object source: [ControlFlowNode for settings](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_header_settings](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_danmaku_settings](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function overwrite_settings](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 15 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function update_settings](1), with key source: [ControlFlowNode for src](2), and object source: [ControlFlowNode for src](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function overwrite_settings](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function overwrite_settings](1), with key source: [ControlFlowNode for src](2), and object source: [ControlFlowNode for src](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_task_postprocessing_settings](1), with key source: [ControlFlowNode for options](2), and object source: [ControlFlowNode for options](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function apply_task_header_settings](1), with key source: [ControlFlowNode for options](2), and object source: [ControlFlowNode for options](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function shadow_settings](1), with key source: [ControlFlowNode for src](2), and object source: [ControlFlowNode for src](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

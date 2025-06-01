@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 1
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function apply_overrides](1), with key source: [ControlFlowNode for overrides](2), and object source: [ControlFlowNode for overrides](2). Set attribute key: [ControlFlowNode for setting](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

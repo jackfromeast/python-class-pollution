@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "This function [Function _menu_savefunc](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _menu_savefunc](1), with key source: [ControlFlowNode for caller](2), and object source: [ControlFlowNode for caller](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function menu_setattr](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function menu_setattr](1), with key source: [ControlFlowNode for choice](2), and object source: [ControlFlowNode for choice](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _menu_savefunc](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function menu_setattr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

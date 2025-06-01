@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 4
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _assign_attr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function handle_multi_use_params](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _assign_attr](1), with key source: [ControlFlowNode for target](2), and object source: [ControlFlowNode for target](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function move_param_to_callee](1), with key source: [ControlFlowNode for param_fqn](2), and object source: [ControlFlowNode for param_fqn](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function handle_multi_use_params](1), with key source: [ControlFlowNode for split](2), and object source: [ControlFlowNode for split](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _assign_attr](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

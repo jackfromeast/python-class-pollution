@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 1,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "This function [Function set_instance_value](1) with type:SetBoth-GetBoth has no caller-callee relationships with other functions.",
+    "Type:SetBoth-GetBoth Class pollution function: [Function set_instance_value](1), with key source: [ControlFlowNode for access_path](2), and object source: [ControlFlowNode for access_path](2). Set attribute key: [ControlFlowNode for access_arg](3), Set item op key: [ControlFlowNode for index](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "This function [Function set_instance_value](1) with type:SetBoth-GetBoth has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

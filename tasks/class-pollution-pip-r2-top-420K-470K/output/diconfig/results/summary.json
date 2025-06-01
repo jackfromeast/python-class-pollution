@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-both": 1
-  },
-  "details": [
-    "Type:SetAttr-GetBoth Class pollution function: [Function write](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5)."
-  ]
-}

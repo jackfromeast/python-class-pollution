@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-both-get-attr": 2
-  },
-  "details": [
-    "Type:SetBoth-GetAttr Class pollution function: [Function generic_visit](1), with key source: [ControlFlowNode for node](2), and object source: [ControlFlowNode for node](2). Set attribute key: [ControlFlowNode for k](3), Set item op key: [ControlFlowNode for ind](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetBoth-GetAttr Class pollution function: [Function generic_visit](1), with key source: [ControlFlowNode for node](2), and object source: [ControlFlowNode for node](2). Set attribute key: [ControlFlowNode for k](6), Set item op key: [ControlFlowNode for ind](4). Get attribute op: [ControlFlowNode for getattr()](5)."
-  ]
-}

@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 13
+  },
+  "details": [
+    "This function [Function setCfgNestedParam](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function setCfgNestedParam](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function sbiOptim](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function sbiOptim](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function evaluator](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function evaluator](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function listcomp](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function __init__](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function func](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function func](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function setNestedParam](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function setNestedParam](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function evaluator](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 6 other functions.\nThis function [Function evaluator](1) with type:SetItem-GetBoth has the largest number of caller-callee relationships with 6 other functions.",
+    "This function [Function setCfgMapping](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function setCfgMapping](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function getParamCombinations](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function getParamCombinations](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions.",
+    "This function [Function update_items](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.\nThis function [Function update_items](1) with type:SetItem-GetBoth has no caller-callee relationships with other functions."
+  ]
+}

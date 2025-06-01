@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 1
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function get_name__private_external](1), with key source: [ControlFlowNode for dirname](2), and object source: [ControlFlowNode for dirname](2). Set attribute key: [ControlFlowNode for name_original](3), Set item op key: [ControlFlowNode for key_i](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

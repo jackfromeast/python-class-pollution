@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 6,
+    "py/class-polliution/leaf-class-pollution-functions": 6
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function add_value_to_node](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for value](3). Set attribute key: [ControlFlowNode for Attribute()](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function add_value_to_node](1), with key source: [ControlFlowNode for value](3), and object source: [ControlFlowNode for value](3). Set attribute key: [ControlFlowNode for Attribute()](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function serializeJsonToModel](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function convert_model_to_row](1), with key source: [ControlFlowNode for modelObject](2), and object source: [ControlFlowNode for modelObject](2). Set attribute key: [ControlFlowNode for attribName](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function serialize](1), with key source: [ControlFlowNode for dictionary](2), and object source: [ControlFlowNode for dictionary](2). Set attribute key: [ControlFlowNode for Attribute()](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function convert_dict_to_node](1), with key source: [ControlFlowNode for dictionary](2), and object source: [ControlFlowNode for dictionary](2). Set attribute key: [ControlFlowNode for Attribute()](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function convert_dict_to_node](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function serialize](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function convert_model_to_row](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function serializeJsonToModel](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function serialize](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function add_value_to_node](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function add_value_to_node](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function serializeJsonToModel](1), with key source: [ControlFlowNode for Json](2), and object source: [ControlFlowNode for Json](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function serializeJsonToModel](1), with key source: [ControlFlowNode for Json](2), and object source: [ControlFlowNode for Json](2). Set attribute key: [ControlFlowNode for key](5). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function convert_dict_to_node](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function convert_model_to_row](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions."
+  ]
+}

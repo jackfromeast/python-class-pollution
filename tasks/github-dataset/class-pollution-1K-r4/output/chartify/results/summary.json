@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function _apply_settings](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _apply_bokeh_setting](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _apply_bokeh_settings](1), with key source: [ControlFlowNode for attributes](2), and object source: [ControlFlowNode for attributes](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _font_value](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _apply_bokeh_setting](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _font_value](1), with key source: [ControlFlowNode for text_font](2), and object source: [ControlFlowNode for text_font](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _settings_from_yaml](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _apply_bokeh_setting](1), with key source: [ControlFlowNode for attribute](2), and object source: [ControlFlowNode for attribute](2). Set attribute key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _settings_from_yaml](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

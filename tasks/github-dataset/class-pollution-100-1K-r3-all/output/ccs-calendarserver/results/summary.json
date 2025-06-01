@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function getRootResource](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set attribute key: [ControlFlowNode for BinaryExpr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function getRootResource](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function stepWithResult](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for BinaryExpr](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function stepWithResult](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function getRootResource](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function processInboxItems](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for BinaryExpr](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

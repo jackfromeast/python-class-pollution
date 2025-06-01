@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function create_mnbn_model](1), with key source: [ControlFlowNode for link](2), and object source: [ControlFlowNode for link](2). Set item key: [ControlFlowNode for i](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function create_mnbn_model](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function create_mnbn_model](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set item key: [ControlFlowNode for i](3). Get attribute op: [ControlFlowNode for Subscript](4)."
+  ]
+}

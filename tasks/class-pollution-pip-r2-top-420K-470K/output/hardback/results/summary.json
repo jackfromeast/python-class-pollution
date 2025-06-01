@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 2
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function unserialize](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
-    "Type:SetAttr-GetAttr Class pollution function: [Function main](1), with key source: [ControlFlowNode for files](2), and object source: [ControlFlowNode for files](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

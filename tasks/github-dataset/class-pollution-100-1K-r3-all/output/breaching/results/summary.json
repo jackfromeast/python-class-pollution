@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 7,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 4
+  },
+  "details": [
+    "This function [Function load_weights](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function forward](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function load_buffers](1), with key source: [ControlFlowNode for names](2), and object source: [ControlFlowNode for names](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function load_weights](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 4 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function load_weights](1), with key source: [ControlFlowNode for names](2), and object source: [ControlFlowNode for names](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function with_state](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function forward](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function load_state](1), with key source: [ControlFlowNode for weight_names](2), and object source: [ControlFlowNode for weight_names](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function load_state](1), with key source: [ControlFlowNode for weight_names](2), and object source: [ControlFlowNode for buffer_names](5). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function load_state](1), with key source: [ControlFlowNode for buffer_names](5), and object source: [ControlFlowNode for weight_names](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function load_state](1), with key source: [ControlFlowNode for buffer_names](5), and object source: [ControlFlowNode for buffer_names](5). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function load_buffers](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

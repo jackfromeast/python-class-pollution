@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 13
+  },
+  "details": [
+    "This function [Function get_modules_wrapper](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _sparsities_2_config_list](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _setattr](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _wrap_modules](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function get_modules_wrapper](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 24 other functions.",
+    "This function [Function _detect_modules_to_compress](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function select_config](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

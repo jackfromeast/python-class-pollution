@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function update](1), with key source: [ControlFlowNode for other](2), and object source: [ControlFlowNode for other](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).\nType:SetItem-GetAttr Class pollution function: [Function update](1), with key source: [ControlFlowNode for other](2), and object source: [ControlFlowNode for other](2). Set item key: [ControlFlowNode for k](5). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function run](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function _update_dict_recursive](1), with key source: [ControlFlowNode for other](2), and object source: [ControlFlowNode for other](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).\nType:SetItem-GetAttr Class pollution function: [Function _update_dict_recursive](1), with key source: [ControlFlowNode for other](2), and object source: [ControlFlowNode for other](2). Set item key: [ControlFlowNode for k](5). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function set_env](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "This function [Function _update_dict_recursive](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function __init__](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function _update_dict_recursive](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_env](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).\nType:SetItem-GetAttr Class pollution function: [Function set_env](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for environment](5). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).\nType:SetItem-GetAttr Class pollution function: [Function set_env](1), with key source: [ControlFlowNode for environment](5), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).\nType:SetItem-GetAttr Class pollution function: [Function set_env](1), with key source: [ControlFlowNode for environment](5), and object source: [ControlFlowNode for environment](5). Set item key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "This function [Function set_env](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

@@ -1,0 +1,3848 @@
+[
+  {
+    "repo": "https://pypi.org/project/msrest",
+    "class_pollution_func": [
+      {
+        "function": "deserialize_data",
+        "location": {
+          "file": "msrest/serialization.py",
+          "start_line": 1598,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "deserialize_from_text",
+        "location": {
+          "file": "msrest/pipeline/universal.py",
+          "start_line": 140,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "deserialize",
+        "location": {
+          "file": "msrest/serialization.py",
+          "start_line": 319,
+          "start_column": 5,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "from_dict",
+        "location": {
+          "file": "msrest/serialization.py",
+          "start_line": 331,
+          "start_column": 5,
+          "end_column": 70
+        }
+      },
+      {
+        "function": "failsafe_deserialize",
+        "location": {
+          "file": "msrest/serialization.py",
+          "start_line": 1497,
+          "start_column": 5,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "_json_attemp",
+        "location": {
+          "file": "msrest/pipeline/universal.py",
+          "start_line": 189,
+          "start_column": 17,
+          "end_column": 40
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/datasets",
+    "class_pollution_func": [
+      {
+        "function": "__enter__",
+        "location": {
+          "file": "datasets/utils/patching.py",
+          "start_line": 48,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "datasets/utils/patching.py",
+          "start_line": 40,
+          "start_column": 5,
+          "end_column": 59
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/wandb",
+    "class_pollution_func": [
+      {
+        "function": "execute",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/execution/executor.py",
+          "start_line": 28,
+          "start_column": null,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "is_valid_literal_value",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/utils/is_valid_literal_value.py",
+          "start_line": 9,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "_collect_conflicts_between_fields_and_fragment",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 178,
+          "start_column": null,
+          "end_column": 67
+        }
+      },
+      {
+        "function": "_collect_conflicts_between_fragments",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 205,
+          "start_column": null,
+          "end_column": 98
+        }
+      },
+      {
+        "function": "_collect_conflicts_within",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 295,
+          "start_column": null,
+          "end_column": 116
+        }
+      },
+      {
+        "function": "_get_fields_and_fragments_names",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 410,
+          "start_column": null,
+          "end_column": 108
+        }
+      },
+      {
+        "function": "get_fragment",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/validation.py",
+          "start_line": 133,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/language/ast.py",
+          "start_line": 17,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "get_named_type",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/type/definition.py",
+          "start_line": 73,
+          "start_column": null,
+          "end_column": 26
+        }
+      },
+      {
+        "function": "wandb_log",
+        "location": {
+          "file": "wandb/integration/metaflow/metaflow.py",
+          "start_line": 290,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "decorator",
+        "location": {
+          "file": "wandb/integration/metaflow/metaflow.py",
+          "start_line": 314,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_find_conflicts_between_sub_selection_sets",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 248,
+          "start_column": null,
+          "end_column": 78
+        }
+      },
+      {
+        "function": "_collect_conflicts_between",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 315,
+          "start_column": null,
+          "end_column": 94
+        }
+      },
+      {
+        "function": "_find_conflict",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 341,
+          "start_column": null,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "_get_referenced_fields_and_fragment_names",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 423,
+          "start_column": null,
+          "end_column": 100
+        }
+      },
+      {
+        "function": "_collect_fields_and_fragment_names",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 439,
+          "start_column": null,
+          "end_column": 107
+        }
+      },
+      {
+        "function": "_same_arguments",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/validation/rules/overlapping_fields_can_be_merged.py",
+          "start_line": 510,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "get_variable_values",
+        "location": {
+          "file": "wandb/vendor/graphql-core-1.1/wandb_graphql/execution/values.py",
+          "start_line": 15,
+          "start_column": null,
+          "end_column": 58
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/pytorch-lightning",
+    "class_pollution_func": [
+      {
+        "function": "_set_module_by_path",
+        "location": {
+          "file": "pytorch_lightning/utilities/parameter_tying.py",
+          "start_line": 64,
+          "start_column": null,
+          "end_column": 81
+        }
+      },
+      {
+        "function": "_find_shared_parameters",
+        "location": {
+          "file": "pytorch_lightning/utilities/parameter_tying.py",
+          "start_line": 31,
+          "start_column": null,
+          "end_column": 119
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/azure-servicebus",
+    "class_pollution_func": [
+      {
+        "function": "deserialize",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 409,
+          "start_column": 5,
+          "end_column": 103
+        }
+      },
+      {
+        "function": "_get_entity_element",
+        "location": {
+          "file": "azure/servicebus/management/_management_client.py",
+          "start_line": 176,
+          "start_column": 5,
+          "end_column": 105
+        }
+      },
+      {
+        "function": "_get_subscription_element",
+        "location": {
+          "file": "azure/servicebus/management/_management_client.py",
+          "start_line": 186,
+          "start_column": 5,
+          "end_column": 22
+        }
+      },
+      {
+        "function": "_get_rule_element",
+        "location": {
+          "file": "azure/servicebus/management/_management_client.py",
+          "start_line": 197,
+          "start_column": 5,
+          "end_column": 120
+        }
+      },
+      {
+        "function": "deserialize_from_text",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 84,
+          "start_column": 5,
+          "end_column": 114
+        }
+      },
+      {
+        "function": "_json_attemp",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 132,
+          "start_column": 17,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "deserialize_from_http_generics",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 150,
+          "start_column": 5,
+          "end_column": 111
+        }
+      },
+      {
+        "function": "from_dict",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 421,
+          "start_column": 5,
+          "end_column": 20
+        }
+      },
+      {
+        "function": "failsafe_deserialize",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 1529,
+          "start_column": 5,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "deserialize_data",
+        "location": {
+          "file": "azure/servicebus/management/_generated/_serialization.py",
+          "start_line": 1615,
+          "start_column": 5,
+          "end_column": 49
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/passlib",
+    "class_pollution_func": [
+      {
+        "function": "_import_path",
+        "location": {
+          "file": "passlib/ext/django/utils.py",
+          "start_line": 1135,
+          "start_column": 5,
+          "end_column": 34
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/glom",
+    "class_pollution_func": [
+      {
+        "function": "_glom",
+        "location": {
+          "file": "glom/core.py",
+          "start_line": 2330,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "from_text",
+        "location": {
+          "file": "glom/core.py",
+          "start_line": 641,
+          "start_column": 5,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "_t_eval",
+        "location": {
+          "file": "glom/core.py",
+          "start_line": 1538,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "first",
+        "location": {
+          "file": "glom/streaming.py",
+          "start_line": 337,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_make_stack",
+        "location": {
+          "file": "glom/test/test_error.py",
+          "start_line": 88,
+          "start_column": null,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "_test_exc",
+        "location": {
+          "file": "glom/test/test_error.py",
+          "start_line": 447,
+          "start_column": 5,
+          "end_column": 43
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/acryl-datahub",
+    "class_pollution_func": [
+      {
+        "function": "list_urns_with_path",
+        "location": {
+          "file": "datahub/utilities/urns/urn_iter.py",
+          "start_line": 23,
+          "start_column": null,
+          "end_column": 30
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/azureml-core",
+    "class_pollution_func": [
+      {
+        "function": "_serialize_to_dict",
+        "location": {
+          "file": "azureml/core/_serialization_utils.py",
+          "start_line": 12,
+          "start_column": null,
+          "end_column": 57
+        }
+      },
+      {
+        "function": "set_param",
+        "location": {
+          "file": "azureml/_vendor/azure_cli_core/commands/__init__.py",
+          "start_line": 365,
+          "start_column": 13,
+          "end_column": 79
+        }
+      },
+      {
+        "function": "_serialize_run_config_to_dict",
+        "location": {
+          "file": "azureml/_execution/_commands.py",
+          "start_line": 165,
+          "start_column": null,
+          "end_column": 54
+        }
+      },
+      {
+        "function": "_start_internal",
+        "location": {
+          "file": "azureml/_execution/_commands.py",
+          "start_line": 299,
+          "start_column": null,
+          "end_column": 41
+        }
+      },
+      {
+        "function": "_start_git_snapshot_run",
+        "location": {
+          "file": "azureml/_execution/_commands.py",
+          "start_line": 797,
+          "start_column": null,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "deserialize_from_text",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 66,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_json_attemp",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 115,
+          "start_column": 17,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "deserialize_from_http_generics",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 132,
+          "start_column": 5,
+          "end_column": 66
+        }
+      },
+      {
+        "function": "deserialize",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 381,
+          "start_column": 5,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "from_dict",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 393,
+          "start_column": 5,
+          "end_column": 70
+        }
+      },
+      {
+        "function": "failsafe_deserialize",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 1513,
+          "start_column": 5,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "deserialize_data",
+        "location": {
+          "file": "azureml/_vendor/azure_network/_serialization.py",
+          "start_line": 1610,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "_deserialize_and_add_to_object",
+        "location": {
+          "file": "azureml/core/_serialization_utils.py",
+          "start_line": 82,
+          "start_column": null,
+          "end_column": 90
+        }
+      },
+      {
+        "function": "serialize",
+        "location": {
+          "file": "azureml/core/webservice/aci.py",
+          "start_line": 614,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_split_key_value_pair",
+        "location": {
+          "file": "azureml/_vendor/azure_cli_core/commands/arm.py",
+          "start_line": 444,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "_get_internal_path",
+        "location": {
+          "file": "azureml/_vendor/azure_cli_core/commands/arm.py",
+          "start_line": 637,
+          "start_column": null,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "_get_environment_definition",
+        "location": {
+          "file": "azureml/_restclient/environment_client.py",
+          "start_line": 19,
+          "start_column": 5,
+          "end_column": 63
+        }
+      },
+      {
+        "function": "_get_environment_definition_by_label",
+        "location": {
+          "file": "azureml/_restclient/environment_client.py",
+          "start_line": 45,
+          "start_column": 5,
+          "end_column": 65
+        }
+      },
+      {
+        "function": "_format_env_for_path",
+        "location": {
+          "file": "azureml/_restclient/environment_client.py",
+          "start_line": 260,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "list_environments",
+        "location": {
+          "file": "azureml/_cli/environment/environment_commands.py",
+          "start_line": 30,
+          "start_column": null,
+          "end_column": 22
+        }
+      },
+      {
+        "function": "save",
+        "location": {
+          "file": "azureml/core/runconfig.py",
+          "start_line": 1412,
+          "start_column": 5,
+          "end_column": 75
+        }
+      },
+      {
+        "function": "_get_run_config_object",
+        "location": {
+          "file": "azureml/core/runconfig.py",
+          "start_line": 1952,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "_get_runconfig_using_runid",
+        "location": {
+          "file": "azureml/core/runconfig.py",
+          "start_line": 1974,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_get_runconfig_using_run_details",
+        "location": {
+          "file": "azureml/core/runconfig.py",
+          "start_line": 1991,
+          "start_column": 5,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "_get_runconfig_using_dict",
+        "location": {
+          "file": "azureml/core/runconfig.py",
+          "start_line": 2007,
+          "start_column": 5,
+          "end_column": 58
+        }
+      },
+      {
+        "function": "get_cluster_url",
+        "location": {
+          "file": "azureml/_restclient/workspace_client.py",
+          "start_line": 64,
+          "start_column": 5,
+          "end_column": 31
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/pyinstrument",
+    "class_pollution_func": [
+      {
+        "function": "set_value_at_keypath",
+        "location": {
+          "file": "pyinstrument/vendor/keypath.py",
+          "start_line": 62,
+          "start_column": null,
+          "end_column": 60
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/lightning",
+    "class_pollution_func": [
+      {
+        "function": "_set_module_by_path",
+        "location": {
+          "file": "lightning/pytorch/utilities/parameter_tying.py",
+          "start_line": 64,
+          "start_column": null,
+          "end_column": 81
+        }
+      },
+      {
+        "function": "_find_shared_parameters",
+        "location": {
+          "file": "lightning/pytorch/utilities/parameter_tying.py",
+          "start_line": 31,
+          "start_column": null,
+          "end_column": 119
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/newrelic",
+    "class_pollution_func": [
+      {
+        "function": "resolve_path",
+        "location": {
+          "file": "newrelic/packages/wrapt/patches.py",
+          "start_line": 15,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "_apply_high_security_mode_fixups",
+        "location": {
+          "file": "newrelic/core/agent_protocol.py",
+          "start_line": 396,
+          "start_column": 5,
+          "end_column": 80
+        }
+      },
+      {
+        "function": "decode_response",
+        "location": {
+          "file": "newrelic/core/agent_protocol.py",
+          "start_line": 590,
+          "start_column": 5,
+          "end_column": 41
+        }
+      },
+      {
+        "function": "_process_setting",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 267,
+          "start_column": null,
+          "end_column": 55
+        }
+      },
+      {
+        "function": "apply_config_setting",
+        "location": {
+          "file": "newrelic/core/config.py",
+          "start_line": 1176,
+          "start_column": null,
+          "end_column": 70
+        }
+      },
+      {
+        "function": "fetch_config_setting",
+        "location": {
+          "file": "newrelic/core/config.py",
+          "start_line": 1208,
+          "start_column": null,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "_remove_ignored_configs",
+        "location": {
+          "file": "newrelic/core/config.py",
+          "start_line": 1358,
+          "start_column": null,
+          "end_column": 46
+        }
+      },
+      {
+        "function": "_module_function_glob",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1164,
+          "start_column": null,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "_wsgi_application_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1204,
+          "start_column": null,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_instrument",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1205,
+          "start_column": 5,
+          "end_column": 29
+        }
+      },
+      {
+        "function": "_background_task_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1252,
+          "start_column": null,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "_database_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1311,
+          "start_column": null,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "_external_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1361,
+          "start_column": null,
+          "end_column": 68
+        }
+      },
+      {
+        "function": "_function_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1420,
+          "start_column": null,
+          "end_column": 92
+        }
+      },
+      {
+        "function": "_generator_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1490,
+          "start_column": null,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "_profile_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1546,
+          "start_column": null,
+          "end_column": 65
+        }
+      },
+      {
+        "function": "_memcache_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1605,
+          "start_column": null,
+          "end_column": 55
+        }
+      },
+      {
+        "function": "_transaction_name_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1655,
+          "start_column": null,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "_error_trace_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1715,
+          "start_column": null,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_function_profile_import_hook",
+        "location": {
+          "file": "newrelic/config.py",
+          "start_line": 1868,
+          "start_column": null,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "json_decode",
+        "location": {
+          "file": "newrelic/common/encoding_utils.py",
+          "start_line": 89,
+          "start_column": null,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "patch_function_wrapper",
+        "location": {
+          "file": "newrelic/common/object_wrapper.py",
+          "start_line": 160,
+          "start_column": null,
+          "end_column": 56
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/etils",
+    "class_pollution_func": [
+      {
+        "function": "_update_class",
+        "location": {
+          "file": "etils/ecolab/inplace_reload.py",
+          "start_line": 73,
+          "start_column": 3,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "_update_enum",
+        "location": {
+          "file": "etils/ecolab/inplace_reload.py",
+          "start_line": 97,
+          "start_column": 3,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "update",
+        "location": {
+          "file": "etils/ecolab/inplace_reload.py",
+          "start_line": 141,
+          "start_column": 3,
+          "end_column": 30
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/azure-cli",
+    "class_pollution_func": [
+      {
+        "function": "deserialize_data",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 1701,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "deserialize_from_text",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 79,
+          "start_column": 5,
+          "end_column": 114
+        }
+      },
+      {
+        "function": "_json_attemp",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 129,
+          "start_column": 17,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "deserialize_from_http_generics",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 149,
+          "start_column": 5,
+          "end_column": 111
+        }
+      },
+      {
+        "function": "deserialize",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 449,
+          "start_column": 5,
+          "end_column": 103
+        }
+      },
+      {
+        "function": "from_dict",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 462,
+          "start_column": 5,
+          "end_column": 20
+        }
+      },
+      {
+        "function": "failsafe_deserialize",
+        "location": {
+          "file": "azure/cli/command_modules/keyvault/vendored_sdks/azure_keyvault_securitydomain/_serialization.py",
+          "start_line": 1604,
+          "start_column": 5,
+          "end_column": 73
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/django-import-export",
+    "class_pollution_func": [
+      {
+        "function": "save",
+        "location": {
+          "file": "import_export/fields.py",
+          "start_line": 131,
+          "start_column": 5,
+          "end_column": 59
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/modelscope",
+    "class_pollution_func": [
+      {
+        "function": "_setattr",
+        "location": {
+          "file": "modelscope/trainers/hooks/compression/utils.py",
+          "start_line": 116,
+          "start_column": null,
+          "end_column": 35
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/modal",
+    "class_pollution_func": [
+      {
+        "function": "_fill",
+        "location": {
+          "file": "modal/_utils/rand_pb_testing.py",
+          "start_line": 37,
+          "start_column": null,
+          "end_column": 56
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/gluonts",
+    "class_pollution_func": [
+      {
+        "function": "update_configs",
+        "location": {
+          "file": "gluonts/nursery/daf/__main__.py",
+          "start_line": 66,
+          "start_column": null,
+          "end_column": 22
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/panel",
+    "class_pollution_func": [
+      {
+        "function": "link_to_jslink",
+        "location": {
+          "file": "panel/io/embed.py",
+          "start_line": 123,
+          "start_column": null,
+          "end_column": 63
+        }
+      },
+      {
+        "function": "select",
+        "location": {
+          "file": "panel/layout/accordion.py",
+          "start_line": 218,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "panel",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 44,
+          "start_column": null,
+          "end_column": 59
+        }
+      },
+      {
+        "function": "_get_root_model",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 449,
+          "start_column": 5,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "get_root",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 487,
+          "start_column": 5,
+          "end_column": 16
+        }
+      },
+      {
+        "function": "_get_model",
+        "location": {
+          "file": "panel/pane/base.py",
+          "start_line": 538,
+          "start_column": 5,
+          "end_column": 16
+        }
+      },
+      {
+        "function": "_get_properties",
+        "location": {
+          "file": "panel/custom.py",
+          "start_line": 424,
+          "start_column": 5,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "_update_renderers",
+        "location": {
+          "file": "panel/widgets/indicators.py",
+          "start_line": 998,
+          "start_column": 5,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "_update_figure",
+        "location": {
+          "file": "panel/widgets/indicators.py",
+          "start_line": 1060,
+          "start_column": 5,
+          "end_column": 37
+        }
+      },
+      {
+        "function": "_init_callback",
+        "location": {
+          "file": "panel/links.py",
+          "start_line": 416,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_get_specs",
+        "location": {
+          "file": "panel/links.py",
+          "start_line": 579,
+          "start_column": 5,
+          "end_column": 72
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "panel/param.py",
+          "start_line": 252,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "__panel__",
+        "location": {
+          "file": "panel/pipeline.py",
+          "start_line": 224,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_process_param_change",
+        "location": {
+          "file": "panel/widgets/player.py",
+          "start_line": 185,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_render_model",
+        "location": {
+          "file": "panel/viewable.py",
+          "start_line": 635,
+          "start_column": 5,
+          "end_column": 93
+        }
+      },
+      {
+        "function": "_repr_mimebundle_",
+        "location": {
+          "file": "panel/viewable.py",
+          "start_line": 784,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_create_view",
+        "location": {
+          "file": "panel/viewable.py",
+          "start_line": 1084,
+          "start_column": 5,
+          "end_column": 28
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/model-bakery",
+    "class_pollution_func": [
+      {
+        "function": "_save_related_objs",
+        "location": {
+          "file": "model_bakery/baker.py",
+          "start_line": 844,
+          "start_column": null,
+          "end_column": 61
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/ariadne",
+    "class_pollution_func": [
+      {
+        "function": "_purge_directive_nodes",
+        "location": {
+          "file": "ariadne/contrib/federation/utils.py",
+          "start_line": 43,
+          "start_column": null,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "ariadne/contrib/federation/utils.py",
+          "start_line": 45,
+          "start_column": 9,
+          "end_column": 50
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/datarobotx",
+    "class_pollution_func": [
+      {
+        "function": "otv",
+        "location": {
+          "file": "datarobotx/common/configurator.py",
+          "start_line": 53,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_from_dict",
+        "location": {
+          "file": "datarobotx/common/utils.py",
+          "start_line": 407,
+          "start_column": 5,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "__setitem__",
+        "location": {
+          "file": "datarobotx/common/utils.py",
+          "start_line": 609,
+          "start_column": 5,
+          "end_column": 57
+        }
+      },
+      {
+        "function": "__delitem__",
+        "location": {
+          "file": "datarobotx/common/utils.py",
+          "start_line": 617,
+          "start_column": 5,
+          "end_column": 45
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/djangorestframework-dataclasses",
+    "class_pollution_func": []
+  },
+  {
+    "repo": "https://pypi.org/project/ibis-framework",
+    "class_pollution_func": [
+      {
+        "function": "set",
+        "location": {
+          "file": "ibis/config.py",
+          "start_line": 21,
+          "start_column": 5,
+          "end_column": 49
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/docarray",
+    "class_pollution_func": [
+      {
+        "function": "__getitem__",
+        "location": {
+          "file": "docarray/data/torch_dataset.py",
+          "start_line": 115,
+          "start_column": 5,
+          "end_column": 38
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/clearml",
+    "class_pollution_func": [
+      {
+        "function": "_step",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 702,
+          "start_column": 5,
+          "end_column": 21
+        }
+      },
+      {
+        "function": "_deserialize_state",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 789,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "_deserialize",
+        "location": {
+          "file": "clearml/automation/trigger.py",
+          "start_line": 628,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "_get_data_property",
+        "location": {
+          "file": "clearml/backend_interface/task/access.py",
+          "start_line": 23,
+          "start_column": 5,
+          "end_column": 119
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "clearml/automation/job.py",
+          "start_line": 520,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "update",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 33,
+          "start_column": 5,
+          "end_column": 29
+        }
+      },
+      {
+        "function": "start_remotely",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 379,
+          "start_column": 5,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "_launch_job",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 443,
+          "start_column": 5,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "_launch_job_task",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 448,
+          "start_column": 5,
+          "end_column": 74
+        }
+      },
+      {
+        "function": "__deserialize_scheduled_jobs",
+        "location": {
+          "file": "clearml/automation/scheduler.py",
+          "start_line": 825,
+          "start_column": 5,
+          "end_column": 75
+        }
+      },
+      {
+        "function": "__deserialize_section",
+        "location": {
+          "file": "clearml/automation/trigger.py",
+          "start_line": 637,
+          "start_column": 5,
+          "end_column": 79
+        }
+      },
+      {
+        "function": "__deserialize_triggers",
+        "location": {
+          "file": "clearml/automation/trigger.py",
+          "start_line": 647,
+          "start_column": 5,
+          "end_column": 79
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/spyne",
+    "class_pollution_func": [
+      {
+        "function": "get_cls_attrs",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/_base.py",
+          "start_line": 187,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "_complex_to_csv",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/csv.py",
+          "start_line": 44,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "_sanitize",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/_base.py",
+          "start_line": 86,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "_object_to_doc",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/dictdoc/hier.py",
+          "start_line": 366,
+          "start_column": 5,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "_get_member_pairs",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/dictdoc/hier.py",
+          "start_line": 440,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "_to_dict_value",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/dictdoc/hier.py",
+          "start_line": 478,
+          "start_column": 5,
+          "end_column": 62
+        }
+      },
+      {
+        "function": "_complex_to_doc",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/dictdoc/hier.py",
+          "start_line": 514,
+          "start_column": 5,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "_complex_to_list",
+        "location": {
+          "file": "spyne-2.14.0/spyne/protocol/dictdoc/hier.py",
+          "start_line": 569,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "get",
+        "location": {
+          "file": "spyne-2.14.0/spyne/util/odict.py",
+          "start_line": 120,
+          "start_column": 5,
+          "end_column": 38
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/cloudinary",
+    "class_pollution_func": [
+      {
+        "function": "_put_nested_key",
+        "location": {
+          "file": "cloudinary/__init__.py",
+          "start_line": 118,
+          "start_column": 5,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "_setup_from_parsed_url",
+        "location": {
+          "file": "cloudinary/__init__.py",
+          "start_line": 153,
+          "start_column": 5,
+          "end_column": 50
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/bigframes",
+    "class_pollution_func": [
+      {
+        "function": "__enter__",
+        "location": {
+          "file": "bigframes_vendored/pandas/_config/config.py",
+          "start_line": 37,
+          "start_column": 5,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "__exit__",
+        "location": {
+          "file": "bigframes_vendored/pandas/_config/config.py",
+          "start_line": 49,
+          "start_column": 5,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "_set_option",
+        "location": {
+          "file": "bigframes_vendored/pandas/_config/config.py",
+          "start_line": 63,
+          "start_column": 5,
+          "end_column": 37
+        }
+      },
+      {
+        "function": "set",
+        "location": {
+          "file": "bigframes_vendored/ibis/config.py",
+          "start_line": 24,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "_with_temporary",
+        "location": {
+          "file": "bigframes_vendored/ibis/config.py",
+          "start_line": 32,
+          "start_column": 5,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "__call__",
+        "location": {
+          "file": "bigframes_vendored/ibis/config.py",
+          "start_line": 43,
+          "start_column": 5,
+          "end_column": 33
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/captum",
+    "class_pollution_func": [
+      {
+        "function": "_model_reinsert_params",
+        "location": {
+          "file": "captum/influence/_utils/common.py",
+          "start_line": 1043,
+          "start_column": null,
+          "end_column": 88
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/comet-ml",
+    "class_pollution_func": [
+      {
+        "function": "_set_object",
+        "location": {
+          "file": "comet_ml/monkey_patching.py",
+          "start_line": 185,
+          "start_column": 5,
+          "end_column": 70
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/netapp-ontap",
+    "class_pollution_func": [
+      {
+        "function": "post",
+        "location": {
+          "file": "netapp_ontap/resources/account.py",
+          "start_line": 453,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_post",
+        "location": {
+          "file": "netapp_ontap/resource.py",
+          "start_line": 1431,
+          "start_column": 5,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "_set_keys",
+        "location": {
+          "file": "netapp_ontap/resource.py",
+          "start_line": 1932,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_set_keys_from_location",
+        "location": {
+          "file": "netapp_ontap/resource.py",
+          "start_line": 2022,
+          "start_column": 5,
+          "end_column": 61
+        }
+      },
+      {
+        "function": "_attrsetter",
+        "location": {
+          "file": "netapp_ontap/resource.py",
+          "start_line": 2058,
+          "start_column": 5,
+          "end_column": 58
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/ipex-llm",
+    "class_pollution_func": [
+      {
+        "function": "set_op_by_name",
+        "location": {
+          "file": "ipex_llm/transformers/awq/awq.py",
+          "start_line": 78,
+          "start_column": null,
+          "end_column": 45
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/smolagents",
+    "class_pollution_func": [
+      {
+        "function": "set_value",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 666,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_attribute",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 288,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_unaryop",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 301,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_lambda",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 321,
+          "start_column": null,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "evaluate_while",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 345,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_function_def",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 434,
+          "start_column": null,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "evaluate_class_def",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 445,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "get_current_value",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 517,
+          "start_column": 5,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 528,
+          "start_column": 26,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "evaluate_boolop",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 582,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_binop",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 602,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_call",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 697,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_subscript",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 778,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_name",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 798,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "evaluate_condition",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 819,
+          "start_column": null,
+          "end_column": 20
+        }
+      },
+      {
+        "function": "evaluate_if",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 861,
+          "start_column": null,
+          "end_column": 10
+        }
+      },
+      {
+        "function": "inner_evaluate",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 923,
+          "start_column": 5,
+          "end_column": 117
+        }
+      },
+      {
+        "function": "evaluate_try",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 995,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_raise",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 1030,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_assert",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 1054,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_with",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 1072,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_delete",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 1217,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "evaluate_python_code",
+        "location": {
+          "file": "smolagents/local_python_executor.py",
+          "start_line": 1412,
+          "start_column": null,
+          "end_column": 3
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/starlette-admin",
+    "class_pollution_func": [
+      {
+        "function": "extract_fields",
+        "location": {
+          "file": "starlette_admin/helpers.py",
+          "start_line": 87,
+          "start_column": null,
+          "end_column": 28
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/pyodps",
+    "class_pollution_func": [
+      {
+        "function": "setvalue",
+        "location": {
+          "file": "odps/config.py",
+          "start_line": 73,
+          "start_column": 5,
+          "end_column": 45
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/weave",
+    "class_pollution_func": [
+      {
+        "function": "_get_symbol_target",
+        "location": {
+          "file": "weave/integrations/patcher.py",
+          "start_line": 76,
+          "start_column": 5,
+          "end_column": 58
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/django-auth-adfs",
+    "class_pollution_func": [
+      {
+        "function": "update_user_attributes",
+        "location": {
+          "file": "django_auth_adfs/backend.py",
+          "start_line": 298,
+          "start_column": 5,
+          "end_column": 72
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/lumigo-tracer",
+    "class_pollution_func": [
+      {
+        "function": "resolve_path",
+        "location": {
+          "file": "lumigo_tracer/libs/wrapt.py",
+          "start_line": 778,
+          "start_column": null,
+          "end_column": 32
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/edsnlp",
+    "class_pollution_func": [
+      {
+        "function": "set_deep_attr",
+        "location": {
+          "file": "edsnlp/utils/collections.py",
+          "start_line": 197,
+          "start_column": null,
+          "end_column": 37
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/lark-oapi",
+    "class_pollution_func": [
+      {
+        "function": "_ParseOrMerge",
+        "location": {
+          "file": "lark_oapi/ws/pb/google/protobuf/text_format.py",
+          "start_line": 821,
+          "start_column": 5,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "lark_oapi/ws/pb/google/protobuf/json_format.py",
+          "start_line": 516,
+          "start_column": 36,
+          "end_column": 70
+        }
+      },
+      {
+        "function": "_ConvertMapFieldValue",
+        "location": {
+          "file": "lark_oapi/ws/pb/google/protobuf/json_format.py",
+          "start_line": 721,
+          "start_column": 5,
+          "end_column": 66
+        }
+      },
+      {
+        "function": "_MergeMessage",
+        "location": {
+          "file": "lark_oapi/ws/pb/google/protobuf/internal/well_known_types.py",
+          "start_line": 682,
+          "start_column": null,
+          "end_column": 71
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/appdynamics",
+    "class_pollution_func": [
+      {
+        "function": "from_dict",
+        "location": {
+          "file": "appdynamics/agent/core/pb.py",
+          "start_line": 90,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "_update_config",
+        "location": {
+          "file": "appdynamics/agent/services/config.py",
+          "start_line": 82,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "run",
+        "location": {
+          "file": "appdynamics/agent/services/config.py",
+          "start_line": 142,
+          "start_column": 5,
+          "end_column": 19
+        }
+      },
+      {
+        "function": "_send_config_request",
+        "location": {
+          "file": "appdynamics/agent/services/config.py",
+          "start_line": 164,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "lambda",
+        "location": {
+          "file": "appdynamics/lang.py",
+          "start_line": 33,
+          "start_column": 9,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "parse_message",
+        "location": {
+          "file": "appdynamics/agent/core/pb.py",
+          "start_line": 34,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "from_list",
+        "location": {
+          "file": "appdynamics/agent/core/pb.py",
+          "start_line": 79,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "send",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 164,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "send_custom_metric",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 256,
+          "start_column": 5,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "send_bt_details",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 277,
+          "start_column": 5,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "send_reresolution",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 298,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "send_process_snapshot",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 319,
+          "start_column": 5,
+          "end_column": 51
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/appdynamics-bindeps-linux-x64",
+    "class_pollution_func": [
+      {
+        "function": "_ParseOrMerge",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/text_format.py",
+          "start_line": 855,
+          "start_column": 3,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "_MergeMessage",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/internal/field_mask.py",
+          "start_line": 262,
+          "start_column": null,
+          "end_column": 67
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/json_format.py",
+          "start_line": 557,
+          "start_column": 9,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "_ConvertMapFieldValue",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/json_format.py",
+          "start_line": 804,
+          "start_column": 3,
+          "end_column": 64
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/pyatv",
+    "class_pollution_func": [
+      {
+        "function": "update_model_field",
+        "location": {
+          "file": "pyatv/support/__init__.py",
+          "start_line": 198,
+          "start_column": null,
+          "end_column": 11
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/ostorlab",
+    "class_pollution_func": [
+      {
+        "function": "_parse_list",
+        "location": {
+          "file": "ostorlab/agent/message/serializer.py",
+          "start_line": 124,
+          "start_column": null,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "emit_raw",
+        "location": {
+          "file": "ostorlab/agent/agent.py",
+          "start_line": 365,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_prepare_message",
+        "location": {
+          "file": "ostorlab/agent/agent.py",
+          "start_line": 404,
+          "start_column": 5,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "emit",
+        "location": {
+          "file": "ostorlab/agent/mixins/agent_open_telemetry_mixin.py",
+          "start_line": 242,
+          "start_column": 5,
+          "end_column": 15
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/genie-libs-sdk",
+    "class_pollution_func": [
+      {
+        "function": "ops_diff",
+        "location": {
+          "file": "genie/libs/sdk/libs/utils/common.py",
+          "start_line": 490,
+          "start_column": 5,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "_modify_value",
+        "location": {
+          "file": "genie/libs/sdk/libs/utils/common.py",
+          "start_line": 630,
+          "start_column": 5,
+          "end_column": 46
+        }
+      },
+      {
+        "function": "_set_conf_attribute",
+        "location": {
+          "file": "genie/libs/sdk/libs/utils/triggeractions.py",
+          "start_line": 175,
+          "start_column": 5,
+          "end_column": 76
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/ms-swift",
+    "class_pollution_func": []
+  },
+  {
+    "repo": "https://pypi.org/project/contrast-agent",
+    "class_pollution_func": [
+      {
+        "function": "resolve_path",
+        "location": {
+          "file": "contrast_vendor/wrapt/patches.py",
+          "start_line": 15,
+          "start_column": null,
+          "end_column": 32
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/lamindb",
+    "class_pollution_func": [
+      {
+        "function": "update_fk_to_default_db",
+        "location": {
+          "file": "lamindb/models/record.py",
+          "start_line": 1132,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "transfer_to_default_db",
+        "location": {
+          "file": "lamindb/models/record.py",
+          "start_line": 1216,
+          "start_column": null,
+          "end_column": 20
+        }
+      },
+      {
+        "function": "_finish",
+        "location": {
+          "file": "lamindb/core/_context.py",
+          "start_line": 779,
+          "start_column": 5,
+          "end_column": 75
+        }
+      },
+      {
+        "function": "finish",
+        "location": {
+          "file": "lamindb/core/_context.py",
+          "start_line": 847,
+          "start_column": 5,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "_add_to_version_family",
+        "location": {
+          "file": "lamindb/models/_is_versioned.py",
+          "start_line": 82,
+          "start_column": 5,
+          "end_column": 88
+        }
+      },
+      {
+        "function": "_save_validated_records",
+        "location": {
+          "file": "lamindb/models/_label_manager.py",
+          "start_line": 129,
+          "start_column": null,
+          "end_column": 16
+        }
+      },
+      {
+        "function": "save_artifact",
+        "location": {
+          "file": "lamindb/curators/_legacy.py",
+          "start_line": 1236,
+          "start_column": 5,
+          "end_column": 19
+        }
+      },
+      {
+        "function": "_add_or_remove_synonyms",
+        "location": {
+          "file": "lamindb/models/can_curate.py",
+          "start_line": 344,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "filter",
+        "location": {
+          "file": "lamindb/models/query_set.py",
+          "start_line": 796,
+          "start_column": 5,
+          "end_column": 59
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/mmpretrain",
+    "class_pollution_func": [
+      {
+        "function": "_set_decoder_layers",
+        "location": {
+          "file": "mmpretrain/models/multimodal/flamingo/adapter.py",
+          "start_line": 63,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "setattr_recursive",
+        "location": {
+          "file": "mmpretrain/models/multimodal/flamingo/utils.py",
+          "start_line": 56,
+          "start_column": null,
+          "end_column": 38
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/py-lav",
+    "class_pollution_func": [
+      {
+        "function": "rsetattr",
+        "location": {
+          "file": "pylav/extension/red/utils/__init__.py",
+          "start_line": 14,
+          "start_column": null,
+          "end_column": 56
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/appdynamics-bindeps-alpine-linux-x64",
+    "class_pollution_func": [
+      {
+        "function": "_ParseOrMerge",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/text_format.py",
+          "start_line": 855,
+          "start_column": 3,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "_MergeMessage",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/internal/field_mask.py",
+          "start_line": 262,
+          "start_column": null,
+          "end_column": 67
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/json_format.py",
+          "start_line": 557,
+          "start_column": 9,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "_ConvertMapFieldValue",
+        "location": {
+          "file": "appdynamics_bindeps/google/protobuf/json_format.py",
+          "start_line": 804,
+          "start_column": 3,
+          "end_column": 64
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/open-interpreter",
+    "class_pollution_func": [
+      {
+        "function": "apply_profile_to_object",
+        "location": {
+          "file": "interpreter/terminal_interface/profiles/profiles.py",
+          "start_line": 562,
+          "start_column": null,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "interpreter/core/core.py",
+          "start_line": 42,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "get_profile",
+        "location": {
+          "file": "interpreter/terminal_interface/profiles/profiles.py",
+          "start_line": 67,
+          "start_column": null,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "start_terminal_interface",
+        "location": {
+          "file": "interpreter/terminal_interface/start_terminal_interface.py",
+          "start_line": 19,
+          "start_column": null,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "get_argument_dictionary",
+        "location": {
+          "file": "interpreter/terminal_interface/start_terminal_interface.py",
+          "start_line": 595,
+          "start_column": null,
+          "end_column": 70
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/dagshub",
+    "class_pollution_func": [
+      {
+        "function": "unpatch",
+        "location": {
+          "file": "dagshub/mlflow/patch.py",
+          "start_line": 176,
+          "start_column": 5,
+          "end_column": 23
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/resolwe",
+    "class_pollution_func": [
+      {
+        "function": "dict_dot",
+        "location": {
+          "file": "resolwe/flow/utils/__init__.py",
+          "start_line": 52,
+          "start_column": null,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "get_or_create",
+        "location": {
+          "file": "resolwe/flow/views/data.py",
+          "start_line": 94,
+          "start_column": 5,
+          "end_column": 55
+        }
+      },
+      {
+        "function": "iterate_schema",
+        "location": {
+          "file": "resolwe/flow/utils/iterators.py",
+          "start_line": 38,
+          "start_column": null,
+          "end_column": 74
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/mlx-vlm",
+    "class_pollution_func": [
+      {
+        "function": "set_module_by_name",
+        "location": {
+          "file": "mlx_vlm/trainer/utils.py",
+          "start_line": 21,
+          "start_column": null,
+          "end_column": 49
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/mesop",
+    "class_pollution_func": [
+      {
+        "function": "_recursive_update_dataclass_from_json_obj",
+        "location": {
+          "file": "mesop/dataclass_utils/dataclass_utils.py",
+          "start_line": 130,
+          "start_column": null,
+          "end_column": 78
+        }
+      },
+      {
+        "function": "generate_data",
+        "location": {
+          "file": "mesop/server/server.py",
+          "start_line": 145,
+          "start_column": 3,
+          "end_column": 77
+        }
+      },
+      {
+        "function": "ws_generate_data",
+        "location": {
+          "file": "mesop/server/server.py",
+          "start_line": 318,
+          "start_column": 7,
+          "end_column": 44
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/starlite",
+    "class_pollution_func": [
+      {
+        "function": "_deref_model",
+        "location": {
+          "file": "starlite/openapi/typescript_converter/converter.py",
+          "start_line": 33,
+          "start_column": null,
+          "end_column": 73
+        }
+      },
+      {
+        "function": "resolve_ref",
+        "location": {
+          "file": "starlite/openapi/typescript_converter/converter.py",
+          "start_line": 81,
+          "start_column": null,
+          "end_column": 67
+        }
+      },
+      {
+        "function": "parse_request_body",
+        "location": {
+          "file": "starlite/openapi/typescript_converter/converter.py",
+          "start_line": 166,
+          "start_column": null,
+          "end_column": 85
+        }
+      },
+      {
+        "function": "parse_responses",
+        "location": {
+          "file": "starlite/openapi/typescript_converter/converter.py",
+          "start_line": 193,
+          "start_column": null,
+          "end_column": 102
+        }
+      },
+      {
+        "function": "convert_openapi_to_typescript",
+        "location": {
+          "file": "starlite/openapi/typescript_converter/converter.py",
+          "start_line": 244,
+          "start_column": null,
+          "end_column": 107
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/syft",
+    "class_pollution_func": [
+      {
+        "function": "debox_arg_and_migrate",
+        "location": {
+          "file": "syft/protocol/data_protocol.py",
+          "start_line": 552,
+          "start_column": null,
+          "end_column": 66
+        }
+      },
+      {
+        "function": "attach_attribute_to_syft_object",
+        "location": {
+          "file": "syft/types/syft_object.py",
+          "start_line": 823,
+          "start_column": null,
+          "end_column": 85
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/appdynamics-alpine",
+    "class_pollution_func": [
+      {
+        "function": "from_dict",
+        "location": {
+          "file": "appdynamics/agent/core/pb.py",
+          "start_line": 90,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "_update_config",
+        "location": {
+          "file": "appdynamics/agent/services/config.py",
+          "start_line": 82,
+          "start_column": 5,
+          "end_column": 42
+        }
+      },
+      {
+        "function": "run",
+        "location": {
+          "file": "appdynamics/agent/services/config.py",
+          "start_line": 142,
+          "start_column": 5,
+          "end_column": 19
+        }
+      },
+      {
+        "function": "_send_config_request",
+        "location": {
+          "file": "appdynamics/agent/services/config.py",
+          "start_line": 164,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "lambda",
+        "location": {
+          "file": "appdynamics/lang.py",
+          "start_line": 33,
+          "start_column": 9,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "parse_message",
+        "location": {
+          "file": "appdynamics/agent/core/pb.py",
+          "start_line": 34,
+          "start_column": null,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "from_list",
+        "location": {
+          "file": "appdynamics/agent/core/pb.py",
+          "start_line": 79,
+          "start_column": 5,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "send",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 164,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "send_custom_metric",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 256,
+          "start_column": 5,
+          "end_column": 48
+        }
+      },
+      {
+        "function": "send_bt_details",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 277,
+          "start_column": 5,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "send_reresolution",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 298,
+          "start_column": 5,
+          "end_column": 47
+        }
+      },
+      {
+        "function": "send_process_snapshot",
+        "location": {
+          "file": "appdynamics/agent/core/transport.py",
+          "start_line": 319,
+          "start_column": 5,
+          "end_column": 51
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/fastapi-amis-admin",
+    "class_pollution_func": [
+      {
+        "function": "model_fields",
+        "location": {
+          "file": "fastapi_amis_admin/utils/pydantic.py",
+          "start_line": 154,
+          "start_column": 5,
+          "end_column": 71
+        }
+      },
+      {
+        "function": "_update_items",
+        "location": {
+          "file": "fastapi_amis_admin/crud/_sqlalchemy.py",
+          "start_line": 423,
+          "start_column": 5,
+          "end_column": 112
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/django-restit",
+    "class_pollution_func": [
+      {
+        "function": "saveFromDict",
+        "location": {
+          "file": "rest/models/base.py",
+          "start_line": 530,
+          "start_column": 5,
+          "end_column": 65
+        }
+      },
+      {
+        "function": "logHistory",
+        "location": {
+          "file": "incident/models/incident.py",
+          "start_line": 410,
+          "start_column": 5,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "_getFields",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 239,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "restResult",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 269,
+          "start_column": null,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "updateFeature",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 419,
+          "start_column": null,
+          "end_column": 79
+        }
+      },
+      {
+        "function": "jwt_login",
+        "location": {
+          "file": "account/rpc/auth.py",
+          "start_line": 38,
+          "start_column": null,
+          "end_column": 24
+        }
+      },
+      {
+        "function": "on_complete_jwt",
+        "location": {
+          "file": "account/rpc/auth.py",
+          "start_line": 64,
+          "start_column": null,
+          "end_column": 54
+        }
+      },
+      {
+        "function": "jwt_refresh",
+        "location": {
+          "file": "account/rpc/auth.py",
+          "start_line": 116,
+          "start_column": null,
+          "end_column": 26
+        }
+      },
+      {
+        "function": "member_login_uname_pword",
+        "location": {
+          "file": "account/rpc/auth.py",
+          "start_line": 178,
+          "start_column": null,
+          "end_column": 59
+        }
+      },
+      {
+        "function": "saveNow",
+        "location": {
+          "file": "rest/models/base.py",
+          "start_line": 193,
+          "start_column": 5,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "safeSave",
+        "location": {
+          "file": "rest/models/base.py",
+          "start_line": 196,
+          "start_column": 5,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "saveFields",
+        "location": {
+          "file": "rest/models/base.py",
+          "start_line": 386,
+          "start_column": 5,
+          "end_column": 53
+        }
+      },
+      {
+        "function": "updateLogModel",
+        "location": {
+          "file": "rest/models/base.py",
+          "start_line": 723,
+          "start_column": 5,
+          "end_column": 46
+        }
+      },
+      {
+        "function": "registerComplete",
+        "location": {
+          "file": "account/passkeys/core.py",
+          "start_line": 63,
+          "start_column": null,
+          "end_column": 51
+        }
+      },
+      {
+        "function": "on_rest_saved",
+        "location": {
+          "file": "incident/models/event.py",
+          "start_line": 142,
+          "start_column": 5,
+          "end_column": 52
+        }
+      },
+      {
+        "function": "filterConnections",
+        "location": {
+          "file": "rest/extra/hostinfo.py",
+          "start_line": 38,
+          "start_column": null,
+          "end_column": 37
+        }
+      },
+      {
+        "function": "consToDict",
+        "location": {
+          "file": "rest/extra/hostinfo.py",
+          "start_line": 56,
+          "start_column": null,
+          "end_column": 22
+        }
+      },
+      {
+        "function": "getVersions",
+        "location": {
+          "file": "rest/extra/hostinfo.py",
+          "start_line": 78,
+          "start_column": null,
+          "end_column": 27
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 254,
+          "start_column": 21,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "_filter_recurse",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 356,
+          "start_column": null,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "lambda",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 828,
+          "start_column": 235,
+          "end_column": 246
+        }
+      },
+      {
+        "function": "updatePagination",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 926,
+          "start_column": null,
+          "end_column": 63
+        }
+      },
+      {
+        "function": "restJSON",
+        "location": {
+          "file": "rest/serializers/legacy.py",
+          "start_line": 1670,
+          "start_column": null,
+          "end_column": 55
+        }
+      },
+      {
+        "function": "on_rest_created",
+        "location": {
+          "file": "account/models/member.py",
+          "start_line": 1075,
+          "start_column": 5,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "set_metadata",
+        "location": {
+          "file": "rest/models/metadata.py",
+          "start_line": 98,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "Publish",
+        "location": {
+          "file": "taskqueue/models.py",
+          "start_line": 425,
+          "start_column": 5,
+          "end_column": 119
+        }
+      },
+      {
+        "function": "generatePath",
+        "location": {
+          "file": "wiki/models/page.py",
+          "start_line": 196,
+          "start_column": 5,
+          "end_column": 45
+        }
+      },
+      {
+        "function": "_get",
+        "location": {
+          "file": "rest/uberdict.py",
+          "start_line": 463,
+          "start_column": null,
+          "end_column": 21
+        }
+      },
+      {
+        "function": "cancelTask",
+        "location": {
+          "file": "taskqueue/worker.py",
+          "start_line": 117,
+          "start_column": 5,
+          "end_column": 45
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/py3amf",
+    "class_pollution_func": [
+      {
+        "function": "patch",
+        "location": {
+          "file": "pyamf/tests/__init__.py",
+          "start_line": 62,
+          "start_column": 5,
+          "end_column": 36
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/django-unicorn",
+    "class_pollution_func": [
+      {
+        "function": "_process_component_request",
+        "location": {
+          "file": "django_unicorn/views/__init__.py",
+          "start_line": 60,
+          "start_column": null,
+          "end_column": 99
+        }
+      },
+      {
+        "function": "handle",
+        "location": {
+          "file": "django_unicorn/views/action_parsers/call_method.py",
+          "start_line": 26,
+          "start_column": null,
+          "end_column": 88
+        }
+      },
+      {
+        "function": "__init__",
+        "location": {
+          "file": "django_unicorn/views/objects.py",
+          "start_line": 18,
+          "start_column": 5,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "set_property_from_data",
+        "location": {
+          "file": "django_unicorn/views/utils.py",
+          "start_line": 15,
+          "start_column": null,
+          "end_column": 11
+        }
+      },
+      {
+        "function": "set_property_value",
+        "location": {
+          "file": "django_unicorn/views/action_parsers/utils.py",
+          "start_line": 10,
+          "start_column": null,
+          "end_column": 11
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/libpass",
+    "class_pollution_func": [
+      {
+        "function": "_import_path",
+        "location": {
+          "file": "passlib/ext/django/utils.py",
+          "start_line": 1048,
+          "start_column": 5,
+          "end_column": 34
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/appmap",
+    "class_pollution_func": [
+      {
+        "function": "resolve_path",
+        "location": {
+          "file": "_appmap/wrapt/wrappers.py",
+          "start_line": 880,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "get_members",
+        "location": {
+          "file": "_appmap/importer.py",
+          "start_line": 99,
+          "start_column": null,
+          "end_column": 22
+        }
+      },
+      {
+        "function": "patch_function_wrapper",
+        "location": {
+          "file": "_appmap/wrapt/wrappers.py",
+          "start_line": 981,
+          "start_column": null,
+          "end_column": 42
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/isc-py-common",
+    "class_pollution_func": [
+      {
+        "function": "BytesToStr",
+        "location": {
+          "file": "isc_common/string/__init__.py",
+          "start_line": 23,
+          "start_column": null,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "get_data",
+        "location": {
+          "file": "isc_common/http/DSRequest.py",
+          "start_line": 184,
+          "start_column": 5,
+          "end_column": 50
+        }
+      },
+      {
+        "function": "genexpr",
+        "location": {
+          "file": "isc_common/http/DSRequest.py",
+          "start_line": 196,
+          "start_column": 24,
+          "end_column": 96
+        }
+      },
+      {
+        "function": "delAttr1",
+        "location": {
+          "file": "isc_common/__init__.py",
+          "start_line": 46,
+          "start_column": null,
+          "end_column": 23
+        }
+      },
+      {
+        "function": "Calendars_Add",
+        "location": {
+          "file": "clndr/views/calendars.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "Chat_user_user_theme_Add",
+        "location": {
+          "file": "twits/views/chat_user_user_theme.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "Chats_Add",
+        "location": {
+          "file": "twits/views/chats.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 24
+        }
+      },
+      {
+        "function": "_createFromRequest",
+        "location": {
+          "file": "isc_common/managers/common_manager.py",
+          "start_line": 774,
+          "start_column": 5,
+          "end_column": 82
+        }
+      },
+      {
+        "function": "createFromRequest",
+        "location": {
+          "file": "isc_common/managers/common_manager.py",
+          "start_line": 802,
+          "start_column": 5,
+          "end_column": 95
+        }
+      },
+      {
+        "function": "Day_Add",
+        "location": {
+          "file": "clndr/views/day.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 22
+        }
+      },
+      {
+        "function": "Day_types_Add",
+        "location": {
+          "file": "clndr/views/day_types.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "Deleted_progresses_Add",
+        "location": {
+          "file": "isc_common/views/deleted_progresses.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 37
+        }
+      },
+      {
+        "function": "E_mails_Add",
+        "location": {
+          "file": "isc_common/views/e_mails.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 26
+        }
+      },
+      {
+        "function": "Edited_by_Add",
+        "location": {
+          "file": "isc_common/views/edited_by.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "Event_types_Add",
+        "location": {
+          "file": "events/views/event_types.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "Fragment_param_types_Add",
+        "location": {
+          "file": "react/views/fragment_param_types.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "Fragment_params_Add",
+        "location": {
+          "file": "react/views/fragment_params.py",
+          "start_line": 24,
+          "start_column": null,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "Fragment_params_view_Add",
+        "location": {
+          "file": "react/views/fragment_params_view.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "Fragments_Add",
+        "location": {
+          "file": "react/views/fragments.py",
+          "start_line": 23,
+          "start_column": null,
+          "end_column": 28
+        }
+      },
+      {
+        "function": "Fragments_4_page_view_Add",
+        "location": {
+          "file": "react/views/fragments_4_page_view.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 40
+        }
+      },
+      {
+        "function": "Fragments_item_types_Add",
+        "location": {
+          "file": "react/views/fragments_item_types.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "Fragments_view_Add",
+        "location": {
+          "file": "react/views/fragments_view.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "Holidays_Add",
+        "location": {
+          "file": "clndr/views/holidays.py",
+          "start_line": 23,
+          "start_column": null,
+          "end_column": 27
+        }
+      },
+      {
+        "function": "Image_types_Add",
+        "location": {
+          "file": "isc_common/views/image_types.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "Jasper_reports_Add",
+        "location": {
+          "file": "reports/views/jasper_reports.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "Last_used_processes_Add",
+        "location": {
+          "file": "isc_common/views/last_used_processes.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "Links_Add",
+        "location": {
+          "file": "isc_common/views/links.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 24
+        }
+      },
+      {
+        "function": "Message_user_2_user_Add",
+        "location": {
+          "file": "tracker/views/message_user_2_user.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "Messages_files_refs_Add",
+        "location": {
+          "file": "tracker/views/messages_files_refs.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "Messages_importance_Add",
+        "location": {
+          "file": "tracker/views/messages_importance.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 38
+        }
+      },
+      {
+        "function": "Messages_whom_Add",
+        "location": {
+          "file": "tracker/views/messages_whom.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 32
+        }
+      },
+      {
+        "function": "Page_fragments_Add",
+        "location": {
+          "file": "react/views/page_fragments.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 33
+        }
+      },
+      {
+        "function": "Page_level_types_Add",
+        "location": {
+          "file": "react/views/page_level_types.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 35
+        }
+      },
+      {
+        "function": "Pages_Add",
+        "location": {
+          "file": "react/views/pages.py",
+          "start_line": 23,
+          "start_column": null,
+          "end_column": 24
+        }
+      },
+      {
+        "function": "Pages_view_Add",
+        "location": {
+          "file": "react/views/pages_view.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 29
+        }
+      },
+      {
+        "function": "Params_Add",
+        "location": {
+          "file": "isc_common/views/params.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "Phones_Add",
+        "location": {
+          "file": "isc_common/views/phones.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "Progresses_Add",
+        "location": {
+          "file": "isc_common/views/progresses.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 29
+        }
+      },
+      {
+        "function": "Shifts_Add",
+        "location": {
+          "file": "clndr/views/shifts.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 25
+        }
+      },
+      {
+        "function": "Standard_colors_Add",
+        "location": {
+          "file": "isc_common/views/standard_colors.py",
+          "start_line": 24,
+          "start_column": null,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "Text_informations_Add",
+        "location": {
+          "file": "isc_common/views/text_informations.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 36
+        }
+      },
+      {
+        "function": "Type_param_Add",
+        "location": {
+          "file": "refs/views/type_param.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 29
+        }
+      },
+      {
+        "function": "Type_param_values_Add",
+        "location": {
+          "file": "refs/views/type_param_values.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 36
+        }
+      },
+      {
+        "function": "User_e_mails_Add",
+        "location": {
+          "file": "isc_common/auth/views/user_e_mails.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 31
+        }
+      },
+      {
+        "function": "User_phones_Add",
+        "location": {
+          "file": "isc_common/auth/views/user_phones.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 30
+        }
+      },
+      {
+        "function": "Users_images_Add",
+        "location": {
+          "file": "isc_common/views/users_images.py",
+          "start_line": 22,
+          "start_column": null,
+          "end_column": 31
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/maxframe",
+    "class_pollution_func": [
+      {
+        "function": "setvalue",
+        "location": {
+          "file": "maxframe-1.3.1/maxframe/config/config.py",
+          "start_line": 91,
+          "start_column": 5,
+          "end_column": 66
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/nbox",
+    "class_pollution_func": [
+      {
+        "function": "set",
+        "location": {
+          "file": "nbox/messages.py",
+          "start_line": 319,
+          "start_column": null,
+          "end_column": 34
+        }
+      },
+      {
+        "function": "_set_field_on_message",
+        "location": {
+          "file": "nbox/messages.py",
+          "start_line": 292,
+          "start_column": null,
+          "end_column": 44
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/windmill",
+    "class_pollution_func": [
+      {
+        "function": "setAttribute",
+        "location": {
+          "file": "windmill-1.6/windmill2/castile/events.py",
+          "start_line": 238,
+          "start_column": 5,
+          "end_column": 62
+        }
+      },
+      {
+        "function": "setItem",
+        "location": {
+          "file": "windmill-1.6/windmill2/castile/events.py",
+          "start_line": 244,
+          "start_column": 5,
+          "end_column": 57
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/colossalai",
+    "class_pollution_func": [
+      {
+        "function": "solution_annotation_pass",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 52,
+          "start_column": null,
+          "end_column": 3
+        }
+      },
+      {
+        "function": "size_value_converting_pass",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 131,
+          "start_column": null,
+          "end_column": 83
+        }
+      },
+      {
+        "function": "node_args_converting_pass",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 280,
+          "start_column": null,
+          "end_column": 82
+        }
+      },
+      {
+        "function": "module_params_sharding_pass",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/auto_parallel/passes/runtime_preparation_pass.py",
+          "start_line": 384,
+          "start_column": null,
+          "end_column": 99
+        }
+      },
+      {
+        "function": "setattr_",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/shardformer/_utils.py",
+          "start_line": 72,
+          "start_column": null,
+          "end_column": 59
+        }
+      },
+      {
+        "function": "_recursive_replace_layer",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/shardformer/shard/sharder.py",
+          "start_line": 77,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_replace_attr",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/shardformer/shard/sharder.py",
+          "start_line": 125,
+          "start_column": 5,
+          "end_column": 15
+        }
+      },
+      {
+        "function": "_replace_sub_module",
+        "location": {
+          "file": "colossalai-0.4.9/colossalai/shardformer/shard/sharder.py",
+          "start_line": 161,
+          "start_column": 5,
+          "end_column": 15
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/freetakserver",
+    "class_pollution_func": [
+      {
+        "function": "serializeJsonToModel",
+        "location": {
+          "file": "FreeTAKServer/core/services/RestAPI.py",
+          "start_line": 1990,
+          "start_column": 5,
+          "end_column": 49
+        }
+      },
+      {
+        "function": "convert_model_to_row",
+        "location": {
+          "file": "FreeTAKServer/core/parsers/XMLCoTController.py",
+          "start_line": 105,
+          "start_column": 5,
+          "end_column": 60
+        }
+      },
+      {
+        "function": "convert_dict_to_node",
+        "location": {
+          "file": "FreeTAKServer/components/core/domain/controllers/dict_to_node_controller.py",
+          "start_line": 30,
+          "start_column": 5,
+          "end_column": 7
+        }
+      },
+      {
+        "function": "serialize",
+        "location": {
+          "file": "FreeTAKServer/components/core/domain/controllers/dict_to_node_controller.py",
+          "start_line": 55,
+          "start_column": 5,
+          "end_column": 43
+        }
+      },
+      {
+        "function": "add_value_to_node",
+        "location": {
+          "file": "FreeTAKServer/components/core/domain/controllers/dict_to_node_controller.py",
+          "start_line": 64,
+          "start_column": 5,
+          "end_column": 51
+        }
+      }
+    ]
+  },
+  {
+    "repo": "https://pypi.org/project/blaster-server",
+    "class_pollution_func": [
+      {
+        "function": "list_to_protobuf",
+        "location": {
+          "file": "blaster/tools/__init__.py",
+          "start_line": 744,
+          "start_column": null,
+          "end_column": 39
+        }
+      },
+      {
+        "function": "dict_to_protobuf",
+        "location": {
+          "file": "blaster/tools/__init__.py",
+          "start_line": 757,
+          "start_column": null,
+          "end_column": 3
+        }
+      }
+    ]
+  }
+]

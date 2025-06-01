@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 5,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "This function [Function _parse_notes](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 5 other functions.",
+    "This function [Function _parse_notes](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _parse_notes](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function _parse_notes](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _read_edi_file](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function _read_edi_file](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function read_mt_file](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function read_mt_file](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for obj_attr](3). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

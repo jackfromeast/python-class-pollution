@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 2,
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 2
+  },
+  "details": [
+    "This function [Function pyrestoreforthonobject](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function pyrestoreforthonobject](1), with key source: [ControlFlowNode for gname](2), and object source: [ControlFlowNode for gname](2). Set attribute key: [ControlFlowNode for attrname](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function doassignment](1), with key source: [ControlFlowNode for fullname](2), and object source: [ControlFlowNode for fullname](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function pyrestoreforthonobject](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function doassignment](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "This function [Function doassignment](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

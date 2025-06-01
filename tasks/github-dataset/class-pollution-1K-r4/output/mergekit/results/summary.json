@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 6,
+    "py/class-polliution/shared-class-pollution-functions": 2,
+    "py/class-polliution/leaf-class-pollution-functions": 4
+  },
+  "details": [
+    "This function [Function _update_config_vocab](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function run_and_check_merge](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function get_architecture_info](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function referenced_models](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _update_config_vocab](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function get_architecture_info](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 3 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function run_merge](1), with key source: [ControlFlowNode for merge_config](2), and object source: [ControlFlowNode for merge_config](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_config_value](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function get_architecture_info](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function set_config_value](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function referenced_models](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _update_config_vocab](1), with key source: [ControlFlowNode for arch_info](2), and object source: [ControlFlowNode for arch_info](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

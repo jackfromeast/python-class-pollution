@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 2
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function _update_generic](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for last_field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
-    "Type:SetAttr-GetAttr Class pollution function: [Function merge_external_params_with_configs](1), with key source: [ControlFlowNode for kwargs_dict](2), and object source: [ControlFlowNode for kwargs_dict](2). Set attribute key: [ControlFlowNode for last_field](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 2
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function update_dataclass_from_dict](1), with key source: [ControlFlowNode for dct](2), and object source: [ControlFlowNode for dct](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
-    "Type:SetAttr-GetAttr Class pollution function: [Function update_config_with_wandb_sweep](1), with key source: [ControlFlowNode for sweep_values](2), and object source: [ControlFlowNode for sweep_values](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}
