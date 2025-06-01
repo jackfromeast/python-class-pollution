@@ -1,0 +1,426 @@
+2025-04-27 23:40:26,443 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/coremltools/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/coremltools/codebase/.git/objects/pack/pack-17b3bb9bd6bf165748e7894d99494d3ba4d3bbe3.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/coremltools/codebase/.git/objects/pack/pack-17b3bb9bd6bf165748e7894d99494d3ba4d3bbe3.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-27 23:40:29,339 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/coremltools/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/coremltools/codebase/.git/objects/pack/pack-17b3bb9bd6bf165748e7894d99494d3ba4d3bbe3.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/coremltools/codebase/.git/objects/pack/pack-17b3bb9bd6bf165748e7894d99494d3ba4d3bbe3.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-27 23:49:31,727 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/rl/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/rl/codebase/.git/objects/pack/pack-98bf43d9f8488b57669d3ddc796a6bcd1fbf3575.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/rl/codebase/.git/objects/pack/pack-98bf43d9f8488b57669d3ddc796a6bcd1fbf3575.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-27 23:49:39,161 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/rl/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/rl/codebase/.git/objects/pack/pack-98bf43d9f8488b57669d3ddc796a6bcd1fbf3575.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/rl/codebase/.git/objects/pack/pack-98bf43d9f8488b57669d3ddc796a6bcd1fbf3575.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-27 23:49:55,835 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/lanenet-lane-detection/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/lanenet-lane-detection/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-27 23:49:55,919 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/lanenet-lane-detection/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/lanenet-lane-detection/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-28 00:20:47,696 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CrossHair/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CrossHair/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-28 00:21:00,185 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CRNN_Tensorflow/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 00:38:18,338 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:18,995 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:20,231 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:20,911 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:22,212 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:22,873 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:24,144 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:24,790 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/anole/codebase/.git/objects/pack/pack-d0f99e3c9c8aff91e356d4fe680479c44a2bd0ab.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:25,099 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/FreeTakServer/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/FreeTakServer/codebase/.git/objects/pack/pack-3ad437ee827fef040df15d4bf001580929f92235.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/FreeTakServer/codebase/.git/objects/pack/pack-3ad437ee827fef040df15d4bf001580929f92235.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:38:25,445 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/FreeTakServer/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/FreeTakServer/codebase/.git/objects/pack/pack-3ad437ee827fef040df15d4bf001580929f92235.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/FreeTakServer/codebase/.git/objects/pack/pack-3ad437ee827fef040df15d4bf001580929f92235.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:54:04,871 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/hard-prompts-made-easy/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 00:54:50,132 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/humanplus/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/humanplus/codebase/.git/objects/pack/pack-5ac8e190d1acc15c3c08870a9c6e4c290f6d7381.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/humanplus/codebase/.git/objects/pack/pack-5ac8e190d1acc15c3c08870a9c6e4c290f6d7381.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:54:50,152 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/humanplus/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/humanplus/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-28 00:56:36,702 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyobjc/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyobjc/codebase/.git/objects/pack/pack-7dd878af8415a4d9b27751550fd1ed64e90bf83e.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyobjc/codebase/.git/objects/pack/pack-7dd878af8415a4d9b27751550fd1ed64e90bf83e.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 00:56:43,600 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyobjc/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyobjc/codebase/.git/objects/pack/pack-7dd878af8415a4d9b27751550fd1ed64e90bf83e.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyobjc/codebase/.git/objects/pack/pack-7dd878af8415a4d9b27751550fd1ed64e90bf83e.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:03:22,252 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/mcap/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/mcap/codebase/.git/objects/pack/pack-de465bd879d84e9c7ec784e9e4037b8460e27e2d.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/mcap/codebase/.git/objects/pack/pack-de465bd879d84e9c7ec784e9e4037b8460e27e2d.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:13:33,912 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/OccNet-Course/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/OccNet-Course/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-28 01:29:26,298 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Auto1111SDK/codebase'...
+fatal: not a git repository: '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Auto1111SDK/codebase/.git'
+fatal: remote did not send all necessary objects
+ (downloader.py:86)
+2025-04-28 01:29:26,298 - GithubDownloader - ERROR - Failed to remove existing codebase: [Errno 2] No such file or directory: 'pack-3c1d8555abe23b5308ad6fd471b09ede52a12231.rev' (downloader.py:69)
+2025-04-28 01:43:29,116 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/RadFM/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 01:45:01,730 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/plato/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/plato/codebase/.git/objects/pack/pack-8254a24afe417935a8be9cc2bfbdef688e206c7f.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/plato/codebase/.git/objects/pack/pack-8254a24afe417935a8be9cc2bfbdef688e206c7f.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:45:04,014 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/plato/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/plato/codebase/.git/objects/pack/pack-8254a24afe417935a8be9cc2bfbdef688e206c7f.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/plato/codebase/.git/objects/pack/pack-8254a24afe417935a8be9cc2bfbdef688e206c7f.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:32,138 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/fast64/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/fast64/codebase/.git/objects/pack/pack-139a08c56ae6115277131f68efa17094fe7a8b52.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/fast64/codebase/.git/objects/pack/pack-139a08c56ae6115277131f68efa17094fe7a8b52.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:33,015 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/fast64/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/fast64/codebase/.git/objects/pack/pack-139a08c56ae6115277131f68efa17094fe7a8b52.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/fast64/codebase/.git/objects/pack/pack-139a08c56ae6115277131f68efa17094fe7a8b52.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:33,391 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/HIMLoco/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/HIMLoco/codebase/.git/objects/pack/pack-0d6afeff10590402eee5f632c3af6e0fcbbee47b.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/HIMLoco/codebase/.git/objects/pack/pack-0d6afeff10590402eee5f632c3af6e0fcbbee47b.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:34,350 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/HIMLoco/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/HIMLoco/codebase/.git/objects/pack/pack-0d6afeff10590402eee5f632c3af6e0fcbbee47b.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/HIMLoco/codebase/.git/objects/pack/pack-0d6afeff10590402eee5f632c3af6e0fcbbee47b.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:34,662 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/human2humanoid/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/human2humanoid/codebase/.git/objects/pack/pack-7ded81693d9bbf8541fc8d153f904b8767c1050b.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/human2humanoid/codebase/.git/objects/pack/pack-7ded81693d9bbf8541fc8d153f904b8767c1050b.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:35,134 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/human2humanoid/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/human2humanoid/codebase/.git/objects/pack/pack-7ded81693d9bbf8541fc8d153f904b8767c1050b.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/human2humanoid/codebase/.git/objects/pack/pack-7ded81693d9bbf8541fc8d153f904b8767c1050b.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:38,750 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:40,201 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:42,679 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 01:58:44,361 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/quibbler/codebase/.git/objects/pack/pack-eb42ca7b156c3a96409875e30a91fbb7481bbf08.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:11:06,560 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/PainlessInferenceAcceleration/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/PainlessInferenceAcceleration/codebase/.git/objects/pack/pack-42277bd39035ab2fff453126b18ea0edbcd56234.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/PainlessInferenceAcceleration/codebase/.git/objects/pack/pack-42277bd39035ab2fff453126b18ea0edbcd56234.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:11:06,689 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/PainlessInferenceAcceleration/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/PainlessInferenceAcceleration/codebase/.git/objects/pack/pack-42277bd39035ab2fff453126b18ea0edbcd56234.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/PainlessInferenceAcceleration/codebase/.git/objects/pack/pack-42277bd39035ab2fff453126b18ea0edbcd56234.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:12:05,675 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyfluent/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyfluent/codebase/.git/objects/pack/pack-d2b4af4732fe00c0a923e5dd843f5a62d34c53ee.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/pyfluent/codebase/.git/objects/pack/pack-d2b4af4732fe00c0a923e5dd843f5a62d34c53ee.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:12:39,207 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/nebari/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/nebari/codebase/.git/objects/pack/pack-00f20f33086e34f3471b7118e006c540282555d7.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/nebari/codebase/.git/objects/pack/pack-00f20f33086e34f3471b7118e006c540282555d7.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:12:39,428 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/nebari/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/nebari/codebase/.git/objects/pack/pack-00f20f33086e34f3471b7118e006c540282555d7.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/nebari/codebase/.git/objects/pack/pack-00f20f33086e34f3471b7118e006c540282555d7.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:14:29,913 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Intelli-Agent/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-d7524db0d3.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-d7524db0d3.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-d7524db0d3.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-d7524db0d3.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/aws-samples/Intelli-Agent/'
+ (downloader.py:86)
+2025-04-28 02:14:30,089 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Intelli-Agent/codebase'...
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-d7524db0d3.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-d7524db0d3.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-d7524db0d3.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-d7524db0d3.sock'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/aws-samples/Intelli-Agent/'
+ (downloader.py:86)
+2025-04-28 02:17:25,438 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DriveArena/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DriveArena/codebase/.git/objects/pack/pack-ddf73fc18c3d969c82ea2c57713c31311cefb228.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DriveArena/codebase/.git/objects/pack/pack-ddf73fc18c3d969c82ea2c57713c31311cefb228.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:17:30,725 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DriveArena/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DriveArena/codebase/.git/objects/pack/pack-ddf73fc18c3d969c82ea2c57713c31311cefb228.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DriveArena/codebase/.git/objects/pack/pack-ddf73fc18c3d969c82ea2c57713c31311cefb228.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:17:53,302 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/MC-Planner/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/MC-Planner/codebase/.git/objects/pack/pack-d8ccb6dcd0e10b5087229f25b9f8967509094d55.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/MC-Planner/codebase/.git/objects/pack/pack-d8ccb6dcd0e10b5087229f25b9f8967509094d55.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:28:13,311 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CUDA-FastBEV/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CUDA-FastBEV/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-28 02:29:01,962 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/expressive-humanoid/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/expressive-humanoid/codebase/.git/objects/pack/pack-ce0248c5a75cdf4e3c60ff7a3d6d5f3886d94a75.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/expressive-humanoid/codebase/.git/objects/pack/pack-ce0248c5a75cdf4e3c60ff7a3d6d5f3886d94a75.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:29:07,222 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/expressive-humanoid/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/expressive-humanoid/codebase/.git/objects/pack/pack-ce0248c5a75cdf4e3c60ff7a3d6d5f3886d94a75.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/expressive-humanoid/codebase/.git/objects/pack/pack-ce0248c5a75cdf4e3c60ff7a3d6d5f3886d94a75.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:29:35,316 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/galaxy_ng/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/galaxy_ng/codebase/.git/objects/pack/pack-246ae2562c9ee9a176a7c962c6795cfcad2258ff.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/galaxy_ng/codebase/.git/objects/pack/pack-246ae2562c9ee9a176a7c962c6795cfcad2258ff.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:30:32,899 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/bisenetv2-tensorflow/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/bisenetv2-tensorflow/codebase/.git/objects/pack/pack-6c45bbbaf2c2bb8b185c09d173862809776e365d.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/bisenetv2-tensorflow/codebase/.git/objects/pack/pack-6c45bbbaf2c2bb8b185c09d173862809776e365d.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:30:34,445 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/tileGAN/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 02:38:09,825 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edgy/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edgy/codebase/.git/objects/pack/pack-77911a1d7e013cf5b353aa9ef656e34aa28fc341.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edgy/codebase/.git/objects/pack/pack-77911a1d7e013cf5b353aa9ef656e34aa28fc341.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:38:49,062 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/VideoTetris/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/VideoTetris/codebase/.git/objects/pack/pack-131230d64d3607430b23a2da3038828842ee09ee.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/VideoTetris/codebase/.git/objects/pack/pack-131230d64d3607430b23a2da3038828842ee09ee.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:38:49,393 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/VideoTetris/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/VideoTetris/codebase/.git/objects/pack/pack-131230d64d3607430b23a2da3038828842ee09ee.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/VideoTetris/codebase/.git/objects/pack/pack-131230d64d3607430b23a2da3038828842ee09ee.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:39:09,250 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/StyleDrop-PyTorch/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/StyleDrop-PyTorch/codebase/.git/objects/pack/pack-682d78564544600338f2c90645ee98c90529748d.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/StyleDrop-PyTorch/codebase/.git/objects/pack/pack-682d78564544600338f2c90645ee98c90529748d.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:51:21,291 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/perch/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/perch/codebase/.git/objects/pack/pack-883979371be0e09b3a9cec495ad7986569911157.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/perch/codebase/.git/objects/pack/pack-883979371be0e09b3a9cec495ad7986569911157.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:51:22,034 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Mantis/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Mantis/codebase/.git/objects/pack/pack-41b9af646c438f8ab9ae7fea076f24af9ef1e585.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Mantis/codebase/.git/objects/pack/pack-41b9af646c438f8ab9ae7fea076f24af9ef1e585.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:51:22,805 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Mantis/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Mantis/codebase/.git/objects/pack/pack-41b9af646c438f8ab9ae7fea076f24af9ef1e585.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/Mantis/codebase/.git/objects/pack/pack-41b9af646c438f8ab9ae7fea076f24af9ef1e585.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 02:52:02,257 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/ContrastiveDecoding/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 02:52:02,434 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/ContrastiveDecoding/codebase'...
+Updating files:   4% (58/1349)Updating files:   5% (68/1349)Updating files:   6% (81/1349)Updating files:   7% (95/1349)Updating files:   8% (108/1349)error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-350m-t1.0-r0.1-1.0_opt-2.7b_256_gold.jsonl: No such file or directory
+error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-350m-t1.0-r0.1-1.0_opt-350m_256.jsonl: No such file or directory
+error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-350m-t1.0-r0.1-1.0_opt-6.7b_256.jsonl: No such file or directory
+error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-6.7b-t1.0-r0.1-1.0_opt-1.3b_256.jsonl: No such file or directory
+Updating files:   8% (113/1349)error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-6.7b-t1.0-r0.1-1.0_opt-125m_256.jsonl: No such file or directory
+error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-6.7b-t1.0-r0.1-1.0_opt-2.7b_256.jsonl: No such file or directory
+error: unable to create file text-generation/outputs_ignorePrefix_ccnews_256/wikitext_opt-6.7b-t1.0-r0.1-1.0_opt-350m_256.jsonl: No such file or directory
+fatal: cannot create directory at 'text-generation/outputs_ignorePrefix_ccnews_256/wikitext_results': No such file or directory
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore --source=HEAD :/'
+
+ (downloader.py:86)
+2025-04-28 03:06:39,671 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/ESFT/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/ESFT/codebase/.git/objects/pack/pack-f2843652babf15c46ae6096424135226690b34ee.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/ESFT/codebase/.git/objects/pack/pack-f2843652babf15c46ae6096424135226690b34ee.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 03:12:05,648 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/knowledge-neurons/codebase'...
+error: unable to create file bert_base_uncased_neurons/bert-base-uncased_pararel_results_2.json: No such file or directory
+error: unable to create file bert_base_uncased_neurons/bert-base-uncased_pararel_results_3.json: No such file or directory
+error: unable to create file bert_base_uncased_neurons/bert-base-uncased_pararel_results_4.json: No such file or directory
+error: unable to create file bert_base_uncased_neurons/bert-base-uncased_pararel_results_5.json: No such file or directory
+error: unable to create file bert_base_uncased_neurons/bert-base-uncased_pararel_results_6.json: No such file or directory
+error: unable to create file bert_base_uncased_neurons/bert-base-uncased_pararel_results_7.json: No such file or directory
+fatal: cannot create directory at 'examples': No such file or directory
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore --source=HEAD :/'
+
+ (downloader.py:86)
+2025-04-28 03:12:07,388 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/knowledge-neurons/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 03:24:27,798 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/OFASys/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 03:52:44,446 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/legged-robots-manipulation/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/legged-robots-manipulation/codebase/.git/objects/pack/pack-09e2d89083ef75746fa3c082112430abf9a3d002.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/legged-robots-manipulation/codebase/.git/objects/pack/pack-09e2d89083ef75746fa3c082112430abf9a3d002.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 03:52:47,271 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/legged-robots-manipulation/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/legged-robots-manipulation/codebase/.git/objects/pack/pack-09e2d89083ef75746fa3c082112430abf9a3d002.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/legged-robots-manipulation/codebase/.git/objects/pack/pack-09e2d89083ef75746fa3c082112430abf9a3d002.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 03:52:53,271 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/throttlestop/codebase'...
+BUG: refs/files-backend.c:3055: initial ref transaction called with existing refs
+ (downloader.py:86)
+2025-04-28 03:55:08,282 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/materials/codebase'...
+fatal: cannot create directory at 'models/smi_ssed/finetune/moleculenet/qm9': No such file or directory
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore --source=HEAD :/'
+
+ (downloader.py:86)
+2025-04-28 03:55:10,254 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/materials/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/materials/codebase/.git/objects/pack/pack-6c3e54be1ad6ae3deba32e9479c9f73b12c12c0b.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/materials/codebase/.git/objects/pack/pack-6c3e54be1ad6ae3deba32e9479c9f73b12c12c0b.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 03:57:02,295 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/uavSim/codebase'...
+error: could not lock config file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/uavSim/codebase/.git/config: No such file or directory
+fatal: could not set 'core.repositoryformatversion' to '0'
+ (downloader.py:86)
+2025-04-28 03:57:02,443 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CheXagent/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CheXagent/codebase/.git/objects/pack/pack-09c09f366fc0a122fa9b485941eabc6ed91ca238.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CheXagent/codebase/.git/objects/pack/pack-09c09f366fc0a122fa9b485941eabc6ed91ca238.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 03:57:02,994 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CheXagent/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CheXagent/codebase/.git/objects/pack/pack-09c09f366fc0a122fa9b485941eabc6ed91ca238.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/CheXagent/codebase/.git/objects/pack/pack-09c09f366fc0a122fa9b485941eabc6ed91ca238.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 04:02:05,535 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edsnlp/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edsnlp/codebase/.git/objects/pack/pack-e20d1946bf0388f6fa8d71f7eb0b9da0e247a409.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edsnlp/codebase/.git/objects/pack/pack-e20d1946bf0388f6fa8d71f7eb0b9da0e247a409.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 04:02:09,254 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edsnlp/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edsnlp/codebase/.git/objects/pack/pack-e20d1946bf0388f6fa8d71f7eb0b9da0e247a409.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/edsnlp/codebase/.git/objects/pack/pack-e20d1946bf0388f6fa8d71f7eb0b9da0e247a409.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 04:06:14,266 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DesignSPHysics/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DesignSPHysics/codebase/.git/objects/pack/pack-cacd9cbdbee494a52084e7724514c2df6a3b0e0d.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/DesignSPHysics/codebase/.git/objects/pack/pack-cacd9cbdbee494a52084e7724514c2df6a3b0e0d.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)
+2025-04-28 04:07:33,271 - GithubDownloader - ERROR - Failed to clone repository: Cloning into '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/zugbruecke/codebase'...
+error: unable to write file /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/zugbruecke/codebase/.git/objects/pack/pack-569f20fdfc9038f29d7794252cee9e6653d2b20e.pack: No such file or directory
+fatal: unable to rename temporary '*.pack' file to '/home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-positive-remote/output/zugbruecke/codebase/.git/objects/pack/pack-569f20fdfc9038f29d7794252cee9e6653d2b20e.pack'
+fatal: fetch-pack: invalid index-pack output
+ (downloader.py:86)

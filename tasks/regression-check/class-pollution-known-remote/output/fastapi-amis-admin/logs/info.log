@@ -1,0 +1,4 @@
+2025-04-25 15:13:03,351 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/fastapi-amis-admin/codebase (logger.py:42)
+2025-04-25 15:13:08,292 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/fastapi-amis-admin/codeql-db (logger.py:42)
+2025-04-25 15:13:08,292 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/fastapi-amis-admin/codeql-db (logger.py:42)
+2025-04-25 15:13:08,292 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution-external.qls (logger.py:42)

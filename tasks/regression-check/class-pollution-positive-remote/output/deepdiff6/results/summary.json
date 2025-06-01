@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 1
+  },
+  "details": [
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function _get_nested_obj](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for elements](3). Set attribute key: [ControlFlowNode for elem](4), Set item op key: [ControlFlowNode for elem](5). Get attribute op: [ControlFlowNode for getattr()](6). Get item op: [ControlFlowNode for Subscript](7)."
+  ]
+}

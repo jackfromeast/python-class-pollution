@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 6
+  },
+  "details": [
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function lambda](1), with key source: [ControlFlowNode for d](2), and object source: [ControlFlowNode for d](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function from_list](1), with key source: [ControlFlowNode for vals](2), and object source: [ControlFlowNode for vals](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function wrap_message](1), with key source: [ControlFlowNode for msg](2), and object source: [ControlFlowNode for msg](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function from_dict](1), with key source: [ControlFlowNode for vals](2), and object source: [ControlFlowNode for vals](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function pb_from_dict](1), with key source: [ControlFlowNode for fields](2), and object source: [ControlFlowNode for fields](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function send](1), with key source: [ControlFlowNode for msg](2), and object source: [ControlFlowNode for msg](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 4,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 3
+  },
+  "details": [
+    "This function [Function listcomp](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function _set_module_by_path](1) with type:SetAttr-GetAttr has the largest number of caller-callee relationships with 2 other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _set_module_by_path](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _find_shared_parameters](1), with key source: [ControlFlowNode for tied_parameters](2), and object source: [ControlFlowNode for tied_parameters](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _find_shared_parameters](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions.",
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_shared_parameters](1), with key source: [ControlFlowNode for shared_params](2), and object source: [ControlFlowNode for shared_params](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "This function [Function _set_module_by_path](1) with type:SetAttr-GetAttr has no caller-callee relationships with other functions."
+  ]
+}

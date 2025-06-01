@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 2
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function simplify_tree](1), with key source: [ControlFlowNode for tree](2), and object source: [ControlFlowNode for tree](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function simplify_tree](1), with key source: [ControlFlowNode for tree](2), and object source: [ControlFlowNode for tree](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

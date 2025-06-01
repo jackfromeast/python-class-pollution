@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 8
+  },
+  "details": [
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function ParseLines](1), with key source: [ControlFlowNode for lines](2), and object source: [ControlFlowNode for lines](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function Parse](1), with key source: [ControlFlowNode for text](2), and object source: [ControlFlowNode for text](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function genexpr](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function MergeLines](1), with key source: [ControlFlowNode for lines](2), and object source: [ControlFlowNode for lines](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function _ParseOrMerge](1), with key source: [ControlFlowNode for lines](2), and object source: [ControlFlowNode for lines](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

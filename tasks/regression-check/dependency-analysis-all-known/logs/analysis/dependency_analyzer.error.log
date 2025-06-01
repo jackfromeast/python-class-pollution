@@ -1,0 +1,2 @@
+2025-02-16 18:46:45,950 - DependencyAnalyzer - ERROR - Failed to download codebase for backports-zoneinfo (analyzer.py:219)
+2025-02-16 18:46:46,584 - DependencyAnalyzer - ERROR - Failed to download codebase for bitmath (analyzer.py:219)

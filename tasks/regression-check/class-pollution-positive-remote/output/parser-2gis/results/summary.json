@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 2
+  },
+  "details": [
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function assign_attributes](1), with key source: [ControlFlowNode for model_source](2), and object source: [ControlFlowNode for model_source](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function merge_with](1), with key source: [ControlFlowNode for other_config](2), and object source: [ControlFlowNode for other_config](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

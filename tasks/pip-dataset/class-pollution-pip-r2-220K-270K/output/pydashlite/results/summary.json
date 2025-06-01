@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 7
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function flatten](1), with key source: [ControlFlowNode for array](2), and object source: [ControlFlowNode for array](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function _mergeObjStruct](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function merge](1), with key source: [ControlFlowNode for src](2), and object source: [ControlFlowNode for src](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function pickDeep](1), with key source: [ControlFlowNode for paths](2), and object source: [ControlFlowNode for paths](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function flattenDepth](1), with key source: [ControlFlowNode for array](2), and object source: [ControlFlowNode for array](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function set_](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function get_path_array](1), with key source: [ControlFlowNode for path](2), and object source: [ControlFlowNode for path](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

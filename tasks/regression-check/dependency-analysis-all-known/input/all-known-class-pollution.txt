@@ -1,0 +1,10 @@
+https://github.com/allegroai/clearml.git
+https://github.com/seperman/deepdiff
+https://github.com/mahmoud/glom.git
+https://github.com/isaac-sim/IsaacLab
+https://github.com/google/mesop.git
+https://github.com/openvinotoolkit/training_extensions
+https://github.com/dgilland/pydash
+https://github.com/frmdstryr/magicattr
+https://github.com/dansimau/pystringattr
+https://github.com/johnmarktaylor91/torchlens

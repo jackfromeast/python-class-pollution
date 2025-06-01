@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 4
+  },
+  "details": [
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for leaf_key](3), Set item op key: [ControlFlowNode for leaf_key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function _parse_key](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for key](3). Set attribute key: [ControlFlowNode for leaf_key](4), Set item op key: [ControlFlowNode for leaf_key](5). Get attribute op: [ControlFlowNode for getattr()](6). Get item op: [ControlFlowNode for Subscript](7).\nExternal Input:Local Type:SetBoth-GetBoth Class pollution function: [Function _parse_key](1), with key source: [ControlFlowNode for key](3), and object source: [ControlFlowNode for key](3). Set attribute key: [ControlFlowNode for leaf_key](4), Set item op key: [ControlFlowNode for leaf_key](5). Get attribute op: [ControlFlowNode for getattr()](6). Get item op: [ControlFlowNode for Subscript](7).",
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function add_clash_mark](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for leaf_key](3), Set item op key: [ControlFlowNode for leaf_key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function split_key](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for leaf_key](3), Set item op key: [ControlFlowNode for leaf_key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

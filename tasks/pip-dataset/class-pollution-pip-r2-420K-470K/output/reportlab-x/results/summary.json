@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-both": 1
+  },
+  "details": [
+    "Type:SetAttr-GetBoth Class pollution function: [Function recursiveSetAttr](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for last](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4)."
+  ]
+}

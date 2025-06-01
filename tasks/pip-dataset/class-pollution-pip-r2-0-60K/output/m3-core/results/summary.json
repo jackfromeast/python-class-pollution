@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 1,
+    "py/class-polliution/shared-class-pollution-functions": 1,
+    "py/class-polliution/leaf-class-pollution-functions": 1
+  },
+  "details": [
+    "This function [Function default](1) with type:SetItem-GetAttr has no caller-callee relationships with other functions.",
+    "This function [Function default](1) with type:SetItem-GetAttr has the largest number of caller-callee relationships with 1 other functions.",
+    "Type:SetItem-GetAttr Class pollution function: [Function default](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for Subscript](4).\nType:SetItem-GetAttr Class pollution function: [Function default](1), with key source: [ControlFlowNode for obj](5), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for attr](3). Get attribute op: [ControlFlowNode for Subscript](4)."
+  ]
+}

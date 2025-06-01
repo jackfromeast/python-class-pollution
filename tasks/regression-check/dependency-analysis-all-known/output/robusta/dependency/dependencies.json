@@ -1,0 +1,14 @@
+{
+  "Pip": [],
+  "Poetry": [
+    "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-analysis-all-known/output/robusta/codebase/pyproject.toml",
+    "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-analysis-all-known/output/robusta/codebase/poetry.lock",
+    "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-analysis-all-known/output/robusta/codebase/playbooks/pyproject.toml"
+  ],
+  "Pipenv": [],
+  "PDM": [
+    "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-analysis-all-known/output/robusta/codebase/pyproject.toml",
+    "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-analysis-all-known/output/robusta/codebase/playbooks/pyproject.toml"
+  ],
+  "Conda": []
+}

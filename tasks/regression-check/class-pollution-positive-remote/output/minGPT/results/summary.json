@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 1
+  },
+  "details": [
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function merge_from_args](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set attribute key: [ControlFlowNode for leaf_key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

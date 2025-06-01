@@ -1,0 +1,2 @@
+2025-04-25 14:28:55,450 - Result - INFO - django-unicorn - py/class-polliution-external/set-both-get-both: 7 flows detected. (logger.py:40)
+2025-04-25 15:15:57,334 - Result - INFO - mesop - py/class-polliution-external/set-both-get-attr: 2 flows detected. (logger.py:40)
