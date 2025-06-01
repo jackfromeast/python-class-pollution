@@ -1,7 +1,0 @@
-{
-  "repo": "https://github.com/tdamdouni/Pythonista",
-  "class_pollution_func": [
-    "build_view",
-    "recursiveSetAttr"
-  ]
-}

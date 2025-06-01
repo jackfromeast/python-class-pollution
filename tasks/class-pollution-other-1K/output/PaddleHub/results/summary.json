@@ -1,6 +1,0 @@
-{
-  "MultiLevelClassPollutionQueryNewSetAttrGetBoth.ql.sarif": 60,
-  "MultiLevelClassPollutionQueryNewSetAttrGetAttr.ql.sarif": 0,
-  "MultiLevelClassPollutionQueryNewSetItemGetBoth.ql.sarif": 0,
-  "MultiLevelClassPollutionQueryNewSetItemGetAttr.ql.sarif": 0
-}

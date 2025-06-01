@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/WisdomShell/codeshell",
-  "class_pollution_func": [
-    "set_value"
-  ]
-}

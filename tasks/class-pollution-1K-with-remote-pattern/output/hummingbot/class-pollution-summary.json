@@ -1,9 +1,0 @@
-{
-  "repo": "https://github.com/hummingbot/hummingbot",
-  "class_pollution_func": [
-    "__init__",
-    "genexpr",
-    "keys",
-    "traverse"
-  ]
-}

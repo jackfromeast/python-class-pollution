@@ -1,5 +1,0 @@
-2025-03-29 19:12:55,529 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/BlendLuxCore/codebase (logger.py:42)
-2025-03-29 19:13:02,181 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/BlendLuxCore/codeql-db (logger.py:42)
-2025-03-29 19:13:02,181 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/BlendLuxCore/codeql-db (logger.py:42)
-2025-03-29 19:13:02,181 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
-2025-03-29 19:32:45,099 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1503833 (logger.py:42)

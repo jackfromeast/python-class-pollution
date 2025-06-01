@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/pytorch/ao",
-  "class_pollution_func": [
-    "load_weights"
-  ]
-}

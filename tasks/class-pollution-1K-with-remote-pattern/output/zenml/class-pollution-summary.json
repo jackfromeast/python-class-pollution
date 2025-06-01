@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/zenml-io/zenml",
-  "class_pollution_func": [
-    "create"
-  ]
-}

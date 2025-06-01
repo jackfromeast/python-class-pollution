@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/predibase/lorax",
-  "class_pollution_func": [
-    "setdeepattr"
-  ]
-}

@@ -1,5 +1,0 @@
-2025-03-31 06:38:24,136 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/tensordict/codebase (logger.py:42)
-2025-03-31 06:38:37,242 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/tensordict/codeql-db (logger.py:42)
-2025-03-31 06:38:37,243 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/tensordict/codeql-db (logger.py:42)
-2025-03-31 06:38:37,243 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
-2025-03-31 06:57:35,976 - CodeQLRunner - INFO - Terminated all spawned processes for PID 3188374 (logger.py:42)

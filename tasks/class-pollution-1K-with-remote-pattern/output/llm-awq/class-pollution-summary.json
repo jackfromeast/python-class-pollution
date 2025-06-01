@@ -1,8 +1,0 @@
-{
-  "repo": "https://github.com/mit-han-lab/llm-awq",
-  "class_pollution_func": [
-    "_auto_get_scale",
-    "dictcomp",
-    "set_op_by_name"
-  ]
-}

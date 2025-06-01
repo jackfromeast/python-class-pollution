@@ -1,7 +1,0 @@
-{
-  "repo": "https://github.com/mirumee/ariadne",
-  "class_pollution_func": [
-    "_purge_directive_nodes",
-    "genexpr"
-  ]
-}

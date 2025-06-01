@@ -1,9 +1,0 @@
-{
-  "repo": "https://github.com/Luodian/Otter",
-  "class_pollution_func": [
-    "_set_decoder_layers",
-    "init_flamingo",
-    "init_otter",
-    "setattr_recursive"
-  ]
-}

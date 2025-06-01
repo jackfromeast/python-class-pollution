@@ -1,5 +1,0 @@
-2025-03-31 11:33:07,120 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/GAMADV-XTD3/codebase (logger.py:42)
-2025-03-31 11:34:47,807 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/GAMADV-XTD3/codeql-db (logger.py:42)
-2025-03-31 11:34:47,808 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/GAMADV-XTD3/codeql-db (logger.py:42)
-2025-03-31 11:34:47,808 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
-2025-03-31 11:52:39,495 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1593495 (logger.py:42)

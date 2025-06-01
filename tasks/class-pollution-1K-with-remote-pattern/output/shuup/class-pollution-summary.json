@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/shuup/shuup",
-  "class_pollution_func": [
-    "_set_part"
-  ]
-}

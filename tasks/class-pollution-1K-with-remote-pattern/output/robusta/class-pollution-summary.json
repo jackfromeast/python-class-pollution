@@ -1,7 +1,0 @@
-{
-  "repo": "https://github.com/robusta-dev/robusta",
-  "class_pollution_func": [
-    "_set_attr_by_path",
-    "update_item_attr"
-  ]
-}

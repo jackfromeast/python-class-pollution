@@ -1,8 +1,0 @@
-{
-  "repo": "https://github.com/Lightning-AI/pytorch-lightning",
-  "class_pollution_func": [
-    "_find_shared_parameters",
-    "_set_module_by_path",
-    "listcomp"
-  ]
-}

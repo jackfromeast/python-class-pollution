@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/tdryer/hangups",
-  "class_pollution_func": [
-    "_decode_field"
-  ]
-}

@@ -1,2 +1,0 @@
-2025-03-29 13:52:45,576 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-100-1K-r3-all/output/ydk-py/codebase (logger.py:42)
-2025-03-29 14:11:49,672 - CodeQLRunner - INFO - Terminated all spawned processes for PID 2898229 (logger.py:42)

@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/docarray/docarray",
-  "class_pollution_func": [
-    "__getitem__"
-  ]
-}

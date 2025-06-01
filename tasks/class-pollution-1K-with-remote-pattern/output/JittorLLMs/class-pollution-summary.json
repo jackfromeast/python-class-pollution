@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/Jittor/JittorLLMs",
-  "class_pollution_func": [
-    "__init__"
-  ]
-}

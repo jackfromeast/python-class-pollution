@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/huggingface/diffusers",
-  "class_pollution_func": [
-    "get_module_from_name"
-  ]
-}

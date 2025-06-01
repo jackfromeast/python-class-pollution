@@ -1,6 +1,0 @@
-{
-  "repo": "https://github.com/LAION-AI/Open-Assistant",
-  "class_pollution_func": [
-    "rsetattr"
-  ]
-}

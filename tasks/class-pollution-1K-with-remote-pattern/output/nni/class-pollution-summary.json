@@ -1,7 +1,0 @@
-{
-  "repo": "https://github.com/microsoft/nni",
-  "class_pollution_func": [
-    "copy_attr_new",
-    "set_nested_attr"
-  ]
-}
