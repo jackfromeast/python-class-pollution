@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function forward](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function rebuild_parameters](1), with key source: [ControlFlowNode for dico](2), and object source: [ControlFlowNode for dico](2). Set attribute key: [ControlFlowNode for name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

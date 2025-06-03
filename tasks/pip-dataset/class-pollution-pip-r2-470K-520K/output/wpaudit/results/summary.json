@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 7
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function preprocessing](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for attr](3), Set item op key: [ControlFlowNode for str()](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function _process_metadata_callbacks](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for attr](3), Set item op key: [ControlFlowNode for str()](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-attr": 8
+  },
+  "details": [
+    "Type:SetBoth-GetAttr Class pollution function: [Function _error_handling](1), with key source: [ControlFlowNode for ast_function](2), and object source: [ControlFlowNode for ast_function](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function _compile_keywords](1), with key source: [ControlFlowNode for keywords](2), and object source: [ControlFlowNode for keywords](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function _to_ast](1), with key source: [ControlFlowNode for code](2), and object source: [ControlFlowNode for code](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function compile](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function _replace_error_appending](1), with key source: [ControlFlowNode for ast_obj](2), and object source: [ControlFlowNode for ast_obj](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function add_indent](1), with key source: [ControlFlowNode for code](2), and object source: [ControlFlowNode for code](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function run](1), with key source: [ControlFlowNode for code](2), and object source: [ControlFlowNode for code](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetBoth-GetAttr Class pollution function: [Function _body](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for field](3), Set item op key: [ControlFlowNode for i](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

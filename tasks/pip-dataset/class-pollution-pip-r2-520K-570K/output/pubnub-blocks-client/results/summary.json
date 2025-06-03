@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 4
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function set_object_value](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Attribute()](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function set_property](1), with key source: [ControlFlowNode for name](2), and object source: [ControlFlowNode for name](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Attribute()](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function _create_iterable_for_keypath](1), with key source: [ControlFlowNode for keypath](2), and object source: [ControlFlowNode for keypath](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Attribute()](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function set_value_for_keypath](1), with key source: [ControlFlowNode for keypath](2), and object source: [ControlFlowNode for keypath](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Attribute()](6)."
+  ]
+}

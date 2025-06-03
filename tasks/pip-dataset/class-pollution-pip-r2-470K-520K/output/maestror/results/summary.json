@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 1,
+    "py/class-polliution/set-item-get-both": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function set_decorator](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for eval()](5).",
+    "Type:SetItem-GetBoth Class pollution function: [Function set_decorator](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for self](3). Set item key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for eval()](5). Get item op: [ControlFlowNode for eval()](5)."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function _get_subcell](1), with key source: [ControlFlowNode for mod](2), and object source: [ControlFlowNode for target](3). Set attribute key: [ControlFlowNode for child_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _get_subcell](1), with key source: [ControlFlowNode for mod](2), and object source: [ControlFlowNode for target](3). Set attribute key: [ControlFlowNode for target_name](6). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _get_submodules](1), with key source: [ControlFlowNode for model](2), and object source: [ControlFlowNode for key](3). Set attribute key: [ControlFlowNode for child_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _get_submodules](1), with key source: [ControlFlowNode for model](2), and object source: [ControlFlowNode for key](3). Set attribute key: [ControlFlowNode for target_name](6). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _get_submodules](1), with key source: [ControlFlowNode for key](3), and object source: [ControlFlowNode for key](3). Set attribute key: [ControlFlowNode for child_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _get_submodules](1), with key source: [ControlFlowNode for key](3), and object source: [ControlFlowNode for key](3). Set attribute key: [ControlFlowNode for target_name](6). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for child_name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

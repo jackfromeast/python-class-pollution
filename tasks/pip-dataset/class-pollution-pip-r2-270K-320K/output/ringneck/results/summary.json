@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 6
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function set](1), with key source: [ControlFlowNode for variable_address](2), and object source: [ControlFlowNode for variable_address](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function visit_Assign_Expression](1), with key source: [ControlFlowNode for expr](2), and object source: [ControlFlowNode for expr](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function visit_AssignIterator_Expression](1), with key source: [ControlFlowNode for expr](2), and object source: [ControlFlowNode for expr](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function visit_AugmentedAssign_Expression](1), with key source: [ControlFlowNode for expr](2), and object source: [ControlFlowNode for expr](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function visit_MultiAssign_Expression](1), with key source: [ControlFlowNode for expr](2), and object source: [ControlFlowNode for expr](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

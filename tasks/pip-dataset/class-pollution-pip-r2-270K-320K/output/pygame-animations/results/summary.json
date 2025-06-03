@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-both": 4
+  },
+  "details": [
+    "Type:SetAttr-GetBoth Class pollution function: [Function _update](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for subattr](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).",
+    "Type:SetAttr-GetBoth Class pollution function: [Function cancel](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for subattr](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).",
+    "Type:SetAttr-GetBoth Class pollution function: [Function fastforward](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for subattr](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).",
+    "Type:SetAttr-GetBoth Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for subattr](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).\nType:SetAttr-GetBoth Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for subattr](5). Get attribute op: [ControlFlowNode for eval()](6). Get item op: [ControlFlowNode for eval()](6)."
+  ]
+}

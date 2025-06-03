@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 3,
+    "py/class-polliution/set-item-get-both": 3
+  },
+  "details": [
+    "Type:SetItem-GetBoth Class pollution function: [Function add_object](1), with key source: [ControlFlowNode for change](2), and object source: [ControlFlowNode for change](2). Set item key: [ControlFlowNode for pk_val](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5).",
+    "Type:SetItem-GetAttr Class pollution function: [Function apply](1), with key source: [ControlFlowNode for change](2), and object source: [ControlFlowNode for change](2). Set item key: [ControlFlowNode for pk_val](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetItem-GetBoth Class pollution function: [Function _map_change_object](1), with key source: [ControlFlowNode for change](2), and object source: [ControlFlowNode for change](2). Set item key: [ControlFlowNode for pk_val](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5).",
+    "Type:SetItem-GetAttr Class pollution function: [Function add_object](1), with key source: [ControlFlowNode for change](2), and object source: [ControlFlowNode for change](2). Set item key: [ControlFlowNode for pk_val](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function _map_change_object](1), with key source: [ControlFlowNode for change](2), and object source: [ControlFlowNode for change](2). Set item key: [ControlFlowNode for pk_val](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetItem-GetBoth Class pollution function: [Function apply](1), with key source: [ControlFlowNode for change](2), and object source: [ControlFlowNode for change](2). Set item key: [ControlFlowNode for pk_val](3). Get attribute op: [ControlFlowNode for getattr()](4). Get item op: [ControlFlowNode for Subscript](5)."
+  ]
+}

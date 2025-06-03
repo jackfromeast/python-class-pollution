@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 3
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function _apply_hyperparam](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for path_part](3), Set item op key: [ControlFlowNode for path_part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function apply_hyperparams](1), with key source: [ControlFlowNode for params](2), and object source: [ControlFlowNode for params](2). Set attribute key: [ControlFlowNode for path_part](3), Set item op key: [ControlFlowNode for path_part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function _apply_hyperparams](1), with key source: [ControlFlowNode for params](2), and object source: [ControlFlowNode for params](2). Set attribute key: [ControlFlowNode for path_part](3), Set item op key: [ControlFlowNode for path_part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

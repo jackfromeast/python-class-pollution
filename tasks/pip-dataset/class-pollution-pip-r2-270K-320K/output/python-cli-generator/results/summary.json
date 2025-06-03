@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 4
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_args_into_class](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set attribute key: [ControlFlowNode for attr_name](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _update_class_with_args](1), with key source: [ControlFlowNode for attr_name](2), and object source: [ControlFlowNode for data](3). Set attribute key: [ControlFlowNode for attr_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _update_class_with_args](1), with key source: [ControlFlowNode for data](3), and object source: [ControlFlowNode for data](3). Set attribute key: [ControlFlowNode for attr_name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _update_class_with_dict](1), with key source: [ControlFlowNode for attr_name](2), and object source: [ControlFlowNode for data](3). Set attribute key: [ControlFlowNode for attr_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _update_class_with_dict](1), with key source: [ControlFlowNode for data](3), and object source: [ControlFlowNode for data](3). Set attribute key: [ControlFlowNode for attr_name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function set_dict_into_class](1), with key source: [ControlFlowNode for data_dic](2), and object source: [ControlFlowNode for data_dic](2). Set attribute key: [ControlFlowNode for attr_name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

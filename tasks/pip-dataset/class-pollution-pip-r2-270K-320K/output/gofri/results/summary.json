@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 1,
+    "py/class-polliution/set-item-get-both": 1
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function force_jsonizable](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for obj](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetBoth Class pollution function: [Function force_jsonizable](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for obj](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4). Get item op: [ControlFlowNode for Subscript](5)."
+  ]
+}

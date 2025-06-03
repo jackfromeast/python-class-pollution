@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 2
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function setter](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function setter](1), with key source: [ControlFlowNode for member](5), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for prop](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _follow_path](1), with key source: [ControlFlowNode for start](2), and object source: [ControlFlowNode for path](3). Set attribute key: [ControlFlowNode for prop](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function _follow_path](1), with key source: [ControlFlowNode for path](3), and object source: [ControlFlowNode for path](3). Set attribute key: [ControlFlowNode for prop](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

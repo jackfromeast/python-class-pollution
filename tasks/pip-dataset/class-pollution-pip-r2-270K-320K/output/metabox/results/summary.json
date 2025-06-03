@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 3
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function _replace_feature_with_value_in_dataclass](1), with key source: [ControlFlowNode for dataclass_instance](2), and object source: [ControlFlowNode for dataclass_instance](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function replace_features](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function _replace_this_feature_with_value_recursively](1), with key source: [ControlFlowNode for parent](2), and object source: [ControlFlowNode for parent](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function _replace_this_feature_with_value_recursively](1), with key source: [ControlFlowNode for parent](2), and object source: [ControlFlowNode for child_field](5). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function _replace_this_feature_with_value_recursively](1), with key source: [ControlFlowNode for child_field](5), and object source: [ControlFlowNode for parent](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function _replace_this_feature_with_value_recursively](1), with key source: [ControlFlowNode for child_field](5), and object source: [ControlFlowNode for child_field](5). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

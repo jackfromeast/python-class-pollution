@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-attr": 1
+  },
+  "details": [
+    "Type:SetBoth-GetAttr Class pollution function: [Function replace_fields](1), with key source: [ControlFlowNode for new_fields](2), and object source: [ControlFlowNode for new_fields](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}
