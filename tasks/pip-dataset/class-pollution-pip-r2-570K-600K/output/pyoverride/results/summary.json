@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution/set-both-get-both": 4
+  },
+  "details": [
+    "Type:SetBoth-GetBoth Class pollution function: [Function deep_update](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for k](3), Set item op key: [ControlFlowNode for k](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function module_update](1), with key source: [ControlFlowNode for updates](2), and object source: [ControlFlowNode for updates](2). Set attribute key: [ControlFlowNode for k](3), Set item op key: [ControlFlowNode for k](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "Type:SetBoth-GetBoth Class pollution function: [Function genexpr](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for k](3), Set item op key: [ControlFlowNode for k](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

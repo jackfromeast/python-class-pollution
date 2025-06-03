@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution/set-attr-get-attr": 4
+  },
+  "details": [
+    "Type:SetAttr-GetAttr Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function instantiate_pipeline](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function recursive_instantiate](1), with key source: [ControlFlowNode for model](2), and object source: [ControlFlowNode for model](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "Type:SetAttr-GetAttr Class pollution function: [Function dictcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for field](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

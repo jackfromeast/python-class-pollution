@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "py/class-polliution/set-item-get-attr": 27
+  },
+  "details": [
+    "Type:SetItem-GetAttr Class pollution function: [Function filter_keys](1), with key source: [ControlFlowNode for object](2), and object source: [ControlFlowNode for object](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_request_details](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function build](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function test_filter_keys_filters_error](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_machine_name](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_user](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_version](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function ignore_exceptions](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function _transform_message](1), with key source: [ControlFlowNode for message](2), and object source: [ControlFlowNode for message](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_client_details](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_environment_details](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_exception_details](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_customdata](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4).",
+    "Type:SetItem-GetAttr Class pollution function: [Function set_tags](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set item key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for Subscript](4)."
+  ]
+}
