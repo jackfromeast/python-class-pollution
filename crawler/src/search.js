@@ -17,7 +17,7 @@ import OpenAI from "openai";
 import yaml from 'js-yaml';
 import Logger from './logger.js';
 
-const CONFIG = yaml.load(fs.readFileSync('/home/jiacheng/python-class-pollution/crawler/config-2020-2024.yml', 'utf8'));
+const CONFIG = yaml.load(fs.readFileSync('/home/redacted/python-class-pollution/crawler/config-2020-2024.yml', 'utf8'));
 // const CONFIG = yaml.load(fs.readFileSync('../config.yml', 'utf8'));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

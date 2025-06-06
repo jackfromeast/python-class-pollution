@@ -19,8 +19,8 @@ sapiens,4.7k,https://github.com/facebookresearch/sapiens,Y,Y,,Attr,Attr,Function
 open_flamingo,3.8k,https://github.com/mlfoundations/open_flamingo,Y,Y,,Attr,Attr,Function,,,,https://github.com/mlfoundations/open_flamingo/tree/655f693fbfa04cd6e9a987d960654624d48917cf,Github-Top-1K-SetBoth
 open-interpreter,57277,https://github.com/OpenInterpreter/open-interpreter,Y,Y,,Attr,Attr,Local,,,,,Github-Top-1K-OneSetOnly
 pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,Y,,Attr,Attr,Function,,,,,Github-Top-1K-OneSetOnly
-sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,Attr,Attr,Local,,,Todo,"DoS, TODO: @Zhengyu Write PoC",Github-Top-1K-OneSetOnly
-taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,Attr,Attr,Remote,,,Reported,TODO: @Zhengyu Write PoC,Github-Top-1K-OneSetOnly
+sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,Attr,Attr,Local,,,Todo,"DoS, TODO: @redacted Write PoC",Github-Top-1K-OneSetOnly
+taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,Attr,Attr,Remote,,,Reported,TODO: @redacted Write PoC,Github-Top-1K-OneSetOnly
 airbyte,16374,https://github.com/airbytehq/airbyte,Y,Y,,Attr,Attr,Function,,,,in tests only,Github-Top-1K-OneSetOnly
 RWKV-LM,12737,https://github.com/BlinkDL/RWKV-LM,Y,Y,getItem index needs to be an int,Attr,Attr,Function,,,,,Github-Top-1K-OneSetOnly
 ChatRWKV,9434,https://github.com/BlinkDL/ChatRWKV,Y,Y,,Attr,Attr,Function,,,,,Github-Top-1K-OneSetOnly
@@ -49,14 +49,14 @@ generative-ai-python,1665,https://github.com/google-gemini/generative-ai-python,
 piccolo,1460,https://github.com/piccolo-orm/piccolo,Y,Y,,Attr,Attr,Function,import_fastapi|.get/.post/.api_route,,,key is not under control,Github-Top-1K-OneSetOnly
 JSPyBridge,709,https://github.com/extremeheat/JSPyBridge,Y,Y,,Attr/Field,Attr/Field,Function,,,,"mothly downlaod 19,449: multiple pollution",Github-Top-100-1K-Codeql-SmartSetter
 torchlens,525,https://github.com/johnmarktaylor91/torchlens,Y,Y,duplicated with Github dataset.,Attr/Field,Attr/Field,,,,,,Github-Top-100-1K-Codeql-SmartSetter
-riven,442,https://github.com/rivenmedia/riven,Y,Y,duplicated with Zhengyu's 100-1k codeql dataset.,Attr,Attr/Field,Function,,,,,Github-Top-100-1K-Codeql-SmartSetter
+riven,442,https://github.com/rivenmedia/riven,Y,Y,duplicated with redacted's 100-1k codeql dataset.,Attr,Attr/Field,Function,,,,,Github-Top-100-1K-Codeql-SmartSetter
 tournesol,338,https://github.com/tournesol-app/tournesol,Y,Y,,Attr/Field,Attr/Field,Function,,,,cli tool,Github-Top-100-1K-Codeql-SmartSetter
 pokitoki,316,https://github.com/nalgeon/pokitoki,Y,Y,duplicated with Github dataset.,Attr,Attr/Field,Remote,,,,remote trigger,Github-Top-100-1K-Codeql-SmartSetter
-nebari,285,https://github.com/nebari-dev/nebari,Y,Y,duplicated with Zhengyu's 100-1k codeql dataset.,Attr/Field,Attr/Field,,,,,,Github-Top-100-1K-Codeql-SmartSetter
+nebari,285,https://github.com/nebari-dev/nebari,Y,Y,duplicated with redacted's 100-1k codeql dataset.,Attr/Field,Attr/Field,,,,,,Github-Top-100-1K-Codeql-SmartSetter
 AgentLab,171,https://github.com/ServiceNow/AgentLab,Y,Y,,Attr/Field,Attr/Field,,,,,ServiceNow big company,Github-Top-100-1K-Codeql-SmartSetter
 netchecks,156,https://github.com/hardbyte/netchecks,Y,Y,,Attr,Attr/Field,,,,,,Github-Top-100-1K-Codeql-SmartSetter
 Jacinle,135,https://github.com/vacancy/Jacinle,Y,Y,,Attr,Attr/Field,Function,,,,command line class,Github-Top-100-1K-Codeql-SmartSetter
-uavSim,121,https://github.com/theilem/uavSim,Y,Y,duplicated with Zhengyu's 100-1k codeql dataset.,Attr/Field,Attr/Field,,,,,,Github-Top-100-1K-Codeql-SmartSetter
+uavSim,121,https://github.com/theilem/uavSim,Y,Y,duplicated with redacted's 100-1k codeql dataset.,Attr/Field,Attr/Field,,,,,,Github-Top-100-1K-Codeql-SmartSetter
 edsnlp,118,https://github.com/aphp/edsnlp,Y,Y,,Attr/Field,Attr/Field,,,,,"mothly downlaod 19,449: multiple pollution",Github-Top-100-1K-Codeql-SmartSetter
 gensphere,110,https://github.com/octopus2023-inc/gensphere,Y,Y,,Attr/Field,Attr/Field,Local,,,,"/\bsetattr\(\s*obj\w*\s*,\s*\w+\s*,\s*\w+\s*\)/ /\bobj\[\w+\]\s*=|\bobj\.get\(/ /\bobj\s*=/ /\(\s*\w*(obj|parent|target|instance|dict|dest|conf)\w*/ language:Python",Github-regular-expressions
 meta-dataset,768,https://github.com/google-research/meta-dataset,Y,Y,,Attr/Field,Attr/Field,Function,,,,"/\bsetattr\(\s*target\s*,\s*\w+\s*,\s*\w+\s*\)/ /\btarget\[\w+\]\s*=|\btarget\.get\(/ /\btarget\s*=/",Github-regular-expressions

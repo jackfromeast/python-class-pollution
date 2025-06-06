@@ -7,9 +7,9 @@ GITHUB:
   TOKEN: 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
 
 TASK:
-  LOG_PATH: "/Users/jiachengredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/logs/class-pollution-application-2020-star-100.log"
-  OUTPUT_PATH: "/Users/jiachengredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/output/class-pollution-application-2020-star-100.json"
-  TEMP_PATH: "/Users/jiachengredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/tmp"
+  LOG_PATH: "/Users/redactedredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/logs/class-pollution-application-2020-star-100.log"
+  OUTPUT_PATH: "/Users/redactedredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/output/class-pollution-application-2020-star-100.json"
+  TEMP_PATH: "/Users/redactedredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/tmp"
   
   GITHUB_FILTER:
     START_DATE: 2020-02-05
@@ -23,7 +23,7 @@ TASK:
     # - FILE: "/home/redacted/Desktop/Blurt/crawler/src/filters/filter-has-javascript.js"
     #   FILTER_NAME: "filterHasJavaScriptCode"
 
-    - FILE: "/Users/jiachengredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/filter-use-class-pollution-func.js"
+    - FILE: "/Users/redactedredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/filter-use-class-pollution-func.js"
       FILTER_NAME: "filterUseClassPollutionLibraryLocalCheck"
 
     # - FILE: "/home/redacted/Desktop/Blurt/crawler/src/filters/filter-unpicker.js"

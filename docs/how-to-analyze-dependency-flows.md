@@ -2,7 +2,7 @@
 
 ### Motivating Example
 
-The following code snippet comes from `robusta` repository that previously missed by our CodeQL query but found by Jiacheng manually. The issue arises because the function relies on `object_at_path` from the external `hikaru` library to retrieve a nested object based on a given path. CodeQL couldn’t analyze this function since it doesn’t exist within the current codebase. This highlights the need for an automated approach to handle taint propagation involving external functions.
+The following code snippet comes from `robusta` repository that previously missed by our CodeQL query but found by redacted manually. The issue arises because the function relies on `object_at_path` from the external `hikaru` library to retrieve a nested object based on a given path. CodeQL couldn’t analyze this function since it doesn’t exist within the current codebase. This highlights the need for an automated approach to handle taint propagation involving external functions.
 
 ```
 // https://github.com/robusta-dev/robusta/blob/d06212253b42d493ebc33f79bb68debb005afa4f/src/robusta/runner/object_updater.py#L2

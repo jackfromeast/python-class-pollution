@@ -6503,7 +6503,7 @@ https://github.com/JiYuanFeng/DDP.git
 https://github.com/JiYuanFeng/MCTrans.git
 https://github.com/JiaPai12138/Crossfirer.git
 https://github.com/JiaRenChang/RealtimeStereo.git
-https://github.com/JiachengLi1995/TiSASRec.git
+https://github.com/redactedLi1995/TiSASRec.git
 https://github.com/JiageWang/hand-writing-recognition.git
 https://github.com/JiageWang/opencv-pyqt5.git
 https://github.com/Jiahao000/MosaicFusion.git
@@ -15146,8 +15146,8 @@ https://github.com/ZhengyiLuo/PHC.git
 https://github.com/ZhengyiLuo/PULSE.git
 https://github.com/ZhengyiLuo/SMPLSim.git
 https://github.com/ZhengyiLuo/UHC.git
-https://github.com/ZhengyuLiang24/BasicLFSR.git
-https://github.com/ZhengyuZhao/TransferAttackEval.git
+https://github.com/redactedLiang24/BasicLFSR.git
+https://github.com/redactedZhao/TransferAttackEval.git
 https://github.com/Zhenye-Na/image-similarity-using-deep-ranking.git
 https://github.com/Zhenye-Na/machine-learning-uiuc.git
 https://github.com/Zhenye-Na/reinforcement-learning-stanford.git
@@ -31030,8 +31030,8 @@ https://github.com/jhultman/vision3d.git
 https://github.com/jhwang1992/network-visualization.git
 https://github.com/jhwjhw0123/Imbalance-XGBoost.git
 https://github.com/jia-zhuang/pytorch-multi-gpu-training.git
-https://github.com/jiacheng-xu/DiscoBERT.git
-https://github.com/jiacheng-xu/vmf_vae_nlp.git
+https://github.com/redacted-xu/DiscoBERT.git
+https://github.com/redacted-xu/vmf_vae_nlp.git
 https://github.com/jiachens/ModelNet40-C.git
 https://github.com/jiaeyan/Jiayan.git
 https://github.com/jiahao-shao1/ChronoDepth.git
@@ -52817,8 +52817,8 @@ https://github.com/zhengye1995/Tianchi-2019-Guangdong-Intelligent-identification
 https://github.com/zhengye1995/underwater-object-detection.git
 https://github.com/zhengyima/kg-baseline-pytorch.git
 https://github.com/zhengyima/mnist-classification.git
-https://github.com/zhengyuf/IMavatar.git
-https://github.com/zhengyuf/PointAvatar.git
+https://github.com/redactedf/IMavatar.git
+https://github.com/redactedf/PointAvatar.git
 https://github.com/zhengzangw/PCS-FUDA.git
 https://github.com/zhengzhang01/Pixel-GS.git
 https://github.com/zhengziqiang/ForkGAN.git

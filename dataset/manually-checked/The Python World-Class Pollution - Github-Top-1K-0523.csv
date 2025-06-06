@@ -20,7 +20,7 @@ minGPT,20333,https://github.com/karpathy/minGPT,Y,Y,,,Attr,Attr,Local,,,Todo,TOD
 unilm,20316,https://github.com/microsoft/unilm,Y,Y,,,Attr,Attr,Function,import_flask|import_gradio|import_tornado|import_starlette|.route|import_fastapi,,,"resolve_attr, _set_module_by_path",
 mlflow,18953,https://github.com/mlflow/mlflow,Y,N,,no deep recursive get of base obj ,Attr,Attr,,import_aiohttp|.get/.post/.api_route|import_pytorch_lightning|import_starlette|.route|import_fastapi|import_flask,,,,
 zipline,17891,https://github.com/quantopian/zipline,Y,Y,,,Attr,Attr,Local,,,Todo,PoC pending.,
-sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,,Attr,Attr,Local,import_fastapi|.get/.post/.api_route|import_gradio,,Todo,"DoS, TODO: @Zhengyu Write PoC",
+sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,,Attr,Attr,Local,import_fastapi|.get/.post/.api_route|import_gradio,,Todo,"DoS, TODO: @redacted Write PoC",
 taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,,Attr,Attr,Remote,import_flask|.route|import_flask_restful,,Assigned,,
 airbyte,16374,https://github.com/airbytehq/airbyte,Y,Y,,,Attr,Attr,Function,,,,in tests only,
 nni,14071,https://github.com/microsoft/nni,Y,Y,,,Attr,Attr,None,add_handlers|import_tornado,,,TODO: Maybe can be triggered remotely,No
@@ -76,7 +76,7 @@ Red-DiscordBot,4846,https://github.com/Cog-Creators/Red-DiscordBot,Y,Y,,,Attr,At
 panel,4837,https://github.com/holoviz/panel,Y,N,,deep get is not observed,Attr,Attr,None,import_aiohttp|.get/.post/.api_route|import_flask|import_tornado|import_django|django_path|import_fastapi,,,,
 gluonts,4663,https://github.com/awslabs/gluonts,Y,N,,type check,Attr,Attr,,import_flask|.route|import_pytorch_lightning,,,,
 AutoGPTQ,4541,https://github.com/AutoGPTQ/AutoGPTQ,Y,Y,,,Attr,Attr,Function,,,,,
-ms-swift,4503,https://github.com/modelscope/ms-swift,Y,Y,,duplicate @zhengyu,Attr/Field,Attr/Field,,import_fastapi|import_aiohttp|import_gradio,,,,No
+ms-swift,4503,https://github.com/modelscope/ms-swift,Y,Y,,duplicate @redacted,Attr/Field,Attr/Field,,import_fastapi|import_aiohttp|import_gradio,,,,No
 coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr/Field,Attr,,,,,,
 coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr,Attr,,,,,,
 coremltools,4462,https://github.com/apple/coremltools,Y,N,,MergeMessage in google protobuf implementation; the key to get and set was checked before operating,Attr/Field,Attr,,,,,,

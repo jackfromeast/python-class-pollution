@@ -6,8 +6,8 @@ rekall,1933,https://github.com/google/rekall,N,Y,prototyeObj label over-tainting
 pyRevit,1328,https://github.com/pyrevitlabs/pyRevit,N,Y,,Attr/Field,Field,,,,,
 open-interpreter,57277,https://github.com/OpenInterpreter/open-interpreter,Y,Y,,Attr,Attr,Local,,,,
 pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,Y,,Attr,Attr,Function,,,,
-sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,Attr,Attr,Local,,,Todo,"DoS, TODO: @Zhengyu Write PoC"
-taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,Attr,Attr,Remote,,,Reported,TODO: @Zhengyu Write PoC
+sd-webui-controlnet,17134,https://github.com/Mikubill/sd-webui-controlnet,Y,Y,,Attr,Attr,Local,,,Todo,"DoS, TODO: @redacted Write PoC"
+taipy,17109,https://github.com/Avaiga/taipy,Y,Y,,Attr,Attr,Remote,,,Reported,TODO: @redacted Write PoC
 airbyte,16374,https://github.com/airbytehq/airbyte,Y,Y,,Attr,Attr,Function,,,,in tests only
 PaddleHub,12755,https://github.com/PaddlePaddle/PaddleHub,N,Y,getItem index needs to be an int,Attr/Field,Attr,,,,,
 RWKV-LM,12737,https://github.com/BlinkDL/RWKV-LM,Y,Y,getItem index needs to be an int,Attr,Attr,Function,,,,
