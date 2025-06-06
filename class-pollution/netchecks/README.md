@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```apply_overrides(dst_obj, {'__init__': {'__globals__': {'V1PodTemplateSpec': 'polluted'}}})```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: App
 + Exploitability: Low

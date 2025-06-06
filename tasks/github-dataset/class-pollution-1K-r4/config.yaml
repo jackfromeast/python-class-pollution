@@ -8,7 +8,7 @@ SCHEDULER:
 
   # Path to workspace (base directory for storing results)
   # WORKSPACE/output will be created to store the results
-  WORKSPACE: "/home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4"
+  WORKSPACE: "/home/redacted/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4"
 
   MODE: "list" # Option: "seed" or "list"
   REPO: "https://pypi.org/project/glom"
@@ -24,23 +24,23 @@ SCHEDULER:
   TIMEOUT_PER_WORKER: 2400 # 10 minutes
 
 CODEQL:
-  CLI: "/home/jackfromeast/Downloads/codeql/codeql"
+  CLI: "/home/redacted/Downloads/codeql/codeql"
   THREADS: 2
   RAM: 16384 # MB
   TIMEOUT: 1200 # 20 minutes
   USE_MODEL_PACK: True
-  MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
-  MODEL_PACK_PATH: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/library-models
+  MODEL_PACK: redacted/class-pollution-model-pack@0.0.1
+  MODEL_PACK_PATH: /home/redacted/Desktop/python-class-pollution/codeql-query/library-models
   
 
 DEPENDENCY_ANALYSIS:
   USE_CACHE: True
-  CACHE_PATH: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/library-models"
+  CACHE_PATH: "/home/redacted/Desktop/python-class-pollution/codeql-query/library-models"
   QUERY_MODE: query # query or qlpack
   QUERIES:
-    SOURCE: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSource.ql"
-    SINK: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql"
-    SUMMARY: "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionTaintProp.ql"
+    SOURCE: "/home/redacted/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSource.ql"
+    SINK: "/home/redacted/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionSink.ql"
+    SUMMARY: "/home/redacted/Desktop/python-class-pollution/codeql-query/class-pollution-all/query/DependencyClassPollutionTaintProp.ql"
     TYPE: ""
 
   DEBUG: True

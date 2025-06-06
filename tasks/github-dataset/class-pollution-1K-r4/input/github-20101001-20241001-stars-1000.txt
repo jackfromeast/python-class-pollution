@@ -1897,7 +1897,7 @@ https://github.com/Zeyi-Lin/HivisionIDPhotos.git
 https://github.com/ZhaoJ9014/face.evoLVe.git
 https://github.com/ZhengPeng7/BiRefNet.git
 https://github.com/ZhengyaoJiang/PGPortfolio.git
-https://github.com/Zhongdao/Towards-Realtime-MOT.git
+https://github.com/redacteddao/Towards-Realtime-MOT.git
 https://github.com/ZhugeKongan/torch-template-for-deep-learning.git
 https://github.com/ZiniuLu/Python-100-Days.git
 https://github.com/Zipstack/unstract.git
@@ -2458,7 +2458,7 @@ https://github.com/bijection/sistine.git
 https://github.com/bilibili/ailab.git
 https://github.com/biliup/biliup.git
 https://github.com/billryan/algorithm-exercise.git
-https://github.com/billzhong/inbox.py.git
+https://github.com/billredacted/inbox.py.git
 https://github.com/binance/binance-connector-python.git
 https://github.com/binance/binance-public-data.git
 https://github.com/binary-husky/gpt_academic.git
@@ -2594,7 +2594,7 @@ https://github.com/bytewax/bytewax.git
 https://github.com/bytewiz3/TravelGPT.git
 https://github.com/c0ny1/upload-fuzz-dic-builder.git
 https://github.com/c4urself/bump2version.git
-https://github.com/caizhongang/SMPLer-X.git
+https://github.com/cairedactedang/SMPLer-X.git
 https://github.com/caj2pdf/caj2pdf.git
 https://github.com/calebmadrigal/trackerjacker.git
 https://github.com/calebstewart/pwncat.git
@@ -7724,7 +7724,7 @@ https://github.com/yinguobing/head-pose-estimation.git
 https://github.com/yinkaisheng/Python-UIAutomation-for-Windows.git
 https://github.com/yisol/IDM-VTON.git
 https://github.com/yixiu001/serv00-login.git
-https://github.com/yizhongw/self-instruct.git
+https://github.com/yiredactedw/self-instruct.git
 https://github.com/yjxiong/temporal-segment-networks.git
 https://github.com/yjxiong/tsn-pytorch.git
 https://github.com/yl4579/StyleTTS2.git

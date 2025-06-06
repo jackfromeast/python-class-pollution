@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, "/home/jackfromeast/Desktop/python-class-pollution/polluter")
+sys.path.insert(0, "/home/redacted/Desktop/python-class-pollution/polluter")
 
 # import math
 import collections

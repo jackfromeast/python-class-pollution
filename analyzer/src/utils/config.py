@@ -123,7 +123,7 @@ class Config:
     raise AttributeError(f"'Config' object has no attribute '{name}'")
   
 if __name__ == "__main__":
-  config = Config("/home/jackfromeast/Desktop/python-class-pollution/analyzer/new-config-example.yaml")
+  config = Config("/home/redacted/Desktop/python-class-pollution/analyzer/new-config-example.yaml")
   print("TEST_NAME:", config.SCHEDULER.TEST_NAME)
   print("CODEQL CLI Path:", config.CODEQL.CLI)
   print("Resolved REPO_LIST Path:", config.SCHEDULER.REPO_LIST)

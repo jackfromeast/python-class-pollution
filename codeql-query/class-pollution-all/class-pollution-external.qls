@@ -1,5 +1,5 @@
 - queries: .
-  from: jackfromeast/class-pollution-all
+  from: redacted/class-pollution-all
   version: 0.0.1
 - include:
     id: 

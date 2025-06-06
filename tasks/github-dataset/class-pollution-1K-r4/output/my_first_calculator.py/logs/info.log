@@ -1,2 +1,2 @@
-2025-03-28 21:56:32,655 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/my_first_calculator.py/codebase (logger.py:42)
+2025-03-28 21:56:32,655 - CodeQLRunner - INFO - Building CodeQL database for: /home/redacted/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K-r4/output/my_first_calculator.py/codebase (logger.py:42)
 2025-03-28 22:16:31,778 - CodeQLRunner - INFO - Terminated all spawned processes for PID 1174896 (logger.py:42)

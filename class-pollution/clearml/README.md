@@ -61,7 +61,7 @@ from clearml.automation import TaskScheduler
 import sys
 
 def check_pollution():
-    with open('/home/jackfromeast/Desktop/python-class-pollution/class-pollution/clearml/poc/polluted.txt', 'w') as f:
+    with open('/home/redacted/Desktop/python-class-pollution/class-pollution/clearml/poc/polluted.txt', 'w') as f:
         f.write(sys.executable)
 
 task = Task.init(project_name="class-pollution", task_name="poc")

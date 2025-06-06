@@ -208,5 +208,5 @@ async function test_repos(testPath) {
   }
   console.log(`Total repos: ${total_repos}, vulnerable repos: ${vulnerable_repos}`);
 }
-// test_demos("/Users/jiachengzhong/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/test")
+// test_demos("/Users/jiachengredacted/project/jhu-research/python-class-pollution/python-class-pollution/crawler/src/filters/test")
 test_repos("/home/jiacheng/python-class-pollution/crawler/tmp")

@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```_KV('__init__.__globals__.__name__=polluted').apply(obj)```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: Lib
 + Exploitability: Low

@@ -1,4 +1,4 @@
-2025-04-25 15:13:03,373 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/taipy/codebase (logger.py:42)
-2025-04-25 15:13:09,852 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/taipy/codeql-db (logger.py:42)
-2025-04-25 15:13:09,852 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/taipy/codeql-db (logger.py:42)
-2025-04-25 15:13:09,852 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution-external.qls (logger.py:42)
+2025-04-25 15:13:03,373 - CodeQLRunner - INFO - Building CodeQL database for: /home/redacted/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/taipy/codebase (logger.py:42)
+2025-04-25 15:13:09,852 - CodeQLRunner - INFO - CodeQL database created successfully at /home/redacted/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/taipy/codeql-db (logger.py:42)
+2025-04-25 15:13:09,852 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/redacted/Desktop/python-class-pollution/tasks/class-pollution-known-remote/output/taipy/codeql-db (logger.py:42)
+2025-04-25 15:13:09,852 - CodeQLRunner - INFO - Running query: /home/redacted/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution-external.qls (logger.py:42)

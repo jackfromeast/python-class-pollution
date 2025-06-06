@@ -8,7 +8,7 @@ This script helps to run the codeql on a given Github URL/PyPL package name.
 python run.py --repo <repo-url> --work-path <work-path> --config <path-to-config>
 
 e.g.,
-python3 run.py --repo https://github.com/dgilland/pydash.git --work-path /home/jackfromeast/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output --config /home/jackfromeast/Desktop/python-class-pollution/codeql/driver/config.yaml 
+python3 run.py --repo https://github.com/dgilland/pydash.git --work-path /home/redacted/Desktop/python-class-pollution/tasks/codeql-class-pollution-1K/output --config /home/redacted/Desktop/python-class-pollution/codeql/driver/config.yaml 
 """
 
 import os

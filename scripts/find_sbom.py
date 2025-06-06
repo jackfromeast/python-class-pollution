@@ -2,7 +2,7 @@ import os
 import json
 
 # Define the base directory
-BASE_DIR = "/home/jackfromeast/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output"
+BASE_DIR = "/home/redacted/Desktop/python-class-pollution/tasks/dependency-check-1K-r1/output"
 
 # Counter for total dependencies analyzed
 total_dependencies = 0

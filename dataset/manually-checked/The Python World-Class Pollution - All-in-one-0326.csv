@@ -12,7 +12,7 @@ fixinventory,1625,https://github.com/someengineering/fixinventory,Y,Y,,Attr/Fiel
 pydash,1344,https://github.com/dgilland/pydash,Y,Y,,Attr/Field,Attr/Field,Function,,,,,Github-Top-1K-SetBoth
 deepdiff,1303,https://github.com/seperman/deepdiff,Y,Y,,Attr/Field,Attr/Field,Function,,,,,Github-Top-1K-SetBoth
 training_extensions,1145,https://github.com/openvinotoolkit/training_extensions,Y,Y,,Attr/Field,Attr/Field,Function,,,,,Github-Top-1K-SetBoth
-sverchok,2300+,https://github.com/nortikin/sverchok,Y,Y,,Attr/Field,Attr/Field,Local,,,Reported,https://gist.github.com/superboy-zjc/a31b8ea7466f91b437598297bf5cbce8,Github-Top-1K-SetBoth
+sverchok,2300+,https://github.com/nortikin/sverchok,Y,Y,,Attr/Field,Attr/Field,Local,,,Reported,https://gist.github.com/redacted/a31b8ea7466f91b437598297bf5cbce8,Github-Top-1K-SetBoth
 pyro,8.6k,https://github.com/pyro-ppl/pyro,Y,Y,,Attr,Attr,Function,,,,"https://github.com/pyro-ppl/pyro/blob/86277f33fc60af7520c88deb9cf38ba39c6c9519/pyro/infer/autoguide/utils.py#L21
 deep\w+set",Github-Top-1K-SetBoth
 sapiens,4.7k,https://github.com/facebookresearch/sapiens,Y,Y,,Attr,Attr,Function,,,,https://github.com/facebookresearch/sapiens/blob/08dce797f7b40f5b41388f518cac85535c3f5d13/pretrain/mmpretrain/models/multimodal/flamingo/utils.py#L61,Github-Top-1K-SetBoth
@@ -39,7 +39,7 @@ DeepSpeed,35764,https://github.com/microsoft/DeepSpeed,Y,Y,,Attr,Attr,Function,,
 pytorch-image-models,32491,https://github.com/huggingface/pytorch-image-models,Y,Y,,Attr,Attr,Function,,,,set_layer,Github-Top-1K-OneSetOnly
 fairseq,30638,https://github.com/facebookresearch/fairseq,Y,Y,,Attr,Attr,Function,,,,"_set_module_by_path, attrsetter",Github-Top-1K-OneSetOnly
 spaCy,30588,https://github.com/explosion/spaCy,Y,Y,,Attr,Attr,Function,,,,DocCleaner.__call__ (built in pipeline function),Github-Top-1K-OneSetOnly
-ragflow,24695,https://github.com/infiniflow/ragflow,Y,Y,,Attr,Attr,Remote,import_flask|.route,,Reported,https://gist.github.com/superboy-zjc/e7c676f39f714ec4c4a6afa3a0ba037d,Github-Top-1K-OneSetOnly
+ragflow,24695,https://github.com/infiniflow/ragflow,Y,Y,,Attr,Attr,Remote,import_flask|.route,,Reported,https://gist.github.com/redacted/e7c676f39f714ec4c4a6afa3a0ba037d,Github-Top-1K-OneSetOnly
 shuup,2258,https://github.com/shuup/shuup,Y,Y,,Attr,Attr,Function,import_django,,,remote,Github-Top-1K-OneSetOnly
 lorax,2234,https://github.com/predibase/lorax,Y,Y,,Attr,Attr,Function,import_aiohttp,,,"remote, key is uncontrollable",Github-Top-1K-OneSetOnly
 AliceMind,1983,https://github.com/alibaba/AliceMind,Y,Y,,Attr,Attr,Function,import_tornado,,,,Github-Top-1K-OneSetOnly

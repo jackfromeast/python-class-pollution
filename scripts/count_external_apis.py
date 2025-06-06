@@ -2,7 +2,7 @@ import os
 import yaml
 from collections import defaultdict
 
-BASE_DIR = "/home/jackfromeast/Desktop/python-class-pollution/codeql-query/library-models"
+BASE_DIR = "/home/redacted/Desktop/python-class-pollution/codeql-query/library-models"
 
 model_counts = defaultdict(int)
 

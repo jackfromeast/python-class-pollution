@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```torchlens.nested_assign(obj, [("attr", "__init__"), ("attr", "__globals__"), ("ind", "__name__") ], 'polluted')```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: Lib
 + Exploitability: Low

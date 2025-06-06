@@ -99,7 +99,7 @@ Local-level PoC:
             "name": "Azure CLI Debug (Integrated Console)",
             "type": "python",
             "request": "launch",
-            "python": "/home/jackfromeast/Desktop/python-class-pollution/class-pollution/azure-cli/poc/venv/bin/python3",
+            "python": "/home/redacted/Desktop/python-class-pollution/class-pollution/azure-cli/poc/venv/bin/python3",
             "program": "${workspaceRoot}/src/azure-cli/azure/cli/__main__.py",
             "cwd": "${workspaceRoot}",
             "args": [

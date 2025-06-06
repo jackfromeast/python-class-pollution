@@ -79,7 +79,7 @@ class SarifProcessor:
     Parse the raw message from the SARIF file.
 
     E.g., 
-    'The callable  taint propagation API in [Module babel.messagen- Function: values_to_compare\n- Module: Module babel.messages.catalog\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.py'
+    'The callable  taint propagation API in [Module babel.messagen- Function: values_to_compare\n- Module: Module babel.messages.catalog\n- File: /home/redacted/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/codebase/babel/messages/catalog.py'
     =>
     {
       "callable": "values_to_compare",
@@ -134,7 +134,7 @@ class SarifProcessor:
     @description
     Parse the raw message from the SARIF file.
     E.g., 
-    ''The callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: merge\n- Module: Module babel.localedata\n- File: /home/jackfromeast/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/codebase/babel/localedata.py\nThe callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module babel.localedata\n- File: /babel/codebase/babel/localedata.py''
+    ''The callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg0\n- Function: merge\n- Module: Module babel.localedata\n- File: /home/redacted/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/codebase/babel/localedata.py\nThe callable [merge](1) is a class pollution sink API in [Module babel.localedata](2) \n- Type: setItem\n- Base: Arg0\n- Key: Arg1\n- Value: Arg1\n- Function: merge\n- Module: Module babel.localedata\n- File: /babel/codebase/babel/localedata.py''
     =>
     {
       "callable": "merge",
@@ -356,4 +356,4 @@ class SarifProcessor:
   
 if __name__ == "__main__":
   sarif_processor = SarifProcessor()
-  sarif_processor.process("babel", "/home/jackfromeast/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/results/DependencyClassPollutionTaintProp.ql.sarif", "/home/jackfromeast/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/results/source_model.json", type="summary")
+  sarif_processor.process("babel", "/home/redacted/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/results/DependencyClassPollutionTaintProp.ql.sarif", "/home/redacted/Desktop/python-class-pollution/tasks/test/output/robusta/dependency/output/babel/results/source_model.json", type="summary")

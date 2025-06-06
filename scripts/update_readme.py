@@ -2,7 +2,7 @@ import os
 
 vuln_input_directory = 'class-pollution'
 gadgets_input_directory = 'cp-gadgets'
-github_base_url = 'https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/'
+github_base_url = 'https://github.com/redacted/python-class-pollution/blob/main/class-pollution/'
 output_file = 'README.md'
 
 readme_content = """## Python Class Pollution Vulnerability and its Gadgets

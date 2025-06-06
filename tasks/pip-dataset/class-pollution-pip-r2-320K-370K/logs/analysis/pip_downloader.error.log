@@ -1510,11 +1510,11 @@ ERROR: No matching distribution found for odoo8-addon-crm-deduplicate-acl
 [notice] To update, run: pip install --upgrade pip
 ERROR: No matching distribution found for byted-overpass-data-content-aigc-image-disc
  (downloader.py:237)
-2025-05-26 03:01:38,727 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement byted-overpass-ad-creative-zhongdi-demo (from versions: none)
+2025-05-26 03:01:38,727 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement byted-overpass-ad-creative-redacteddi-demo (from versions: none)
 
 [notice] A new release of pip is available: 24.0 -> 25.1.1
 [notice] To update, run: pip install --upgrade pip
-ERROR: No matching distribution found for byted-overpass-ad-creative-zhongdi-demo
+ERROR: No matching distribution found for byted-overpass-ad-creative-redacteddi-demo
  (downloader.py:237)
 2025-05-26 03:08:37,329 - PipDownloader - ERROR - Failed to download package:   error: subprocess-exited-with-error
   

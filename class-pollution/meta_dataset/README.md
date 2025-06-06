@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```_init_reference_module(Animal, {"typ":'cat',"age": 11}, [['__init__','__globals__','__name__']], ['polluted'])```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: Lib
 + Exploitability: Low

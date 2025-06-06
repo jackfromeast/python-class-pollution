@@ -24,7 +24,7 @@ export class Analyzer {
     this.codeqlOutputPath = codeqlOutputPath;
     this.workPath = workPath;
 
-    this.codeqlQueryPath = '/home/jackfromeast/Desktop/TheHulk/codeql-query/DOMClobbering/DOMClobbering.ql';
+    this.codeqlQueryPath = '/home/redacted/Desktop/TheHulk/codeql-query/DOMClobbering/DOMClobbering.ql';
   }
 
   readData(dataPath) {

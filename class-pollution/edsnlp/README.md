@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```set_deep_attr(obj, '__init__.__globals__.__name__', 'polluted')```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: Lib
 + Exploitability: Low

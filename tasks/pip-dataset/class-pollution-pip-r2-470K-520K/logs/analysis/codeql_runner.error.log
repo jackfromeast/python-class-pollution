@@ -2908,7 +2908,7 @@ A fatal error occurred: Exit status 1 from command: [/home/class-pollution/Downl
 2025-05-21 16:53:57,856 - CodeQLRunner - ERROR - Failed to build CodeQL database for python-package-template-demo: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-21 16:59:35,122 - CodeQLRunner - ERROR - Failed to build CodeQL database for pipincode: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-21 17:00:55,223 - CodeQLRunner - ERROR - Failed to build CodeQL database for trainerai: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
-2025-05-21 17:02:09,546 - CodeQLRunner - ERROR - Failed to build CodeQL database for ragcheckerzhongshuiv3: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-05-21 17:02:09,546 - CodeQLRunner - ERROR - Failed to build CodeQL database for ragcheckerredactedshuiv3: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-21 17:02:23,129 - CodeQLRunner - ERROR - Failed to build CodeQL database for tea-oss-todo: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-21 17:03:35,094 - CodeQLRunner - ERROR - Failed to build CodeQL database for calculator-basic1: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-21 17:05:26,741 - CodeQLRunner - ERROR - Failed to build CodeQL database for ate-metric-aggregator: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)

@@ -13,10 +13,10 @@ pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,N,,,
 pytorch-lightning,28568,https://github.com/Lightning-AI/pytorch-lightning,Y,Y,,,Attr,Attr,Function,,,,,
 python-fire,27202,https://github.com/google/python-fire.git,Y,N,,,Attr,Field,None,,,,,
 diffusers,26481,https://github.com/huggingface/diffusers,Y,Y,,,Attr,Attr,Function,import_fastapi|import_aiohttp|.get/.post/.api_route,,Todo,"library: get_module_from_name, get_submodule_by_name",Yes
-ragflow,24695,https://github.com/infiniflow/ragflow,Y,Y,,,Attr,Attr,Remote,import_flask|.route,,Reported,https://gist.github.com/superboy-zjc/e7c676f39f714ec4c4a6afa3a0ba037d,
+ragflow,24695,https://github.com/infiniflow/ragflow,Y,Y,,,Attr,Attr,Remote,import_flask|.route,,Reported,https://gist.github.com/redacted/e7c676f39f714ec4c4a6afa3a0ba037d,
 insightface,23651,https://github.com/deepinsight/insightface,Y,N,,vul in external library (stylegan2); already added it to the table,Attr,Attr,,,,,,
 reflex,20541,https://github.com/reflex-dev/reflex,Y,N,,,Attr,Field,None,import_fastapi|import_starlette,,,,
-minGPT,20333,https://github.com/karpathy/minGPT,Y,Y,,,Attr,Attr,Local,,,Todo,TODO: @zhong merge_from_args; --model.n_layer=10;,
+minGPT,20333,https://github.com/karpathy/minGPT,Y,Y,,,Attr,Attr,Local,,,Todo,TODO: @redacted merge_from_args; --model.n_layer=10;,
 unilm,20316,https://github.com/microsoft/unilm,Y,Y,,,Attr,Attr,Function,import_flask|import_gradio|import_tornado|import_starlette|.route|import_fastapi,,,"resolve_attr, _set_module_by_path",
 mlflow,18953,https://github.com/mlflow/mlflow,Y,N,,no deep recursive get of base obj ,Attr,Attr,,import_aiohttp|.get/.post/.api_route|import_pytorch_lightning|import_starlette|.route|import_fastapi|import_flask,,,,
 zipline,17891,https://github.com/quantopian/zipline,Y,Y,,,Attr,Attr,Local,,,Todo,PoC pending.,
@@ -216,7 +216,7 @@ spyne,1132,https://github.com/arskom/spyne,Y,N,,not deep get observed,Attr,Field
 xorbits,1130,https://github.com/xorbitsai/xorbits,Y,N/A,,,Attr,Attr,,import_tornado,,,key is not under control,
 EPro-PnP,1114,https://github.com/tjiiv-cprg/EPro-PnP,Y,N/A,,,Attr,Attr,,,,,,Yes
 steam,1111,https://github.com/ValvePython/steam,Y,N/A,,,Attr,Attr,,import_flask|.route,,,,
-fastapi-amis-admin,1100,https://github.com/amisadmin/fastapi-amis-admin,Y,Y,,,Attr,Attr,Remote,import_fastapi|import_starlette,,Reported,report: https://gist.github.com/superboy-zjc/0bc18ea0dc4d0568c28ef5bc2f23e3b6,
+fastapi-amis-admin,1100,https://github.com/amisadmin/fastapi-amis-admin,Y,Y,,,Attr,Attr,Remote,import_fastapi|import_starlette,,Reported,report: https://gist.github.com/redacted/0bc18ea0dc4d0568c28ef5bc2f23e3b6,
 ComfyUI-CogVideoXWrapper,1094,https://github.com/kijai/ComfyUI-CogVideoXWrapper,Y,N/A,,,Attr,Attr,,,,,,
 noise2noise,1081,https://github.com/yu4u/noise2noise,Y,N/A,,,Attr,Attr,,,,,,
 Pythonista,1080,https://github.com/tdamdouni/Pythonista,Y,Y,,"func 1 - perform a `.frame` attribute access operation after it's been deep-gotten through `eval`, which is potentially exploitable by finding and polluting a chainedly reached class having `frame` attribute, yet relatively hard to cause bad impact",Attr/Field,Attr,Function,import_aiohttp|.get/.post/.api_route|import_turbogears|import_bottle|@get/post/route|.route|import_cherrypy|import_django|rule_instantiation|import_flask,,,1 - IgnoreVal.build_view,Yes

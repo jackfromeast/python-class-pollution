@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```desc = descriptors._BaseDescr("__init__.__globals__.obj"); desc.__set_name__(name="secret_key", owner=None); desc._set_object(obj, "polluted")```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: Lib
 + Exploitability: Low

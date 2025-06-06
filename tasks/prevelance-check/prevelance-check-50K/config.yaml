@@ -24,12 +24,12 @@ SCHEDULER:
   TIMEOUT_PER_WORKER: 200 # 10 minutes
 
 CODEQL:
-  CLI: "/home/jackfromeast/Downloads/codeql/codeql"
+  CLI: "/home/redacted/Downloads/codeql/codeql"
   THREADS: 1
   RAM: 16384 # MB
   TIMEOUT: 180 # 10 minutes
   USE_MODEL_PACK: True
-  MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
+  MODEL_PACK: redacted/class-pollution-model-pack@0.0.1
   MODEL_PACK_PATH: codeql-query/library-models
   
 

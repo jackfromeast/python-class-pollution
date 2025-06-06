@@ -967,7 +967,7 @@
 2025-05-28 11:26:26,645 - CodeQLRunner - ERROR - Failed to build CodeQL database for sb9500: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-28 11:31:18,874 - CodeQLRunner - ERROR - Failed to build CodeQL database for datadog-kube-proxy: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-28 11:37:40,643 - CodeQLRunner - ERROR - Failed to build CodeQL database for suber: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
-2025-05-28 11:44:38,630 - CodeQLRunner - ERROR - Failed to build CodeQL database for zhongtukexin-test: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
+2025-05-28 11:44:38,630 - CodeQLRunner - ERROR - Failed to build CodeQL database for redactedtukexin-test: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-28 11:47:26,582 - CodeQLRunner - ERROR - Failed to build CodeQL database for tabulapro: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-28 11:50:09,417 - CodeQLRunner - ERROR - Failed to build CodeQL database for upset-altair: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)
 2025-05-28 11:51:39,753 - CodeQLRunner - ERROR - Failed to build CodeQL database for whatupworld: NoPythonCodeFoundException: No Python code found in the repository. (logger.py:42)

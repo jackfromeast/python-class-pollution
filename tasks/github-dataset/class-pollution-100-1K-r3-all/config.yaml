@@ -29,7 +29,7 @@ CODEQL:
   RAM: 16384 # MB
   TIMEOUT: 1200 # 20 minutes
   USE_MODEL_PACK: True
-  MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
+  MODEL_PACK: redacted/class-pollution-model-pack@0.0.1
   MODEL_PACK_PATH: codeql-query/library-models
   
 

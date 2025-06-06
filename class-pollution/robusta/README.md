@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```update_item_attr(obj, '__init__.__globals__.__name__', 'polluted')```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: App
 + Exploitability: Low

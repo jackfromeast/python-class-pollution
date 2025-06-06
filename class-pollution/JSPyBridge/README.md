@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```PyInterface.Set("", 0, ['python','__globals__','PyInterface'], ('__name__', 'polluted'))```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: Lib
 + Exploitability: Low

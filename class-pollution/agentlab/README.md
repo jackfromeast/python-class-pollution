@@ -8,7 +8,7 @@
 + CVE: N/A
 + Status: Pending
 + Payload: ```_set_value(obj, ['__init__','__globals__', '__name__'], 'polluted')```
-+ Foundby: Zhong
++ Foundby: redacted
 + Report: Pending
 + Type: App/Lib
 + Exploitability: Low

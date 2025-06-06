@@ -37016,8 +37016,8 @@ ERROR: No matching distribution found for rerank-feature-generator
 2025-06-02 06:09:46,451 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement bk-return-sales (from versions: none)
 ERROR: No matching distribution found for bk-return-sales
  (downloader.py:241)
-2025-06-02 06:09:46,606 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement yangzhongyi-yipan-qimen-shizhan (from versions: none)
-ERROR: No matching distribution found for yangzhongyi-yipan-qimen-shizhan
+2025-06-02 06:09:46,606 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement yangredactedyi-yipan-qimen-shizhan (from versions: none)
+ERROR: No matching distribution found for yangredactedyi-yipan-qimen-shizhan
  (downloader.py:241)
 2025-06-02 06:09:46,609 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pymum (from versions: none)
 ERROR: No matching distribution found for pymum
@@ -37064,8 +37064,8 @@ ERROR: No matching distribution found for qimen-yusizhu
 2025-06-02 06:09:48,548 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement seerppo (from versions: none)
 ERROR: No matching distribution found for seerppo
  (downloader.py:241)
-2025-06-02 06:09:48,571 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement yangzhongyi-yixing-huandou-shizhan (from versions: none)
-ERROR: No matching distribution found for yangzhongyi-yixing-huandou-shizhan
+2025-06-02 06:09:48,571 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement yangredactedyi-yixing-huandou-shizhan (from versions: none)
+ERROR: No matching distribution found for yangredactedyi-yixing-huandou-shizhan
  (downloader.py:241)
 2025-06-02 06:09:48,579 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement junit-report-generator (from versions: none)
 ERROR: No matching distribution found for junit-report-generator
@@ -40323,8 +40323,8 @@ ERROR: No matching distribution found for octalearn-poetry
 2025-06-02 06:12:18,317 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement arista-prod-to-gns3 (from versions: none)
 ERROR: No matching distribution found for arista-prod-to-gns3
  (downloader.py:241)
-2025-06-02 06:12:18,438 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement meinian-shifenzhong-rangnide-xinshui-bianhuoqian (from versions: none)
-ERROR: No matching distribution found for meinian-shifenzhong-rangnide-xinshui-bianhuoqian
+2025-06-02 06:12:18,438 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement meinian-shifenredacted-rangnide-xinshui-bianhuoqian (from versions: none)
+ERROR: No matching distribution found for meinian-shifenredacted-rangnide-xinshui-bianhuoqian
  (downloader.py:241)
 2025-06-02 06:12:18,447 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pythoncryptolibraryv2 (from versions: none)
 ERROR: No matching distribution found for pythoncryptolibraryv2
@@ -40362,8 +40362,8 @@ ERROR: No matching distribution found for glog-pushover
 2025-06-02 06:12:20,214 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement rchl-websocket (from versions: none)
 ERROR: No matching distribution found for rchl-websocket
  (downloader.py:241)
-2025-06-02 06:12:20,251 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mianfei-moshi-ver2-zhizhongji-pingtai-moshi (from versions: none)
-ERROR: No matching distribution found for mianfei-moshi-ver2-zhizhongji-pingtai-moshi
+2025-06-02 06:12:20,251 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mianfei-moshi-ver2-zhiredactedji-pingtai-moshi (from versions: none)
+ERROR: No matching distribution found for mianfei-moshi-ver2-zhiredactedji-pingtai-moshi
  (downloader.py:241)
 2025-06-02 06:12:20,389 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement big-fiubrother-camera (from versions: none)
 ERROR: No matching distribution found for big-fiubrother-camera
@@ -41367,8 +41367,8 @@ ERROR: No matching distribution found for frexco-pip-requests
 2025-06-02 06:13:19,692 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement airflow-providers-clickhouse-kh (from versions: none)
 ERROR: No matching distribution found for airflow-providers-clickhouse-kh
  (downloader.py:241)
-2025-06-02 06:13:19,700 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement shushu-zhong (from versions: none)
-ERROR: No matching distribution found for shushu-zhong
+2025-06-02 06:13:19,700 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement shushu-redacted (from versions: none)
+ERROR: No matching distribution found for shushu-redacted
  (downloader.py:241)
 2025-06-02 06:13:19,733 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mexbtcapi (from versions: none)
 ERROR: No matching distribution found for mexbtcapi
@@ -42621,8 +42621,8 @@ ERROR: No matching distribution found for yava247ai
 2025-06-02 06:14:12,049 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mofa-xuetu-vol9 (from versions: none)
 ERROR: No matching distribution found for mofa-xuetu-vol9
  (downloader.py:241)
-2025-06-02 06:14:12,324 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zaiakaxi-jiluzhong-faxian-nide-linghun-daolu (from versions: none)
-ERROR: No matching distribution found for zaiakaxi-jiluzhong-faxian-nide-linghun-daolu
+2025-06-02 06:14:12,324 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zaiakaxi-jiluredacted-faxian-nide-linghun-daolu (from versions: none)
+ERROR: No matching distribution found for zaiakaxi-jiluredacted-faxian-nide-linghun-daolu
  (downloader.py:241)
 2025-06-02 06:14:12,414 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement whalebone7-poc (from versions: none)
 ERROR: No matching distribution found for whalebone7-poc
@@ -43011,8 +43011,8 @@ ERROR: No matching distribution found for huajing-liaoyushu
 2025-06-02 06:14:27,594 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement numpy-aarch64 (from versions: none)
 ERROR: No matching distribution found for numpy-aarch64
  (downloader.py:241)
-2025-06-02 06:14:27,756 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mingxiang-wufenzhong (from versions: none)
-ERROR: No matching distribution found for mingxiang-wufenzhong
+2025-06-02 06:14:27,756 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mingxiang-wufenredacted (from versions: none)
+ERROR: No matching distribution found for mingxiang-wufenredacted
  (downloader.py:241)
 2025-06-02 06:14:27,781 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement hattrick-fwf (from versions: none)
 ERROR: No matching distribution found for hattrick-fwf
@@ -43263,8 +43263,8 @@ ERROR: No matching distribution found for lingqi-reiki
 2025-06-02 06:14:39,556 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mofa-xuetu-vol8 (from versions: none)
 ERROR: No matching distribution found for mofa-xuetu-vol8
  (downloader.py:241)
-2025-06-02 06:14:39,833 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement shifenzhong-mingxiang (from versions: none)
-ERROR: No matching distribution found for shifenzhong-mingxiang
+2025-06-02 06:14:39,833 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement shifenredacted-mingxiang (from versions: none)
+ERROR: No matching distribution found for shifenredacted-mingxiang
  (downloader.py:241)
 2025-06-02 06:14:39,846 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chaoling-qihao-vol3 (from versions: none)
 ERROR: No matching distribution found for chaoling-qihao-vol3
@@ -45594,8 +45594,8 @@ ERROR: No matching distribution found for prabhu
 2025-06-02 06:16:30,847 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanlun (from versions: none)
 ERROR: No matching distribution found for chanlun
  (downloader.py:241)
-2025-06-02 06:16:30,861 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement qimen-dunjia-miji-quanshu-zhong (from versions: none)
-ERROR: No matching distribution found for qimen-dunjia-miji-quanshu-zhong
+2025-06-02 06:16:30,861 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement qimen-dunjia-miji-quanshu-redacted (from versions: none)
+ERROR: No matching distribution found for qimen-dunjia-miji-quanshu-redacted
  (downloader.py:241)
 2025-06-02 06:16:31,220 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement django-exc (from versions: none)
 ERROR: No matching distribution found for django-exc
@@ -46857,8 +46857,8 @@ ERROR: No matching distribution found for tronnetpy
 2025-06-02 06:17:39,678 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement getallcolumns (from versions: none)
 ERROR: No matching distribution found for getallcolumns
  (downloader.py:241)
-2025-06-02 06:17:39,821 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement python3-cookbook-zhongwenban (from versions: none)
-ERROR: No matching distribution found for python3-cookbook-zhongwenban
+2025-06-02 06:17:39,821 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement python3-cookbook-redactedwenban (from versions: none)
+ERROR: No matching distribution found for python3-cookbook-redactedwenban
  (downloader.py:241)
 2025-06-02 06:17:39,859 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement requests-upgrade (from versions: none)
 ERROR: No matching distribution found for requests-upgrade
@@ -47397,8 +47397,8 @@ ERROR: No matching distribution found for astronomer-cse
 2025-06-02 06:18:37,481 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement rote (from versions: none)
 ERROR: No matching distribution found for rote
  (downloader.py:241)
-2025-06-02 06:18:37,532 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanzhongshuochan-jiaoni-chaogupiao (from versions: none)
-ERROR: No matching distribution found for chanzhongshuochan-jiaoni-chaogupiao
+2025-06-02 06:18:37,532 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanredactedshuochan-jiaoni-chaogupiao (from versions: none)
+ERROR: No matching distribution found for chanredactedshuochan-jiaoni-chaogupiao
  (downloader.py:241)
 2025-06-02 06:18:37,836 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement get-start-tf-keras-app-dev-zh (from versions: none)
 ERROR: No matching distribution found for get-start-tf-keras-app-dev-zh
@@ -48534,8 +48534,8 @@ ERROR: No matching distribution found for neat-llm
 2025-06-02 06:19:53,686 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement trialsamhan2 (from versions: none)
 ERROR: No matching distribution found for trialsamhan2
  (downloader.py:241)
-2025-06-02 06:19:54,295 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zizhu-zhangxiansheng-gongzhonggao-beifen-vol1 (from versions: none)
-ERROR: No matching distribution found for zizhu-zhangxiansheng-gongzhonggao-beifen-vol1
+2025-06-02 06:19:54,295 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zizhu-zhangxiansheng-gongredactedgao-beifen-vol1 (from versions: none)
+ERROR: No matching distribution found for zizhu-zhangxiansheng-gongredactedgao-beifen-vol1
  (downloader.py:241)
 2025-06-02 06:19:54,318 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement orq-python-client (from versions: none)
 ERROR: No matching distribution found for orq-python-client
@@ -48783,8 +48783,8 @@ ERROR: No matching distribution found for scipio
 2025-06-02 06:20:07,553 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement ocrworktest (from versions: none)
 ERROR: No matching distribution found for ocrworktest
  (downloader.py:241)
-2025-06-02 06:20:07,892 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mingwangxing-linghun-zaiqinmiguanxi-zhongde-yanhua (from versions: none)
-ERROR: No matching distribution found for mingwangxing-linghun-zaiqinmiguanxi-zhongde-yanhua
+2025-06-02 06:20:07,892 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement mingwangxing-linghun-zaiqinmiguanxi-redactedde-yanhua (from versions: none)
+ERROR: No matching distribution found for mingwangxing-linghun-zaiqinmiguanxi-redactedde-yanhua
  (downloader.py:241)
 2025-06-02 06:20:08,073 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement rcs-common (from versions: none)
 ERROR: No matching distribution found for rcs-common
@@ -48843,8 +48843,8 @@ ERROR: No matching distribution found for webuuid
 2025-06-02 06:20:11,196 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement torchmanager-nightly (from versions: none)
 ERROR: No matching distribution found for torchmanager-nightly
  (downloader.py:241)
-2025-06-02 06:20:11,282 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement daliusheng-tongjie-zhong (from versions: none)
-ERROR: No matching distribution found for daliusheng-tongjie-zhong
+2025-06-02 06:20:11,282 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement daliusheng-tongjie-redacted (from versions: none)
+ERROR: No matching distribution found for daliusheng-tongjie-redacted
  (downloader.py:241)
 2025-06-02 06:20:11,642 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement ccontrol (from versions: none)
 ERROR: No matching distribution found for ccontrol
@@ -49617,8 +49617,8 @@ ERROR: No matching distribution found for text-augmentation
 2025-06-02 06:20:55,062 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement calpackage-anu (from versions: none)
 ERROR: No matching distribution found for calpackage-anu
  (downloader.py:241)
-2025-06-02 06:20:55,115 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zhongguo-pua-chengzhang-zhilu (from versions: none)
-ERROR: No matching distribution found for zhongguo-pua-chengzhang-zhilu
+2025-06-02 06:20:55,115 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement redactedguo-pua-chengzhang-zhilu (from versions: none)
+ERROR: No matching distribution found for redactedguo-pua-chengzhang-zhilu
  (downloader.py:241)
 2025-06-02 06:20:55,648 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement tcpw-armv7l (from versions: none)
 ERROR: No matching distribution found for tcpw-armv7l
@@ -49779,8 +49779,8 @@ ERROR: No matching distribution found for longitudinal-trends
 2025-06-02 06:21:01,969 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement airslate (from versions: none)
 ERROR: No matching distribution found for airslate
  (downloader.py:241)
-2025-06-02 06:21:01,995 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chaoji-yuehuixue-zhiwenti-jizhongying (from versions: none)
-ERROR: No matching distribution found for chaoji-yuehuixue-zhiwenti-jizhongying
+2025-06-02 06:21:01,995 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chaoji-yuehuixue-zhiwenti-jiredactedying (from versions: none)
+ERROR: No matching distribution found for chaoji-yuehuixue-zhiwenti-jiredactedying
  (downloader.py:241)
 2025-06-02 06:21:02,210 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement a-stt (from versions: none)
 ERROR: No matching distribution found for a-stt
@@ -49812,8 +49812,8 @@ ERROR: No matching distribution found for roblox-robux-generator-no-verification
 2025-06-02 06:21:03,323 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement py2bin (from versions: none)
 ERROR: No matching distribution found for py2bin
  (downloader.py:241)
-2025-06-02 06:21:03,360 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanzhongshuochan-shizhan-lilun (from versions: none)
-ERROR: No matching distribution found for chanzhongshuochan-shizhan-lilun
+2025-06-02 06:21:03,360 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanredactedshuochan-shizhan-lilun (from versions: none)
+ERROR: No matching distribution found for chanredactedshuochan-shizhan-lilun
  (downloader.py:241)
 2025-06-02 06:21:03,385 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement snippetto-cli (from versions: none)
 ERROR: No matching distribution found for snippetto-cli
@@ -50367,8 +50367,8 @@ ERROR: No matching distribution found for pywdckit
 2025-06-02 06:21:25,485 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pypi-test-0322 (from versions: none)
 ERROR: No matching distribution found for pypi-test-0322
  (downloader.py:241)
-2025-06-02 06:21:25,496 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zuizhongyaodeshi-zhiyou-yijian (from versions: none)
-ERROR: No matching distribution found for zuizhongyaodeshi-zhiyou-yijian
+2025-06-02 06:21:25,496 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zuiredactedyaodeshi-zhiyou-yijian (from versions: none)
+ERROR: No matching distribution found for zuiredactedyaodeshi-zhiyou-yijian
  (downloader.py:241)
 2025-06-02 06:21:25,509 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pymathsolver (from versions: none)
 ERROR: No matching distribution found for pymathsolver
@@ -52095,8 +52095,8 @@ ERROR: No matching distribution found for async-somerandomstuff-py
 2025-06-02 06:22:34,515 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement utmservice (from versions: none)
 ERROR: No matching distribution found for utmservice
  (downloader.py:241)
-2025-06-02 06:22:34,521 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zizhu-zhangxiansheng-gongzhonggao-beifen-vol2 (from versions: none)
-ERROR: No matching distribution found for zizhu-zhangxiansheng-gongzhonggao-beifen-vol2
+2025-06-02 06:22:34,521 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zizhu-zhangxiansheng-gongredactedgao-beifen-vol2 (from versions: none)
+ERROR: No matching distribution found for zizhu-zhangxiansheng-gongredactedgao-beifen-vol2
  (downloader.py:241)
 2025-06-02 06:22:34,552 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement nvren-daodi-zaixiang-shenme (from versions: none)
 ERROR: No matching distribution found for nvren-daodi-zaixiang-shenme
@@ -52221,8 +52221,8 @@ ERROR: No matching distribution found for fittypytest01
 2025-06-02 06:22:39,328 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement metadeco (from versions: none)
 ERROR: No matching distribution found for metadeco
  (downloader.py:241)
-2025-06-02 06:22:39,331 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zhongji-taluo-aoyi (from versions: none)
-ERROR: No matching distribution found for zhongji-taluo-aoyi
+2025-06-02 06:22:39,331 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement redactedji-taluo-aoyi (from versions: none)
+ERROR: No matching distribution found for redactedji-taluo-aoyi
  (downloader.py:241)
 2025-06-02 06:22:39,385 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement egy1st (from versions: none)
 ERROR: No matching distribution found for egy1st
@@ -52443,8 +52443,8 @@ ERROR: No matching distribution found for taras-mykol-character-counter
 2025-06-02 06:22:49,801 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement flask-danger (from versions: none)
 ERROR: No matching distribution found for flask-danger
  (downloader.py:241)
-2025-06-02 06:22:50,284 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement coffeescript-coobook-zhongwenban-v1-1 (from versions: none)
-ERROR: No matching distribution found for coffeescript-coobook-zhongwenban-v1-1
+2025-06-02 06:22:50,284 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement coffeescript-coobook-redactedwenban-v1-1 (from versions: none)
+ERROR: No matching distribution found for coffeescript-coobook-redactedwenban-v1-1
  (downloader.py:241)
 2025-06-02 06:22:50,364 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pua-hexin-kecheng-yubei-shouce (from versions: none)
 ERROR: No matching distribution found for pua-hexin-kecheng-yubei-shouce
@@ -53358,8 +53358,8 @@ ERROR: No matching distribution found for dbt-log-parser
 2025-06-02 06:23:34,880 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pyporoxy (from versions: none)
 ERROR: No matching distribution found for pyporoxy
  (downloader.py:241)
-2025-06-02 06:23:34,880 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement yideng-quanmou-heji-zhong (from versions: none)
-ERROR: No matching distribution found for yideng-quanmou-heji-zhong
+2025-06-02 06:23:34,880 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement yideng-quanmou-heji-redacted (from versions: none)
+ERROR: No matching distribution found for yideng-quanmou-heji-redacted
  (downloader.py:241)
 2025-06-02 06:23:34,946 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement restful-client2 (from versions: none)
 ERROR: No matching distribution found for restful-client2
@@ -53574,8 +53574,8 @@ ERROR: No matching distribution found for zidan-biji
 2025-06-02 06:23:43,536 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement jp-ephys-viz (from versions: none)
 ERROR: No matching distribution found for jp-ephys-viz
  (downloader.py:241)
-2025-06-02 06:23:43,541 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanzhongshuochan-jishu-lilun-tujie (from versions: none)
-ERROR: No matching distribution found for chanzhongshuochan-jishu-lilun-tujie
+2025-06-02 06:23:43,541 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement chanredactedshuochan-jishu-lilun-tujie (from versions: none)
+ERROR: No matching distribution found for chanredactedshuochan-jishu-lilun-tujie
  (downloader.py:241)
 2025-06-02 06:23:43,581 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement requfsts (from versions: none)
 ERROR: No matching distribution found for requfsts
@@ -54105,8 +54105,8 @@ ERROR: No matching distribution found for common-feature
 2025-06-02 06:24:05,248 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pylexem (from versions: none)
 ERROR: No matching distribution found for pylexem
  (downloader.py:241)
-2025-06-02 06:24:05,845 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement zhongji-wenan-zhuanxie-xitong (from versions: none)
-ERROR: No matching distribution found for zhongji-wenan-zhuanxie-xitong
+2025-06-02 06:24:05,845 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement redactedji-wenan-zhuanxie-xitong (from versions: none)
+ERROR: No matching distribution found for redactedji-wenan-zhuanxie-xitong
  (downloader.py:241)
 2025-06-02 06:24:06,110 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement transformars (from versions: none)
 ERROR: No matching distribution found for transformars
@@ -54156,8 +54156,8 @@ ERROR: No matching distribution found for liuyao-quanshu-xia
 2025-06-02 06:24:08,406 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement temporarystorage (from versions: none)
 ERROR: No matching distribution found for temporarystorage
  (downloader.py:241)
-2025-06-02 06:24:08,487 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement langmande-1001zhong-fangfa (from versions: none)
-ERROR: No matching distribution found for langmande-1001zhong-fangfa
+2025-06-02 06:24:08,487 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement langmande-1001redacted-fangfa (from versions: none)
+ERROR: No matching distribution found for langmande-1001redacted-fangfa
  (downloader.py:241)
 2025-06-02 06:24:09,249 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement pytorchgan (from versions: none)
 ERROR: No matching distribution found for pytorchgan
@@ -54489,8 +54489,8 @@ ERROR: No matching distribution found for n0problem
 2025-06-02 06:24:32,736 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement ckgraph (from versions: none)
 ERROR: No matching distribution found for ckgraph
  (downloader.py:241)
-2025-06-02 06:24:32,814 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement xr21-tiezi-zhengli-zuizhongban (from versions: none)
-ERROR: No matching distribution found for xr21-tiezi-zhengli-zuizhongban
+2025-06-02 06:24:32,814 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement xr21-tiezi-zhengli-zuiredactedban (from versions: none)
+ERROR: No matching distribution found for xr21-tiezi-zhengli-zuiredactedban
  (downloader.py:241)
 2025-06-02 06:24:32,958 - PipDownloader - ERROR - Failed to download package: ERROR: Could not find a version that satisfies the requirement p2-ui-campaigns (from versions: none)
 ERROR: No matching distribution found for p2-ui-campaigns
