@@ -3,6 +3,7 @@ venv
 codebase
 wheel
 *.pyc
+*.dates_cache.json
 *-db
 __pycache__
 tasks/archived

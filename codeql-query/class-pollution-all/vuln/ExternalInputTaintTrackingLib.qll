@@ -20,6 +20,7 @@ import shared.types.DunderDictObject
 import shared.types.SelfReferringGetOp::SelfReferringGetOp
 import shared.sources.remote::ClassPollutionRemoteSource
 import shared.sources.local::ClassPollutionLocalSource
+import shared.sources.library::ClassPollutionLibrarySource
 import shared.GetOp::ClassPollutionGetOp
 import shared.SetOp::ClassPollutionSetOp
 import shared.Debug::Debugging
@@ -27,7 +28,8 @@ import shared.Debug::Debugging
 module TrackingExternalInputToClassPollutionConfiguration implements DataFlow::ConfigSig {
   predicate isSource(DataFlow::Node source) {
     isRemoteSource(source) 
-    or isLocalSource(source)
+    or isLocalSource(source) 
+    or isLibrarySource(source)
   }
 
   /**
@@ -65,6 +67,8 @@ predicate flowFromExternalInput(DataFlow::Node fromNode, DataFlow::Node toNode, 
   TrackingExternalInputToClassPollutionFlow::flow(fromNode, toNode) and
   if isRemoteSource(fromNode)
   then type = "Remote"
-  else type = "Local"
+  else 
+    if isLocalSource(fromNode)
+    then type = "Local"
+    else type = "Library"
 }
-  
