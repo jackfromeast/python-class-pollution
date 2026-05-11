@@ -14,5 +14,7 @@ output/**
 **/dependency/output
 **/dependency/output/**
 **/dependency/logs/**
-dataset/github
 node_modules
+.claude
+.vscode
+dataset/github/python-20141001-20241001-star-100-1K.json
