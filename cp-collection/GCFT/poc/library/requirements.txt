@@ -1,0 +1,2 @@
+# GCFT requires qtpy/PySide6 but the PoC mocks Qt dependencies
+# No pip dependencies needed

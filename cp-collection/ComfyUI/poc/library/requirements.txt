@@ -1,0 +1,2 @@
+# ComfyUI is not on PyPI - clone from git
+# git clone https://github.com/comfyanonymous/ComfyUI.git

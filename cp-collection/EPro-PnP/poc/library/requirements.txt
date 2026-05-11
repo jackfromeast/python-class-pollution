@@ -1,0 +1,2 @@
+# EPro-PnP is not on PyPI, install from git
+git+https://github.com/tjiiv-cprg/EPro-PnP.git#subdirectory=EPro-PnP-Det

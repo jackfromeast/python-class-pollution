@@ -1,0 +1,1 @@
+# pystringattr has no setup.py - cloned via run.sh

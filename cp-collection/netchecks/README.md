@@ -1,0 +1,48 @@
+## netchecks
+
+### Meta
+
++ Repo: netchecks
++ Link: https://github.com/hardbyte/netchecks
++ Stars: 157
++ Version: v0.5.4
++ CVE: N/A
++ VulnType: get-attr-set-both
++ Status: Pending
++ Payload: ```apply_overrides(dst_obj, {'__init__': {'__globals__': {'V1PodTemplateSpec': 'polluted'}}})```
++ Foundby: Zhong
++ Report: Pending
++ AppType: App
++ Input: Func
+
+### Vulnerable Code Snippet
+
+```python
+def apply_overrides(template, overrides: dict):
+    # This is a bit of a hack to apply overrides to the pod template
+    def _apply_overrides(obj, overrides: dict):
+        for k, v in overrides.items():
+            key = k
+            # k will be in camelCase (as it appears in Kubernetes manifests e.g., serviceAccountName)
+            if hasattr(obj, "attribute_map"):
+                # reverse the dict obj.attribute_map because the kubernetes python client
+                # expects attributes named with snake_case.
+                reverse_map = {v: k for k, v in obj.attribute_map.items()}
+                key = reverse_map.get(k, k)
+
+            if hasattr(obj, key):
+                if getattr(obj, key) is None:
+                    setattr(obj, key, {})
+                if isinstance(v, dict):
+                    _apply_overrides(getattr(obj, key), v)
+                else:
+                    setattr(obj, key, v)
+            else:
+                try:
+                    obj[key] = v
+                except TypeError:
+                    setattr(obj, key, v)
+
+    _apply_overrides(template, overrides)
+    return template
+```

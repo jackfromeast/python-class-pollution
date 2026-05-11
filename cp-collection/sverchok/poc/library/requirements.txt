@@ -1,0 +1,2 @@
+# sverchok is a Blender addon - bpy is mocked in the PoC
+# No pip dependencies needed

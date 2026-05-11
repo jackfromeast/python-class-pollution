@@ -1,0 +1,4 @@
+fastapi-amis-admin
+uvicorn
+aiosqlite
+requests

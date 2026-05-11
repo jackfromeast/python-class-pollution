@@ -1,0 +1,2 @@
+# Red-DiscordBot requires discord.py which is mocked in the PoC
+# No pip dependencies needed - repo is cloned by run.sh

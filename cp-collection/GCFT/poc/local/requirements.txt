@@ -1,0 +1,1 @@
+# Qt dependencies are mocked in the PoC

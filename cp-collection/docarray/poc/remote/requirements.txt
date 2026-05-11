@@ -1,0 +1,4 @@
+docarray
+fastapi
+uvicorn
+requests

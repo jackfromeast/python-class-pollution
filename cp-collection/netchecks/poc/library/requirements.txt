@@ -1,0 +1,1 @@
+git+https://github.com/hardbyte/netchecks.git@v0.5.4#subdirectory=operator

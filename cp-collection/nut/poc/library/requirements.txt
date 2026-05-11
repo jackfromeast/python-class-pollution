@@ -1,0 +1,2 @@
+# nut requires PyQt5 but the PoC mocks Qt dependencies
+# No pip dependencies needed

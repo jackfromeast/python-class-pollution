@@ -1,0 +1,2 @@
+# zipline (quantopian) is archived; we clone the repo directly
+# The extensions.py module only needs 'six' which is mocked

@@ -1,0 +1,2 @@
+setuptools<70
+edsnlp==0.15.0

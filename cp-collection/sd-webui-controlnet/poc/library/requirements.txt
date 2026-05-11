@@ -1,0 +1,2 @@
+# No pip dependencies needed - function uses only builtins
+# The repo is cloned by run.sh and added to PYTHONPATH

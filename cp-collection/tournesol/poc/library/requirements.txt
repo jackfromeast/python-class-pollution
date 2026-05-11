@@ -1,0 +1,2 @@
+# solidago is installed from cloned tournesol repo
+# The vulnerable set_attr is in solidago/experiments/synthetic.py

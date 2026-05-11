@@ -1,0 +1,1 @@
+fixinventorylib==4.2.0

@@ -1,0 +1,1 @@
+git+https://github.com/isaac-sim/IsaacLab.git@v1.4.0#subdirectory=source/isaaclab
