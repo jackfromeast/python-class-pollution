@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 1
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function set_table_config](1), with key source: [ControlFlowNode for msg](2), and object source: [ControlFlowNode for msg](2). Set attribute key: [ControlFlowNode for Attribute](3). Get attribute op: [ControlFlowNode for getattr()](4).\nType:SetAttr-GetAttr Class pollution function: [Function set_table_config](1), with key source: [ControlFlowNode for msg](2), and object source: [ControlFlowNode for msg](2). Set attribute key: [ControlFlowNode for Attribute](5). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

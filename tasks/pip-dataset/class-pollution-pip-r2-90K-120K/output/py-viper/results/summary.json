@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 2
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function _unmarshal_dict](1), with key source: [ControlFlowNode for d](2), and object source: [ControlFlowNode for d](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4).",
-    "Type:SetAttr-GetAttr Class pollution function: [Function unmarshal](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for k](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

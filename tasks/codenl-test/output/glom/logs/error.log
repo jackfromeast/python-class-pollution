@@ -1,1 +1,0 @@
-2025-05-08 13:12:43,442 - CodeQLRunner - ERROR - Unexpected error processing /home/jackfromeast/Desktop/python-class-pollution/tasks/codenl-test/output/glom/results/class-pollution-function-only.qls.sarif: 'list' object has no attribute 'add' (logger.py:42)

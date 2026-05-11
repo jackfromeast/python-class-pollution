@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-both": 2
-  },
-  "details": [
-    "Type:SetAttr-GetBoth Class pollution function: [Function _create_NEURON](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for neuron_name](3). Set attribute key: [ControlFlowNode for varname](4). Get attribute op: [ControlFlowNode for eval()](5). Get item op: [ControlFlowNode for eval()](5).\nType:SetAttr-GetBoth Class pollution function: [Function _create_NEURON](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for neuron_name](3). Set attribute key: [ControlFlowNode for varname](6). Get attribute op: [ControlFlowNode for eval()](5). Get item op: [ControlFlowNode for eval()](5).",
-    "Type:SetAttr-GetBoth Class pollution function: [Function simulate](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for varname](3). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4).\nType:SetAttr-GetBoth Class pollution function: [Function simulate](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for varname](5). Get attribute op: [ControlFlowNode for eval()](4). Get item op: [ControlFlowNode for eval()](4)."
-  ]
-}

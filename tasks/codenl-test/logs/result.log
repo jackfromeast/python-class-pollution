@@ -1,3 +1,0 @@
-2025-05-08 13:05:01,854 - Result - INFO - glom - py/class-polliution/shared-class-pollution-functions: 1 flows detected. (logger.py:40)
-2025-05-08 13:05:01,854 - Result - INFO - glom - py/class-polliution/leaf-class-pollution-functions: 6 flows detected. (logger.py:40)
-2025-05-08 13:12:43,442 - Result - INFO - glom - py/class-polliution/set-both-get-both: 20 flows detected. (logger.py:40)

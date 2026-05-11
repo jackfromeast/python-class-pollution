@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 1
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function apply_delta](1), with key source: [ControlFlowNode for delta](2), and object source: [ControlFlowNode for delta](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 2
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function replace_with_traced_submodules](1), with key source: [ControlFlowNode for sparse_module](2), and object source: [ControlFlowNode for traced_submodules](3). Set attribute key: [ControlFlowNode for module_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function replace_with_traced_submodules](1), with key source: [ControlFlowNode for traced_submodules](3), and object source: [ControlFlowNode for traced_submodules](3). Set attribute key: [ControlFlowNode for module_name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
-    "Type:SetAttr-GetAttr Class pollution function: [Function find_direct_container](1), with key source: [ControlFlowNode for module](2), and object source: [ControlFlowNode for weight_path](3). Set attribute key: [ControlFlowNode for module_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetAttr-GetAttr Class pollution function: [Function find_direct_container](1), with key source: [ControlFlowNode for weight_path](3), and object source: [ControlFlowNode for weight_path](3). Set attribute key: [ControlFlowNode for module_name](4). Get attribute op: [ControlFlowNode for getattr()](5)."
-  ]
-}

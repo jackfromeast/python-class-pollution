@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-item-get-attr": 1
-  },
-  "details": [
-    "Type:SetItem-GetAttr Class pollution function: [Function get_field](1), with key source: [ControlFlowNode for entity](2), and object source: [ControlFlowNode for field_path](3). Set item key: [ControlFlowNode for filter_field](4). Get attribute op: [ControlFlowNode for getattr()](5).\nType:SetItem-GetAttr Class pollution function: [Function get_field](1), with key source: [ControlFlowNode for default](6), and object source: [ControlFlowNode for field_path](3). Set item key: [ControlFlowNode for filter_field](4). Get attribute op: [ControlFlowNode for getattr()](5)."
-  ]
-}

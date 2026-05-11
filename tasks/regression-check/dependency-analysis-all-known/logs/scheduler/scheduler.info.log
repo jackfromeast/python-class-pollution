@@ -1,4 +1,0 @@
-2025-02-16 18:46:28,395 - Scheduler - INFO - Scheduling tasks for 1 repositories with 1 workers. (base_scheduler.py:69)
-2025-02-16 18:46:28,399 - Scheduler - INFO - Starting worker for repo: https://github.com/robusta-dev/robusta (run_dependency_analysis.py:28)
-2025-02-16 19:03:08,458 - Scheduler - ERROR - Worker timed out for repo: https://github.com/robusta-dev/robusta (run_dependency_analysis.py:40)
-2025-02-16 19:03:08,465 - Scheduler - INFO - Progress: 1/1 repositories scanned. (base_scheduler.py:102)

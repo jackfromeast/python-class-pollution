@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-both-get-both": 2
-  },
-  "details": [
-    "Type:SetBoth-GetBoth Class pollution function: [Function replace_kv](1), with key source: [ControlFlowNode for attr_path](2), and object source: [ControlFlowNode for attr_path](2). Set attribute key: [ControlFlowNode for f](3), Set item op key: [ControlFlowNode for f](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
-    "Type:SetBoth-GetBoth Class pollution function: [Function set](1), with key source: [ControlFlowNode for p](2), and object source: [ControlFlowNode for p](2). Set attribute key: [ControlFlowNode for f](3), Set item op key: [ControlFlowNode for f](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
-  ]
-}

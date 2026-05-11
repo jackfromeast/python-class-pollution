@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-attr-get-attr": 1
-  },
-  "details": [
-    "Type:SetAttr-GetAttr Class pollution function: [Function dictcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for column_name](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

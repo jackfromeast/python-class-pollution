@@ -1,2 +1,0 @@
-2025-05-20 23:37:20,657 - CodeQLRunner - ERROR - Query timed out for conan-server: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
-2025-05-20 23:37:21,239 - CodeQLRunner - ERROR - Failed to run query: /home/jackfromeast/Desktop/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)

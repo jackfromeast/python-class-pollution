@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution-external/set-both-get-attr": 1
-  },
-  "details": [
-    "External Input:Local Type:SetBoth-GetAttr Class pollution function: [Function set_object_value](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for level](3), Set item op key: [ControlFlowNode for level](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Local Type:SetBoth-GetAttr Class pollution function: [Function set_object_value](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for level](6), Set item op key: [ControlFlowNode for level](4). Get attribute op: [ControlFlowNode for getattr()](5)."
-  ]
-}

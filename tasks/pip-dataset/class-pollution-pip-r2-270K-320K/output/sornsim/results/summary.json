@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution/set-both-get-both": 1
-  },
-  "details": [
-    "Type:SetBoth-GetBoth Class pollution function: [Function clear_compiled_code](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for obj](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for sub_obj_key](4). Get attribute op: [ControlFlowNode for Subscript](5). Get item op: [ControlFlowNode for Subscript](6)."
-  ]
-}

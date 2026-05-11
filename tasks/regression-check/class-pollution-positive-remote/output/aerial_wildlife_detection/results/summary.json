@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution-external/set-attr-get-attr": 1
-  },
-  "details": [
-    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function parse_aide_config](1), with key source: [ControlFlowNode for config](2), and object source: [ControlFlowNode for config](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
-  ]
-}

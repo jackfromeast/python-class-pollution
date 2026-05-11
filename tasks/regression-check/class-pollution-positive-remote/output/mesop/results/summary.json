@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "py/class-polliution-external/set-both-get-attr": 1
-  },
-  "details": [
-    "External Input:Remote Type:SetBoth-GetAttr Class pollution function: [Function generate_data](1), with key source: [ControlFlowNode for ui_request](2), and object source: [ControlFlowNode for ui_request](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Remote Type:SetBoth-GetAttr Class pollution function: [Function generate_data](1), with key source: [ControlFlowNode for ui_request](2), and object source: [ControlFlowNode for ui_request](2). Set attribute key: [ControlFlowNode for key](6), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Remote Type:SetBoth-GetAttr Class pollution function: [Function generate_data](1), with key source: [ControlFlowNode for ui_request](2), and object source: [ControlFlowNode for ui_request](2). Set attribute key: [ControlFlowNode for key](7), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5)."
-  ]
-}

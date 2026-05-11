@@ -1,4 +1,0 @@
-2025-04-24 13:41:19,274 - CodeQLRunner - INFO - Building CodeQL database for: /home/class-pollution/python-class-pollution/tasks/class-pollution-pip-r2-top-60000-90000/output/core-oaipmh-provider-app/codebase (logger.py:42)
-2025-04-24 13:41:36,955 - CodeQLRunner - INFO - CodeQL database created successfully at /home/class-pollution/python-class-pollution/tasks/class-pollution-pip-r2-top-60000-90000/output/core-oaipmh-provider-app/codeql-db (logger.py:42)
-2025-04-24 13:41:36,955 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/class-pollution/python-class-pollution/tasks/class-pollution-pip-r2-top-60000-90000/output/core-oaipmh-provider-app/codeql-db (logger.py:42)
-2025-04-24 13:41:36,956 - CodeQLRunner - INFO - Running query: /home/class-pollution/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)

@@ -1,4 +1,0 @@
-2025-04-24 13:41:58,859 - CodeQLRunner - INFO - Building CodeQL database for: /home/class-pollution/python-class-pollution/tasks/class-pollution-pip-r2-top-60000-90000/output/invidious-py/codebase (logger.py:42)
-2025-04-24 13:42:12,768 - CodeQLRunner - INFO - CodeQL database created successfully at /home/class-pollution/python-class-pollution/tasks/class-pollution-pip-r2-top-60000-90000/output/invidious-py/codeql-db (logger.py:42)
-2025-04-24 13:42:12,768 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/class-pollution/python-class-pollution/tasks/class-pollution-pip-r2-top-60000-90000/output/invidious-py/codeql-db (logger.py:42)
-2025-04-24 13:42:12,768 - CodeQLRunner - INFO - Running query: /home/class-pollution/python-class-pollution/codeql-query/class-pollution-all/class-pollution.qls (logger.py:42)
