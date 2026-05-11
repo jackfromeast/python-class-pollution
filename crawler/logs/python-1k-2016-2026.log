@@ -1,0 +1,379 @@
+[2026-03-29T09:13:01.222] [INFO] CRAWLER - [+] Searching for repositories created between 2016-01-01 and 2016-02-01
+[2026-03-29T09:13:12.583] [INFO] CRAWLER - [+] Found 37/37 results for "created:2016-01-01..2016-02-01 language:Python stars:>1000" on page 1.
+[2026-03-29T09:13:12.585] [INFO] CRAWLER - [+] Saved 37 repositories so far.
+[2026-03-29T09:13:12.585] [INFO] CRAWLER - [+] Searching for repositories created between 2016-02-01 and 2016-03-03
+[2026-03-29T09:13:24.837] [INFO] CRAWLER - [+] Found 62/62 results for "created:2016-02-01..2016-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:14:39.475] [INFO] CRAWLER - [+] Searching for repositories created between 2016-01-01 and 2016-02-01
+[2026-03-29T09:14:50.677] [INFO] CRAWLER - [+] Found 37/37 results for "created:2016-01-01..2016-02-01 language:Python stars:>1000" on page 1.
+[2026-03-29T09:14:50.680] [INFO] CRAWLER - [+] Saved 37 repositories so far.
+[2026-03-29T09:14:50.680] [INFO] CRAWLER - [+] Searching for repositories created between 2016-02-01 and 2016-03-03
+[2026-03-29T09:15:02.463] [INFO] CRAWLER - [+] Found 62/62 results for "created:2016-02-01..2016-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:16:58.274] [INFO] CRAWLER - [+] Searching for repositories created between 2016-01-01 and 2016-02-01
+[2026-03-29T09:17:09.572] [INFO] CRAWLER - [+] Found 37/37 results for "created:2016-01-01..2016-02-01 language:Python stars:>1000" on page 1.
+[2026-03-29T09:17:09.574] [INFO] CRAWLER - [+] Saved 37 repositories so far.
+[2026-03-29T09:17:09.574] [INFO] CRAWLER - [+] Searching for repositories created between 2016-02-01 and 2016-03-03
+[2026-03-29T09:17:21.752] [INFO] CRAWLER - [+] Found 62/62 results for "created:2016-02-01..2016-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:17:21.756] [INFO] CRAWLER - [+] Saved 99 repositories so far.
+[2026-03-29T09:17:21.756] [INFO] CRAWLER - [+] Searching for repositories created between 2016-03-03 and 2016-04-02
+[2026-03-29T09:17:33.369] [INFO] CRAWLER - [+] Found 46/46 results for "created:2016-03-03..2016-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:17:33.374] [INFO] CRAWLER - [+] Saved 145 repositories so far.
+[2026-03-29T09:17:33.375] [INFO] CRAWLER - [+] Searching for repositories created between 2016-04-02 and 2016-05-02
+[2026-03-29T09:17:46.084] [INFO] CRAWLER - [+] Found 55/55 results for "created:2016-04-02..2016-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:17:46.102] [INFO] CRAWLER - [+] Saved 200 repositories so far.
+[2026-03-29T09:17:46.102] [INFO] CRAWLER - [+] Searching for repositories created between 2016-05-02 and 2016-06-02
+[2026-03-29T09:17:57.909] [INFO] CRAWLER - [+] Found 54/54 results for "created:2016-05-02..2016-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:17:57.918] [INFO] CRAWLER - [+] Saved 254 repositories so far.
+[2026-03-29T09:17:57.918] [INFO] CRAWLER - [+] Searching for repositories created between 2016-06-02 and 2016-07-02
+[2026-03-29T09:18:09.468] [INFO] CRAWLER - [+] Found 45/45 results for "created:2016-06-02..2016-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:18:09.478] [INFO] CRAWLER - [+] Saved 299 repositories so far.
+[2026-03-29T09:18:09.478] [INFO] CRAWLER - [+] Searching for repositories created between 2016-07-02 and 2016-08-02
+[2026-03-29T09:18:21.582] [INFO] CRAWLER - [+] Found 66/66 results for "created:2016-07-02..2016-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:18:21.607] [INFO] CRAWLER - [+] Saved 365 repositories so far.
+[2026-03-29T09:18:21.607] [INFO] CRAWLER - [+] Searching for repositories created between 2016-08-02 and 2016-09-02
+[2026-03-29T09:18:33.673] [INFO] CRAWLER - [+] Found 63/63 results for "created:2016-08-02..2016-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:18:33.692] [INFO] CRAWLER - [+] Saved 428 repositories so far.
+[2026-03-29T09:18:33.693] [INFO] CRAWLER - [+] Searching for repositories created between 2016-09-02 and 2016-10-02
+[2026-03-29T09:18:45.868] [INFO] CRAWLER - [+] Found 58/58 results for "created:2016-09-02..2016-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:18:45.887] [INFO] CRAWLER - [+] Saved 486 repositories so far.
+[2026-03-29T09:18:45.887] [INFO] CRAWLER - [+] Searching for repositories created between 2016-10-02 and 2016-11-02
+[2026-03-29T09:18:57.676] [INFO] CRAWLER - [+] Found 54/54 results for "created:2016-10-02..2016-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:18:57.710] [INFO] CRAWLER - [+] Saved 540 repositories so far.
+[2026-03-29T09:18:57.710] [INFO] CRAWLER - [+] Searching for repositories created between 2016-11-02 and 2016-12-03
+[2026-03-29T09:19:09.701] [INFO] CRAWLER - [+] Found 57/57 results for "created:2016-11-02..2016-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:19:09.731] [INFO] CRAWLER - [+] Saved 597 repositories so far.
+[2026-03-29T09:19:09.731] [INFO] CRAWLER - [+] Searching for repositories created between 2016-12-03 and 2017-01-03
+[2026-03-29T09:19:21.154] [INFO] CRAWLER - [+] Found 44/44 results for "created:2016-12-03..2017-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:19:21.182] [INFO] CRAWLER - [+] Saved 641 repositories so far.
+[2026-03-29T09:19:21.182] [INFO] CRAWLER - [+] Searching for repositories created between 2017-01-03 and 2017-02-03
+[2026-03-29T09:19:33.027] [INFO] CRAWLER - [+] Found 63/63 results for "created:2017-01-03..2017-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:19:33.063] [INFO] CRAWLER - [+] Saved 704 repositories so far.
+[2026-03-29T09:19:33.063] [INFO] CRAWLER - [+] Searching for repositories created between 2017-02-03 and 2017-03-03
+[2026-03-29T09:19:45.216] [INFO] CRAWLER - [+] Found 69/69 results for "created:2017-02-03..2017-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:19:45.265] [INFO] CRAWLER - [+] Saved 773 repositories so far.
+[2026-03-29T09:19:45.265] [INFO] CRAWLER - [+] Searching for repositories created between 2017-03-03 and 2017-04-02
+[2026-03-29T09:19:58.178] [INFO] CRAWLER - [+] Found 77/77 results for "created:2017-03-03..2017-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:19:58.213] [INFO] CRAWLER - [+] Saved 850 repositories so far.
+[2026-03-29T09:19:58.214] [INFO] CRAWLER - [+] Searching for repositories created between 2017-04-02 and 2017-05-02
+[2026-03-29T09:20:10.282] [INFO] CRAWLER - [+] Found 80/80 results for "created:2017-04-02..2017-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:20:10.311] [INFO] CRAWLER - [+] Saved 930 repositories so far.
+[2026-03-29T09:20:10.311] [INFO] CRAWLER - [+] Searching for repositories created between 2017-05-02 and 2017-06-02
+[2026-03-29T09:20:22.592] [INFO] CRAWLER - [+] Found 93/93 results for "created:2017-05-02..2017-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:20:22.619] [INFO] CRAWLER - [+] Saved 1023 repositories so far.
+[2026-03-29T09:20:22.619] [INFO] CRAWLER - [+] Searching for repositories created between 2017-06-02 and 2017-07-02
+[2026-03-29T09:20:34.552] [INFO] CRAWLER - [+] Found 66/66 results for "created:2017-06-02..2017-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:20:34.587] [INFO] CRAWLER - [+] Saved 1089 repositories so far.
+[2026-03-29T09:20:34.587] [INFO] CRAWLER - [+] Searching for repositories created between 2017-07-02 and 2017-08-02
+[2026-03-29T09:20:46.511] [INFO] CRAWLER - [+] Found 58/58 results for "created:2017-07-02..2017-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:20:46.533] [INFO] CRAWLER - [+] Saved 1147 repositories so far.
+[2026-03-29T09:20:46.534] [INFO] CRAWLER - [+] Searching for repositories created between 2017-08-02 and 2017-09-02
+[2026-03-29T09:20:58.703] [INFO] CRAWLER - [+] Found 76/76 results for "created:2017-08-02..2017-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:20:58.725] [INFO] CRAWLER - [+] Saved 1223 repositories so far.
+[2026-03-29T09:20:58.725] [INFO] CRAWLER - [+] Searching for repositories created between 2017-09-02 and 2017-10-02
+[2026-03-29T09:21:10.857] [INFO] CRAWLER - [+] Found 68/68 results for "created:2017-09-02..2017-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:21:10.896] [INFO] CRAWLER - [+] Saved 1291 repositories so far.
+[2026-03-29T09:21:10.896] [INFO] CRAWLER - [+] Searching for repositories created between 2017-10-02 and 2017-11-02
+[2026-03-29T09:21:23.186] [INFO] CRAWLER - [+] Found 75/75 results for "created:2017-10-02..2017-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:21:23.243] [INFO] CRAWLER - [+] Saved 1366 repositories so far.
+[2026-03-29T09:21:23.243] [INFO] CRAWLER - [+] Searching for repositories created between 2017-11-02 and 2017-12-03
+[2026-03-29T09:21:35.764] [INFO] CRAWLER - [+] Found 82/82 results for "created:2017-11-02..2017-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:21:35.833] [INFO] CRAWLER - [+] Saved 1448 repositories so far.
+[2026-03-29T09:21:35.833] [INFO] CRAWLER - [+] Searching for repositories created between 2017-12-03 and 2018-01-03
+[2026-03-29T09:21:48.318] [INFO] CRAWLER - [+] Found 76/76 results for "created:2017-12-03..2018-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:21:48.371] [INFO] CRAWLER - [+] Saved 1524 repositories so far.
+[2026-03-29T09:21:48.372] [INFO] CRAWLER - [+] Searching for repositories created between 2018-01-03 and 2018-02-03
+[2026-03-29T09:22:01.034] [INFO] CRAWLER - [+] Found 82/82 results for "created:2018-01-03..2018-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:22:01.102] [INFO] CRAWLER - [+] Saved 1606 repositories so far.
+[2026-03-29T09:22:01.103] [INFO] CRAWLER - [+] Searching for repositories created between 2018-02-03 and 2018-03-03
+[2026-03-29T09:22:13.910] [INFO] CRAWLER - [+] Found 77/77 results for "created:2018-02-03..2018-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:22:13.966] [INFO] CRAWLER - [+] Saved 1683 repositories so far.
+[2026-03-29T09:22:13.966] [INFO] CRAWLER - [+] Searching for repositories created between 2018-03-03 and 2018-04-02
+[2026-03-29T09:22:27.150] [INFO] CRAWLER - [+] Found 90/90 results for "created:2018-03-03..2018-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:22:27.218] [INFO] CRAWLER - [+] Saved 1773 repositories so far.
+[2026-03-29T09:22:27.218] [INFO] CRAWLER - [+] Searching for repositories created between 2018-04-02 and 2018-05-02
+[2026-03-29T09:22:38.955] [INFO] CRAWLER - [+] Found 67/67 results for "created:2018-04-02..2018-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:22:39.025] [INFO] CRAWLER - [+] Saved 1840 repositories so far.
+[2026-03-29T09:22:39.025] [INFO] CRAWLER - [+] Searching for repositories created between 2018-05-02 and 2018-06-02
+[2026-03-29T09:22:51.622] [INFO] CRAWLER - [+] Found 74/74 results for "created:2018-05-02..2018-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:22:51.715] [INFO] CRAWLER - [+] Saved 1914 repositories so far.
+[2026-03-29T09:22:51.715] [INFO] CRAWLER - [+] Searching for repositories created between 2018-06-02 and 2018-07-02
+[2026-03-29T09:23:04.528] [INFO] CRAWLER - [+] Found 94/94 results for "created:2018-06-02..2018-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:23:04.595] [INFO] CRAWLER - [+] Saved 2008 repositories so far.
+[2026-03-29T09:23:04.595] [INFO] CRAWLER - [+] Searching for repositories created between 2018-07-02 and 2018-08-02
+[2026-03-29T09:23:16.728] [INFO] CRAWLER - [+] Found 67/67 results for "created:2018-07-02..2018-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:23:16.824] [INFO] CRAWLER - [+] Saved 2075 repositories so far.
+[2026-03-29T09:23:16.824] [INFO] CRAWLER - [+] Searching for repositories created between 2018-08-02 and 2018-09-02
+[2026-03-29T09:23:28.879] [INFO] CRAWLER - [+] Found 71/71 results for "created:2018-08-02..2018-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:23:28.961] [INFO] CRAWLER - [+] Saved 2146 repositories so far.
+[2026-03-29T09:23:28.961] [INFO] CRAWLER - [+] Searching for repositories created between 2018-09-02 and 2018-10-02
+[2026-03-29T09:23:41.206] [INFO] CRAWLER - [+] Found 69/69 results for "created:2018-09-02..2018-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:23:41.253] [INFO] CRAWLER - [+] Saved 2215 repositories so far.
+[2026-03-29T09:23:41.253] [INFO] CRAWLER - [+] Searching for repositories created between 2018-10-02 and 2018-11-02
+[2026-03-29T09:23:54.172] [INFO] CRAWLER - [+] Found 76/76 results for "created:2018-10-02..2018-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:23:54.267] [INFO] CRAWLER - [+] Saved 2291 repositories so far.
+[2026-03-29T09:23:54.268] [INFO] CRAWLER - [+] Searching for repositories created between 2018-11-02 and 2018-12-03
+[2026-03-29T09:24:06.598] [INFO] CRAWLER - [+] Found 74/74 results for "created:2018-11-02..2018-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:24:06.694] [INFO] CRAWLER - [+] Saved 2365 repositories so far.
+[2026-03-29T09:24:06.695] [INFO] CRAWLER - [+] Searching for repositories created between 2018-12-03 and 2019-01-03
+[2026-03-29T09:24:18.719] [INFO] CRAWLER - [+] Found 62/62 results for "created:2018-12-03..2019-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:24:18.771] [INFO] CRAWLER - [+] Saved 2427 repositories so far.
+[2026-03-29T09:24:18.771] [INFO] CRAWLER - [+] Searching for repositories created between 2019-01-03 and 2019-02-03
+[2026-03-29T09:24:31.633] [INFO] CRAWLER - [+] Found 92/92 results for "created:2019-01-03..2019-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:24:31.728] [INFO] CRAWLER - [+] Saved 2519 repositories so far.
+[2026-03-29T09:24:31.728] [INFO] CRAWLER - [+] Searching for repositories created between 2019-02-03 and 2019-03-03
+[2026-03-29T09:24:44.291] [INFO] CRAWLER - [+] Found 71/71 results for "created:2019-02-03..2019-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:24:44.405] [INFO] CRAWLER - [+] Saved 2590 repositories so far.
+[2026-03-29T09:24:44.405] [INFO] CRAWLER - [+] Searching for repositories created between 2019-03-03 and 2019-04-02
+[2026-03-29T09:24:57.814] [INFO] CRAWLER - [+] Found 94/94 results for "created:2019-03-03..2019-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:24:57.934] [INFO] CRAWLER - [+] Saved 2684 repositories so far.
+[2026-03-29T09:24:57.934] [INFO] CRAWLER - [+] Searching for repositories created between 2019-04-02 and 2019-05-02
+[2026-03-29T09:25:10.778] [INFO] CRAWLER - [+] Found 86/86 results for "created:2019-04-02..2019-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:25:10.855] [INFO] CRAWLER - [+] Saved 2770 repositories so far.
+[2026-03-29T09:25:10.855] [INFO] CRAWLER - [+] Searching for repositories created between 2019-05-02 and 2019-06-02
+[2026-03-29T09:25:23.300] [INFO] CRAWLER - [+] Found 84/84 results for "created:2019-05-02..2019-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:25:23.426] [INFO] CRAWLER - [+] Saved 2854 repositories so far.
+[2026-03-29T09:25:23.426] [INFO] CRAWLER - [+] Searching for repositories created between 2019-06-02 and 2019-07-02
+[2026-03-29T09:25:36.052] [INFO] CRAWLER - [+] Found 66/66 results for "created:2019-06-02..2019-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:25:36.180] [INFO] CRAWLER - [+] Saved 2920 repositories so far.
+[2026-03-29T09:25:36.180] [INFO] CRAWLER - [+] Searching for repositories created between 2019-07-02 and 2019-08-02
+[2026-03-29T09:25:48.238] [INFO] CRAWLER - [+] Found 65/65 results for "created:2019-07-02..2019-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:25:48.406] [INFO] CRAWLER - [+] Saved 2985 repositories so far.
+[2026-03-29T09:25:48.406] [INFO] CRAWLER - [+] Searching for repositories created between 2019-08-02 and 2019-09-02
+[2026-03-29T09:26:01.029] [INFO] CRAWLER - [+] Found 81/81 results for "created:2019-08-02..2019-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:26:01.150] [INFO] CRAWLER - [+] Saved 3066 repositories so far.
+[2026-03-29T09:26:01.151] [INFO] CRAWLER - [+] Searching for repositories created between 2019-09-02 and 2019-10-02
+[2026-03-29T09:26:13.667] [INFO] CRAWLER - [+] Found 70/70 results for "created:2019-09-02..2019-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:26:13.805] [INFO] CRAWLER - [+] Saved 3136 repositories so far.
+[2026-03-29T09:26:13.805] [INFO] CRAWLER - [+] Searching for repositories created between 2019-10-02 and 2019-11-02
+[2026-03-29T09:26:26.435] [INFO] CRAWLER - [+] Found 72/72 results for "created:2019-10-02..2019-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:26:26.573] [INFO] CRAWLER - [+] Saved 3208 repositories so far.
+[2026-03-29T09:26:26.573] [INFO] CRAWLER - [+] Searching for repositories created between 2019-11-02 and 2019-12-03
+[2026-03-29T09:26:38.852] [INFO] CRAWLER - [+] Found 61/61 results for "created:2019-11-02..2019-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:26:38.977] [INFO] CRAWLER - [+] Saved 3269 repositories so far.
+[2026-03-29T09:26:38.977] [INFO] CRAWLER - [+] Searching for repositories created between 2019-12-03 and 2020-01-03
+[2026-03-29T09:26:51.008] [INFO] CRAWLER - [+] Found 68/68 results for "created:2019-12-03..2020-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:26:51.141] [INFO] CRAWLER - [+] Saved 3337 repositories so far.
+[2026-03-29T09:26:51.141] [INFO] CRAWLER - [+] Searching for repositories created between 2020-01-03 and 2020-02-03
+[2026-03-29T09:27:03.583] [INFO] CRAWLER - [+] Found 82/82 results for "created:2020-01-03..2020-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:27:03.675] [INFO] CRAWLER - [+] Saved 3419 repositories so far.
+[2026-03-29T09:27:03.675] [INFO] CRAWLER - [+] Searching for repositories created between 2020-02-03 and 2020-03-03
+[2026-03-29T09:27:15.821] [INFO] CRAWLER - [+] Found 66/66 results for "created:2020-02-03..2020-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:27:15.915] [INFO] CRAWLER - [+] Saved 3485 repositories so far.
+[2026-03-29T09:27:15.916] [INFO] CRAWLER - [+] Searching for repositories created between 2020-03-03 and 2020-04-02
+[2026-03-29T09:27:29.032] [INFO] CRAWLER - [+] Found 96/96 results for "created:2020-03-03..2020-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:27:29.177] [INFO] CRAWLER - [+] Saved 3581 repositories so far.
+[2026-03-29T09:27:29.177] [INFO] CRAWLER - [+] Searching for repositories created between 2020-04-02 and 2020-05-02
+[2026-03-29T09:27:41.969] [INFO] CRAWLER - [+] Found 99/99 results for "created:2020-04-02..2020-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:27:42.113] [INFO] CRAWLER - [+] Saved 3680 repositories so far.
+[2026-03-29T09:27:42.113] [INFO] CRAWLER - [+] Searching for repositories created between 2020-05-02 and 2020-06-02
+[2026-03-29T09:27:54.810] [INFO] CRAWLER - [+] Found 96/96 results for "created:2020-05-02..2020-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:27:54.953] [INFO] CRAWLER - [+] Saved 3776 repositories so far.
+[2026-03-29T09:27:54.954] [INFO] CRAWLER - [+] Searching for repositories created between 2020-06-02 and 2020-07-02
+[2026-03-29T09:28:07.668] [INFO] CRAWLER - [+] Found 76/76 results for "created:2020-06-02..2020-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:28:07.825] [INFO] CRAWLER - [+] Saved 3852 repositories so far.
+[2026-03-29T09:28:07.825] [INFO] CRAWLER - [+] Searching for repositories created between 2020-07-02 and 2020-08-02
+[2026-03-29T09:28:20.417] [INFO] CRAWLER - [+] Found 76/76 results for "created:2020-07-02..2020-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:28:20.591] [INFO] CRAWLER - [+] Saved 3928 repositories so far.
+[2026-03-29T09:28:20.592] [INFO] CRAWLER - [+] Searching for repositories created between 2020-08-02 and 2020-09-02
+[2026-03-29T09:28:33.321] [INFO] CRAWLER - [+] Found 78/78 results for "created:2020-08-02..2020-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:28:33.420] [INFO] CRAWLER - [+] Saved 4006 repositories so far.
+[2026-03-29T09:28:33.420] [INFO] CRAWLER - [+] Searching for repositories created between 2020-09-02 and 2020-10-02
+[2026-03-29T09:28:45.328] [INFO] CRAWLER - [+] Found 58/58 results for "created:2020-09-02..2020-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:28:45.496] [INFO] CRAWLER - [+] Saved 4064 repositories so far.
+[2026-03-29T09:28:45.496] [INFO] CRAWLER - [+] Searching for repositories created between 2020-10-02 and 2020-11-03
+[2026-03-29T09:28:57.468] [INFO] CRAWLER - [+] Found 58/58 results for "created:2020-10-02..2020-11-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:28:57.577] [INFO] CRAWLER - [+] Saved 4122 repositories so far.
+[2026-03-29T09:28:57.577] [INFO] CRAWLER - [+] Searching for repositories created between 2020-11-03 and 2020-12-03
+[2026-03-29T09:29:09.333] [INFO] CRAWLER - [+] Found 57/57 results for "created:2020-11-03..2020-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:29:09.489] [INFO] CRAWLER - [+] Saved 4179 repositories so far.
+[2026-03-29T09:29:09.489] [INFO] CRAWLER - [+] Searching for repositories created between 2020-12-03 and 2021-01-03
+[2026-03-29T09:29:21.975] [INFO] CRAWLER - [+] Found 67/67 results for "created:2020-12-03..2021-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:29:22.154] [INFO] CRAWLER - [+] Saved 4246 repositories so far.
+[2026-03-29T09:29:22.154] [INFO] CRAWLER - [+] Searching for repositories created between 2021-01-03 and 2021-02-03
+[2026-03-29T09:29:34.506] [INFO] CRAWLER - [+] Found 76/76 results for "created:2021-01-03..2021-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:29:34.683] [INFO] CRAWLER - [+] Saved 4322 repositories so far.
+[2026-03-29T09:29:34.683] [INFO] CRAWLER - [+] Searching for repositories created between 2021-02-03 and 2021-03-03
+[2026-03-29T09:29:46.161] [INFO] CRAWLER - [+] Found 50/50 results for "created:2021-02-03..2021-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:29:46.334] [INFO] CRAWLER - [+] Saved 4372 repositories so far.
+[2026-03-29T09:29:46.334] [INFO] CRAWLER - [+] Searching for repositories created between 2021-03-03 and 2021-04-02
+[2026-03-29T09:29:57.974] [INFO] CRAWLER - [+] Found 54/54 results for "created:2021-03-03..2021-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:29:58.147] [INFO] CRAWLER - [+] Saved 4426 repositories so far.
+[2026-03-29T09:29:58.147] [INFO] CRAWLER - [+] Searching for repositories created between 2021-04-02 and 2021-05-02
+[2026-03-29T09:30:09.634] [INFO] CRAWLER - [+] Found 45/45 results for "created:2021-04-02..2021-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:30:09.839] [INFO] CRAWLER - [+] Saved 4471 repositories so far.
+[2026-03-29T09:30:09.839] [INFO] CRAWLER - [+] Searching for repositories created between 2021-05-02 and 2021-06-02
+[2026-03-29T09:30:21.817] [INFO] CRAWLER - [+] Found 58/58 results for "created:2021-05-02..2021-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:30:21.990] [INFO] CRAWLER - [+] Saved 4529 repositories so far.
+[2026-03-29T09:30:21.990] [INFO] CRAWLER - [+] Searching for repositories created between 2021-06-02 and 2021-07-02
+[2026-03-29T09:30:33.640] [INFO] CRAWLER - [+] Found 50/50 results for "created:2021-06-02..2021-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:30:33.814] [INFO] CRAWLER - [+] Saved 4579 repositories so far.
+[2026-03-29T09:30:33.814] [INFO] CRAWLER - [+] Searching for repositories created between 2021-07-02 and 2021-08-02
+[2026-03-29T09:30:45.622] [INFO] CRAWLER - [+] Found 48/48 results for "created:2021-07-02..2021-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:30:45.795] [INFO] CRAWLER - [+] Saved 4627 repositories so far.
+[2026-03-29T09:30:45.795] [INFO] CRAWLER - [+] Searching for repositories created between 2021-08-02 and 2021-09-02
+[2026-03-29T09:30:57.746] [INFO] CRAWLER - [+] Found 61/61 results for "created:2021-08-02..2021-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:30:57.920] [INFO] CRAWLER - [+] Saved 4688 repositories so far.
+[2026-03-29T09:30:57.920] [INFO] CRAWLER - [+] Searching for repositories created between 2021-09-02 and 2021-10-02
+[2026-03-29T09:31:09.475] [INFO] CRAWLER - [+] Found 42/42 results for "created:2021-09-02..2021-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:31:09.662] [INFO] CRAWLER - [+] Saved 4730 repositories so far.
+[2026-03-29T09:31:09.662] [INFO] CRAWLER - [+] Searching for repositories created between 2021-10-02 and 2021-11-02
+[2026-03-29T09:31:21.954] [INFO] CRAWLER - [+] Found 64/64 results for "created:2021-10-02..2021-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:31:22.172] [INFO] CRAWLER - [+] Saved 4794 repositories so far.
+[2026-03-29T09:31:22.172] [INFO] CRAWLER - [+] Searching for repositories created between 2021-11-02 and 2021-12-03
+[2026-03-29T09:31:34.182] [INFO] CRAWLER - [+] Found 54/54 results for "created:2021-11-02..2021-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:31:34.367] [INFO] CRAWLER - [+] Saved 4848 repositories so far.
+[2026-03-29T09:31:34.367] [INFO] CRAWLER - [+] Searching for repositories created between 2021-12-03 and 2022-01-03
+[2026-03-29T09:31:46.197] [INFO] CRAWLER - [+] Found 52/52 results for "created:2021-12-03..2022-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:31:46.332] [INFO] CRAWLER - [+] Saved 4900 repositories so far.
+[2026-03-29T09:31:46.333] [INFO] CRAWLER - [+] Searching for repositories created between 2022-01-03 and 2022-02-03
+[2026-03-29T09:31:57.816] [INFO] CRAWLER - [+] Found 42/42 results for "created:2022-01-03..2022-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:31:58.001] [INFO] CRAWLER - [+] Saved 4942 repositories so far.
+[2026-03-29T09:31:58.001] [INFO] CRAWLER - [+] Searching for repositories created between 2022-02-03 and 2022-03-03
+[2026-03-29T09:32:09.876] [INFO] CRAWLER - [+] Found 40/40 results for "created:2022-02-03..2022-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:32:10.062] [INFO] CRAWLER - [+] Saved 4982 repositories so far.
+[2026-03-29T09:32:10.062] [INFO] CRAWLER - [+] Searching for repositories created between 2022-03-03 and 2022-04-02
+[2026-03-29T09:32:21.854] [INFO] CRAWLER - [+] Found 50/50 results for "created:2022-03-03..2022-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:32:22.038] [INFO] CRAWLER - [+] Saved 5032 repositories so far.
+[2026-03-29T09:32:22.038] [INFO] CRAWLER - [+] Searching for repositories created between 2022-04-02 and 2022-05-02
+[2026-03-29T09:32:34.203] [INFO] CRAWLER - [+] Found 58/58 results for "created:2022-04-02..2022-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:32:34.378] [INFO] CRAWLER - [+] Saved 5090 repositories so far.
+[2026-03-29T09:32:34.378] [INFO] CRAWLER - [+] Searching for repositories created between 2022-05-02 and 2022-06-02
+[2026-03-29T09:32:46.162] [INFO] CRAWLER - [+] Found 54/54 results for "created:2022-05-02..2022-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:32:46.320] [INFO] CRAWLER - [+] Saved 5144 repositories so far.
+[2026-03-29T09:32:46.320] [INFO] CRAWLER - [+] Searching for repositories created between 2022-06-02 and 2022-07-02
+[2026-03-29T09:32:58.170] [INFO] CRAWLER - [+] Found 46/46 results for "created:2022-06-02..2022-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:32:58.350] [INFO] CRAWLER - [+] Saved 5190 repositories so far.
+[2026-03-29T09:32:58.350] [INFO] CRAWLER - [+] Searching for repositories created between 2022-07-02 and 2022-08-02
+[2026-03-29T09:33:10.137] [INFO] CRAWLER - [+] Found 49/49 results for "created:2022-07-02..2022-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:33:10.267] [INFO] CRAWLER - [+] Saved 5239 repositories so far.
+[2026-03-29T09:33:10.267] [INFO] CRAWLER - [+] Searching for repositories created between 2022-08-02 and 2022-09-02
+[2026-03-29T09:33:21.720] [INFO] CRAWLER - [+] Found 40/40 results for "created:2022-08-02..2022-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:33:21.942] [INFO] CRAWLER - [+] Saved 5279 repositories so far.
+[2026-03-29T09:33:21.942] [INFO] CRAWLER - [+] Searching for repositories created between 2022-09-02 and 2022-10-02
+[2026-03-29T09:33:34.226] [INFO] CRAWLER - [+] Found 65/65 results for "created:2022-09-02..2022-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:33:34.493] [INFO] CRAWLER - [+] Saved 5344 repositories so far.
+[2026-03-29T09:33:34.493] [INFO] CRAWLER - [+] Searching for repositories created between 2022-10-02 and 2022-11-02
+[2026-03-29T09:33:46.084] [INFO] CRAWLER - [+] Found 43/43 results for "created:2022-10-02..2022-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:33:46.349] [INFO] CRAWLER - [+] Saved 5387 repositories so far.
+[2026-03-29T09:33:46.350] [INFO] CRAWLER - [+] Searching for repositories created between 2022-11-02 and 2022-12-03
+[2026-03-29T09:33:59.461] [INFO] CRAWLER - [+] Found 71/71 results for "created:2022-11-02..2022-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:33:59.691] [INFO] CRAWLER - [+] Saved 5458 repositories so far.
+[2026-03-29T09:33:59.691] [INFO] CRAWLER - [+] Searching for repositories created between 2022-12-03 and 2023-01-03
+[2026-03-29T09:34:11.533] [INFO] CRAWLER - [+] Found 62/62 results for "created:2022-12-03..2023-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:34:11.690] [INFO] CRAWLER - [+] Saved 5520 repositories so far.
+[2026-03-29T09:34:11.690] [INFO] CRAWLER - [+] Searching for repositories created between 2023-01-03 and 2023-02-03
+[2026-03-29T09:34:23.752] [INFO] CRAWLER - [+] Found 59/59 results for "created:2023-01-03..2023-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:34:23.899] [INFO] CRAWLER - [+] Saved 5579 repositories so far.
+[2026-03-29T09:34:23.899] [INFO] CRAWLER - [+] Searching for repositories created between 2023-02-03 and 2023-03-03
+[2026-03-29T09:34:36.814] [INFO] CRAWLER - [+] Found 82/82 results for "created:2023-02-03..2023-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:34:37.086] [INFO] CRAWLER - [+] Saved 5661 repositories so far.
+[2026-03-29T09:34:37.086] [INFO] CRAWLER - [+] Searching for repositories created between 2023-03-03 and 2023-04-02
+[2026-03-29T09:34:49.691] [INFO] CRAWLER - [+] Found 100/100 results for "created:2023-03-03..2023-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:35:01.386] [INFO] CRAWLER - [+] Found 49/49 results for "created:2023-03-03..2023-04-02 language:Python stars:>1000" on page 2.
+[2026-03-29T09:35:01.631] [INFO] CRAWLER - [+] Saved 5810 repositories so far.
+[2026-03-29T09:35:01.631] [INFO] CRAWLER - [+] Searching for repositories created between 2023-04-02 and 2023-05-02
+[2026-03-29T09:35:14.775] [INFO] CRAWLER - [+] Found 100/100 results for "created:2023-04-02..2023-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:35:26.186] [INFO] CRAWLER - [+] Found 42/42 results for "created:2023-04-02..2023-05-02 language:Python stars:>1000" on page 2.
+[2026-03-29T09:35:26.348] [INFO] CRAWLER - [+] Saved 5952 repositories so far.
+[2026-03-29T09:35:26.349] [INFO] CRAWLER - [+] Searching for repositories created between 2023-05-02 and 2023-06-02
+[2026-03-29T09:35:39.439] [INFO] CRAWLER - [+] Found 100/100 results for "created:2023-05-02..2023-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:35:50.293] [INFO] CRAWLER - [+] Found 18/18 results for "created:2023-05-02..2023-06-02 language:Python stars:>1000" on page 2.
+[2026-03-29T09:35:50.471] [INFO] CRAWLER - [+] Saved 6070 repositories so far.
+[2026-03-29T09:35:50.471] [INFO] CRAWLER - [+] Searching for repositories created between 2023-06-02 and 2023-07-02
+[2026-03-29T09:36:03.042] [INFO] CRAWLER - [+] Found 79/79 results for "created:2023-06-02..2023-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:36:03.288] [INFO] CRAWLER - [+] Saved 6149 repositories so far.
+[2026-03-29T09:36:03.288] [INFO] CRAWLER - [+] Searching for repositories created between 2023-07-02 and 2023-08-02
+[2026-03-29T09:36:16.470] [INFO] CRAWLER - [+] Found 85/85 results for "created:2023-07-02..2023-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:36:16.708] [INFO] CRAWLER - [+] Saved 6234 repositories so far.
+[2026-03-29T09:36:16.708] [INFO] CRAWLER - [+] Searching for repositories created between 2023-08-02 and 2023-09-02
+[2026-03-29T09:36:29.920] [INFO] CRAWLER - [+] Found 100/100 results for "created:2023-08-02..2023-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:36:30.215] [INFO] CRAWLER - [+] Saved 6334 repositories so far.
+[2026-03-29T09:36:30.215] [INFO] CRAWLER - [+] Searching for repositories created between 2023-09-02 and 2023-10-02
+[2026-03-29T09:36:42.627] [INFO] CRAWLER - [+] Found 63/63 results for "created:2023-09-02..2023-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:36:42.891] [INFO] CRAWLER - [+] Saved 6397 repositories so far.
+[2026-03-29T09:36:42.891] [INFO] CRAWLER - [+] Searching for repositories created between 2023-10-02 and 2023-11-02
+[2026-03-29T09:36:55.520] [INFO] CRAWLER - [+] Found 82/82 results for "created:2023-10-02..2023-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:36:55.794] [INFO] CRAWLER - [+] Saved 6479 repositories so far.
+[2026-03-29T09:36:55.794] [INFO] CRAWLER - [+] Searching for repositories created between 2023-11-02 and 2023-12-03
+[2026-03-29T09:37:08.697] [INFO] CRAWLER - [+] Found 85/85 results for "created:2023-11-02..2023-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:37:08.875] [INFO] CRAWLER - [+] Saved 6564 repositories so far.
+[2026-03-29T09:37:08.875] [INFO] CRAWLER - [+] Searching for repositories created between 2023-12-03 and 2024-01-03
+[2026-03-29T09:37:22.283] [INFO] CRAWLER - [+] Found 97/97 results for "created:2023-12-03..2024-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:37:22.547] [INFO] CRAWLER - [+] Saved 6661 repositories so far.
+[2026-03-29T09:37:22.548] [INFO] CRAWLER - [+] Searching for repositories created between 2024-01-03 and 2024-02-03
+[2026-03-29T09:37:35.248] [INFO] CRAWLER - [+] Found 89/89 results for "created:2024-01-03..2024-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:37:35.571] [INFO] CRAWLER - [+] Saved 6750 repositories so far.
+[2026-03-29T09:37:35.571] [INFO] CRAWLER - [+] Searching for repositories created between 2024-02-03 and 2024-03-03
+[2026-03-29T09:37:48.346] [INFO] CRAWLER - [+] Found 76/76 results for "created:2024-02-03..2024-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:37:48.505] [INFO] CRAWLER - [+] Saved 6826 repositories so far.
+[2026-03-29T09:37:48.505] [INFO] CRAWLER - [+] Searching for repositories created between 2024-03-03 and 2024-04-02
+[2026-03-29T09:38:01.822] [INFO] CRAWLER - [+] Found 89/89 results for "created:2024-03-03..2024-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:38:02.074] [INFO] CRAWLER - [+] Saved 6915 repositories so far.
+[2026-03-29T09:38:02.074] [INFO] CRAWLER - [+] Searching for repositories created between 2024-04-02 and 2024-05-02
+[2026-03-29T09:38:14.067] [INFO] CRAWLER - [+] Found 56/56 results for "created:2024-04-02..2024-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:38:14.331] [INFO] CRAWLER - [+] Saved 6971 repositories so far.
+[2026-03-29T09:38:14.331] [INFO] CRAWLER - [+] Searching for repositories created between 2024-05-02 and 2024-06-02
+[2026-03-29T09:38:27.082] [INFO] CRAWLER - [+] Found 87/87 results for "created:2024-05-02..2024-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:38:27.406] [INFO] CRAWLER - [+] Saved 7058 repositories so far.
+[2026-03-29T09:38:27.406] [INFO] CRAWLER - [+] Searching for repositories created between 2024-06-02 and 2024-07-02
+[2026-03-29T09:38:40.274] [INFO] CRAWLER - [+] Found 75/75 results for "created:2024-06-02..2024-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:38:40.478] [INFO] CRAWLER - [+] Saved 7133 repositories so far.
+[2026-03-29T09:38:40.479] [INFO] CRAWLER - [+] Searching for repositories created between 2024-07-02 and 2024-08-02
+[2026-03-29T09:38:52.491] [INFO] CRAWLER - [+] Found 69/69 results for "created:2024-07-02..2024-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:38:52.673] [INFO] CRAWLER - [+] Saved 7202 repositories so far.
+[2026-03-29T09:38:52.673] [INFO] CRAWLER - [+] Searching for repositories created between 2024-08-02 and 2024-09-02
+[2026-03-29T09:39:04.589] [INFO] CRAWLER - [+] Found 63/63 results for "created:2024-08-02..2024-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:39:04.866] [INFO] CRAWLER - [+] Saved 7265 repositories so far.
+[2026-03-29T09:39:04.866] [INFO] CRAWLER - [+] Searching for repositories created between 2024-09-02 and 2024-10-02
+[2026-03-29T09:39:16.651] [INFO] CRAWLER - [+] Found 57/57 results for "created:2024-09-02..2024-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:39:16.840] [INFO] CRAWLER - [+] Saved 7322 repositories so far.
+[2026-03-29T09:39:16.840] [INFO] CRAWLER - [+] Searching for repositories created between 2024-10-02 and 2024-11-02
+[2026-03-29T09:39:29.801] [INFO] CRAWLER - [+] Found 82/82 results for "created:2024-10-02..2024-11-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:39:30.093] [INFO] CRAWLER - [+] Saved 7404 repositories so far.
+[2026-03-29T09:39:30.093] [INFO] CRAWLER - [+] Searching for repositories created between 2024-11-02 and 2024-12-03
+[2026-03-29T09:39:42.594] [INFO] CRAWLER - [+] Found 83/83 results for "created:2024-11-02..2024-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:39:42.892] [INFO] CRAWLER - [+] Saved 7487 repositories so far.
+[2026-03-29T09:39:42.892] [INFO] CRAWLER - [+] Searching for repositories created between 2024-12-03 and 2025-01-03
+[2026-03-29T09:39:55.681] [INFO] CRAWLER - [+] Found 71/71 results for "created:2024-12-03..2025-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:39:55.989] [INFO] CRAWLER - [+] Saved 7558 repositories so far.
+[2026-03-29T09:39:55.990] [INFO] CRAWLER - [+] Searching for repositories created between 2025-01-03 and 2025-02-03
+[2026-03-29T09:40:08.889] [INFO] CRAWLER - [+] Found 92/92 results for "created:2025-01-03..2025-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:40:09.201] [INFO] CRAWLER - [+] Saved 7650 repositories so far.
+[2026-03-29T09:40:09.202] [INFO] CRAWLER - [+] Searching for repositories created between 2025-02-03 and 2025-03-03
+[2026-03-29T09:40:21.388] [INFO] CRAWLER - [+] Found 78/78 results for "created:2025-02-03..2025-03-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:40:21.689] [INFO] CRAWLER - [+] Saved 7728 repositories so far.
+[2026-03-29T09:40:21.689] [INFO] CRAWLER - [+] Searching for repositories created between 2025-03-03 and 2025-04-02
+[2026-03-29T09:40:35.173] [INFO] CRAWLER - [+] Found 100/100 results for "created:2025-03-03..2025-04-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:40:35.486] [INFO] CRAWLER - [+] Saved 7828 repositories so far.
+[2026-03-29T09:40:35.486] [INFO] CRAWLER - [+] Searching for repositories created between 2025-04-02 and 2025-05-02
+[2026-03-29T09:40:48.614] [INFO] CRAWLER - [+] Found 91/91 results for "created:2025-04-02..2025-05-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:40:48.966] [INFO] CRAWLER - [+] Saved 7919 repositories so far.
+[2026-03-29T09:40:48.966] [INFO] CRAWLER - [+] Searching for repositories created between 2025-05-02 and 2025-06-02
+[2026-03-29T09:41:01.576] [INFO] CRAWLER - [+] Found 68/68 results for "created:2025-05-02..2025-06-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:41:01.893] [INFO] CRAWLER - [+] Saved 7987 repositories so far.
+[2026-03-29T09:41:01.893] [INFO] CRAWLER - [+] Searching for repositories created between 2025-06-02 and 2025-07-02
+[2026-03-29T09:41:13.985] [INFO] CRAWLER - [+] Found 67/67 results for "created:2025-06-02..2025-07-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:41:14.417] [INFO] CRAWLER - [+] Saved 8054 repositories so far.
+[2026-03-29T09:41:14.418] [INFO] CRAWLER - [+] Searching for repositories created between 2025-07-02 and 2025-08-02
+[2026-03-29T09:41:26.577] [INFO] CRAWLER - [+] Found 63/63 results for "created:2025-07-02..2025-08-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:41:26.886] [INFO] CRAWLER - [+] Saved 8117 repositories so far.
+[2026-03-29T09:41:26.886] [INFO] CRAWLER - [+] Searching for repositories created between 2025-08-02 and 2025-09-02
+[2026-03-29T09:41:39.146] [INFO] CRAWLER - [+] Found 56/56 results for "created:2025-08-02..2025-09-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:41:39.553] [INFO] CRAWLER - [+] Saved 8173 repositories so far.
+[2026-03-29T09:41:39.553] [INFO] CRAWLER - [+] Searching for repositories created between 2025-09-02 and 2025-10-02
+[2026-03-29T09:41:51.102] [INFO] CRAWLER - [+] Found 52/52 results for "created:2025-09-02..2025-10-02 language:Python stars:>1000" on page 1.
+[2026-03-29T09:41:51.441] [INFO] CRAWLER - [+] Saved 8225 repositories so far.
+[2026-03-29T09:41:51.441] [INFO] CRAWLER - [+] Searching for repositories created between 2025-10-02 and 2025-11-03
+[2026-03-29T09:42:03.774] [INFO] CRAWLER - [+] Found 66/66 results for "created:2025-10-02..2025-11-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:42:04.076] [INFO] CRAWLER - [+] Saved 8291 repositories so far.
+[2026-03-29T09:42:04.076] [INFO] CRAWLER - [+] Searching for repositories created between 2025-11-03 and 2025-12-03
+[2026-03-29T09:42:16.002] [INFO] CRAWLER - [+] Found 51/51 results for "created:2025-11-03..2025-12-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:42:16.436] [INFO] CRAWLER - [+] Saved 8342 repositories so far.
+[2026-03-29T09:42:16.436] [INFO] CRAWLER - [+] Searching for repositories created between 2025-12-03 and 2026-01-03
+[2026-03-29T09:42:28.177] [INFO] CRAWLER - [+] Found 50/50 results for "created:2025-12-03..2026-01-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:42:28.454] [INFO] CRAWLER - [+] Saved 8392 repositories so far.
+[2026-03-29T09:42:28.454] [INFO] CRAWLER - [+] Searching for repositories created between 2026-01-03 and 2026-02-03
+[2026-03-29T09:42:40.099] [INFO] CRAWLER - [+] Found 58/58 results for "created:2026-01-03..2026-02-03 language:Python stars:>1000" on page 1.
+[2026-03-29T09:42:40.449] [INFO] CRAWLER - [+] Saved 8450 repositories so far.
+[2026-03-29T09:42:40.450] [INFO] CRAWLER - [+] Searching for repositories created between 2026-02-03 and 2026-03-01
+[2026-03-29T09:42:51.893] [INFO] CRAWLER - [+] Found 46/46 results for "created:2026-02-03..2026-03-01 language:Python stars:>1000" on page 1.
+[2026-03-29T09:42:52.210] [INFO] CRAWLER - [+] Saved 8496 repositories so far.

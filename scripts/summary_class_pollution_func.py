@@ -3,7 +3,7 @@ import json
 import re
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-task_dir = os.path.join(script_dir, "../", "tasks", "class-pollution-1K-with-remote-pattern")
+task_dir = os.path.join(script_dir, "../", "tasks", "class-pollution-pip-r2-0-60K")
 repo_list_path = os.path.join(task_dir, "input", "repo-with-remote-patterns.txt")
 output_base = os.path.join(task_dir, "output")
 result_path = os.path.join(task_dir, "logs", "class-pollution-function-only.json")
@@ -32,7 +32,7 @@ for line in open(repo_list_path):
       region = physical.get("region", {})
       func_name = loc.get("message", {}).get("text", "").replace("Function ", "")
 
-      if func_name in func_names:
+      if func_name in func_names or func_name in ("listcomp", "dictcomp"):
         continue
 
       func_locs.append({

@@ -1,0 +1,31 @@
+\newcounter{rownumset}
+\newcommand{\rownumberset}{\stepcounter{rownumset}\scriptsize{\#\arabic{rownumset}}}
+
+{\setlength{\tabcolsep}{2.5pt}
+\begin{table}[!t]
+  \centering
+  \scriptsize
+  \rowcolors{2}{gray!15}{white}
+  \caption{Systemization of reflected set operations in Python from builtins and standard libraries.}
+  \begin{tabular}{l|c@{\hskip 1.5pt}c@{\hskip 1.8pt}c|cc|c}
+    \toprule
+    \multicolumn{1}{c|}{} & 
+    \multicolumn{3}{c|}{\textbf{Features}} & 
+    \multicolumn{2}{c|}{\textbf{Prevalence}} & 
+    \multicolumn{1}{c}{} \\
+    \cmidrule(lr){2-4} \cmidrule(lr){5-6}
+    \includesvg[height=0.23cm]{assets/icons/python.svg} \textbf{Code} & \rotatebox{90}{\textbf{Type}} & \rotatebox{90}{\textbf{Apply}} & \rotatebox{90}{\textbf{Origin}} & \rotatebox{90}{\textbf{\# Inst.}} & \rotatebox{90}{\textbf{\# Pack.}} & \rotatebox{90}{\textbf{Spec.}} \\
+    \midrule
+    \scriptsize{\texttt{setattr(obj,name,val)}} & \scriptsize{A} & \scriptsize{O} & \scriptsize{B} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{object.\_\_setattr\_\_(obj,name,val)}} & \scriptsize{A} & \scriptsize{O} & \scriptsize{B} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{obj.\_\_dict\_\_[name]=val}} & \scriptsize{A} & \scriptsize{O} & \scriptsize{B} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{dict[key]=val}} & \scriptsize{I} & \scriptsize{M/S} & \scriptsize{B} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{dict.update(key=val)}} & \scriptsize{I} & \scriptsize{M} & \scriptsize{B} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{operator.setitem(dict,key,val)}} & \scriptsize{I} & \scriptsize{M} & \scriptsize{O} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{operator.\_\_setitem\_\_(dict,key,val)}} & \scriptsize{I} & \scriptsize{M} & \scriptsize{O} & XX & XX & [N/A] \\
+    \scriptsize{\texttt{exec(f"o.\{name\}=\{val\}", \{"o":obj\})}} & \scriptsize{A} & \scriptsize{O/M/S} & \scriptsize{B} & XX & XX & [N/A] \\
+    \bottomrule
+  \end{tabular}
+  \caption*{\scriptsize \textbf{Legend:} A: Attribute; I: Item; O: Object; M: Mapping; S: Sequence; B: Builtin; O: Operator.}
+  \label{tab:set-table}
+\end{table}}

@@ -58,7 +58,8 @@ def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_fil
       # Find the existing repo in the list
       existing_repo = next(existing_repo for existing_repo in existing_repos if repo["repo_name"] == existing_repo["Application"])
       existing_repo["Remote"] = "|".join(repo["remote_patterns"])
-      existing_repo["Local"] = "|".join(repo["local_patterns"])      
+      existing_repo["Local"] = "|".join(repo["local_patterns"])
+      existing_repo["Func Name (Path)"] = repo["class_pollution_func"]
       continue
 
     NewlyAdded = "Yes"
@@ -84,7 +85,7 @@ def generate_csv_output(flagged_repos, existing_repos, repo_metadata, output_fil
       "URL": repo_info["html_url"],
       "CodeQL": "Y",
       "Confirmed (Function-level)": "N/A",
-      "Func Name (Path)": "",
+      "Func Name (Path)": repo["class_pollution_func"],
       "FP Reason": "",
       "GetType": repo["get_type"],
       "SetType": repo["set_type"],

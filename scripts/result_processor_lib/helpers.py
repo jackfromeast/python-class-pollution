@@ -73,6 +73,34 @@ def load_pip_metadata(metadata_files):
 
   return repo_metadata
 
+def load_class_pollution_func(result_folder):
+  sarif_path = os.path.join(result_folder, "class-pollution-function-only.qls.sarif")
+  if not os.path.exists(sarif_path):
+    print(f"Missing SARIF: {sarif_path}")
+    return ""
+
+  with open(sarif_path, 'r') as f:
+    sarif_json = json.load(f)
+
+  from collections import defaultdict
+
+  func_files = defaultdict(set)
+  for run in sarif_json.get("runs", [])[0].get("results", []):
+    for loc in run.get("relatedLocations", []):
+      func_name = loc.get("message", {}).get("text", "").replace("Function ", "")
+      if func_name in ("listcomp", "dictcomp"):
+        continue
+      uri = loc.get("physicalLocation", {}).get("artifactLocation", {}).get("uri")
+      func_files[func_name].add(uri)
+
+  result_entries = []
+  for func_name, files in func_files.items():
+    if len(files) > 0:
+      for path in sorted(files):
+        result_entries.append(f"{func_name}:{path}")
+
+  return ",".join(result_entries)
+
 def parse_result_log(log_file):
   flagged_repos = []
   output_path = os.path.join(os.path.dirname(log_file), '..', "output")
@@ -107,13 +135,17 @@ def parse_result_log(log_file):
         repo_src_path = os.path.join(output_path, repo_name, "codebase")
         web_patterns, local_patterns = classify(repo_src_path)
 
+        repo_result_path = os.path.join(output_path, repo_name, "results")
+        class_pollution_func = load_class_pollution_func(repo_result_path)
+
         # Append the repository with its GetType and SetType as a new entry
         flagged_repos.append({
           "repo_name": repo_name,
           "get_type": get_type,
           "set_type": set_type,
           "remote_patterns": web_patterns,
-          "local_patterns": local_patterns
+          "local_patterns": local_patterns,
+          "class_pollution_func": class_pollution_func
         })
       else:
         logging.warning(f"Warning: Could not parse line: {line.strip()}")  # Use strip() to remove extra newlines

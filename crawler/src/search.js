@@ -17,8 +17,8 @@ import OpenAI from "openai";
 import yaml from 'js-yaml';
 import Logger from './logger.js';
 
-const CONFIG = yaml.load(fs.readFileSync('/home/jiacheng/python-class-pollution/crawler/config-2020-2024.yml', 'utf8'));
-// const CONFIG = yaml.load(fs.readFileSync('../config.yml', 'utf8'));
+const configPath = process.argv[2] || path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'config.yml');
+const CONFIG = yaml.load(fs.readFileSync(configPath, 'utf8'));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -79,15 +79,24 @@ export class Spider {
         page: page
       });
     } catch (error) {
-      this.logger.error(`[-] Error during octokit.request: ${error.message}`);
+      this.logger.error(`[-] Error during octokit.request: ${error.message} (status: ${error.status})`);
 
-      if (retry > 0)
+      // Rate limit — wait and retry
+      if (error.status === 403 || error.status === 429) {
+        this.logger.info(`[-] Rate limited. Sleeping for 65 seconds...`);
+        await sleep(65000);
+        if (retry > 0) return this.retrieve(query, page, retry - 1);
+      }
+
+      if (retry > 0) {
+        await sleep(5000);
         return this.retrieve(query, page, retry - 1);
-      
+      }
+
       return [[], 0, 0];
     }
 
-    await sleep(10000); 
+    await sleep(10000);
 
     // let result = await this.filter(res.data.items);
     // Filter the result using the filter functions
@@ -178,18 +187,15 @@ export class Spider {
       this.logger.info(`[+] Searching for repositories created between ${formattedStartDate} and ${formattedEndDate}`);
 
       // Search all pages for the current query
-      await this.searchAllPages(query)
-        .then(result => {
-          results = results.concat(result);
-
-          this.save(results);
-          this.logger.info(`[+] Saved ${results.length} repositories so far.`);
-
-          currentStartDate = currentEndDate;
-        })
-        .catch(error => {
-          this.logger.error(`[-] Error during search: ${error.message}`);
-        });
+      try {
+        const result = await this.searchAllPages(query);
+        results = results.concat(result);
+        this.save(results);
+        this.logger.info(`[+] Saved ${results.length} repositories so far.`);
+      } catch (error) {
+        this.logger.error(`[-] Error during search: ${error.message}`);
+      }
+      currentStartDate = currentEndDate;
     }
 
     results = results.sort((a, b) => b.stargazers_count - a.stargazers_count);

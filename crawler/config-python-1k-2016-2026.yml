@@ -1,0 +1,17 @@
+GITHUB:
+  TOKEN: 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
+
+TASK:
+  LOG_PATH: "/home/jackfromeast/Desktop/python-class-pollution/crawler/logs/python-1k-2016-2026.log"
+  OUTPUT_PATH: "/home/jackfromeast/Desktop/python-class-pollution/crawler/output/python-star-1k-2016-2026.json"
+  TEMP_PATH: "/home/jackfromeast/Desktop/python-class-pollution/crawler/tmp"
+
+  GITHUB_FILTER:
+    START_DATE: 2016-01-01
+    END_DATE: 2026-03-01
+    TIME_RANGE: Month
+    STARS: 1000
+    LANGUAGE: Python
+    MAX_SIZE: 0
+
+  FILTERS: []

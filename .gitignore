@@ -15,3 +15,4 @@ output/**
 **/dependency/output/**
 **/dependency/logs/**
 dataset/github
+node_modules

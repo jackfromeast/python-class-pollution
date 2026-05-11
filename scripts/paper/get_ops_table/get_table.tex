@@ -1,0 +1,52 @@
+\newcounter{rownumget}
+\newcommand{\rownumber}{\stepcounter{rownumget}\scriptsize{\#\arabic{rownumget}}}
+\newcommand{\fullcircle}{\CIRCLE}
+\newcommand{\partialcircle}{\LEFTcircle}
+
+\begin{table*}[!t]
+  \centering
+  \scriptsize
+  \rowcolors{1}{white}{gray!15}
+  \caption{Systemization of reflected get operations in Python from builtins and standard libraries.}
+  \begin{tabular}{ll|cccc|ccc|cc|c}
+    \toprule
+    \multicolumn{2}{c|}{} & 
+    \multicolumn{4}{c|}{\includesvg[height=0.20cm]{assets/icons/star.svg} \textbf{Features}} & 
+    \multicolumn{3}{c|}{\includesvg[height=0.22cm]{assets/icons/setting.svg} \textbf{Capabilities}} & 
+    \multicolumn{2}{c|}{\includesvg[height=0.22cm]{assets/icons/connection.svg} \textbf{Prevalence}} & 
+    \multicolumn{1}{c}{} \\
+    \cmidrule(lr){3-6} \cmidrule(lr){7-9} \cmidrule(lr){10-11}
+    & \includesvg[height=0.23cm]{assets/icons/python.svg} \textbf{Code} & \textbf{Type} & \textbf{Apply} & \textbf{Origin} & \textbf{Order} & 
+    \textbf{Dunder} & \textbf{Method} & \textbf{Other} & 
+    \textbf{\# Inst.} & \textbf{\# Pack.} & \includesvg[height=0.22cm]{assets/icons/constraint.svg} \textbf{Spec.} \\
+    \midrule
+    \rownumber & \scriptsize{\texttt{getattr(obj, name)}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Builtins} & \scriptsize{First} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{object.\_\_getattribute\_\_(obj, name)}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Builtins} & \scriptsize{First} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{inspect.getattr\_static(obj, name)}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Inspect} & \scriptsize{First} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{operator.attrgetter(name)(obj)}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Operator} & \scriptsize{Second} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{dir(obj)[index]}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Builtins} & \scriptsize{Second} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{vars(obj)[name]}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Builtins} & \scriptsize{Second} & \partialcircle & \partialcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{obj.\_\_dict\_\_[name]}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Builtins} & \scriptsize{Second} & \partialcircle & \partialcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{obj.\_\_slots\_\_[name]}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Builtins} & \scriptsize{Second} & \partialcircle & \partialcircle & \partialcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{inspect.getmembers(obj)}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Inspect} & \scriptsize{Second} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{inspect.getmembers\_static(obj)}} & \scriptsize{Attr} & \scriptsize{O} & \scriptsize{Inspect} & \scriptsize{Second} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \midrule
+    \rownumber & \scriptsize{\texttt{dict[key]}} & \scriptsize{Item} & \scriptsize{M/S} & \scriptsize{Builtins} & \scriptsize{First} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{dict.get(key)}} & \scriptsize{Item} & \scriptsize{M} & \scriptsize{Builtins} & \scriptsize{First} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{dict.pop(key)}} & \scriptsize{Item} & \scriptsize{M/S} & \scriptsize{Builtins} & \scriptsize{First} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{dict.\_\_getitem\_\_(key)}} & \scriptsize{Item} & \scriptsize{M} & \scriptsize{Builtins} & \scriptsize{First} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{operator.getitem(dict, key)}} & \scriptsize{Item} & \scriptsize{M} & \scriptsize{Operator} & \scriptsize{First} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{operator.\_\_getitem\_\_(dict, key)}} & \scriptsize{Item} & \scriptsize{M} & \scriptsize{Operator} & \scriptsize{First} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{operator.itemgetter(key)(dict)}} & \scriptsize{Item} & \scriptsize{M} & \scriptsize{Operator} & \scriptsize{Second} & \Circle & \Circle & \fullcircle & XX & XX & [N/A] \\
+    \midrule
+    \rownumber & \scriptsize{\texttt{eval(f"o.\{name\}", \{"o": obj\})}} & \scriptsize{Attr/Item} & \scriptsize{O/M/S} & \scriptsize{Builtins} & \scriptsize{First} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \rownumber & \scriptsize{\texttt{exec(f"o.\{name\}", \{"o": obj\})}} & \scriptsize{Attr/Item} & \scriptsize{O/M/S} & \scriptsize{Builtins} & \scriptsize{First} & \fullcircle & \fullcircle & \fullcircle & XX & XX & [N/A] \\
+    \bottomrule
+  \end{tabular}
+  \caption*{\scriptsize \textbf{Legend:} 
+    O: Object \quad M: Mapping \quad S: Sequence \quad 
+    \fullcircle:~Fully Supported \quad 
+    \partialcircle:~Conditionally Supported (Depends on Object Type) \quad 
+    \Circle:~Not Supported}
+  \label{tab:get-table}
+\end{table*}
