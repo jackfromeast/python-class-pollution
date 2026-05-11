@@ -1,0 +1,8 @@
+name: pack/codeql-db-python
+version: 0.0.0
+library: true
+extensionTargets:
+  codeql/python-all: '*'
+  jackfromeast/class-pollution-all: '*'
+dataExtensions:
+  - models/**/*.yml
