@@ -1,0 +1,9 @@
+- queries: .
+  from: jackfromeast/class-pollution-all
+  version: 0.0.1
+- include:
+    id: 
+      - py/class-pollution/select-remote-sources
+      - py/class-pollution/select-local-sources
+      - py/class-pollution/select-library-sources
+- description: class-pollution-source-probing

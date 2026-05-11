@@ -1,0 +1,25 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [defusedxml, 'Member[defusedxml].Member[lxml].Member[parse]', 'Argument[0]', ReturnValue, taint]
+  - [defusedxml, 'Member[defusedxml].Member[lxml].Member[fromstring]', 'Argument[0]', ReturnValue, taint]
+  - [defusedxml, 'Member[defusedxml].Member[pulldom].Member[parse]', 'Argument[0]', ReturnValue, taint]
+  - [defusedxml, 'Member[defusedxml].Member[pulldom].Member[parseString]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

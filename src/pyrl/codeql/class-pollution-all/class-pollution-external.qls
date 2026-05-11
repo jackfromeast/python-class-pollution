@@ -1,0 +1,12 @@
+- queries: .
+  from: jackfromeast/class-pollution-all
+  version: 0.0.1
+- include:
+    id: 
+      - py/class-polliution-external/set-item-get-both
+      - py/class-polliution-external/set-item-get-attr
+      - py/class-polliution-external/set-attr-get-both
+      - py/class-polliution-external/set-attr-get-attr
+      - py/class-polliution-external/set-both-get-both
+      - py/class-polliution-external/set-both-get-attr
+- description: class-pollution-all-types

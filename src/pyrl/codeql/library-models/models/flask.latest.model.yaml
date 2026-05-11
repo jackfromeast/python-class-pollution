@@ -1,0 +1,48 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [flask, 'Member[flask].Member[json].Member[__init__].Member[dumps]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[json].Member[__init__].Member[loads]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[json].Member[__init__].Member[load]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[app].Member[_make_timedelta]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[app].Member[_make_timedelta]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[app].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[app].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[app].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[blueprints].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[blueprints].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[blueprints].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[blueprints].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[find_best_app]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[find_app_by_string]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[prepare_import]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[_set_app]', 'Argument[2]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[_set_debug]', 'Argument[2]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[_env_file_callback]', 'Argument[2]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[cli].Member[_validate_key]', 'Argument[2]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[ctx].Member[after_this_request]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[helpers].Member[get_load_dotenv]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[helpers].Member[_split_blueprint_path]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[json].Member[provider].Member[_default]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[scaffold].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[scaffold].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[scaffold].Member[decorator]', 'Argument[0]', ReturnValue, taint]
+  - [flask, 'Member[flask].Member[sansio].Member[scaffold].Member[_endpoint_from_view_func]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

@@ -1,0 +1,28 @@
+extensions:
+  - addsTo:
+      pack: codeql/python-all
+      extensible: sourceModel
+    data: []
+
+  - addsTo:
+      pack: codeql/python-all
+      extensible: sinkModel
+    data: []
+
+  - addsTo:
+      pack: codeql/python-all
+      extensible: summaryModel
+    data:
+      - ["hikaru.app.Application","Member[object_at_path]","Argument[0,path:]","ReturnValue","taint"]
+      - ["hikaru.meta.HikaruBase","Member[object_at_path]","Argument[0,path:]","ReturnValue","taint"]
+      - ["hikaru.HikaruBase","Member[object_at_path]","Argument[0,path:]","ReturnValue","taint"]
+
+  - addsTo:
+      pack: codeql/python-all
+      extensible: neutralModel
+    data: []
+
+  - addsTo:
+      pack: codeql/python-all
+      extensible: typeModel
+    data: []

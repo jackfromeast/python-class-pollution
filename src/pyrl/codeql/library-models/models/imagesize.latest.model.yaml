@@ -1,0 +1,23 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [imagesize, 'Member[imagesize].Member[imagesize].Member[_convertToDPI]', 'Argument[0]', ReturnValue, taint]
+  - [imagesize, 'Member[Script imagesize].Member[py].Member[_convertToDPI]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

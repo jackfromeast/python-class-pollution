@@ -1,0 +1,31 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: 
+    - [
+        "fastapi.routing.APIRouter",
+        "Instance.member[post].Argument[0]",
+        "remote",
+      ]
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data:
+    - [
+        "fastapi.APIRouter",
+        "fastapi",
+        "Member[routing].Member[APIRouter]",
+      ]

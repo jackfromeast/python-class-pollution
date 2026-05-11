@@ -1,0 +1,28 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [anyio, 'Member[anyio].Member[_backends].Member[_asyncio].Member[get_callable_name]', 'Argument[0]', ReturnValue, taint]
+  - [anyio, 'Member[anyio].Member[_core].Member[_sockets].Member[convert_ipv6_sockaddr]', 'Argument[0]', ReturnValue, taint]
+  - [anyio, 'Member[anyio].Member[_backends].Member[_trio].Member[convert_item]', 'Argument[0]', ReturnValue, taint]
+  - [anyio, 'Member[anyio].Member[pytest_plugin].Member[extract_backend_and_options]', 'Argument[0]', ReturnValue, taint]
+  - [anyio, 'Member[anyio].Member[pytest_plugin].Member[anyio_backend]', 'Argument[0]', ReturnValue, taint]
+  - [anyio, 'Member[anyio].Member[pytest_plugin].Member[anyio_backend_name]', 'Argument[0]', ReturnValue, taint]
+  - [anyio, 'Member[anyio].Member[pytest_plugin].Member[anyio_backend_options]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []

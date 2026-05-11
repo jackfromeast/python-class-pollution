@@ -1,0 +1,30 @@
+extensions:
+- addsTo:
+    pack: codeql/python-all
+    extensible: sourceModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: sinkModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: summaryModel
+  data:
+  - [charset-normalizer, 'Member[charset_normalizer].Member[cd].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[cd].Member[merge_coherence_ratios]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[cd].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[cd].Member[filter_alt_coherence_matches]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[cd].Member[coherence_ratio]', 'Argument[2]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[cd].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[models].Member[lambda]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[utils].Member[remove_accent]', 'Argument[0]', ReturnValue, taint]
+  - [charset-normalizer, 'Member[charset_normalizer].Member[utils].Member[iana_name]', 'Argument[0]', ReturnValue, taint]
+- addsTo:
+    pack: codeql/python-all
+    extensible: neutralModel
+  data: []
+- addsTo:
+    pack: codeql/python-all
+    extensible: typeModel
+  data: []
