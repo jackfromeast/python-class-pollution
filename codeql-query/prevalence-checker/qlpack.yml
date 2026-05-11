@@ -1,8 +1,0 @@
----
-library: true
-warnOnImplicitThis: false
-name: jackfromeast/prevalence-checker
-version: 0.0.1
-dependencies:
-  codeql/python-all: "*"
-  codeql/python-queries: "*"

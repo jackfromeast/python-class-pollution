@@ -1,8 +1,0 @@
----
-library: true
-warnOnImplicitThis: false
-name: jackfromeast/class-pollution-all
-version: 0.1.0
-dependencies:
-  codeql/python-all: "4.0.5"
-  codeql/python-queries: "1.4.7"

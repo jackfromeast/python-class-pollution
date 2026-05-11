@@ -1,8 +1,0 @@
-- queries: .
-  from: jackfromeast/class-pollution-all
-  version: 0.0.1
-- include:
-    id: 
-      - py/class-polliution/class-pollution-assignment-plain-taint
-      - py/class-polliution/class-pollution-assignment-object-taint
-- description: class-pollution-ablation

@@ -1,8 +1,0 @@
-- queries: .
-  from: jackfromeast/class-pollution-all
-  version: 0.0.1
-- include:
-    id: 
-      - py/class-polliution/leaf-class-pollution-functions
-      - py/class-polliution/shared-class-pollution-functions
-- description: class-pollution-all-types
