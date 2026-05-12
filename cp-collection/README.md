@@ -17,7 +17,6 @@ cp-collection/
         │   ├── run.sh
         │   └── venv/
         ├── local/         # PoC exploiting the vulnerability via local input (e.g. data files, CLI args)
-        │   ├── poc.py
         │   ├── requirements.txt
         │   ├── run.sh
         │   └── venv/
