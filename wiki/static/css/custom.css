@@ -1,0 +1,282 @@
+/*
+ * Landing page styling for Python Class Pollution.
+ * Goal: flat typography, no gradients, no hover-lift, no marketing grid.
+ * Reference: xsleaks.dev and domclob.xyz.
+ */
+
+:root {
+  --fg:            #1a1a1a;
+  --fg-muted:      #555;
+  --fg-dim:        #888;
+  --bg:            #ffffff;
+  --bg-sunken:     #f6f6f4;
+  --rule:          #e2e2e0;
+  --rule-strong:   #bdbdbd;
+  --accent:        #b92323;
+  --code-bg:       #f4f4f0;
+  --code-border:   #e4e4de;
+  --mono:          'JetBrains Mono', 'Fira Mono', Menlo, Consolas, monospace;
+  --sans:          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+  --serif:         'Charter', 'Georgia', 'Iowan Old Style', serif;
+}
+
+.landing {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  font-family: var(--sans);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.landing h1,
+.landing h2,
+.landing h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--fg);
+}
+
+.landing a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.landing a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.landing code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 3px;
+  padding: 0.05em 0.35em;
+}
+
+/* ---- Lead / hero --------------------------------------------------- */
+
+.lead {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.lead-title {
+  font-size: 2.4rem;
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.lead-tagline {
+  font-size: 1.1rem;
+  color: var(--fg-muted);
+  margin: 0 0 1.25rem;
+  font-weight: 400;
+}
+
+.lead-abstract {
+  font-size: 1rem;
+  margin: 0 0 1.25rem;
+  max-width: 68ch;
+}
+
+.lead-links {
+  font-size: 0.95rem;
+}
+
+.lead-links .sep {
+  color: var(--fg-dim);
+  margin: 0 0.35rem;
+}
+
+/* ---- Section headings --------------------------------------------- */
+
+.landing section > h2 {
+  font-size: 1.2rem;
+  margin: 2.25rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---- Minimal example --------------------------------------------- */
+
+.minimal-example .example-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+}
+
+.example-code {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.example-code code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--fg);
+  white-space: pre;
+}
+
+.example-notes p {
+  margin: 0 0 0.9rem;
+  font-size: 0.95rem;
+}
+
+.example-notes p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- "What's in this wiki" ---------------------------------------- */
+
+.wiki-sections .section-list {
+  margin: 0;
+}
+
+.wiki-sections dt {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.wiki-sections dt:first-child {
+  margin-top: 0;
+}
+
+.wiki-sections dd {
+  margin: 0.15rem 0 0 0;
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+  max-width: 68ch;
+}
+
+/* ---- CVE table ---------------------------------------------------- */
+
+.cve-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.cve-table th,
+.cve-table td {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.cve-table th {
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule-strong);
+  background: transparent;
+  color: var(--fg-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.cve-note {
+  font-size: 0.88rem;
+  color: var(--fg-muted);
+  margin-top: 0.75rem;
+}
+
+/* ---- Paper / citation --------------------------------------------- */
+
+.paper p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+}
+
+.paper em {
+  font-style: italic;
+}
+
+.bibtex {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.bibtex code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--fg);
+}
+
+/* ---- Footer ------------------------------------------------------- */
+
+.landing-footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--fg-muted);
+}
+
+.landing-footer p {
+  margin: 0;
+}
+
+/* ---- Responsive --------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .landing {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .lead-title {
+    font-size: 1.9rem;
+  }
+
+  .minimal-example .example-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cve-table {
+    overflow-x: auto;
+  }
+
+  .cve-table table {
+    min-width: 560px;
+  }
+}
+
+/* ---- Dark mode ---------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg:          #e9e9e6;
+    --fg-muted:    #b4b4af;
+    --fg-dim:      #7a7a75;
+    --bg:          #15161a;
+    --bg-sunken:   #1c1d21;
+    --rule:        #2b2c31;
+    --rule-strong: #46474c;
+    --accent:      #ff6b6b;
+    --code-bg:     #1c1d21;
+    --code-border: #2b2c31;
+  }
+}
