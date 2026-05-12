@@ -1,7 +1,7 @@
 ---
 title: "Tool"
 weight: 5
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Detection and Exploitation Tools

@@ -1,0 +1,196 @@
+// Custom overrides to match XS-Leaks Wiki sidebar style:
+// - Flat, always-expanded sidebar
+// - Bold section headers
+// - No chevron icons on sections
+// - Clean typography, no decorations
+
+// ---- Sidebar / Menu ------------------------------------------------
+
+.book-menu {
+  nav {
+    // Title/brand at top
+    .book-brand {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  // Remove chevron icons from collapsible sections
+  label > img:last-child {
+    display: none !important;
+  }
+
+  // Force all sections open (override JS toggle)
+  input.toggle + label + ul {
+    display: block !important;
+  }
+
+  // Section items: flat style
+  ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+
+    li {
+      margin: 0;
+
+      a, label a {
+        padding: 0.2rem 0;
+        text-decoration: none;
+        color: var(--body-font-color);
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        border: none;
+
+        &:hover {
+          color: var(--color-link);
+        }
+
+        &.active {
+          font-weight: 600;
+          color: var(--body-font-color);
+        }
+      }
+    }
+
+    // Nested lists get left indent
+    ul {
+      padding-inline-start: 1rem;
+    }
+  }
+
+  // Top-level section headers (flat sections) — bold like XS-Leaks
+  .book-section-flat {
+    margin: 1.25rem 0 0.25rem;
+    padding-top: 0;
+
+    > a,
+    > span,
+    > label,
+    > label a {
+      font-weight: 700 !important;
+      font-size: 0.875rem;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--body-font-color);
+    }
+
+    > ul {
+      padding-inline-start: 0;
+      margin-top: 0.15rem;
+    }
+  }
+}
+
+// ---- Search input ------------------------------------------------
+
+.book-search input {
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  background: var(--body-background);
+
+  &:focus {
+    border-color: var(--gray-500);
+    outline: none;
+  }
+}
+
+// ---- Content area tweaks ----------------------------------------
+
+// Tighter heading sizes matching XS-Leaks
+.book-page {
+  h1 { font-size: 1.75rem; font-weight: 700; margin-top: 0; }
+  h2 { font-size: 1.3rem; font-weight: 600; margin-top: 2rem; }
+  h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; }
+
+  // Body text
+  p, li {
+    line-height: 1.65;
+  }
+
+  // Code blocks: light background, no heavy shadows
+  pre {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    padding: 0.85rem 1rem;
+  }
+
+  // Inline code
+  code {
+    font-size: 0.88em;
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    padding: 0.1em 0.3em;
+  }
+
+  // Don't double-style code inside pre
+  pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+
+  // Tables
+  table {
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--gray-200);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      font-weight: 600;
+      border-bottom: 2px solid var(--gray-200);
+    }
+  }
+
+  // Blockquotes (used for notes/oracles in XS-Leaks style)
+  blockquote {
+    border-left: 3px solid var(--gray-200);
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: #555;
+
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+}
+
+// ---- Dark mode overrides ----------------------------------------
+
+@media (prefers-color-scheme: dark) {
+  .book-page {
+    pre {
+      background: #1c1d21;
+      border-color: #2b2c31;
+    }
+
+    code {
+      background: #1c1d21;
+      border-color: #2b2c31;
+    }
+
+    pre code {
+      background: transparent;
+      border: none;
+    }
+
+    blockquote {
+      border-left-color: #434c5e;
+      color: #b4b4af;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: "Taxonomy"
 weight: 2
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Vulnerability Taxonomy

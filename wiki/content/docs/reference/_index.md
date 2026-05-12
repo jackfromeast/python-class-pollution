@@ -1,7 +1,7 @@
 ---
 title: "Reference"
 weight: 7
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Reference

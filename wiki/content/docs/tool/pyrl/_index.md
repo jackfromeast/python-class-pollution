@@ -1,7 +1,7 @@
 ---
 title: "Pyrl"
 weight: 1
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Pyrl

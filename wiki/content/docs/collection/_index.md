@@ -1,7 +1,7 @@
 ---
 title: "Collection"
 weight: 6
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Class Pollution Vulnerability Collection

@@ -1,7 +1,7 @@
 ---
 title: "Gadgets"
 weight: 4
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Class Pollution Gadgets

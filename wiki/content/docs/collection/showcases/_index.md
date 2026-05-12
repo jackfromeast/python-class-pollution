@@ -1,7 +1,7 @@
 ---
 title: "Showcases"
 weight: 1
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # End-to-End Exploitation Showcases

@@ -1,7 +1,7 @@
 ---
 title: "Pollution Targets"
 weight: 3
-bookCollapseSection: true
+bookFlatSection: true
 ---
 
 # Class Pollution Targets
