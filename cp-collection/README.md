@@ -48,14 +48,21 @@ Each project's `README.md` must contain the following sections:
 
 ### VulnType Values
 
-The `VulnType` field describes the getter/setter primitives used in the vulnerable code path:
+The `VulnType` field describes the getter/setter primitives used in the vulnerable code path. The format is `get-<getter>-set-<setter>` where:
+- `attr` = attribute access (`getattr()` / `setattr()`)
+- `item` = item access (`obj[key]` / `obj[key] = val`)
+- `both` = both attribute and item access
 
-| VulnType             | Getter             | Setter             |
-|----------------------|--------------------|--------------------|
-| `get-attr-set-attr`  | `getattr()`        | `setattr()`        |
-| `get-both-set-both`  | `getattr()` + `[]` | `setattr()` + `[]` |
-| `get-attr-set-both`  | `getattr()`        | `setattr()` + `[]` |
-| `get-both-set-item`  | `getattr()` + `[]` | `[]`               |
+All possible combinations:
+
+| VulnType             | Getter              | Setter              |
+|----------------------|---------------------|---------------------|
+| `get-attr-set-attr`  | attr access          | attr access          |
+| `get-attr-set-item`  | attr access          | item access          |
+| `get-attr-set-both`  | attr access          | attr/item access     |
+| `get-both-set-attr`  | attr/item access     | attr access          |
+| `get-both-set-item`  | attr/item access     | item access          |
+| `get-both-set-both`  | attr/item access     | attr/item access     |
 
 ### Vulnerable Code Snippet
 
