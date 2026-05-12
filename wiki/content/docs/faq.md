@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-weight: 8
+weight: 9
 ---
 
 # Frequently Asked Questions
