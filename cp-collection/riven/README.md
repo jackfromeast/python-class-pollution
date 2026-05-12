@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-attr-set-both
 + Status: Pending
-+ Payload: ```media.item._set_nested_attr("__init__.__globals__.__name__", "polluted")```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

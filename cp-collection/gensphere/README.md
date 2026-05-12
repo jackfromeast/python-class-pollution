@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```set_in_context(obj, ['__init__', '__globals__', '__name__'], 'polluted')```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: App
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

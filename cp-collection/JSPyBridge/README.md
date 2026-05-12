@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```PyInterface.Set("", 0, ['python','__globals__','PyInterface'], ('__name__', 'polluted'))```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

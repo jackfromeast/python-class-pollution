@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```uavSim.utils.setattr_recursive("__init__/__globals__/__name__", "polluted")```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

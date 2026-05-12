@@ -9,11 +9,7 @@
 + CVE: CVE-2024-5254
 + VulnType: get-both-set-both
 + Status: Accepted
-+ Payload: ```{"attribute_added" : {"root['x']": namedtuple, "root['x'].'__globals__'['_sys'].'__name__'": "polluted"}}```
 + Foundby: chilaxan
-+ Report: https://huntr.com/bounties/486add92-275e-4a7b-92f9-42d84bc759da
-+ AppType: Lib
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

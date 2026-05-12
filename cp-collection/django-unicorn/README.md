@@ -9,11 +9,7 @@
 + CVE: [CVE-2025-24370](https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43)
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```django_unicorn.views.action_parsers.utils.set_property_value(unicornViewObj, '__init__.__globals__["__name__"]', 'polluted')```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: App
-+ Input: Remote
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```TBD```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Local
 
 ### Vulnerable Code Snippet
 

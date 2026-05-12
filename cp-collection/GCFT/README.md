@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```set_instance_value(obj, [('attr', '__init__'), ('attr', '__globals__'), ('item', '__name__')], 'polluted')```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: App
-+ Input: Local
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

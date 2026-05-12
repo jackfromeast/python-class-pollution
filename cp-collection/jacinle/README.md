@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-attr-set-both
 + Status: Pending
-+ Payload: ```_KV('__init__.__globals__.__name__=polluted').apply(obj)```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

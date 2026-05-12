@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```clearml.automation.TaskScheduler.add_task(task_overrides={'__init__.__globals__.__builtins__.getattr': 'polluted'})```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

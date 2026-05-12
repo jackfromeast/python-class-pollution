@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```pyinstrument.vendor.keypath.set_value_at_keypath(obj, '__class__.__init__.__globals__.__name__', 'polluted')```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

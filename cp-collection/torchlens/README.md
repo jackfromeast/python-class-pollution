@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```torchlens.nested_assign(obj, [("attr", "__init__"), ("attr", "__globals__"), ("ind", "__name__") ], 'polluted')```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

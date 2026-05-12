@@ -25,13 +25,13 @@ def disconnect():
 
 def warmup():
     session.get("http://127.0.0.1:5003/")
-    session.get(f"http://127.0.0.1:5003/taipy-init?client_id={client_id}&v=4.0.2")
+    session.get(f"http://127.0.0.1:5003/taipy-init?client_id={client_id}&v=4.0.3")
     logging.info("Warmup completed")
 
 def trigger():
     logging.info("Pull the trigger!")
     session.get("http://127.0.0.1:5003/")
-    session.get("http://127.0.0.1:5003/taipy-init?client_id=new&v=4.0.2")
+    session.get("http://127.0.0.1:5003/taipy-init?client_id=new&v=4.0.3")
 
 
 def pollute(key, value):
@@ -87,7 +87,9 @@ def run_race():
 
 if __name__ == "__main__":
     warmup()
-    race_thread = threading.Thread(target=run_race)
+    race_thread = threading.Thread(target=run_race, daemon=True)
     race_thread.start()
     time.sleep(3)
     trigger()
+    time.sleep(5)
+    logging.info("PoC finished.")

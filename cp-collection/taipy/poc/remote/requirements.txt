@@ -1,3 +1,2 @@
 python-socketio[client]
 requests
-taipy==4.0.3

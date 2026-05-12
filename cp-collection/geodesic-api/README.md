@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```desc = descriptors._BaseDescr("__init__.__globals__.obj"); desc.__set_name__(name="secret_key", owner=None); desc._set_object(obj, "polluted")```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

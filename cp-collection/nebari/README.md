@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```_nebari.config.set_nested_attribute(obj, ['__init__', '__globals__', '__name__'], 'polluted')```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

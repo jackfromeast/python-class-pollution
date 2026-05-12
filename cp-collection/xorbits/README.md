@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-attr-set-attr
 + Status: Pending
-+ Payload: ```TBD```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: Lib
-+ Input: Library
 
 ### Vulnerable Code Snippet
 

@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```otx.engine.hpo.hpo_trial.set_using_dot_delimited_key("__init__.__globals__.__name__", "polluted", obj)```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

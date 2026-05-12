@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```omni.isaac.lab.utils.dict.update_class_from_dict(obj, {'__init__':{'__globals__':{'__name__':"polluted"}}})```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
 
 ### Vulnerable Code Snippet
 

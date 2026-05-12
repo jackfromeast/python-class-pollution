@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```ArgumentParser.args.config_override = ["configtest.__init__.__globals__.__name__=polluted"]; fixlib.config.Config.override_config(running_config)```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: App
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

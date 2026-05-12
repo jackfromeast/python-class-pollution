@@ -9,11 +9,7 @@
 + CVE: [CVE-2025-24049](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049)
 + VulnType: get-both-set-both
 + Status: Fixed
-+ Payload: ```az resource update --ids /subscriptions/2f5657fb-2e1b-4b1b-afd1-635a17df91c5/resourceGroups/Nothing_group/providers/Microsoft.Web/staticSites/Nothing --set __class__.__init__.__globals__.__name__=polluted```
 + Foundby: Pyrl
-+ Report: Reported
-+ AppType: App
-+ Input: Local
 
 ### Vulnerable Code Snippet
 

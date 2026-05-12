@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-attr-set-both
 + Status: Pending
-+ Payload: ```bot.config.ConfigEditor.set_value("openai.__init__.__globals__.__name__", "polluted")```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: App
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Todo
-+ Payload: ```TBD```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: Lib
-+ Input: Library
 
 ### Vulnerable Code Snippet
 

@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```set_attr("generative_model.__init__.__globals__.GenerativeModel.__name__", "polluted", generative_model, pipeline)```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: CLI
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

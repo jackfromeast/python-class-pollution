@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-both-set-both
 + Status: Pending
-+ Payload: ```rsetattr(obj, "__init__.__globals__.__name__", 'polluted')```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

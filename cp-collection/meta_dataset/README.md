@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-attr-set-attr
 + Status: Pending
-+ Payload: ```_init_reference_module(Animal, {"typ":'cat',"age": 11}, [['__init__','__globals__','__name__']], ['polluted'])```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: Lib
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 

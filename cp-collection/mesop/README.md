@@ -9,11 +9,7 @@
 + CVE: CVE-2025-30358
 + VulnType: get-attr-set-both
 + Status: Pending
-+ Payload: ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__": {"__globals__": {"__name__": "polluted"}}}')```
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Remote
 
 ### Vulnerable Code Snippet
 

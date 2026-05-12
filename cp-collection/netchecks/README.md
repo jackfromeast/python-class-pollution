@@ -9,11 +9,7 @@
 + CVE: N/A
 + VulnType: get-attr-set-both
 + Status: Pending
-+ Payload: ```apply_overrides(dst_obj, {'__init__': {'__globals__': {'V1PodTemplateSpec': 'polluted'}}})```
-+ Foundby: Zhong
-+ Report: Pending
-+ AppType: App
-+ Input: Func
++ Foundby: Pyrl
 
 ### Vulnerable Code Snippet
 
