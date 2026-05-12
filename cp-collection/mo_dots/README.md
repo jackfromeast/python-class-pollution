@@ -4,7 +4,7 @@
 
 + Repo: mo_dots
 + Link: https://github.com/klahnakoski/mo-dots
-+ Stars: 6
++ Stars: 7
 + Version: 10.659.25005
 + CVE: N/A
 + VulnType: get-both-set-both

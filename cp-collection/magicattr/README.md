@@ -4,7 +4,7 @@
 
 + Repo: magicattr
 + Link: https://github.com/frmdstryr/magicattr
-+ Stars: 17
++ Stars: 18
 + Version: v3.9.0
 + CVE: N/A
 + VulnType: get-both-set-both

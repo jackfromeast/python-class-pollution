@@ -4,7 +4,7 @@
 
 + Repo: meta_dataset
 + Link: https://github.com/google-research/meta-dataset
-+ Stars: 768
++ Stars: 802
 + Version: N/A
 + CVE: N/A
 + VulnType: get-attr-set-attr

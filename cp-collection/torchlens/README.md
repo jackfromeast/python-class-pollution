@@ -4,7 +4,7 @@
 
 + Repo: torchlens
 + Link: https://github.com/johnmarktaylor91/torchlens
-+ Stars: 530
++ Stars: 641
 + Version: 0.1.26
 + CVE: N/A
 + VulnType: get-both-set-both

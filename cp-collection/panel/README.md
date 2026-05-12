@@ -4,7 +4,7 @@
 
 + Repo: panel
 + Link: https://github.com/holoviz/panel
-+ Stars: 4.8K
++ Stars: 5.7K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

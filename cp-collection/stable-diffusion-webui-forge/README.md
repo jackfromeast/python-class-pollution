@@ -4,7 +4,7 @@
 
 + Repo: stable-diffusion-webui-forge
 + Link: https://github.com/lllyasviel/stable-diffusion-webui-forge
-+ Stars: 8.7K
++ Stars: 12.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

@@ -4,7 +4,7 @@
 
 + Repo: sd-webui-controlnet
 + Link: https://github.com/Mikubill/sd-webui-controlnet
-+ Stars: 17.1K
++ Stars: 17.9K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

@@ -4,7 +4,7 @@
 
 + Repo: stylegan2
 + Link: https://github.com/NVlabs/stylegan2
-+ Stars: 11.1K
++ Stars: 11.2K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

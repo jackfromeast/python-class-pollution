@@ -4,7 +4,7 @@
 
 + Repo: fairseq
 + Link: https://github.com/facebookresearch/fairseq
-+ Stars: 30.6K
++ Stars: 32.2K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

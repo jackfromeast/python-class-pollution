@@ -4,7 +4,7 @@
 
 + Repo: nni
 + Link: https://github.com/microsoft/nni
-+ Stars: 14.1K
++ Stars: 14.4K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

@@ -4,7 +4,7 @@
 
 + Repo: pykka
 + Link: https://github.com/jodal/pykka
-+ Stars: 1.2K
++ Stars: 1.3K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

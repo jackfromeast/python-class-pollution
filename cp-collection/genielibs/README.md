@@ -4,7 +4,7 @@
 
 + Repo: genielibs
 + Link: https://github.com/CiscoTestAutomation/genielibs
-+ Stars: 109
++ Stars: 113
 + Version: V24.9
 + CVE: N/A
 + VulnType: get-both-set-both

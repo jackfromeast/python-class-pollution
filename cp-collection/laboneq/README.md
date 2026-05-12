@@ -4,7 +4,7 @@
 
 + Repo: laboneq
 + Link: https://github.com/zhinst/laboneq
-+ Stars: 39
++ Stars: 52
 + Version: v2.44.0
 + CVE: N/A
 + VulnType: get-both-set-both

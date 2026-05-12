@@ -4,7 +4,7 @@
 
 + Repo: fixinventory
 + Link: https://github.com/someengineering/fixinventory
-+ Stars: 1.6K
++ Stars: 2.1K
 + Version: 4.2.0
 + CVE: N/A
 + VulnType: get-both-set-both

@@ -4,7 +4,7 @@
 
 + Repo: easycv
 + Link: https://github.com/alibaba/EasyCV
-+ Stars: 1.8K
++ Stars: 1.9K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

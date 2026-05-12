@@ -4,7 +4,7 @@
 
 + Repo: JSPyBridge
 + Link: https://github.com/extremeheat/JSPyBridge
-+ Stars: 718
++ Stars: 850
 + Version: 1.2.1
 + CVE: N/A
 + VulnType: get-both-set-both

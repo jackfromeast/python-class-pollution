@@ -4,7 +4,7 @@
 
 + Repo: IssacLab
 + Link: https://github.com/isaac-sim/IsaacLab
-+ Stars: 2.5K
++ Stars: 7.1K
 + Version: v1.4.0
 + CVE: N/A
 + VulnType: get-both-set-both

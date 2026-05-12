@@ -4,7 +4,7 @@
 
 + Repo: evennia
 + Link: https://github.com/evennia/evennia
-+ Stars: 1.8K
++ Stars: 2.0K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

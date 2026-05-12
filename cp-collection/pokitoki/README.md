@@ -4,7 +4,7 @@
 
 + Repo: pokitoki
 + Link: https://github.com/nalgeon/pokitoki/
-+ Stars: 315
++ Stars: 339
 + Version: v210
 + CVE: N/A
 + VulnType: get-attr-set-both

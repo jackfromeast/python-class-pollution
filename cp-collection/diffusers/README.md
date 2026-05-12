@@ -4,7 +4,7 @@
 
 + Repo: diffusers
 + Link: https://github.com/huggingface/diffusers
-+ Stars: 26.5K
++ Stars: 33.6K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

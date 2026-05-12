@@ -4,7 +4,7 @@
 
 + Repo: glom
 + Link: https://github.com/mahmoud/glom
-+ Stars: 1.9K
++ Stars: 2.1K
 + Version: v24.11.0
 + CVE: N/A
 + VulnType: get-both-set-both

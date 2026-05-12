@@ -4,7 +4,7 @@
 
 + Repo: nut
 + Link: https://github.com/blawar/nut
-+ Stars: 1.1K
++ Stars: 1.3K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

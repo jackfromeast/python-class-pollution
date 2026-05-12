@@ -4,7 +4,7 @@
 
 + Repo: ragflow
 + Link: https://github.com/infiniflow/ragflow
-+ Stars: 24.7K
++ Stars: 80.3K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

@@ -4,7 +4,7 @@
 
 + Repo: virt-manager
 + Link: https://github.com/virt-manager/virt-manager
-+ Stars: 2.5K
++ Stars: 3.1K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

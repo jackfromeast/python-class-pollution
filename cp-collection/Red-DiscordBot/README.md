@@ -4,7 +4,7 @@
 
 + Repo: red-discordbot
 + Link: https://github.com/Cog-Creators/Red-DiscordBot
-+ Stars: 4.8K
++ Stars: 5.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

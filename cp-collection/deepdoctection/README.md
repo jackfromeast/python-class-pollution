@@ -4,7 +4,7 @@
 
 + Repo: deepdoctection
 + Link: https://github.com/deepdoctection/deepdoctection
-+ Stars: 2.6K
++ Stars: 3.2K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

@@ -4,7 +4,7 @@
 
 + Repo: agentlab
 + Link: https://github.com/ServiceNow/AgentLab
-+ Stars: 189
++ Stars: 576
 + Version: v0.3.2
 + CVE: N/A
 + VulnType: get-both-set-both

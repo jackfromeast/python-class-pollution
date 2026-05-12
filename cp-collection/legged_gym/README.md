@@ -4,7 +4,7 @@
 
 + Repo: legged_gym
 + Link: https://github.com/leggedrobotics/legged_gym
-+ Stars: 1.4K
++ Stars: 2.9K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

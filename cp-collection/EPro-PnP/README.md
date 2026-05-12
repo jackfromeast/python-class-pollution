@@ -4,7 +4,7 @@
 
 + Repo: epro-pnp
 + Link: https://github.com/tjiiv-cprg/EPro-PnP
-+ Stars: 1.1K
++ Stars: 1.2K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

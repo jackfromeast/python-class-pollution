@@ -4,7 +4,7 @@
 
 + Repo: schemasheets
 + Link: https://github.com/linkml/schemasheets
-+ Stars: 44
++ Stars: 52
 + Version: 0.3.1
 + CVE: N/A
 + VulnType: get-both-set-both

@@ -4,7 +4,7 @@
 
 + Repo: deepchem
 + Link: https://github.com/deepchem/deepchem
-+ Stars: 5.6K
++ Stars: 6.7K
 + Version: latest
 + CVE: N/A
 + VulnType: get-both-set-both

@@ -4,7 +4,7 @@
 
 + Repo: django-unicorn
 + Link: https://github.com/adamghill/django-unicorn
-+ Stars: 2.4K
++ Stars: 2.6K
 + Version: 0.61.0
 + CVE: [CVE-2025-24370](https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43)
 + VulnType: get-both-set-both

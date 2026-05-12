@@ -4,7 +4,7 @@
 
 + Repo: hummingbot
 + Link: https://github.com/hummingbot/hummingbot
-+ Stars: 8.5K
++ Stars: 18.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

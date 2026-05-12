@@ -4,7 +4,7 @@
 
 + Repo: fastapi-amis-admin
 + Link: https://github.com/amisadmin/fastapi-amis-admin
-+ Stars: 1.1K
++ Stars: 1.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

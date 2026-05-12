@@ -4,7 +4,7 @@
 
 + Repo: Mesop
 + Link: https://github.com/google/mesop
-+ Stars: 5.7K
++ Stars: 6.5K
 + Version: v0.13.0
 + CVE: CVE-2025-30358
 + VulnType: get-attr-set-both

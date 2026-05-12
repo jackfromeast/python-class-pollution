@@ -4,7 +4,7 @@
 
 + Repo: sverchok
 + Link: https://github.com/nortikin/sverchok
-+ Stars: 2.3K
++ Stars: 2.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-both-set-both

@@ -4,7 +4,7 @@
 
 + Repo: optimum
 + Link: https://github.com/huggingface/optimum
-+ Stars: 2.6K
++ Stars: 3.4K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

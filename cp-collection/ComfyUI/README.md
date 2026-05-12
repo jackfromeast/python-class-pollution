@@ -4,7 +4,7 @@
 
 + Repo: comfyui
 + Link: https://github.com/comfyanonymous/ComfyUI
-+ Stars: 59.1K
++ Stars: 112.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

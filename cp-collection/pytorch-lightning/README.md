@@ -4,7 +4,7 @@
 
 + Repo: pytorch-lightning
 + Link: https://github.com/Lightning-AI/pytorch-lightning
-+ Stars: 28.6K
++ Stars: 31.1K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

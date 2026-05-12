@@ -4,7 +4,7 @@
 
 + Repo: robusta
 + Link: https://github.com/robusta-dev/robusta
-+ Stars: 2.6K
++ Stars: 3.0K
 + Version: 0.20.0
 + CVE: N/A
 + VulnType: get-both-set-both

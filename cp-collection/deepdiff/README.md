@@ -4,7 +4,7 @@
 
 + Repo: deepdiff
 + Link: https://github.com/seperman/deepdiff?tab=readme-ov-file
-+ Stars: 2K
++ Stars: 2.5K
 + Version: v8.0.0
 + CVE: CVE-2024-5254
 + VulnType: get-both-set-both

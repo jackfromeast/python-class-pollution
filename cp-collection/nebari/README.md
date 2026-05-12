@@ -4,7 +4,7 @@
 
 + Repo: nebari
 + Link: https://github.com/nebari-dev/nebari
-+ Stars: 286
++ Stars: 326
 + Version: 2024.12.1
 + CVE: N/A
 + VulnType: get-both-set-both

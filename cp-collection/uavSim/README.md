@@ -4,7 +4,7 @@
 
 + Repo: uavSim
 + Link: https://github.com/theilem/uavSim
-+ Stars: 121
++ Stars: 160
 + Version: N/A
 + CVE: N/A
 + VulnType: get-both-set-both

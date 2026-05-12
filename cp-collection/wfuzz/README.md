@@ -4,7 +4,7 @@
 
 + Repo: wfuzz
 + Link: https://github.com/xmendez/wfuzz
-+ Stars: 6K
++ Stars: 6.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

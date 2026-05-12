@@ -4,7 +4,7 @@
 
 + Repo: azure-cli
 + Link: https://github.com/Azure/azure-cli
-+ Stars: 4.1K
++ Stars: 4.5K
 + Version: v2.68.0
 + CVE: [CVE-2025-24049](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049)
 + VulnType: get-both-set-both

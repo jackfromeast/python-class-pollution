@@ -4,7 +4,7 @@
 
 + Repo: xorbits
 + Link: https://github.com/xorbitsai/xorbits
-+ Stars: 1.1K
++ Stars: 1.2K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

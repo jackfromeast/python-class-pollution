@@ -4,7 +4,7 @@
 
 + Repo: ibis
 + Link: https://github.com/ibis-project/ibis
-+ Stars: 5.4K
++ Stars: 6.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

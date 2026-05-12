@@ -4,7 +4,7 @@
 
 + Repo: pydash
 + Link: https://github.com/dgilland/pydash
-+ Stars: 1.3K
++ Stars: 1.4K
 + Version: v5.1.2
 + CVE: N/A
 + VulnType: get-both-set-both

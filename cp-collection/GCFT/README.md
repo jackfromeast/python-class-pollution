@@ -4,7 +4,7 @@
 
 + Repo: GCFT
 + Link: https://github.com/LagoLunatic/GCFT
-+ Stars: 101
++ Stars: 141
 + Version: N/A
 + CVE: N/A
 + VulnType: get-both-set-both

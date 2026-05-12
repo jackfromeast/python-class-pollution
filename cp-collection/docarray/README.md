@@ -4,7 +4,7 @@
 
 + Repo: docarray
 + Link: https://github.com/docarray/docarray
-+ Stars: 3K
++ Stars: 3.1K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

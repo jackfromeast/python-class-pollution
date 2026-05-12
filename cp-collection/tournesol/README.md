@@ -4,7 +4,7 @@
 
 + Repo: tournesol
 + Link: https://github.com/tournesol-app/tournesol
-+ Stars: 339
++ Stars: 375
 + Version: N/A
 + CVE: N/A
 + VulnType: get-both-set-both

@@ -4,7 +4,7 @@
 
 + Repo: pyinstrument
 + Link: https://github.com/joerick/pyinstrument
-+ Stars: 6.8K
++ Stars: 7.7K
 + Version: N/A
 + CVE: N/A
 + VulnType: get-both-set-both

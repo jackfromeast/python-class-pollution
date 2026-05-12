@@ -4,7 +4,7 @@
 
 + Repo: crnn_tensorflow
 + Link: https://github.com/MaybeShewill-CV/CRNN_Tensorflow
-+ Stars: 1K
++ Stars: 1.0K
 + Version: latest
 + CVE: N/A
 + VulnType: get-both-set-item

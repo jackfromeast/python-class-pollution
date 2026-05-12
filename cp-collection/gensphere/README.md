@@ -4,7 +4,7 @@
 
 + Repo: gensphere
 + Link: https://github.com/octopus2023-inc/gensphere
-+ Stars: 112
++ Stars: 132
 + Version: N/A
 + CVE: N/A
 + VulnType: get-both-set-both

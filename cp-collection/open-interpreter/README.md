@@ -4,7 +4,7 @@
 
 + Repo: open-interpreter
 + Link: https://github.com/OpenInterpreter/open-interpreter
-+ Stars: 57.3K
++ Stars: 63.5K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

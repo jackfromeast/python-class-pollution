@@ -4,7 +4,7 @@
 
 + Repo: riven
 + Link: https://github.com/rivenmedia/riven
-+ Stars: 463
++ Stars: 789
 + Version: v0.20.1
 + CVE: N/A
 + VulnType: get-attr-set-both

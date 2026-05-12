@@ -4,7 +4,7 @@
 
 + Repo: generative-ai-python
 + Link: https://github.com/google-gemini/generative-ai-python
-+ Stars: 1.7K
++ Stars: 2.3K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

@@ -4,7 +4,7 @@
 
 + Repo: clearml
 + Link: https://github.com/allegroai/clearml.git
-+ Stars: 5.7K
++ Stars: 6.7K
 + Version: v1.16.5
 + CVE: N/A
 + VulnType: get-both-set-both

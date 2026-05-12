@@ -4,7 +4,7 @@
 
 + Repo: edsnlp
 + Link: https://github.com/aphp/edsnlp
-+ Stars: 119
++ Stars: 165
 + Version: v0.15.0
 + CVE: N/A
 + VulnType: get-both-set-both

@@ -4,7 +4,7 @@
 
 + Repo: accelerate
 + Link: https://github.com/huggingface/accelerate
-+ Stars: 8K
++ Stars: 9.7K
 + Version: latest
 + CVE: N/A
 + VulnType: get-attr-set-attr

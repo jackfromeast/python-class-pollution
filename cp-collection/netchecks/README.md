@@ -4,7 +4,7 @@
 
 + Repo: netchecks
 + Link: https://github.com/hardbyte/netchecks
-+ Stars: 157
++ Stars: 164
 + Version: v0.5.4
 + CVE: N/A
 + VulnType: get-attr-set-both
