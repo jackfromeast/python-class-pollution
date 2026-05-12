@@ -4,16 +4,12 @@
 
 + Repo: taipy
 + Link: https://github.com/Avaiga/taipy
-+ Stars: 17.1K
-+ Version: latest
-+ CVE: N/A
++ Stars: 19.2K
++ Version: v4.0.3
++ CVE: CVE-2025-30374
 + VulnType: get-attr-set-attr
-+ Status: Pending
-+ Payload: ```TBD```
++ Status: Fixed
 + Foundby: Pyrl
-+ Report: Pending
-+ AppType: App
-+ Input: Remote
 
 ### Vulnerable Code Snippet
 
