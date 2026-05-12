@@ -1,2 +1,2 @@
 django-unicorn==0.61.0
-django
+django==6.0.5

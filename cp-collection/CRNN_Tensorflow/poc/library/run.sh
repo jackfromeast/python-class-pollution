@@ -22,6 +22,6 @@ source "$VENV_PATH/bin/activate"
 # Install minimal deps
 pip install pyyaml -q
 
-# Run the PoC with repo on PYTHONPATH
+# Run the PoC with repo on PYTHONPATH (cwd must be repo dir for relative config paths)
 echo "[+] Running PoC..."
-PYTHONPATH="$LIB_DIR:$PYTHONPATH" python "$SCRIPT_DIR/poc.py"
+cd "$LIB_DIR" && PYTHONPATH="$LIB_DIR:$PYTHONPATH" python "$SCRIPT_DIR/poc.py"

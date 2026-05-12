@@ -1,1 +1,1 @@
-deepchem
+deepchem==2.8.1.dev20260220202610

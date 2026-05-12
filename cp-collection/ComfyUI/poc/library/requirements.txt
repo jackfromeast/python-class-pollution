@@ -1,2 +1,1 @@
-# ComfyUI is not on PyPI - clone from git
-# git clone https://github.com/comfyanonymous/ComfyUI.git
+# Dependencies installed from ComfyUI's own requirements.txt after cloning
