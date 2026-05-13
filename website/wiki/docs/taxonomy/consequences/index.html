@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -138,7 +143,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Payload: __class__.__init__.__globals__.sys.modules.os.environ.BROWSER = &#34;/bin/sh -c &#39;touch /tmp/pwned&#39;&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> antigravity  <span style="color:#75715e"># Triggers webbrowser which reads BROWSER env var</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Shell command executed</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># → Shell command executed</span>
 </span></span></code></pre></div><h2 id="call-target-corruption">Call Target Corruption</h2>
 <p>An attacker can overwrite a defined callable with a non-callable primitive such as a string. When the callable is invoked, the program raises an exception that, if unhandled, crashes the application.</p>
 <p><strong>Resulting impact:</strong> Denial of Service (DoS)</p>
@@ -146,7 +151,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Payload: {&#34;__class__&#34;: {&#34;__getattribute__&#34;: &#34;1337&#34;}}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># After pollution:</span>
-</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>name  <span style="color:#75715e"># TypeError: &#39;1337&#39; is not callable</span>
+</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>name  <span style="color:#75715e"># → TypeError: &#39;1337&#39; is not callable</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Any attribute access on ANY User instance crashes</span>
 </span></span></code></pre></div>
 This is particularly severe because `__getattribute__` is invoked for **every** attribute access. Polluting it on a class affects all instances and is irrecoverable without restarting the application.
@@ -164,8 +169,8 @@ This is particularly severe because `__getattribute__` is invoked for **every** 
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Payload: __init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY = &#34;13371337&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># After pollution:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Attacker knows the SECRET_KEY, can forge session cookies</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Authentication bypass on all users</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Attacker knows the SECRET_KEY → can forge session cookies</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># → Authentication bypass on all users</span>
 </span></span></code></pre></div><h2 id="consequence-matrix-by-vulnerability-type">Consequence Matrix by Vulnerability Type</h2>
 <table>
   <thead>

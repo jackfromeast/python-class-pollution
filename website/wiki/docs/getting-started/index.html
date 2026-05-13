@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ | Python Class Pollution</title>
+    <title>Getting Started | Python Class Pollution</title>
     <link rel="stylesheet" href="/wiki/css/wiki.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -108,7 +108,7 @@
     </li>
     
     <li>
-        <a href="/wiki/docs/faq/" class="active">FAQ</a>
+        <a href="/wiki/docs/faq/" >FAQ</a>
         
     </li>
     
@@ -118,7 +118,7 @@
     </li>
     
     <li>
-        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        <a href="/wiki/docs/getting-started/" class="active">Getting Started</a>
         
     </li>
     
@@ -129,32 +129,20 @@
         <main class="content">
             
 <article>
-    <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-<h2 id="how-is-this-different-from-javascript-prototype-pollution">How is this different from JavaScript prototype pollution?</h2>
-<p>TODO: the object model is class-based, not prototype-based; Python has two namespaces
-(attribute and item); there is no single root prototype to pollute — instead the attacker
-reaches whichever class or module the traversal path leads to. See the
-<a href="/wiki/docs/#key-differences-from-javascript-prototype-pollution">comparison table</a>.</p>
-<h2 id="why-does-traversal-through-dunder-attributes-work">Why does traversal through dunder attributes work?</h2>
-<p>TODO: <code>getattr(obj, &quot;__class__&quot;)</code> is perfectly valid Python. Dunder attributes are not
-access-restricted; they are simply naming conventions. Python&rsquo;s data model exposes
-<code>__class__</code>, <code>__init__</code>, <code>__globals__</code>, etc. on every object without any permission check.</p>
-<h2 id="does-__slots__-prevent-class-pollution">Does <code>__slots__</code> prevent class pollution?</h2>
-<p>TODO: <code>__slots__</code> prevents <em>adding new attributes</em> to instances, but it does not prevent
-overwriting existing class-level attributes via the class object itself. The traversal
-goes through <code>__class__</code> to the class, not through the instance.</p>
-<h2 id="is-this-exploitable-without-sysmodules">Is this exploitable without <code>sys.modules</code>?</h2>
-<p>TODO: yes — <code>sys.modules</code> is the most powerful hop because it reaches any imported module,
-but even without it, polluting class-level descriptors (<code>__getattribute__</code>,
-<code>__setattr__</code>) or function defaults is sufficient for DoS and logic bugs.</p>
-<h2 id="why-cant-i-just-block-__class__-at-the-sink">Why can&rsquo;t I just block <code>__class__</code> at the sink?</h2>
-<p>TODO: insufficient — <code>__init__.__globals__</code> also reaches the module namespace without
-going through <code>__class__</code> first. And <code>__subclasses__()</code> can reach other classes. The
-defense page lists what a sound blocklist needs to contain.</p>
-<h2 id="does-this-affect-pypy-or-other-python-implementations">Does this affect PyPy or other Python implementations?</h2>
-<p>TODO: yes, the object model behavior (<code>__class__</code>, <code>__init__</code>, <code>__globals__</code>) is part of
-the language specification, not a CPython implementation detail. PyPy, GraalPy, and
-Jython all expose the same dunder attributes.</p>
+    <h1 id="getting-started">Getting Started</h1>
+<p>This page helps different audiences navigate the wiki and get productive quickly.</p>
+<h2 id="for-security-researchers">For security researchers</h2>
+<p>TODO: reading order — taxonomy → targets → gadgets → collection showcases.
+Suggested background: familiarity with JS prototype pollution, Python&rsquo;s data model chapter.</p>
+<h2 id="for-bug-hunters-and-ctf-players">For bug hunters and CTF players</h2>
+<p>TODO: jump to the showcases for end-to-end walkthroughs; the gadgets page catalogs
+payload templates you can adapt; the collection lists 77+ confirmed sinks.</p>
+<h2 id="for-library-maintainers">For library maintainers</h2>
+<p>TODO: start with the defense page; then use Pyrl to scan your codebase. If you maintain
+a <code>set_nested_attr</code>-style utility, the taxonomy tells you exactly what to block.</p>
+<h2 id="for-paper-readers">For paper readers</h2>
+<p>TODO: mapping between paper sections and wiki pages. §3 → Taxonomy, §4 → Targets,
+§5 → Gadgets, §6 → Collection, §7 → Pyrl (tools), §8 → Defense.</p>
 
 </article>
 

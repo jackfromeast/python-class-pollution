@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -171,9 +176,9 @@
 <h2 id="how-indirect-access-works">How Indirect Access Works</h2>
 <p>Python&rsquo;s attribute resolution follows the <strong>Method Resolution Order (MRO)</strong>. When an attribute is not found on an instance, Python looks up the class hierarchy:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>instance<span style="color:#f92672">.</span>attr
-</span></span><span style="display:flex;"><span>  instance<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]            <span style="color:#75715e"># 1. Instance dict</span>
-</span></span><span style="display:flex;"><span>  type(instance)<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]      <span style="color:#75715e"># 2. Class dict</span>
-</span></span><span style="display:flex;"><span>  base<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]               <span style="color:#75715e"># 3. Base classes (MRO)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">→</span> instance<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]        <span style="color:#75715e"># 1. Instance dict</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">→</span> type(instance)<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]  <span style="color:#75715e"># 2. Class dict</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">→</span> base<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]           <span style="color:#75715e"># 3. Base classes (MRO)</span>
 </span></span></code></pre></div><p>This means polluting a <strong>class variable</strong> affects all instances that don&rsquo;t explicitly override it.</p>
 <p>Similarly, Python functions carry references to their defining module&rsquo;s globals (<code>f.__globals__</code>), enabling module-level pollution through any accessible function.</p>
 

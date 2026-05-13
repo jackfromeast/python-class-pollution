@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -179,11 +184,11 @@
 <p>Pyrl tracks the taint from WebSocket input:</p>
 <ol>
 <li><code>attr_str</code> and <code>value</code> parameters carry <code>T_INPUT</code></li>
-<li>After <code>split(&quot;.&quot;)</code>, <code>var_name_split</code> is <code>T_ENUM</code></li>
-<li>Loop iteration: each <code>sub_name</code> is <code>T_KEY</code></li>
-<li><code>getattr(obj, sub_name)</code> produces <code>T_OBJ</code> with <code>G_ATTR</code></li>
-<li>Since only <code>getattr</code> is used (no item access branch): <strong>Constrained-Get</strong></li>
-<li><code>setattr</code> sink: <strong>Attr-Set</strong></li>
+<li>After <code>split(&quot;.&quot;)</code> → <code>var_name_split</code> is <code>T_ENUM</code></li>
+<li>Loop iteration → each <code>sub_name</code> is <code>T_KEY</code></li>
+<li><code>getattr(obj, sub_name)</code> → <code>T_OBJ</code> with <code>G_ATTR</code></li>
+<li>Since only <code>getattr</code> is used (no item access branch) → <strong>Constrained-Get</strong></li>
+<li><code>setattr</code> sink → <strong>Attr-Set</strong></li>
 </ol>
 <p>Classification: <strong>Constrained-Get × Attr-Set</strong></p>
 <h2 id="exploitation">Exploitation</h2>

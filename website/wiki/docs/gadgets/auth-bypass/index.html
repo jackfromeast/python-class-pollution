@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -167,7 +172,7 @@
 </span></span><span style="display:flex;"><span>signer <span style="color:#f92672">=</span> Signer(key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;attacker_key&#34;</span>)
 </span></span><span style="display:flex;"><span>forged_session <span style="color:#f92672">=</span> signer<span style="color:#f92672">.</span>sign(admin_session_data)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Send request with forged cookie, authenticated as admin</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Send request with forged cookie → authenticated as admin</span>
 </span></span></code></pre></div><h2 id="gadget-2-flask-secret_key-overwrite">Gadget 2: Flask SECRET_KEY Overwrite</h2>
 <p><strong>Mechanism</strong>: Same concept as Django — Flask uses SECRET_KEY for session signing.</p>
 <p><strong>Key Path</strong> (application-specific):</p>

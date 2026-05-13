@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -132,19 +137,20 @@
 <li><strong>Consequences</strong> — What security impacts follow from successful pollution</li>
 </ol>
 <p>The taxonomy reveals that prior work only documented one of the six vulnerability types (<code>Agnostic-Get × Dual-Set</code>). The remaining five types are newly defined in this work.</p>
-<p><strong>Get Primitives</strong> (2):</p>
-<ul>
-<li>Agnostic-Get</li>
-<li>Constrained-Get</li>
-</ul>
-<p><strong>Set Primitives</strong> (3):</p>
-<ul>
-<li>Dual-Set</li>
-<li>Attr-Set</li>
-<li>Item-Set</li>
-</ul>
-<p>These combine into <strong>6 vulnerability types</strong>.</p>
-<h2 id="overview">Overview</h2>
+<pre tabindex="0"><code>┌─────────────────────────────────────────────────┐
+│              Class Pollution Taxonomy            │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│  Get Primitives    ×    Set Primitives          │
+│  ─────────────          ──────────────          │
+│  • Agnostic-Get         • Dual-Set             │
+│  • Constrained-Get      • Attr-Set             │
+│                          • Item-Set             │
+│                                                 │
+│  → 6 Vulnerability Types                       │
+│                                                 │
+└─────────────────────────────────────────────────┘
+</code></pre><h2 id="overview">Overview</h2>
 <table>
   <thead>
       <tr>

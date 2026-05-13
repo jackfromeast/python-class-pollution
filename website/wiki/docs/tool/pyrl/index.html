@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -151,15 +156,33 @@
 <li>Analysis time: typically under 2 minutes per package</li>
 </ul>
 <h2 id="architecture">Architecture</h2>
-<p>The Pyrl pipeline has five stages:</p>
-<ol>
-<li><strong>Package Download and Database Setup</strong> &ndash; CodeQL database creation</li>
-<li><strong>Operational Taint Analysis</strong> &ndash; Taint initialization (INPUT rule), propagation (SPLIT, ENUMERATE, GETITEM, GETATTR, BRANCH rules), and merging at control-flow joins</li>
-<li><strong>Vulnerability Detection</strong> &ndash; Sink identification (assignment tuples), label condition checking (Table 5), type classification (6 types)</li>
-<li><strong>Exploitability Checking</strong> &ndash; Mutual exclusion verification, barrier node and dominator analysis</li>
-<li><strong>Result Processing</strong> &ndash; Report generation with taint flow paths</li>
-</ol>
-<h2 id="implementation">Implementation</h2>
+<pre tabindex="0"><code>┌──────────────────────────────────────────────────┐
+│                    Pyrl Pipeline                  │
+├──────────────────────────────────────────────────┤
+│                                                  │
+│  1. Package Download &amp; Database Setup            │
+│     └─ CodeQL database creation                  │
+│                                                  │
+│  2. Operational Taint Analysis                   │
+│     ├─ Taint Initialization (INPUT rule)         │
+│     ├─ Taint Propagation (SPLIT, ENUMERATE,      │
+│     │   GETITEM, GETATTR, BRANCH rules)          │
+│     └─ Taint Merging (at control-flow joins)     │
+│                                                  │
+│  3. Vulnerability Detection                      │
+│     ├─ Sink identification (assignment tuples)   │
+│     ├─ Label condition checking (Table 5)        │
+│     └─ Type classification (6 types)            │
+│                                                  │
+│  4. Exploitability Checking                      │
+│     ├─ Mutual exclusion verification             │
+│     └─ Barrier node / dominator analysis         │
+│                                                  │
+│  5. Result Processing                            │
+│     └─ Report generation with taint flow paths   │
+│                                                  │
+└──────────────────────────────────────────────────┘
+</code></pre><h2 id="implementation">Implementation</h2>
 <ul>
 <li>Written in <strong>CodeQL</strong> (QL language) — 3,509 lines of new code</li>
 <li>Runs on CodeQL v2.21.3 with Python language support v4.0.5</li>

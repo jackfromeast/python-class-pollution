@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -137,10 +142,10 @@
 </code></pre><h3 id="why-this-is-so-effective">Why This Is So Effective</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># After pollution: User.__getattribute__ = &#34;1337&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>name       <span style="color:#75715e"># TypeError</span>
-</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>email      <span style="color:#75715e"># TypeError</span>
-</span></span><span style="display:flex;"><span>str(user)       <span style="color:#75715e"># TypeError (calls __str__ which needs __getattribute__)</span>
-</span></span><span style="display:flex;"><span>repr(user)      <span style="color:#75715e"># TypeError</span>
+</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>name       <span style="color:#75715e"># → TypeError</span>
+</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>email      <span style="color:#75715e"># → TypeError</span>
+</span></span><span style="display:flex;"><span>str(user)       <span style="color:#75715e"># → TypeError (calls __str__ which needs __getattribute__)</span>
+</span></span><span style="display:flex;"><span>repr(user)      <span style="color:#75715e"># → TypeError</span>
 </span></span><span style="display:flex;"><span>type(user)      <span style="color:#75715e"># This still works (built-in, not through __getattribute__)</span>
 </span></span></code></pre></div><p>The application cannot even inspect or debug the corrupted objects. The only recovery is restarting the process.</p>
 

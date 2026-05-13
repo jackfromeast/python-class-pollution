@@ -117,6 +117,11 @@
         
     </li>
     
+    <li>
+        <a href="/wiki/docs/getting-started/" >Getting Started</a>
+        
+    </li>
+    
 
 </ul>
 
@@ -142,7 +147,7 @@
 </span></span><span style="display:flex;"><span>                obj[key] <span style="color:#f92672">=</span> val                   <span style="color:#75715e"># Item-Set</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>                setattr(obj, key, val)           <span style="color:#75715e"># Attr-Set</span>
-</span></span></code></pre></div><p><strong>Prevalence</strong>: 106 reports (20 checked, 7 TP)</p>
+</span></span></code></pre></div><p><strong>Prevalence</strong>: 106 reports (20 checked → 7 TP)</p>
 <h2 id="type-2-constrained-get--dual-set">Type 2: Constrained-Get × Dual-Set</h2>
 <p>The attacker is restricted to a fixed chain of <strong>attribute access only</strong> for the &ldquo;get&rdquo; primitive, but can choose between attribute and item assignment at the &ldquo;set&rdquo; step.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_properties</span>(instance, expression, force_string):
@@ -154,7 +159,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>        setattr(instance, make_snake_case(name), value)  <span style="color:#75715e"># Attr-Set</span>
 </span></span></code></pre></div><p><strong>Real-world example</strong>: Azure CLI (CVE-2025-24049)<br>
-<strong>Prevalence</strong>: 17 reports (2 checked, 1 TP)</p>
+<strong>Prevalence</strong>: 17 reports (2 checked → 1 TP)</p>
 <h2 id="type-3-agnostic-get--attr-set">Type 3: Agnostic-Get × Attr-Set</h2>
 <p>The attacker can freely choose between attribute and item access at each &ldquo;get&rdquo; step, but is <strong>restricted to attribute assignment</strong> at the &ldquo;set&rdquo; step.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">deep_set</span>(obj, path, value):
@@ -164,7 +169,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>            obj <span style="color:#f92672">=</span> getattr(obj, key)     <span style="color:#75715e"># Attr-Get</span>
 </span></span><span style="display:flex;"><span>    setattr(obj, path[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], value)       <span style="color:#75715e"># Attr-Set only</span>
-</span></span></code></pre></div><p><strong>Prevalence</strong>: 27 reports (1 checked, 0 TP, 1 FP)</p>
+</span></span></code></pre></div><p><strong>Prevalence</strong>: 27 reports (1 checked → 0 TP, 1 FP)</p>
 <h2 id="type-4-constrained-get--attr-set">Type 4: Constrained-Get × Attr-Set</h2>
 <p><strong>The most prevalent type.</strong> The attacker is constrained to attribute access chains, and the assignment is also restricted to attribute-based writes.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_attrsetter</span>(obj, attr_str, value):
@@ -174,7 +179,7 @@
 </span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, sub_name)            <span style="color:#75715e"># Constrained: getattr only</span>
 </span></span><span style="display:flex;"><span>    setattr(obj, var_name_split[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], value)     <span style="color:#75715e"># Attr-Set only</span>
 </span></span></code></pre></div><p><strong>Real-world example</strong>: Taipy (CVE-2025-30374), django-unicorn (CVE-2025-24370)<br>
-<strong>Prevalence</strong>: 617 reports (56 checked, 39 TP)</p>
+<strong>Prevalence</strong>: 617 reports (56 checked → 39 TP)</p>
 
 This is the most common pattern because many Python frameworks implement "dot-path" attribute setters (`a.b.c = value`) using `getattr` chains followed by `setattr`.
 
@@ -196,7 +201,7 @@ This is the most common pattern because many Python frameworks implement "dot-pa
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> part <span style="color:#f92672">in</span> parts[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
 </span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, part)        <span style="color:#75715e"># Constrained: getattr only</span>
 </span></span><span style="display:flex;"><span>    obj[parts[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]] <span style="color:#f92672">=</span> value              <span style="color:#75715e"># Item-Set only</span>
-</span></span></code></pre></div><p><strong>Prevalence</strong>: 21 reports (5 checked, 0 TP, 5 FP)</p>
+</span></span></code></pre></div><p><strong>Prevalence</strong>: 21 reports (5 checked → 0 TP, 5 FP)</p>
 <h2 id="summary-table">Summary Table</h2>
 <table>
   <thead>
