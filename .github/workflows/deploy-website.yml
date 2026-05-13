@@ -1,0 +1,45 @@
+name: Deploy Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/**'
+      - '.github/workflows/deploy-website.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.161.1'
+          extended: true
+
+      - name: Build wiki
+        run: |
+          cd website/source
+          hugo --baseURL="/wiki/" --destination="../wiki"
+
+      - name: Stage publish directory
+        run: |
+          mkdir -p _publish
+          cp -r website/index.html website/img website/wiki _publish/
+          if [ -f website/README.md ]; then cp website/README.md _publish/; fi
+
+      - name: Deploy to class-pollution.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: class-pollution/class-pollution.github.io
+          publish_branch: main
+          publish_dir: ./_publish
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy website from python-class-pollution@${{ github.sha }}'

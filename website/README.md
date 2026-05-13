@@ -40,3 +40,12 @@ hugo --baseURL="/wiki/" --destination="../wiki"
 ```
 
 This generates the static site under `website/wiki/`.
+
+## Deployment
+
+The site is deployed to <https://class-pollution.github.io> via the GitHub Actions workflow at `.github/workflows/deploy-website.yml`. On every push to `main` that touches `website/`, the workflow:
+
+1. Builds the wiki with Hugo into `website/wiki/`
+2. Pushes `index.html`, `img/`, and `wiki/` to the `class-pollution/class-pollution.github.io` repo
+
+The workflow uses a `DEPLOY_TOKEN` repository secret (a fine-grained PAT with write access to the target repo).
