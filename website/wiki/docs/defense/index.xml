@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Defense on Python Class Pollution</title>
+    <link>/wiki/docs/defense/</link>
+    <description>Recent content in Defense on Python Class Pollution</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/wiki/docs/defense/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

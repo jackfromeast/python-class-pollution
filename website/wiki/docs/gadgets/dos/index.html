@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoS Gadgets | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" class="active">DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="dos-gadgets">DoS Gadgets</h1>
+<p>Denial of Service gadgets crash the application or render it unusable.</p>
+<h2 id="gadget-1-__getattribute__-overwrite">Gadget 1: <code>__getattribute__</code> Overwrite</h2>
+<p><strong>The most universal DoS gadget.</strong> Works on any class.</p>
+<p><strong>Mechanism</strong>: <code>__getattribute__</code> is called for every attribute access on an object. Overwriting it with a non-callable value causes a <code>TypeError</code> on any subsequent attribute access.</p>
+<p><strong>Key Path</strong>:</p>
+<pre tabindex="0"><code>__class__.__getattribute__
+</code></pre><p><strong>Value</strong>: <code>&quot;1337&quot;</code> (any non-callable)</p>
+<p><strong>Effect</strong>: Every attribute access on any instance of the class raises:</p>
+<pre tabindex="0"><code>TypeError: &#39;str&#39; object is not callable
+</code></pre><h3 id="why-this-is-so-effective">Why This Is So Effective</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># After pollution: User.__getattribute__ = &#34;1337&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>name       <span style="color:#75715e"># TypeError</span>
+</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>email      <span style="color:#75715e"># TypeError</span>
+</span></span><span style="display:flex;"><span>str(user)       <span style="color:#75715e"># TypeError (calls __str__ which needs __getattribute__)</span>
+</span></span><span style="display:flex;"><span>repr(user)      <span style="color:#75715e"># TypeError</span>
+</span></span><span style="display:flex;"><span>type(user)      <span style="color:#75715e"># This still works (built-in, not through __getattribute__)</span>
+</span></span></code></pre></div><p>The application cannot even inspect or debug the corrupted objects. The only recovery is restarting the process.</p>
+
+This affects **all existing and future instances** of the class, not just the polluted instance. It's a class-level corruption.
+
+
+<h2 id="gadget-2-__class__-reassignment">Gadget 2: <code>__class__</code> Reassignment</h2>
+<p><strong>Mechanism</strong>: Change an object&rsquo;s class to an incompatible type, causing subsequent operations to fail.</p>
+<p><strong>Key Path</strong>:</p>
+<pre tabindex="0"><code>__class__
+</code></pre><p><strong>Value</strong>: Reference to an incompatible class</p>
+<p><strong>Effect</strong>: Method calls and attribute accesses behave unexpectedly or raise exceptions.</p>
+<h2 id="gadget-3-__str__--__repr__-overwrite">Gadget 3: <code>__str__</code> / <code>__repr__</code> Overwrite</h2>
+<p><strong>Mechanism</strong>: Overwrite string representation methods with non-callable values. Many logging frameworks and error handlers call <code>str()</code> or <code>repr()</code> on objects.</p>
+<p><strong>Key Path</strong>:</p>
+<pre tabindex="0"><code>__class__.__str__
+</code></pre><p><strong>Value</strong>: <code>&quot;crashed&quot;</code></p>
+<p><strong>Effect</strong>: Any logging, debugging, or string formatting involving the object crashes.</p>
+<h2 id="gadget-4-module-level-function-overwrite">Gadget 4: Module-Level Function Overwrite</h2>
+<p><strong>Mechanism</strong>: Overwrite a frequently-called module function with <code>None</code> or a non-callable.</p>
+<p><strong>Key Path</strong> (example):</p>
+<pre tabindex="0"><code>__init__.__globals__.json.dumps
+</code></pre><p><strong>Value</strong>: <code>None</code></p>
+<p><strong>Effect</strong>: Any code calling <code>json.dumps()</code> crashes with <code>TypeError: 'NoneType' object is not callable</code>.</p>
+<h2 id="real-world-dos-examples">Real-World DoS Examples</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Application</th>
+          <th>Stars</th>
+          <th>Gadget</th>
+          <th>CVE</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ComfyUI</td>
+          <td>78.5K</td>
+          <td><code>__getattribute__</code> overwrite</td>
+          <td>CVE-2025-6107</td>
+      </tr>
+      <tr>
+          <td>RAGFlow</td>
+          <td>52.8K</td>
+          <td><code>__getattribute__</code> overwrite</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>Taipy</td>
+          <td>18.1K</td>
+          <td><code>__getattribute__</code> overwrite</td>
+          <td>CVE-2025-30374</td>
+      </tr>
+      <tr>
+          <td>Mesop</td>
+          <td>6.3K</td>
+          <td><code>__getattribute__</code> overwrite</td>
+          <td>CVE-2025-30358</td>
+      </tr>
+      <tr>
+          <td>sd-webui-controlnet</td>
+          <td>17.6K</td>
+          <td><code>__getattribute__</code> overwrite</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>stable-diffusion-webui-forge</td>
+          <td>10.9K</td>
+          <td><code>__getattribute__</code> overwrite</td>
+          <td>-</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="persistent-vs-transient-dos">Persistent vs. Transient DoS</h2>
+<ul>
+<li><strong>Persistent DoS</strong>: If the polluted class/module state is preserved across requests (e.g., in a long-running web server), the DoS persists until restart</li>
+<li><strong>Transient DoS</strong>: If each request creates fresh objects, the DoS only affects the current request</li>
+</ul>
+<p>Most web frameworks use persistent class objects, making <code>__getattribute__</code> overwrite a <strong>persistent DoS</strong> by default.</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

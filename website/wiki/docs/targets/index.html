@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution Targets | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" class="active">Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="class-pollution-targets">Class Pollution Targets</h1>
+<p>A <strong>pollution target</strong> is a runtime object that is reachable via attribute or item access and can affect program behavior. After class pollution happens, pollution targets can be accessed by the program in two ways:</p>
+<ol>
+<li><strong>Direct access</strong> — the attacker modifies the exact attribute that is later used (e.g., setting <code>a.b</code> and the program later reads <code>a.b</code>)</li>
+<li><strong>Indirect access</strong> — arises from Python&rsquo;s data model and reflective mechanism (e.g., modifying a class variable <code>cls.v</code> affects all instances&rsquo; <code>self.v</code>)</li>
+</ol>
+<h2 id="four-categories-of-pollution-targets">Four Categories of Pollution Targets</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Target</th>
+          <th>Access Mechanism</th>
+          <th>Newly Discovered?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Class</td>
+          <td>Attribute Lookup</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Module</td>
+          <td>Global Variable Reference</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Function (globals)</td>
+          <td>Global Variable Reference + Module Lookup</td>
+          <td><strong>Yes</strong></td>
+      </tr>
+      <tr>
+          <td>Function (kwdefaults)</td>
+          <td>Local Variable Reference</td>
+          <td><strong>Yes</strong></td>
+      </tr>
+      <tr>
+          <td>Function Closure</td>
+          <td>Local Variable Reference</td>
+          <td><strong>Yes</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>The <strong>function</strong> target (including closures) is a novel attack target discovered in this work.</p>
+<h2 id="how-indirect-access-works">How Indirect Access Works</h2>
+<p>Python&rsquo;s attribute resolution follows the <strong>Method Resolution Order (MRO)</strong>. When an attribute is not found on an instance, Python looks up the class hierarchy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>instance<span style="color:#f92672">.</span>attr
+</span></span><span style="display:flex;"><span>  instance<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]            <span style="color:#75715e"># 1. Instance dict</span>
+</span></span><span style="display:flex;"><span>  type(instance)<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]      <span style="color:#75715e"># 2. Class dict</span>
+</span></span><span style="display:flex;"><span>  base<span style="color:#f92672">.</span>__dict__[<span style="color:#e6db74">&#39;attr&#39;</span>]               <span style="color:#75715e"># 3. Base classes (MRO)</span>
+</span></span></code></pre></div><p>This means polluting a <strong>class variable</strong> affects all instances that don&rsquo;t explicitly override it.</p>
+<p>Similarly, Python functions carry references to their defining module&rsquo;s globals (<code>f.__globals__</code>), enabling module-level pollution through any accessible function.</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

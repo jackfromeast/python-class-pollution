@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" class="active">Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="defense-against-class-pollution">Defense Against Class Pollution</h1>
+<p>Defense against Python class pollution can be applied along the object resolution path — either at the &ldquo;get&rdquo; primitives or right before the &ldquo;set&rdquo; primitive.</p>
+<h2 id="strategy-1-key-sanitization">Strategy 1: Key Sanitization</h2>
+<p>Sanitize the reflective lookup keys by filtering out attacker-controlled access to dangerous attributes.</p>
+<h3 id="approach-1a-filter-specific-dangerous-attributes">Approach 1A: Filter Specific Dangerous Attributes</h3>
+<p>Block known dangerous attributes like <code>__globals__</code>, <code>__class__</code>, <code>__init__</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DANGEROUS_ATTRS <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;__globals__&#34;</span>, <span style="color:#e6db74">&#34;__class__&#34;</span>, <span style="color:#e6db74">&#34;__init__&#34;</span>, <span style="color:#e6db74">&#34;__subclasses__&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;__bases__&#34;</span>, <span style="color:#e6db74">&#34;__mro__&#34;</span>, <span style="color:#e6db74">&#34;__dict__&#34;</span>, <span style="color:#e6db74">&#34;__getattribute__&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">safe_update</span>(obj, key_path, value):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> key_path<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">in</span> DANGEROUS_ATTRS:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Access to &#39;</span><span style="color:#e6db74">{</span>key<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; is not allowed&#34;</span>)
+</span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, key)
+</span></span></code></pre></div>
+**Limitation**: This is often incomplete. An attacker can bypass by selecting alternate gadgets or modifying class methods that aren't in the blocklist. This approach was used by Pydash and is considered the weakest defense.
+
+
+<p><strong>Used by</strong>: Pydash</p>
+<h3 id="approach-1b-check-for-leadingtrailing-underscores">Approach 1B: Check for Leading/Trailing Underscores</h3>
+<p>Block any key that starts or ends with underscore(s):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">safe_update</span>(obj, key_path, value):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> key_path<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;_&#34;</span>) <span style="color:#f92672">or</span> key<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;_&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Access to private attribute &#39;</span><span style="color:#e6db74">{</span>key<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; is not allowed&#34;</span>)
+</span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, key)
+</span></span></code></pre></div><p><strong>Effectiveness</strong>: This effectively blocks access to all dunder attributes and private attributes, preventing traversal into Python&rsquo;s internal object structure.</p>
+<p><strong>Used by</strong>: Mesop (Google), Azure CLI (Microsoft)</p>
+<h3 id="approach-1c-disallow-dotted-key-paths">Approach 1C: Disallow Dotted Key Paths</h3>
+<p>Prevent path traversal entirely by disallowing dot-separated keys:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">safe_update</span>(obj, key, value):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">in</span> key:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Nested attribute access is not allowed&#34;</span>)
+</span></span><span style="display:flex;"><span>    setattr(obj, key, value)
+</span></span></code></pre></div><p><strong>Effectiveness</strong>: Eliminates the &ldquo;get&rdquo; primitive entirely — without multi-step traversal, class pollution cannot reach dangerous targets.</p>
+<p><strong>Used by</strong>: Taipy (after fix)</p>
+<h2 id="strategy-2-type-validation">Strategy 2: Type Validation</h2>
+<p>Validate object types before performing assignments. This prevents pollution even when attacker-controlled keys resolve to unintended objects.</p>
+<h3 id="approach-2a-restrict-to-known-types">Approach 2A: Restrict to Known Types</h3>
+<p>Only allow assignments to objects of expected types:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> fields, is_dataclass
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">safe_update</span>(obj, key, value):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> is_dataclass(obj):
+</span></span><span style="display:flex;"><span>        valid_fields <span style="color:#f92672">=</span> {f<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> fields(obj)}
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> valid_fields:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#39;</span><span style="color:#e6db74">{</span>key<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; is not a valid field&#34;</span>)
+</span></span><span style="display:flex;"><span>    setattr(obj, key, value)
+</span></span></code></pre></div><h3 id="approach-2b-validate-against-annotations">Approach 2B: Validate Against Annotations</h3>
+<p>Use type annotations to validate that the assigned value matches the expected type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">safe_update</span>(obj, key, value):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> hasattr(obj, <span style="color:#e6db74">&#39;__annotations__&#39;</span>):
+</span></span><span style="display:flex;"><span>        expected_type <span style="color:#f92672">=</span> obj<span style="color:#f92672">.</span>__annotations__<span style="color:#f92672">.</span>get(key)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> expected_type <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> isinstance(value, expected_type):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">TypeError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Expected </span><span style="color:#e6db74">{</span>expected_type<span style="color:#e6db74">}</span><span style="color:#e6db74">, got </span><span style="color:#e6db74">{</span>type(value)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    setattr(obj, key, value)
+</span></span></code></pre></div><h2 id="strategy-3-allowlist-based-access">Strategy 3: Allowlist-Based Access</h2>
+<p>Only allow access to explicitly declared attributes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SafeComponent</span>:
+</span></span><span style="display:flex;"><span>    _allowed_attrs <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;name&#34;</span>, <span style="color:#e6db74">&#34;email&#34;</span>, <span style="color:#e6db74">&#34;age&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>(self, key, value):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>_allowed_attrs:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Cannot set &#39;</span><span style="color:#e6db74">{</span>key<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;&#34;</span>)
+</span></span><span style="display:flex;"><span>        setattr(self, key, value)
+</span></span></code></pre></div><h2 id="comparison-of-defenses">Comparison of Defenses</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Defense</th>
+          <th>Completeness</th>
+          <th>Usability</th>
+          <th>Breaking Changes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Filter specific attrs</td>
+          <td>Low</td>
+          <td>High</td>
+          <td>None</td>
+      </tr>
+      <tr>
+          <td>Block underscores</td>
+          <td>High</td>
+          <td>Medium</td>
+          <td>May block legitimate private attrs</td>
+      </tr>
+      <tr>
+          <td>Disallow dots</td>
+          <td>Complete</td>
+          <td>Low</td>
+          <td>Breaks nested updates</td>
+      </tr>
+      <tr>
+          <td>Type validation</td>
+          <td>High</td>
+          <td>Medium</td>
+          <td>May reject valid polymorphic updates</td>
+      </tr>
+      <tr>
+          <td>Allowlist</td>
+          <td>Complete</td>
+          <td>Low</td>
+          <td>Requires explicit declaration</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="recommendations">Recommendations</h2>
+<ol>
+<li><strong>For new code</strong>: Use type validation (Strategy 2) with dataclasses or Pydantic models — this provides both safety and good developer experience</li>
+<li><strong>For existing code (quick fix)</strong>: Add underscore checking (Strategy 1B) — minimal code change, high effectiveness</li>
+<li><strong>For security-critical code</strong>: Use allowlist-based access (Strategy 3) — most restrictive but guarantees safety</li>
+</ol>
+
+**Key insight from our study**: The most effective real-world fixes check for leading/trailing underscores. This single check blocks the entire class pollution attack surface because all Python internal attributes use the dunder naming convention.
+
+
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

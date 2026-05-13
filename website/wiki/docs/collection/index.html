@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" class="active">Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="class-pollution-vulnerability-collection">Class Pollution Vulnerability Collection</h1>
+<p>A curated database of <strong>77+ confirmed vulnerable Python packages</strong> with proof-of-concept exploits. All vulnerabilities were discovered by Pyrl and verified through manual analysis.</p>
+<h2 id="summary-statistics">Summary Statistics</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Metric</th>
+          <th>Count</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Total vulnerable packages</td>
+          <td>77+</td>
+      </tr>
+      <tr>
+          <td>CVEs assigned</td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>Fixed by developers</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>Remote-triggerable</td>
+          <td>11</td>
+      </tr>
+      <tr>
+          <td>Local-triggerable</td>
+          <td>15</td>
+      </tr>
+      <tr>
+          <td>Package-level</td>
+          <td>21</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="vulnerabilities-with-cves">Vulnerabilities with CVEs</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Application</th>
+          <th>Stars</th>
+          <th>CVE</th>
+          <th>Consequence</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="https://github.com/adamghill/django-unicorn">django-unicorn</a></td>
+          <td>2.4K</td>
+          <td><a href="https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">CVE-2025-24370</a></td>
+          <td>DoS, XSS, RCE, Auth Bypass</td>
+          <td>Fixed</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/Azure/azure-cli">Azure CLI</a></td>
+          <td>4.1K</td>
+          <td><a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049">CVE-2025-24049</a></td>
+          <td>Token Leakage, OS Command Injection</td>
+          <td>Fixed</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/Avaiga/taipy">Taipy</a></td>
+          <td>19.2K</td>
+          <td><a href="https://github.com/Avaiga/taipy/security/advisories/">CVE-2025-30374</a></td>
+          <td>DoS, XSS, RCE, Token Leakage</td>
+          <td>Fixed</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/google/mesop">Mesop</a></td>
+          <td>5.7K</td>
+          <td><a href="https://github.com/google/mesop/security/advisories/">CVE-2025-30358</a></td>
+          <td>DoS, Remote Execution</td>
+          <td>Fixed</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a></td>
+          <td>78.5K</td>
+          <td><a href="https://github.com/comfyanonymous/ComfyUI/security/advisories/">CVE-2025-6107</a></td>
+          <td>DoS</td>
+          <td>Fixed</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/docarray/docarray">docarray</a></td>
+          <td>3.1K</td>
+          <td><a href="https://github.com/docarray/docarray/security/advisories/">CVE-2025-5150</a></td>
+          <td>DoS</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td><a href="https://github.com/nortikin/sverchok">sverchok</a></td>
+          <td>2.3K</td>
+          <td><a href="https://github.com/nortikin/sverchok/security/advisories/">CVE-2025-3982</a></td>
+          <td>Token Leakage</td>
+          <td>Reported</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="remote-triggerable-vulnerabilities-sorted-by-stars">Remote-Triggerable Vulnerabilities (Sorted by Stars)</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Application</th>
+          <th>Stars</th>
+          <th>Version</th>
+          <th>Get Primitive</th>
+          <th>Set Primitive</th>
+          <th>Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ComfyUI</td>
+          <td>78.5K</td>
+          <td>v0.3.39</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>RAGFlow</td>
+          <td>52.8K</td>
+          <td>v0.19.0</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>Taipy</td>
+          <td>19.2K</td>
+          <td>v4.0.3</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>DoS, XSS, RCE, TL</td>
+      </tr>
+      <tr>
+          <td>sd-webui-controlnet</td>
+          <td>17.6K</td>
+          <td>v1.1.436</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>stable-diffusion-webui-forge</td>
+          <td>10.9K</td>
+          <td>latest</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>Mesop</td>
+          <td>5.7K</td>
+          <td>v0.14.0</td>
+          <td>Constrained</td>
+          <td>Dual</td>
+          <td>DoS, RE</td>
+      </tr>
+      <tr>
+          <td>django-unicorn</td>
+          <td>2.4K</td>
+          <td>v0.62.0</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>DoS, XSS, RCE, AB</td>
+      </tr>
+      <tr>
+          <td>docarray</td>
+          <td>3.1K</td>
+          <td>v0.40.1</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>fastapi-amis-admin</td>
+          <td>1.3K</td>
+          <td>v0.7.3</td>
+          <td>Constrained</td>
+          <td>Dual</td>
+          <td>DoS</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="local-triggerable-vulnerabilities">Local-Triggerable Vulnerabilities</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Application</th>
+          <th>Stars</th>
+          <th>Version</th>
+          <th>Get Primitive</th>
+          <th>Set Primitive</th>
+          <th>Consequence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Azure CLI</td>
+          <td>4.1K</td>
+          <td>v2.68.0</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>TL, OSCI</td>
+      </tr>
+      <tr>
+          <td>sverchok</td>
+          <td>2.3K</td>
+          <td>v1.3.0</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>TL</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="pypi-package-vulnerabilities-sorted-by-weekly-downloads">PyPI Package Vulnerabilities (Sorted by Weekly Downloads)</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Package</th>
+          <th>Downloads</th>
+          <th>Version</th>
+          <th>Get Primitive</th>
+          <th>Set Primitive</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>accelerate</td>
+          <td>2.7M</td>
+          <td>v1.7.0</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>spaCy</td>
+          <td>2.6M</td>
+          <td>v3.8.7</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>magicattr</td>
+          <td>1.5M</td>
+          <td>v0.1.6</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>glom</td>
+          <td>1.4M</td>
+          <td>v24.11.0</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>Acknowledged</td>
+      </tr>
+      <tr>
+          <td>google-generativeai</td>
+          <td>1.3M</td>
+          <td>v0.8.5</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>diffusers</td>
+          <td>86.2K</td>
+          <td>v0.33.1</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>tf-keras</td>
+          <td>59.5K</td>
+          <td>v2.19.0</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>mo-dots</td>
+          <td>55.2K</td>
+          <td>v10.678.x</td>
+          <td>Agnostic</td>
+          <td>Dual</td>
+          <td>Reported</td>
+      </tr>
+      <tr>
+          <td>pykka</td>
+          <td>15.7K</td>
+          <td>v4.2.0</td>
+          <td>Constrained</td>
+          <td>Attr</td>
+          <td>Reported</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="full-collection">Full Collection</h2>
+<p>The complete collection with proof-of-concept code is available in the <a href="https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection"><code>cp-collection/</code></a> directory.</p>
+<p>Each entry includes:</p>
+<ul>
+<li><code>README.md</code> — Vulnerability metadata and code snippet</li>
+<li><code>poc/</code> — Proof-of-concept exploit code</li>
+<li><code>poc/requirements.txt</code> — Dependencies</li>
+<li><code>poc/run.sh</code> — Script to reproduce</li>
+</ul>
+<p><strong>Legend</strong>: TL = Token Leakage, OSCI = OS Command Injection, RE = Remote Execution, AB = Authentication Bypass</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

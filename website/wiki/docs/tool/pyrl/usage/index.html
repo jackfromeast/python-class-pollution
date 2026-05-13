@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="using-pyrl">Using Pyrl</h1>
+<p>Pyrl is a task-based scheduler that drives CodeQL analysis for class pollution detection.
+You point it at one or more Python packages (via PyPI URL, GitHub URL, or a text file
+listing many), and it builds CodeQL databases, runs the operational taint queries, and
+writes structured SARIF results.</p>
+<h2 id="entrypoint">Entrypoint</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyrl --config /path/to/config.yaml
+</span></span></code></pre></div><p>Or equivalently:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m pyrl --config /path/to/config.yaml
+</span></span></code></pre></div><p>An optional <code>--workflow</code> flag overrides the workflow specified in the config:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyrl --config config.yaml --workflow class_pollution
+</span></span><span style="display:flex;"><span>pyrl --config config.yaml --workflow dependency_analysis
+</span></span></code></pre></div><p>If <code>--workflow</code> is not passed, Pyrl reads it from the <code>WORKFLOW</code> section of the YAML.</p>
+<h2 id="configuration-file">Configuration file</h2>
+<p>All behavior is governed by a single YAML file. A full annotated template lives at
+<code>tmp/analyzer/config-example.yaml</code> in the repository. The minimal structure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">WORKFLOW</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">CLASS_POLLUTION_ANALYSIS</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">DEPENDENCY_ANALYSIS</span>: <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">SCHEDULER</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TEST_NAME</span>: <span style="color:#e6db74">&#34;my-scan&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">WORKSPACE</span>: <span style="color:#e6db74">&#34;tasks/my-scan&#34;</span>      <span style="color:#75715e"># results land here</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">MODE</span>: <span style="color:#e6db74">&#34;seed&#34;</span>                    <span style="color:#75715e"># &#34;seed&#34; (single repo), &#34;list&#34;, or &#34;json&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">REPO</span>: <span style="color:#e6db74">&#34;https://pypi.org/project/glom&#34;</span>   <span style="color:#75715e"># used when MODE=seed</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">REPO_LIST</span>: <span style="color:#e6db74">&#34;targets.txt&#34;</span>       <span style="color:#75715e"># used when MODE=list or json</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">URL_LIST_FROM</span>: <span style="color:#ae81ff">0</span>               <span style="color:#75715e"># slice the list (0-indexed)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">URL_LIST_TO</span>: -<span style="color:#ae81ff">1</span>                <span style="color:#75715e"># -1 = end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">MAX_WORKER</span>: <span style="color:#ae81ff">8</span>                  <span style="color:#75715e"># parallel workers</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TIMEOUT_PER_WORKER</span>: <span style="color:#ae81ff">1200</span>       <span style="color:#75715e"># seconds per package</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">CODEQL</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">CLI</span>: <span style="color:#e6db74">&#34;&#34;</span>                        <span style="color:#75715e"># path to `codeql` binary; leave empty to use $PATH</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">THREADS</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">RAM</span>: <span style="color:#ae81ff">8192</span>                      <span style="color:#75715e"># MB</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TIMEOUT</span>: <span style="color:#ae81ff">1200</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">USE_MODEL_PACK</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">MODEL_PACK</span>: <span style="color:#ae81ff">jackfromeast/class-pollution-model-pack@0.0.1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">CLASS_POLLUTION_ANALYSIS</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">QUERIES</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#34;src/pyrl/codeql/class-pollution-all/class-pollution.qls&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">DELETE_AFTER_QUERY</span>: <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">DELETE_IF_NO_FLOWS</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">LOG</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LOG_PATH</span>: <span style="color:#e6db74">&#34;&#34;</span>                   <span style="color:#75715e"># default: WORKSPACE/logs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LOG_TO_CONSOLE</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LOG_TO_LOCAL_FILE</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LOG_TO_GLOBAL_FILE</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LOG_RESULT</span>: <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LOG_LEVEL</span>: <span style="color:#e6db74">&#34;INFO&#34;</span>
+</span></span></code></pre></div><h3 id="key-settings-explained">Key settings explained</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>SCHEDULER.MODE</code></td>
+          <td><code>&quot;seed&quot;</code> to analyze a single <code>REPO</code>; <code>&quot;list&quot;</code> to read a newline-delimited file of URLs; <code>&quot;json&quot;</code> for a JSON array.</td>
+      </tr>
+      <tr>
+          <td><code>SCHEDULER.WORKSPACE</code></td>
+          <td>Base directory where CodeQL databases, results, and logs are written. Resolved relative to the project root.</td>
+      </tr>
+      <tr>
+          <td><code>SCHEDULER.MAX_WORKER</code></td>
+          <td>Number of packages analyzed in parallel (uses <code>ProcessPoolExecutor</code>).</td>
+      </tr>
+      <tr>
+          <td><code>CODEQL.USE_MODEL_PACK</code></td>
+          <td>Whether to pull the published CodeQL model pack for additional library models (improves recall on third-party sinks).</td>
+      </tr>
+      <tr>
+          <td><code>CLASS_POLLUTION_ANALYSIS.QUERIES</code></td>
+          <td>Path(s) to the <code>.qls</code> query suites Pyrl executes. The main suite is <code>class-pollution.qls</code>.</td>
+      </tr>
+      <tr>
+          <td><code>DELETE_IF_NO_FLOWS</code></td>
+          <td>If <code>True</code>, removes the CodeQL database after analysis when no taint flows were found (saves disk).</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="workflow-analyzing-a-single-package">Workflow: analyzing a single package</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 1. Create a minimal config</span>
+</span></span><span style="display:flex;"><span>cat &gt; scan-glom.yaml <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">WORKFLOW:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  CLASS_POLLUTION_ANALYSIS: True
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">SCHEDULER:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  TEST_NAME: scan-glom
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  WORKSPACE: tasks/scan-glom
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  MODE: seed
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  REPO: &#34;https://pypi.org/project/glom&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  MAX_WORKER: 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  TIMEOUT_PER_WORKER: 600
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">CODEQL:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  CLI: &#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  THREADS: 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  RAM: 4096
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  TIMEOUT: 600
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  USE_MODEL_PACK: True
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">CLASS_POLLUTION_ANALYSIS:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  QUERIES: [&#34;src/pyrl/codeql/class-pollution-all/class-pollution.qls&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  DELETE_AFTER_QUERY: False
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  DELETE_IF_NO_FLOWS: False
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">LOG:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  LOG_PATH: &#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  LOG_TO_CONSOLE: True
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  LOG_TO_LOCAL_FILE: True
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  LOG_TO_GLOBAL_FILE: True
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  LOG_RESULT: True
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  LOG_LEVEL: INFO
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Run</span>
+</span></span><span style="display:flex;"><span>pyrl --config scan-glom.yaml
+</span></span></code></pre></div><p>Pyrl will:</p>
+<ol>
+<li>Download the package source from PyPI.</li>
+<li>Build a CodeQL database under <code>tasks/scan-glom/output/glom/</code>.</li>
+<li>Run the <code>class-pollution.qls</code> query suite.</li>
+<li>Write SARIF results to the output directory.</li>
+<li>Log a summary to <code>tasks/scan-glom/logs/</code> and to stdout.</li>
+</ol>
+<h2 id="workflow-batch-analysis">Workflow: batch analysis</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># targets.txt — one URL per line</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://pypi.org/project/glom</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://pypi.org/project/pydash</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://github.com/Avaiga/taipy</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pyrl --config batch-config.yaml
+</span></span></code></pre></div><p>With <code>MODE: list</code> and <code>REPO_LIST: targets.txt</code>, Pyrl spawns up to <code>MAX_WORKER</code> parallel
+processes, each downloading, building, and querying one package. Results land in
+<code>WORKSPACE/output/&lt;package-name&gt;/</code>.</p>
+<h2 id="interpreting-results">Interpreting results</h2>
+<p>Results are written as SARIF (Static Analysis Results Interchange Format) JSON. Each
+finding includes:</p>
+<ul>
+<li>The <strong>source</strong> location (where attacker input enters).</li>
+<li>The <strong>sink</strong> location (the <code>setattr</code> / <code>__setitem__</code> call).</li>
+<li>The <strong>taint flow</strong> — a sequence of labeled steps from source to sink.</li>
+<li>The <strong>vulnerability type</strong> classification (e.g. <code>Constrained-Get × Attr-Set</code>).</li>
+</ul>
+<p>Pyrl also writes a one-line summary to the result log at <code>WORKSPACE/logs/result.log</code>:</p>
+<pre tabindex="0"><code>[VULN] glom | Agnostic-Get × Dual-Set | source=glom/core.py:412 | sink=glom/core.py:485 | input=Package
+</code></pre><h3 id="taint-labels">Taint labels</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Label</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>T_INPUT</code></td>
+          <td>Direct attacker-controlled value at the entry point</td>
+      </tr>
+      <tr>
+          <td><code>T_ENUM</code></td>
+          <td>Value derived by iterating/splitting <code>T_INPUT</code></td>
+      </tr>
+      <tr>
+          <td><code>T_KEY</code></td>
+          <td>A key derived from enumeration (potential attribute/item name)</td>
+      </tr>
+      <tr>
+          <td><code>T_OBJ</code></td>
+          <td>Object resolved through a tainted key</td>
+      </tr>
+      <tr>
+          <td><code>G_ATTR</code></td>
+          <td>Resolution was via attribute access (<code>getattr</code>)</td>
+      </tr>
+      <tr>
+          <td><code>G_ITEM</code></td>
+          <td>Resolution was via item access (<code>obj[key]</code>)</td>
+      </tr>
+  </tbody>
+</table>
+<p>The &ldquo;get&rdquo; primitive is classified by which resolution labels appear: if both <code>G_ATTR</code> and
+<code>G_ITEM</code> appear, it is <em>Agnostic-Get</em>; if only <code>G_ATTR</code>, it is <em>Constrained-Get</em>.</p>
+<h2 id="dependency-analysis-workflow">Dependency analysis workflow</h2>
+<p>The <code>dependency_analysis</code> workflow runs a separate set of queries that identify library
+models — sources, sinks, and taint propagation summaries for third-party packages.
+These models feed back into the main <code>class_pollution</code> queries via the
+<code>USE_MODEL_PACK</code> mechanism.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyrl --config dep-config.yaml --workflow dependency_analysis
+</span></span></code></pre></div><h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="no-repositories-to-process">&ldquo;No repositories to process&rdquo;</h3>
+<p>Check <code>SCHEDULER.MODE</code> and the corresponding <code>REPO</code> or <code>REPO_LIST</code> path.</p>
+<h3 id="codeql-timeout">CodeQL timeout</h3>
+<p>Increase <code>CODEQL.TIMEOUT</code> and <code>SCHEDULER.TIMEOUT_PER_WORKER</code>. Large packages (&gt;100K LOC)
+may need 30+ minutes.</p>
+<h3 id="model-pack-resolution-failure">Model pack resolution failure</h3>
+<p>Ensure <code>codeql pack download jackfromeast/class-pollution-model-pack@0.0.1</code> works in your
+environment (requires GitHub package registry access).</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

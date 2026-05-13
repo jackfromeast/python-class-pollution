@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution Primitives | Python Class Pollution</title>
+    <link rel="stylesheet" href="/wiki/css/wiki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="wiki-layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="/">Class Pollution Wiki</a>
+            </div>
+            <ul class="sidebar-nav">
+
+
+    
+    <li>
+        <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/taxonomy/primitives/" class="active">Pollution Primitives</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
+            
+            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/targets/" >Pollution Targets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/targets/classes/" >Classes</a></li>
+            
+            <li><a href="/wiki/docs/targets/modules/" >Modules</a></li>
+            
+            <li><a href="/wiki/docs/targets/functions/" >Functions</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/gadgets/" >Gadgets</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/gadgets/rce/" >RCE Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/tool/" >Tool</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/tool/pyrl/" >Pyrl</a></li>
+            
+            <li><a href="/wiki/docs/tool/polluter/" >Polluter</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/collection/" >Collection</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/defense/" >Defense</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/reference/" >Reference</a>
+        
+        <ul>
+            
+            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
+            
+        </ul>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/faq/" >FAQ</a>
+        
+    </li>
+    
+    <li>
+        <a href="/wiki/docs/history/" >History</a>
+        
+    </li>
+    
+
+</ul>
+
+        </nav>
+        <main class="content">
+            
+<article>
+    <h1 id="pollution-primitives">Pollution Primitives</h1>
+<p>Class pollution vulnerabilities consist of multiple object access steps followed by a final object assignment step. Each step is defined as a <strong>primitive</strong> — with object access treated as a &ldquo;get&rdquo; primitive and the final assignment as a &ldquo;set&rdquo; primitive.</p>
+<h2 id="atomic-get-operations">Atomic &ldquo;Get&rdquo; Operations</h2>
+<p>Python supports two atomic &ldquo;get&rdquo; operations that differ in their working namespace and reachability:</p>
+<h3 id="attribute-access">Attribute Access</h3>
+<p>Retrieves values from the <strong>attribute namespace</strong>, supported by all Python objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>getattr(obj, key)              <span style="color:#75715e"># Most common</span>
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>__dict__[name]             <span style="color:#75715e"># Direct dict access</span>
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span><span style="color:#a6e22e">__getattribute__</span>(name)     <span style="color:#75715e"># Explicit call</span>
+</span></span><span style="display:flex;"><span>vars(obj)[name]                <span style="color:#75715e"># Via vars()</span>
+</span></span><span style="display:flex;"><span>inspect<span style="color:#f92672">.</span>getmembers(obj)        <span style="color:#75715e"># Inspection</span>
+</span></span><span style="display:flex;"><span>object<span style="color:#f92672">.</span><span style="color:#a6e22e">__getattribute__</span>(obj, name)  <span style="color:#75715e"># Builtins</span>
+</span></span></code></pre></div><p><strong>20 syntactic variants</strong> identified in the Python Standard Library (Table 1 of the paper).</p>
+<h3 id="item-access">Item Access</h3>
+<p>Retrieves elements using keys or indexes from the <strong>item namespace</strong>, only supported by container objects (dictionaries, lists, sets).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict[key]                      <span style="color:#75715e"># Most common (50.7M instances)</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>get(key)                  <span style="color:#75715e"># Safe get (8.6M instances)</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>pop(key)                  <span style="color:#75715e"># Get and remove (1.7M instances)</span>
+</span></span><span style="display:flex;"><span>operator<span style="color:#f92672">.</span>getitem(dict, key)    <span style="color:#75715e"># Operator module</span>
+</span></span><span style="display:flex;"><span>operator<span style="color:#f92672">.</span><span style="color:#a6e22e">__getitem__</span>(dict, key) <span style="color:#75715e"># Explicit</span>
+</span></span></code></pre></div>
+**Key Insight**: Attribute and item access operate on different namespaces. An attribute cannot be accessed using item lookup, and vice versa. This is a fundamental difference from JavaScript where property access is uniform.
+
+
+<h2 id="atomic-set-operations">Atomic &ldquo;Set&rdquo; Operations</h2>
+<h3 id="attribute-set-attr-set">Attribute Set (Attr-Set)</h3>
+<p>Sets attributes on objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>__dict__[name] <span style="color:#f92672">=</span> val       <span style="color:#75715e"># 437.8K packages</span>
+</span></span><span style="display:flex;"><span>setattr(obj, name, val)        <span style="color:#75715e"># 214.3K packages</span>
+</span></span><span style="display:flex;"><span>object<span style="color:#f92672">.</span><span style="color:#a6e22e">__setattr__</span>(obj, name, val)  <span style="color:#75715e"># 11.4K packages</span>
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span><span style="color:#a6e22e">__setattr__</span>(name, val)     <span style="color:#75715e"># 10.4K packages</span>
+</span></span></code></pre></div><h3 id="item-set-item-set">Item Set (Item-Set)</h3>
+<p>Sets items in container objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict[key] <span style="color:#f92672">=</span> val                <span style="color:#75715e"># 7.7M packages (36.8K)</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>update(key<span style="color:#f92672">=</span>val)           <span style="color:#75715e"># 687.8K packages (22.7K)</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>setdefault(key, val)      <span style="color:#75715e"># 111.1K packages</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span><span style="color:#a6e22e">__setitem__</span>(key, val)     <span style="color:#75715e"># 7.7K packages</span>
+</span></span></code></pre></div><h3 id="dual-set-evalexec">Dual Set (eval/exec)</h3>
+<p>Can perform both attribute and item assignment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>exec(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;EXPR†&#34;</span>, {<span style="color:#e6db74">&#34;o&#34;</span>: obj})    <span style="color:#75715e"># 90 packages</span>
+</span></span><span style="display:flex;"><span>eval(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;EXPR‡&#34;</span>, {<span style="color:#e6db74">&#34;o&#34;</span>: obj})    <span style="color:#75715e"># 16 packages</span>
+</span></span></code></pre></div><h2 id="get-primitives">&ldquo;Get&rdquo; Primitives</h2>
+<p>The combination of atomic get operations forms two types of &ldquo;get&rdquo; primitives:</p>
+<h3 id="agnostic-get">Agnostic-Get</h3>
+<p>The attacker can freely choose between <code>getattr</code> and <code>getitem</code> at each access step.</p>
+<p>Formed in two ways:</p>
+<ol>
+<li>Through a <strong>control-flow branch</strong> that allows selection of different atomic gets across paths</li>
+<li>Dynamically via <strong>reflection functions</strong> such as <code>eval</code> and <code>exec</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example: Agnostic-Get via branching</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> hasattr(obj, key):
+</span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, key)     <span style="color:#75715e"># attribute access</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> isinstance(obj, dict):
+</span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> obj[key]              <span style="color:#75715e"># item access</span>
+</span></span></code></pre></div><h3 id="constrained-get">Constrained-Get</h3>
+<p>The attacker must follow a <strong>fixed access pattern</strong> imposed by the program logic — a chain of attribute access only.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example: Constrained-Get (attribute chain only)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> part <span style="color:#f92672">in</span> path<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>):
+</span></span><span style="display:flex;"><span>    obj <span style="color:#f92672">=</span> getattr(obj, part)
+</span></span></code></pre></div>
+**Note**: Item access alone cannot form a valid Constrained-Get primitive for class pollution, since it operates within container objects (dictionaries) and cannot affect shared runtime objects outside the container.
+
+
+<h2 id="set-primitives">&ldquo;Set&rdquo; Primitives</h2>
+<p>Three types based on the attacker&rsquo;s ability to set the final object:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Primitive</th>
+          <th>Description</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Dual-Set</strong></td>
+          <td>Can choose between attribute and item assignment</td>
+          <td><code>setattr(obj, key, val)</code> OR <code>obj[key] = val</code></td>
+      </tr>
+      <tr>
+          <td><strong>Attr-Set</strong></td>
+          <td>Restricted to attribute-based writes</td>
+          <td><code>setattr(obj, key, val)</code></td>
+      </tr>
+      <tr>
+          <td><strong>Item-Set</strong></td>
+          <td>Restricted to item-based writes</td>
+          <td><code>obj[key] = val</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="primitive-combinations-6-vulnerability-types">Primitive Combinations: 6 Vulnerability Types</h2>
+<p>The two &ldquo;get&rdquo; primitives combined with the three &ldquo;set&rdquo; primitives define <strong>six types</strong> of class pollution vulnerabilities:</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Dual-Set</th>
+          <th>Attr-Set</th>
+          <th>Item-Set</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Agnostic-Get</strong></td>
+          <td>Known</td>
+          <td><strong>New</strong></td>
+          <td><strong>New</strong></td>
+      </tr>
+      <tr>
+          <td><strong>Constrained-Get</strong></td>
+          <td><strong>New</strong></td>
+          <td><strong>New</strong></td>
+          <td><strong>New</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>The most prevalent type in practice is <strong>Constrained-Get × Attr-Set</strong> (617 reports out of 868).</p>
+
+</article>
+
+        </main>
+    </div>
+</body>
+</html>

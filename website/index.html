@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Class Pollution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>(All You Ever Wanted To Know About) <br> Python Class Pollution</h1>
+
+        <div class="links-bar">
+            <a href="wiki/docs/">Wiki</a>
+            <a href="https://jackfromeast.github.io/assets/Pyrl.pdf">Paper</a>
+            <a href="wiki/docs/tool/pyrl/">Tool</a>
+            <a href="wiki/docs/reference/cve-index/">Dataset</a>
+        </div>
+
+        <h2>What?</h2>
+        <img class="hero-icon" src="img/icon.png" alt="Python Class Pollution">
+        <p class="justified">
+            A class pollution vulnerability occurs when attacker-controlled input modifies unintended objects through Python's class-based inheritance model. It arises two core Python language design: (i) <strong>uniform data model</strong>, where every value is an object with attributes like <code>__class__</code> and <code>__globals__</code>, and (ii) its <strong>flexible reflection mechanism</strong>, such as dynamic <code>getattr</code> and <code>setattr</code>.
+        </p>
+        <p class="justified">
+            The attacker leverages a sequence of reflective attribute lookups with attacker-controlled names to traverse objects and modify attributes in unintended classes or modules. The exploitation of class pollution can lead to various severe consequences including remote code execution (RCE), authentication bypass, cross-site scripting (XSS), denial-of-service (DoS), etc.
+        </p>
+
+        <p>
+            This research was presented at <a href="https://www.ieee-security.org/TC/SP2025/">IEEE S&amp;P 2026</a> by Zhengyu Liu, Jiacheng Zhong, Jianjia Yu, Muxi Lyu, Zifeng Kang, and Yinzhi Cao.
+        </p>
+
+        <h2>History</h2>
+        <p>
+            Class pollution was <a href="https://blog.abdulrah33m.com/prototype-pollution-in-python/">first introduced</a> in 2023 by Abdulraheem Khaled <sup><a href="https://blog.abdulrah33m.com/prototype-pollution-in-python/">[1]</a></sup>, who disclosed a real-world vulnerability in the <a href="https://github.com/dgilland/pydash">pydash</a> library. It was originally called "Prototype Pollution in Python" due to its similarity to <a href="https://portswigger.net/web-security/prototype-pollution">JavaScript prototype pollution</a>.
+        </p>
+        <p>
+            Since then, only one additional CVE (<a href="https://nvd.nist.gov/vuln/detail/CVE-2024-5452">CVE-2024-5452</a>) was discovered before our study. In 2023, Ouyang <sup><a href="https://ieeexplore.ieee.org/abstract/document/10145365">[2]</a></sup> demonstrated the feasibility of class pollution attacks through a small, synthetic example. In 2024, Zhang <sup><a href="https://doi.org/10.54254/2755-2721/43/20230839">[3]</a></sup> explored an exploitation technique targeting global variables pollution and discussed two possible defenses.
+        </p>
+        <p>
+            Our work (2026) <sup><a href="https://jackfromeast.github.io/assets/Pyrl.pdf">[4]</a></sup> introduces a systematic taxonomy of class pollution (five of six variants are novel), an automated detection tool (Pyrl), and a large-scale measurement of class pollution vulnerabilities across the Python ecosystem&mdash;uncovering 47 zero-day vulnerabilities in widely used applications and packages.
+        </p>
+
+        <h2>How does it work?</h2>
+        <p>
+            Consider a common recursive update function intended to set nested fields of an object based on user input:
+        </p>
+
+        <pre><code class="language-python">def update(obj, data):
+    for key in data:
+        val = data[key]
+        if isinstance(val, dict):
+            update(getattr(obj, key), val)
+        else:
+            setattr(obj, key, val)
+
+# Attacker payload:
+update(user, {"__class__": {"__getattribute__": "1337"}})</code></pre>
+
+        <p>
+            If <code>data</code> is attacker-controlled, it can be crafted to access unintended objects by traversing Python's built-in attributes. In the example above, the attacker uses the key <code>__class__</code> to retrieve the class object of <code>user</code> via <code>getattr</code>, then sets its <code>__getattribute__</code> method to a non-callable string. Since Python implicitly invokes <code>__getattribute__</code> for all attribute accesses, this triggers a runtime exception on any access to <code>User</code> instances, resulting in a denial-of-service (DoS).
+        </p>
+
+        <p>
+            To further exploit class pollution toward severe consequences, e.g., RCE, XSS, auth bypass, we need to consider (i) <a href="wiki/docs/taxonomy/">pollution primitives</a> (how can attacker-controlled input resolve and modify objects), (ii) <a href="wiki/docs/targets/">pollution targets</a> (what are the valuable targets to pollute and how will they affect the Python runtime), and (iii) <a href="wiki/docs/gadgets/">gadgets</a> (how can polluted values lead to concrete impacts). See the <a href="wiki/docs/">full wiki</a> for details.
+        </p>
+
+        <h2>Attack Demonstrations</h2>
+        <p>
+            Here, we show a zero-day class pollution vulnerablity found in <a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">django-unicorn (CVE-2025-24370)</a> can be exploited to lead to the following four types of consequences:
+        </p>
+
+        <div class="demos">
+            <figure>
+                <img src="img/xss.gif" alt="Stored XSS via BeautifulSoup entity map overwrite">
+                <figcaption>Stored XSS via BeautifulSoup entity map overwrite</figcaption>
+            </figure>
+            <figure>
+                <img src="img/auth-bypass.gif" alt="Authentication bypass via Django SECRET_KEY pollution">
+                <figcaption>Authentication bypass via Django SECRET_KEY pollution</figcaption>
+            </figure>
+            <figure>
+                <img src="img/dos.gif" alt="Denial of Service via decorator corruption">
+                <figcaption>Denial of Service via decorator corruption</figcaption>
+            </figure>
+            <figure>
+                <img src="img/rce.gif" alt="Remote Code Execution via os.environ.BROWSER pollution">
+                <figcaption>Remote Code Execution via os.environ.BROWSER pollution</figcaption>
+            </figure>
+        </div>
+
+        <h2>CVEs At a Glance</h2>
+        <p>
+            We applied our detection tool <strong>Pyrl</strong> to over <strong>671K</strong> Python packages from GitHub and PyPI. It reported <strong>868</strong> alerts, of which <strong>47</strong> were confirmed as exploitable zero-day vulnerabilities:
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Application</th>
+                    <th>CVE</th>
+                    <th>Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Azure CLI</td>
+                    <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24049">CVE-2025-24049</a></td>
+                    <td>RCE, Token Leakage</td>
+                </tr>
+                <tr>
+                    <td>Django Unicorn</td>
+                    <td><a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">CVE-2025-24370</a></td>
+                    <td>RCE, XSS, Auth Bypass, DoS</td>
+                </tr>
+                <tr>
+                    <td>Taipy</td>
+                    <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30374">CVE-2025-30374</a></td>
+                    <td>RCE, XSS, DoS</td>
+                </tr>
+                <tr>
+                    <td>Mesop</td>
+                    <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30358">CVE-2025-30358</a></td>
+                    <td>DoS</td>
+                </tr>
+                <tr>
+                    <td>ComfyUI</td>
+                    <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6107">CVE-2025-6107</a></td>
+                    <td>DoS</td>
+                </tr>
+                <tr>
+                    <td>RAGFlow</td>
+                    <td>Pending</td>
+                    <td>DoS</td>
+                </tr>
+                <tr>
+                    <td>Hugging Face Diffusers</td>
+                    <td>Pending</td>
+                    <td>DoS</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Citation</h2>
+        <pre><code class="nohighlight">@inproceedings{liu2026classpollution,
+  title={The First Large-Scale Systematic Study of Python Class Pollution Vulnerability},
+  author={Liu, Zhengyu and Zhong, Jiacheng and Yu, Jianjia and Lyu, Muxi and Kang, Zifeng and Cao, Yinzhi},
+  booktitle={2026 IEEE Symposium on Security and Privacy (SP)},
+  year={2026}
+}</code></pre>
+
+        <br>
+        <small>Last updated: May 12, 2026.</small>
+    </div>
+
+    <style>
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            color: #000;
+            font-size: 2.0rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .links-bar {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 30px;
+        }
+
+        .links-bar a {
+            color: #0070f3;
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .links-bar a:hover {
+            color: #3291ff;
+        }
+
+        .hero-icon {
+            float: right;
+            width: 180px;
+            margin: 20px 0 15px 30px;
+            border-radius: 8px;
+        }
+
+        .justified {
+            text-align: justify;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 1.5rem;
+            margin-top: 25px;
+            margin-bottom: 0;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0070f3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            font-family: Menlo, Monaco, Consolas, monospace;
+            font-size: 0.85em;
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        pre {
+            background: #f8f8f8;
+            border-radius: 6px;
+            padding: 15px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border: 1px solid #eee;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.8em;
+            line-height: 1.5;
+            border: none;
+        }
+
+        pre code.hljs {
+            background: none;
+            padding: 0;
+            border: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 600;
+            color: #000;
+        }
+
+        ul {
+            color: #333;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .demos figure {
+            margin: 20px 0;
+        }
+
+        .demos img {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .demos figcaption {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        small {
+            color: #666;
+            font-size: 0.85em;
+        }
+    </style>
+
+</body>
+</html>
