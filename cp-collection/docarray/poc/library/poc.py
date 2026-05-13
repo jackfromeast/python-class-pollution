@@ -2,17 +2,18 @@
 # Class Pollution Func: MultiModalDataset.__getitem__
 # Type: get-attr-set-attr
 
+from typing import Any
 from docarray import BaseDoc
 from docarray.data import MultiModalDataset
-
-class MyDoc(BaseDoc):
-  text: str = "hello"
 
 class Target: pass
 target = Target()
 
-docs = [MyDoc(text="test")]
-docs[0].target = target
+class MyDoc(BaseDoc):
+  text: str = "hello"
+  target: Any = None
+
+docs = [MyDoc(text="test", target=target)]
 
 payload_value = "pwnd"
 

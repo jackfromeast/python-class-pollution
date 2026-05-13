@@ -2,7 +2,7 @@
 # Class Pollution Func: update_args
 # Type: get-attr-set-attr
 
-from deepdoctection.utils.metacfg import AttrDict
+from dd_core.utils.metacfg import AttrDict
 
 class Target: pass
 target = Target()

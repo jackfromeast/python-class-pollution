@@ -1,2 +1,2 @@
-setuptools<70
+setuptools==69.5.1
 edsnlp==0.15.0

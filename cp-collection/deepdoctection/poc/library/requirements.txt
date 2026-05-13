@@ -1,1 +1,1 @@
-deepdoctection
+deepdoctection==1.2.10

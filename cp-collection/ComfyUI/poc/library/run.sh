@@ -2,7 +2,13 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV_PATH="$SCRIPT_DIR/venv"
-REQUIREMENTS_FILE="$SCRIPT_DIR/requirements.txt"
+LIB_DIR="$SCRIPT_DIR/repo"
+
+# Clone ComfyUI if not already present
+if [ ! -d "$LIB_DIR" ]; then
+    echo "[+] Cloning ComfyUI..."
+    git clone --depth 1 https://github.com/comfyanonymous/ComfyUI.git "$LIB_DIR"
+fi
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "$VENV_PATH" ]; then
@@ -13,12 +19,12 @@ fi
 # Activate virtual environment
 source "$VENV_PATH/bin/activate"
 
-# Install requirements
-if [ -f "$REQUIREMENTS_FILE" ]; then
-    echo "[+] Installing dependencies..."
-    pip install -r "$REQUIREMENTS_FILE" -q
+# Install ComfyUI's own dependencies
+if [ -f "$LIB_DIR/requirements.txt" ]; then
+    echo "[+] Installing ComfyUI dependencies..."
+    pip install -r "$LIB_DIR/requirements.txt" -q
 fi
 
-# Run the PoC
+# Run the PoC with repo on PYTHONPATH
 echo "[+] Running PoC..."
-python "$SCRIPT_DIR/poc.py"
+PYTHONPATH="$LIB_DIR:$PYTHONPATH" python "$SCRIPT_DIR/poc.py"
