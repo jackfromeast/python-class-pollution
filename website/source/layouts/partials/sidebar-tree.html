@@ -1,0 +1,17 @@
+<ul class="sidebar-nav">
+{{ $section := site.GetPage "docs" }}
+{{ if $section }}
+    {{ range $section.Pages.ByWeight }}
+    <li>
+        <a href="{{ .RelPermalink }}" {{ if eq $.RelPermalink .RelPermalink }}class="active"{{ end }}>{{ .Title }}</a>
+        {{ if .Pages }}
+        <ul>
+            {{ range .Pages.ByWeight }}
+            <li><a href="{{ .RelPermalink }}" {{ if eq $.RelPermalink .RelPermalink }}class="active"{{ end }}>{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </li>
+    {{ end }}
+{{ end }}
+</ul>

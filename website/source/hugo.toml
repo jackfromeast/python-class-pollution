@@ -1,0 +1,19 @@
+baseURL = "/wiki/"
+locale = "en-us"
+title = "Python Class Pollution"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+
+[outputs]
+  home = ["HTML"]
