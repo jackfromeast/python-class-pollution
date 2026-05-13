@@ -21,7 +21,7 @@
             <a href="wiki/docs/reference/cve-index/">Dataset</a>
         </div>
 
-        <h2>What?</h2>
+        <h2>What is Python class pollution?</h2>
         <img class="hero-icon" src="img/icon.png" alt="Python Class Pollution">
         <p class="justified">
             A class pollution vulnerability occurs when attacker-controlled input modifies unintended objects through Python's class-based inheritance model. It arises two core Python language design: (i) <strong>uniform data model</strong>, where every value is an object with attributes like <code>__class__</code> and <code>__globals__</code>, and (ii) its <strong>flexible reflection mechanism</strong>, such as dynamic <code>getattr</code> and <code>setattr</code>.
@@ -69,7 +69,7 @@ update(user, {"__class__": {"__getattribute__": "1337"}})</code></pre>
             To further exploit class pollution toward severe consequences, e.g., RCE, XSS, auth bypass, we need to consider (i) <a href="wiki/docs/taxonomy/">pollution primitives</a> (how can attacker-controlled input resolve and modify objects), (ii) <a href="wiki/docs/targets/">pollution targets</a> (what are the valuable targets to pollute and how will they affect the Python runtime), and (iii) <a href="wiki/docs/gadgets/">gadgets</a> (how can polluted values lead to concrete impacts). See the <a href="wiki/docs/">full wiki</a> for details.
         </p>
 
-        <h2>Attack Demonstrations</h2>
+        <h2>Attack demonstrations</h2>
         <p>
             Here, we show a zero-day class pollution vulnerablity found in <a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">django-unicorn (CVE-2025-24370)</a> can be exploited to lead to the following four types of consequences:
         </p>
@@ -93,7 +93,7 @@ update(user, {"__class__": {"__getattribute__": "1337"}})</code></pre>
             </figure>
         </div>
 
-        <h2>CVEs At a Glance</h2>
+        <h2>CVEs at a glance</h2>
         <p>
             We applied our detection tool <strong>Pyrl</strong> to over <strong>671K</strong> Python packages from GitHub and PyPI. It reported <strong>868</strong> alerts, of which <strong>47</strong> were confirmed as exploitable zero-day vulnerabilities:
         </p>
