@@ -1,3 +1,4 @@
 django-unicorn==0.61.0
 django
+whitenoise
 requests

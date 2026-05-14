@@ -1,4 +1,5 @@
-docarray
+docarray==0.41.0
+torch==2.11.0
 fastapi
 uvicorn
 requests

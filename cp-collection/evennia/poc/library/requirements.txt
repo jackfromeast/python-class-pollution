@@ -1,1 +1,1 @@
-evennia
+evennia==4.5.0

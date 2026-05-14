@@ -21,13 +21,13 @@ if [ -f "$REQUIREMENTS_FILE" ]; then
 fi
 
 # Start server in background
-echo "[+] Starting docarray API server..."
-python "$APP_DIR/main.py" &>/dev/null &
+echo "[+] Starting Thesis Processing API (FastAPI + docarray)..."
+python "$APP_DIR/main.py" &
 SERVER_PID=$!
 
 # Wait for server to be ready
 echo "[+] Waiting for server to start..."
-for i in $(seq 1 15); do
+for i in $(seq 1 30); do
     if curl -s http://localhost:8080/docs > /dev/null 2>&1; then
         break
     fi
@@ -35,7 +35,8 @@ for i in $(seq 1 15); do
 done
 
 # Run the PoC
-echo "[+] Running PoC (HTTP class pollution trigger)..."
+echo "[+] Running PoC (DoS via MultiModalDataset class pollution)..."
+echo ""
 python "$SCRIPT_DIR/poc.py"
 
 # Cleanup
