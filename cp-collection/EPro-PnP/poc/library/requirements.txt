@@ -1,2 +1,3 @@
-# EPro-PnP is not on PyPI, install from git
-git+https://github.com/tjiiv-cprg/EPro-PnP.git#subdirectory=EPro-PnP-Det
+# EPro-PnP cannot be pip-installed (requires mmcv/mmdet C extensions).
+# The PoC downloads the vulnerable source file directly from GitHub.
+# Pinned commit: 21269649033c464c2c9d829ee9bad09ef6839320

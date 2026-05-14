@@ -20,36 +20,24 @@ if [ -f "$REQUIREMENTS_FILE" ]; then
     pip install -r "$REQUIREMENTS_FILE" -q
 fi
 
-# Start Django server in background
-echo "[+] Starting Django app from: $APP_DIR"
 cd "$APP_DIR"
-python manage.py runserver 0.0.0.0:8000 &>/dev/null &
-SERVER_PID=$!
-cd "$SCRIPT_DIR"
+python manage.py migrate -v 0
+python manage.py collectstatic --noinput -v 0
 
-# Wait for server to be ready
-echo "[+] Waiting for server to start..."
-for i in $(seq 1 15); do
-    if curl -s http://localhost:8000/ > /dev/null 2>&1; then
-        break
-    fi
-    sleep 1
-done
-
-# Run the basic class pollution trigger
-echo "[+] Running PoC (basic class pollution trigger)..."
-python "$SCRIPT_DIR/poc.py"
-
+# Start Django server
+echo "[+] Starting NovaMart demo at http://localhost:8000"
+ADMIN_TOKEN=$(DJANGO_SETTINGS_MODULE=settings python -c "from django.core.signing import Signer; print(Signer().sign('admin'))")
+echo "[+] Admin API token: $ADMIN_TOKEN"
+echo "[+] Dashboard: http://localhost:8000/api/admin/dashboard/?token=$ADMIN_TOKEN"
 echo ""
 echo "[*] Exploit scripts available in exploit/:"
-echo "    - poc-xss-reflected.py   (Reflected XSS via bs4 sanitizer overwrite)"
-echo "    - poc-xss-stored.py      (Stored XSS via MORPHER_NAMES + json_script_escapes)"
-echo "    - poc-xss-errorpage.py   (Stored XSS via Django error page template)"
-echo "    - poc-auth-bypass.py     (Auth bypass via SECRET_KEY overwrite)"
+echo "    - poc-rce.py             (RCE via os.environ.BROWSER + antigravity)"
 echo "    - poc-dos.py             (DoS via timed decorator overwrite)"
-
-# Cleanup
+echo "    - poc-auth-bypass.py     (Auth bypass via SECRET_KEY overwrite)"
+echo "    - poc-xss-stored.py      (Stored XSS via MORPHER_NAMES + json_script)"
+echo "    - poc-xss-reflected.py   (Reflected XSS via bs4 sanitizer overwrite)"
+echo "    - poc-xss-errorpage.py   (Stored XSS via Django error page template)"
+echo "    - run-all.py             (Run all exploits sequentially)"
 echo ""
-echo "[+] Stopping server..."
-kill $SERVER_PID 2>/dev/null
-wait $SERVER_PID 2>/dev/null
+echo "[*] Press Ctrl+C to stop"
+python manage.py runserver 0.0.0.0:8000
