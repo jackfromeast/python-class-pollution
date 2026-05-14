@@ -26,6 +26,13 @@ jobs:
           cd website/source
           hugo --baseURL="/wiki/" --destination="../wiki"
 
+      - name: Build landing page
+        run: |
+          cd website/source-landing
+          hugo --destination="../_build"
+          cp ../_build/index.html ../index.html
+          rm -rf ../_build
+
       - name: Stage publish directory
         run: |
           mkdir -p _publish
