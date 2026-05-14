@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="generator" content="Hugo 0.161.1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Class Pollution</title>
@@ -12,45 +13,27 @@
 <body>
 
     <div class="container">
-        <h1>(All You Ever Wanted To Know About) <br> Python Class Pollution</h1>
-
-        <div class="links-bar">
-            <a href="wiki/docs/">Wiki</a>
-            <a href="https://jackfromeast.github.io/assets/Pyrl.pdf">Paper</a>
-            <a href="wiki/docs/tool/pyrl/">Tool</a>
-            <a href="wiki/docs/reference/cve-index/">Dataset</a>
-        </div>
-
-        <h2>What is Python class pollution?</h2>
-        <img class="hero-icon" src="img/icon.png" alt="Python Class Pollution">
-        <p class="justified">
-            A class pollution vulnerability occurs when attacker-controlled input modifies unintended objects through Python's class-based inheritance model. It arises two core Python language design: (i) <strong>uniform data model</strong>, where every value is an object with attributes like <code>__class__</code> and <code>__globals__</code>, and (ii) its <strong>flexible reflection mechanism</strong>, such as dynamic <code>getattr</code> and <code>setattr</code>.
-        </p>
-        <p class="justified">
-            The attacker leverages a sequence of reflective attribute lookups with attacker-controlled names to traverse objects and modify attributes in unintended classes or modules. The exploitation of class pollution can lead to various severe consequences including remote code execution (RCE), authentication bypass, cross-site scripting (XSS), denial-of-service (DoS), etc.
-        </p>
-
-        <p>
-            This research was presented at <a href="https://www.ieee-security.org/TC/SP2025/">IEEE S&amp;P 2026</a> by Zhengyu Liu, Jiacheng Zhong, Jianjia Yu, Muxi Lyu, Zifeng Kang, and Yinzhi Cao.
-        </p>
-
-        <h2>History</h2>
-        <p>
-            Class pollution was <a href="https://blog.abdulrah33m.com/prototype-pollution-in-python/">first introduced</a> in 2023 by Abdulraheem Khaled <sup><a href="https://blog.abdulrah33m.com/prototype-pollution-in-python/">[1]</a></sup>, who disclosed a real-world vulnerability in the <a href="https://github.com/dgilland/pydash">pydash</a> library. It was originally called "Prototype Pollution in Python" due to its similarity to <a href="https://portswigger.net/web-security/prototype-pollution">JavaScript prototype pollution</a>.
-        </p>
-        <p>
-            Since then, only one additional CVE (<a href="https://nvd.nist.gov/vuln/detail/CVE-2024-5452">CVE-2024-5452</a>) was discovered before our study. In 2023, Ouyang <sup><a href="https://ieeexplore.ieee.org/abstract/document/10145365">[2]</a></sup> demonstrated the feasibility of class pollution attacks through a small, synthetic example. In 2024, Zhang <sup><a href="https://doi.org/10.54254/2755-2721/43/20230839">[3]</a></sup> explored an exploitation technique targeting global variables pollution and discussed two possible defenses.
-        </p>
-        <p>
-            Our work (2026) <sup><a href="https://jackfromeast.github.io/assets/Pyrl.pdf">[4]</a></sup> introduces a systematic taxonomy of class pollution (five of six variants are novel), an automated detection tool (Pyrl), and a large-scale measurement of class pollution vulnerabilities across the Python ecosystem&mdash;uncovering 47 zero-day vulnerabilities in widely used applications and packages.
-        </p>
-
-        <h2>How does it work?</h2>
-        <p>
-            Consider a common recursive update function intended to set nested fields of an object based on user input:
-        </p>
-
-        <pre><code class="language-python">def update(obj, data):
+<h1>(All You Ever Wanted To Know About) <br> Python Class Pollution</h1>
+<div class="links-bar">
+    <a href="wiki/docs/">Wiki</a>
+    <a href="https://jackfromeast.github.io/assets/Pyrl.pdf">Paper</a>
+    <a href="wiki/docs/tool/pyrl/">Tool</a>
+    <a href="wiki/docs/reference/cve-index/">Dataset</a>
+</div>
+<h2>What is Python class pollution?</h2>
+<img class="hero-icon" src="img/icon.png" alt="Python Class Pollution">
+<p class="justified">
+Python class pollution is a vulnerability class where untrusted input allows attackers to modify unintended Python runtime objects. 
+ It arises from two core Python language features: (i) a <strong>uniform object model</strong>, where every value is an object and objects expose references to their classes, metadata, and related runtime state through built-in attributes such as <code>__class__</code>, <code>__base__</code>, <code>__dict__</code>, and <code>__globals__</code>; 
+ and (ii) <strong>flexible reflection mechanisms</strong>, such as dynamic <code>getattr</code> and <code>setattr</code>, which allow programs to access and modify attributes using runtime-determined names.
+</p>
+<p class="justified">
+The combination of these two language features becomes dangerous when a program performs a sequence of reflective attribute or item lookups using attacker-controlled names. These lookups may cause the program to traverse from an ordinary object to unintended runtime objects through those built-in attributes, and then modify their content that later affect program behavior. 
+ These modifications violate runtime integrity and can lead to severe consequences, including remote code execution (RCE), authentication bypass, cross-site scripting (XSS), denial of service (DoS), and token leakage.
+</p>
+<h2>How does it work?</h2>
+<p>Consider a common recursive update function intended to set nested fields of an object based on user input:</p>
+<pre><code class="language-python">def update(obj, data):
     for key in data:
         val = data[key]
         if isinstance(val, dict):
@@ -59,102 +42,98 @@
             setattr(obj, key, val)
 
 # Attacker payload:
-update(user, {"__class__": {"__getattribute__": "1337"}})</code></pre>
-
-        <p>
-            If <code>data</code> is attacker-controlled, it can be crafted to access unintended objects by traversing Python's built-in attributes. In the example above, the attacker uses the key <code>__class__</code> to retrieve the class object of <code>user</code> via <code>getattr</code>, then sets its <code>__getattribute__</code> method to a non-callable string. Since Python implicitly invokes <code>__getattribute__</code> for all attribute accesses, this triggers a runtime exception on any access to <code>User</code> instances, resulting in a denial-of-service (DoS).
-        </p>
-
-        <p>
-            To further exploit class pollution toward severe consequences, e.g., RCE, XSS, auth bypass, we need to consider (i) <a href="wiki/docs/taxonomy/">pollution primitives</a> (how can attacker-controlled input resolve and modify objects), (ii) <a href="wiki/docs/targets/">pollution targets</a> (what are the valuable targets to pollute and how will they affect the Python runtime), and (iii) <a href="wiki/docs/gadgets/">gadgets</a> (how can polluted values lead to concrete impacts). See the <a href="wiki/docs/">full wiki</a> for details.
-        </p>
-
-        <h2>Attack demonstrations</h2>
-        <p>
-            Here, we show a zero-day class pollution vulnerablity found in <a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">django-unicorn (CVE-2025-24370)</a> can be exploited to lead to the following four types of consequences:
-        </p>
-
-        <div class="demos">
-            <figure>
-                <img src="img/xss.gif" alt="Stored XSS via BeautifulSoup entity map overwrite">
-                <figcaption>Stored XSS via BeautifulSoup entity map overwrite</figcaption>
-            </figure>
-            <figure>
-                <img src="img/auth-bypass.gif" alt="Authentication bypass via Django SECRET_KEY pollution">
-                <figcaption>Authentication bypass via Django SECRET_KEY pollution</figcaption>
-            </figure>
-            <figure>
-                <img src="img/dos.gif" alt="Denial of Service via decorator corruption">
-                <figcaption>Denial of Service via decorator corruption</figcaption>
-            </figure>
-            <figure>
-                <img src="img/rce.gif" alt="Remote Code Execution via os.environ.BROWSER pollution">
-                <figcaption>Remote Code Execution via os.environ.BROWSER pollution</figcaption>
-            </figure>
-        </div>
-
-        <h2>CVEs at a glance</h2>
-        <p>
-            We applied our detection tool <strong>Pyrl</strong> to over <strong>671K</strong> Python packages from GitHub and PyPI. It reported <strong>868</strong> alerts, of which <strong>47</strong> were confirmed as exploitable zero-day vulnerabilities:
-        </p>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Application</th>
-                    <th>CVE</th>
-                    <th>Impact</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Azure CLI</td>
-                    <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24049">CVE-2025-24049</a></td>
-                    <td>RCE, Token Leakage</td>
-                </tr>
-                <tr>
-                    <td>Django Unicorn</td>
-                    <td><a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">CVE-2025-24370</a></td>
-                    <td>RCE, XSS, Auth Bypass, DoS</td>
-                </tr>
-                <tr>
-                    <td>Taipy</td>
-                    <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30374">CVE-2025-30374</a></td>
-                    <td>RCE, XSS, DoS</td>
-                </tr>
-                <tr>
-                    <td>Mesop</td>
-                    <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30358">CVE-2025-30358</a></td>
-                    <td>DoS</td>
-                </tr>
-                <tr>
-                    <td>ComfyUI</td>
-                    <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6107">CVE-2025-6107</a></td>
-                    <td>DoS</td>
-                </tr>
-                <tr>
-                    <td>RAGFlow</td>
-                    <td>Pending</td>
-                    <td>DoS</td>
-                </tr>
-                <tr>
-                    <td>Hugging Face Diffusers</td>
-                    <td>Pending</td>
-                    <td>DoS</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>Citation</h2>
-        <pre><code class="nohighlight">@inproceedings{liu2026classpollution,
+update(user, {&quot;__class__&quot;: {&quot;__getattribute__&quot;: &quot;1337&quot;}})
+</code></pre>
+<p>If <code>data</code> is attacker-controlled, it can be crafted to access unintended objects by traversing Python&rsquo;s built-in attributes. In the example above, the attacker uses the key <code>__class__</code> to retrieve the class object of <code>user</code> via <code>getattr</code>, then sets its <code>__getattribute__</code> method to a non-callable string. Since Python implicitly invokes <code>__getattribute__</code> for all attribute accesses, this triggers a runtime exception on any access to <code>User</code> instances, resulting in a denial-of-service (DoS).</p>
+<p>To further exploit class pollution toward severe consequences, e.g., RCE, XSS, authentication bypass, we need to consider (i) <a href="wiki/docs/taxonomy/">pollution primitives</a> (how can attacker-controlled input resolve and modify objects), (ii) <a href="wiki/docs/targets/">pollution targets</a> (what are the valuable targets to pollute and how will they affect the Python runtime), and (iii) <a href="wiki/docs/gadgets/">gadgets</a> (how can polluted values lead to concrete impacts). See the <a href="wiki/docs/">full wiki</a> for details.</p>
+<h2>Why does it matter?</h2>
+<p>Class pollution matters because it violates Python runtime integrity. Once unintended runtime objects are polluted, the modified values may flow into security-sensitive sinks and lead to serious consequences. As an example, we show how a zero-day class pollution vulnerability in <a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">django-unicorn (CVE-2025-24370)</a> can be exploited to cause four types of impact:</p>
+<div class="demos">
+    <figure>
+        <img src="img/xss.gif" alt="Stored XSS via BeautifulSoup entity map overwrite">
+        <figcaption>Stored XSS via BeautifulSoup entity map overwrite</figcaption>
+    </figure>
+    <figure>
+        <img src="img/auth-bypass.gif" alt="Authentication bypass via Django SECRET_KEY pollution">
+        <figcaption>Authentication bypass via Django SECRET_KEY pollution</figcaption>
+    </figure>
+    <figure>
+        <img src="img/dos.gif" alt="Denial of Service via decorator corruption">
+        <figcaption>Denial of Service via decorator corruption</figcaption>
+    </figure>
+    <figure>
+        <img src="img/rce.gif" alt="Remote Code Execution via os.environ.BROWSER pollution">
+        <figcaption>Remote Code Execution via os.environ.BROWSER pollution</figcaption>
+    </figure>
+</div>
+<p>For payloads and technical details, see the <a href="/wiki/docs/collection/showcases/django-unicorn/">full django-unicorn showcase</a>.</p>
+<h2>How to detect it?</h2>
+<p>To detect class pollution at scale, we built <strong>Pyrl</strong> (/pɜːrl/, &ldquo;Pearl&rdquo;), the <em>first</em> automated detection tool for Python class pollution. Pyrl introduces a novel static analysis called <em>operational taint analysis</em>, implemented on top of CodeQL, that precisely models the reflective attribute and item lookups used to traverse and modify objects, and tracks attacker-controlled inputs through them with a set of fine-grained, expressive semantic taint labels.</p>
+<p>Pyrl detects all six variants in our <a href="wiki/docs/taxonomy/">taxonomy</a>, performs exploitability checking, and uses barrier-node analysis to suppress false positives from key sanitization and type checks. Across over <strong>671K</strong> Python packages, it has identified <strong>47</strong> confirmed zero-day class pollution vulnerabilities.</p>
+<p>To run it on your own code, see the <a href="wiki/docs/tool/pyrl/">Pyrl documentation</a> for installation and usage.</p>
+<h2>CVEs at a glance</h2>
+<p>A selective list of the confirmed class pollution vulnerabilities:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Application</th>
+          <th>CVE</th>
+          <th>Impact</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Azure CLI</td>
+          <td><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24049">CVE-2025-24049</a></td>
+          <td>RCE, Token Leakage</td>
+      </tr>
+      <tr>
+          <td>Django Unicorn</td>
+          <td><a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">CVE-2025-24370</a></td>
+          <td>RCE, XSS, Auth Bypass, DoS</td>
+      </tr>
+      <tr>
+          <td>Taipy</td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30374">CVE-2025-30374</a></td>
+          <td>RCE, XSS, DoS</td>
+      </tr>
+      <tr>
+          <td>Mesop</td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30358">CVE-2025-30358</a></td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>ComfyUI</td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6107">CVE-2025-6107</a></td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>RAGFlow</td>
+          <td>Pending</td>
+          <td>DoS</td>
+      </tr>
+      <tr>
+          <td>Hugging Face Diffusers</td>
+          <td>Pending</td>
+          <td>DoS</td>
+      </tr>
+  </tbody>
+</table>
+<h2>History</h2>
+<p>Class pollution was <a href="https://blog.abdulrah33m.com/prototype-pollution-in-python/">first introduced</a> in 2023 by Abdulraheem Khaled <sup><a href="https://blog.abdulrah33m.com/prototype-pollution-in-python/">[1]</a></sup>, who disclosed a real-world vulnerability in the <a href="https://github.com/dgilland/pydash">pydash</a> library. It was originally called &ldquo;Prototype Pollution in Python&rdquo; due to its similarity to <a href="https://portswigger.net/web-security/prototype-pollution">JavaScript prototype pollution</a>.</p>
+<p>Since then, only one additional CVE (<a href="https://nvd.nist.gov/vuln/detail/CVE-2024-5452">CVE-2024-5452</a>) was discovered before our study. In 2023, Ouyang <sup><a href="https://ieeexplore.ieee.org/abstract/document/10145365">[2]</a></sup> demonstrated the feasibility of class pollution attacks through a small, synthetic example. In 2024, Zhang <sup><a href="https://doi.org/10.54254/2755-2721/43/20230839">[3]</a></sup> explored an exploitation technique targeting global variables pollution and discussed two possible defenses.</p>
+<p>Our work (2026) <sup><a href="https://jackfromeast.github.io/assets/Pyrl.pdf">[4]</a></sup> introduces a systematic taxonomy of class pollution (five of six variants are novel), an automated detection tool (Pyrl), and a large-scale measurement of class pollution vulnerabilities across the Python ecosystem, uncovering 47 zero-day vulnerabilities in widely used applications and packages.</p>
+<h2>Citation</h2>
+<p><a href="https://jackfromeast.github.io/assets/Pyrl.pdf">This research</a> was presented at IEEE S&amp;P 2026 by Zhengyu Liu, Jiacheng Zhong, Jianjia Yu, Muxi Lyu, Zifeng Kang, and Yinzhi Cao. Please feel free to cite our paper!</p>
+<pre><code class="nohighlight">@inproceedings{liu2026classpollution,
   title={The First Large-Scale Systematic Study of Python Class Pollution Vulnerability},
   author={Liu, Zhengyu and Zhong, Jiacheng and Yu, Jianjia and Lyu, Muxi and Kang, Zifeng and Cao, Yinzhi},
   booktitle={2026 IEEE Symposium on Security and Privacy (SP)},
   year={2026}
 }</code></pre>
+<br>
+<small>Last updated: May 12, 2026.</small>
 
-        <br>
-        <small>Last updated: May 12, 2026.</small>
     </div>
 
     <style>

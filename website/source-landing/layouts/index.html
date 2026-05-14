@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+    <div class="container">
+{{ .Content }}
+    </div>
+
+    <style>
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            color: #000;
+            font-size: 2.0rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .links-bar {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 30px;
+        }
+
+        .links-bar a {
+            color: #0070f3;
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .links-bar a:hover {
+            color: #3291ff;
+        }
+
+        .hero-icon {
+            float: right;
+            width: 180px;
+            margin: 20px 0 15px 30px;
+            border-radius: 8px;
+        }
+
+        .justified {
+            text-align: justify;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 1.5rem;
+            margin-top: 25px;
+            margin-bottom: 0;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0070f3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            font-family: Menlo, Monaco, Consolas, monospace;
+            font-size: 0.85em;
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        pre {
+            background: #f8f8f8;
+            border-radius: 6px;
+            padding: 15px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border: 1px solid #eee;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.8em;
+            line-height: 1.5;
+            border: none;
+        }
+
+        pre code.hljs {
+            background: none;
+            padding: 0;
+            border: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 600;
+            color: #000;
+        }
+
+        ul {
+            color: #333;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .demos figure {
+            margin: 20px 0;
+        }
+
+        .demos img {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .demos figcaption {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        small {
+            color: #666;
+            font-size: 0.85em;
+        }
+    </style>
+
+</body>
+</html>

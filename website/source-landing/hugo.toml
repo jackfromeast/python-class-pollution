@@ -1,0 +1,16 @@
+baseURL = "/"
+locale = "en-us"
+title = "Python Class Pollution"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = false
+  [markup.highlight]
+    codeFences = false
+
+[outputs]
+  home = ["HTML"]
