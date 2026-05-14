@@ -91,14 +91,14 @@ A selective list of the confirmed class pollution vulnerabilities:
 | Taipy | [CVE-2025-30374](https://nvd.nist.gov/vuln/detail/CVE-2025-30374) | RCE, XSS, DoS |
 | Mesop | [CVE-2025-30358](https://nvd.nist.gov/vuln/detail/CVE-2025-30358) | DoS |
 | ComfyUI | [CVE-2025-6107](https://nvd.nist.gov/vuln/detail/CVE-2025-6107) | DoS |
-| RAGFlow | Pending | DoS |
-| Hugging Face Diffusers | Pending | DoS |
+| docarray | [CVE-2025-5150](https://nvd.nist.gov/vuln/detail/CVE-2025-5150) | DoS |
+| sverchok | [CVE-2025-3982](https://nvd.nist.gov/vuln/detail/CVE-2025-3982) | Token Leakage |
 
 ## History
 
-Class pollution was [first introduced](https://blog.abdulrah33m.com/prototype-pollution-in-python/) in 2023 by Abdulraheem Khaled <sup>[[1]](https://blog.abdulrah33m.com/prototype-pollution-in-python/)</sup>, who disclosed a real-world vulnerability in the [pydash](https://github.com/dgilland/pydash) library. It was originally called "Prototype Pollution in Python" due to its similarity to [JavaScript prototype pollution](https://portswigger.net/web-security/prototype-pollution).
+Class pollution was [first introduced](https://blog.abdulrah33m.com/prototype-pollution-in-python/) in 2023 by Abdulraheem Khaled <sup>[[1]](https://blog.abdulrah33m.com/prototype-pollution-in-python/)</sup>, who disclosed a real-world vulnerability in the [pydash](https://github.com/dgilland/pydash) library. It was originally called "Prototype Pollution in Python" due to its similarity to [JavaScript prototype pollution](https://portswigger.net/web-security/prototype-pollution). The same work was also presented at [Black Hat MEA 2023](https://blackhatmea.com/session/prototype-pollution-bug-python) as *"Prototype Pollution-like Bug in Python"*, which introduced class pollution to the broader security community alongside example gadgets.
 
-Since then, only one additional CVE ([CVE-2024-5452](https://nvd.nist.gov/vuln/detail/CVE-2024-5452)) was discovered before our study. In 2023, Ouyang <sup>[[2]](https://ieeexplore.ieee.org/abstract/document/10145365)</sup> demonstrated the feasibility of class pollution attacks through a small, synthetic example. In 2024, Zhang <sup>[[3]](https://doi.org/10.54254/2755-2721/43/20230839)</sup> explored an exploitation technique targeting global variables pollution and discussed two possible defenses.
+Since then, only one additional CVE ([CVE-2024-5452](https://nvd.nist.gov/vuln/detail/CVE-2024-5452)) was discovered before our study. In 2023, Ouyang <sup>[[2]](https://ieeexplore.ieee.org/abstract/document/10145365)</sup> demonstrated the feasibility of class pollution attacks through a small, synthetic example. In 2024, Zhang <sup>[[3]](https://doi.org/10.54254/2755-2721/43/20230839)</sup> explored an possible exploitation technique targeting global variables pollution and discussed two possible defenses.
 
 Our work (2026) <sup>[[4]](https://jackfromeast.github.io/assets/Pyrl.pdf)</sup> introduces a systematic taxonomy of class pollution (five of six variants are novel), an automated detection tool (Pyrl), and a large-scale measurement of class pollution vulnerabilities across the Python ecosystem, uncovering 47 zero-day vulnerabilities in widely used applications and packages.
 
