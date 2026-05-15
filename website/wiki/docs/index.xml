@@ -7,26 +7,5 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="/wiki/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>FAQ</title>
-      <link>/wiki/docs/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/wiki/docs/faq/</guid>
-      <description>&lt;h1 id=&#34;frequently-asked-questions&#34;&gt;Frequently Asked Questions&lt;/h1&gt;&#xA;&lt;h2 id=&#34;how-is-this-different-from-javascript-prototype-pollution&#34;&gt;How is this different from JavaScript prototype pollution?&lt;/h2&gt;&#xA;&lt;p&gt;TODO: the object model is class-based, not prototype-based; Python has two namespaces&#xA;(attribute and item); there is no single root prototype to pollute — instead the attacker&#xA;reaches whichever class or module the traversal path leads to. See the&#xA;&lt;a href=&#34;/wiki/docs/#key-differences-from-javascript-prototype-pollution&#34;&gt;comparison table&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-does-traversal-through-dunder-attributes-work&#34;&gt;Why does traversal through dunder attributes work?&lt;/h2&gt;&#xA;&lt;p&gt;TODO: &lt;code&gt;getattr(obj, &amp;quot;__class__&amp;quot;)&lt;/code&gt; is perfectly valid Python. Dunder attributes are not&#xA;access-restricted; they are simply naming conventions. Python&amp;rsquo;s data model exposes&#xA;&lt;code&gt;__class__&lt;/code&gt;, &lt;code&gt;__init__&lt;/code&gt;, &lt;code&gt;__globals__&lt;/code&gt;, etc. on every object without any permission check.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>History</title>
-      <link>/wiki/docs/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/wiki/docs/history/</guid>
-      <description>&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;&#xA;&lt;p&gt;A brief history of prototype/class pollution in Python, from earliest public reports to&#xA;the present research.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2018--js-prototype-pollution-named&#34;&gt;2018 — JS prototype pollution named&lt;/h2&gt;&#xA;&lt;p&gt;TODO: Olivier Arteau&amp;rsquo;s thesis and Node.js advisory ecosystem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2021--silvanovich-systematizes-js-prototype-pollution&#34;&gt;2021 — Silvanovich systematizes JS prototype pollution&lt;/h2&gt;&#xA;&lt;p&gt;TODO: Natalie Silvanovich (Project Zero) publishes a comprehensive survey; community&#xA;interest grows in applying the pattern to other languages.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2022--abdulrah33m-demonstrates-pydashset_&#34;&gt;2022 — abdulrah33m demonstrates &lt;code&gt;pydash.set_&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;TODO: first public write-up showing that Python&amp;rsquo;s &lt;code&gt;getattr&lt;/code&gt;/&lt;code&gt;setattr&lt;/code&gt; loops enable the&#xA;same primitive. Disclosed via a blog post; &lt;code&gt;pydash&lt;/code&gt; patched by rejecting dunder keys.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting Started</title>
-      <link>/wiki/docs/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/wiki/docs/getting-started/</guid>
-      <description>&lt;h1 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h1&gt;&#xA;&lt;p&gt;This page helps different audiences navigate the wiki and get productive quickly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;for-security-researchers&#34;&gt;For security researchers&lt;/h2&gt;&#xA;&lt;p&gt;TODO: reading order — taxonomy → targets → gadgets → collection showcases.&#xA;Suggested background: familiarity with JS prototype pollution, Python&amp;rsquo;s data model chapter.&lt;/p&gt;&#xA;&lt;h2 id=&#34;for-bug-hunters-and-ctf-players&#34;&gt;For bug hunters and CTF players&lt;/h2&gt;&#xA;&lt;p&gt;TODO: jump to the showcases for end-to-end walkthroughs; the gadgets page catalogs&#xA;payload templates you can adapt; the collection lists 77+ confirmed sinks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;for-library-maintainers&#34;&gt;For library maintainers&lt;/h2&gt;&#xA;&lt;p&gt;TODO: start with the defense page; then use Pyrl to scan your codebase. If you maintain&#xA;a &lt;code&gt;set_nested_attr&lt;/code&gt;-style utility, the taxonomy tells you exactly what to block.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

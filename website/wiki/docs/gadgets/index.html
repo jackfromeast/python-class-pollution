@@ -14,22 +14,23 @@
     <div class="wiki-layout">
         <nav class="sidebar">
             <div class="sidebar-header">
-                <a href="/">Class Pollution Wiki</a>
+                <a href="/wiki/docs/">Class Pollution Wiki</a>
             </div>
             <ul class="sidebar-nav">
 
 
+    <li>
+        <a href="/wiki/docs/" >Overview</a>
+    </li>
     
     <li>
         <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
         
         <ul>
             
+            <li><a href="/wiki/docs/taxonomy/atomics/" >Get &amp; Set Atomics</a></li>
+            
             <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
             
         </ul>
         
@@ -59,9 +60,9 @@
             
             <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
             
-            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
-            
             <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
             
         </ul>
         
@@ -85,7 +86,7 @@
         
         <ul>
             
-            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases &amp; CVEs</a></li>
             
         </ul>
         
@@ -96,32 +97,6 @@
         
     </li>
     
-    <li>
-        <a href="/wiki/docs/reference/" >Reference</a>
-        
-        <ul>
-            
-            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
-            
-        </ul>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/faq/" >FAQ</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/history/" >History</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/getting-started/" >Getting Started</a>
-        
-    </li>
-    
 
 </ul>
 
@@ -129,79 +104,45 @@
         <main class="content">
             
 <article>
-    <h1 id="class-pollution-gadgets">Class Pollution Gadgets</h1>
-<p>A <strong>gadget</strong> is a specific pollution target + value combination that achieves a meaningful security consequence. Similar to ROP gadgets in binary exploitation or prototype pollution gadgets in JavaScript, class pollution gadgets chain the pollution primitive to a concrete impact.</p>
-<h2 id="gadget-structure">Gadget Structure</h2>
-<p>Each gadget consists of:</p>
-<ol>
-<li><strong>Pollution Key Path</strong> — The chain of attributes/items to traverse from the polluted object to the target</li>
-<li><strong>Example Value</strong> — The value to write at the target</li>
-<li><strong>Consequence</strong> — The security impact (RCE, XSS, DoS, Auth Bypass)</li>
-</ol>
-<h2 id="known-gadgets-from-django-unicorn-motivating-example">Known Gadgets from django-unicorn (Motivating Example)</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Consequence</th>
-          <th>Pollution Key Path</th>
-          <th>Example Value</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>DoS</td>
-          <td><code>__class__.__getattribute__</code></td>
-          <td><code>1337</code></td>
-          <td>Overwriting the attribute access handler to a non-callable</td>
-      </tr>
-      <tr>
-          <td>XSS</td>
-          <td><code>__init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.&lt;</code></td>
-          <td><code>&lt;script&gt;alert(1337)&lt;/script&gt;</code></td>
-          <td>Overwriting character escape map</td>
-      </tr>
-      <tr>
-          <td>Auth Bypass</td>
-          <td><code>__init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY</code></td>
-          <td><code>&quot;13371337&quot;</code></td>
-          <td>Overwriting Django&rsquo;s SECRET_KEY</td>
-      </tr>
-      <tr>
-          <td>RCE</td>
-          <td><code>__init__.__globals__.sys.modules.os.environ</code></td>
-          <td><code>{&quot;BROWSER&quot;: &quot;/bin/sh -c 'touch /tmp/1337'&quot;}</code></td>
-          <td>Overwriting BROWSER env variable</td>
-      </tr>
-      <tr>
-          <td>RCE</td>
-          <td><code>__init__.__globals__.location_cache._Cache__data.todo</code></td>
-          <td><code>[&quot;antigravity&quot;, &quot;any&quot;]</code></td>
-          <td>Modifying module cache to load antigravity</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="gadget-categories">Gadget Categories</h2>
-<p>Gadgets are organized by their consequence:</p>
+    <h1 id="gadgets">Gadgets</h1>
+<p>A <em>class-pollution gadget</em> is a piece of existing, legitimate code that reads an attacker-controlled attribute or item from a runtime object, which was injected via a <a href="/wiki/docs/taxonomy/">class pollution</a> vulnerability, and flows the value into a security-relevant sink such as a subprocess invocation, an HTML escaper, or a token signer.</p>
+<h2 id="example">Example</h2>
+<p>The gadget is the existing code that does the read and the dangerous use. For RCE via <code>BROWSER</code>, the gadget lives in the standard library&rsquo;s <code>webbrowser</code> module:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># CPython Lib/webbrowser.py (simplified)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(using<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> using <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># read of the attacker-controlled value:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;BROWSER&#34;</span> <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>environ:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> browser <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;BROWSER&#34;</span>]<span style="color:#f92672">.</span>split(os<span style="color:#f92672">.</span>pathsep):
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> GenericBrowser(browser)      <span style="color:#75715e"># passes the string straight to subprocess</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GenericBrowser</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">open</span>(self, url, new<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, autoraise<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>        cmdline <span style="color:#f92672">=</span> [self<span style="color:#f92672">.</span>name] <span style="color:#f92672">+</span> [arg<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span>, url) <span style="color:#66d9ef">for</span> arg <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>args]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># security-relevant sink:</span>
+</span></span><span style="display:flex;"><span>        subprocess<span style="color:#f92672">.</span>Popen(cmdline)
+</span></span></code></pre></div><p>This code is benign in normal operation: a developer sets <code>BROWSER=firefox</code>, and <code>webbrowser.open()</code> launches Firefox. It becomes an RCE gadget the moment an attacker, through a separate <a href="/wiki/docs/taxonomy/primitives/">pollution primitive</a>, writes a shell-command string to <code>os.environ[&quot;BROWSER&quot;]</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Attacker payload (delivered through any reflective setter):</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   os.environ[&#34;BROWSER&#34;] = &#34;/bin/sh -c &#39;touch /tmp/pwned&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Anywhere in the application, code as innocent as:</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> antigravity                                  <span style="color:#75715e"># antigravity.py calls webbrowser.open()</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># now runs /bin/sh -c &#39;touch /tmp/pwned&#39;</span>
+</span></span></code></pre></div><p>A class-pollution exploit is therefore the composition of a <a href="/wiki/docs/taxonomy/primitives/">primitive</a> (writes attacker-chosen data to a <a href="/wiki/docs/targets/">target</a>) and a gadget (reads that target later and uses it in a security-relevant operation). The gadget itself is upstream code that the application reuses, often inside the standard library or a third-party dependency.</p>
+<h2 id="categories">Categories</h2>
 <ul>
-<li><a href="/wiki/docs/gadgets/rce/"><strong>RCE Gadgets</strong></a> — Achieve remote code execution</li>
-<li><a href="/wiki/docs/gadgets/xss/"><strong>XSS Gadgets</strong></a> — Achieve cross-site scripting</li>
-<li><a href="/wiki/docs/gadgets/dos/"><strong>DoS Gadgets</strong></a> — Achieve denial of service</li>
-<li><a href="/wiki/docs/gadgets/auth-bypass/"><strong>Auth Bypass Gadgets</strong></a> — Bypass authentication or authorization</li>
+<li><a href="/wiki/docs/gadgets/rce/"><strong>RCE Gadgets</strong></a>. Pollute <code>os.environ</code> or <code>sys.modules</code> so a later subprocess call or dynamic import executes attacker-chosen code.</li>
+<li><a href="/wiki/docs/gadgets/xss/"><strong>XSS Gadgets</strong></a>. Pollute an HTML escape map or autoescape flag so server-rendered output carries attacker script.</li>
+<li><a href="/wiki/docs/gadgets/auth-bypass/"><strong>Auth Bypass Gadgets</strong></a>. Pollute a signing key or auth flag so the attacker can forge sessions or skip access checks.</li>
+<li><a href="/wiki/docs/gadgets/dos/"><strong>DoS Gadgets</strong></a>. Pollute a dunder method or callable global so any subsequent operation on the affected class crashes.</li>
 </ul>
-<h2 id="gadget-discovery">Gadget Discovery</h2>
-<p>Unlike JavaScript prototype pollution where universal gadgets exist (e.g., in template engines), Python class pollution gadgets are often application-specific because:</p>
-<ol>
-<li><strong>Different modules loaded</strong> — The available <code>sys.modules</code> varies per application</li>
-<li><strong>Different class hierarchies</strong> — The traversal path depends on what objects are accessible</li>
-<li><strong>Different sinks</strong> — The dangerous operations depend on the application&rsquo;s functionality</li>
-</ol>
-<p>However, some gadgets are <strong>semi-universal</strong> across Python applications:</p>
-<ul>
-<li><code>os.environ</code> manipulation (if <code>os</code> is imported)</li>
-<li><code>sys.modules</code> cache poisoning</li>
-<li><code>__getattribute__</code> overwrite (works on any class)</li>
-</ul>
+<h2 id="origin">Origin</h2>
+<p>Class-pollution gadgets fall into three groups by where the gadget code lives.</p>
+<p><strong>Language built-ins.</strong> The gadget is part of the Python data model itself. Examples: <code>__class__.__getattribute__</code> overwrite (see <a href="/wiki/docs/gadgets/dos/">DoS</a>), <code>__class__</code> reassignment, <code>__str__</code> / <code>__repr__</code> overwrite. These work on every Python object, so any process running CPython is in scope.</p>
+<p><strong>Standard library.</strong> The gadget lives in a stdlib module that is loaded in essentially every Python process. Examples: <code>os.environ.BROWSER</code> plus <code>webbrowser</code> plus <code>antigravity</code> for RCE on POSIX, <code>os.environ.COMSPEC</code> plus <code>subprocess(shell=True)</code> for RCE on Windows. Because the modules they target are present in nearly every Python application, these gadgets, together with the language built-ins above, behave as <strong>universal gadgets</strong>: they fire across many independently-developed applications without any application-specific code being required.</p>
+<p>The same notion of universal gadgets is well established in JavaScript prototype-pollution research. Shcherbakov et al., <em>Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js</em>, USENIX Security 2023 (<a href="https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf">paper</a>) and Cornelissen et al., <em>GHunter: A Universal Gadget for Server-Side JavaScript</em>, USENIX Security 2024 (<a href="https://www.usenix.org/system/files/usenixsecurity24-cornelissen.pdf">paper</a>), formalizes the notion of a universal gadget for server-side JavaScript. The Python class-pollution variants documented here play the same structural role.</p>
+<p><strong>Third-party packages and application code.</strong> The gadget lives in a specific framework, library, or in the application itself. Examples: <code>bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY</code> for stored XSS, <code>django.conf.settings.SECRET_KEY</code> and <code>app.secret_key</code> for auth bypass (see <a href="/wiki/docs/gadgets/auth-bypass/">Auth Bypass</a>), and any class-level boolean such as <code>AuthMiddleware.require_auth</code> that the application reads in a security check. The defining difference from the previous two groups is that these gadgets are not present in every Python process. Identifying which ones are exploitable in a given target requires per-application analysis: the analyst (or detection tool) has to inspect the installed packages and the application&rsquo;s own code to find which polluted attribute or item is later read into a security-sensitive sink.</p>
 
 </article>
 

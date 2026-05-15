@@ -8,7 +8,7 @@ title: "Python Class Pollution"
     <a href="wiki/docs/">Wiki</a>
     <a href="https://jackfromeast.github.io/assets/Pyrl.pdf">Paper</a>
     <a href="wiki/docs/tool/pyrl/">Tool</a>
-    <a href="wiki/docs/reference/cve-index/">Dataset</a>
+    <a href="wiki/docs/collection/showcases/">Dataset</a>
 </div>
 
 ## What is Python class pollution?

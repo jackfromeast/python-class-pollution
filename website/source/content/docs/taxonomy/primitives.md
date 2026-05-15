@@ -1,125 +1,150 @@
 ---
 title: "Pollution Primitives"
-weight: 1
+weight: 2
 ---
 
 # Pollution Primitives
 
-Class pollution vulnerabilities consist of multiple object access steps followed by a final object assignment step. Each step is defined as a **primitive** — with object access treated as a "get" primitive and the final assignment as a "set" primitive.
+A *pollution primitive* describes what an attacker can choose at each step of the access-then-assign sequence. The "get" primitive captures choices across the access steps. The "set" primitive captures the final assignment.
 
-## Atomic "Get" Operations
+The atomic operations that compose each primitive are listed on the [Get & Set Atomics]({{< relref "atomics" >}}) page.
 
-Python supports two atomic "get" operations that differ in their working namespace and reachability:
+## Get primitives
 
-### Attribute Access
-Retrieves values from the **attribute namespace**, supported by all Python objects.
+There are two get primitives, distinguished by whether the program lets the attacker choose between attribute access and item access at each step.
 
-```python
-getattr(obj, key)              # Most common
-obj.__dict__[name]             # Direct dict access
-obj.__getattribute__(name)     # Explicit call
-vars(obj)[name]                # Via vars()
-inspect.getmembers(obj)        # Inspection
-object.__getattribute__(obj, name)  # Builtins
-```
-
-**20 syntactic variants** identified in the Python Standard Library (Table 1 of the paper).
-
-### Item Access
-Retrieves elements using keys or indexes from the **item namespace**, only supported by container objects (dictionaries, lists, sets).
+**Agnostic-Get.** The attacker can pick either atomic at every step. This shape arises in two ways. The first is a control-flow branch that selects different atomics on different paths.
 
 ```python
-dict[key]                      # Most common (50.7M instances)
-dict.get(key)                  # Safe get (8.6M instances)
-dict.pop(key)                  # Get and remove (1.7M instances)
-operator.getitem(dict, key)    # Operator module
-operator.__getitem__(dict, key) # Explicit
-```
-
-{{< hint warning >}}
-**Key Insight**: Attribute and item access operate on different namespaces. An attribute cannot be accessed using item lookup, and vice versa. This is a fundamental difference from JavaScript where property access is uniform.
-{{< /hint >}}
-
-## Atomic "Set" Operations
-
-### Attribute Set (Attr-Set)
-Sets attributes on objects:
-
-```python
-obj.__dict__[name] = val       # 437.8K packages
-setattr(obj, name, val)        # 214.3K packages
-object.__setattr__(obj, name, val)  # 11.4K packages
-obj.__setattr__(name, val)     # 10.4K packages
-```
-
-### Item Set (Item-Set)
-Sets items in container objects:
-
-```python
-dict[key] = val                # 7.7M packages (36.8K)
-dict.update(key=val)           # 687.8K packages (22.7K)
-dict.setdefault(key, val)      # 111.1K packages
-dict.__setitem__(key, val)     # 7.7K packages
-```
-
-### Dual Set (eval/exec)
-Can perform both attribute and item assignment:
-
-```python
-exec(f"EXPR†", {"o": obj})    # 90 packages
-eval(f"EXPR‡", {"o": obj})    # 16 packages
-```
-
-## "Get" Primitives
-
-The combination of atomic get operations forms two types of "get" primitives:
-
-### Agnostic-Get
-The attacker can freely choose between `getattr` and `getitem` at each access step.
-
-Formed in two ways:
-1. Through a **control-flow branch** that allows selection of different atomic gets across paths
-2. Dynamically via **reflection functions** such as `eval` and `exec`
-
-```python
-# Example: Agnostic-Get via branching
-for key in data:
-    if hasattr(obj, key):
-        obj = getattr(obj, key)     # attribute access
-    elif isinstance(obj, dict):
+for key in path:
+    if isinstance(obj, dict):       # branching
         obj = obj[key]              # item access
+    else:
+        obj = getattr(obj, key)     # attribute access
 ```
 
-### Constrained-Get
-The attacker must follow a **fixed access pattern** imposed by the program logic — a chain of attribute access only.
+The second is a hybrid reflection function such as `eval` or `exec`, which evaluates an expression that can use either form depending on the input.
+
+**Constrained-Get.** The program fixes one atomic at every step, and the attacker must follow that pattern. In practice this is almost always a chain of attribute accesses, because item access alone cannot escape its container.
 
 ```python
-# Example: Constrained-Get (attribute chain only)
 for part in path.split("."):
-    obj = getattr(obj, part)
+    obj = getattr(obj, part)        # attribute only
 ```
 
-{{< hint info >}}
-**Note**: Item access alone cannot form a valid Constrained-Get primitive for class pollution, since it operates within container objects (dictionaries) and cannot affect shared runtime objects outside the container.
-{{< /hint >}}
+## Set primitives
 
-## "Set" Primitives
+There are three set primitives, distinguished by whether the program lets the attacker choose between attribute and item assignment at the final write.
 
-Three types based on the attacker's ability to set the final object:
+| Primitive | Attacker capability | Example |
+|---|---|---|
+| **Dual-Set** | Either attribute or item assignment | `setattr(obj, k, v)` or `obj[k] = v` |
+| **Attr-Set** | Attribute assignment only | `setattr(obj, k, v)` |
+| **Item-Set** | Item assignment only | `obj[k] = v` |
 
-| Primitive | Description | Example |
-|-----------|-------------|---------|
-| **Dual-Set** | Can choose between attribute and item assignment | `setattr(obj, key, val)` OR `obj[key] = val` |
-| **Attr-Set** | Restricted to attribute-based writes | `setattr(obj, key, val)` |
-| **Item-Set** | Restricted to item-based writes | `obj[key] = val` |
+## Six variants
 
-## Primitive Combinations → 6 Vulnerability Types
+The two get primitives combined with the three set primitives yield the six pollution variants summarized in the [capability matrix]({{< relref "/docs/taxonomy" >}}#capability-matrix). Each subsection below gives the shape of the variant, a minimal Python snippet, and one observed real-world case.
 
-The two "get" primitives combined with the three "set" primitives define **six types** of class pollution vulnerabilities:
+| Variant | Get | Set | Status |
+|---|---|---|---|
+| [Agnostic-Get × Dual-Set](#agnostic-get--dual-set) | Agnostic | Dual | Previously known |
+| [Agnostic-Get × Attr-Set](#agnostic-get--attr-set) | Agnostic | Attr | New |
+| [Agnostic-Get × Item-Set](#agnostic-get--item-set) | Agnostic | Item | New |
+| [Constrained-Get × Dual-Set](#constrained-get--dual-set) | Constrained | Dual | New |
+| [Constrained-Get × Attr-Set](#constrained-get--attr-set) | Constrained | Attr | New |
+| [Constrained-Get × Item-Set](#constrained-get--item-set) | Constrained | Item | New |
 
-| | Dual-Set | Attr-Set | Item-Set |
-|---|----------|----------|----------|
-| **Agnostic-Get** | Known | **New** | **New** |
-| **Constrained-Get** | **New** | **New** | **New** |
+### Agnostic-Get × Dual-Set
 
-The most prevalent type in practice is **Constrained-Get × Attr-Set** (617 reports out of 868).
+The most permissive variant. The attacker chooses attribute or item access at every step and can use either atomic for the final write. This is the only variant documented before our work, and it covers the canonical recursive-merge bug pattern (Program A from the [taxonomy overview]({{< relref "/docs/taxonomy" >}})).
+
+```python
+def update(obj, data):
+    for k, v in data.items():
+        if isinstance(v, dict):
+            if isinstance(obj, dict):
+                update(obj[k], v)
+            else:
+                update(getattr(obj, k), v)
+        else:
+            if isinstance(obj, dict):
+                obj[k] = v
+            else:
+                setattr(obj, k, v)
+```
+
+Observed in: pydash ([`set_`](https://blog.abdulrah33m.com/prototype-pollution-in-python/)), Azure CLI ([`set_properties`]({{< relref "/docs/collection/showcases/azure-cli" >}}#vulnerability)), and django-unicorn ([`set_property_value`]({{< relref "/docs/collection/showcases/django-unicorn" >}}#vulnerability)).
+
+### Agnostic-Get × Item-Set
+
+The traversal is mixed, but the final write is always an item assignment. There are two ways this is exploitable.
+
+The first is when the final target is a dict-like, such as `__globals__`, `os.environ`, or `sys.modules`, where `obj[k] = v` directly modifies the entry.
+
+```python
+def assign(obj, path, val):
+    for k in path[:-1]:
+        obj = obj[k] if isinstance(obj, dict) else getattr(obj, k)
+    obj[path[-1]] = val
+```
+
+The second is when the target is a general object with a writable `__dict__`. In that case the agnostic traversal lets the attacker step into `__dict__` and the final item-write becomes an attribute write, because `a.v = x` is semantically equivalent to `a.__dict__["v"] = x`. This means Agnostic-Get × Item-Set has the same effective capability as Agnostic-Get × Dual-Set: any attribute set reachable by the latter can be re-encoded as an item set on `__dict__` by the former.
+
+Observed in: see the [Collection]({{< relref "/docs/collection" >}}) for confirmed cases.
+
+### Agnostic-Get × Attr-Set
+
+The attacker can mix attribute and item access during traversal, but the final write is always an attribute assignment. The dual-namespace traversal lets the attacker reach a class or module, and then the program forces an attribute write at the sink.
+
+```python
+def assign(obj, path, val):
+    for k in path[:-1]:
+        obj = obj[k] if isinstance(obj, dict) else getattr(obj, k)
+    setattr(obj, path[-1], val)
+```
+
+Observed in: see the [Collection]({{< relref "/docs/collection" >}}) for confirmed cases.
+
+### Constrained-Get × Dual-Set
+
+Single-atomic traversal, typically `getattr` only, with both `setattr` and `obj[k] = v` available as the sink. The branch that picks between the two writes is usually based on the target type.
+
+```python
+def assign(obj, path, val):
+    for part in path[:-1]:
+        obj = getattr(obj, part)
+    if isinstance(obj, dict):
+        obj[path[-1]] = val
+    else:
+        setattr(obj, path[-1], val)
+```
+
+Observed in: Google Mesop ([`_recursive_update_dataclass_from_json_obj`]({{< relref "/docs/collection/showcases/mesop" >}}#vulnerability)).
+
+### Constrained-Get × Attr-Set
+
+The most prevalent variant in our scan. The program walks an attribute chain via `getattr` and ends with `setattr`. This is the shape of Program B from the [taxonomy overview]({{< relref "/docs/taxonomy" >}}), and it is easy to introduce by accident in any "deep set by dotted path" helper.
+
+```python
+def deep_set(obj, dotted, val):
+    parts = dotted.split(".")
+    for p in parts[:-1]:
+        obj = getattr(obj, p)
+    setattr(obj, parts[-1], val)
+```
+
+Observed in: Taipy ([`_attrsetter`]({{< relref "/docs/collection/showcases/taipy" >}}#vulnerability)).
+
+### Constrained-Get × Item-Set
+
+Single-atomic traversal followed by an item write. Pure item-only walks rarely escape their container, so this variant most commonly appears when the constrained traversal uses attribute access to reach a module or class and only the final write is constrained to item form.
+
+```python
+def assign(obj, path, val):
+    for part in path[:-1]:
+        obj = getattr(obj, part)
+    obj[path[-1]] = val
+```
+
+Observed in: see the [Collection]({{< relref "/docs/collection" >}}) for confirmed cases.

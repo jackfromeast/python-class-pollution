@@ -5,83 +5,18 @@ weight: 2
 
 # XSS Gadgets
 
-Cross-Site Scripting gadgets allow the attacker to inject malicious scripts that execute in other users' browsers.
+XSS gadgets disable the application's HTML-escaping pipeline so that attacker-supplied input later rendered into a page is interpreted as markup instead of text.
 
-## Gadget 1: BeautifulSoup Entity Map Overwrite
+## Third-party packages
 
-**Mechanism**: Many Python web frameworks (including django-unicorn) use BeautifulSoup's `EntitySubstitution` class to escape HTML entities. The entity map maps characters like `<` to their safe equivalents (`&lt;`). Overwriting this map disables XSS protection.
+| Library | Trigger | Polluted property |
+|---|---|---|
+| `bs4` | [`EntitySubstitution.substitute_xml`](https://github.com/wention/BeautifulSoup4) | `EntitySubstitution.CHARACTER_TO_XML_ENTITY['<']` |
+| `taipy.gui` | [`type(content).__name__` rendered as HTML](https://github.com/Avaiga/taipy/blob/main/taipy/gui/gui.py) | `<class>.__name__` |
 
-**Key Path**:
-```
-__init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.<
-```
+## Real-world cases
 
-**Value**:
-```html
-<script>alert(1337)</script>
-```
-
-**Effect**: Instead of escaping `<` to `&lt;`, the framework replaces it with the attacker's script tag. All user input rendered through this escape function now contains the injected script.
-
-{{< hint danger >}}
-This is a **universal stored XSS** — it affects all website users, not limited to a specific page. Every HTML entity escape operation on the server now injects the attacker's script.
-{{< /hint >}}
-
-### How It Works
-
-```python
-# Normal behavior:
-EntitySubstitution.CHARACTER_TO_XML_ENTITY = {
-    '<': '&lt;',
-    '>': '&gt;',
-    '&': '&amp;',
-    '"': '&quot;',
-}
-
-# After pollution:
-EntitySubstitution.CHARACTER_TO_XML_ENTITY = {
-    '<': '<script>alert(1337)</script>',  # Polluted!
-    '>': '&gt;',
-    '&': '&amp;',
-    '"': '&quot;',
-}
-
-# Template rendering:
-escape("<user input>")  
-# → "<script>alert(1337)</script>user input&gt;"
-```
-
-## Gadget 2: Jinja2 Autoescape Disable
-
-**Mechanism**: If Jinja2's autoescape setting is accessible, disabling it removes all XSS protection from templates.
-
-**Key Path** (application-specific):
-```
-__init__.__globals__.sys.modules.jinja2.Environment.autoescape
-```
-
-**Value**: `False`
-
-**Effect**: All template variables rendered without escaping.
-
-## Gadget 3: Django Template Engine Settings
-
-**Mechanism**: Django's template settings control whether autoescape is enabled globally.
-
-**Key Path**:
-```
-__init__.__globals__.sys.modules.django.conf.settings.TEMPLATES[0].OPTIONS.autoescape
-```
-
-**Value**: `False`
-
-## Real-World Example: django-unicorn (CVE-2025-24370)
-
-In django-unicorn, the BeautifulSoup entity map overwrite achieves universal stored XSS:
-
-1. Attacker sends a crafted WebSocket message with the pollution payload
-2. The server processes it through `set_property_value`, which does unrestricted attribute traversal
-3. `CHARACTER_TO_XML_ENTITY['<']` is overwritten with a script tag
-4. All subsequent HTML rendering for all users includes the injected script
-
-**Impact**: Every page served by the application now contains the attacker's JavaScript, affecting all users globally.
+| Application | Polluted property | Mechanism | CVE |
+|---|---|---|---|
+| [django-unicorn]({{< relref "/docs/collection/showcases/django-unicorn" >}}) | `EntitySubstitution.CHARACTER_TO_XML_ENTITY['<']` | WebSocket via `set_property_value` | [CVE-2025-24370](https://github.com/django-commons/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43) |
+| [Taipy]({{< relref "/docs/collection/showcases/taipy" >}}) | `<class>.__name__` | HTTP/SocketIO via `_attrsetter` | [CVE-2025-30374](https://nvd.nist.gov/vuln/detail/CVE-2025-30374) |

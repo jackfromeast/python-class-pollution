@@ -4,46 +4,59 @@ weight: 4
 bookCollapseSection: true
 ---
 
-# Class Pollution Gadgets
+# Gadgets
 
-A **gadget** is a specific pollution target + value combination that achieves a meaningful security consequence. Similar to ROP gadgets in binary exploitation or prototype pollution gadgets in JavaScript, class pollution gadgets chain the pollution primitive to a concrete impact.
+A *class-pollution gadget* is a piece of existing, legitimate code that reads an attacker-controlled attribute or item from a runtime object, which was injected via a [class pollution]({{< relref "/docs/taxonomy" >}}) vulnerability, and flows the value into a security-relevant sink such as a subprocess invocation, an HTML escaper, or a token signer.
 
-## Gadget Structure
+## Example
 
-Each gadget consists of:
+The gadget is the existing code that does the read and the dangerous use. For RCE via `BROWSER`, the gadget lives in the standard library's `webbrowser` module:
 
-1. **Pollution Key Path** — The chain of attributes/items to traverse from the polluted object to the target
-2. **Example Value** — The value to write at the target
-3. **Consequence** — The security impact (RCE, XSS, DoS, Auth Bypass)
+```python
+# CPython Lib/webbrowser.py (simplified)
 
-## Known Gadgets from django-unicorn (Motivating Example)
+def get(using=None):
+    if using is None:
+        # read of the attacker-controlled value:
+        if "BROWSER" in os.environ:
+            for browser in os.environ["BROWSER"].split(os.pathsep):
+                return GenericBrowser(browser)      # passes the string straight to subprocess
 
-| Consequence | Pollution Key Path | Example Value | Description |
-|------------|-------------------|---------------|-------------|
-| DoS | `__class__.__getattribute__` | `1337` | Overwriting the attribute access handler to a non-callable |
-| XSS | `__init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.<` | `<script>alert(1337)</script>` | Overwriting character escape map |
-| Auth Bypass | `__init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY` | `"13371337"` | Overwriting Django's SECRET_KEY |
-| RCE | `__init__.__globals__.sys.modules.os.environ` | `{"BROWSER": "/bin/sh -c 'touch /tmp/1337'"}` | Overwriting BROWSER env variable |
-| RCE | `__init__.__globals__.location_cache._Cache__data.todo` | `["antigravity", "any"]` | Modifying module cache to load antigravity |
+class GenericBrowser:
+    def open(self, url, new=0, autoraise=True):
+        cmdline = [self.name] + [arg.replace("%s", url) for arg in self.args]
+        # security-relevant sink:
+        subprocess.Popen(cmdline)
+```
 
-## Gadget Categories
+This code is benign in normal operation: a developer sets `BROWSER=firefox`, and `webbrowser.open()` launches Firefox. It becomes an RCE gadget the moment an attacker, through a separate [pollution primitive]({{< relref "/docs/taxonomy/primitives" >}}), writes a shell-command string to `os.environ["BROWSER"]`:
 
-Gadgets are organized by their consequence:
+```python
+# Attacker payload (delivered through any reflective setter):
+#   os.environ["BROWSER"] = "/bin/sh -c 'touch /tmp/pwned'"
 
-- [**RCE Gadgets**]({{< relref "rce" >}}) — Achieve remote code execution
-- [**XSS Gadgets**]({{< relref "xss" >}}) — Achieve cross-site scripting
-- [**DoS Gadgets**]({{< relref "dos" >}}) — Achieve denial of service
-- [**Auth Bypass Gadgets**]({{< relref "auth-bypass" >}}) — Bypass authentication or authorization
+# Anywhere in the application, code as innocent as:
+import antigravity                                  # antigravity.py calls webbrowser.open()
+# now runs /bin/sh -c 'touch /tmp/pwned'
+```
 
-## Gadget Discovery
+A class-pollution exploit is therefore the composition of a [primitive]({{< relref "/docs/taxonomy/primitives" >}}) (writes attacker-chosen data to a [target]({{< relref "/docs/targets" >}})) and a gadget (reads that target later and uses it in a security-relevant operation). The gadget itself is upstream code that the application reuses, often inside the standard library or a third-party dependency.
 
-Unlike JavaScript prototype pollution where universal gadgets exist (e.g., in template engines), Python class pollution gadgets are often application-specific because:
+## Categories
 
-1. **Different modules loaded** — The available `sys.modules` varies per application
-2. **Different class hierarchies** — The traversal path depends on what objects are accessible
-3. **Different sinks** — The dangerous operations depend on the application's functionality
+- [**RCE Gadgets**]({{< relref "rce" >}}). Pollute `os.environ` or `sys.modules` so a later subprocess call or dynamic import executes attacker-chosen code.
+- [**XSS Gadgets**]({{< relref "xss" >}}). Pollute an HTML escape map or autoescape flag so server-rendered output carries attacker script.
+- [**Auth Bypass Gadgets**]({{< relref "auth-bypass" >}}). Pollute a signing key or auth flag so the attacker can forge sessions or skip access checks.
+- [**DoS Gadgets**]({{< relref "dos" >}}). Pollute a dunder method or callable global so any subsequent operation on the affected class crashes.
 
-However, some gadgets are **semi-universal** across Python applications:
-- `os.environ` manipulation (if `os` is imported)
-- `sys.modules` cache poisoning
-- `__getattribute__` overwrite (works on any class)
+## Origin
+
+Class-pollution gadgets fall into three groups by where the gadget code lives.
+
+**Language built-ins.** The gadget is part of the Python data model itself. Examples: `__class__.__getattribute__` overwrite (see [DoS]({{< relref "dos" >}})), `__class__` reassignment, `__str__` / `__repr__` overwrite. These work on every Python object, so any process running CPython is in scope.
+
+**Standard library.** The gadget lives in a stdlib module that is loaded in essentially every Python process. Examples: `os.environ.BROWSER` plus `webbrowser` plus `antigravity` for RCE on POSIX, `os.environ.COMSPEC` plus `subprocess(shell=True)` for RCE on Windows. Because the modules they target are present in nearly every Python application, these gadgets, together with the language built-ins above, behave as **universal gadgets**: they fire across many independently-developed applications without any application-specific code being required.
+
+The same notion of universal gadgets is well established in JavaScript prototype-pollution research. Shcherbakov et al., *Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js*, USENIX Security 2023 ([paper](https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf)) and Cornelissen et al., *GHunter: A Universal Gadget for Server-Side JavaScript*, USENIX Security 2024 ([paper](https://www.usenix.org/system/files/usenixsecurity24-cornelissen.pdf)), formalizes the notion of a universal gadget for server-side JavaScript. The Python class-pollution variants documented here play the same structural role.
+
+**Third-party packages and application code.** The gadget lives in a specific framework, library, or in the application itself. Examples: `bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY` for stored XSS, `django.conf.settings.SECRET_KEY` and `app.secret_key` for auth bypass (see [Auth Bypass]({{< relref "auth-bypass" >}})), and any class-level boolean such as `AuthMiddleware.require_auth` that the application reads in a security check. The defining difference from the previous two groups is that these gadgets are not present in every Python process. Identifying which ones are exploitable in a given target requires per-application analysis: the analyst (or detection tool) has to inspect the installed packages and the application's own code to find which polluted attribute or item is later read into a security-sensitive sink.

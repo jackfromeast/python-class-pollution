@@ -1,101 +1,65 @@
 ---
 title: "DoS Gadgets"
-weight: 3
+weight: 5
 ---
 
 # DoS Gadgets
 
-Denial of Service gadgets crash the application or render it unusable.
+DoS gadgets crash the application or render it unusable. The general shape is broad: overwriting any callable target with a non-callable value (typically a string) makes every later invocation raise `TypeError: 'str' object is not callable`. 
 
-## Gadget 1: `__getattribute__` Overwrite
+## Cross-module DoS
 
-**The most universal DoS gadget.** Works on any class.
+In some cases, applications would wrap code in `try`/`except`, so a per-call crash often gets swallowed. The interesting DoS gadgets are the ones that escape those handlers, either by triggering before the `try` is entered, by polluting state shared across requests, or by raising in a different module that has no handler at all. The problem then becomes finding a target whose later read happens *outside* the protected scope.
 
-**Mechanism**: `__getattribute__` is called for every attribute access on an object. Overwriting it with a non-callable value causes a `TypeError` on any subsequent attribute access.
+Python's import system gives us such a target. When the polluted class lives in a shared module and the application's `try`/`except` only wraps the *attacker's* call site, the corruption escapes the handler. Because `import` caches modules in `sys.modules`, every importer of the shared module ends up with a reference to the *same* class object. A later read from a different module raises freely on whatever the attacker wrote, even if that module imported the class long before the pollution.
 
-**Key Path**:
-```
-__class__.__getattribute__
-```
+### Example
 
-**Value**: `"1337"` (any non-callable)
-
-**Effect**: Every attribute access on any instance of the class raises:
-```
-TypeError: 'str' object is not callable
-```
-
-### Why This Is So Effective
+**Step 1.** `main.py` is the first module loaded by the application at startup. It imports `NN` and binds the (still pristine) class object into its own namespace.
 
 ```python
-# After pollution: User.__getattribute__ = "1337"
+# main.py
+from shared import NN                          # binds main.NN to the NN class object
 
-user.name       # → TypeError
-user.email      # → TypeError
-str(user)       # → TypeError (calls __str__ which needs __getattribute__)
-repr(user)      # → TypeError
-type(user)      # This still works (built-in, not through __getattribute__)
+def serve_request():
+    return NN().toString()                     # used much later, after the request loop starts
 ```
 
-The application cannot even inspect or debug the corrupted objects. The only recovery is restarting the process.
+**Step 2.** The framework loads `shared.py` once, on first import.
 
-{{< hint warning >}}
-This affects **all existing and future instances** of the class, not just the polluted instance. It's a class-level corruption.
-{{< /hint >}}
-
-## Gadget 2: `__class__` Reassignment
-
-**Mechanism**: Change an object's class to an incompatible type, causing subsequent operations to fail.
-
-**Key Path**:
-```
-__class__
+```python
+# shared.py
+class NN:
+    def toString(self):
+        return "NN"
 ```
 
-**Value**: Reference to an incompatible class
+**Step 3.** `extension.py` is loaded when the application registers user-installed plugins. It also imports `NN`. Because `shared` is already in `sys.modules`, the `from shared import NN` here gets the same class object that `main.py` already holds.
 
-**Effect**: Method calls and attribute accesses behave unexpectedly or raise exceptions.
+```python
+# extension.py
+from shared import NN                          # same NN object, via sys.modules cache
 
-## Gadget 3: `__str__` / `__repr__` Overwrite
-
-**Mechanism**: Overwrite string representation methods with non-callable values. Many logging frameworks and error handlers call `str()` or `repr()` on objects.
-
-**Key Path**:
-```
-__class__.__str__
-```
-
-**Value**: `"crashed"`
-
-**Effect**: Any logging, debugging, or string formatting involving the object crashes.
-
-## Gadget 4: Module-Level Function Overwrite
-
-**Mechanism**: Overwrite a frequently-called module function with `None` or a non-callable.
-
-**Key Path** (example):
-```
-__init__.__globals__.json.dumps
+def pollute_and_use(payload):
+    obj = NN()
+    try:
+        obj.__class__.toString = payload       # 1. pollutes shared.NN.toString globally
+        obj.toString()                         # 2. raises TypeError on the polluted class
+    except Exception:
+        pass                                   # 3. handler swallows the error, no visible failure
 ```
 
-**Value**: `None`
+**Step 4.** An attacker reaches `extension.pollute_and_use("Polluted")`. Lines 1–3 execute. The handler swallows the error and the application returns 200 OK with no log entry.
 
-**Effect**: Any code calling `json.dumps()` crashes with `TypeError: 'NoneType' object is not callable`.
+**Step 5.** Some time later, an unrelated request calls `main.serve_request()`. The `NN` reference bound back in Step 1 still points to the *same* class object as `extension.NN` and `shared.NN`, so `NN().toString()` reads the polluted attribute and raises `TypeError`. The framework's top-level handler converts the exception into a 500 or terminates the worker.
 
-## Real-World DoS Examples
+The pollution at Step 4 outlived its own try/except and reached a read site that imported the class long before the attacker even existed. That delay is what makes this gadget useful for DoS even when every attacker-reachable code path is wrapped in `try`/`except`.
 
-| Application | Stars | Gadget | CVE |
-|-------------|-------|--------|-----|
-| ComfyUI | 78.5K | `__getattribute__` overwrite | CVE-2025-6107 |
-| RAGFlow | 52.8K | `__getattribute__` overwrite | - |
-| Taipy | 18.1K | `__getattribute__` overwrite | CVE-2025-30374 |
-| Mesop | 6.3K | `__getattribute__` overwrite | CVE-2025-30358 |
-| sd-webui-controlnet | 17.6K | `__getattribute__` overwrite | - |
-| stable-diffusion-webui-forge | 10.9K | `__getattribute__` overwrite | - |
+## Real-world cases
 
-## Persistent vs. Transient DoS
-
-- **Persistent DoS**: If the polluted class/module state is preserved across requests (e.g., in a long-running web server), the DoS persists until restart
-- **Transient DoS**: If each request creates fresh objects, the DoS only affects the current request
-
-Most web frameworks use persistent class objects, making `__getattribute__` overwrite a **persistent DoS** by default.
+| Application | Polluted property | Mechanism | CVE |
+|---|---|---|---|
+| [ComfyUI](https://github.com/comfyanonymous/ComfyUI) | `<C>.__getattribute__` on a node configuration class | reflective attribute setter on workflow JSON | [CVE-2025-6107](https://nvd.nist.gov/vuln/detail/CVE-2025-6107) |
+| [Taipy]({{< relref "/docs/collection/showcases/taipy" >}}) | `<C>.__getattribute__` on a session-state class | HTTP/SocketIO via `_attrsetter` | [CVE-2025-30374](https://nvd.nist.gov/vuln/detail/CVE-2025-30374) |
+| [Mesop]({{< relref "/docs/collection/showcases/mesop" >}}) | `<C>.__getattribute__` on a dataclass | reflective dataclass update | [CVE-2025-30358](https://nvd.nist.gov/vuln/detail/CVE-2025-30358) |
+| [sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet) | callable on a model class shared via `sys.modules` (cross-module pattern above) | reflective attribute setter on extension | Reported |

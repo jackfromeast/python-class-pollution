@@ -14,22 +14,23 @@
     <div class="wiki-layout">
         <nav class="sidebar">
             <div class="sidebar-header">
-                <a href="/">Class Pollution Wiki</a>
+                <a href="/wiki/docs/">Class Pollution Wiki</a>
             </div>
             <ul class="sidebar-nav">
 
 
+    <li>
+        <a href="/wiki/docs/" >Overview</a>
+    </li>
     
     <li>
         <a href="/wiki/docs/taxonomy/" >Taxonomy</a>
         
         <ul>
             
+            <li><a href="/wiki/docs/taxonomy/atomics/" >Get &amp; Set Atomics</a></li>
+            
             <li><a href="/wiki/docs/taxonomy/primitives/" >Pollution Primitives</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/types/" >Vulnerability Types</a></li>
-            
-            <li><a href="/wiki/docs/taxonomy/consequences/" >Consequences</a></li>
             
         </ul>
         
@@ -59,9 +60,9 @@
             
             <li><a href="/wiki/docs/gadgets/xss/" >XSS Gadgets</a></li>
             
-            <li><a href="/wiki/docs/gadgets/dos/" class="active">DoS Gadgets</a></li>
-            
             <li><a href="/wiki/docs/gadgets/auth-bypass/" >Auth Bypass Gadgets</a></li>
+            
+            <li><a href="/wiki/docs/gadgets/dos/" class="active">DoS Gadgets</a></li>
             
         </ul>
         
@@ -85,7 +86,7 @@
         
         <ul>
             
-            <li><a href="/wiki/docs/collection/showcases/" >Showcases</a></li>
+            <li><a href="/wiki/docs/collection/showcases/" >Showcases &amp; CVEs</a></li>
             
         </ul>
         
@@ -93,32 +94,6 @@
     
     <li>
         <a href="/wiki/docs/defense/" >Defense</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/reference/" >Reference</a>
-        
-        <ul>
-            
-            <li><a href="/wiki/docs/reference/cve-index/" >CVE Index</a></li>
-            
-        </ul>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/faq/" >FAQ</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/history/" >History</a>
-        
-    </li>
-    
-    <li>
-        <a href="/wiki/docs/getting-started/" >Getting Started</a>
         
     </li>
     
@@ -130,101 +105,73 @@
             
 <article>
     <h1 id="dos-gadgets">DoS Gadgets</h1>
-<p>Denial of Service gadgets crash the application or render it unusable.</p>
-<h2 id="gadget-1-__getattribute__-overwrite">Gadget 1: <code>__getattribute__</code> Overwrite</h2>
-<p><strong>The most universal DoS gadget.</strong> Works on any class.</p>
-<p><strong>Mechanism</strong>: <code>__getattribute__</code> is called for every attribute access on an object. Overwriting it with a non-callable value causes a <code>TypeError</code> on any subsequent attribute access.</p>
-<p><strong>Key Path</strong>:</p>
-<pre tabindex="0"><code>__class__.__getattribute__
-</code></pre><p><strong>Value</strong>: <code>&quot;1337&quot;</code> (any non-callable)</p>
-<p><strong>Effect</strong>: Every attribute access on any instance of the class raises:</p>
-<pre tabindex="0"><code>TypeError: &#39;str&#39; object is not callable
-</code></pre><h3 id="why-this-is-so-effective">Why This Is So Effective</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># After pollution: User.__getattribute__ = &#34;1337&#34;</span>
+<p>DoS gadgets crash the application or render it unusable. The general shape is broad: overwriting any callable target with a non-callable value (typically a string) makes every later invocation raise <code>TypeError: 'str' object is not callable</code>.</p>
+<h2 id="cross-module-dos">Cross-module DoS</h2>
+<p>In some cases, applications would wrap code in <code>try</code>/<code>except</code>, so a per-call crash often gets swallowed. The interesting DoS gadgets are the ones that escape those handlers, either by triggering before the <code>try</code> is entered, by polluting state shared across requests, or by raising in a different module that has no handler at all. The problem then becomes finding a target whose later read happens <em>outside</em> the protected scope.</p>
+<p>Python&rsquo;s import system gives us such a target. When the polluted class lives in a shared module and the application&rsquo;s <code>try</code>/<code>except</code> only wraps the <em>attacker&rsquo;s</em> call site, the corruption escapes the handler. Because <code>import</code> caches modules in <code>sys.modules</code>, every importer of the shared module ends up with a reference to the <em>same</em> class object. A later read from a different module raises freely on whatever the attacker wrote, even if that module imported the class long before the pollution.</p>
+<h3 id="example">Example</h3>
+<p><strong>Step 1.</strong> <code>main.py</code> is the first module loaded by the application at startup. It imports <code>NN</code> and binds the (still pristine) class object into its own namespace.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># main.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> shared <span style="color:#f92672">import</span> NN                          <span style="color:#75715e"># binds main.NN to the NN class object</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>name       <span style="color:#75715e"># → TypeError</span>
-</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>email      <span style="color:#75715e"># → TypeError</span>
-</span></span><span style="display:flex;"><span>str(user)       <span style="color:#75715e"># → TypeError (calls __str__ which needs __getattribute__)</span>
-</span></span><span style="display:flex;"><span>repr(user)      <span style="color:#75715e"># → TypeError</span>
-</span></span><span style="display:flex;"><span>type(user)      <span style="color:#75715e"># This still works (built-in, not through __getattribute__)</span>
-</span></span></code></pre></div><p>The application cannot even inspect or debug the corrupted objects. The only recovery is restarting the process.</p>
-
-This affects **all existing and future instances** of the class, not just the polluted instance. It's a class-level corruption.
-
-
-<h2 id="gadget-2-__class__-reassignment">Gadget 2: <code>__class__</code> Reassignment</h2>
-<p><strong>Mechanism</strong>: Change an object&rsquo;s class to an incompatible type, causing subsequent operations to fail.</p>
-<p><strong>Key Path</strong>:</p>
-<pre tabindex="0"><code>__class__
-</code></pre><p><strong>Value</strong>: Reference to an incompatible class</p>
-<p><strong>Effect</strong>: Method calls and attribute accesses behave unexpectedly or raise exceptions.</p>
-<h2 id="gadget-3-__str__--__repr__-overwrite">Gadget 3: <code>__str__</code> / <code>__repr__</code> Overwrite</h2>
-<p><strong>Mechanism</strong>: Overwrite string representation methods with non-callable values. Many logging frameworks and error handlers call <code>str()</code> or <code>repr()</code> on objects.</p>
-<p><strong>Key Path</strong>:</p>
-<pre tabindex="0"><code>__class__.__str__
-</code></pre><p><strong>Value</strong>: <code>&quot;crashed&quot;</code></p>
-<p><strong>Effect</strong>: Any logging, debugging, or string formatting involving the object crashes.</p>
-<h2 id="gadget-4-module-level-function-overwrite">Gadget 4: Module-Level Function Overwrite</h2>
-<p><strong>Mechanism</strong>: Overwrite a frequently-called module function with <code>None</code> or a non-callable.</p>
-<p><strong>Key Path</strong> (example):</p>
-<pre tabindex="0"><code>__init__.__globals__.json.dumps
-</code></pre><p><strong>Value</strong>: <code>None</code></p>
-<p><strong>Effect</strong>: Any code calling <code>json.dumps()</code> crashes with <code>TypeError: 'NoneType' object is not callable</code>.</p>
-<h2 id="real-world-dos-examples">Real-World DoS Examples</h2>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">serve_request</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> NN()<span style="color:#f92672">.</span>toString()                     <span style="color:#75715e"># used much later, after the request loop starts</span>
+</span></span></code></pre></div><p><strong>Step 2.</strong> The framework loads <code>shared.py</code> once, on first import.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># shared.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NN</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">toString</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;NN&#34;</span>
+</span></span></code></pre></div><p><strong>Step 3.</strong> <code>extension.py</code> is loaded when the application registers user-installed plugins. It also imports <code>NN</code>. Because <code>shared</code> is already in <code>sys.modules</code>, the <code>from shared import NN</code> here gets the same class object that <code>main.py</code> already holds.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># extension.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> shared <span style="color:#f92672">import</span> NN                          <span style="color:#75715e"># same NN object, via sys.modules cache</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pollute_and_use</span>(payload):
+</span></span><span style="display:flex;"><span>    obj <span style="color:#f92672">=</span> NN()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        obj<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>toString <span style="color:#f92672">=</span> payload       <span style="color:#75715e"># 1. pollutes shared.NN.toString globally</span>
+</span></span><span style="display:flex;"><span>        obj<span style="color:#f92672">.</span>toString()                         <span style="color:#75715e"># 2. raises TypeError on the polluted class</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">pass</span>                                   <span style="color:#75715e"># 3. handler swallows the error, no visible failure</span>
+</span></span></code></pre></div><p><strong>Step 4.</strong> An attacker reaches <code>extension.pollute_and_use(&quot;Polluted&quot;)</code>. Lines 1–3 execute. The handler swallows the error and the application returns 200 OK with no log entry.</p>
+<p><strong>Step 5.</strong> Some time later, an unrelated request calls <code>main.serve_request()</code>. The <code>NN</code> reference bound back in Step 1 still points to the <em>same</em> class object as <code>extension.NN</code> and <code>shared.NN</code>, so <code>NN().toString()</code> reads the polluted attribute and raises <code>TypeError</code>. The framework&rsquo;s top-level handler converts the exception into a 500 or terminates the worker.</p>
+<p>The pollution at Step 4 outlived its own try/except and reached a read site that imported the class long before the attacker even existed. That delay is what makes this gadget useful for DoS even when every attacker-reachable code path is wrapped in <code>try</code>/<code>except</code>.</p>
+<h2 id="real-world-cases">Real-world cases</h2>
 <table>
   <thead>
       <tr>
           <th>Application</th>
-          <th>Stars</th>
-          <th>Gadget</th>
+          <th>Polluted property</th>
+          <th>Mechanism</th>
           <th>CVE</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>ComfyUI</td>
-          <td>78.5K</td>
-          <td><code>__getattribute__</code> overwrite</td>
-          <td>CVE-2025-6107</td>
+          <td><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a></td>
+          <td><code>&lt;C&gt;.__getattribute__</code> on a node configuration class</td>
+          <td>reflective attribute setter on workflow JSON</td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6107">CVE-2025-6107</a></td>
       </tr>
       <tr>
-          <td>RAGFlow</td>
-          <td>52.8K</td>
-          <td><code>__getattribute__</code> overwrite</td>
-          <td>-</td>
+          <td><a href="/wiki/docs/collection/showcases/taipy/">Taipy</a></td>
+          <td><code>&lt;C&gt;.__getattribute__</code> on a session-state class</td>
+          <td>HTTP/SocketIO via <code>_attrsetter</code></td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30374">CVE-2025-30374</a></td>
       </tr>
       <tr>
-          <td>Taipy</td>
-          <td>18.1K</td>
-          <td><code>__getattribute__</code> overwrite</td>
-          <td>CVE-2025-30374</td>
+          <td><a href="/wiki/docs/collection/showcases/mesop/">Mesop</a></td>
+          <td><code>&lt;C&gt;.__getattribute__</code> on a dataclass</td>
+          <td>reflective dataclass update</td>
+          <td><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-30358">CVE-2025-30358</a></td>
       </tr>
       <tr>
-          <td>Mesop</td>
-          <td>6.3K</td>
-          <td><code>__getattribute__</code> overwrite</td>
-          <td>CVE-2025-30358</td>
-      </tr>
-      <tr>
-          <td>sd-webui-controlnet</td>
-          <td>17.6K</td>
-          <td><code>__getattribute__</code> overwrite</td>
-          <td>-</td>
-      </tr>
-      <tr>
-          <td>stable-diffusion-webui-forge</td>
-          <td>10.9K</td>
-          <td><code>__getattribute__</code> overwrite</td>
-          <td>-</td>
+          <td><a href="https://github.com/Mikubill/sd-webui-controlnet">sd-webui-controlnet</a></td>
+          <td>callable on a model class shared via <code>sys.modules</code> (cross-module pattern above)</td>
+          <td>reflective attribute setter on extension</td>
+          <td>Reported</td>
       </tr>
   </tbody>
 </table>
-<h2 id="persistent-vs-transient-dos">Persistent vs. Transient DoS</h2>
-<ul>
-<li><strong>Persistent DoS</strong>: If the polluted class/module state is preserved across requests (e.g., in a long-running web server), the DoS persists until restart</li>
-<li><strong>Transient DoS</strong>: If each request creates fresh objects, the DoS only affects the current request</li>
-</ul>
-<p>Most web frameworks use persistent class objects, making <code>__getattribute__</code> overwrite a <strong>persistent DoS</strong> by default.</p>
 
 </article>
 
