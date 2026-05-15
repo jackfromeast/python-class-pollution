@@ -8,7 +8,7 @@
 + Version: latest
 + CVE: N/A
 + VulnType: get-both-set-item
-+ Status: Pending
++ Status: Reported
 + Foundby: Pyrl
 
 ### Vulnerable Code Snippet

@@ -8,7 +8,7 @@
 + Version: v0.3.2
 + CVE: N/A
 + VulnType: get-both-set-both
-+ Status: Pending
++ Status: Reported
 + Foundby: Pyrl
 
 ### Vulnerable Code Snippet

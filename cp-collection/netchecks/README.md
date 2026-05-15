@@ -8,7 +8,7 @@
 + Version: v0.5.4
 + CVE: N/A
 + VulnType: get-attr-set-both
-+ Status: Pending
++ Status: Reported
 + Foundby: Pyrl
 
 ### Vulnerable Code Snippet

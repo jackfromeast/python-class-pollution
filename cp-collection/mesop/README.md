@@ -8,7 +8,7 @@
 + Version: v0.13.0
 + CVE: CVE-2025-30358
 + VulnType: get-attr-set-both
-+ Status: Pending
++ Status: Reported
 + Foundby: Pyrl
 
 ### Vulnerable Code Snippet
