@@ -109,12 +109,14 @@
 <p>It is the Python analogue of <a href="https://portswigger.net/web-security/prototype-pollution">JavaScript prototype pollution</a>, but the primitives are richer: Python&rsquo;s class-based object model with a flexible reflection layer lets pollution reach classes, functions, modules, and descriptor slots.</p>
 <h2 id="roadmap">Roadmap</h2>
 <p>This wiki is organized into the following sections. Most readers can pick the entry point that matches their goal:</p>
-<!-- - **[Taxonomy](/wiki/docs/taxonomy/)**: the systematic taxonomy of class pollution along three aspects: pollution primitives, vulnerability types, and consequences.
-- **[Pollution Targets](/wiki/docs/targets/)**: runtime objects (classes, modules, functions, globals) that are reachable via reflection and meaningfully change program behavior when modified.
-- **[Gadgets](/wiki/docs/gadgets/)**: concrete target + value combinations that turn a pollution primitive into RCE, XSS, authentication bypass, DoS, or token leakage.
-- **[Tool](/wiki/docs/tool/)**: documentation for *Pyrl* (the detection tool, built on operational taint analysis over CodeQL) and *Polluter* (an exploitation/testing helper).
-- **[Collection](/wiki/docs/collection/)**: a curated database of confirmed vulnerable Python packages with end-to-end PoCs, including the assigned CVEs and showcase walkthroughs.
-- **[Defense](/wiki/docs/defense/)**: mitigations along the object resolution path: key sanitization at the "get" primitive and guards at the "set" primitive. -->
+<ul>
+<li><strong><a href="/wiki/docs/taxonomy/">Taxonomy</a></strong>: the building blocks of a class pollution vulnerability. Catalogs the <a href="/wiki/docs/taxonomy/atomics/">atomic get/set operations</a> Python exposes and the <a href="/wiki/docs/taxonomy/primitives/">pollution primitives</a> that compose into the six class pollution variants.</li>
+<li><strong><a href="/wiki/docs/targets/">Pollution Targets</a></strong>: runtime objects (<a href="/wiki/docs/targets/classes/">classes</a>, <a href="/wiki/docs/targets/modules/">modules</a>, <a href="/wiki/docs/targets/functions/">functions</a>) that are reachable via reflection and that meaningfully change program behavior when modified.</li>
+<li><strong><a href="/wiki/docs/gadgets/">Gadgets</a></strong>: existing read-then-sink code in the standard library, third-party packages, or the application itself that turns a pollution primitive into <a href="/wiki/docs/gadgets/rce/">RCE</a>, <a href="/wiki/docs/gadgets/xss/">XSS</a>, <a href="/wiki/docs/gadgets/auth-bypass/">Auth Bypass</a>, or <a href="/wiki/docs/gadgets/dos/">DoS</a>.</li>
+<li><strong><a href="/wiki/docs/tool/">Tool</a></strong>: documentation for <em><a href="/wiki/docs/tool/pyrl/">Pyrl</a></em> (the detection tool, built on operational taint analysis over CodeQL) and <em><a href="/wiki/docs/tool/polluter/">Polluter</a></em> (an exploitation/testing helper).</li>
+<li><strong><a href="/wiki/docs/collection/">Collection</a></strong>: a curated database of 76 confirmed vulnerable Python packages with proof-of-concept exploits, plus the assigned CVEs and end-to-end <a href="/wiki/docs/collection/showcases/">showcase walkthroughs</a>.</li>
+<li><strong><a href="/wiki/docs/defense/">Defense</a></strong>: mitigations along the object resolution path, including key sanitization at the &ldquo;get&rdquo; primitive and guards at the &ldquo;set&rdquo; primitive.</li>
+</ul>
 <h2 id="about-this-wiki">About this wiki</h2>
 <p>This wiki accompanies our IEEE S&amp;P 2026 paper <a href="https://jackfromeast.github.io/assets/Pyrl.pdf"><em>The First Large-Scale Systematic Study of Python Class Pollution Vulnerability</em></a>. Its goal is to be a living reference for the vulnerability class. Concretely, we want it to:</p>
 <ul>

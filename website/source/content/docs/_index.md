@@ -15,12 +15,12 @@ It is the Python analogue of [JavaScript prototype pollution][jsproto], but the 
 
 This wiki is organized into the following sections. Most readers can pick the entry point that matches their goal:
 
-<!-- - **[Taxonomy]({{< relref "taxonomy" >}})**: the systematic taxonomy of class pollution along three aspects: pollution primitives, vulnerability types, and consequences.
-- **[Pollution Targets]({{< relref "targets" >}})**: runtime objects (classes, modules, functions, globals) that are reachable via reflection and meaningfully change program behavior when modified.
-- **[Gadgets]({{< relref "gadgets" >}})**: concrete target + value combinations that turn a pollution primitive into RCE, XSS, authentication bypass, DoS, or token leakage.
-- **[Tool]({{< relref "tool" >}})**: documentation for *Pyrl* (the detection tool, built on operational taint analysis over CodeQL) and *Polluter* (an exploitation/testing helper).
-- **[Collection]({{< relref "collection" >}})**: a curated database of confirmed vulnerable Python packages with end-to-end PoCs, including the assigned CVEs and showcase walkthroughs.
-- **[Defense]({{< relref "defense" >}})**: mitigations along the object resolution path: key sanitization at the "get" primitive and guards at the "set" primitive. -->
+- **[Taxonomy]({{< relref "taxonomy" >}})**: the building blocks of a class pollution vulnerability. Catalogs the [atomic get/set operations]({{< relref "taxonomy/atomics" >}}) Python exposes and the [pollution primitives]({{< relref "taxonomy/primitives" >}}) that compose into the six class pollution variants.
+- **[Pollution Targets]({{< relref "targets" >}})**: runtime objects ([classes]({{< relref "targets/classes" >}}), [modules]({{< relref "targets/modules" >}}), [functions]({{< relref "targets/functions" >}})) that are reachable via reflection and that meaningfully change program behavior when modified.
+- **[Gadgets]({{< relref "gadgets" >}})**: existing read-then-sink code in the standard library, third-party packages, or the application itself that turns a pollution primitive into [RCE]({{< relref "gadgets/rce" >}}), [XSS]({{< relref "gadgets/xss" >}}), [Auth Bypass]({{< relref "gadgets/auth-bypass" >}}), or [DoS]({{< relref "gadgets/dos" >}}).
+- **[Tool]({{< relref "tool" >}})**: documentation for *[Pyrl]({{< relref "tool/pyrl" >}})* (the detection tool, built on operational taint analysis over CodeQL) and *[Polluter]({{< relref "tool/polluter" >}})* (an exploitation/testing helper).
+- **[Collection]({{< relref "collection" >}})**: a curated database of 76 confirmed vulnerable Python packages with proof-of-concept exploits, plus the assigned CVEs and end-to-end [showcase walkthroughs]({{< relref "collection/showcases" >}}).
+- **[Defense]({{< relref "defense" >}})**: mitigations along the object resolution path, including key sanitization at the "get" primitive and guards at the "set" primitive.
 
 ## About this wiki
 
