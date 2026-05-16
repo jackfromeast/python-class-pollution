@@ -170,17 +170,25 @@ class CodeQLRunner:
     self.summarize_results(os.path.join(self.results_dir, "summary.json"))
 
     if self.delete_if_no_flows:
-      # Delete the database and codebase if no flows are detected
+      # Delete the database and codebase if no flows are detected, but preserve
+      # summary.json so downstream coverage tooling can tell "ran but found
+      # nothing" apart from "never ran".
       summary_file = os.path.join(self.results_dir, "summary.json")
+      summary = None
       if os.path.exists(summary_file):
         with open(summary_file, "r") as f:
           summary = json.load(f)
-        if all([v == 0 for v in summary["rules"].values()]):
-          self.logger.info("No flows detected. Cleaning up...")
-          self.cleanup(everything=True)
-      else:
+      if summary is None or all([v == 0 for v in summary.get("rules", {}).values()]):
         self.logger.info("No flows detected. Cleaning up...")
         self.cleanup(everything=True)
+        if summary is not None:
+          try:
+            results_dir = os.path.join(self.work_dir, "results")
+            os.makedirs(results_dir, exist_ok=True)
+            with open(os.path.join(results_dir, "summary.json"), "w") as f:
+              json.dump(summary, f, indent=2)
+          except Exception as e:
+            self.logger.warning(f"Failed to recreate summary.json: {e}")
 
     if self.delete_after_query:
       self.cleanup(everything=True)
