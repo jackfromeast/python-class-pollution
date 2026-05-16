@@ -116,7 +116,8 @@ python-class-pollution/
 For more details on each component, see:
 
 - Tool documentation &mdash; <https://class-pollution.github.io/wiki/docs/tool/pyrl/>
-- Vulnerability collection and showcases &mdash; <https://class-pollution.github.io/wiki/docs/collection/showcases/>
+- Vulnerability showcases and CVEs &mdash; <https://class-pollution.github.io/wiki/docs/collection/>
+- Full vulnerability catalog &mdash; <https://class-pollution.github.io/wiki/docs/collection/catalog/>
 - Taxonomy, targets, gadgets &mdash; <https://class-pollution.github.io/wiki/docs/>
 
 ## Citation

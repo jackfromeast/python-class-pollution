@@ -19,7 +19,7 @@ This wiki is organized into the following sections. Most readers can pick the en
 - **[Pollution Targets]({{< relref "targets" >}})**: runtime objects ([classes]({{< relref "targets/classes" >}}), [modules]({{< relref "targets/modules" >}}), [functions]({{< relref "targets/functions" >}})) that are reachable via reflection and that meaningfully change program behavior when modified.
 - **[Gadgets]({{< relref "gadgets" >}})**: existing read-then-sink code in the standard library, third-party packages, or the application itself that turns a pollution primitive into [RCE]({{< relref "gadgets/rce" >}}), [XSS]({{< relref "gadgets/xss" >}}), [Auth Bypass]({{< relref "gadgets/auth-bypass" >}}), or [DoS]({{< relref "gadgets/dos" >}}).
 - **[Tool]({{< relref "tool" >}})**: documentation for *[Pyrl]({{< relref "tool/pyrl" >}})* (the detection tool, built on operational taint analysis over CodeQL) and *[Polluter]({{< relref "tool/polluter" >}})* (an exploitation/testing helper).
-- **[Collection]({{< relref "collection" >}})**: a curated database of 76 confirmed vulnerable Python packages with proof-of-concept exploits, plus the assigned CVEs and end-to-end [showcase walkthroughs]({{< relref "collection/showcases" >}}).
+- **[Collection]({{< relref "collection" >}})**: assigned CVEs and end-to-end [showcase walkthroughs]({{< relref "collection/showcases" >}}) of confirmed class pollution vulnerabilities, plus a full [Catalog]({{< relref "collection/catalog" >}}) of 76 packages with proof-of-concept exploits.
 - **[Defense]({{< relref "defense" >}})**: mitigations along the object resolution path, including key sanitization at the "get" primitive and guards at the "set" primitive.
 
 ## About this wiki
