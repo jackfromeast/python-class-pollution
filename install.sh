@@ -6,8 +6,8 @@ print_command() {
 }
 
 # Change directory
-print_command "cd codeql-query/class-pollution-all"
-cd codeql-query/class-pollution-all || exit
+print_command "cd src/pyrl/codeql/class-pollution-all"
+cd src/pyrl/codeql/class-pollution-all || exit
 
 # Install CodeQL pack
 print_command "codeql pack install"
