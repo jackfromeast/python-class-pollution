@@ -1,16 +1,8 @@
 <p align="center">
-  <img src="icon.png" alt="Python Class Pollution" width="220">
+  <img src="icon.png" alt="Python Class Pollution" width="160">
 </p>
 
-<h1 align="center">Python Class Pollution</h1>
-
-<p align="center">
-  Research artifact for <em>The First Large-Scale Systematic Study of Python Class Pollution Vulnerability</em> (IEEE S&amp;P 2026).
-  <br>
-  Project site: <a href="https://class-pollution.github.io">https://class-pollution.github.io</a>
-</p>
-
----
+# Python Class Pollution
 
 This repository contains **Pyrl** (/pɜːrl/, "Pearl"), an automated detection tool for Python class pollution, together with the datasets, vulnerability collection, supporting scripts, and the source of the project website.
 
