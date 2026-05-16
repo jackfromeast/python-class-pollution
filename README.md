@@ -81,20 +81,8 @@ pyrl --config tasks/cp-collection/config.yaml --workflow class_pollution
 
 Logs land in `WORKSPACE/logs/` (configurable under `LOG.*`). Per-repository results, including SARIF and run logs, are written under `WORKSPACE/output/<repo>/`.
 
-## Citation
 
-Pyrl was presented at IEEE S&amp;P 2026 by Zhengyu Liu, Jiacheng Zhong, Jianjia Yu, Muxi Lyu, Zifeng Kang, and Yinzhi Cao. The [paper PDF](https://jackfromeast.github.io/assets/Pyrl.pdf) is linked from the project site. If you use this artifact, please cite:
-
-```bibtex
-@inproceedings{liu2026classpollution,
-  title     = {The First Large-Scale Systematic Study of Python Class Pollution Vulnerability},
-  author    = {Liu, Zhengyu and Zhong, Jiacheng and Yu, Jianjia and Lyu, Muxi and Kang, Zifeng and Cao, Yinzhi},
-  booktitle = {2026 IEEE Symposium on Security and Privacy (SP)},
-  year      = {2026}
-}
-```
-
-## Project layout
+## Project Layout
 
 ```
 python-class-pollution/
@@ -130,3 +118,16 @@ For more details on each component, see:
 - Tool documentation &mdash; <https://class-pollution.github.io/wiki/docs/tool/pyrl/>
 - Vulnerability collection and showcases &mdash; <https://class-pollution.github.io/wiki/docs/collection/showcases/>
 - Taxonomy, targets, gadgets &mdash; <https://class-pollution.github.io/wiki/docs/>
+
+## Citation
+
+Pyrl was presented at IEEE S&amp;P 2026 by Zhengyu Liu, Jiacheng Zhong, Jianjia Yu, Muxi Lyu, Zifeng Kang, and Yinzhi Cao. The [paper PDF](https://jackfromeast.github.io/assets/Pyrl.pdf) is linked from the project site.
+
+```bibtex
+@inproceedings{liu2026classpollution,
+  title     = {The First Large-Scale Systematic Study of Python Class Pollution Vulnerability},
+  author    = {Liu, Zhengyu and Zhong, Jiacheng and Yu, Jianjia and Lyu, Muxi and Kang, Zifeng and Cao, Yinzhi},
+  booktitle = {2026 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2026}
+}
+```
