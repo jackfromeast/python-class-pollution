@@ -7,7 +7,7 @@ title: "Python Class Pollution"
 <div class="links-bar">
     <a href="wiki/docs/">Wiki</a>
     <a href="https://jackfromeast.github.io/assets/Pyrl.pdf">Paper</a>
-    <a href="wiki/docs/tool/pyrl/">Tool</a>
+    <a href="https://github.com/jackfromeast/python-class-pollution">Tool</a>
     <a href="wiki/docs/collection/showcases/">Dataset</a>
 </div>
 

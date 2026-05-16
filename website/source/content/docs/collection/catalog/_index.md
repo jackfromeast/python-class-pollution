@@ -8,7 +8,7 @@ bookCollapseSection: false
 
 The full list of confirmed vulnerable Python packages. Assigned CVEs and end-to-end exploitation walkthroughs are on the [Showcases & CVEs]({{< relref "/docs/collection" >}}) page.
 
-**Summary**: 76 confirmed vulnerable packages, 5 with CVEs assigned, 3 fixed by developers, 9 remote-triggerable, 3 local-triggerable, 64 package-level.
+Each application name in the table below links to its directory under [`cp-collection/`](https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection) in the repository, which contains the metadata and the proof-of-concepts for that case.
 
 ## Vulnerable packages
 
