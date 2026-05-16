@@ -8,17 +8,6 @@ bookCollapseSection: true
 
 A curated dataset of confirmed vulnerable Python packages with proof-of-concept exploits. This page combines the **assigned CVEs** and the **end-to-end exploitation walkthroughs**. The full list of 76 confirmed cases lives on the [Catalog]({{< relref "catalog" >}}) page.
 
-## End-to-end exploitation walkthroughs
-
-Each page below walks through the full exploitation chain: the vulnerable function, the pollution payload, the trigger, and the resulting consequence.
-
-- [Azure CLI]({{< relref "showcases/azure-cli" >}}) - Token Leakage and OS Command Injection through `set_properties`.
-- [ComfyUI]({{< relref "showcases/comfyui" >}}) - DoS through reflective attribute setting.
-- [django-unicorn]({{< relref "showcases/django-unicorn" >}}) - DoS, XSS, Auth Bypass, and RCE through a single WebSocket message.
-- [Mesop]({{< relref "showcases/mesop" >}}) - DoS and Remote Execution through reflective dataclass update.
-- [ragflow]({{< relref "showcases/ragflow" >}}) - Class pollution via reflective attribute setting.
-- [Taipy]({{< relref "showcases/taipy" >}}) - DoS, XSS, RCE, and Token Leakage through `_attrsetter`.
-
 ## Assigned CVEs
 
 The CVE table lists every advisory issued for class pollution, both from this work and from prior research.
@@ -37,3 +26,14 @@ The CVE table lists every advisory issued for class pollution, both from this wo
 | [CVE-2024-5452](https://nvd.nist.gov/vuln/detail/CVE-2024-5452) | deepdiff (prior work) | DoS | [diogotcorreia](https://github.com/qlustered/deepdiff/security/advisories/GHSA-mw26-5g2v-hqw3) | Fixed |
 
 </div>
+
+## End-to-end exploitation walkthroughs
+
+Each page below walks through the full exploitation chain: the vulnerable function, the pollution payload, the trigger, and the resulting consequence.
+
+- [Azure CLI]({{< relref "showcases/azure-cli" >}}) - Token Leakage and OS Command Injection through `set_properties`.
+- [ComfyUI]({{< relref "showcases/comfyui" >}}) - DoS through reflective attribute setting.
+- [django-unicorn]({{< relref "showcases/django-unicorn" >}}) - DoS, XSS, Auth Bypass, and RCE through a single WebSocket message.
+- [Mesop]({{< relref "showcases/mesop" >}}) - DoS and Remote Execution through reflective dataclass update.
+- [ragflow]({{< relref "showcases/ragflow" >}}) - Class pollution via reflective attribute setting.
+- [Taipy]({{< relref "showcases/taipy" >}}) - DoS, XSS, RCE, and Token Leakage through `_attrsetter`.
