@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 6
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function rsetattr](1), with key source: [ControlFlowNode for attr](2), and object source: [ControlFlowNode for attr](2). Set attribute key: [ControlFlowNode for post](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function get_step_id](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for post](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function before_train_iter](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for post](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function train](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for post](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function before_train_epoch](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for post](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function set_cfg](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for post](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 1
+  },
+  "details": [
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function set_in_context](1), with key source: [ControlFlowNode for var_parts](2), and object source: [ControlFlowNode for var_parts](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).\nExternal Input:Library Type:SetBoth-GetBoth Class pollution function: [Function set_in_context](1), with key source: [ControlFlowNode for var_parts](2), and object source: [ControlFlowNode for var_parts](2). Set attribute key: [ControlFlowNode for part](3), Set item op key: [ControlFlowNode for last_part](7). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).\nExternal Input:Library Type:SetBoth-GetBoth Class pollution function: [Function set_in_context](1), with key source: [ControlFlowNode for var_parts](2), and object source: [ControlFlowNode for var_parts](2). Set attribute key: [ControlFlowNode for last_part](8), Set item op key: [ControlFlowNode for part](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).\nExternal Input:Library Type:SetBoth-GetBoth Class pollution function: [Function set_in_context](1), with key source: [ControlFlowNode for var_parts](2), and object source: [ControlFlowNode for var_parts](2). Set attribute key: [ControlFlowNode for last_part](8), Set item op key: [ControlFlowNode for last_part](7). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

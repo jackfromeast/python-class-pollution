@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 2
+  },
+  "details": [
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function update_class_from_dict](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function _update_class_from_dict](1), with key source: [ControlFlowNode for data](2), and object source: [ControlFlowNode for data](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

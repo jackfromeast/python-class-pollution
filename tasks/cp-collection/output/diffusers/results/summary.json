@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 2
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function create_quantized_param](1), with key source: [ControlFlowNode for model](2), and object source: [ControlFlowNode for param_name](3). Set attribute key: [ControlFlowNode for tensor_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function create_quantized_param](1), with key source: [ControlFlowNode for param_name](3), and object source: [ControlFlowNode for param_name](3). Set attribute key: [ControlFlowNode for tensor_name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function get_module_from_name](1), with key source: [ControlFlowNode for module](2), and object source: [ControlFlowNode for tensor_name](3). Set attribute key: [ControlFlowNode for tensor_name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function get_module_from_name](1), with key source: [ControlFlowNode for tensor_name](3), and object source: [ControlFlowNode for tensor_name](3). Set attribute key: [ControlFlowNode for tensor_name](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

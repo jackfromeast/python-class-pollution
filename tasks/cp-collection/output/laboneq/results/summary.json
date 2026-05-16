@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 3
+  },
+  "details": [
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function update_qubits](1), with key source: [ControlFlowNode for qubit_parameters](2), and object source: [ControlFlowNode for qubit_parameters](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function override_qubits](1), with key source: [ControlFlowNode for qubit_parameters](2), and object source: [ControlFlowNode for qubit_parameters](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function _override_qubit_parameters](1), with key source: [ControlFlowNode for overrides](2), and object source: [ControlFlowNode for overrides](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

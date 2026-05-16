@@ -1,0 +1,826 @@
+{
+  "CRNN_Tensorflow": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-item-get-both",
+    "fired": [
+      "py/class-polliution-external/set-item-get-attr",
+      "py/class-polliution-external/set-item-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "local_utils/config_utils/parse_config_utils.py:35",
+    "repo_name": "CRNN_Tensorflow",
+    "vuln_type": "get-both-set-item"
+  },
+  "ComfyUI": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "comfy/utils.py:884",
+    "repo_name": "ComfyUI",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "EPro-PnP": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "EPro-PnP-Det/epropnp_det/runner/hooks/model_updater.py:17",
+    "repo_name": "EPro-PnP",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "EasyCV": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "easycv/utils/config_tools.py:431",
+    "repo_name": "EasyCV",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "GCFT": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "gcft_ui/bunfoe_editor.py:684",
+    "repo_name": "GCFT",
+    "vuln_type": "get-both-set-both"
+  },
+  "JSPyBridge": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/pythonia/Bridge.py:230",
+    "repo_name": "JSPyBridge",
+    "vuln_type": "get-both-set-both"
+  },
+  "Red-DiscordBot": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "redbot/cogs/audio/core/utilities/miscellaneous.py:139",
+    "repo_name": "Red-DiscordBot",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "accelerate": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/accelerate/utils/modeling.py:612",
+    "repo_name": "accelerate",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "agentlab": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr",
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/agentlab/experiments/args.py:64",
+    "repo_name": "AgentLab",
+    "vuln_type": "get-both-set-both"
+  },
+  "azure-cli": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr",
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/azure-cli-core/azure/cli/core/commands/arm.py:478",
+    "repo_name": "azure-cli",
+    "vuln_type": "get-both-set-both"
+  },
+  "azure-cli-core": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr",
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "rule_only",
+    "repo_name": "azure-cli",
+    "vuln_type": "get-both-set-both"
+  },
+  "clearml": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both",
+      "py/class-polliution-external/set-item-get-attr",
+      "py/class-polliution-external/set-item-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "clearml/backend_interface/task/access.py:42",
+    "repo_name": "clearml",
+    "vuln_type": "get-both-set-both"
+  },
+  "deepchem": {
+    "status": "detected_wrong_rule",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "repo_name": "deepchem",
+    "vuln_type": "get-both-set-both"
+  },
+  "deepdiff": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "file",
+    "matched_at": "deepdiff/path.py:43",
+    "repo_name": "deepdiff",
+    "vuln_type": "get-both-set-both"
+  },
+  "deepdoctection": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "packages/dd_core/src/dd_core/utils/metacfg.py:125",
+    "repo_name": "deepdoctection",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "dektools": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "dektools/attr.py:33",
+    "repo_name": "dektools",
+    "vuln_type": "get-both-set-both"
+  },
+  "diffusers": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/diffusers/utils/loading_utils.py:142",
+    "repo_name": "diffusers",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "django-unicorn": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr",
+      "py/class-polliution-external/set-attr-get-both",
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "django_unicorn/views/action_parsers/utils.py:10",
+    "repo_name": "django-unicorn",
+    "vuln_type": "get-both-set-both"
+  },
+  "docarray": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "docarray/data/torch_dataset.py:115",
+    "repo_name": "docarray",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "edsnlp": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "edsnlp/utils/collections.py:197",
+    "repo_name": "edsnlp",
+    "vuln_type": "get-both-set-both"
+  },
+  "evennia": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "evennia/contrib/base_systems/building_menu/building_menu.py:153",
+    "repo_name": "evennia",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "fairseq": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "fairseq/modules/quantization/pq/utils.py:218",
+    "repo_name": "fairseq",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "fastapi-amis-admin": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "fastapi_amis_admin/crud/_sqlalchemy.py:371",
+    "repo_name": "fastapi-amis-admin",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "fixinventory": {
+    "status": "missed",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [],
+    "repo_name": "fixinventory",
+    "vuln_type": "get-both-set-both"
+  },
+  "generative-ai-python": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "google/generativeai/models.py:446",
+    "repo_name": "generative-ai-python",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "genielibs": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-both",
+      "py/class-polliution-external/set-both-get-both",
+      "py/class-polliution-external/set-item-get-attr",
+      "py/class-polliution-external/set-item-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "pkgs/sdk-pkg/src/genie/libs/sdk/libs/utils/mapping.py:904",
+    "repo_name": "genielibs",
+    "vuln_type": "get-both-set-both"
+  },
+  "gensphere": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "gensphere/genflow.py:355",
+    "repo_name": "gensphere",
+    "vuln_type": "get-both-set-both"
+  },
+  "geodesic-api": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "geodesic/descriptors.py:184",
+    "repo_name": "geodesic-api",
+    "vuln_type": "get-both-set-both"
+  },
+  "glom": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "file",
+    "matched_at": "glom/core.py:641",
+    "repo_name": "glom",
+    "vuln_type": "get-both-set-both"
+  },
+  "hummingbot": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "hummingbot/client/config/config_helpers.py:59",
+    "repo_name": "hummingbot",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "ibis": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "ibis/config.py:22",
+    "repo_name": "ibis",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "issaclab": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "source/extensions/omni.isaac.lab/omni/isaac/lab/utils/dict.py:74",
+    "repo_name": "IsaacLab",
+    "vuln_type": "get-both-set-both"
+  },
+  "jacinle": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-both-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "jacinle/cli/argument.py:119",
+    "repo_name": "Jacinle",
+    "vuln_type": "get-attr-set-both"
+  },
+  "laboneq": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/python/laboneq/dsl/quantum/qpu.py:167",
+    "repo_name": "laboneq",
+    "vuln_type": "get-both-set-both"
+  },
+  "legged_gym": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "legged_gym/utils/helpers.py:58",
+    "repo_name": "legged_gym",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "magicattr": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "magicattr.py:89",
+    "repo_name": "magicattr",
+    "vuln_type": "get-both-set-both"
+  },
+  "mesop": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-both-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "mesop/dataclass_utils/dataclass_utils.py:130",
+    "repo_name": "mesop",
+    "vuln_type": "get-attr-set-both"
+  },
+  "meta_dataset": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "file",
+    "matched_at": "meta_dataset/models/experimental/reparameterizable_base_test.py:160",
+    "repo_name": "meta-dataset",
+    "vuln_type": "get-both-set-both"
+  },
+  "minGPT": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "mingpt/utils.py:62",
+    "repo_name": "minGPT",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "mmpose": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "mmpose/utils/hooks.py:55",
+    "repo_name": "mmpose",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "mo_dots": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "mo_dots/fields.py:60",
+    "repo_name": "mo-dots",
+    "vuln_type": "get-both-set-both"
+  },
+  "nebari": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/_nebari/config.py:12",
+    "repo_name": "nebari",
+    "vuln_type": "get-both-set-both"
+  },
+  "netchecks": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-both-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "operator/netchecks_operator/main.py:762",
+    "repo_name": "netchecks",
+    "vuln_type": "get-attr-set-both"
+  },
+  "neural-compressor": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "neural_compressor/torch/algorithms/mixed_low_precision/quantizer.py:37",
+    "repo_name": "neural-compressor",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "nni": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "nni/compression/utils/attr.py:26",
+    "repo_name": "nni",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "nut": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "gui/panes/filters.py:24",
+    "repo_name": "nut",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "open-interpreter": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "interpreter/terminal_interface/profiles/profiles.py:31",
+    "repo_name": "open-interpreter",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "optimum": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "optimum/utils/modeling_utils.py:48",
+    "repo_name": "optimum",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "otx": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr",
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "library/src/getitune/utils/utils.py:51",
+    "repo_name": "training_extensions",
+    "vuln_type": "get-both-set-both"
+  },
+  "panel": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "panel/reactive.py:700",
+    "repo_name": "panel",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "pokitoki": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-both-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "bot/config.py:214",
+    "repo_name": "pokitoki",
+    "vuln_type": "get-attr-set-both"
+  },
+  "pydash": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "file",
+    "matched_at": "src/pydash/objects.py:694",
+    "repo_name": "pydash",
+    "vuln_type": "get-both-set-both"
+  },
+  "pyinstrument": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "pyinstrument/vendor/keypath.py:62",
+    "repo_name": "pyinstrument",
+    "vuln_type": "get-both-set-both"
+  },
+  "pykka": {
+    "status": "missed",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [],
+    "repo_name": "pykka",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "pystringattr": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "stringattr.py:159",
+    "repo_name": "pystringattr",
+    "vuln_type": "get-both-set-both"
+  },
+  "pytorch-lightning": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "src/lightning/pytorch/utilities/parameter_tying.py:31",
+    "repo_name": "pytorch-lightning",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "ragflow": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "agent/component/base.py:127",
+    "repo_name": "ragflow",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "riven": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-both-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/program/media/item.py:688",
+    "repo_name": "riven",
+    "vuln_type": "get-attr-set-both"
+  },
+  "robusta": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/robusta/runner/object_updater.py:5",
+    "repo_name": "robusta",
+    "vuln_type": "get-both-set-both"
+  },
+  "schemasheets": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "schemasheets/schemamaker.py:63",
+    "repo_name": "schemasheets",
+    "vuln_type": "get-both-set-both"
+  },
+  "sd-webui-controlnet": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "scripts/controlnet_lora.py:132",
+    "repo_name": "sd-webui-controlnet",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "spaCy": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "spacy/pipeline/functions.py:138",
+    "repo_name": "spaCy",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "stable-diffusion-webui-forge": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "backend/utils.py:57",
+    "repo_name": "stable-diffusion-webui-forge",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "steam-sdk": {
+    "status": "no_output",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [],
+    "repo_name": "2025.1.1",
+    "vuln_type": "get-both-set-both"
+  },
+  "stylegan2": {
+    "status": "missed",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [],
+    "repo_name": "stylegan2",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "sverchok": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "rule_only",
+    "repo_name": "sverchok",
+    "vuln_type": "get-both-set-both"
+  },
+  "taipy": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "taipy/gui/utils/_attributes.py:53",
+    "repo_name": "taipy",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "tensorpack": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "examples/FasterRCNN/config.py:55",
+    "repo_name": "tensorpack",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "torchlens": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "torchlens/utils/introspection.py:417",
+    "repo_name": "torchlens",
+    "vuln_type": "get-both-set-both"
+  },
+  "tournesol": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "solidago/experiments/synthetic.py:56",
+    "repo_name": "tournesol",
+    "vuln_type": "get-both-set-both"
+  },
+  "uavSim": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-both-get-both",
+    "fired": [
+      "py/class-polliution-external/set-both-get-both"
+    ],
+    "match_kind": "function",
+    "matched_at": "utils.py:41",
+    "repo_name": "uavSim",
+    "vuln_type": "get-both-set-both"
+  },
+  "virt-manager": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "virtinst/xmlutil.py:54",
+    "repo_name": "virt-manager",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "wfuzz": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "function",
+    "matched_at": "src/wfuzz/helpers/obj_dyn.py:67",
+    "repo_name": "wfuzz",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "wrapt": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "src/wrapt/patches.py:12",
+    "repo_name": "wrapt",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "xorbits": {
+    "status": "detected_correct",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [
+      "py/class-polliution-external/set-attr-get-attr"
+    ],
+    "match_kind": "file",
+    "matched_at": "python/xorbits/_mars/config.py:57",
+    "repo_name": "xorbits",
+    "vuln_type": "get-attr-set-attr"
+  },
+  "zipline": {
+    "status": "missed",
+    "expected_rule": "py/class-polliution-external/set-attr-get-attr",
+    "fired": [],
+    "repo_name": "zipline",
+    "vuln_type": "get-attr-set-attr"
+  }
+}

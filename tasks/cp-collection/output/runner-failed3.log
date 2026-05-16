@@ -1,0 +1,23 @@
+[32;20m2026-05-15 14:48:26,668 - Scheduler - INFO - Scheduling tasks for 1 repositories with 3 workers. (base_scheduler.py:101)[0m
+[32;20m2026-05-15 14:48:26,672 - Scheduler - INFO - Starting worker for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 14:48:26,673 - GithubDownloader - INFO - Cloning repository: https://github.com/Azure/azure-cli to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (ref: v2.68.0) (downloader.py:89)[0m
+[32;20m2026-05-15 14:49:51,931 - GithubDownloader - INFO - Checking out ref: v2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:49:51,935 - GithubDownloader - INFO - Ref 'v2.68.0' not found: error: pathspec 'v2.68.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 14:49:51,935 - GithubDownloader - INFO - Checking out ref: 2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:49:51,938 - GithubDownloader - INFO - Ref '2.68.0' not found: error: pathspec '2.68.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 14:49:51,939 - GithubDownloader - INFO - Checking out ref: azure-cli-v2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:49:51,942 - GithubDownloader - INFO - Ref 'azure-cli-v2.68.0' not found: error: pathspec 'azure-cli-v2.68.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 14:49:51,942 - GithubDownloader - INFO - Checking out ref: azure-cli-2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:49:57,112 - GithubDownloader - INFO - Checked out ref: azure-cli-2.68.0 (downloader.py:153)[0m
+[32;20m2026-05-15 14:49:57,112 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (downloader.py:167)[0m
+[32;20m2026-05-15 14:49:57,113 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (logger.py:42)[0m
+[32;20m2026-05-15 14:52:41,945 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 14:52:41,946 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 14:52:41,946 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 15:50:54,351 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 15:50:54,351 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 15:50:54,351 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 15:50:54,365 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/results/class-pollution-external.qls.sarif: 8 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 15:50:54,365 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 15:50:54,367 - Scheduler - INFO - Worker completed for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 15:50:54,375 - Scheduler - INFO - Progress: 1/1 repositories scanned. (base_scheduler.py:134)[0m

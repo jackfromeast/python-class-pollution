@@ -1,0 +1,19 @@
+[32;20m2026-05-15 14:41:42,343 - Scheduler - INFO - Scheduling tasks for 1 repositories with 3 workers. (base_scheduler.py:101)[0m
+[32;20m2026-05-15 14:41:42,348 - Scheduler - INFO - Starting worker for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 14:41:42,348 - GithubDownloader - INFO - Cloning repository: https://github.com/Azure/azure-cli to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (ref: v2.68.0) (downloader.py:89)[0m
+[32;20m2026-05-15 14:43:09,918 - GithubDownloader - INFO - Checking out ref: v2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:43:09,920 - GithubDownloader - INFO - Ref 'v2.68.0' not found: error: pathspec 'v2.68.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 14:43:09,921 - GithubDownloader - INFO - Checking out ref: 2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:43:09,924 - GithubDownloader - INFO - Ref '2.68.0' not found: error: pathspec '2.68.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 14:43:09,924 - GithubDownloader - INFO - Checking out ref: azure-cli-v2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:43:09,927 - GithubDownloader - INFO - Ref 'azure-cli-v2.68.0' not found: error: pathspec 'azure-cli-v2.68.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 14:43:09,927 - GithubDownloader - INFO - Checking out ref: azure-cli-2.68.0 (downloader.py:144)[0m
+[32;20m2026-05-15 14:43:14,989 - GithubDownloader - INFO - Checked out ref: azure-cli-2.68.0 (downloader.py:153)[0m
+[32;20m2026-05-15 14:43:14,989 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (downloader.py:167)[0m
+[33;20m2026-05-15 14:43:14,990 - CodeQLRunner - WARNING - CodeQL database path already exists: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 14:43:14,990 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (logger.py:42)[0m
+[31;20m2026-05-15 14:43:15,285 - CodeQLRunner - ERROR - Failed to build CodeQL database for azure-cli: UnknownError: Unrecognized file in database cluster: '/home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codeql-db/db-python'.
+A fatal error occurred: Ran with database overwriting enabled, but the directory does not appear to be a CodeQL database or database cluster. Please check you do indeed wish to delete it, and do so manually.
+ (logger.py:42)[0m
+[32;20m2026-05-15 14:43:15,627 - Scheduler - INFO - Worker completed for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 14:43:15,636 - Scheduler - INFO - Progress: 1/1 repositories scanned. (base_scheduler.py:134)[0m

@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-attr": 2
+  },
+  "details": [
+    "External Input:Library Type:SetBoth-GetAttr Class pollution function: [Function set](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "External Input:Library Type:SetBoth-GetAttr Class pollution function: [Function _set_nested_attr](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](3), Set item op key: [ControlFlowNode for key](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

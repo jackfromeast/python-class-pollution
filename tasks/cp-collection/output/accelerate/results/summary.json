@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 1
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function retie_parameters](1), with key source: [ControlFlowNode for tied_params](2), and object source: [ControlFlowNode for tied_params](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

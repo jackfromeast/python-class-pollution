@@ -1,0 +1,77 @@
+[32;20m2026-05-15 13:12:41,564 - Scheduler - INFO - Scheduling tasks for 5 repositories with 4 workers. (base_scheduler.py:101)[0m
+[32;20m2026-05-15 13:12:41,571 - Scheduler - INFO - Starting worker for repo: https://github.com/zhinst/laboneq/tree/v2.44.0 (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 13:12:41,571 - Scheduler - INFO - Starting worker for repo: https://github.com/jodal/pykka (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 13:12:41,571 - Scheduler - INFO - Starting worker for repo: https://github.com/NVlabs/stylegan2 (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 13:12:41,571 - Scheduler - INFO - Starting worker for repo: https://github.com/quantopian/zipline (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 13:12:41,572 - GithubDownloader - INFO - Cloning repository: https://github.com/quantopian/zipline to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/codebase (downloader.py:89)[0m
+[32;20m2026-05-15 13:12:41,572 - GithubDownloader - INFO - Cloning repository: https://github.com/NVlabs/stylegan2 to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/codebase (downloader.py:89)[0m
+[32;20m2026-05-15 13:12:41,572 - GithubDownloader - INFO - Cloning repository: https://github.com/zhinst/laboneq to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/codebase (ref: v2.44.0) (downloader.py:89)[0m
+[32;20m2026-05-15 13:12:41,572 - GithubDownloader - INFO - Cloning repository: https://github.com/jodal/pykka to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/codebase (downloader.py:89)[0m
+[32;20m2026-05-15 13:12:41,837 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/codebase (downloader.py:167)[0m
+[32;20m2026-05-15 13:12:41,838 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/codebase (logger.py:42)[0m
+[32;20m2026-05-15 13:12:42,043 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/codebase (downloader.py:167)[0m
+[32;20m2026-05-15 13:12:42,044 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/codebase (logger.py:42)[0m
+[32;20m2026-05-15 13:12:43,524 - GithubDownloader - INFO - Checking out ref: v2.44.0 (downloader.py:144)[0m
+[32;20m2026-05-15 13:12:43,527 - GithubDownloader - INFO - Ref 'v2.44.0' not found: error: pathspec 'v2.44.0' did not match any file(s) known to git (downloader.py:157)[0m
+[32;20m2026-05-15 13:12:43,527 - GithubDownloader - INFO - Checking out ref: 2.44.0 (downloader.py:144)[0m
+[32;20m2026-05-15 13:12:43,576 - GithubDownloader - INFO - Checked out ref: 2.44.0 (downloader.py:153)[0m
+[32;20m2026-05-15 13:12:43,576 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/codebase (downloader.py:167)[0m
+[32;20m2026-05-15 13:12:43,577 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/codebase (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,053 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/codebase (downloader.py:167)[0m
+[32;20m2026-05-15 13:12:45,054 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/codebase (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,548 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,549 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,549 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,743 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,743 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:45,743 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:12:51,712 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:51,713 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:51,713 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:12:55,064 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:55,064 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:12:55,064 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:13:00,618 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 13:13:00,618 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:13:00,618 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 13:13:00,619 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/results/class-pollution-external.qls.sarif: 0 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 13:13:00,619 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/pykka/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 13:13:00,619 - Scheduler - INFO - Worker completed for repo: https://github.com/jodal/pykka (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 13:13:00,642 - Scheduler - INFO - Progress: 1/5 repositories scanned. (base_scheduler.py:134)[0m
+[32;20m2026-05-15 13:13:00,644 - Scheduler - INFO - Starting worker for repo: https://github.com/someengineering/fixinventory/tree/4.2.0 (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 13:13:00,644 - GithubDownloader - INFO - Cloning repository: https://github.com/someengineering/fixinventory to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/codebase (ref: 4.2.0) (downloader.py:89)[0m
+[32;20m2026-05-15 13:13:02,521 - GithubDownloader - INFO - Checking out ref: 4.2.0 (downloader.py:144)[0m
+[32;20m2026-05-15 13:13:02,600 - GithubDownloader - INFO - Checked out ref: 4.2.0 (downloader.py:153)[0m
+[32;20m2026-05-15 13:13:02,600 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/codebase (downloader.py:167)[0m
+[32;20m2026-05-15 13:13:02,600 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/codebase (logger.py:42)[0m
+[32;20m2026-05-15 13:13:04,941 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 13:13:04,941 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:13:04,941 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 13:13:04,941 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/results/class-pollution-external.qls.sarif: 0 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 13:13:04,942 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/stylegan2/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 13:13:04,942 - Scheduler - INFO - Worker completed for repo: https://github.com/NVlabs/stylegan2 (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 13:13:04,956 - Scheduler - INFO - Progress: 2/5 repositories scanned. (base_scheduler.py:134)[0m
+[32;20m2026-05-15 13:13:16,747 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:13:16,748 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 13:13:16,748 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:13:32,665 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 13:13:32,665 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:13:32,665 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 13:13:32,668 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/results/class-pollution-external.qls.sarif: 3 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 13:13:32,668 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/laboneq/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 13:13:32,668 - Scheduler - INFO - Worker completed for repo: https://github.com/zhinst/laboneq/tree/v2.44.0 (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 13:13:32,689 - Scheduler - INFO - Progress: 3/5 repositories scanned. (base_scheduler.py:134)[0m
+[32;20m2026-05-15 13:13:34,067 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 13:13:34,067 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:13:34,067 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 13:13:34,068 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/results/class-pollution-external.qls.sarif: 0 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 13:13:34,068 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/zipline/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 13:13:34,069 - Scheduler - INFO - Worker completed for repo: https://github.com/quantopian/zipline (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 13:13:34,080 - Scheduler - INFO - Progress: 4/5 repositories scanned. (base_scheduler.py:134)[0m
+[32;20m2026-05-15 13:14:06,661 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 13:14:06,662 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:14:06,662 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 13:14:06,664 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/results/class-pollution-external.qls.sarif: 0 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 13:14:06,664 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/fixinventory/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 13:14:06,664 - Scheduler - INFO - Worker completed for repo: https://github.com/someengineering/fixinventory/tree/4.2.0 (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 13:14:06,682 - Scheduler - INFO - Progress: 5/5 repositories scanned. (base_scheduler.py:134)[0m

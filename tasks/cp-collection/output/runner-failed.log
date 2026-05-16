@@ -1,0 +1,25 @@
+[33;20m2026-05-15 12:49:15,953 - Scheduler - WARNING - Removed 1 duplicate repo URLs (by resolved name). (base_scheduler.py:96)[0m
+[32;20m2026-05-15 12:49:15,953 - Scheduler - INFO - Scheduling tasks for 2 repositories with 3 workers. (base_scheduler.py:101)[0m
+[32;20m2026-05-15 12:49:15,958 - Scheduler - INFO - Starting worker for repo: https://github.com/huggingface/diffusers (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 12:49:15,958 - Scheduler - INFO - Starting worker for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:28)[0m
+[32;20m2026-05-15 12:49:15,958 - GithubDownloader - INFO - Cloning repository: https://github.com/Azure/azure-cli to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (ref: v2.68.0) (downloader.py:89)[0m
+[32;20m2026-05-15 12:49:15,958 - GithubDownloader - INFO - Cloning repository: https://github.com/huggingface/diffusers to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/codebase (downloader.py:89)[0m
+[32;20m2026-05-15 12:49:22,053 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/codebase (downloader.py:138)[0m
+[32;20m2026-05-15 12:49:22,054 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/codebase (logger.py:42)[0m
+[32;20m2026-05-15 12:50:05,775 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 12:50:05,775 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 12:50:05,775 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 12:50:58,194 - GithubDownloader - INFO - Checking out ref: v2.68.0 (downloader.py:122)[0m
+[33;20m2026-05-15 12:50:58,197 - GithubDownloader - WARNING - Failed to checkout ref 'v2.68.0': error: pathspec 'v2.68.0' did not match any file(s) known to git; falling back to default branch. (downloader.py:131)[0m
+[32;20m2026-05-15 12:50:58,197 - GithubDownloader - INFO - Repository cloned successfully to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (downloader.py:138)[0m
+[32;20m2026-05-15 12:50:58,198 - CodeQLRunner - INFO - Building CodeQL database for: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codebase (logger.py:42)[0m
+[32;20m2026-05-15 12:54:10,621 - CodeQLRunner - INFO - CodeQL database created successfully at /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 12:54:10,622 - CodeQLRunner - INFO - Running CodeQL queries on database: /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/azure-cli/codeql-db (logger.py:42)[0m
+[32;20m2026-05-15 12:54:10,622 - CodeQLRunner - INFO - Running query: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:04:16,977 - CodeQLRunner - INFO - Query /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls executed successfully. Results saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/results/class-pollution-external.qls.sarif (logger.py:42)[0m
+[32;20m2026-05-15 13:04:16,977 - CodeQLRunner - INFO - Query completed successfully: /home/jackfromeast/Desktop/python-class-pollution/src/pyrl/codeql/class-pollution-all/class-pollution-external.qls (logger.py:42)[0m
+[32;20m2026-05-15 13:04:16,977 - CodeQLRunner - INFO - Summarizing CodeQL results... (logger.py:42)[0m
+[32;20m2026-05-15 13:04:16,986 - CodeQLRunner - INFO - Processed /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/results/class-pollution-external.qls.sarif: 2 flows detected. (logger.py:42)[0m
+[32;20m2026-05-15 13:04:16,986 - CodeQLRunner - INFO - Summary saved to /home/jackfromeast/Desktop/python-class-pollution/tasks/cp-collection/output/diffusers/results/summary.json (logger.py:42)[0m
+[32;20m2026-05-15 13:04:16,987 - Scheduler - INFO - Worker completed for repo: https://github.com/huggingface/diffusers (run_cp_analysis.py:37)[0m
+[32;20m2026-05-15 13:04:17,006 - Scheduler - INFO - Progress: 1/3 repositories scanned. (base_scheduler.py:134)[0m

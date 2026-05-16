@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 7
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function start_terminal_interface](1), with key source: [ControlFlowNode for interpreter](2), and object source: [ControlFlowNode for interpreter](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function get_profile](1), with key source: [ControlFlowNode for filename_or_url](2), and object source: [ControlFlowNode for filename_or_url](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function profile](1), with key source: [ControlFlowNode for filename_or_url](2), and object source: [ControlFlowNode for filename_or_url](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function __init__](1), with key source: [ControlFlowNode for llm](2), and object source: [ControlFlowNode for llm](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function apply_profile_to_object](1), with key source: [ControlFlowNode for profile](2), and object source: [ControlFlowNode for profile](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function apply_profile_to_object](1), with key source: [ControlFlowNode for profile](2), and object source: [ControlFlowNode for profile](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function get_argument_dictionary](1), with key source: [ControlFlowNode for arguments](2), and object source: [ControlFlowNode for arguments](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Local Type:SetAttr-GetAttr Class pollution function: [Function apply_profile](1), with key source: [ControlFlowNode for profile](2), and object source: [ControlFlowNode for profile](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function apply_profile](1), with key source: [ControlFlowNode for profile](2), and object source: [ControlFlowNode for profile](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

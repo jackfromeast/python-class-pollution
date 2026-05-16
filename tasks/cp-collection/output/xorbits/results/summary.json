@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 2
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function fill_serialized](1), with key source: [ControlFlowNode for d](2), and object source: [ControlFlowNode for d](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function setvalue](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for Subscript](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 3
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function resolve_attr](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function resolve_attr](1), with key source: [ControlFlowNode for attr](3), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function set_attr](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function set_attr](1), with key source: [ControlFlowNode for attr](3), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for name](4). Get attribute op: [ControlFlowNode for getattr()](5).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function set_attr_param](1), with key source: [ControlFlowNode for obj](2), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for name](4). Get attribute op: [ControlFlowNode for getattr()](5).\nExternal Input:Library Type:SetAttr-GetAttr Class pollution function: [Function set_attr_param](1), with key source: [ControlFlowNode for attr](3), and object source: [ControlFlowNode for attr](3). Set attribute key: [ControlFlowNode for name](4). Get attribute op: [ControlFlowNode for getattr()](5)."
+  ]
+}

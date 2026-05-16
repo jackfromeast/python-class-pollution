@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 4
+  },
+  "details": [
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function setattr_recursive](1), with key source: [ControlFlowNode for s](2), and object source: [ControlFlowNode for s](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function override_params](1), with key source: [ControlFlowNode for overrides](2), and object source: [ControlFlowNode for overrides](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Library Type:SetBoth-GetBoth Class pollution function: [Function from_parsed_args](1), with key source: [ControlFlowNode for args](2), and object source: [ControlFlowNode for args](2). Set attribute key: [ControlFlowNode for Subscript](3), Set item op key: [ControlFlowNode for Subscript](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}

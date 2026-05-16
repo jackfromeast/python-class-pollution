@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 4
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function recursive_set](1), with key source: [ControlFlowNode for key](2), and object source: [ControlFlowNode for key](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function build_model_by_guess](1), with key source: [ControlFlowNode for state_dict](2), and object source: [ControlFlowNode for state_dict](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function force_load_state_dict](1), with key source: [ControlFlowNode for state_dict](2), and object source: [ControlFlowNode for state_dict](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function get_state_dict](1), with key source: [ControlFlowNode for d](2), and object source: [ControlFlowNode for d](2). Set attribute key: [ControlFlowNode for key](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

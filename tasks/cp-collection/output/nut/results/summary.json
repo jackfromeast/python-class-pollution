@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-attr-get-attr": 2
+  },
+  "details": [
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function onStateChanged](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for last](3). Get attribute op: [ControlFlowNode for getattr()](4).",
+    "External Input:Library Type:SetAttr-GetAttr Class pollution function: [Function set](1), with key source: [ControlFlowNode for self](2), and object source: [ControlFlowNode for self](2). Set attribute key: [ControlFlowNode for last](3). Get attribute op: [ControlFlowNode for getattr()](4)."
+  ]
+}

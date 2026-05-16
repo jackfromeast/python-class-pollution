@@ -1,0 +1,4 @@
+2026-05-15 14:48:26,668 - Scheduler - INFO - Scheduling tasks for 1 repositories with 3 workers. (base_scheduler.py:101)
+2026-05-15 14:48:26,672 - Scheduler - INFO - Starting worker for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:28)
+2026-05-15 15:50:54,367 - Scheduler - INFO - Worker completed for repo: https://github.com/Azure/azure-cli/tree/v2.68.0 (run_cp_analysis.py:37)
+2026-05-15 15:50:54,375 - Scheduler - INFO - Progress: 1/1 repositories scanned. (base_scheduler.py:134)

@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "py/class-polliution-external/set-both-get-both": 2
+  },
+  "details": [
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function set_nested_attribute](1), with key source: [ControlFlowNode for attrs](2), and object source: [ControlFlowNode for attrs](2). Set attribute key: [ControlFlowNode for attr](3), Set item op key: [ControlFlowNode for attr](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6).",
+    "External Input:Local Type:SetBoth-GetBoth Class pollution function: [Function listcomp](1), with key source: [ControlFlowNode for .0](2), and object source: [ControlFlowNode for .0](2). Set attribute key: [ControlFlowNode for attr](3), Set item op key: [ControlFlowNode for attr](4). Get attribute op: [ControlFlowNode for getattr()](5). Get item op: [ControlFlowNode for Subscript](6)."
+  ]
+}
