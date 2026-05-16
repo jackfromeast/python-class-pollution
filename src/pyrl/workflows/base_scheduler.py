@@ -77,16 +77,25 @@ class BaseScheduler:
       return
 
     # Deduplicate by resolved repo name to prevent concurrent workers
-    # from operating on the same output directory.
+    # from operating on the same output directory. Skip URLs we can't resolve
+    # rather than aborting the whole run.
     seen_names = set()
     unique_urls = []
+    skipped = 0
     for url in repo_urls:
-      name = resolve_repo_name(url)
+      try:
+        name = resolve_repo_name(url)
+      except ValueError as e:
+        self.logger.warning("Skipping unsupported URL: {} - {}".format(url, e))
+        skipped += 1
+        continue
       if name not in seen_names:
         seen_names.add(name)
         unique_urls.append(url)
-    if len(unique_urls) < len(repo_urls):
-      self.logger.warning("Removed {} duplicate repo URLs (by resolved name).".format(len(repo_urls) - len(unique_urls)))
+    if len(unique_urls) < len(repo_urls) - skipped:
+      self.logger.warning("Removed {} duplicate repo URLs (by resolved name).".format(len(repo_urls) - skipped - len(unique_urls)))
+    if skipped:
+      self.logger.warning("Skipped {} URL(s) the downloader cannot handle.".format(skipped))
     repo_urls = unique_urls
 
     self.logger.info("Scheduling tasks for {} repositories with {} workers.".format(len(repo_urls), self.max_workers))

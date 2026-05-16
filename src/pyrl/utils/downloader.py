@@ -114,20 +114,55 @@ class GithubDownloader:
           self.logger.error(f"Error details: {stderr.decode().strip()}")
         return False
 
-      # Checkout specific ref (tag, branch, or commit) if specified
+      # Checkout specific ref (tag, branch, or commit) if specified.
+      # If the ref doesn't exist (cp-collection often records the PyPI version
+      # rather than the git tag), try a few well-known variants (`v` prefix
+      # stripped/added, common project-specific prefixes like `azure-cli-` or
+      # `release-`) before falling back to the default branch instead of
+      # bailing out.
       if self.ref:
-        self.logger.info(f"Checking out ref: {self.ref}")
-        checkout_process = subprocess.Popen(
-          ["git", "checkout", self.ref],
-          cwd=codebase_save_path,
-          stdout=subprocess.PIPE,
-          stderr=subprocess.PIPE
-        )
-        _, checkout_stderr = checkout_process.communicate(timeout=60)
-        if checkout_process.returncode != 0:
-          self.logger.error(f"Failed to checkout ref '{self.ref}': {checkout_stderr.decode()}")
-          return False
-        self.logger.info(f"Checked out ref: {self.ref}")
+        candidates = [self.ref]
+        ref = self.ref
+        if ref.startswith("v") and len(ref) > 1 and ref[1].isdigit():
+          candidates.append(ref[1:])           # v2.44.0 -> 2.44.0
+        elif ref and ref[0].isdigit():
+          candidates.append("v" + ref)          # 2.44.0 -> v2.44.0
+        # Common project-specific tag prefixes seen in cp-collection.
+        repo_basename = os.path.basename(self.repo_url.rstrip("/")).replace(".git", "")
+        if repo_basename:
+          candidates.append(f"{repo_basename}-{ref}")
+          if ref.startswith("v") and len(ref) > 1:
+            candidates.append(f"{repo_basename}-{ref[1:]}")
+        for prefix in ("release-", "release/", "tags/"):
+          candidates.append(f"{prefix}{ref}")
+        # Deduplicate while preserving order.
+        seen = set()
+        candidates = [c for c in candidates if not (c in seen or seen.add(c))]
+
+        checked_out = False
+        for candidate in candidates:
+          self.logger.info(f"Checking out ref: {candidate}")
+          checkout_process = subprocess.Popen(
+            ["git", "checkout", candidate],
+            cwd=codebase_save_path,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+          )
+          _, checkout_stderr = checkout_process.communicate(timeout=60)
+          if checkout_process.returncode == 0:
+            self.logger.info(f"Checked out ref: {candidate}")
+            checked_out = True
+            break
+          else:
+            self.logger.info(
+              f"Ref '{candidate}' not found: "
+              f"{checkout_stderr.decode().strip()}"
+            )
+        if not checked_out:
+          self.logger.warning(
+            f"None of the candidate refs {candidates} matched; "
+            "falling back to default branch."
+          )
 
       self.logger.info(f"Repository cloned successfully to {codebase_save_path}")
       return True

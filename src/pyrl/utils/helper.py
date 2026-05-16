@@ -29,26 +29,34 @@ def resolve_repo_name(repo_url):
   - https://pypi.org/project/laboneq
   - https://github.com/xxx/laboneq.git
   - https://github.com/xxx/laboneq
+  - https://github.com/xxx/laboneq/tree/v2.44.0
   @return: The repository or package name.
   """
   repo_url = repo_url.rstrip("/")
 
   # Handle GitHub URLs
   if "github.com" in repo_url:
+    # Strip a trailing .git on the clone URL, then take owner/repo from the path.
+    parts = [p for p in repo_url.split("/") if p]
+    # parts looks like: ["https:", "github.com", "<owner>", "<repo>(.git)?", "tree", "<ref>", ...]
+    if len(parts) >= 4:
+      repo = parts[3]
+      if repo.endswith(".git"):
+        repo = repo[:-len(".git")]
+      return repo
+    # Fallback: legacy behaviour.
     if repo_url.endswith(".git"):
       return repo_url.split("/")[-1].replace(".git", "")
     return repo_url.split("/")[-1]
 
   # Handle PyPI URLs
   elif "pypi.org" in repo_url:
-    # Split the URL by "/" and get the second-to-last part (project name)
-    parts = repo_url.split("/")
-    if len(parts) >= 5 and parts[-2] == "project":
-      return parts[-1]
-    elif len(parts) >= 5 and parts[-3] == "project":
-      return parts[-2]
-    else:
-      raise ValueError(f"Invalid PyPI URL: {repo_url}")
+    # Split the URL by "/" and find the segment immediately after "project".
+    parts = [p for p in repo_url.split("/") if p]
+    for i, segment in enumerate(parts):
+      if segment == "project" and i + 1 < len(parts):
+        return parts[i + 1]
+    raise ValueError(f"Invalid PyPI URL: {repo_url}")
 
   # Handle other URLs
   else:
