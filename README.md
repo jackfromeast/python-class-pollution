@@ -1,71 +1,140 @@
-## Python Class Pollution Vulnerability and its Gadgets
+<p align="center">
+  <img src="icon.png" alt="Python Class Pollution" width="220">
+</p>
 
-> The Python World-Class Pollution: Understanding the New Python Prototype Pollution Vulnerability and its Consequnces
+<h1 align="center">Python Class Pollution</h1>
 
-### Installation
+<p align="center">
+  Research artifact for <em>The First Large-Scale Systematic Study of Python Class Pollution Vulnerability</em> (IEEE S&amp;P 2026).
+  <br>
+  Project site: <a href="https://class-pollution.github.io">https://class-pollution.github.io</a>
+</p>
 
-1. Install the [CodeQL CLI v2.20.4](https://github.com/github/codeql-cli-binaries/releases/tag/v2.20.4) and add it to the environment path.  
+---
 
-2. Run `install.sh`
+This repository contains **Pyrl** (/pɜːrl/, "Pearl"), an automated detection tool for Python class pollution, together with the datasets, vulnerability collection, supporting scripts, and the source of the project website.
+
+Python class pollution is a vulnerability class where untrusted input modifies unintended Python runtime objects via reflective attribute or item lookups. Successful exploitation can lead to RCE, authentication bypass, XSS, DoS, and token leakage. See the [project site](https://class-pollution.github.io) and the [wiki](https://class-pollution.github.io/wiki/docs/) for the taxonomy, targets, gadgets, and showcases.
+
+## Install
+
+Pyrl is a Python package (`pyrl`) that drives CodeQL. You will need:
+
+- Python `>= 3.10`
+- The [CodeQL CLI](https://codeql.github.com/docs/codeql-cli/) on your `PATH` (or referenced from the config)
+- [`uv`](https://docs.astral.sh/uv/) (recommended) or `pip`
+
+Clone and set up the environment:
+
+```bash
+git clone --recurse-submodules https://github.com/jackfromeast/python-class-pollution.git
+cd python-class-pollution
+
+# Install the Python package (editable)
+uv sync                       # or: pip install -e .
+
+# Install the CodeQL pack and compile the query suite
+./install.sh
+```
+
+`install.sh` runs `codeql pack install` and compiles `class-pollution.qls` in `src/pyrl/codeql/class-pollution-all/`. The CodeQL CLI path used at analysis time is read from the YAML config (`CODEQL.CLI`).
+
+## Usage
+
+Pyrl runs analysis tasks described by a YAML config. The package exposes a `pyrl` console script:
+
+```bash
+pyrl --config tasks/cp-collection/config.yaml
+```
+
+The config selects a workflow and configures the CodeQL CLI, the worker pool, and the input list of repositories. A minimal example (see `tasks/cp-collection/config.yaml` for the full version):
+
+```yaml
+WORKFLOW:
+  CLASS_POLLUTION_ANALYSIS: True
+  DEPENDENCY_ANALYSIS: False
+
+SCHEDULER:
+  TEST_NAME: "CLASS-POLLUTION-CP-COLLECTION"
+  WORKSPACE: "tasks/cp-collection"
+  MODE: "list"                      # "seed" or "list"
+  REPO_LIST: "cp-collection.txt"    # under WORKSPACE/input/ or absolute
+  MAX_WORKER: 8
+  TIMEOUT_PER_WORKER: 2400
+
+CODEQL:
+  CLI: "/path/to/codeql"
+  THREADS: 2
+  RAM: 16384
+  TIMEOUT: 1200
+  USE_MODEL_PACK: True
+  MODEL_PACK: jackfromeast/class-pollution-model-pack@0.0.1
+
+CLASS_POLLUTION_ANALYSIS:
+  QUERY_MODE: query
+  QUERIES:
+    - "src/pyrl/codeql/class-pollution-all/class-pollution-external.qls"
+```
+
+Two workflows are available:
+
+- `class_pollution` &mdash; runs the class-pollution detection query suite over each repository in `REPO_LIST` and writes SARIF results under `WORKSPACE/output/<repo>/`.
+- `dependency_analysis` &mdash; runs the source / sink / summary queries used to model third-party dependencies and produce reusable library models.
+
+You can override the workflow on the command line:
+
+```bash
+pyrl --config tasks/cp-collection/config.yaml --workflow class_pollution
+```
+
+Logs land in `WORKSPACE/logs/` (configurable under `LOG.*`). Per-repository results, including SARIF and run logs, are written under `WORKSPACE/output/<repo>/`.
+
+## Citation
+
+Pyrl was presented at IEEE S&amp;P 2026 by Zhengyu Liu, Jiacheng Zhong, Jianjia Yu, Muxi Lyu, Zifeng Kang, and Yinzhi Cao. The [paper PDF](https://jackfromeast.github.io/assets/Pyrl.pdf) is linked from the project site. If you use this artifact, please cite:
+
+```bibtex
+@inproceedings{liu2026classpollution,
+  title     = {The First Large-Scale Systematic Study of Python Class Pollution Vulnerability},
+  author    = {Liu, Zhengyu and Zhong, Jiacheng and Yu, Jianjia and Lyu, Muxi and Kang, Zifeng and Cao, Yinzhi},
+  booktitle = {2026 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2026}
+}
+```
+
+## Project layout
 
 ```
-cd python-class-pollution && bash install.sh
+python-class-pollution/
+├── src/pyrl/                  # Pyrl tool (Python package, console script: `pyrl`)
+│   ├── run.py                 # CLI entry point
+│   ├── workflows/             # class-pollution and dependency-analysis schedulers
+│   ├── codeql_driver/         # CodeQL database build + query runner
+│   ├── codeql/                # CodeQL query suites
+│   │   ├── class-pollution-all/    # Main detection suite (operational taint analysis)
+│   │   ├── prevalence-checker/     # Reflective get/set prevalence queries
+│   │   └── library-models/         # Cached library models / model pack
+│   ├── dependency_analysis/   # Per-dependency source/sink/summary analyzer
+│   └── utils/                 # Config, logging, helpers
+│
+├── lib/polluter/              # Runtime polluter library used in PoCs / dynamic checks
+├── cp-collection/             # Curated collection of confirmed class-pollution vulnerabilities,
+│                              #   each with metadata + library/local/remote PoCs
+├── tasks/                     # Example task workspaces (config + input + output)
+│   └── cp-collection/         #   Reproduces the analysis over `cp-collection`
+├── dataset/                   # Repository selection inputs
+│   ├── github/                #   GitHub stars-based corpora
+│   └── pip/                   #   PyPI download-based corpora
+├── crawler/                   # Repository crawler (JS) used to build the corpora
+├── scripts/                   # Result post-processing, table/figure generation, helpers
+├── tests/                     # Query unit tests organized by feature
+├── website/                   # Source for https://class-pollution.github.io (Hugo + landing)
+├── install.sh                 # Installs the CodeQL pack and compiles the query suite
+└── pyproject.toml             # Package metadata for `pyrl`
 ```
 
-### Run
+For more details on each component, see:
 
-Our tool uses "task" concept to help define the input, output, and configurations of an analysis task for better pipeline orchestration. All the tasks are located at `/tasks` path. To start any new analysis task, you should create a folder under the `/tasks` and update the `config.yml` within it following the template at `analyzer/new-config-example.yaml`.
-
-1. Update the config file under the task folder (e.g., `task/your-new-task-name`):
-  + `SCHEDULER.WORKSPACE`: The absolute path to the current task folder.
-  + `CODEQL.CLI`: The absolute path to the codeql binary (`which codeql`).
-  + `CLASS_POLLUTION_ANALYSIS.QUERIES`: The absolute path to the codeql query to want to execute.
-
-2. Start the analyzer through the following command:
-
-```
-cd analyzer/src # This is important for python to resolve the modules
-python3 run.py --config /absolute/path/to/tasks/<task-name>/config.yaml
-```
-
-### Class Pollution Vulnerabilities
-
-This repository contains a list of packages that are vulnerable to class pollution (i.e., prototype pollution in Python) and class pollution gadgets that can result in severe issues like RCE.
-
-| Name | Type | Stars | Version | Payloads | Input | Found By | Status | CVE |
-|:-------:|:----:|:-----:|:-------:|----------|:-----:|:--------:|:------:|:---:|
-| [pyinstrument](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/pyinstrument/README.md) | Lib | 6.8K | N/A | ```pyinstrument.vendor.keypath.set_value_at_keypath(obj, '__class__.__init__.__globals__.__name__', 'polluted')``` | Func | BlackPyrl | Pending | N/A |
-| [Mesop](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/mesop/README.md) | App | 5.7K | v0.13.0 | ```mesop.dataclass_utils.dataclass_utils.update_dataclass_from_json(obj, '{"__init__"{"__globals__"{"__name__""polluted"}}}')``` | Remote | BlackPyrl | Pending | CVE-2025-30358 |
-| [clearml](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/clearml/README.md) | App | 5.7K | v1.16.5 | ```clearml.automation.TaskScheduler.add_task(task_overrides={'__init__.__globals__.__builtins__.getattr''polluted'})``` | Func | BlackPyrl | Pending | N/A |
-| [azure-cli](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/azure-cli/README.md) | App | 4.1K | v2.68.0 | ```az resource update --ids /subscriptions/2f5657fb-2e1b-4b1b-afd1-635a17df91c5/resourceGroups/Nothing_group/providers/Microsoft.Web/staticSites/Nothing --set __class__.__init__.__globals__.__name__=polluted``` | Local | BlackPyrl | Pending | [CVE-2025-24049](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049) |
-| [robusta](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/robusta/README.md) | App | 2.6K | 0.20.0 | ```update_item_attr(obj, '__init__.__globals__.__name__', 'polluted')``` | Func | Zhong | Pending | N/A |
-| [IssacLab](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/issaclab/README.md) | Lib | 2.5K | v1.4.0 | ```omni.isaac.lab.utils.dict.update_class_from_dict(obj, {'__init__':{'__globals__':{'__name__':"polluted"}}})``` | Func | BlackPyrl | Pending | N/A |
-| [django-unicorn](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/django-unicorn/README.md) | App | 2.4K | 0.61.0 | ```django_unicorn.views.action_parsers.utils.set_property_value(unicornViewObj, '__init__.__globals__["__name__"]', 'polluted')``` | Remote | Zhong | Pending | [CVE-2025-24370](https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43) |
-| [deepdiff](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/deepdiff/README.md) | Lib | 2K | v8.0.0 | ```{"attribute_added" {"root['x']"namedtuple, "root['x'].'__globals__'['_sys'].'__name__'""polluted"}}``` | Func | chilaxan | Accepted | CVE-2024-5254 |
-| [glom](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/glom/README.md) | Lib | 1.9K | v24.11.0 | ```glom.assign(obj, '__init__.__globals__.__name__', 'polluted')``` | Func | BlackPyrl | Pending | N/A |
-| [fixinventory](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/fixinventory/README.md) | App | 1.6K | 4.2.0 | ```ArgumentParser.args.config_override = ["configtest.__init__.__globals__.__name__=polluted"]; fixlib.config.Config.override_config(running_config)``` | Func | Zhong | Pending | N/A |
-| [pydash](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/pydash/README.md) | Lib | 1.3K | v5.1.2 | ```pydash.set_(obj1, '__init__.__globals__.__name__', "polluted")``` | Func | abdulrah33m | Fixed | N/A |
-| [OpenVINO™ Training Extensions](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/otx/README.md) | Lib | 1.2K | v2.2.2 | ```otx.engine.hpo.hpo_trial.set_using_dot_delimited_key("__init__.__globals__.__name__", "polluted", obj)``` | Func | BlackPyrl | Pending | N/A |
-| [meta_dataset](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/meta_dataset/README.md) | Lib | 768 | N/A | ```_init_reference_module(Animal, {"typ":'cat',"age"11}, [['__init__','__globals__','__name__']], ['polluted'])``` | Func | Zhong | Pending | N/A |
-| [JSPyBridge](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/JSPyBridge/README.md) | Lib | 718 | 1.2.1 | ```PyInterface.Set("", 0, ['python','__globals__','PyInterface'], ('__name__', 'polluted'))``` | Func | Zhong | Pending | N/A |
-| [torchlens](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/torchlens/README.md) | Lib | 530 | 0.1.26 | ```torchlens.nested_assign(obj, [("attr", "__init__"), ("attr", "__globals__"), ("ind", "__name__") ], 'polluted')``` | Func | Zhong | Pending | N/A |
-| [riven](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/riven/README.md) | App | 463 | v0.20.1 | ```media.item._set_nested_attr("__init__.__globals__.__name__", "polluted")``` | Func | BlackPyrl | Pending | N/A |
-| [tournesol](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/tournesol/README.md) | CLI | 339 | N/A | ```set_attr("generative_model.__init__.__globals__.GenerativeModel.__name__", "polluted", generative_model, pipeline)``` | Func | Zhong | Pending | N/A |
-| [pokitoki](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/pokitoki/README.md) | App | 315 | v210 | ```bot.config.ConfigEditor.set_value("openai.__init__.__globals__.__name__", "polluted")``` | Func | Zhong | Pending | N/A |
-| [nebari](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/nebari/README.md) | App | 286 | 2024.12.1 | ```_nebari.config.set_nested_attribute(obj, ['__init__', '__globals__', '__name__'], 'polluted')``` | Func | BlackPyrl | Pending | N/A |
-| [agentlab](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/agentlab/README.md) | App/Lib | 189 | v0.3.2 | ```_set_value(obj, ['__init__','__globals__', '__name__'], 'polluted')``` | Func | Zhong | Pending | N/A |
-| [netchecks](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/netchecks/README.md) | App | 157 | v0.5.4 | ```apply_overrides(dst_obj, {'__init__'{'__globals__'{'V1PodTemplateSpec''polluted'}}})``` | Func | Zhong | Pending | N/A |
-| [Jacinle](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/jacinle/README.md) | Lib | 135 | N/A | ```_KV('__init__.__globals__.__name__=polluted').apply(obj)``` | Func | Zhong | Pending | N/A |
-| [uavSim](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/uavSim/README.md) | App | 121 | N/A | ```uavSim.utils.setattr_recursive("__init__/__globals__/__name__", "polluted")``` | Func | BlackPyrl | Pending | N/A |
-| [edsnlp](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/edsnlp/README.md) | Lib | 119 | v0.15.0 | ```set_deep_attr(obj, '__init__.__globals__.__name__', 'polluted')``` | Func | Zhong | Pending | N/A |
-| [gensphere](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/gensphere/README.md) | App | 112 | N/A | ```set_in_context(obj, ['__init__', '__globals__', '__name__'], 'polluted')``` | Func | Zhong | Pending | N/A |
-| [genielibs](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/genielibs/README.md) | Lib | 109 | V24.9 | ```genie.libs.sdk.libs.utils.mapping.Mapping._modify_value(obj, ["__init__", "__globals__", "__name__"], 'polluted')``` | Func | BlackPyrl | Pending | N/A |
-| [GCFT](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/GCFT/README.md) | App | 101 | N/A | ```set_instance_value(obj, [('attr', '__init__'), ('attr', '__globals__'), ('item', '__name__')], 'polluted')``` | Local | Zhong | Pending | N/A |
-| [schemasheets](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/schemasheets/README.md) | CLI | 44 | 0.3.1 | ```set_attr_via_path_accessor(obj, ["__init__", "__globals__", "__name__"], 'polluted')``` | Local | Zhong | Pending | N/A |
-| [laboneq](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/laboneq/README.md) | Lib | 39 | v2.44.0 | ```_override_qubit_parameters(obj, {'__init__.__globals__.__name__':'polluted'})``` | Func | Zhong | Pending | N/A |
-| [magicattr](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/magicattr/README.md) | Lib | 17 | v3.9.0 | ```magicattr.set(bob, '__class__.__init__.__globals__["__name__"]', "polluted")``` | Func | BlackPyrl | Pending | N/A |
-| [mo_dots](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/mo_dots/README.md) | Lib | 6 | 10.659.25005 | ```mo_dots.set_attr(obj, ["__class__", "__init__", "__globals__", "__name__"], 'polluted')``` | Func | BlackPyrl | Pending | N/A |
-| [pystringattr](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/pystringattr/README.md) | Lib | 2 | N/A | ```pystringattr.setstrattr(obj, '__init__.__globals__["__name__"]', 'polluted')``` | Func | Zhong | Pending | N/A |
-| [geodesic-api](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/geodesic-api/README.md) | Lib | N/A | 0.66.0 | ```desc = descriptors._BaseDescr("__init__.__globals__.obj"); desc.__set_name__(name="secret_key", owner=None); desc._set_object(obj, "polluted")``` | Func | Zhong | Pending | N/A |
-| [dektools](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/dektools/README.md) | Lib | N/A | 0.2.59 | ```object_path_set(obj, '__init__.__globals__.__name__', 'polluted')``` | Func | Zhong | Pending | N/A |
-| [steam-sdk](https://github.com/jackfromeast/python-class-pollution/blob/main/class-pollution/steam-sdk/README.md) | Lib | N/A | 2025.1.1 | ```rsetattr(obj, "__init__.__globals__.__name__", 'polluted')``` | Func | Zhong | Pending | N/A |
+- Tool documentation &mdash; <https://class-pollution.github.io/wiki/docs/tool/pyrl/>
+- Vulnerability collection and showcases &mdash; <https://class-pollution.github.io/wiki/docs/collection/showcases/>
+- Taxonomy, targets, gadgets &mdash; <https://class-pollution.github.io/wiki/docs/>
