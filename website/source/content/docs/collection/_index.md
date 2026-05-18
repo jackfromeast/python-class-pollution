@@ -6,7 +6,7 @@ bookCollapseSection: true
 
 # Showcases and CVEs
 
-A curated dataset of confirmed vulnerable Python packages with proof-of-concept exploits. This page combines the **assigned CVEs** and the **end-to-end exploitation walkthroughs**. The full list of 76 confirmed cases lives on the [Catalog]({{< relref "catalog" >}}) page.
+A curated dataset of confirmed vulnerable Python packages with proof-of-concept exploits. This page combines the **assigned CVEs** and the **end-to-end exploitation walkthroughs**. The full list of 78 confirmed cases lives on the [Catalog]({{< relref "catalog" >}}) page.
 
 ## Assigned CVEs
 
