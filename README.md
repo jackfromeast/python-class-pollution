@@ -4,7 +4,7 @@
 
 <h2 align="center"> Python Class Pollution </h2>
 
-This repository contains **Pyrl** (/pɜːrl/, "Pearl"), an automated detection tool for Python class pollution, together with the datasets, vulnerability collection, supporting scripts, and the source of the project website.
+This repository contains **Pyrl** (/pɜːrl/, "Pearl"), an automated detection tool for Python class pollution, together with the datasets, pollution probing tools (lib/polluter), and the source of the project website.
 
 Python class pollution is a vulnerability class where untrusted input modifies unintended Python runtime objects via reflective attribute or item lookups. Successful exploitation can lead to RCE, authentication bypass, XSS, DoS, and token leakage. See the [project site](https://class-pollution.github.io) and the [wiki](https://class-pollution.github.io/wiki/docs/) for the taxonomy, targets, gadgets, and showcases.
 
