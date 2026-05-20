@@ -59,9 +59,7 @@ No validation is performed on the attribute path.
 
 ### Consequence 1: DoS
 
-<video controls width="100%">
-  <source src="https://drive.google.com/file/d/1BESvtyaJyEOp0BkeFdZFdwj83_E9wp18/preview" type="video/mp4">
-</video>
+[Video PoC](https://drive.google.com/file/d/1BESvtyaJyEOp0BkeFdZFdwj83_E9wp18/view)
 
 **Steps:**
 
@@ -80,6 +78,8 @@ No validation is performed on the attribute path.
 
 ### Consequence 2: OpenAI Token Leakage
 
+[Video PoC](https://drive.google.com/file/d/1uXiHpO-SzE1jhHzMRCTZo9CSOZHORTmT/view)
+
 **Steps:**
 
 1. Set up the LLM ChatBot example from the [Taipy ChatBot Tutorial](https://docs.taipy.io/en/latest/tutorials/articles/chatbot/) at `http://localhost:5000`. The source code can be found [here](https://github.com/Avaiga/demo-chatbot).
@@ -97,7 +97,7 @@ No validation is performed on the attribute path.
 
 ### Consequence 3: XSS
 
-<img src="https://github.com/user-attachments/assets/0aae38bb-8f08-4850-93c0-ffd60d9006ee" alt="Taipy XSS via class pollution" width="100%">
+<img src="/wiki/img/taipy-xss.gif" alt="Taipy XSS via class pollution" width="100%">
 
 In [`taipy/gui/gui.py`](https://github.com/Avaiga/taipy/blob/439c7f52253fc09dd41c455a8a9f8da962d49dfa/taipy/gui/gui.py#L542-L546), when the application attempts to render user content, if the content provider is not found, it falls back to returning `type(content).__name__` as the HTML response:
 
@@ -125,7 +125,7 @@ pollute(
 
 ### Consequence 4: RCE
 
-<img src="https://github.com/user-attachments/assets/6419bc85-2492-44f2-857e-a7f60158ae31" alt="Taipy RCE via class pollution" width="100%">
+<img src="/wiki/img/taipy-rce.gif" alt="Taipy RCE via class pollution" width="100%">
 
 The class pollution vulnerability allows attackers to set arbitrary attributes on objects that appear in the session state. We found that the `Gui.on_action` route can be leveraged to invoke the `Gui.table_on_edit` method, which allows new objects from the `__main__` module to be bound into the session state. In [`taipy/gui/gui.py`](https://github.com/Avaiga/taipy/blob/439c7f52253fc09dd41c455a8a9f8da962d49dfa/taipy/gui/gui.py#L1872), a `getattr` call on the state object automatically triggers the binding operation, while a subsequent `setattr` immediately resets the bound value to `None`:
 
@@ -183,10 +183,3 @@ Full exploit scripts:
 - [RCE exploit](https://gist.github.com/jackfromeast/df377c20520c101ab61111b8f6da6583#file-rce-py)
 - [XSS exploit](https://gist.github.com/jackfromeast/df377c20520c101ab61111b8f6da6583#file-xss-py)
 
-## References
-
-1. CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes. <https://cwe.mitre.org/data/definitions/915.html>
-2. Class Pollution leading to RCE in pydash. <https://gist.github.com/CalumHutton/45d33e9ea55bf4953b3b31c84703dfca>
-3. Prototype Pollution in Python. <https://blog.abdulrah33m.com/prototype-pollution-in-python/>
-4. Google Mesop fix (similar vulnerability). <https://github.com/google/mesop/pull/1171>
-5. Liu et al. *The First Large-Scale Systematic Study of Python Class Pollution Vulnerability*. IEEE S&P 2025. <https://jackfromeast.github.io/assets/Pyrl.pdf>
