@@ -13,7 +13,8 @@ weight: 3
 | Version | v4.0.3 |
 | CVE | CVE-2025-30374 |
 | Type | Constrained-Get × Attr-Set |
-| Input | Remote (WebSocket) |
+| Input | Remote |
+| Consequnces | RCE, DoS, Stored XSS, Token Exfiltration |
 | Status | Fixed |
 
 ## Summary

