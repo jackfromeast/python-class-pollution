@@ -14,5 +14,4 @@ For the assigned CVEs and the index of every walkthrough, see [Showcases & CVEs]
 - [ComfyUI]({{< relref "comfyui" >}}) - DoS through reflective attribute setting.
 - [django-unicorn]({{< relref "django-unicorn" >}}) - DoS, XSS, Auth Bypass, and RCE through a single WebSocket message.
 - [Mesop]({{< relref "mesop" >}}) - DoS and Remote Execution through reflective dataclass update.
-- [ragflow]({{< relref "ragflow" >}}) - Class pollution via reflective attribute setting.
 - [Taipy]({{< relref "taipy" >}}) - DoS, XSS, RCE, and Token Leakage through `_attrsetter`.

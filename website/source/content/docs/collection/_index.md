@@ -35,5 +35,4 @@ Each page below walks through the full exploitation chain: the vulnerable functi
 - [ComfyUI]({{< relref "showcases/comfyui" >}}) - DoS through reflective attribute setting.
 - [django-unicorn]({{< relref "showcases/django-unicorn" >}}) - DoS, XSS, Auth Bypass, and RCE through a single WebSocket message.
 - [Mesop]({{< relref "showcases/mesop" >}}) - DoS and Remote Execution through reflective dataclass update.
-- [ragflow]({{< relref "showcases/ragflow" >}}) - Class pollution via reflective attribute setting.
 - [Taipy]({{< relref "showcases/taipy" >}}) - DoS, XSS, RCE, and Token Leakage through `_attrsetter`.
