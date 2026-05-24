@@ -186,19 +186,6 @@ Pyrl also writes a one-line summary to `WORKSPACE/logs/result.log`:
 [VULN] glom | Agnostic-Get × Dual-Set | source=glom/core.py:412 | sink=glom/core.py:485 | input=Package
 ```
 
-#### Taint labels
-
-| Label | Meaning |
-|---|---|
-| `T_INPUT` | Direct attacker-controlled value at the entry point. |
-| `T_ENUM` | Value derived by iterating or splitting `T_INPUT`. |
-| `T_KEY` | A key derived from enumeration (a potential attribute or item name). |
-| `T_OBJ` | An object resolved through a tainted key. |
-| `G_ATTR` | Resolution was via attribute access (`getattr`). |
-| `G_ITEM` | Resolution was via item access (`obj[key]`). |
-
-The "get" primitive is classified by which resolution labels appear: both `G_ATTR` and `G_ITEM` indicates *Agnostic-Get*, only `G_ATTR` indicates *Constrained-Get*.
-
 ### Dependency analysis workflow
 
 The `dependency_analysis` workflow runs a separate query set that produces library models (sources, sinks, and taint propagation summaries) for third-party packages. These models feed back into the main `class_pollution` queries through `USE_MODEL_PACK`.
