@@ -65,7 +65,7 @@ The function performs both `getattr` and `__getitem__` for resolution (Agnostic-
 
 This functionality is triggered via component requests by specifying the request type as `syncInput`:
 
-```http
+```
 POST /unicorn/message/COMPONENT_NAME
 
 {
@@ -93,7 +93,7 @@ By setting `property_name` to a path like `__init__.__globals__`, the component 
 
 Django-Unicorn uses the `EntitySubstitution` rule from BeautifulSoup to sanitize HTML in template responses. This rule is stored in a global dictionary that can be polluted.
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
@@ -121,7 +121,7 @@ POST /unicorn/message/todo HTTP/1.1
 
 Django-Unicorn always includes a script tag in the webpage where a `NAME` value is dynamically extracted from the `MORPHER_NAMES` and `DEFAULT_MORPHER_NAME` variables in the settings module. Django by default escapes special characters into unicode sequences via the `_json_script_escapes` variable. By clearing this sanitizer and polluting the settings, we achieve stored XSS.
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
@@ -164,7 +164,7 @@ POST /unicorn/message/todo HTTP/1.1
 
 Django stores its error page source code in the global variable `ERROR_PAGE_TEMPLATE` at `django/views/defaults.py`. By polluting this variable, any user triggering an error (e.g., accessing a nonexistent resource) will execute the attacker's payload.
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
@@ -192,7 +192,7 @@ POST /unicorn/message/todo HTTP/1.1
 
 Django's `SECRET_KEY` is used to sign and verify session cookies and other security mechanisms. By polluting its runtime value, an attacker can forge session cookies to log in as any user.
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
@@ -220,7 +220,7 @@ POST /unicorn/message/todo HTTP/1.1
 
 The `timed` decorator is used to wrap many important functions in django-unicorn, such as `_call_method_name`. By polluting it to a string, all decorated function calls become uncallable.
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
@@ -250,7 +250,7 @@ By polluting the `location_cache` object, attackers achieve arbitrary module imp
 
 **Step 1**: Pollute `location_cache` to trigger `antigravity` module import on next request:
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
@@ -277,7 +277,7 @@ POST /unicorn/message/todo HTTP/1.1
 
 **Step 2**: Pollute `BROWSER` environment variable with the command injection payload:
 
-```http
+```
 POST /unicorn/message/todo HTTP/1.1
 
 {
